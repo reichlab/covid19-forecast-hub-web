@@ -94,3 +94,4 @@ exclude:
   - netlify.toml
   - stackbit-build.sh
   - stackbit-pull.js
+  - deploy.sh
