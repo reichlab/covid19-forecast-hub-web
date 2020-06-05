@@ -34,15 +34,15 @@ header:
       type: link
       has_subnav: false
     - label: About
-      url: /docs/
+      url: /about/
       type: link
       has_subnav: false
     - label: Data
-      url: /blog/
+      url: /data/
       type: link
       has_subnav: false
     - label: Community
-      url: '/community'
+      url: '/community/'
       type: link
       has_subnav: false
       subnav_links:
