@@ -3,12 +3,12 @@ title: Home
 sections:
   - section_id: hero
     type: section_hero
-    title: Your source for up-to-date forecasts of COVID-19.
+    title: Up-to-date forecasts of COVID-19 in the United States.
     image: images/5.jpg
     content: >-
-      This site has the authoritative record for forecasts of COVID-19 in the US from dozens of leading modeling teams. This repository enables simple comparisons between models and model synthesis for decision-makers.
+      This site maintains the authoritative record for forecasts of COVID-19 deaths and hospitalizations in the US created by dozens of leading modeling teams from around the globe. Having all these forecasts in one place enables simple comparisons between models and model synthesis for decision-makers.
     actions:
-      - label: Raw Data
+      - label: Forecast Data
         url: https://github.com/reichlab/covid19-forecast-hub
         type: secondary
       - label: Visualization
@@ -30,10 +30,13 @@ sections:
             type: link
       - title: Public Health Impact
         content: >-
-           COVID-19 Forecast Hub data are published each week by the CDC, serving as a vital source of information about where the outbreak is headed next.
+           Updated COVID-19 Forecast Hub data are released each week by the US CDC and the data journalism site FiveThirtyEight. Through these channels, and our public data repository, our work serves as a vital source of public information about where the outbreak is headed next.
         actions:
-          - label: View 
-            url: blog/index.html
+          - label: CDC COVID-19 forecasting page 
+            url: https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html
+            type: link
+          - label: FiveThirtyEight forecast tracker 
+            url: https://projects.fivethirtyeight.com/covid-forecasts/
             type: link
       - title: Collaborative science
         content: >-
