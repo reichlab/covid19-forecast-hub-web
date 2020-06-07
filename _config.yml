@@ -30,13 +30,20 @@ header:
   has_nav: true
   nav_links:
     - label: Home
-      url: '#'
+      url: /
       type: link
       has_subnav: false
     - label: About
-      url: /about/
+      url: "#"
       type: link
-      has_subnav: false
+      has_subnav: true
+      subnav_links:
+        - label: Overview
+          url: /overview/
+          type: link
+        - label: Team
+          url: /team/
+          type: link
     - label: Data
       url: /data/
       type: link
@@ -45,13 +52,6 @@ header:
       url: '/community/'
       type: link
       has_subnav: false
-      subnav_links:
-        - label: Overview
-          url: /overview/
-          type: link
-        - label: Showcase
-          url: /showcase/
-          type: link
     - label: GitHub
       url: 'https://github.com/reichlab/covid19-forecast-hub'
       type: primary
