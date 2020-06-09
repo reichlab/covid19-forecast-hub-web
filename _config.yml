@@ -34,16 +34,13 @@ header:
       type: link
       has_subnav: false
     - label: About
-      url: "#"
+      url: /doc/
       type: link
-      has_subnav: true
-      subnav_links:
-        - label: Overview
-          url: /overview/
-          type: link
-        - label: Team
-          url: /team/
-          type: link
+      has_subnav: false
+#    - label: Team
+#      url: /team/
+#      type: link
+#      has_subnav: false
     - label: Data
       url: /data/
       type: link
@@ -57,12 +54,12 @@ header:
       type: primary
       has_subnav: false
 footer:
-  content: 'Forecast data are available by default under a CC BY 4.0 license. Some models have specific licenses. See repository for details <br> The COVID-19 Forecast Hub has been supported by the US Centers for Disease Control and Prevention (U01IP001122-01-05) and the US National Institutes of Health (R35GM119582). Contributing teams may have received additional funding to support their contributions.<br> The content of the COVID-19 Forecast Hub is solely the responsibility of the participating teams and the Hub maintainers and does not necessarily represent the official views of NIH, CDC, or other funders.'
-  links:
-    - label: CC BY 4.0
-      url: 'https://creativecommons.org/licenses/by/4.0/'
-      type: link
-      new_window: true
+  content: 'Forecast data are available by default under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">a CC BY 4.0 license</a>. Some models have specific licenses. See repository for details. <br> The COVID-19 Forecast Hub has been supported by the US Centers for Disease Control and Prevention (U01IP001122-01-05) and the US National Institutes of Health (R35GM119582). Contributing teams may have received additional funding to support their contributions. The content of the COVID-19 Forecast Hub is solely the responsibility of the participating teams and the Hub maintainers and does not necessarily represent the official views of NIH, CDC, or other funders.'
+#  links:
+#    - label: CC BY 4.0
+#      url: 'https://creativecommons.org/licenses/by/4.0/'
+#      type: link
+#      new_window: true
   has_social: true
   social_links:
     - label: Twitter

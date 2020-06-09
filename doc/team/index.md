@@ -1,5 +1,8 @@
 ---
-title: About the Hub
+title: Team
+excerpt: >-
+  Libris is a Unibit theme created for project documentations. You can use it
+  for your project.
 layout: docs
 ---
 

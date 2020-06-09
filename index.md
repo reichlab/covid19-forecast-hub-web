@@ -6,17 +6,20 @@ sections:
     title: The COVID-19 Forecast Hub
     image: images/5.jpg
     content: >-
-      This site maintains the authoritative, up-to-date record for forecasts of COVID-19 deaths and hospitalizations in the US created by dozens of leading modeling teams from around the globe. Having all these forecasts in one place enables simple comparisons between models and model synthesis for decision-makers.
+      This site maintains the authoritative, up-to-date record for forecasts of COVID-19 deaths and hospitalizations in the US created by dozens of leading modeling teams from around the globe. 
     actions:
       - label: Forecast Data
         url: https://github.com/reichlab/covid19-forecast-hub
         type: secondary
+        new_window: true
       - label: Visualization
         url: https://reichlab.io/covid19-forecast-hub/
         type: secondary
+        new_window: true
       - label: Participants
         url: https://github.com/reichlab/covid19-forecast-hub#teams-and-models
         type: secondary
+        new_window: true
   - section_id: features
     type: section_grid
     col_number: three
@@ -31,7 +34,7 @@ sections:
             new_window: true
       - title: Public Health Impact
         content: >-
-           COVID-19 Forecast Hub data are used by the [US CDC](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html) and the data journalism site [FiveThirtyEight](https://projects.fivethirtyeight.com/covid-forecasts/). Through these channels, and our public data repository, our work serves as a vital source of public information about where the outbreak is headed next.
+           COVID-19 Forecast Hub data are used by the [US Centers for Disease Control and Prevention](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html) and the data journalism site [FiveThirtyEight](https://projects.fivethirtyeight.com/covid-forecasts/). Through these channels, and our public data repository, our work serves as a vital source of public information about where the outbreak is headed next.
         actions:
           - label: Mortality forecasts @ CDC
             url: https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html
