@@ -57,16 +57,16 @@ header:
       type: primary
       has_subnav: false
 footer:
-  content: '&copy; Reichlab. All rights reserved.'
+  content: 'Forecast data are available by default under a CC BY 4.0 license. Some models have specific licenses. See repository for details <br> The COVID-19 Forecast Hub has been supported by the US Centers for Disease Control and Prevention (U01IP001122-01-05) and the US National Institutes of Health (R35GM119582). Contributing teams may have received additional funding to support their contributions.<br> The content of the COVID-19 Forecast Hub is solely the responsibility of the participating teams and the Hub maintainers and does not necessarily represent the official views of NIH, CDC, or other funders.'
   links:
-    - label: Made with Stackbit
-      url: 'https://www.stackbit.com'
+    - label: CC BY 4.0
+      url: 'https://creativecommons.org/licenses/by/4.0/'
       type: link
       new_window: true
   has_social: true
   social_links:
     - label: Twitter
-      url: 'https://twitter.com/'
+      url: 'https://twitter.com/reichlab'
       type: icon
       icon_class: fa-twitter
       new_window: true

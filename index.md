@@ -3,10 +3,10 @@ title: Home
 sections:
   - section_id: hero
     type: section_hero
-    title: Up-to-date forecasts of COVID-19 in the United States.
+    title: The COVID-19 Forecast Hub
     image: images/5.jpg
     content: >-
-      This site maintains the authoritative record for forecasts of COVID-19 deaths and hospitalizations in the US created by dozens of leading modeling teams from around the globe. Having all these forecasts in one place enables simple comparisons between models and model synthesis for decision-makers.
+      This site maintains the authoritative, up-to-date record for forecasts of COVID-19 deaths and hospitalizations in the US created by dozens of leading modeling teams from around the globe. Having all these forecasts in one place enables simple comparisons between models and model synthesis for decision-makers.
     actions:
       - label: Forecast Data
         url: https://github.com/reichlab/covid19-forecast-hub
@@ -28,33 +28,36 @@ sections:
           - label: Our data on GitHub
             url: https://github.com/reichlab/covid19-forecast-hub
             type: link
+            new_window: true
       - title: Public Health Impact
         content: >-
-           Updated COVID-19 Forecast Hub data are released each week by the US CDC and the data journalism site FiveThirtyEight. Through these channels, and our public data repository, our work serves as a vital source of public information about where the outbreak is headed next.
+           COVID-19 Forecast Hub data are used by the [US CDC](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html) and the data journalism site [FiveThirtyEight](https://projects.fivethirtyeight.com/covid-forecasts/). Through these channels, and our public data repository, our work serves as a vital source of public information about where the outbreak is headed next.
         actions:
-          - label: CDC COVID-19 forecasting page 
+          - label: Mortality forecasts @ CDC
             url: https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html
             type: link
-          - label: FiveThirtyEight forecast tracker 
-            url: https://projects.fivethirtyeight.com/covid-forecasts/
+            new_window: true
+          - label: Hospitalization forecasts @ CDC
+            url: https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/hospitalizations-forecasts.html
             type: link
+            new_window: true
       - title: Collaborative science
         content: >-
-          We proudly follow open-science principles by welcoming participation from modeling teams around the globe to submit predictions from their best COVID-19 models.
+          We work collaboratively in an open-science framework, welcoming participation from modeling teams around the globe to submit predictions from their best COVID-19 models.
         actions:
-          - label: Learn More
-            url: https://github.com/reichlab/covid19-forecast-hub
+          - label: Learn more about the teams
+            url: community/
             type: link
   - section_id: text-img
     type: section_content
     image: images/10.jpg
     image_position: left
-    title: Media
+    title: In the news
     content: >-
       Check out the coverage of COVID-19 Forecast Hub data in the press!  
       PBS NewsHour, FiveThirtyEight, NYTimes, Economist, AgenceFrance Press, Boston Globe, Washington Post, ABC News
     actions:
-      - label: View Demo
+      - label: See more
         url: /docs/getting-started/index.html
         type: primary
       - label: Get Started
