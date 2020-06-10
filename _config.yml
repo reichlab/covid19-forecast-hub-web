@@ -25,7 +25,7 @@ palettes:
       accent2: '#4a00e0'
 header:
   title: COVID 19 forecast hub
-  logo_img: images/logo-covid.png
+  logo_img: images/forecast-hub-logo_BLUE.png
   has_nav: true
   nav_links:
     - label: Home
