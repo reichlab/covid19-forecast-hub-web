@@ -33,10 +33,6 @@ header:
       url: /
       type: link
       has_subnav: false
-    - label: About
-      url: /doc/
-      type: link
-      has_subnav: false
 #    - label: Team
 #      url: /team/
 #      type: link
@@ -47,6 +43,10 @@ header:
       has_subnav: false
     - label: Community
       url: '/community/'
+      type: link
+      has_subnav: false
+    - label: About
+      url: /doc/
       type: link
       has_subnav: false
     - label: GitHub

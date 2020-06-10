@@ -1,5 +1,7 @@
 root_folder: /doc/
 sections:
   - about
-  - team
+  - ensemble
   - research
+  - team
+  - media

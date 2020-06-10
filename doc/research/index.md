@@ -1,13 +1,17 @@
 ---
 title: Research
-excerpt: >-
-  Libris is a Unibit theme created for project documentations. You can use it
-  for your project.
 layout: docs
 ---
 
-The COVID-19 Forecast Hub serves as a repository of forecasts and predictions from over 20 international research groups. Forecast data (raw output from the model itself, but not the model code) are stored in a standard format in our data repository. This makes it easy to compare the models side-by-side, which helps decision-makers and the general public understand the range of possible future outcomes more clearly.  
+Since 2016, our team has worked closely with the US CDC on forecasting seasonal influenza outbreaks in a project called [FluSight](https://www.cdc.gov/flu/weekly/flusight/index.html). This collaborative research framework has served as a model for setting up the COVID-19 Forecast Hub. 
 
-Teams submit, for the state and national level in the US, predictions of the numbers of new hospitalizations and incident and cumulative deaths in future days, weeks, and months. We encourage teams to submit at least one forecast every week (up to one a day is accepted) before a Monday 6pm deadline. After this deadline passes, we create an ensemble forecast that, similar to weather forecast models, combines multiple models into a single prediction and cone of uncertainty.  
+This collaborative network has published numerous peer-reviewed research articles on infectious disease forecasting that provide a solid foundation for understanding how to best forecast outbreaks. For example, our work has found that there [was not a large difference in predictive performance between mechanistic and statistical models](https://www.pnas.org/lookup/doi/10.1073/pnas.1812594116) of seasonal influenza outbreaks. We also showed [modest but measurable improvements in accuracy when using an ensemble forecast](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007486) to forecast influenza.
 
-All model data is passed along to the CDC, and individual forecasts from the teams, as well as the ensemble forecast, are used in official CDC communications about the trajectory of the COVID-19 outbreak.
+List of relevant publications:
+ - (preprint) https://arxiv.org/abs/2005.12881
+ - http://reichlab.io/publications#pub=flu-ensemble-1&keywords=flusight
+ - http://reichlab.io/publications#pub=collab-forecasts&keywords=flusight
+ - (preprint) http://reichlab.io/publications#pub=adaptive-ensembles&keywords=flusight
+ - http://reichlab.io/publications#pub=flusight-201516&keywords=flusight
+ - http://reichlab.io/publications#pub=ray-density-ensembles&keywords=flusight
+ 
