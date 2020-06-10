@@ -4,7 +4,8 @@
 
 1. Install Jekyll and Bundler
 
-        gem install jekyll bundler
+        gem install jekyll
+        gem install bundler -v 1.16.6
 
 1. Install dependencies from Gemfile:
 
