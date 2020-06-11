@@ -26,8 +26,8 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v2
       
-    - name: Build Jekyll
-      uses: jerryjvl/jekyll-build-action@v1
+    - name: Setup Ruby, JRuby and TruffleRuby
+      uses: ruby/setup-ruby@v1.37.0
       
     - name: setup setuptools
       run: sudo apt-get install -y python-setuptools
