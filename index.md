@@ -34,7 +34,7 @@ sections:
             new_window: true
       - title: Public Health Impact
         content: >-
-           COVID-19 Forecast Hub data are used by the [US Centers for Disease Control and Prevention](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html) and the data journalism site [FiveThirtyEight](https://projects.fivethirtyeight.com/covid-forecasts/). Through these channels, and our public data repository, our work serves as a vital source of public information about where the outbreak is headed next.
+           COVID-19 Forecast Hub data are used by the <a href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html" target="_blank">US Centers for Disease Control and Prevention</a> and the data journalism site <a href="https://projects.fivethirtyeight.com/covid-forecasts/" target="_blank">FiveThirtyEight</a>. Through these channels, and our public data repository, our work serves as a vital source of public information about where the outbreak is headed next.
         actions:
           - label: Mortality forecasts @ CDC
             url: https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html
