@@ -10,16 +10,16 @@ The COVID-19 Forecast Hub is based at the <a href="https://reichlab.io/" target=
  - Nicholas Reich, UMass-Amherst (project lead, ensemble model, data curation)
  - Evan Ray, UMass-Amherst (ensemble model)
  - Jarad Niemi, Iowa State (data curation)
- - Khoa Le, UMass-Amherst (data curation)
- - Ayush Khandelwal, UMass-Amherst (data curation)
- - Abdul Hannan Kanji, UMass-Amherst (visualization, data curation)
- - Katie House, UMass-Amherst (visualization, data curation)
- - Estee Cramer, UMass-Amherst (data curation, communication)
- - Matt Cornell, UMass-Amherst (validation, Zoltar integration)
- - Andrea Brennen, In-Q-Tel (design, metadata curation)
- - Johannes Bracher, Heidelberg Institute for Theoretical Studies and Karlsruhe Institute of Technology (ensemble model, model evaluation, data curation)
+ - Khoa Le, UMass-Amherst (architecture, data curation)
+ - Ayush Khandelwal, UMass-Amherst (architecture, data curation)
+ - Abdul Hannan Kanji, UMass-Amherst (architecture, data curation)
+ - Katie House, UMass-Amherst (architecture, data curation)
+ - Estee Cramer, UMass-Amherst (data curation, ensemble model)
+ - Matt Cornell, UMass-Amherst (architecture, Zoltar)
+ - Andrea Brennen, In-Q-Tel (design, data curation)
+ - Johannes Bracher, Heidelberg Institute for Theoretical Studies and Karlsruhe Institute of Technology (ensemble model, data curation)
  
- We also have had the priviledge of working with a global team of forecasting experts on thinking about our ensemble model. The "ensemble advisory team" consists of the following individuals, whom we wish to acknowledge and thank publicly:
+ We also have had the privilege of working with a global team of forecasting experts on thinking about our ensemble model. The "ensemble advisory team" consists of the following individuals, whom we wish to acknowledge and thank publicly:
  
   - Sebastian Funk, London School of Hygiene and Tropical Medicine
   - Tilmann Gneiting, Heidelberg Institute for Theoretical Studies and Karlsruhe Institute of Technology
