@@ -52,20 +52,48 @@ sections:
             url: community/
             type: link
   - section_id: text-img
-    type: section_content
-    image: images/10.jpg
-    image_position: left
+    type: section_media
     title: In the news
-    content: >-
-      Check out the coverage of COVID-19 Forecast Hub data in the press!  
-      PBS NewsHour, FiveThirtyEight, NYTimes, Economist, AgenceFrance Press, Boston Globe, Washington Post, ABC News
+    link_items: 
+      - title_url: https://google.com
+        title_name: PBS
+    content1: >-
+      [Early projections of covid-19 in America underestimated its severity.](https://www.economist.com/graphic-detail/2020/05/23/early-projections-of-covid-19-in-america-underestimated-its-severity)  
+      
+      _The Economist_ | _23 May 2020_   
+
+
+
+      [What computer-based models can tell us about coronavirus-and what they can't](https://www.pbs.org/newshour/show/what-computer-based-models-can-tell-us-about-coronavirus-and-what-they-cant)  
+
+      _PBS NewsHour | 20 May 2020_  
+
+    content2: >-
+      [How To Make Sense of All The COVID-19 Projections? A New Model Combines Them](https://www.npr.org/sections/health-shots/2020/05/13/855038708/combining-different-models-new-coronavirus-projection-shows-110-000-deaths-by-ju)  
+
+      _NPR Morning Edition | 13 May 2020_  
+
+
+
+      [Scientists Crunch Data to Predict How Many People Will Get Coronavirus](https://www.wsj.com/articles/scientists-crunch-data-to-predict-how-many-people-will-get-coronavirus-11584479851)  
+
+      _The Wall street Journal | 17 March 2020_  
+
+    content3: >-
+      [Coronavirus hot spots erupt across the country; experts warn of second wave in South](https://www.washingtonpost.com/health/coronavirus-hot-spots-erupt-across-the-country-experts-warn-of-possible-outbreaks-in-south/2020/05/20/49bc6d10-9ab4-11ea-a282-386f56d579e6_story.html)  
+
+      _Washington Post | May 20, 2020_  
+
+
+
+      [Where The Latest COVID-19 Models Think We're Headed ? And Why They Disagree](https://projects.fivethirtyeight.com/covid-forecasts/)  
+
+      _FiveThirtyEight | 1 May 2020_  
+
     actions:
       - label: See more
-        url: /docs/getting-started/index.html
+        url: /doc/media/index.html
         type: primary
-      - label: Get Started
-        url: /docs/getting-started/index.html
-        type: secondary
   # - section_id: features-two-col
   #   type: section_grid
   #   title: Sample Layouts
