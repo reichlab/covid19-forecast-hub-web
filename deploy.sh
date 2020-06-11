@@ -14,6 +14,10 @@ bundle exec jekyll build -d docs
 # Go To Public folder
 # cd public
 
+if [ "$ENV" = "CI" ]; then
+	git config user.name "GitHub Action"
+	git config user.email "user@example.com"
+fi
 # Add changes to git.
 git add .
 
@@ -23,11 +27,6 @@ if [ -n "$*" ]; then
 	msg="$*"
 fi
 git commit -m "$msg"
-
-if [ "$ENV" = "CI" ]; then
-	git config user.name "GitHub Action"
-	git config user.email "user@example.com"
-fi
 
 # Push source and build repos.
 git push origin master 
