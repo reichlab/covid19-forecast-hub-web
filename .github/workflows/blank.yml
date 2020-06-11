@@ -25,10 +25,15 @@ jobs:
     
     - name: Setup Python
       uses: actions/setup-python@v2
+      
+    - name: Build Jekyll
+      uses: jerryjvl/jekyll-build-action@v1
+      
     - name: setup setuptools
       run: sudo apt-get install -y python-setuptools
     # Runs a single command using the runners shell
-    - name: Run a one-line script
+      
+    - name: Run deploy script
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         Z_USERNAME: ${{ secrets.Z_USERNAME }}
