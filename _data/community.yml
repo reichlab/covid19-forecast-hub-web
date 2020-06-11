@@ -1,0 +1,471 @@
+- abbreviation: CU-70-contact
+  description: "This model makes predictions about the future that are dependent on\
+    \ a particular set \r\n    of assumptions about how interventions are implemented\
+    \ and how effective they are. \r\n    Estimates of spatio-temporal COVID-19 demand\
+    \ and medical system critical care supply \r\n    were calculated for all continental\
+    \ US counties. These estimates were statistically \r\n    summarized and mapped\
+    \ for US counties, regions and urban versus non-urban areas. Estimates \r\n  \
+    \  of COVID-19 infections and patients needing critical care were calculated for\
+    \ 21-day and \r\n    42-day time periods starting from April 2, 2020 to May 13,\
+    \ 2020 for a reactive pattern of \r\n    30% contact reduction (\"70contact\"\
+    ) through actions such as social distancing. Multiple \r\n    national public\
+    \ and private datasets were linked and harmonized in order to calculate \r\n \
+    \   county-level hospital critical care bed counts that include currently available\
+    \ beds and \r\n    those that could be made available under four surge response\
+    \ scenarios \u2013 very low, low, \r\n    medium, and high \u2013 as well as deaths\
+    \ in counties that had exceeded their hospital critical \r\n    care capacity\
+    \ limits.\r\nCitation: \"Sen Pei, Jeffrey Shaman, Initial Simulation of SARS-CoV2\
+    \ Spread and Intervention Effects in the Continental US. medRxiv.doi: https://doi.org/10.1101/2020.03.21.20040303;\
+    \  Flattening the curve before it flattens us: hospital critical care capacity\
+    \ limits and mortality from novel coronavirus (SARS-CoV2) cases in US counties.\
+    \ https://behcolumbia.files.wordpress.com/2020/04/flattening-the-curve-before-it-flattens-us-20200405b.pdf\""
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/CU-70contact
+  name: 70-contact
+- abbreviation: IHME-CurveFit
+  description: "This model makes predictions about the future that are dependent on\
+    \ the assumption \r\n    that current interventions continue. The modeling approach\
+    \ in this study is divided into four components: \r\n    (i) identification and\
+    \ processing of COVID-19 data; \r\n    (ii) statistical model estimation for population\
+    \ death rates as a function of time \r\n    since the death rate exceeds a threshold\
+    \ in a location; \r\n    (iii) predicting time to exceed a given population death\
+    \ threshold in states early in the pandemic; and \r\n    (iv) modeling health\
+    \ service utilization as a function of deaths.\"\r\n    CurveFit package available\
+    \ at: https://github.com/ihmeuw-msca/CurveFit\r\nCitation: Forecasting COVID-19\
+    \ impact on hospital bed-days, ICU-days, ventilator-days and deaths by US state\
+    \ in the next 4 months https://www.medrxiv.org/content/10.1101/2020.03.27.20043752v1;\
+    \ http://www.healthdata.org/covid/publications"
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/IHME-CurveFit
+  name: CurveFit
+- abbreviation: CU-60-contact
+  description: "This model makes predictions about the future that are dependent on\
+    \ a particular set \r\n    of assumptions about how interventions are implemented\
+    \ and how effective they are. \r\n    Estimates of spatio-temporal COVID-19 demand\
+    \ and medical system critical care supply were \r\n    calculated for all continental\
+    \ US counties. These estimates were statistically summarized \r\n    and mapped\
+    \ for US counties, regions and urban versus non-urban areas. Estimates of COVID-19\
+    \ \r\n    infections and patients needing critical care were calculated for 21-day\
+    \ and 42-day time periods \r\n    starting from April 2, 2020 to May 13, 2020\
+    \ for a reactive pattern of 40% contact reduction \r\n    (\"60contact\") through\
+    \ actions such as social distancing. Multiple national public and private \r\n\
+    \    datasets were linked and harmonized in order to calculate county-level hospital\
+    \ critical care \r\n    bed counts that include currently available beds and those\
+    \ that could be made available under \r\n    four surge response scenarios \u2013\
+    \ very low, low, medium, and high \u2013 as well as deaths in counties \r\n  \
+    \  that had exceeded their hospital critical care capacity limits.\r\ncitation:\
+    \ \"Sen Pei, Jeffrey Shaman, Initial Simulation of SARS-CoV2 Spread and Intervention\
+    \ Effects in the Continental US. medRxiv.doi: https://doi.org/10.1101/2020.03.21.20040303;\
+    \  Flattening the curve before it flattens us: hospital critical care capacity\
+    \ limits and mortality from novel coronavirus (SARS-CoV2) cases in US counties.\
+    \ https://behcolumbia.files.wordpress.com/2020/04/flattening-the-curve-before-it-flattens-us-20200405b.pdf\""
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/CU-60contact
+  name: 60-contact
+- abbreviation: COVIDhub-ensemble
+  description: "The ensemble combines models unconditional on particular interventions\
+    \ \r\n    being in place with those conditional on existing social distancing\
+    \ measures \r\n    continuing. Models are combined by taking arithmetic averages\
+    \ of quantiles and \r\n    point estimates."
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/COVIDhub-ensemble
+  name: ensemble
+- abbreviation: UMass-MechBayes
+  description: Bayesian compartmental model with observations on cumulative case counts
+    and cumulative deaths. Model is fit independently to each state. Model includes
+    observation noise and a case detection rate.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/UMass-MechBayes
+  name: MechBayes
+- abbreviation: YYG-ParamSearch
+  description: "We've built a simulator based on the SEIS model with learned parameters\
+    \ to make daily projections regarding \r\n    COVID-19 infections and deaths in\
+    \ all 50 US states and 40 countries. The model also accounts for the possible\
+    \ \r\n    effects of the relaxing of social distancing guidelines across the US\
+    \ and Europe. The parameters/inputs of this \r\n    simulator are learned using\
+    \ hyperparameter optimization that minimizes the error between the projected outputs\
+    \ \r\n    (projected daily deaths) and the actual results (reported daily deaths).\
+    \ Because the infections curve is unique \r\n    for every region, we let the\
+    \ model use each region's own data to learn the best set of parameters for that\
+    \ region. \r\n    This includes parameters such as: mortality rate, initial R_0,\
+    \ post-lockdown R, and the inflection date of any lockdowns. \r\n    Other variables\
+    \ such as the latency period, infectious period, and virus shedding period are\
+    \ fixed based on published \r\n    literature. After some additional validation\
+    \ techniques to minimize overfitting, we use the learned parameters to \r\n  \
+    \  simulate the future and make projections."
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/YYG-ParamSearch
+  name: ParamSearch
+- abbreviation: LANL-GrowthRate
+  description: "This model makes predictions about the future, unconditional on particular\
+    \ intervention strategies.\r\n    The model consists of two processes. The first\
+    \ process is a statistical model of how the \r\n    number of COVID-19 infections\
+    \ changes over time. The second process maps the number of \r\n    infections\
+    \ to the reported data. We model the growth of new cases as the product of a \r\
+    \n    dynamic growth parameter and the underlying numbers of susceptible and infected\
+    \ cases \r\n    in the population at the previous time step, scaled by the size\
+    \ of the state's starting \r\n    susceptible population. The growth parameter\
+    \ can be thought of as the transmissibility of \r\n    the virus in that state\
+    \ on that date. To model new deaths in the population, we assume that a \r\n \
+    \   fraction of the newly generated cases will die and learn that fraction from\
+    \ observations. \r\n    We can also anticipate when the outbreak is likely to\
+    \ peak, i.e. when the daily number of new \r\n    confirmed cases reaches its\
+    \ maximum.\"\r\ncitation: https://covid-19.bsvgateway.org/"
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/LANL-GrowthRate
+  name: GrowthRate
+- abbreviation: CovidAnalytics-DELPHI
+  description: "This model makes predictions for future cases based on a heavily modified\
+    \ SEIR model.\r\n    New states are added to the SEIR model to account for cases\
+    \ that went undetected, and an explicit death state is included. The infection\
+    \ rate is\r\n    corrected with a nonlinear curve that represents the governmental\
+    \ and societal response (which is assumed)\r\n    to continue until the end of\
+    \ the pandemic). Key parameters for the disease are fixed using a metanalysis\
+    \ \r\n    conducted by the CovidAnalytics group of over 150 parameters while epidemiological\
+    \ parameters are fitted\r\n    to hisotical death counts and detected cases."
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/MIT_CovidAnalytics-DELPHI
+  name: DELPHI
+- abbreviation: UMass-ExpertCrowd
+  description: "April 22: Experts in the modeling of infectious disease, public health,\
+    \ and epidemiology provide forecasts of \r\n    the smallest, most likely, and\
+    \ largest possible cumulative number of deaths at the US level. We transform each\
+    \ \r\n    expert's three estimates into a triangular probability distribution\
+    \ and take an equally-weighted average of \r\n    expert predictive densities."
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/UMass-ExpertCrowd
+  name: Expert consensus distributions
+- abbreviation: UCLA-SuEIR
+  description: Our model is a variant of the SEIR model, which takes into account
+    the hidden factors of untested cases as well as unreported cases. For more details,
+    please refer to https://covid19.uclaml.org/
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/UCLA-SuEIR
+  name: SuEIR
+- abbreviation: CU-80-contact1x10p
+  description: This metapopulation county-level SEIR model makes projections of future
+    COVID-19 incidence and deaths.  We produce a number of different intervention
+    scenarios, each assuming various interventions and rates of compliance are implemented
+    in the future.  This scenario assumes a weekly 20% decrease in counties with growing
+    weekly cases and stay-at-home orders in place, and a one-time 10% increase in
+    states that have reopened.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/CU-80contact1x10p
+  name: 80-contact1x10p
+- abbreviation: UT-Mobility
+  description: "For each US state, we use local data from mobile-phone GPS traces\
+    \ made available by [SafeGraph] to quantify the \r\n    changing impact of social-distancing\
+    \ measures on ``flattening the curve.''  SafeGraph is a data company that \r\n\
+    \    aggregates anonymized location data from numerous applications in order to\
+    \ provide insights about physical places. \r\n    To enhance privacy, SafeGraph\
+    \ excludes census block group information if fewer than five devices visitedan\
+    \ \r\n    establishment in a month from a given census block group.  These data\
+    \ are aggregated by state to create metrics \r\n    of social distancing, which\
+    \ are used as predictors in the model.\r\n    We use a Bayesian multilevel negative\
+    \ binomial regression model for the number of deaths for each day, and implement\
+    \ \r\n    the model in R using the rstanarm package."
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/UT-Mobility
+  name: Mobility
+- abbreviation: UChicago-CovidIL_30_increase
+  description: This is a compartmental, age-structured SEIR model that infers past
+    SARS-CoV-2 transmission rates in Illinois and can be used to forecast community
+    spread, hospital and ICU burden, and mortality under current and hypothetical
+    public health interventions.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/UChicago-CovidIL_30_increase
+  name: CovidIL_30_increase
+- abbreviation: CU-80-contactw10p
+  description: This metapopulation county-level SEIR model makes projections of future
+    COVID-19 incidence and deaths.  We produce a number of different intervention
+    scenarios, each assuming various interventions and rates of compliance are implemented
+    in the future.  This scenario assumes a weekly 20% decrease in counties with growing
+    weekly cases and stay-at-home orders in place, and a weekly 10% increase in states
+    that have reopened.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/CU-80contactw10p
+  name: 80-contactw10p
+- abbreviation: CU-80-contactw5p
+  description: This metapopulation county-level SEIR model makes projections of future
+    COVID-19 incidence and deaths.  We produce a number of different intervention
+    scenarios, each assuming various interventions and rates of compliance are implemented
+    in the future.  This scenario assumes a weekly 20% decrease in counties with growing
+    weekly cases and stay-at-home orders in place, and a weekly 5% increase in states
+    that have reopened.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/CU-80contactw5p
+  name: 80-contactw5p
+- abbreviation: Geneva-DeterministicGrowth
+  description: "\"We calculate the growth rate of cumulative cases (resp. deaths)\
+    \ between two days ago and today. \r\n    If it's greater than 5%, we use an exponential\
+    \ model to forecast the cumulative number of cases (resp. deaths), \r\n    and\
+    \ then derive the daily number of cases (resp. deaths). If it's less than 5%,\
+    \ we use an linear model instead.\""
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Geneva-DeterministicGrowth
+  name: DeterministicGrowth
+- abbreviation: UChicago-CovidIL_10_increase
+  description: This is a compartmental, age-structured SEIR model that infers past
+    SARS-CoV-2 transmission rates in Illinois and can be used to forecast community
+    spread, hospital and ICU burden, and mortality under current and hypothetical
+    public health interventions.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/UChicago-CovidIL_10_increase
+  name: CovidIL_10_increase
+- abbreviation: UA-EpiCovDA
+  description: 'EpiCovDA is an extension of the EpiGro model. To combine Covid-19
+    data with the model during the pandemic, a variational data assimilation  method
+    is used (sometimes called  4D-Var) to fit model parameters. For the data assimilation
+    piece of EpiCovDA, a  prior  distribution of the parameters was estimated by fitting
+    the model to states whose epidemic curves were further along early during the
+    pandemic.  See <https://doi.org/10.1016/j.epidem.2016.10.002> for more information
+    about EpiGro. '
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/UA-EpiCovDA
+  name: Epidemic Covid-19 Curve with Variational Data Assimilation
+- abbreviation: CU-select
+  description: This metapopulation county-level SEIR model makes projections of future
+    COVID-19 incidence and deaths.  We produce a number of different intervention
+    scenarios, each assuming various interventions and rates of compliance are implemented
+    in the future.  This submission is the selection of the weekly scenario we believe
+    to be most plausible given current observations and planned intervention policies.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/CU-select
+  name: select
+- abbreviation: PSI-DRAFT
+  description: 'A stochastic/deterministic, single-population SEIRX model that stratifies
+    by both age distribution and disease severity and includes generic intervention
+    fitting. '
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/PSI-DRAFT
+  name: Disease Rapid Analysis and Forecasting Tool
+- abbreviation: IowaStateLW-STEM10
+  description: We develop a nonparametric space-time disease transmission model for
+    the epidemic data, and to study the spatial-temporal pattern in the spread of
+    COVID-19 at the county level. The proposed methodology can be used to dissect
+    the spatial structure and dynamics of spread, as well as to forecast how this
+    outbreak may unfold through time and space in the future.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/IowaStateLW-STEM10
+  name: Spatiotemporal Epidemic Modeling Daily Recovery 10%
+- abbreviation: JHU_IDD-CovidSP
+  description: County-level metapopulation model with commuting and stochastic SEIR
+    disease dynamics. Our model takes as input data explicit indicators of which states
+    have shelter-in-place or social-distancing policies in place at the time the forecast
+    is made and assumes a reduced intervention effectiveness after shelter-in-place
+    orders are lifted.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/JHU_IDD-CovidSP
+  name: CovidScenarioPipeline
+- abbreviation: UChicago-CovidIL_60
+  description: This is a compartmental, age-structured SEIR model that infers past
+    SARS-CoV-2 transmission rates in Illinois and can be used to forecast community
+    spread, hospital and ICU burden, and mortality under current and hypothetical
+    public health interventions.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/UChicago-CovidIL_60
+  name: CovidIL_60
+- abbreviation: Quantori-Multiagents
+  description: The Agent-based local stochastic model of COVID-19 transmission
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Quantori-Multiagents
+  name: The Agent-based local stochastic model of COVID-19
+- abbreviation: IowaStateLW-STEM15
+  description: We develop a nonparametric space-time disease transmission model for
+    the epidemic data, and to study the spatial-temporal pattern in the spread of
+    COVID-19 at the county level. The proposed methodology can be used to dissect
+    the spatial structure and dynamics of spread, as well as to forecast how this
+    outbreak may unfold through time and space in the future.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/IowaStateLW-STEM15
+  name: Spatiotemporal Epidemic Modeling Daily Recover 15%
+- abbreviation: Imperial-Ensemble2
+  description: "This model makes predictions about the future, unconditional on particular\
+    \ intervention strategies.\r\n    Ensemble1 and Ensemble2 are disease transmission\
+    \ models fit with different assumptions about serial\r\n    intervals."
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Imperial-ensemble2
+  name: Ensemble2
+- abbreviation: Auquan-SEIR
+  description: "We start with a standard SEIR model and break down the Infectious\
+    \ compartment(I) into reported infections (Ir) and unreported infections (Iu).\r\
+    \n    People from the Exposed compartment(E) with symptoms go into the reported\
+    \ infections (Ir) compartment. People with mild or no symptoms go into the unreported\
+    \ infections compartment.\r\n    Both reported infections (Ir) and unreported\
+    \ infections (Iu) contribute to disease spread, but at different rates - a low\
+    \ spread for people quarantined in compartment Ir, and a high spread for, often,\
+    \ asymptomatic people in compartment Iu. This handles the quarantine measures\
+    \ taken by countries to limit the infections.\r\n    Some people in reported infections\
+    \ (Iu) recover (compartment C) and some die (compartment D)\r\n    All people\
+    \ in unreported infections (Iu) recover (compartment Cu), there are no mortalities\
+    \ in this compartment. If their symptoms were serious enough they would be reported\
+    \ (and therefore in compartment Ir).\r\n    We fit our model to reported confirmed\
+    \ cases and reported deaths in a region to estimate beta1 and beta2 for that region.\
+    \ For other parameters, we use estimates from other studies as starting point\
+    \ and learn using hyperparameter optimization that minimizes the error between\
+    \ projected daily deaths and reported daily deaths.\r\n\xA9 2020 GitHub, Inc."
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Auquan-SEIR
+  name: MLOptimizedModifiedSEIR
+- abbreviation: UChicago-CovidIL_40
+  description: This is a compartmental, age-structured SEIR model that infers past
+    SARS-CoV-2 transmission rates in Illinois and can be used to forecast community
+    spread, hospital and ICU burden, and mortality under current and hypothetical
+    public health interventions.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/UChicago-CovidIL_40
+  name: CovidIL_40
+- abbreviation: UChicago-CovidIL_80
+  description: This is a compartmental, age-structured SEIR model that infers past
+    SARS-CoV-2 transmission rates in Illinois and can be used to forecast community
+    spread, hospital and ICU burden, and mortality under current and hypothetical
+    public health interventions.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/UChicago-CovidIL_80
+  name: CovidIL_80
+- abbreviation: Imperial-Ensemble1
+  description: "This model makes predictions about the future, unconditional on particular\
+    \ intervention strategies.\r\n    Ensemble1 and Ensemble2 are disease transmission\
+    \ models fit with different assumptions about serial\r\n    intervals."
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Imperial-ensemble1
+  name: Ensemble1
+- abbreviation: NotreDame-FRED
+  description: FRED is an agent-based model developed for influenza with parameters
+    modified to represent the natural history of COVID-19
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/NotreDame-FRED
+  name: NotreDame-FRED
+- abbreviation: USACE-ERDC_SEIR
+  description: The ERDC SEIR model makes predictions of several variables (e.g., reported
+    new cases  per day, cumulative reported cases, the susceptible population, etc...).  Model
+    parameters  are estimated using historical data using techniques from Bayesian
+    inference.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/USACE-ERDC_SEIR
+  name: ERDC_SEIR
+- abbreviation: UChicago-CovidIL
+  description: This is a compartmental, age-structured SEIR model that infers past
+    SARS-CoV-2 transmission rates in Illinois and can be used to forecast community
+    spread, hospital and ICU burden, and mortality under current and hypothetical
+    public health interventions.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/UChicago-CovidIL
+  name: CovidIL
+- abbreviation: IowaStateLW-STEM8
+  description: Spatiotemporal Dynamics, Nowcasting and Forecasting of COVID-19 in
+    the United States.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/IowaStateLW-STEM8
+  name: Spatiotemporal Epidemic Modeling Daily Recovery 8%
+- abbreviation: UChicago-CovidIL_100
+  description: This is a compartmental, age-structured SEIR model that infers past
+    SARS-CoV-2 transmission rates in Illinois and can be used to forecast community
+    spread, hospital and ICU burden, and mortality under current and hypothetical
+    public health interventions.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/UChicago-CovidIL_100
+  name: CovidIL_100
+- abbreviation: IowaStateLW-STEM
+  description: Spatiotemporal Dynamics, Nowcasting and Forecasting of COVID-19 in
+    the United States.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/IowaStateLW-STEM
+  name: Spatiotemporal Epidemic Modeling
+- abbreviation: CAN-SEIR_CAN
+  description: Forecast by model built by PhDs in epidemiology and physics, based
+    on expert opinions in public health and epidemiology of infectious disease, and
+    updated based on daily feed data in cases, deaths, and hostpitalizations.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/CovidActNow-SEIR_CAN
+  name: SEIR_CAN
+- abbreviation: GT-DeepCOVID
+  description: This model learns the functional dependence of hospitalization and
+    mortality rate on various syndromic, and clinical metrics (such as increase in
+    positive Covid tests, recovery rate and no of patients on ventilation) from historical
+    data. To compensate for the effects of noise (in data and initialization), the
+    model is trained on several subsamples and then aggregated.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/GT-DeepCOVID
+  name: DeepCOVID
+- abbreviation: CU-80-contact
+  description: "methods: >- \r\n    This model makes predictions about the future\
+    \ that are dependent on a particular set \r\n    of assumptions about how interventions\
+    \ are implemented and how effective they are. \r\n    Estimates of spatio-temporal\
+    \ COVID-19 demand and medical system critical care \r\n    supply were calculated\
+    \ for all continental US counties. These estimates were \r\n    statistically\
+    \ summarized and mapped for US counties, regions and urban versus \r\n    non-urban\
+    \ areas. Estimates of COVID-19 infections and patients needing critical \r\n \
+    \   care were calculated for 21-day and 42-day time periods starting from April\
+    \ 2, 2020 \r\n    to May 13, 2020 for a reactive pattern of 20% contact reduction\
+    \ (\"80contact\") through \r\n    actions such as social distancing. Multiple\
+    \ national public and private datasets were \r\n    linked and harmonized in order\
+    \ to calculate county-level hospital critical care bed \r\n    counts that include\
+    \ currently available beds and those that could be made available \r\n    under\
+    \ four surge response scenarios \u2013 very low, low, medium, and high \u2013\
+    \ as well as \r\n    deaths in counties that had exceeded their hospital critical\
+    \ care capacity limits.\r\nCitation: \"Sen Pei, Jeffrey Shaman, Initial Simulation\
+    \ of SARS-CoV2 Spread and Intervention Effects in the Continental US. medRxiv.doi:\
+    \ https://doi.org/10.1101/2020.03.21.20040303;  Flattening the curve before it\
+    \ flattens us: hospital critical care capacity limits and mortality from novel\
+    \ coronavirus (SARS-CoV2) cases in US counties. https://behcolumbia.files.wordpress.com/2020/04/flattening-the-curve-before-it-flattens-us-20200405b.pdf\"\
+    \r\n\xA9 2020 GitHub, Inc."
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/CU-80contact
+  name: 80-contact
+- abbreviation: SWC-TerminusCM
+  description: Terminus is a mechanistic Compartmental Model using disease parameter
+    estimates from literature. It uses Bayesian inference to predict the most likely
+    model parameters.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/SWC-TerminusCM
+  name: Terminus Compartmental Model
+- abbreviation: ISUandPKU-vSEIdR
+  description: 'Estimate the effective reproduction number and conduct forecast for
+    the number of daily new cases and death based on an extended varying coefficient
+    SEIR model. '
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/ISUandPKU-vSEIdR
+  name: Extended varying coefficient SEIR model
+- abbreviation: COVID19SimCons-COVID19Sim
+  description: An interactive tool to inform COVID-19 intervention policy decisions
+    in the United States.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/COVID19SimCons-COVID19Sim
+  name: COVID-19 Simulator
+- abbreviation: STH-3PU
+  description: 'Model assumes pandemics hit in 3 distinct phases. Each phase can be
+    represented by a single variable and therefore the variables can be isolated. '
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/STH-3PU
+  name: 3 Phase Unadjusted
+- abbreviation: CDDEP-ABM
+  description: GlobalAgentBasedModel
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/CDDEP-GlobalAgentBasedModel
+  name: GlobalAgentBasedModel
+- abbreviation: CU-80-contact1x5p
+  description: This metapopulation county-level SEIR model makes projections of future
+    COVID-19 incidence and deaths.  We produce a number of different intervention
+    scenarios, each assuming various interventions and rates of compliance are implemented
+    in the future.  This scenario assumes a weekly 20% decrease in counties with growing
+    weekly cases and stay-at-home orders in place, and a one-time 5% increase in states
+    that have reopened.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/CU-80contact1x5p
+  name: 80-contact1x5p
+- abbreviation: Areon_OW-Navigator
+  description: Oliver Wyman's Pandemic Navigator provides forecasts and scenario analysis
+    for Detected and Undetected cases and deaths following a compartmental formulation
+    with non-stationary transition rates.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Areon_OW-Navigator
+  name: Pandemic Navigator
+- abbreviation: MOBS-GLEAM_COVID
+  description: "This model makes predictions about the future that are dependent on\
+    \ the assumption \r\n    that current interventions continue. \r\n    The GLEAM\
+    \ framework is based on a metapopulation approach in which the world is divided\r\
+    \n    into geographical subpopulations. Human mobility between subpopulations\
+    \ is represented on a network. \r\n    This mobility data layer identifies the\
+    \ numbers of individuals traveling from one sub-population to \r\n    another.\
+    \ The mobility network is made up of different kinds of mobility processes, from\
+    \ short-range\r\n    commuting between nearby subpopulations to intercontinental\
+    \ flights. To model short-range mobility \r\n    such as commuting or car travel,\
+    \ we rely on databases collected from the Offices of Statistics of 30 \r\n   \
+    \ countries on five continents. Superimposed on the worldwide population and mobility\
+    \ layers is an \r\n    agent-based epidemic model that defines the infection and\
+    \ population dynamics. \r\ncitation: https://uploads-ssl.webflow.com/58e6558acc00ee8e4536c1f5/5e8bab44f5baae4c1c2a75d2_GLEAM_web.pdf"
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/MOBS_NEU-GLEAM_COVID
+  name: GLEAM COVID-19
+- abbreviation: GT_CHHS-COVID19
+  description: Agent-based simulation model to project COVID19 infection spread.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/GT_CHHS-COVID19
+  name: COVID19
+- abbreviation: Covid19Sim-Simulator
+  description: An interactive tool developed by researchers at Mass General Hospital,
+    Harvard Medical School, Georgia Tech and Boston Medical Center to inform COVID-19
+    intervention policy decisions in the United States.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Covid19Sim-Simulator
+  name: Simulator
+- abbreviation: CU-nointerv
+  description: "This model makes predictions about the future that are dependent on\
+    \ a particular set \r\n    of assumptions about how interventions are implemented\
+    \ and how effective they are. \r\n    Estimates of spatio-temporal COVID-19 demand\
+    \ and medical system critical care \r\n    supply were calculated for all continental\
+    \ US counties. These estimates were \r\n    statistically summarized and mapped\
+    \ for US counties, regions and urban versus \r\n    non-urban areas. Estimates\
+    \ of COVID-19 infections and patients needing critical \r\n    care were calculated\
+    \ for 21-day and 42-day time periods starting from April 2, 2020 \r\n    to May\
+    \ 13, 2020 for a reactive pattern of 0% of contact reduction (\"nointerv\") through\
+    \ \r\n    actions such as social distancing. Multiple national public and private\
+    \ datasets were \r\n    linked and harmonized in order to calculate county-level\
+    \ hospital critical care bed \r\n    counts that include currently available beds\
+    \ and those that could be made available \r\n    under four surge response scenarios\
+    \ \u2013 very low, low, medium, and high \u2013 as well as \r\n    deaths in counties\
+    \ that had exceeded their hospital critical care capacity limits.\r\nCitation:\
+    \ \"Sen Pei, Jeffrey Shaman, Initial Simulation of SARS-CoV2 Spread and Intervention\
+    \ Effects in the Continental US. medRxiv.doi: https://doi.org/10.1101/2020.03.21.20040303;\
+    \  Flattening the curve before it flattens us: hospital critical care capacity\
+    \ limits and mortality from novel coronavirus (SARS-CoV2) cases in US counties.\
+    \ https://behcolumbia.files.wordpress.com/2020/04/flattening-the-curve-before-it-flattens-us-20200405b.pdf\""
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/CU-nointerv
+  name: nointerv
+- abbreviation: CU-nochange
+  description: This metapopulation county-level SEIR model assumes that current contact
+    rates will remain unchanged in the future.
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/CU-nochange
+  name: nochange
