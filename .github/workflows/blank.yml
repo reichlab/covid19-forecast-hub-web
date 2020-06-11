@@ -7,6 +7,9 @@ name: CI
 on:
   schedule:
   - cron: "0 2 * * 1-5"
+  push:
+    branches:
+      - master
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -22,4 +25,8 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        Z_USERNAME: ${{ secrets.Z_USERNAME }}
+        Z_PASSWORD: ${{ secrets.Z_PASSWORD }}
       run: bash deploy.sh
