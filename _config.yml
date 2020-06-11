@@ -93,3 +93,4 @@ exclude:
   - stackbit-build.sh
   - stackbit-pull.js
   - deploy.sh
+  - update-community.py
