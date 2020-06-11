@@ -40,4 +40,5 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         Z_USERNAME: ${{ secrets.Z_USERNAME }}
         Z_PASSWORD: ${{ secrets.Z_PASSWORD }}
+        ENV: CI
       run: bash deploy.sh
