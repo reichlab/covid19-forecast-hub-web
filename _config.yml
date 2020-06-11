@@ -94,3 +94,6 @@ exclude:
   - stackbit-pull.js
   - deploy.sh
   - update-community.py
+  - README.theme.md
+  - stackbit.yaml
+  - requirements.txt
