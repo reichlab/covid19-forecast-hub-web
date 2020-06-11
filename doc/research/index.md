@@ -7,11 +7,10 @@ Since 2016, our team has worked closely with the US CDC on forecasting seasonal 
 
 This collaborative network has published numerous peer-reviewed research articles on infectious disease forecasting that provide a solid foundation for understanding how to best forecast outbreaks. For example, our work has found that there <a href="https://www.pnas.org/lookup/doi/10.1073/pnas.1812594116" target="_blank">was not a large difference in predictive performance between mechanistic and statistical models</a> of seasonal influenza outbreaks. We also showed <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007486" target="_blank">modest but measurable improvements in accuracy when using an ensemble forecast</a> to forecast influenza.
 
-List of relevant publications:
- - (preprint) https://arxiv.org/abs/2005.12881
- - http://reichlab.io/publications#pub=flu-ensemble-1&keywords=flusight
- - http://reichlab.io/publications#pub=collab-forecasts&keywords=flusight
- - (preprint) http://reichlab.io/publications#pub=adaptive-ensembles&keywords=flusight
- - http://reichlab.io/publications#pub=flusight-201516&keywords=flusight
- - http://reichlab.io/publications#pub=ray-density-ensembles&keywords=flusight
- 
+### Partial list of relevant publications from our team:
+ -  Bracher J, Ray EL, Gneiting T, Reich NG. <a href="https://arxiv.org/abs/2005.12881" target="_blank">"Evaluating epidemic forecasts in an interval format."</a> 2020. _arXiv_. (preprint)
+ - Reich NG, McGowan CJ, Yamana TK, Tushar A, Ray E, Osthus D, Kandula S, Brooks LC, Crawford-Crudell W, Gibson GC, Moore E, Silva R, Biggerstaff M, Johansson MA, Rosenfeld R, Shaman J. <a href="https://doi.org/10.1371/journal.pcbi.1007486" target="_blank">"Accuracy of real-time multi-model ensemble forecasts for seasonal influenza in the U.S."</a> _PLOS Comp Bio_. 2019. 15(11): e1007486.
+ - Reich NG, Brooks L, Spencer F, Kandula S, McGowan C, Moore E, Osthus D, Ray E, Tushar A, Yamana T, Biggerstaff M, Johansson MA, Rosenfeld R, and Shaman J. <a href="https://doi.org/10.1073/pnas.1812594116" target="_blank">"A collaborative multiyear, multimodel assessment of seasonal influenza forecasting in the United States."</a> _PNAS_. 2019. 116(8): 3146-3154. 
+ - McAndrew T, Reich NG. <a href="https://arxiv.org/abs/1908.01675" target="_blank">"Adaptively stacking ensembles for influenza forecasting with incomplete data."</a> _arXiv_. 2019. (preprint) 
+ - McGowan C, Biggerstaff M, Johansson M, Apfeldorf K, Ben-Nun M, Brooks L, Convertino M, Erraguntla M, Farrow D, Freeze J, Ghosh S, Hyun S, Kandula S, Lega J, Liu Y, Michaud N, Morita H, Niemi J, Ramakrishnan N, Ray EL, Reich NG, Riley P, Shaman J, Tibshirani R, Vespignani A, Zhang Q, Reed C. <a href="https://doi.org/10.1038/s41598-018-36361-9" target="_blank">Collaborative efforts to forecast seasonal influenza in the United States, 2015–2016."</a> _Sci Rep_. 2019. 9(683).
+ - Ray EL, Reich NG. <a href="https://doi.org/10.1371/journal.pcbi.1005910" target="_blank">Prediction of infectious disease epidemics via weighted density ensembles."</a>" _PLOS Comp Bio_. 2018. 14(2): e1005910. 
