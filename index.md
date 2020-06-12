@@ -9,14 +9,14 @@ sections:
       This site maintains the authoritative, up-to-date record for forecasts of COVID-19 deaths and hospitalizations in the US created by dozens of leading modeling teams from around the globe. 
     actions:
       - label: Forecast Data
-        url: https://github.com/reichlab/covid19-forecast-hub
+        url: https://zoltardata.com/project/44
         type: secondary
         new_window: true
       - label: Visualization
         url: https://reichlab.io/covid19-forecast-hub/
         type: secondary
         new_window: true
-      - label: Participants
+      - label: Community
         url: https://github.com/reichlab/covid19-forecast-hub#teams-and-models
         type: secondary
         new_window: true
@@ -26,10 +26,10 @@ sections:
     grid_items:
       - title: Up-to-date forecasts
         content: >-
-          Every Monday dozens of modeling teams from across the globe submit forecasts of the trajectory of the COVID-19 outbreak in the US to our forecast data repository. We take these data and build a single ensemble forecast.
+          Every Monday dozens of modeling teams from across the globe submit forecasts of the trajectory of the COVID-19 outbreak in the US to our forecast data repository. We take these data and build a single [ensemble forecast](doc/ensemble/).
         actions:
-          - label: Our data on GitHub
-            url: https://github.com/reichlab/covid19-forecast-hub
+          - label: Browse recent forecast data
+            url: https://zoltardata.com/project/44/project_explorer
             type: link
             new_window: true
       - title: Public Health Impact
@@ -48,8 +48,8 @@ sections:
         content: >-
           We work collaboratively in an open-science framework, welcoming participation from modeling teams around the globe to submit predictions from their best COVID-19 models.
         actions:
-          - label: Learn more about the teams
-            url: community/
+          - label: How to join
+            url: doc/participate/
             type: link
   - section_id: text-img
     type: section_media
@@ -60,39 +60,39 @@ sections:
     content1: >-
       [Early projections of covid-19 in America underestimated its severity.](https://www.economist.com/graphic-detail/2020/05/23/early-projections-of-covid-19-in-america-underestimated-its-severity)  
       
-      _The Economist_ | _23 May 2020_   
+      _The Economist_ | 23 May 2020   
 
 
 
       [What computer-based models can tell us about coronavirus-and what they can't](https://www.pbs.org/newshour/show/what-computer-based-models-can-tell-us-about-coronavirus-and-what-they-cant)  
 
-      _PBS NewsHour | 20 May 2020_  
+      _PBS NewsHour_ | 20 May 2020 
 
     content2: >-
       [How To Make Sense of All The COVID-19 Projections? A New Model Combines Them](https://www.npr.org/sections/health-shots/2020/05/13/855038708/combining-different-models-new-coronavirus-projection-shows-110-000-deaths-by-ju)  
 
-      _NPR Morning Edition | 13 May 2020_  
+      _NPR Morning Edition_ | 13 May 2020  
 
 
 
       [Scientists Crunch Data to Predict How Many People Will Get Coronavirus](https://www.wsj.com/articles/scientists-crunch-data-to-predict-how-many-people-will-get-coronavirus-11584479851)  
 
-      _The Wall street Journal | 17 March 2020_  
+      _The Wall Street Journal_ | 17 March 2020  
 
     content3: >-
       [Coronavirus hot spots erupt across the country; experts warn of second wave in South](https://www.washingtonpost.com/health/coronavirus-hot-spots-erupt-across-the-country-experts-warn-of-possible-outbreaks-in-south/2020/05/20/49bc6d10-9ab4-11ea-a282-386f56d579e6_story.html)  
 
-      _Washington Post | May 20, 2020_  
+      _Washington Post_ | May 20, 2020 
 
 
 
       [Where The Latest COVID-19 Models Think We're Headed ? And Why They Disagree](https://projects.fivethirtyeight.com/covid-forecasts/)  
 
-      _FiveThirtyEight | 1 May 2020_  
+      _FiveThirtyEight_ | 1 May 2020  
 
     actions:
       - label: See more
-        url: /doc/media/index.html
+        url: /doc/media/
         type: primary
   # - section_id: features-two-col
   #   type: section_grid

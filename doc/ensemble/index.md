@@ -1,5 +1,5 @@
 ---
-title: Ensemble Model
+title: Ensemble model
 layout: docs
 ---
 
