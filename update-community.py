@@ -33,6 +33,12 @@ def parse_model(model):
     dates = fetch_forecast_dates(conn, model['forecasts'])
     result['latest_forecast'] = max(dates).strftime(date_format)
     result['earliest_forecast'] = min(dates).strftime(date_format)
+    result['actions'] = []
+    action = {}
+    action['label'] = 'Website'
+    action['type'] = 'primary'
+    action['url'] = result['url']
+    result['actions'].append(action)
     # print('latest:', max(dates).strftime(date_format))
 
     return result
@@ -48,10 +54,9 @@ def gen_community():
     # get model json and parse it to a dictionary
     for m in project.models:
         model = m.json
-        print(model)
+        # print(model)
         # print(conn.json_for_uri(model['url']))
         res_models.append(parse_model(model))
-        break
     
     # write the data to /_data/community.yml
     with open(file_name, 'w') as file:
