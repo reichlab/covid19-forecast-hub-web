@@ -26,4 +26,4 @@ The COVID-19 Forecast Hub is based at the <a href="https://reichlab.io/" target=
   - Ryan Tibshirani, Carnegie Mellon
   - Anja Mühlemann, Universität Bern
   
-Finally we wish to thank all of our collaborators at the CDC whose advice, support, and dedication we greatly appreciate! 
+Finally we wish to thank our collaborators at the CDC whose advice, support, dedication, and long-term vision for collaborative infectious disease forecasting efforts we greatly appreciate! They are Matt Biggerstaff, Michael Johansson, Velma Lopez, Rachel Slayton, and Jo Walker.
