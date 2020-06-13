@@ -6,20 +6,20 @@ sections:
     title: The COVID-19 Forecast Hub
     image: images/5.jpg
     content: >-
-      This site maintains the authoritative, up-to-date record for forecasts of COVID-19 deaths and hospitalizations in the US created by dozens of leading modeling teams from around the globe. 
+      This site maintains the authoritative, up-to-date record for forecasts of COVID-19 deaths and hospitalizations in the US, created by dozens of leading infectious disease modeling teams from around the globe. 
     actions:
-      - label: Forecast Data
+      - label: Forecast data
         url: https://zoltardata.com/project/44
         type: secondary
         new_window: true
       - label: Visualization
-        url: https://reichlab.io/covid19-forecast-hub/
+        url: http://viz.covid19forecasthub.org/
         type: secondary
         new_window: true
       - label: Community
-        url: https://github.com/reichlab/covid19-forecast-hub#teams-and-models
+        url: /community/
         type: secondary
-        new_window: true
+        new_window: false
   - section_id: features
     type: section_grid
     col_number: three
@@ -32,7 +32,7 @@ sections:
             url: https://zoltardata.com/project/44/project_explorer
             type: link
             new_window: true
-      - title: Public Health Impact
+      - title: Public health impact
         content: >-
            COVID-19 Forecast Hub data are used by the <a href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html" target="_blank">US Centers for Disease Control and Prevention</a> and the data journalism site <a href="https://projects.fivethirtyeight.com/covid-forecasts/" target="_blank">FiveThirtyEight</a>. Through these channels, and our public data repository, our work serves as a vital source of public information about where the outbreak is headed next.
         actions:
