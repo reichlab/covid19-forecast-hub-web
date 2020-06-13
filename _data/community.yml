@@ -705,9 +705,9 @@
   description: 'Model assumes pandemics hit in 3 distinct phases. Each phase can be
     represented by a single variable and therefore the variables can be isolated. '
   earliest_forecast: Friday, 29 May 2020
-  forecasts: 14
+  forecasts: 15
   home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/STH-3PU
-  latest_forecast: Friday, 12 June 2020
+  latest_forecast: Saturday, 13 June 2020
   name: 3 Phase Unadjusted
   url: https://zoltardata.com/api/model/278/
 - abbreviation: Areon_OW-Navigator
