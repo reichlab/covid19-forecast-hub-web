@@ -22,15 +22,22 @@ if [ "$ENV" = "CI" ]; then
 	git config user.name "GitHub Action"
 	git config user.email "user@example.com"
 fi
-# Add changes to git.
-git add .
-
-# Commit changes.
-msg="rebuilding site $(date)"
-if [ -n "$*" ]; then
-	msg="$*"
-fi
-git commit -m "$msg"
-
+printf "covid19forecasthub.org" > ./docs/CNAME
 # Push source and build repos.
-git push origin master 
+if [ "$1" != "no_push" ]  && [ "$2" != "no_push" ] 
+then
+	printf "Pushing to GitHub"
+	# Add changes to git.
+	git add .
+
+	# Commit changes.
+	msg="rebuilding site $(date)"
+	if [ -n "$*" ]; then
+		msg="$*"
+	fi
+	git commit -m "$msg"
+
+	git push origin master
+else
+	printf "Skipping push to GitHub"
+fi
