@@ -4,8 +4,12 @@
 set -e
 pip3 install -r requirements.txt
 bundle install
-printf "Generating community file"
-python3 update-community.py
+if [ "$1" != "skip_gen" ]; then
+	printf "Generating community file"
+	python3 update-community.py
+else
+	printf "Skipping community file generation"
+fi
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
 # Build the project.
