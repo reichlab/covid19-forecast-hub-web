@@ -363,6 +363,20 @@
   latest_forecast: Monday, 18 May 2020
   name: CovidIL_10_increase
   url: https://zoltardata.com/api/model/252/
+- abbreviation: OliverWyman-Navigator
+  actions:
+  - label: Website
+    type: primary
+    url: https://zoltardata.com/api/model/286/
+  description: 'Oliver Wyman''s Pandemic Navigator provides forecasts and scenario
+    analysis for Detected and Undetected cases and death counts following a compartmental
+    formulation with non-stationary transition rates. For more: https://pandemicnavigator.oliverwyman.com/'
+  earliest_forecast: Sunday, 07 June 2020
+  forecasts: 1
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/OliverWyman-Navigator
+  latest_forecast: Sunday, 07 June 2020
+  name: Pandemic Navigator
+  url: https://zoltardata.com/api/model/286/
 - abbreviation: UA-EpiCovDA
   actions:
   - label: Website
@@ -397,22 +411,6 @@
   latest_forecast: Sunday, 07 June 2020
   name: CovidScenarioPipeline
   url: https://zoltardata.com/api/model/255/
-- abbreviation: IowaStateLW-STEM10
-  actions:
-  - label: Website
-    type: primary
-    url: https://zoltardata.com/api/model/193/
-  description: We develop a nonparametric space-time disease transmission model for
-    the epidemic data, and to study the spatial-temporal pattern in the spread of
-    COVID-19 at the county level. The proposed methodology can be used to dissect
-    the spatial structure and dynamics of spread, as well as to forecast how this
-    outbreak may unfold through time and space in the future.
-  earliest_forecast: Sunday, 26 April 2020
-  forecasts: 3
-  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/IowaStateLW-STEM10
-  latest_forecast: Sunday, 17 May 2020
-  name: Spatiotemporal Epidemic Modeling Daily Recovery 10%
-  url: https://zoltardata.com/api/model/193/
 - abbreviation: PSI-DRAFT
   actions:
   - label: Website
@@ -439,22 +437,6 @@
   latest_forecast: Friday, 08 May 2020
   name: The Agent-based local stochastic model of COVID-19
   url: https://zoltardata.com/api/model/232/
-- abbreviation: IowaStateLW-STEM15
-  actions:
-  - label: Website
-    type: primary
-    url: https://zoltardata.com/api/model/194/
-  description: We develop a nonparametric space-time disease transmission model for
-    the epidemic data, and to study the spatial-temporal pattern in the spread of
-    COVID-19 at the county level. The proposed methodology can be used to dissect
-    the spatial structure and dynamics of spread, as well as to forecast how this
-    outbreak may unfold through time and space in the future.
-  earliest_forecast: Sunday, 26 April 2020
-  forecasts: 1
-  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/IowaStateLW-STEM15
-  latest_forecast: Sunday, 26 April 2020
-  name: Spatiotemporal Epidemic Modeling Daily Recover 15%
-  url: https://zoltardata.com/api/model/194/
 - abbreviation: Imperial-Ensemble2
   actions:
   - label: Website
@@ -584,19 +566,6 @@
   latest_forecast: Monday, 08 June 2020
   name: ERDC_SEIR
   url: https://zoltardata.com/api/model/262/
-- abbreviation: IowaStateLW-STEM8
-  actions:
-  - label: Website
-    type: primary
-    url: https://zoltardata.com/api/model/264/
-  description: Spatiotemporal Dynamics, Nowcasting and Forecasting of COVID-19 in
-    the United States.
-  earliest_forecast: Sunday, 24 May 2020
-  forecasts: 1
-  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/IowaStateLW-STEM8
-  latest_forecast: Sunday, 24 May 2020
-  name: Spatiotemporal Epidemic Modeling Daily Recovery 8%
-  url: https://zoltardata.com/api/model/264/
 - abbreviation: IowaStateLW-STEM
   actions:
   - label: Website
@@ -684,19 +653,6 @@
   latest_forecast: Monday, 01 June 2020
   name: GlobalAgentBasedModel
   url: https://zoltardata.com/api/model/281/
-- abbreviation: COVID19SimCons-COVID19Sim
-  actions:
-  - label: Website
-    type: primary
-    url: https://zoltardata.com/api/model/277/
-  description: An interactive tool to inform COVID-19 intervention policy decisions
-    in the United States.
-  earliest_forecast: Sunday, 24 May 2020
-  forecasts: 2
-  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/COVID19SimCons-COVID19Sim
-  latest_forecast: Sunday, 31 May 2020
-  name: COVID-19 Simulator
-  url: https://zoltardata.com/api/model/277/
 - abbreviation: STH-3PU
   actions:
   - label: Website
@@ -710,20 +666,6 @@
   latest_forecast: Saturday, 13 June 2020
   name: 3 Phase Unadjusted
   url: https://zoltardata.com/api/model/278/
-- abbreviation: Areon_OW-Navigator
-  actions:
-  - label: Website
-    type: primary
-    url: https://zoltardata.com/api/model/284/
-  description: Oliver Wyman's Pandemic Navigator provides forecasts and scenario analysis
-    for Detected and Undetected cases and deaths following a compartmental formulation
-    with non-stationary transition rates.
-  earliest_forecast: Sunday, 07 June 2020
-  forecasts: 1
-  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Areon_OW-Navigator
-  latest_forecast: Sunday, 07 June 2020
-  name: Pandemic Navigator
-  url: https://zoltardata.com/api/model/284/
 - abbreviation: ISUandPKU-vSEIdR
   actions:
   - label: Website
@@ -790,9 +732,9 @@
     url: https://zoltardata.com/api/model/279/
   description: Agent-based simulation model to project COVID19 infection spread.
   earliest_forecast: Sunday, 31 May 2020
-  forecasts: 2
+  forecasts: 3
   home_url: https://github.com/pkeskinocak/COVID19GA
-  latest_forecast: Sunday, 07 June 2020
+  latest_forecast: Sunday, 14 June 2020
   name: COVID19
   url: https://zoltardata.com/api/model/279/
 - abbreviation: MOBS-GLEAM_COVID
