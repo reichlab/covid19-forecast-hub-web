@@ -18,7 +18,7 @@
     <div class="block-content">
       <div class="grid{% if section.col_number == 'two' %} grid-col-2{% endif %}{% if section.col_number == 'three' %} grid-col-3{% endif %}">
         {% for item in site.data.community %}
-        <div class="grid-item" style="width: 30%;">
+        <div class="grid-item" style="width: 33%;">
           <div class="grid-item-inside">
             {% assign image_is_not_empty = item.image | is_not_empty %}
             {% if image_is_not_empty %}
@@ -26,14 +26,14 @@
               <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" />
             </div>
             {% endif %}
-            {% assign title_is_not_empty = item.abbreviation | is_not_empty %}
+            {% assign title_is_not_empty = item.team_name | is_not_empty %}
             {% if title_is_not_empty %}
-            <h3 class="grid-item-title line-left">
+            <h3 class="grid-item-title line-left" style="max-height: 2.3em;overflow: scroll;">
               {% assign title_url_is_not_empty = item.home_url | is_not_empty %}
               {% if title_url_is_not_empty %}
-              <a href="{{ item.home_url | relative_url }}">{{ item.abbreviation }}</a>
+              <a href="{{ item.home_url | relative_url }}">{{ item.team_name }}</a>
               {% else %}
-              {{ item.abbreviation }}
+              {{ item.team_name }}
               {% endif %}
             </h3>
             {% endif %}
