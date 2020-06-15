@@ -29,12 +29,7 @@
             {% assign title_is_not_empty = item.team_name | is_not_empty %}
             {% if title_is_not_empty %}
             <h3 class="grid-item-title line-left" style="max-height: 2.3em;overflow: scroll;">
-              {% assign title_url_is_not_empty = item.home_url | is_not_empty %}
-              {% if title_url_is_not_empty %}
-              <a href="{{ item.home_url | relative_url }}">{{ item.team_name }}</a>
-              {% else %}
               {{ item.team_name }}
-              {% endif %}
             </h3>
             {% endif %}
             <div class="grid-item-content" style="font-size: small;">

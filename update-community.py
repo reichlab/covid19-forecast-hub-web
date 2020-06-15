@@ -38,11 +38,12 @@ def parse_model(model):
     result['actions'] = []
     action = {}
     action['label'] = 'Website'
-    action['type'] = 'primary'
+    # action['type'] = 'primary'
     action['url'] = result['home_url']
     action['new_window'] = True
+    # action['new_line'] = True
     result['actions'].append(action)
-    result['actions'].append({'label':'Forecast data', 'type':'secondary', 'url':result['url'], 'new_window': True})
+    result['actions'].append({'label':'Forecast data', 'type':'url', 'url':result['url'], 'new_window': True})
     # print('latest:', max(dates).strftime(date_format))
 
     return result

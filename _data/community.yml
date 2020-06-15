@@ -2,11 +2,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/STH-3PU
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/278/
   dates:
   - 2020-05-29
@@ -39,11 +38,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/UCLA-SuEIR
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/198/
   dates:
   - 2020-05-01
@@ -67,11 +65,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/pkeskinocak/COVID19GA
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/279/
   dates:
   - 2020-05-31
@@ -89,11 +86,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/youyanggu/covid19_projections
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/202/
   dates:
   - 2020-04-13
@@ -182,11 +178,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://covid-19.bsvgateway.org/
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/157/
   dates:
   - 2020-05-03
@@ -236,11 +231,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: http://www.healthdata.org/covid/data-downloads
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/154/
   dates:
   - 2020-03-27
@@ -288,11 +282,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://yumouqiu.shinyapps.io/covid-predict/
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/268/
   dates:
   - 2020-05-25
@@ -312,11 +305,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/reichlab/covid19-forecast-hub
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/159/
   dates:
   - 2020-05-04
@@ -342,11 +334,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/COVIDAnalytics/DELPHI
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/196/
   dates:
   - 2020-04-22
@@ -377,11 +368,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/UT-Mobility
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/201/
   dates:
   - 2020-05-11
@@ -414,11 +404,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/predsci/DRAFT
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/254/
   dates:
   - 2020-05-18
@@ -439,11 +428,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/confunguido/covid19_ND_forecasting
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/256/
   dates:
   - 2020-04-27
@@ -466,11 +454,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/USACE-ERDC_SEIR
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/262/
   dates:
   - 2020-05-14
@@ -495,11 +482,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/GT-DeepCOVID
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/206/
   dates:
   - 2020-05-11
@@ -524,11 +510,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/MOBS_NEU-GLEAM_COVID
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/158/
   dates:
   - 2020-04-20
@@ -564,11 +549,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/shaman-lab/COVID-19Projection
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/227/
   dates:
   - 2020-05-03
@@ -599,11 +583,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/dsheldon/covid
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/200/
   dates:
   - 2020-04-26
@@ -628,11 +611,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://renkulab.io/gitlab/covid-19/covid-19-forecast
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/192/
   dates:
   - 2020-04-22
@@ -697,11 +679,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/OliverWyman-Navigator
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/286/
   dates:
   - 2020-06-07
@@ -719,11 +700,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/UA-EpiCovDA
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/253/
   dates:
   - 2020-05-17
@@ -748,11 +728,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/255/
   dates:
   - 2020-04-24
@@ -776,11 +755,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Imperial-ensemble2
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/156/
   dates:
   - 2020-04-26
@@ -810,11 +788,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Auquan-SEIR
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/203/
   dates:
   - 2020-05-04
@@ -850,11 +827,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/IowaStateLW-STEM
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/266/
   dates:
   - 2020-05-24
@@ -876,11 +852,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/covid-projections/covid-data-model
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/249/
   dates:
   - 2020-05-09
@@ -900,11 +875,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/tsnyder701/terminus
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/267/
   dates:
   - 2020-05-25
@@ -925,11 +899,10 @@
   actions:
   - label: Website
     new_window: true
-    type: primary
     url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Covid19Sim-Simulator
   - label: Forecast data
     new_window: true
-    type: secondary
+    type: url
     url: https://zoltardata.com/api/model/285/
   dates:
   - 2020-05-24
