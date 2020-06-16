@@ -14,10 +14,16 @@ project = None
 
 date_format = "%A, %d %B %Y"
 
-props = ['name', 'abbreviation', 'description', 'home_url', 'url', 'team_name']
+props = ['name', 'abbreviation', 'description', 'home_url', 'team_name']
 # models = util.print_models(conn, project_name = project_name)
 # print(project.models)
+base = 'https://zoltardata.com'
 
+def get_public_url(url):
+    parts = url.strip('/').split('/')
+    resource = parts[-2]
+    res_id = parts[-1]
+    return '%s/%s/%s' % (base, resource, res_id)
 
 def fetch_forecast_dates(con, forecasts):
     dates = []
@@ -35,6 +41,7 @@ def parse_model(model):
     result['latest_forecast'] = max(dates).strftime(date_format)
     result['earliest_forecast'] = min(dates).strftime(date_format)
     result['dates'] = dates
+    result['url'] = get_public_url(model['url'])
     result['actions'] = []
     action = {}
     action['label'] = 'Website'
@@ -43,7 +50,7 @@ def parse_model(model):
     action['new_window'] = True
     # action['new_line'] = True
     result['actions'].append(action)
-    result['actions'].append({'label':'Forecast data', 'type':'url', 'url':result['url'], 'new_window': True})
+    result['actions'].append({'label':'Forecast data', 'type':'url', 'url': result['url'], 'new_window': True})
     # print('latest:', max(dates).strftime(date_format))
 
     return result
@@ -73,8 +80,10 @@ def gen_community():
     for m in project.models:
         model = m.json
         # print(model)
+        # break
         # print(conn.json_for_uri(model['url']))
         m = parse_model(model)
+        # print(m)
         if m['team_name'] not in team_d:
             team_d[m['team_name']] = []
         team_d[m['team_name']].append(m)
