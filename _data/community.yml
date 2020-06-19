@@ -75,6 +75,7 @@
   - 2020-06-16
   - 2020-06-16
   - 2020-06-17
+  - 2020-06-18
   description: "We've built a simulator based on the SEIS model with learned parameters\
     \ to make daily projections regarding \r\n    COVID-19 infections and deaths in\
     \ all 50 US states and 40 countries. The model also accounts for the possible\
@@ -91,9 +92,9 @@
     \ techniques to minimize overfitting, we use the learned parameters to \r\n  \
     \  simulate the future and make projections."
   earliest_forecast: Monday, 13 April 2020
-  forecasts: 67
+  forecasts: 68
   home_url: https://github.com/youyanggu/covid19_projections
-  latest_forecast: Wednesday, 17 June 2020
+  latest_forecast: Thursday, 18 June 2020
   name: ParamSearch
   team_name: YYG
   url: https://zoltardata.com/model/202
@@ -126,15 +127,37 @@
   - 2020-06-14
   - 2020-06-16
   - 2020-06-17
+  - 2020-06-18
   description: 'Model assumes pandemics hit in 3 distinct phases. Each phase can be
     represented by a single variable and therefore the variables can be isolated. '
   earliest_forecast: Friday, 29 May 2020
-  forecasts: 19
+  forecasts: 20
   home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/STH-3PU
-  latest_forecast: Wednesday, 17 June 2020
+  latest_forecast: Thursday, 18 June 2020
   name: 3 Phase Unadjusted
   team_name: STH
   url: https://zoltardata.com/model/278
+- abbreviation: Columbia_UNC-SurvCon
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/COVID19BIOSTAT/covid19_prediction
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/292
+  dates:
+  - 2020-06-16
+  description: 'A robust survival-convolution model with piece-wise transmission rates
+    that incorporate latent incubation period provide time-varying effective reproduction
+    number. '
+  earliest_forecast: Tuesday, 16 June 2020
+  forecasts: 1
+  home_url: https://github.com/COVID19BIOSTAT/covid19_prediction
+  latest_forecast: Tuesday, 16 June 2020
+  name: Survival-Convolution Models
+  team_name: Columbia_UNC
+  url: https://zoltardata.com/model/292
 - abbreviation: epiforecasts-ensemble1
   actions:
   - label: Website
@@ -549,7 +572,7 @@
   name: GLEAM COVID-19
   team_name: MOBS Lab at Northeastern
   url: https://zoltardata.com/model/158
-- abbreviation: CU-select
+- abbreviation: CU-scenario_high
   actions:
   - label: Website
     new_window: true
@@ -557,31 +580,38 @@
   - label: Forecast data
     new_window: true
     type: url
-    url: https://zoltardata.com/model/231
+    url: https://zoltardata.com/model/293
   dates:
+  - 2020-04-26
   - 2020-05-17
-  - 2020-05-24
-  - 2020-05-10
-  - 2020-05-14
-  - 2020-05-21
-  - 2020-05-28
   - 2020-05-31
+  - 2020-05-03
+  - 2020-05-10
+  - 2020-04-19
   - 2020-06-07
-  - 2020-06-04
-  - 2020-06-11
+  - 2020-05-24
   - 2020-06-14
-  description: This metapopulation county-level SEIR model makes projections of future
-    COVID-19 incidence and deaths.  We produce a number of different intervention
-    scenarios, each assuming various interventions and rates of compliance are implemented
-    in the future.  This submission is the selection of the weekly scenario we believe
-    to be most plausible given current observations and planned intervention policies.
-  earliest_forecast: Sunday, 10 May 2020
-  forecasts: 11
+  - 2020-05-21
+  - 2020-05-14
+  - 2020-05-07
+  - 2020-04-16
+  - 2020-06-04
+  - 2020-04-23
+  - 2020-04-12
+  - 2020-05-28
+  description: We produce a number of different intervention scenarios, each assuming
+    various interventions and rates of compliance are implemented in the future; these
+    assumptions may change from week to week, and are detailed in methods_long.  This
+    projection assumes relatively high transmission.  Currently, we project a one-time
+    5% increase in contact rates due to loosening restrictions as states continue
+    to reopen economically, applied at the beginning of the projection.
+  earliest_forecast: Sunday, 12 April 2020
+  forecasts: 17
   home_url: https://github.com/shaman-lab/COVID-19Projection
   latest_forecast: Sunday, 14 June 2020
-  name: select
+  name: scenario_high
   team_name: Columbia University
-  url: https://zoltardata.com/model/231
+  url: https://zoltardata.com/model/293
 - abbreviation: UMass-MechBayes
   actions:
   - label: Website
