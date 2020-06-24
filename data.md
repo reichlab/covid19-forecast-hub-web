@@ -16,7 +16,7 @@ sections:
       - title: Visualization
         image: http://reichlab.io/images/research/flusight-screenshot.png
         new_window: true
-        content: We have built an <a href="http://viz.covid19forecasthub.org/" target="_blank">interactive visualization</a> so you can explore recent forecasts from multiple teams. Having all these forecasts in one place enables simple comparisons between models and model synthesis for decision-makers.
+        content: We have built an <a href="https://viz.covid19forecasthub.org/" target="_blank">interactive visualization</a> so you can explore recent forecasts from multiple teams. Having all these forecasts in one place enables simple comparisons between models and model synthesis for decision-makers.
       - title: Software & tools
         image: images/data-crystal-ball.png
         content: Our team has been developing open-source software for years to assist with forecast modeling in outbreak response. We have developed <a href="http://reichlab.io/research#03-software" target="_blank">numerous packages</a> including the <a href="https://github.com/jarad/FluSight" target="_blank">FluSight R package</a>, the <a href="http://reichlab.io/d3-foresight/" target="_blank">d3-foresight javascript library</a>, and the <a href="https://zoltardata.com/" target="_blank">Zoltar system for forecast storage</a>.

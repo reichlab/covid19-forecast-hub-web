@@ -13,7 +13,7 @@ sections:
         type: secondary
         new_window: true
       - label: Visualization
-        url: http://viz.covid19forecasthub.org/
+        url: https://viz.covid19forecasthub.org/
         type: secondary
         new_window: true
       - label: Community
