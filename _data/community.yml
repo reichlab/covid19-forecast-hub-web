@@ -17,6 +17,7 @@
   - 2020-04-27
   - 2020-05-11
   - 2020-05-18
+  - 2020-06-24
   - 2020-05-25
   - 2020-05-02
   - 2020-04-30
@@ -98,9 +99,9 @@
     \ techniques to minimize overfitting, we use the learned parameters to \r\n  \
     \  simulate the future and make projections."
   earliest_forecast: Monday, 13 April 2020
-  forecasts: 74
+  forecasts: 75
   home_url: https://github.com/youyanggu/covid19_projections
-  latest_forecast: Tuesday, 23 June 2020
+  latest_forecast: Wednesday, 24 June 2020
   name: ParamSearch
   team_name: YYG
   url: https://zoltardata.com/model/202
@@ -520,24 +521,23 @@
   - 2020-06-21
   - 2020-05-31
   - 2020-05-31
+  - 2020-04-12
+  - 2020-04-12
+  - 2020-05-17
+  - 2020-05-17
+  - 2020-06-04
+  - 2020-05-21
+  - 2020-05-21
+  - 2020-05-24
   - 2020-06-07
-  - 2020-04-12
-  - 2020-05-07
-  - 2020-04-12
-  - 2020-05-07
-  - 2020-05-17
-  - 2020-06-04
-  - 2020-05-17
-  - 2020-06-04
-  - 2020-05-21
-  - 2020-05-21
   - 2020-05-24
-  - 2020-05-24
+  - 2020-06-07
   - 2020-06-14
   - 2020-05-14
   - 2020-06-18
   - 2020-05-14
   - 2020-05-10
+  - 2020-05-07
   - 2020-04-26
   - 2020-04-23
   - 2020-04-26
@@ -550,7 +550,7 @@
     and rates of compliance are implemented in the future. This projection assumes
     relatively low transmission.
   earliest_forecast: Sunday, 12 April 2020
-  forecasts: 31
+  forecasts: 30
   home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/CU-scenario_low
   latest_forecast: Sunday, 21 June 2020
   name: scenario_low
