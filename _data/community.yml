@@ -14,7 +14,9 @@
   - 2020-04-13
   - 2020-05-04
   - 2020-04-20
+  - 2020-06-25
   - 2020-04-27
+  - 2020-06-26
   - 2020-05-11
   - 2020-05-18
   - 2020-05-25
@@ -49,6 +51,8 @@
   - 2020-05-12
   - 2020-04-24
   - 2020-06-01
+  - 2020-06-27
+  - 2020-06-28
   - 2020-05-26
   - 2020-06-08
   - 2020-05-30
@@ -97,9 +101,9 @@
     \ techniques to minimize overfitting, we use the learned parameters to \r\n  \
     \  simulate the future and make projections."
   earliest_forecast: Monday, 13 April 2020
-  forecasts: 73
+  forecasts: 77
   home_url: https://github.com/youyanggu/covid19_projections
-  latest_forecast: Wednesday, 24 June 2020
+  latest_forecast: Sunday, 28 June 2020
   name: ParamSearch
   team_name: YYG
   url: https://zoltardata.com/model/202
@@ -114,10 +118,14 @@
     url: https://zoltardata.com/model/278
   dates:
   - 2020-06-24
+  - 2020-06-26
   - 2020-06-21
+  - 2020-06-25
   - 2020-06-22
   - 2020-06-23
   - 2020-06-20
+  - 2020-06-27
+  - 2020-06-28
   - 2020-05-29
   - 2020-05-30
   - 2020-06-01
@@ -142,12 +150,240 @@
   description: 'Model assumes pandemics hit in 3 distinct phases. Each phase can be
     represented by a single variable and therefore the variables can be isolated. '
   earliest_forecast: Friday, 29 May 2020
-  forecasts: 26
+  forecasts: 30
   home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/STH-3PU
-  latest_forecast: Wednesday, 24 June 2020
+  latest_forecast: Sunday, 28 June 2020
   name: 3 Phase Unadjusted
   team_name: STH
   url: https://zoltardata.com/model/278
+- abbreviation: GT_CHHS-COVID19
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/pkeskinocak/COVID19GA
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/279
+  dates:
+  - 2020-06-21
+  - 2020-06-28
+  - 2020-05-31
+  - 2020-06-07
+  - 2020-06-14
+  description: Agent-based simulation model to project COVID19 infection spread.
+  earliest_forecast: Sunday, 31 May 2020
+  forecasts: 5
+  home_url: https://github.com/pkeskinocak/COVID19GA
+  latest_forecast: Sunday, 28 June 2020
+  name: COVID19
+  team_name: Georgia Institute of Technology Center for Health and Humanitarian Systems
+  url: https://zoltardata.com/model/279
+- abbreviation: QJHong-Encounter
+  actions:
+  - label: Website
+    new_window: true
+    url: https://qjhong.github.io
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/299
+  dates:
+  - 2020-06-24
+  - 2020-06-26
+  - 2020-06-27
+  description: today's "Daily New Confirmed Cases" + today's "Encounter Density"  ==>
+    today's newly infected Cases  ==> next 2-3 weeks' "Daily New Confirmed Cases"
+  earliest_forecast: Wednesday, 24 June 2020
+  forecasts: 3
+  home_url: https://qjhong.github.io
+  latest_forecast: Saturday, 27 June 2020
+  name: Encounter
+  team_name: QJHong
+  url: https://zoltardata.com/model/299
+- abbreviation: USC-SI_kJalpha
+  actions:
+  - label: Website
+    new_window: true
+    url: https://scc-usc.github.io/ReCOVER-COVID-19
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/300
+  dates:
+  - 2020-06-23
+  - 2020-05-10
+  - 2020-06-07
+  - 2020-05-31
+  - 2020-05-17
+  - 2020-06-27
+  - 2020-06-21
+  - 2020-05-24
+  - 2020-06-14
+  description: A heterogeneous infection rate model with human mobility for epidemic
+    modeling. Our model adapts to changing trends and provide predictions of confirmed
+    cases and deaths.
+  earliest_forecast: Sunday, 10 May 2020
+  forecasts: 9
+  home_url: https://scc-usc.github.io/ReCOVER-COVID-19
+  latest_forecast: Saturday, 27 June 2020
+  name: SI_kJalpha
+  team_name: University of Southern California Data Science Lab
+  url: https://zoltardata.com/model/300
+- abbreviation: CU-select
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/shaman-lab/COVID-19Projection
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/231
+  dates:
+  - 2020-04-23
+  - 2020-04-16
+  - 2020-04-12
+  - 2020-04-26
+  - 2020-05-07
+  - 2020-04-19
+  - 2020-05-17
+  - 2020-05-24
+  - 2020-05-10
+  - 2020-05-14
+  - 2020-05-21
+  - 2020-05-28
+  - 2020-05-31
+  - 2020-05-03
+  - 2020-06-21
+  - 2020-06-07
+  - 2020-06-04
+  - 2020-06-11
+  - 2020-06-25
+  - 2020-06-14
+  - 2020-06-18
+  description: This metapopulation county-level SEIR model makes projections of future
+    COVID-19 incidence and deaths.  We produce a number of different intervention
+    scenarios, each assuming various interventions and rates of compliance are implemented
+    in the future.  This submission is the selection of the weekly scenario we believe
+    to be most plausible given current observations and planned intervention policies.
+  earliest_forecast: Sunday, 12 April 2020
+  forecasts: 21
+  home_url: https://github.com/shaman-lab/COVID-19Projection
+  latest_forecast: Thursday, 25 June 2020
+  name: select
+  team_name: Columbia University
+  url: https://zoltardata.com/model/231
+- abbreviation: IHME-CurveFit
+  actions:
+  - label: Website
+    new_window: true
+    url: http://www.healthdata.org/covid/data-downloads
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/154
+  dates:
+  - 2020-06-24
+  - 2020-03-27
+  - 2020-03-29
+  - 2020-03-30
+  - 2020-03-31
+  - 2020-04-01
+  - 2020-04-05
+  - 2020-04-07
+  - 2020-04-09
+  - 2020-04-12
+  - 2020-04-16
+  - 2020-04-20
+  - 2020-04-21
+  - 2020-04-27
+  - 2020-04-28
+  - 2020-05-08
+  - 2020-05-04
+  - 2020-05-18
+  - 2020-05-12
+  - 2020-05-29
+  - 2020-06-22
+  - 2020-06-05
+  - 2020-06-08
+  - 2020-06-10
+  - 2020-06-15
+  description: "This model makes predictions about the future that are dependent on\
+    \ the assumption \r\n    that current interventions continue. The modeling approach\
+    \ in this study is divided into four components: \r\n    (i) identification and\
+    \ processing of COVID-19 data; \r\n    (ii) statistical model estimation for population\
+    \ death rates as a function of time \r\n    since the death rate exceeds a threshold\
+    \ in a location; \r\n    (iii) predicting time to exceed a given population death\
+    \ threshold in states early in the pandemic; and \r\n    (iv) modeling health\
+    \ service utilization as a function of deaths.\"\r\n    CurveFit package available\
+    \ at: https://github.com/ihmeuw-msca/CurveFit\r\nCitation: Forecasting COVID-19\
+    \ impact on hospital bed-days, ICU-days, ventilator-days and deaths by US state\
+    \ in the next 4 months https://www.medrxiv.org/content/10.1101/2020.03.27.20043752v1;\
+    \ http://www.healthdata.org/covid/publications"
+  earliest_forecast: Friday, 27 March 2020
+  forecasts: 25
+  home_url: http://www.healthdata.org/covid/data-downloads
+  latest_forecast: Wednesday, 24 June 2020
+  name: CurveFit
+  team_name: Institute for Health Metrics and Evaluation
+  url: https://zoltardata.com/model/154
+- abbreviation: LANL-GrowthRate
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid-19.bsvgateway.org/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/157
+  dates:
+  - 2020-06-21
+  - 2020-06-24
+  - 2020-05-03
+  - 2020-05-11
+  - 2020-05-14
+  - 2020-04-06
+  - 2020-04-09
+  - 2020-04-27
+  - 2020-04-13
+  - 2020-05-07
+  - 2020-04-23
+  - 2020-04-16
+  - 2020-04-20
+  - 2020-04-30
+  - 2020-05-04
+  - 2020-05-18
+  - 2020-05-21
+  - 2020-05-25
+  - 2020-05-24
+  - 2020-05-28
+  - 2020-06-01
+  - 2020-06-04
+  - 2020-06-08
+  - 2020-06-11
+  - 2020-06-14
+  - 2020-06-18
+  description: "This model makes predictions about the future, unconditional on particular\
+    \ intervention strategies.\r\n    The model consists of two processes. The first\
+    \ process is a statistical model of how the \r\n    number of COVID-19 infections\
+    \ changes over time. The second process maps the number of \r\n    infections\
+    \ to the reported data. We model the growth of new cases as the product of a \r\
+    \n    dynamic growth parameter and the underlying numbers of susceptible and infected\
+    \ cases \r\n    in the population at the previous time step, scaled by the size\
+    \ of the state's starting \r\n    susceptible population. The growth parameter\
+    \ can be thought of as the transmissibility of \r\n    the virus in that state\
+    \ on that date. To model new deaths in the population, we assume that a \r\n \
+    \   fraction of the newly generated cases will die and learn that fraction from\
+    \ observations. \r\n    We can also anticipate when the outbreak is likely to\
+    \ peak, i.e. when the daily number of new \r\n    confirmed cases reaches its\
+    \ maximum.\"\r\ncitation: https://covid-19.bsvgateway.org/"
+  earliest_forecast: Monday, 06 April 2020
+  forecasts: 26
+  home_url: https://covid-19.bsvgateway.org/
+  latest_forecast: Wednesday, 24 June 2020
+  name: GrowthRate
+  team_name: Los Alamos National Labs
+  url: https://zoltardata.com/model/157
 - abbreviation: epiforecasts-ensemble1
   actions:
   - label: Website
@@ -200,59 +436,6 @@
   name: ensemble
   team_name: COVID forecast hub
   url: https://zoltardata.com/model/159
-- abbreviation: IHME-CurveFit
-  actions:
-  - label: Website
-    new_window: true
-    url: http://www.healthdata.org/covid/data-downloads
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/154
-  dates:
-  - 2020-03-27
-  - 2020-03-29
-  - 2020-03-30
-  - 2020-03-31
-  - 2020-04-01
-  - 2020-04-05
-  - 2020-04-07
-  - 2020-04-09
-  - 2020-04-12
-  - 2020-04-16
-  - 2020-04-20
-  - 2020-04-21
-  - 2020-04-27
-  - 2020-04-28
-  - 2020-05-08
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-05-12
-  - 2020-05-29
-  - 2020-06-22
-  - 2020-06-05
-  - 2020-06-08
-  - 2020-06-10
-  - 2020-06-15
-  description: "This model makes predictions about the future that are dependent on\
-    \ the assumption \r\n    that current interventions continue. The modeling approach\
-    \ in this study is divided into four components: \r\n    (i) identification and\
-    \ processing of COVID-19 data; \r\n    (ii) statistical model estimation for population\
-    \ death rates as a function of time \r\n    since the death rate exceeds a threshold\
-    \ in a location; \r\n    (iii) predicting time to exceed a given population death\
-    \ threshold in states early in the pandemic; and \r\n    (iv) modeling health\
-    \ service utilization as a function of deaths.\"\r\n    CurveFit package available\
-    \ at: https://github.com/ihmeuw-msca/CurveFit\r\nCitation: Forecasting COVID-19\
-    \ impact on hospital bed-days, ICU-days, ventilator-days and deaths by US state\
-    \ in the next 4 months https://www.medrxiv.org/content/10.1101/2020.03.27.20043752v1;\
-    \ http://www.healthdata.org/covid/publications"
-  earliest_forecast: Friday, 27 March 2020
-  forecasts: 24
-  home_url: http://www.healthdata.org/covid/data-downloads
-  latest_forecast: Monday, 22 June 2020
-  name: CurveFit
-  team_name: Institute for Health Metrics and Evaluation
-  url: https://zoltardata.com/model/154
 - abbreviation: NotreDame-mobility
   actions:
   - label: Website
@@ -504,104 +687,6 @@
   team_name: UMass-Amherst Influenza Forecasting Center of Excellence & College of
     Information and Computer Sciences
   url: https://zoltardata.com/model/200
-- abbreviation: CU-select
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/shaman-lab/COVID-19Projection
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/231
-  dates:
-  - 2020-04-23
-  - 2020-06-21
-  - 2020-04-16
-  - 2020-04-12
-  - 2020-04-26
-  - 2020-05-07
-  - 2020-04-19
-  - 2020-05-17
-  - 2020-05-24
-  - 2020-05-10
-  - 2020-05-14
-  - 2020-05-21
-  - 2020-05-28
-  - 2020-05-31
-  - 2020-05-03
-  - 2020-06-07
-  - 2020-06-04
-  - 2020-06-11
-  - 2020-06-14
-  - 2020-06-18
-  description: This metapopulation county-level SEIR model makes projections of future
-    COVID-19 incidence and deaths.  We produce a number of different intervention
-    scenarios, each assuming various interventions and rates of compliance are implemented
-    in the future.  This submission is the selection of the weekly scenario we believe
-    to be most plausible given current observations and planned intervention policies.
-  earliest_forecast: Sunday, 12 April 2020
-  forecasts: 20
-  home_url: https://github.com/shaman-lab/COVID-19Projection
-  latest_forecast: Sunday, 21 June 2020
-  name: select
-  team_name: Columbia University
-  url: https://zoltardata.com/model/231
-- abbreviation: LANL-GrowthRate
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid-19.bsvgateway.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/157
-  dates:
-  - 2020-06-21
-  - 2020-05-03
-  - 2020-05-11
-  - 2020-05-14
-  - 2020-04-06
-  - 2020-04-09
-  - 2020-04-27
-  - 2020-04-13
-  - 2020-05-07
-  - 2020-04-23
-  - 2020-04-16
-  - 2020-04-20
-  - 2020-04-30
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-05-21
-  - 2020-05-25
-  - 2020-05-24
-  - 2020-05-28
-  - 2020-06-01
-  - 2020-06-04
-  - 2020-06-08
-  - 2020-06-11
-  - 2020-06-14
-  - 2020-06-18
-  description: "This model makes predictions about the future, unconditional on particular\
-    \ intervention strategies.\r\n    The model consists of two processes. The first\
-    \ process is a statistical model of how the \r\n    number of COVID-19 infections\
-    \ changes over time. The second process maps the number of \r\n    infections\
-    \ to the reported data. We model the growth of new cases as the product of a \r\
-    \n    dynamic growth parameter and the underlying numbers of susceptible and infected\
-    \ cases \r\n    in the population at the previous time step, scaled by the size\
-    \ of the state's starting \r\n    susceptible population. The growth parameter\
-    \ can be thought of as the transmissibility of \r\n    the virus in that state\
-    \ on that date. To model new deaths in the population, we assume that a \r\n \
-    \   fraction of the newly generated cases will die and learn that fraction from\
-    \ observations. \r\n    We can also anticipate when the outbreak is likely to\
-    \ peak, i.e. when the daily number of new \r\n    confirmed cases reaches its\
-    \ maximum.\"\r\ncitation: https://covid-19.bsvgateway.org/"
-  earliest_forecast: Monday, 06 April 2020
-  forecasts: 25
-  home_url: https://covid-19.bsvgateway.org/
-  latest_forecast: Sunday, 21 June 2020
-  name: GrowthRate
-  team_name: Los Alamos National Labs
-  url: https://zoltardata.com/model/157
 - abbreviation: UCLA-SuEIR
   actions:
   - label: Website
@@ -911,28 +996,6 @@
   name: SEIR_CAN
   team_name: CovidActNow
   url: https://zoltardata.com/model/249
-- abbreviation: GT_CHHS-COVID19
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/pkeskinocak/COVID19GA
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/279
-  dates:
-  - 2020-06-21
-  - 2020-05-31
-  - 2020-06-07
-  - 2020-06-14
-  description: Agent-based simulation model to project COVID19 infection spread.
-  earliest_forecast: Sunday, 31 May 2020
-  forecasts: 4
-  home_url: https://github.com/pkeskinocak/COVID19GA
-  latest_forecast: Sunday, 21 June 2020
-  name: COVID19
-  team_name: Georgia Institute of Technology Center for Health and Humanitarian Systems
-  url: https://zoltardata.com/model/279
 - abbreviation: Covid19Sim-Simulator
   actions:
   - label: Website
@@ -1000,81 +1063,3 @@
   name: Survival-Convolution Models
   team_name: Columbia_UNC
   url: https://zoltardata.com/model/292
-- abbreviation: USACE-ERDC_SEIR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/USACE-ERDC_SEIR
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/262
-  dates:
-  - 2020-05-14
-  - 2020-05-18
-  - 2020-05-25
-  - 2020-05-24
-  - 2020-06-08
-  - 2020-05-28
-  - 2020-06-01
-  - 2020-06-15
-  description: The ERDC SEIR model makes predictions of several variables (e.g., reported
-    new cases  per day, cumulative reported cases, the susceptible population, etc...).  Model
-    parameters  are estimated using historical data using techniques from Bayesian
-    inference.
-  earliest_forecast: Thursday, 14 May 2020
-  forecasts: 8
-  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/USACE-ERDC_SEIR
-  latest_forecast: Monday, 15 June 2020
-  name: ERDC_SEIR
-  team_name: US Army Engineer Research and Development Center
-  url: https://zoltardata.com/model/262
-- abbreviation: ISUandPKU-vSEIdR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://yumouqiu.shinyapps.io/covid-predict/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/268
-  dates:
-  - 2020-05-25
-  - 2020-06-01
-  - 2020-06-10
-  - 2020-06-15
-  description: Estimate the effective reproduction number and conduct forecast for
-    the number of daily new cases and death based on an extended varying coefficient
-    SEIR model.
-  earliest_forecast: Monday, 25 May 2020
-  forecasts: 4
-  home_url: https://yumouqiu.shinyapps.io/covid-predict/
-  latest_forecast: Monday, 15 June 2020
-  name: Extended varying coefficient SEIR model
-  team_name: Collaborative team of Iowa State and Peking University
-  url: https://zoltardata.com/model/268
-- abbreviation: SWC-TerminusCM
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/tsnyder701/terminus
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/267
-  dates:
-  - 2020-05-25
-  - 2020-05-29
-  - 2020-05-30
-  - 2020-06-07
-  - 2020-06-15
-  description: Terminus is a mechanistic Compartmental Model using disease parameter
-    estimates from literature. It uses Bayesian inference to predict the most likely
-    model parameters.
-  earliest_forecast: Monday, 25 May 2020
-  forecasts: 5
-  home_url: https://github.com/tsnyder701/terminus
-  latest_forecast: Monday, 15 June 2020
-  name: Terminus Compartmental Model
-  team_name: Snyder Wilson Consulting
-  url: https://zoltardata.com/model/267
