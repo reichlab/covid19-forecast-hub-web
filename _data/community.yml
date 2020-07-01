@@ -1,3 +1,54 @@
+- abbreviation: STH-3PU
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/STH-3PU
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/278
+  dates:
+  - 2020-06-24
+  - 2020-06-26
+  - 2020-06-21
+  - 2020-06-25
+  - 2020-06-22
+  - 2020-06-23
+  - 2020-06-20
+  - 2020-06-27
+  - 2020-06-30
+  - 2020-06-28
+  - 2020-06-29
+  - 2020-05-29
+  - 2020-05-30
+  - 2020-06-01
+  - 2020-06-02
+  - 2020-06-04
+  - 2020-06-03
+  - 2020-06-07
+  - 2020-06-05
+  - 2020-06-06
+  - 2020-06-08
+  - 2020-06-09
+  - 2020-06-10
+  - 2020-06-11
+  - 2020-06-12
+  - 2020-06-13
+  - 2020-06-15
+  - 2020-06-14
+  - 2020-06-16
+  - 2020-06-17
+  - 2020-06-18
+  - 2020-06-19
+  description: 'Model assumes pandemics hit in 3 distinct phases. Each phase can be
+    represented by a single variable and therefore the variables can be isolated. '
+  earliest_forecast: Friday, 29 May 2020
+  forecasts: 32
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/STH-3PU
+  latest_forecast: Tuesday, 30 June 2020
+  name: 3 Phase Unadjusted
+  team_name: STH
+  url: https://zoltardata.com/model/278
 - abbreviation: epiforecasts-ensemble1
   actions:
   - label: Website
@@ -20,6 +71,38 @@
   name: ensemble1
   team_name: EpiForecasts group at the London School of Hygiene & Tropical Medicine
   url: https://zoltardata.com/model/290
+- abbreviation: COVIDhub-ensemble
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/reichlab/covid19-forecast-hub
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/159
+  dates:
+  - 2020-06-29
+  - 2020-05-04
+  - 2020-05-11
+  - 2020-04-13
+  - 2020-04-27
+  - 2020-05-25
+  - 2020-05-18
+  - 2020-06-01
+  - 2020-06-22
+  - 2020-06-08
+  - 2020-06-15
+  description: "The ensemble combines models unconditional on particular interventions\
+    \ \r\n    being in place with those conditional on existing social distancing\
+    \ measures \r\n    continuing. Models are combined by taking arithmetic averages\
+    \ of quantiles and \r\n    point estimates."
+  earliest_forecast: Monday, 13 April 2020
+  forecasts: 11
+  home_url: https://github.com/reichlab/covid19-forecast-hub
+  latest_forecast: Monday, 29 June 2020
+  name: ensemble
+  team_name: COVID forecast hub
+  url: https://zoltardata.com/model/159
 - abbreviation: IHME-CurveFit
   actions:
   - label: Website
@@ -303,6 +386,29 @@
   name: GrowthRate
   team_name: Los Alamos National Labs
   url: https://zoltardata.com/model/157
+- abbreviation: QJHong-Encounter
+  actions:
+  - label: Website
+    new_window: true
+    url: https://qjhong.github.io
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/299
+  dates:
+  - 2020-06-24
+  - 2020-06-26
+  - 2020-06-29
+  - 2020-06-27
+  description: today's "Daily New Confirmed Cases" + today's "Encounter Density"  ==>
+    today's newly infected Cases  ==> next 2-3 weeks' "Daily New Confirmed Cases"
+  earliest_forecast: Wednesday, 24 June 2020
+  forecasts: 4
+  home_url: https://qjhong.github.io
+  latest_forecast: Monday, 29 June 2020
+  name: Encounter
+  team_name: QJHong
+  url: https://zoltardata.com/model/299
 - abbreviation: UT-Mobility
   actions:
   - label: Website
@@ -398,6 +504,37 @@
   name: NotreDame-FRED
   team_name: NotreDame-FRED
   url: https://zoltardata.com/model/256
+- abbreviation: USACE-ERDC_SEIR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/USACE-ERDC_SEIR
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/262
+  dates:
+  - 2020-06-29
+  - 2020-06-22
+  - 2020-05-14
+  - 2020-05-18
+  - 2020-05-25
+  - 2020-05-24
+  - 2020-06-08
+  - 2020-05-28
+  - 2020-06-01
+  - 2020-06-15
+  description: The ERDC SEIR model makes predictions of several variables (e.g., reported
+    new cases  per day, cumulative reported cases, the susceptible population, etc...).  Model
+    parameters  are estimated using historical data using techniques from Bayesian
+    inference.
+  earliest_forecast: Thursday, 14 May 2020
+  forecasts: 10
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/USACE-ERDC_SEIR
+  latest_forecast: Monday, 29 June 2020
+  name: ERDC_SEIR
+  team_name: US Army Engineer Research and Development Center
+  url: https://zoltardata.com/model/262
 - abbreviation: GT-DeepCOVID
   actions:
   - label: Website
@@ -429,56 +566,6 @@
   name: DeepCOVID
   team_name: Georgia Institute of Technology
   url: https://zoltardata.com/model/206
-- abbreviation: STH-3PU
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/STH-3PU
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/278
-  dates:
-  - 2020-06-24
-  - 2020-06-26
-  - 2020-06-21
-  - 2020-06-25
-  - 2020-06-22
-  - 2020-06-23
-  - 2020-06-20
-  - 2020-06-27
-  - 2020-06-28
-  - 2020-06-29
-  - 2020-05-29
-  - 2020-05-30
-  - 2020-06-01
-  - 2020-06-02
-  - 2020-06-04
-  - 2020-06-03
-  - 2020-06-07
-  - 2020-06-05
-  - 2020-06-06
-  - 2020-06-08
-  - 2020-06-09
-  - 2020-06-10
-  - 2020-06-11
-  - 2020-06-12
-  - 2020-06-13
-  - 2020-06-15
-  - 2020-06-14
-  - 2020-06-16
-  - 2020-06-17
-  - 2020-06-18
-  - 2020-06-19
-  description: 'Model assumes pandemics hit in 3 distinct phases. Each phase can be
-    represented by a single variable and therefore the variables can be isolated. '
-  earliest_forecast: Friday, 29 May 2020
-  forecasts: 31
-  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/STH-3PU
-  latest_forecast: Monday, 29 June 2020
-  name: 3 Phase Unadjusted
-  team_name: STH
-  url: https://zoltardata.com/model/278
 - abbreviation: SWC-TerminusCM
   actions:
   - label: Website
@@ -850,6 +937,42 @@
   name: CovidScenarioPipeline
   team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
   url: https://zoltardata.com/model/255
+- abbreviation: Imperial-Ensemble2
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Imperial-ensemble2
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/156
+  dates:
+  - 2020-06-28
+  - 2020-04-26
+  - 2020-03-29
+  - 2020-04-19
+  - 2020-04-05
+  - 2020-05-10
+  - 2020-03-22
+  - 2020-05-03
+  - 2020-03-15
+  - 2020-04-12
+  - 2020-06-21
+  - 2020-05-17
+  - 2020-05-24
+  - 2020-05-31
+  - 2020-06-07
+  - 2020-06-14
+  description: "This model makes predictions about the future, unconditional on particular\
+    \ intervention strategies.\r\n    Ensemble1 and Ensemble2 are disease transmission\
+    \ models fit with different assumptions about serial\r\n    intervals."
+  earliest_forecast: Sunday, 15 March 2020
+  forecasts: 16
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Imperial-ensemble2
+  latest_forecast: Sunday, 28 June 2020
+  name: Ensemble2
+  team_name: Imperial
+  url: https://zoltardata.com/model/156
 - abbreviation: Auquan-SEIR
   actions:
   - label: Website
@@ -943,59 +1066,32 @@
   name: COVID19
   team_name: Georgia Institute of Technology Center for Health and Humanitarian Systems
   url: https://zoltardata.com/model/279
-- abbreviation: QJHong-Encounter
+- abbreviation: Covid19Sim-Simulator
   actions:
   - label: Website
     new_window: true
-    url: https://qjhong.github.io
+    url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Covid19Sim-Simulator
   - label: Forecast data
     new_window: true
     type: url
-    url: https://zoltardata.com/model/299
+    url: https://zoltardata.com/model/285
   dates:
-  - 2020-06-24
-  - 2020-06-26
-  - 2020-06-27
-  description: today's "Daily New Confirmed Cases" + today's "Encounter Density"  ==>
-    today's newly infected Cases  ==> next 2-3 weeks' "Daily New Confirmed Cases"
-  earliest_forecast: Wednesday, 24 June 2020
-  forecasts: 3
-  home_url: https://qjhong.github.io
-  latest_forecast: Saturday, 27 June 2020
-  name: Encounter
-  team_name: QJHong
-  url: https://zoltardata.com/model/299
-- abbreviation: COVIDhub-ensemble
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/reichlab/covid19-forecast-hub
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/159
-  dates:
-  - 2020-05-04
-  - 2020-05-11
-  - 2020-04-13
-  - 2020-04-27
-  - 2020-05-25
-  - 2020-05-18
-  - 2020-06-01
-  - 2020-06-22
-  - 2020-06-08
-  - 2020-06-15
-  description: "The ensemble combines models unconditional on particular interventions\
-    \ \r\n    being in place with those conditional on existing social distancing\
-    \ measures \r\n    continuing. Models are combined by taking arithmetic averages\
-    \ of quantiles and \r\n    point estimates."
-  earliest_forecast: Monday, 13 April 2020
-  forecasts: 10
-  home_url: https://github.com/reichlab/covid19-forecast-hub
-  latest_forecast: Monday, 22 June 2020
-  name: ensemble
-  team_name: COVID forecast hub
-  url: https://zoltardata.com/model/159
+  - 2020-06-28
+  - 2020-06-21
+  - 2020-05-24
+  - 2020-06-07
+  - 2020-05-31
+  - 2020-06-14
+  description: An interactive tool developed by researchers at Mass General Hospital,
+    Harvard Medical School, Georgia Tech and Boston Medical Center to inform COVID-19
+    intervention policy decisions in the United States.
+  earliest_forecast: Sunday, 24 May 2020
+  forecasts: 6
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Covid19Sim-Simulator
+  latest_forecast: Sunday, 28 June 2020
+  name: Simulator
+  team_name: COVID-19 Simulator
+  url: https://zoltardata.com/model/285
 - abbreviation: UA-EpiCovDA
   actions:
   - label: Website
@@ -1027,41 +1123,6 @@
   name: Epidemic Covid-19 Curve with Variational Data Assimilation
   team_name: University of Arizona
   url: https://zoltardata.com/model/253
-- abbreviation: Imperial-Ensemble2
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Imperial-ensemble2
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/156
-  dates:
-  - 2020-04-26
-  - 2020-03-29
-  - 2020-04-19
-  - 2020-04-05
-  - 2020-05-10
-  - 2020-03-22
-  - 2020-05-03
-  - 2020-03-15
-  - 2020-04-12
-  - 2020-06-21
-  - 2020-05-17
-  - 2020-05-24
-  - 2020-05-31
-  - 2020-06-07
-  - 2020-06-14
-  description: "This model makes predictions about the future, unconditional on particular\
-    \ intervention strategies.\r\n    Ensemble1 and Ensemble2 are disease transmission\
-    \ models fit with different assumptions about serial\r\n    intervals."
-  earliest_forecast: Sunday, 15 March 2020
-  forecasts: 15
-  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Imperial-ensemble2
-  latest_forecast: Sunday, 21 June 2020
-  name: Ensemble2
-  team_name: Imperial
-  url: https://zoltardata.com/model/156
 - abbreviation: CAN-SEIR_CAN
   actions:
   - label: Website
@@ -1087,28 +1148,3 @@
   name: SEIR_CAN
   team_name: CovidActNow
   url: https://zoltardata.com/model/249
-- abbreviation: Covid19Sim-Simulator
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Covid19Sim-Simulator
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/285
-  dates:
-  - 2020-06-21
-  - 2020-05-24
-  - 2020-06-07
-  - 2020-05-31
-  - 2020-06-14
-  description: An interactive tool developed by researchers at Mass General Hospital,
-    Harvard Medical School, Georgia Tech and Boston Medical Center to inform COVID-19
-    intervention policy decisions in the United States.
-  earliest_forecast: Sunday, 24 May 2020
-  forecasts: 5
-  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Covid19Sim-Simulator
-  latest_forecast: Sunday, 21 June 2020
-  name: Simulator
-  team_name: COVID-19 Simulator
-  url: https://zoltardata.com/model/285
