@@ -18,6 +18,7 @@
   - 2020-05-04
   - 2020-04-20
   - 2020-06-25
+  - 2020-07-02
   - 2020-04-27
   - 2020-06-26
   - 2020-05-11
@@ -104,12 +105,44 @@
     \ techniques to minimize overfitting, we use the learned parameters to \r\n  \
     \  simulate the future and make projections."
   earliest_forecast: Monday, 13 April 2020
-  forecasts: 80
+  forecasts: 81
   home_url: https://github.com/youyanggu/covid19_projections
-  latest_forecast: Wednesday, 01 July 2020
+  latest_forecast: Thursday, 02 July 2020
   name: ParamSearch
   team_name: YYG
   url: https://zoltardata.com/model/202
+- abbreviation: USACE-ERDC_SEIR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/USACE-ERDC_SEIR
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/262
+  dates:
+  - 2020-06-29
+  - 2020-06-22
+  - 2020-07-01
+  - 2020-05-14
+  - 2020-05-18
+  - 2020-05-25
+  - 2020-05-24
+  - 2020-06-08
+  - 2020-05-28
+  - 2020-06-01
+  - 2020-06-15
+  description: The ERDC SEIR model makes predictions of several variables (e.g., reported
+    new cases  per day, cumulative reported cases, the susceptible population, etc...).  Model
+    parameters  are estimated using historical data using techniques from Bayesian
+    inference.
+  earliest_forecast: Thursday, 14 May 2020
+  forecasts: 11
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/USACE-ERDC_SEIR
+  latest_forecast: Wednesday, 01 July 2020
+  name: ERDC_SEIR
+  team_name: US Army Engineer Research and Development Center
+  url: https://zoltardata.com/model/262
 - abbreviation: STH-3PU
   actions:
   - label: Website
@@ -508,37 +541,6 @@
   name: NotreDame-FRED
   team_name: NotreDame-FRED
   url: https://zoltardata.com/model/256
-- abbreviation: USACE-ERDC_SEIR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/USACE-ERDC_SEIR
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/262
-  dates:
-  - 2020-06-29
-  - 2020-06-22
-  - 2020-05-14
-  - 2020-05-18
-  - 2020-05-25
-  - 2020-05-24
-  - 2020-06-08
-  - 2020-05-28
-  - 2020-06-01
-  - 2020-06-15
-  description: The ERDC SEIR model makes predictions of several variables (e.g., reported
-    new cases  per day, cumulative reported cases, the susceptible population, etc...).  Model
-    parameters  are estimated using historical data using techniques from Bayesian
-    inference.
-  earliest_forecast: Thursday, 14 May 2020
-  forecasts: 10
-  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/USACE-ERDC_SEIR
-  latest_forecast: Monday, 29 June 2020
-  name: ERDC_SEIR
-  team_name: US Army Engineer Research and Development Center
-  url: https://zoltardata.com/model/262
 - abbreviation: GT-DeepCOVID
   actions:
   - label: Website
