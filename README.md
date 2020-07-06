@@ -1,3 +1,4 @@
+![CI](https://github.com/reichlab/covid19-forecast-hub-web/workflows/CI/badge.svg)
 # Running Your Site Locally
 
 1. Install a full [Ruby development environment](https://jekyllrb.com/docs/installation/)

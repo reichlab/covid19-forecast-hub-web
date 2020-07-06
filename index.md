@@ -13,7 +13,7 @@ sections:
         type: secondary
         new_window: true
       - label: Visualization
-        url: http://viz.covid19forecasthub.org/
+        url: https://viz.covid19forecasthub.org/
         type: secondary
         new_window: true
       - label: Community
@@ -29,7 +29,7 @@ sections:
           Every Monday dozens of modeling teams from across the globe submit forecasts of the trajectory of the COVID-19 outbreak in the US to our forecast data repository. We take these data and build a single [ensemble forecast](doc/ensemble/).
         actions:
           - label: Browse recent forecast data
-            url: https://zoltardata.com/project/44/project_explorer
+            url: https://zoltardata.com/project/44
             type: link
             new_window: true
       - title: Public health impact

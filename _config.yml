@@ -1,5 +1,5 @@
 title: COVID 19 forecast hub
-baseurl: /covid19-forecast-hub-web/
+baseurl: ''
 permalink: '/:title/'
 collections:
   posts:
