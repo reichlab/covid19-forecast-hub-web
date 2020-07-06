@@ -12,7 +12,7 @@ sections:
     grid_items:
       - title: Forecast Data
         image: images/raw-forecast-data.png
-        content: Over 30m rows of COVID-19 Forecast Hub data follow <a href="https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md#forecast-file-format" target="_blank">a data model for probabilistic forecasts specified by quantiles</a>. These data are stored publicly in <a href="https://github.com/reichlab/covid19-forecast-hub/blob/master/README.md" target="_blank">a structured data storage repository</a> on GitHub. They can also be downloaded programmatically from our <a href="https://zoltardata.com/project/44" target="_blank">Zoltar API</a>.
+        content: Over 45m rows of COVID-19 Forecast Hub data follow <a href="https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md#forecast-file-format" target="_blank">a data model for probabilistic forecasts specified by quantiles</a>. These data are stored publicly in <a href="https://github.com/reichlab/covid19-forecast-hub/blob/master/README.md" target="_blank">a structured data storage repository</a> on GitHub. They can also be downloaded programmatically from our <a href="https://zoltardata.com/project/44" target="_blank">Zoltar API</a>.
       - title: Visualization
         image: http://reichlab.io/images/research/flusight-screenshot.png
         new_window: true
