@@ -1,3 +1,144 @@
+- abbreviation: YYG-ParamSearch
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/youyanggu/covid19_projections
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/202
+  dates:
+  - 2020-07-04
+  - 2020-07-05
+  - 2020-06-23
+  - 2020-07-06
+  - 2020-06-21
+  - 2020-06-22
+  - 2020-07-01
+  - 2020-06-29
+  - 2020-06-30
+  - 2020-04-13
+  - 2020-05-04
+  - 2020-04-20
+  - 2020-06-25
+  - 2020-07-02
+  - 2020-04-27
+  - 2020-06-26
+  - 2020-05-11
+  - 2020-05-18
+  - 2020-07-03
+  - 2020-05-25
+  - 2020-07-08
+  - 2020-05-02
+  - 2020-04-30
+  - 2020-04-23
+  - 2020-04-18
+  - 2020-05-13
+  - 2020-04-21
+  - 2020-04-25
+  - 2020-05-17
+  - 2020-05-15
+  - 2020-05-05
+  - 2020-04-15
+  - 2020-04-29
+  - 2020-04-16
+  - 2020-04-17
+  - 2020-04-22
+  - 2020-05-10
+  - 2020-05-06
+  - 2020-04-28
+  - 2020-05-01
+  - 2020-04-26
+  - 2020-04-19
+  - 2020-05-16
+  - 2020-04-14
+  - 2020-05-07
+  - 2020-05-14
+  - 2020-05-03
+  - 2020-05-08
+  - 2020-05-09
+  - 2020-05-12
+  - 2020-04-24
+  - 2020-06-01
+  - 2020-06-27
+  - 2020-07-07
+  - 2020-06-28
+  - 2020-05-26
+  - 2020-06-08
+  - 2020-05-30
+  - 2020-06-03
+  - 2020-05-29
+  - 2020-05-19
+  - 2020-05-23
+  - 2020-06-04
+  - 2020-05-22
+  - 2020-06-02
+  - 2020-06-07
+  - 2020-05-21
+  - 2020-05-24
+  - 2020-05-31
+  - 2020-05-28
+  - 2020-06-05
+  - 2020-06-06
+  - 2020-05-27
+  - 2020-05-20
+  - 2020-06-09
+  - 2020-06-10
+  - 2020-06-11
+  - 2020-06-24
+  - 2020-06-12
+  - 2020-06-15
+  - 2020-06-14
+  - 2020-06-13
+  - 2020-06-16
+  - 2020-06-17
+  - 2020-06-18
+  - 2020-06-19
+  - 2020-06-20
+  description: "We've built a simulator based on the SEIS model with learned parameters\
+    \ to make daily projections regarding \r\n    COVID-19 infections and deaths in\
+    \ all 50 US states and 40 countries. The model also accounts for the possible\
+    \ \r\n    effects of the relaxing of social distancing guidelines across the US\
+    \ and Europe. The parameters/inputs of this \r\n    simulator are learned using\
+    \ hyperparameter optimization that minimizes the error between the projected outputs\
+    \ \r\n    (projected daily deaths) and the actual results (reported daily deaths).\
+    \ Because the infections curve is unique \r\n    for every region, we let the\
+    \ model use each region's own data to learn the best set of parameters for that\
+    \ region. \r\n    This includes parameters such as: mortality rate, initial R_0,\
+    \ post-lockdown R, and the inflection date of any lockdowns. \r\n    Other variables\
+    \ such as the latency period, infectious period, and virus shedding period are\
+    \ fixed based on published \r\n    literature. After some additional validation\
+    \ techniques to minimize overfitting, we use the learned parameters to \r\n  \
+    \  simulate the future and make projections."
+  earliest_forecast: Monday, 13 April 2020
+  forecasts: 87
+  home_url: https://github.com/youyanggu/covid19_projections
+  latest_forecast: Wednesday, 08 July 2020
+  name: ParamSearch
+  team_name: YYG
+  url: https://zoltardata.com/model/202
+- abbreviation: RobertWalraven-ESG
+  actions:
+  - label: Website
+    new_window: true
+    url: http://rwalraven.com/COVID19
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/301
+  dates:
+  - 2020-06-28
+  - 2020-06-30
+  - 2020-07-07
+  - 2020-07-06
+  description: Multiple skewed gaussian distribution peaks fit to raw data
+  earliest_forecast: Sunday, 28 June 2020
+  forecasts: 4
+  home_url: http://rwalraven.com/COVID19
+  latest_forecast: Tuesday, 07 July 2020
+  name: EmpericalSkewedGaussian
+  team_name: Robert Walraven
+  url: https://zoltardata.com/model/301
 - abbreviation: STH-3PU
   actions:
   - label: Website
@@ -9,6 +150,7 @@
     url: https://zoltardata.com/model/278
   dates:
   - 2020-06-24
+  - 2020-07-07
   - 2020-06-26
   - 2020-06-21
   - 2020-06-25
@@ -24,7 +166,6 @@
   - 2020-07-06
   - 2020-06-28
   - 2020-06-29
-  - 2020-07-07
   - 2020-05-29
   - 2020-05-30
   - 2020-06-01
@@ -192,123 +333,6 @@
   name: NotreDame-mobility
   team_name: NotreDame-mobility
   url: https://zoltardata.com/model/291
-- abbreviation: YYG-ParamSearch
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/youyanggu/covid19_projections
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/202
-  dates:
-  - 2020-07-04
-  - 2020-07-05
-  - 2020-06-23
-  - 2020-07-06
-  - 2020-06-21
-  - 2020-06-22
-  - 2020-07-01
-  - 2020-06-29
-  - 2020-06-30
-  - 2020-04-13
-  - 2020-05-04
-  - 2020-04-20
-  - 2020-06-25
-  - 2020-07-02
-  - 2020-04-27
-  - 2020-06-26
-  - 2020-05-11
-  - 2020-05-18
-  - 2020-07-03
-  - 2020-05-25
-  - 2020-05-02
-  - 2020-04-30
-  - 2020-04-23
-  - 2020-04-18
-  - 2020-05-13
-  - 2020-04-21
-  - 2020-04-25
-  - 2020-05-17
-  - 2020-05-15
-  - 2020-05-05
-  - 2020-04-15
-  - 2020-04-29
-  - 2020-04-16
-  - 2020-04-17
-  - 2020-04-22
-  - 2020-05-10
-  - 2020-05-06
-  - 2020-04-28
-  - 2020-05-01
-  - 2020-04-26
-  - 2020-04-19
-  - 2020-05-16
-  - 2020-04-14
-  - 2020-05-07
-  - 2020-05-14
-  - 2020-05-03
-  - 2020-05-08
-  - 2020-05-09
-  - 2020-05-12
-  - 2020-04-24
-  - 2020-06-01
-  - 2020-06-27
-  - 2020-06-28
-  - 2020-05-26
-  - 2020-06-08
-  - 2020-05-30
-  - 2020-06-03
-  - 2020-05-29
-  - 2020-05-19
-  - 2020-05-23
-  - 2020-06-04
-  - 2020-05-22
-  - 2020-06-02
-  - 2020-06-07
-  - 2020-05-21
-  - 2020-05-24
-  - 2020-05-31
-  - 2020-05-28
-  - 2020-06-05
-  - 2020-06-06
-  - 2020-05-27
-  - 2020-05-20
-  - 2020-06-09
-  - 2020-06-10
-  - 2020-06-11
-  - 2020-06-24
-  - 2020-06-12
-  - 2020-06-15
-  - 2020-06-14
-  - 2020-06-13
-  - 2020-06-16
-  - 2020-06-17
-  - 2020-06-18
-  - 2020-06-19
-  - 2020-06-20
-  description: "We've built a simulator based on the SEIS model with learned parameters\
-    \ to make daily projections regarding \r\n    COVID-19 infections and deaths in\
-    \ all 50 US states and 40 countries. The model also accounts for the possible\
-    \ \r\n    effects of the relaxing of social distancing guidelines across the US\
-    \ and Europe. The parameters/inputs of this \r\n    simulator are learned using\
-    \ hyperparameter optimization that minimizes the error between the projected outputs\
-    \ \r\n    (projected daily deaths) and the actual results (reported daily deaths).\
-    \ Because the infections curve is unique \r\n    for every region, we let the\
-    \ model use each region's own data to learn the best set of parameters for that\
-    \ region. \r\n    This includes parameters such as: mortality rate, initial R_0,\
-    \ post-lockdown R, and the inflection date of any lockdowns. \r\n    Other variables\
-    \ such as the latency period, infectious period, and virus shedding period are\
-    \ fixed based on published \r\n    literature. After some additional validation\
-    \ techniques to minimize overfitting, we use the learned parameters to \r\n  \
-    \  simulate the future and make projections."
-  earliest_forecast: Monday, 13 April 2020
-  forecasts: 85
-  home_url: https://github.com/youyanggu/covid19_projections
-  latest_forecast: Monday, 06 July 2020
-  name: ParamSearch
-  team_name: YYG
-  url: https://zoltardata.com/model/202
 - abbreviation: CovidAnalytics-DELPHI
   actions:
   - label: Website
@@ -408,27 +432,6 @@
   name: GrowthRate
   team_name: Los Alamos National Labs
   url: https://zoltardata.com/model/157
-- abbreviation: RobertWalraven-ESG
-  actions:
-  - label: Website
-    new_window: true
-    url: http://rwalraven.com/COVID19
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/301
-  dates:
-  - 2020-06-28
-  - 2020-06-30
-  - 2020-07-06
-  description: Multiple skewed gaussian distribution peaks fit to raw data
-  earliest_forecast: Sunday, 28 June 2020
-  forecasts: 3
-  home_url: http://rwalraven.com/COVID19
-  latest_forecast: Monday, 06 July 2020
-  name: EmpericalSkewedGaussian
-  team_name: Robert Walraven
-  url: https://zoltardata.com/model/301
 - abbreviation: COVIDhub-baseline
   actions:
   - label: Website
@@ -440,22 +443,21 @@
     url: https://zoltardata.com/model/302
   dates:
   - 2020-05-25
+  - 2020-06-22
   - 2020-05-18
   - 2020-06-15
-  - 2020-04-20
-  - 2020-04-27
-  - 2020-05-11
-  - 2020-05-04
-  - 2020-06-22
-  - 2020-04-13
-  - 2020-04-06
   - 2020-06-08
+  - 2020-04-20
   - 2020-06-29
+  - 2020-04-13
+  - 2020-04-27
   - 2020-06-01
+  - 2020-05-11
   - 2020-07-06
+  - 2020-05-04
   description: This model is a baseline predictive model.
-  earliest_forecast: Monday, 06 April 2020
-  forecasts: 14
+  earliest_forecast: Monday, 13 April 2020
+  forecasts: 13
   home_url: https://covid19forecasthub.org/
   latest_forecast: Monday, 06 July 2020
   name: baseline
@@ -755,7 +757,6 @@
   - 2020-04-23
   - 2020-07-02
   - 2020-04-16
-  - 2020-07-05
   - 2020-04-12
   - 2020-04-26
   - 2020-05-07
@@ -774,6 +775,7 @@
   - 2020-06-04
   - 2020-06-11
   - 2020-06-25
+  - 2020-07-05
   - 2020-06-14
   - 2020-06-18
   description: This metapopulation county-level SEIR model makes projections of future
@@ -853,8 +855,8 @@
     url: https://zoltardata.com/model/198
   dates:
   - 2020-06-21
-  - 2020-06-28
   - 2020-07-05
+  - 2020-06-28
   - 2020-05-01
   - 2020-05-10
   - 2020-05-17
@@ -1030,12 +1032,12 @@
     type: url
     url: https://zoltardata.com/model/249
   dates:
-  - 2020-07-05
   - 2020-06-21
   - 2020-05-09
   - 2020-05-31
   - 2020-06-07
   - 2020-06-14
+  - 2020-07-05
   description: Forecast by model built by PhDs in epidemiology and physics, based
     on expert opinions in public health and epidemiology of infectious disease, and
     updated based on daily feed data in cases, deaths, and hostpitalizations.
@@ -1081,8 +1083,8 @@
     url: https://zoltardata.com/model/285
   dates:
   - 2020-06-28
-  - 2020-07-05
   - 2020-06-21
+  - 2020-07-05
   - 2020-05-24
   - 2020-06-07
   - 2020-05-31
