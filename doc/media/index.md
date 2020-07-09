@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[Deaths Starting to Increase in States With Coronavirus Resurgences](https://www.usnews.com/news/health-news/articles/2020-07-09/coronavirus-deaths-increasing-in-states-with-resurgences){:target="_blank"}  
+_U.S. News_ | 9 July 2020
+
+***
+
 [Don’t call it a second wave](https://www.politico.com/newsletters/politico-nightly-coronavirus-special-edition/2020/06/10/dont-call-it-a-second-wave-489488){:target="_blank"}  
 _Politico_ | 10 June 2020
 
