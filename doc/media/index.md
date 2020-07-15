@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[Mass. reports 142 new confirmed coronavirus cases, 27 new deaths](https://www.bostonglobe.com/2020/07/15/nation/umass-model-predicts-total-8774-mass-coronavirus-deaths-four-weeks/){:target="_blank"}  
+_Boston Globe_ | 15 July 2020
+
+***
+
 [Deaths Starting to Increase in States With Coronavirus Resurgences](https://www.usnews.com/news/health-news/articles/2020-07-09/coronavirus-deaths-increasing-in-states-with-resurgences){:target="_blank"}  
 _U.S. News_ | 9 July 2020
 
