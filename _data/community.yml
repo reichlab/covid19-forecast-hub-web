@@ -19,6 +19,7 @@
   - 2020-06-21
   - 2020-06-22
   - 2020-07-01
+  - 2020-07-16
   - 2020-06-29
   - 2020-06-30
   - 2020-07-15
@@ -106,12 +107,65 @@
     infections and deaths in 50 US states. The model accounts for state reopenings
     and its effects on infections and deaths.
   earliest_forecast: Monday, 13 April 2020
-  forecasts: 94
+  forecasts: 95
   home_url: http://covid19-projections.com
-  latest_forecast: Wednesday, 15 July 2020
+  latest_forecast: Thursday, 16 July 2020
   name: ParamSearch
   team_name: YYG
   url: https://zoltardata.com/model/202
+- abbreviation: LANL-GrowthRate
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid-19.bsvgateway.org/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/157
+  dates:
+  - 2020-06-21
+  - 2020-07-13
+  - 2020-07-09
+  - 2020-06-29
+  - 2020-06-24
+  - 2020-07-03
+  - 2020-07-16
+  - 2020-07-06
+  - 2020-05-03
+  - 2020-05-11
+  - 2020-05-14
+  - 2020-04-06
+  - 2020-04-09
+  - 2020-04-27
+  - 2020-04-13
+  - 2020-05-07
+  - 2020-04-23
+  - 2020-04-16
+  - 2020-04-20
+  - 2020-04-30
+  - 2020-05-04
+  - 2020-05-18
+  - 2020-07-02
+  - 2020-05-21
+  - 2020-05-25
+  - 2020-05-24
+  - 2020-05-28
+  - 2020-06-01
+  - 2020-06-04
+  - 2020-06-08
+  - 2020-06-11
+  - 2020-06-14
+  - 2020-06-18
+  description: This model makes predictions about the future, unconditional on particular
+    intervention strategies. Statistical dynamical growth model accounting for population
+    susceptibility.
+  earliest_forecast: Monday, 06 April 2020
+  forecasts: 33
+  home_url: https://covid-19.bsvgateway.org/
+  latest_forecast: Thursday, 16 July 2020
+  name: GrowthRate
+  team_name: Los Alamos National Labs
+  url: https://zoltardata.com/model/157
 - abbreviation: STH-3PU
   actions:
   - label: Website
@@ -460,58 +514,6 @@
   name: NotreDame-mobility
   team_name: NotreDame-mobility
   url: https://zoltardata.com/model/291
-- abbreviation: LANL-GrowthRate
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid-19.bsvgateway.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/157
-  dates:
-  - 2020-06-21
-  - 2020-07-13
-  - 2020-07-09
-  - 2020-06-29
-  - 2020-06-24
-  - 2020-07-03
-  - 2020-07-06
-  - 2020-05-03
-  - 2020-05-11
-  - 2020-05-14
-  - 2020-04-06
-  - 2020-04-09
-  - 2020-04-27
-  - 2020-04-13
-  - 2020-05-07
-  - 2020-04-23
-  - 2020-04-16
-  - 2020-04-20
-  - 2020-04-30
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-07-02
-  - 2020-05-21
-  - 2020-05-25
-  - 2020-05-24
-  - 2020-05-28
-  - 2020-06-01
-  - 2020-06-04
-  - 2020-06-08
-  - 2020-06-11
-  - 2020-06-14
-  - 2020-06-18
-  description: This model makes predictions about the future, unconditional on particular
-    intervention strategies. Statistical dynamical growth model accounting for population
-    susceptibility.
-  earliest_forecast: Monday, 06 April 2020
-  forecasts: 32
-  home_url: https://covid-19.bsvgateway.org/
-  latest_forecast: Monday, 13 July 2020
-  name: GrowthRate
-  team_name: Los Alamos National Labs
-  url: https://zoltardata.com/model/157
 - abbreviation: QJHong-Encounter
   actions:
   - label: Website
@@ -582,10 +584,10 @@
   - 2020-04-26
   - 2020-05-03
   - 2020-05-10
+  - 2020-07-12
   - 2020-05-17
   - 2020-05-24
   - 2020-06-07
-  - 2020-07-12
   - 2020-06-14
   - 2020-06-21
   - 2020-05-31
@@ -1078,103 +1080,3 @@
   name: Two-Stage SIR
   team_name: COVID Alliance at MIT
   url: https://zoltardata.com/model/298
-- abbreviation: IHME-CurveFit
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19.healthdata.org/united-states-of-america
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/154
-  dates:
-  - 2020-06-24
-  - 2020-03-27
-  - 2020-03-29
-  - 2020-03-30
-  - 2020-03-31
-  - 2020-04-01
-  - 2020-04-05
-  - 2020-04-07
-  - 2020-04-09
-  - 2020-04-12
-  - 2020-04-16
-  - 2020-04-20
-  - 2020-04-21
-  - 2020-04-27
-  - 2020-04-28
-  - 2020-05-08
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-05-12
-  - 2020-05-29
-  - 2020-06-29
-  - 2020-06-22
-  - 2020-06-05
-  - 2020-06-08
-  - 2020-06-10
-  - 2020-07-06
-  - 2020-06-15
-  description: This model makes predictions about the future that are dependent on
-    the assumption  that current interventions continue. Non-linear mixed efects curve-fitting.
-  earliest_forecast: Friday, 27 March 2020
-  forecasts: 27
-  home_url: https://covid19.healthdata.org/united-states-of-america
-  latest_forecast: Monday, 06 July 2020
-  name: CurveFit
-  team_name: Institute for Health Metrics and Evaluation
-  url: https://zoltardata.com/model/154
-- abbreviation: CovidActNow-SEIR_CAN
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covidactnow.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/249
-  dates:
-  - 2020-06-21
-  - 2020-05-09
-  - 2020-05-31
-  - 2020-06-07
-  - 2020-06-14
-  - 2020-07-05
-  description: SEIR model forecasts of cumulative deaths, incident deaths, incident
-    hospitalizations  by fitting predicted cases, deaths, and hospitalizations to
-    the observations.
-  earliest_forecast: Saturday, 09 May 2020
-  forecasts: 6
-  home_url: https://covidactnow.org/
-  latest_forecast: Sunday, 05 July 2020
-  name: SEIR_CAN
-  team_name: CovidActNow
-  url: https://zoltardata.com/model/249
-- abbreviation: Auquan-SEIR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19-infection-model.auquan.com/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/203
-  dates:
-  - 2020-07-05
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-06-28
-  - 2020-05-24
-  - 2020-05-31
-  - 2020-06-21
-  - 2020-06-07
-  - 2020-06-15
-  description: Modified SEIR model with compartments for reported and unreported infections.
-    Non-linear mixed effects curve-fitting.
-  earliest_forecast: Monday, 04 May 2020
-  forecasts: 9
-  home_url: https://covid19-infection-model.auquan.com/
-  latest_forecast: Sunday, 05 July 2020
-  name: MLOptimizedModifiedSEIR
-  team_name: Auquan Data Science
-  url: https://zoltardata.com/model/203
