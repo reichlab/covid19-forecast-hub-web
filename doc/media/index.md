@@ -3,6 +3,12 @@ title: In the news
 layout: docs
 ---
 
+[Florida coronavirus cases surge for fifth day as Trump pledges outbreak will be under control](https://www.reuters.com/article/us-health-coronavirus-usa-idUSKCN24K0IP){:target="_blank"}  
+_Reuters_ | 19 July 2020
+
+***
+
+
 [Mass. reports 142 new confirmed coronavirus cases, 27 new deaths](https://www.bostonglobe.com/2020/07/15/nation/umass-model-predicts-total-8774-mass-coronavirus-deaths-four-weeks/){:target="_blank"}  
 _Boston Globe_ | 15 July 2020
 
