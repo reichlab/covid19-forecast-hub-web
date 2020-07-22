@@ -3,6 +3,16 @@ title: In the news
 layout: docs
 ---
 
+[Mass. reports 192 new confirmed coronavirus cases, 18 new deaths](https://www.bostonglobe.com/2020/07/22/nation/umass-model-sees-continued-slow-decline-mass-coronavirus-deaths/){:target="_blank"}  
+_Boston Globe_ | 22 July 2020
+
+***
+
+[US COVID-19 Epidemic Projected To Worsen](https://www.barrons.com/news/us-covid-19-epidemic-projected-to-worsen-01594826104){:target="_blank"}  
+_AFP News_ | 15 July 2020
+
+***
+
 [Florida coronavirus cases surge for fifth day as Trump pledges outbreak will be under control](https://www.reuters.com/article/us-health-coronavirus-usa-idUSKCN24K0IP){:target="_blank"}  
 _Reuters_ | 19 July 2020
 
