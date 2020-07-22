@@ -1,3 +1,228 @@
+- abbreviation: STH-3PU
+  actions:
+  - label: Website
+    new_window: true
+    url: https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/278
+  dates:
+  - 2020-06-24
+  - 2020-07-07
+  - 2020-07-19
+  - 2020-06-26
+  - 2020-06-21
+  - 2020-06-25
+  - 2020-06-22
+  - 2020-07-03
+  - 2020-07-04
+  - 2020-06-23
+  - 2020-06-20
+  - 2020-06-27
+  - 2020-06-30
+  - 2020-07-14
+  - 2020-07-09
+  - 2020-07-01
+  - 2020-07-05
+  - 2020-07-11
+  - 2020-07-06
+  - 2020-07-12
+  - 2020-07-21
+  - 2020-06-28
+  - 2020-06-29
+  - 2020-07-08
+  - 2020-05-29
+  - 2020-05-30
+  - 2020-06-01
+  - 2020-06-02
+  - 2020-07-10
+  - 2020-07-13
+  - 2020-07-17
+  - 2020-06-04
+  - 2020-06-03
+  - 2020-06-07
+  - 2020-06-05
+  - 2020-06-06
+  - 2020-06-08
+  - 2020-06-09
+  - 2020-06-10
+  - 2020-06-11
+  - 2020-06-12
+  - 2020-06-13
+  - 2020-06-15
+  - 2020-06-14
+  - 2020-07-16
+  - 2020-06-16
+  - 2020-06-17
+  - 2020-06-18
+  - 2020-07-02
+  - 2020-07-15
+  - 2020-06-19
+  description: 'Model assumes pandemics hit in 3 distinct phases. Each phase can be
+    represented by a single variable and therefore the variables can be isolated. '
+  earliest_forecast: Friday, 29 May 2020
+  forecasts: 51
+  home_url: https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths
+  latest_forecast: Tuesday, 21 July 2020
+  name: 3 Phase Unadjusted
+  team_name: STH
+  url: https://zoltardata.com/model/278
+- abbreviation: YYG-ParamSearch
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid19-projections.com
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/202
+  dates:
+  - 2020-07-10
+  - 2020-07-09
+  - 2020-07-12
+  - 2020-07-11
+  - 2020-07-04
+  - 2020-07-05
+  - 2020-06-23
+  - 2020-07-06
+  - 2020-06-21
+  - 2020-06-22
+  - 2020-07-01
+  - 2020-07-16
+  - 2020-06-29
+  - 2020-06-30
+  - 2020-07-15
+  - 2020-04-13
+  - 2020-05-04
+  - 2020-04-20
+  - 2020-06-25
+  - 2020-07-02
+  - 2020-07-14
+  - 2020-07-21
+  - 2020-04-27
+  - 2020-06-26
+  - 2020-05-11
+  - 2020-07-19
+  - 2020-05-18
+  - 2020-07-03
+  - 2020-07-18
+  - 2020-05-25
+  - 2020-07-08
+  - 2020-07-17
+  - 2020-05-02
+  - 2020-04-30
+  - 2020-04-23
+  - 2020-04-18
+  - 2020-05-13
+  - 2020-04-21
+  - 2020-04-25
+  - 2020-05-17
+  - 2020-05-15
+  - 2020-05-05
+  - 2020-04-15
+  - 2020-04-29
+  - 2020-04-16
+  - 2020-04-17
+  - 2020-04-22
+  - 2020-05-10
+  - 2020-05-06
+  - 2020-04-28
+  - 2020-05-01
+  - 2020-04-26
+  - 2020-04-19
+  - 2020-05-16
+  - 2020-04-14
+  - 2020-05-07
+  - 2020-05-14
+  - 2020-05-03
+  - 2020-05-08
+  - 2020-05-09
+  - 2020-05-12
+  - 2020-04-24
+  - 2020-06-01
+  - 2020-06-27
+  - 2020-07-07
+  - 2020-06-28
+  - 2020-05-26
+  - 2020-06-08
+  - 2020-05-30
+  - 2020-06-03
+  - 2020-05-29
+  - 2020-05-19
+  - 2020-05-23
+  - 2020-06-04
+  - 2020-05-22
+  - 2020-06-02
+  - 2020-06-07
+  - 2020-05-21
+  - 2020-05-24
+  - 2020-05-31
+  - 2020-05-28
+  - 2020-06-05
+  - 2020-06-06
+  - 2020-05-27
+  - 2020-05-20
+  - 2020-06-09
+  - 2020-06-10
+  - 2020-06-11
+  - 2020-06-24
+  - 2020-07-20
+  - 2020-06-12
+  - 2020-06-15
+  - 2020-06-14
+  - 2020-06-13
+  - 2020-06-16
+  - 2020-06-17
+  - 2020-07-13
+  - 2020-06-18
+  - 2020-06-19
+  - 2020-06-20
+  description: An SEIR model that makes daily infections and deaths projections for
+    US states. A machine learning layer learns the best parameters/inputs for each
+    state. The model accounts for state reopenings.
+  earliest_forecast: Monday, 13 April 2020
+  forecasts: 100
+  home_url: https://covid19-projections.com
+  latest_forecast: Tuesday, 21 July 2020
+  name: ParamSearch
+  team_name: Youyang Gu (YYG)
+  url: https://zoltardata.com/model/202
+- abbreviation: CovidAnalytics-DELPHI
+  actions:
+  - label: Website
+    new_window: true
+    url: https://www.covidanalytics.io/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/196
+  dates:
+  - 2020-06-29
+  - 2020-07-20
+  - 2020-06-22
+  - 2020-04-22
+  - 2020-04-27
+  - 2020-04-30
+  - 2020-05-04
+  - 2020-05-10
+  - 2020-05-18
+  - 2020-07-06
+  - 2020-07-13
+  - 2020-05-25
+  - 2020-06-01
+  - 2020-06-08
+  - 2020-06-15
+  description: 'This model predicts based on an SEIR model augmented with underdetection
+    and interventions. Projections account for reopening and assume interventions
+    would be re-enacted if cases continue to climb. '
+  earliest_forecast: Wednesday, 22 April 2020
+  forecasts: 15
+  home_url: https://www.covidanalytics.io/
+  latest_forecast: Monday, 20 July 2020
+  name: DELPHI
+  team_name: CovidAnalytics at MIT
+  url: https://zoltardata.com/model/196
 - abbreviation: UT-Mobility
   actions:
   - label: Website
@@ -32,6 +257,197 @@
   name: Mobility
   team_name: UT-Austin COVID-19 Consortium
   url: https://zoltardata.com/model/201
+- abbreviation: NotreDame-FRED
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/confunguido/covid19_ND_forecasting
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/256
+  dates:
+  - 2020-07-06
+  - 2020-06-22
+  - 2020-07-20
+  - 2020-07-13
+  - 2020-04-27
+  - 2020-05-04
+  - 2020-05-11
+  - 2020-05-18
+  - 2020-05-25
+  - 2020-06-01
+  - 2020-06-08
+  - 2020-06-15
+  - 2020-06-29
+  description: FRED is an agent-based model developed for influenza with parameters
+    modified to represent the natural history of COVID-19
+  earliest_forecast: Monday, 27 April 2020
+  forecasts: 13
+  home_url: https://github.com/confunguido/covid19_ND_forecasting
+  latest_forecast: Monday, 20 July 2020
+  name: NotreDame-FRED
+  team_name: NotreDame-FRED
+  url: https://zoltardata.com/model/256
+- abbreviation: GT-DeepCOVID
+  actions:
+  - label: Website
+    new_window: true
+    url: https://deepcovid.github.io/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/206
+  dates:
+  - 2020-06-22
+  - 2020-06-29
+  - 2020-07-20
+  - 2020-07-13
+  - 2020-05-11
+  - 2020-05-04
+  - 2020-05-18
+  - 2020-05-25
+  - 2020-06-01
+  - 2020-06-08
+  - 2020-06-15
+  - 2020-07-06
+  description: 'Data-driven approach based on deep learning for forecasting mortality
+    and  hospitalizations using syndromic, clinical, demographic, mobility and  point-of-care
+    data. '
+  earliest_forecast: Monday, 04 May 2020
+  forecasts: 12
+  home_url: https://deepcovid.github.io/
+  latest_forecast: Monday, 20 July 2020
+  name: DeepCOVID
+  team_name: GT
+  url: https://zoltardata.com/model/206
+- abbreviation: MOBS-GLEAM_COVID
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid19.gleamproject.org/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/158
+  dates:
+  - 2020-07-13
+  - 2020-05-04
+  - 2020-06-29
+  - 2020-06-08
+  - 2020-07-06
+  - 2020-05-11
+  - 2020-07-20
+  - 2020-04-20
+  - 2020-04-13
+  - 2020-06-15
+  - 2020-05-25
+  - 2020-04-27
+  - 2020-06-22
+  - 2020-05-18
+  - 2020-06-01
+  description: 'This model makes predictions about the future that are dependent on
+    the assumption  that current interventions continue. Metapopulation, age structured
+    SLIR model.    '
+  earliest_forecast: Monday, 13 April 2020
+  forecasts: 15
+  home_url: https://covid19.gleamproject.org/
+  latest_forecast: Monday, 20 July 2020
+  name: GLEAM COVID-19
+  team_name: MOBS Lab at Northeastern
+  url: https://zoltardata.com/model/158
+- abbreviation: RobertWalraven-ESG
+  actions:
+  - label: Website
+    new_window: true
+    url: http://rwalraven.com/COVID19
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/301
+  dates:
+  - 2020-07-12
+  - 2020-07-20
+  - 2020-06-28
+  - 2020-06-30
+  - 2020-07-07
+  - 2020-07-06
+  description: Multiple skewed gaussian distribution peaks fit to raw data
+  earliest_forecast: Sunday, 28 June 2020
+  forecasts: 6
+  home_url: http://rwalraven.com/COVID19
+  latest_forecast: Monday, 20 July 2020
+  name: EmpericalSkewedGaussian
+  team_name: Robert Walraven
+  url: https://zoltardata.com/model/301
+- abbreviation: USACE-ERDC_SEIR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/USACE-ERDC_SEIR/metadata-USACE-ERDC_SEIR.txt
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/262
+  dates:
+  - 2020-06-29
+  - 2020-06-22
+  - 2020-07-13
+  - 2020-07-20
+  - 2020-07-01
+  - 2020-05-14
+  - 2020-05-18
+  - 2020-05-25
+  - 2020-05-24
+  - 2020-07-06
+  - 2020-06-08
+  - 2020-05-28
+  - 2020-06-01
+  - 2020-06-15
+  description: The ERDC SEIR model makes predictions of several variables (e.g., reported
+    new/cumulative cases  per day, etc.). Model parameters are estimated using historical
+    data using Bayesian inference.
+  earliest_forecast: Thursday, 14 May 2020
+  forecasts: 14
+  home_url: https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/USACE-ERDC_SEIR/metadata-USACE-ERDC_SEIR.txt
+  latest_forecast: Monday, 20 July 2020
+  name: ERDC_SEIR
+  team_name: US Army Engineer Research and Development Center
+  url: https://zoltardata.com/model/262
+- abbreviation: COVIDhub-baseline
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid19forecasthub.org/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/302
+  dates:
+  - 2020-07-06
+  - 2020-07-13
+  - 2020-05-25
+  - 2020-05-18
+  - 2020-06-15
+  - 2020-06-22
+  - 2020-07-20
+  - 2020-04-20
+  - 2020-04-06
+  - 2020-04-27
+  - 2020-06-08
+  - 2020-05-11
+  - 2020-04-13
+  - 2020-06-29
+  - 2020-05-04
+  - 2020-06-01
+  description: This model is a baseline predictive model.
+  earliest_forecast: Monday, 06 April 2020
+  forecasts: 16
+  home_url: https://covid19forecasthub.org/
+  latest_forecast: Monday, 20 July 2020
+  name: baseline
+  team_name: COVID-19 Forecast Hub
+  url: https://zoltardata.com/model/302
 - abbreviation: UMich-RidgeTfReg
   actions:
   - label: Website
@@ -54,6 +470,178 @@
   name: RidgeTensorFlowRegressor
   team_name: The University of Michigan
   url: https://zoltardata.com/model/303
+- abbreviation: NotreDame-mobility
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/TAlexPerkins/covid19_NDmobility_forecasting
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/291
+  dates:
+  - 2020-07-06
+  - 2020-06-22
+  - 2020-07-20
+  - 2020-07-13
+  - 2020-06-29
+  - 2020-06-10
+  description: This is an ensemble of nine models that are identical except that they
+    are driven by different mobility indices from Apple and Google. The model underlying
+    each is a deterministic, SEIR-like model.
+  earliest_forecast: Wednesday, 10 June 2020
+  forecasts: 6
+  home_url: https://github.com/TAlexPerkins/covid19_NDmobility_forecasting
+  latest_forecast: Monday, 20 July 2020
+  name: NotreDame-mobility
+  team_name: NotreDame-mobility
+  url: https://zoltardata.com/model/291
+- abbreviation: LANL-GrowthRate
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid-19.bsvgateway.org/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/157
+  dates:
+  - 2020-06-21
+  - 2020-07-13
+  - 2020-07-09
+  - 2020-06-29
+  - 2020-06-24
+  - 2020-07-03
+  - 2020-07-16
+  - 2020-07-06
+  - 2020-05-03
+  - 2020-05-11
+  - 2020-05-14
+  - 2020-04-06
+  - 2020-04-09
+  - 2020-04-27
+  - 2020-04-13
+  - 2020-05-07
+  - 2020-04-23
+  - 2020-04-16
+  - 2020-04-20
+  - 2020-04-30
+  - 2020-05-04
+  - 2020-05-18
+  - 2020-07-02
+  - 2020-05-21
+  - 2020-05-25
+  - 2020-05-24
+  - 2020-05-28
+  - 2020-06-01
+  - 2020-06-04
+  - 2020-06-08
+  - 2020-06-11
+  - 2020-06-14
+  - 2020-07-20
+  - 2020-06-18
+  description: This model makes predictions about the future, unconditional on particular
+    intervention strategies. Statistical dynamical growth model accounting for population
+    susceptibility.
+  earliest_forecast: Monday, 06 April 2020
+  forecasts: 34
+  home_url: https://covid-19.bsvgateway.org/
+  latest_forecast: Monday, 20 July 2020
+  name: GrowthRate
+  team_name: Los Alamos National Labs
+  url: https://zoltardata.com/model/157
+- abbreviation: PSI-DRAFT
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/PSI-DRAFT
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/254
+  dates:
+  - 2020-06-29
+  - 2020-07-20
+  - 2020-06-22
+  - 2020-07-13
+  - 2020-07-06
+  - 2020-05-18
+  - 2020-05-25
+  - 2020-06-01
+  - 2020-06-08
+  - 2020-06-15
+  description: 'A stochastic/deterministic, single-population SEIRX model that stratifies
+    by both age distribution and disease severity and includes generic intervention
+    fitting. '
+  earliest_forecast: Monday, 18 May 2020
+  forecasts: 10
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/PSI-DRAFT
+  latest_forecast: Monday, 20 July 2020
+  name: Disease Rapid Analysis and Forecasting Tool
+  team_name: Predictive Science Inc
+  url: https://zoltardata.com/model/254
+- abbreviation: CMU-TimeSeries
+  actions:
+  - label: Website
+    new_window: true
+    url: https://delphi.cmu.edu
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/307
+  dates:
+  - 2020-07-20
+  description: A basic AR-type time series model fit using lagged values of case counts
+    and deaths as features. No assumptions are made regarding reopening or governmental
+    interventions.
+  earliest_forecast: Monday, 20 July 2020
+  forecasts: 1
+  home_url: https://delphi.cmu.edu
+  latest_forecast: Monday, 20 July 2020
+  name: TimeSeries
+  team_name: Carnegie Mellon Delphi Group
+  url: https://zoltardata.com/model/307
+- abbreviation: UVA-Ensemble
+  actions:
+  - label: Website
+    new_window: true
+    url: https://biocomplexity.virginia.edu/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/308
+  dates:
+  - 2020-07-20
+  description: An ensemble of multiple methods such as auto-regressive (AR) models
+    with exogenous variables, Long short-term memory (lSTM) models, and PatchSim (an
+    SEIR model).
+  earliest_forecast: Monday, 20 July 2020
+  forecasts: 1
+  home_url: https://biocomplexity.virginia.edu/
+  latest_forecast: Monday, 20 July 2020
+  name: Ensemble model
+  team_name: University of Virginia, Biocomplexity COVID-19 Response Team
+  url: https://zoltardata.com/model/308
+- abbreviation: Karlen-pypm
+  actions:
+  - label: Website
+    new_window: true
+    url: https://pypm.github.io/home/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/309
+  dates:
+  - 2020-07-20
+  description: Discrete-time difference equations with long periods of constant transmission
+    rate
+  earliest_forecast: Monday, 20 July 2020
+  forecasts: 1
+  home_url: https://pypm.github.io/home/
+  latest_forecast: Monday, 20 July 2020
+  name: python Population Modeller
+  team_name: Karlen Working Group
+  url: https://zoltardata.com/model/309
 - abbreviation: Columbia_UNC-SurvCon
   actions:
   - label: Website
@@ -79,6 +667,106 @@
   name: Survival-Convolution Models
   team_name: Columbia_UNC
   url: https://zoltardata.com/model/292
+- abbreviation: UMass-MechBayes
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/dsheldon/covid
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/200
+  dates:
+  - 2020-07-05
+  - 2020-06-28
+  - 2020-04-26
+  - 2020-05-03
+  - 2020-05-10
+  - 2020-07-12
+  - 2020-05-17
+  - 2020-05-24
+  - 2020-07-19
+  - 2020-06-07
+  - 2020-06-14
+  - 2020-06-21
+  - 2020-05-31
+  description: 'Bayesian compartmental model with observations on cumulative case
+    counts and cumulative deaths. Model is fit independently to each state. Model
+    includes observation noise and a case detection rate. '
+  earliest_forecast: Sunday, 26 April 2020
+  forecasts: 13
+  home_url: https://github.com/dsheldon/covid
+  latest_forecast: Sunday, 19 July 2020
+  name: MechBayes
+  team_name: UMass-Amherst
+  url: https://zoltardata.com/model/200
+- abbreviation: LNQ-ens1
+  actions:
+  - label: Website
+    new_window: true
+    url: https://www.kaggle.com/sasrdw/locknquay
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/305
+  dates:
+  - 2020-07-19
+  - 2020-07-12
+  description: County-level ensemble of boosted tree and neural net models. Lots of
+    engineered features.
+  earliest_forecast: Sunday, 12 July 2020
+  forecasts: 2
+  home_url: https://www.kaggle.com/sasrdw/locknquay
+  latest_forecast: Sunday, 19 July 2020
+  name: ens1
+  team_name: LockNQuay
+  url: https://zoltardata.com/model/305
+- abbreviation: CU-select
+  actions:
+  - label: Website
+    new_window: true
+    url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/231
+  dates:
+  - 2020-04-23
+  - 2020-07-02
+  - 2020-07-19
+  - 2020-04-16
+  - 2020-04-12
+  - 2020-04-26
+  - 2020-05-07
+  - 2020-04-19
+  - 2020-06-28
+  - 2020-07-12
+  - 2020-05-17
+  - 2020-05-24
+  - 2020-05-10
+  - 2020-05-14
+  - 2020-05-21
+  - 2020-05-28
+  - 2020-05-31
+  - 2020-05-03
+  - 2020-06-21
+  - 2020-06-07
+  - 2020-06-04
+  - 2020-06-11
+  - 2020-06-25
+  - 2020-07-05
+  - 2020-06-14
+  - 2020-06-18
+  description: A metapopulation county-level SEIR model for projecting future COVID-19
+    incidence and deaths. This forecast is the scenario we believe to be most plausible
+    given the current setting.
+  earliest_forecast: Sunday, 12 April 2020
+  forecasts: 26
+  home_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
+  latest_forecast: Sunday, 19 July 2020
+  name: select
+  team_name: Columbia University
+  url: https://zoltardata.com/model/231
 - abbreviation: UCLA-SuEIR
   actions:
   - label: Website
@@ -183,75 +871,115 @@
   name: DeterministicGrowth
   team_name: University of Geneva / Swiss Data Science Center
   url: https://zoltardata.com/model/192
-- abbreviation: STH-3PU
+- abbreviation: UA-EpiCovDA
   actions:
   - label: Website
     new_window: true
-    url: https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths
+    url: https://jocelinelega.github.io/EpiGro/
   - label: Forecast data
     new_window: true
     type: url
-    url: https://zoltardata.com/model/278
+    url: https://zoltardata.com/model/253
   dates:
-  - 2020-06-24
-  - 2020-07-07
-  - 2020-07-19
-  - 2020-06-26
-  - 2020-06-21
-  - 2020-06-25
-  - 2020-06-22
-  - 2020-07-03
-  - 2020-07-04
-  - 2020-06-23
-  - 2020-06-20
-  - 2020-06-27
-  - 2020-06-30
-  - 2020-07-14
-  - 2020-07-09
-  - 2020-07-01
-  - 2020-07-05
-  - 2020-07-11
-  - 2020-07-06
-  - 2020-07-12
-  - 2020-06-28
-  - 2020-06-29
-  - 2020-07-08
-  - 2020-05-29
-  - 2020-05-30
-  - 2020-06-01
-  - 2020-06-02
-  - 2020-07-10
-  - 2020-07-13
-  - 2020-07-17
-  - 2020-06-04
-  - 2020-06-03
-  - 2020-06-07
-  - 2020-06-05
-  - 2020-06-06
-  - 2020-06-08
-  - 2020-06-09
-  - 2020-06-10
-  - 2020-06-11
-  - 2020-06-12
-  - 2020-06-13
-  - 2020-06-15
-  - 2020-06-14
-  - 2020-07-16
-  - 2020-06-16
-  - 2020-06-17
-  - 2020-06-18
-  - 2020-07-02
-  - 2020-07-15
   - 2020-06-19
-  description: 'Model assumes pandemics hit in 3 distinct phases. Each phase can be
-    represented by a single variable and therefore the variables can be isolated. '
-  earliest_forecast: Friday, 29 May 2020
-  forecasts: 50
-  home_url: https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths
+  - 2020-07-19
+  - 2020-06-28
+  - 2020-05-23
+  - 2020-06-21
+  - 2020-07-05
+  - 2020-06-07
+  - 2020-05-17
+  - 2020-05-31
+  - 2020-06-14
+  - 2020-07-12
+  description: 'SIR mechanistic model with data assimilation.  '
+  earliest_forecast: Sunday, 17 May 2020
+  forecasts: 11
+  home_url: https://jocelinelega.github.io/EpiGro/
   latest_forecast: Sunday, 19 July 2020
-  name: 3 Phase Unadjusted
-  team_name: STH
-  url: https://zoltardata.com/model/278
+  name: EpiGro Covid-19 model with Data Assimilation
+  team_name: University of Arizona
+  url: https://zoltardata.com/model/253
+- abbreviation: CDDEP-SEIR_MCMC
+  actions:
+  - label: Website
+    new_window: true
+    url: https://cddep.org/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/304
+  dates:
+  - 2020-07-05
+  - 2020-07-19
+  - 2020-07-12
+  description: County-level SEIR model forecasts of incident (weekly) cases number
+    by fitting predicted cases to the observations.
+  earliest_forecast: Sunday, 05 July 2020
+  forecasts: 3
+  home_url: https://cddep.org/
+  latest_forecast: Sunday, 19 July 2020
+  name: SEIR_Markov_Chain_Monte_Carlo
+  team_name: Center for Disease Dynamics, Economics & Policy
+  url: https://zoltardata.com/model/304
+- abbreviation: OliverWyman-Navigator
+  actions:
+  - label: Website
+    new_window: true
+    url: https://pandemicnavigator.oliverwyman.com/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/286
+  dates:
+  - 2020-07-19
+  - 2020-07-12
+  - 2020-07-05
+  - 2020-06-21
+  - 2020-06-07
+  - 2020-06-14
+  - 2020-06-28
+  description: Oliver Wyman's Pandemic Navigator provides forecasts & scenario analysis
+    for Detected and Undetected cases and death counts following a compartmental formulation
+    with non-stationary transition rates.
+  earliest_forecast: Sunday, 07 June 2020
+  forecasts: 7
+  home_url: https://pandemicnavigator.oliverwyman.com/
+  latest_forecast: Sunday, 19 July 2020
+  name: Pandemic Navigator
+  team_name: Oliver Wyman
+  url: https://zoltardata.com/model/286
+- abbreviation: IowaStateLW-STEM
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid19.stat.iastate.edu
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/266
+  dates:
+  - 2020-07-12
+  - 2020-07-19
+  - 2020-07-05
+  - 2020-06-21
+  - 2020-05-24
+  - 2020-05-01
+  - 2020-04-26
+  - 2020-05-17
+  - 2020-05-31
+  - 2020-06-07
+  - 2020-06-14
+  - 2020-06-28
+  description: Spatiotemporal Dynamics, Nowcasting and Forecasting of COVID-19 in
+    the United States.
+  earliest_forecast: Sunday, 26 April 2020
+  forecasts: 12
+  home_url: https://covid19.stat.iastate.edu
+  latest_forecast: Sunday, 19 July 2020
+  name: Spatiotemporal Epidemic Modeling
+  team_name: Iowa State - Lily Wang's Research Group
+  url: https://zoltardata.com/model/266
 - abbreviation: USC-SI_kJalpha
   actions:
   - label: Website
@@ -285,124 +1013,65 @@
   name: SI_kJalpha
   team_name: University of Southern California Data Science Lab
   url: https://zoltardata.com/model/300
-- abbreviation: YYG-ParamSearch
+- abbreviation: Covid19Sim-Simulator
   actions:
   - label: Website
     new_window: true
-    url: http://covid19-projections.com
+    url: https://covid19sim.org/
   - label: Forecast data
     new_window: true
     type: url
-    url: https://zoltardata.com/model/202
+    url: https://zoltardata.com/model/285
   dates:
-  - 2020-07-10
-  - 2020-07-09
   - 2020-07-12
-  - 2020-07-11
-  - 2020-07-04
-  - 2020-07-05
-  - 2020-06-23
-  - 2020-07-06
-  - 2020-06-21
-  - 2020-06-22
-  - 2020-07-01
-  - 2020-07-16
-  - 2020-06-29
-  - 2020-06-30
-  - 2020-07-15
-  - 2020-04-13
-  - 2020-05-04
-  - 2020-04-20
-  - 2020-06-25
-  - 2020-07-02
-  - 2020-07-14
-  - 2020-04-27
-  - 2020-06-26
-  - 2020-05-11
-  - 2020-07-19
-  - 2020-05-18
-  - 2020-07-03
-  - 2020-07-18
-  - 2020-05-25
-  - 2020-07-08
-  - 2020-07-17
-  - 2020-05-02
-  - 2020-04-30
-  - 2020-04-23
-  - 2020-04-18
-  - 2020-05-13
-  - 2020-04-21
-  - 2020-04-25
-  - 2020-05-17
-  - 2020-05-15
-  - 2020-05-05
-  - 2020-04-15
-  - 2020-04-29
-  - 2020-04-16
-  - 2020-04-17
-  - 2020-04-22
-  - 2020-05-10
-  - 2020-05-06
-  - 2020-04-28
-  - 2020-05-01
-  - 2020-04-26
-  - 2020-04-19
-  - 2020-05-16
-  - 2020-04-14
-  - 2020-05-07
-  - 2020-05-14
-  - 2020-05-03
-  - 2020-05-08
-  - 2020-05-09
-  - 2020-05-12
-  - 2020-04-24
-  - 2020-06-01
-  - 2020-06-27
-  - 2020-07-07
   - 2020-06-28
-  - 2020-05-26
-  - 2020-06-08
-  - 2020-05-30
-  - 2020-06-03
-  - 2020-05-29
-  - 2020-05-19
-  - 2020-05-23
-  - 2020-06-04
-  - 2020-05-22
-  - 2020-06-02
+  - 2020-07-19
+  - 2020-06-21
+  - 2020-07-05
+  - 2020-05-24
   - 2020-06-07
-  - 2020-05-21
+  - 2020-05-31
+  - 2020-06-14
+  description: An interactive tool developed by researchers at Mass General Hospital,
+    Harvard Medical School, Georgia Tech and Boston Medical Center to inform COVID-19
+    intervention policy decisions in the US.
+  earliest_forecast: Sunday, 24 May 2020
+  forecasts: 9
+  home_url: https://covid19sim.org/
+  latest_forecast: Sunday, 19 July 2020
+  name: Simulator
+  team_name: COVID-19 Simulator
+  url: https://zoltardata.com/model/285
+- abbreviation: JHU_IDD-CovidSP
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/255
+  dates:
+  - 2020-06-28
+  - 2020-07-12
+  - 2020-07-19
+  - 2020-04-24
+  - 2020-05-17
   - 2020-05-24
   - 2020-05-31
-  - 2020-05-28
-  - 2020-06-05
-  - 2020-06-06
-  - 2020-05-27
-  - 2020-05-20
-  - 2020-06-09
-  - 2020-06-10
-  - 2020-06-11
-  - 2020-06-24
-  - 2020-06-12
-  - 2020-06-15
+  - 2020-07-05
+  - 2020-06-07
+  - 2020-06-21
   - 2020-06-14
-  - 2020-06-13
-  - 2020-06-16
-  - 2020-06-17
-  - 2020-07-13
-  - 2020-06-18
-  - 2020-06-19
-  - 2020-06-20
-  description: Based on the SEIR model to make daily projections regarding  COVID-19
-    infections and deaths in 50 US states. The model accounts for state reopenings
-    and its effects on infections and deaths.
-  earliest_forecast: Monday, 13 April 2020
-  forecasts: 98
-  home_url: http://covid19-projections.com
+  description: County-level metapopulation model with commuting and stochastic SEIR
+    disease  dynamics with social-distancing indicators.
+  earliest_forecast: Friday, 24 April 2020
+  forecasts: 11
+  home_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
   latest_forecast: Sunday, 19 July 2020
-  name: ParamSearch
-  team_name: YYG
-  url: https://zoltardata.com/model/202
+  name: CovidScenarioPipeline
+  team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
+  url: https://zoltardata.com/model/255
 - abbreviation: MITCovAlliance-SIR
   actions:
   - label: Website
@@ -558,589 +1227,3 @@
   name: CurveFit
   team_name: Institute for Health Metrics and Evaluation
   url: https://zoltardata.com/model/154
-- abbreviation: LANL-GrowthRate
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid-19.bsvgateway.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/157
-  dates:
-  - 2020-06-21
-  - 2020-07-13
-  - 2020-07-09
-  - 2020-06-29
-  - 2020-06-24
-  - 2020-07-03
-  - 2020-07-16
-  - 2020-07-06
-  - 2020-05-03
-  - 2020-05-11
-  - 2020-05-14
-  - 2020-04-06
-  - 2020-04-09
-  - 2020-04-27
-  - 2020-04-13
-  - 2020-05-07
-  - 2020-04-23
-  - 2020-04-16
-  - 2020-04-20
-  - 2020-04-30
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-07-02
-  - 2020-05-21
-  - 2020-05-25
-  - 2020-05-24
-  - 2020-05-28
-  - 2020-06-01
-  - 2020-06-04
-  - 2020-06-08
-  - 2020-06-11
-  - 2020-06-14
-  - 2020-06-18
-  description: This model makes predictions about the future, unconditional on particular
-    intervention strategies. Statistical dynamical growth model accounting for population
-    susceptibility.
-  earliest_forecast: Monday, 06 April 2020
-  forecasts: 33
-  home_url: https://covid-19.bsvgateway.org/
-  latest_forecast: Thursday, 16 July 2020
-  name: GrowthRate
-  team_name: Los Alamos National Labs
-  url: https://zoltardata.com/model/157
-- abbreviation: COVIDhub-baseline
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19forecasthub.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/302
-  dates:
-  - 2020-07-06
-  - 2020-07-13
-  - 2020-05-25
-  - 2020-05-18
-  - 2020-06-15
-  - 2020-06-22
-  - 2020-04-20
-  - 2020-04-06
-  - 2020-04-27
-  - 2020-06-08
-  - 2020-05-11
-  - 2020-04-13
-  - 2020-06-29
-  - 2020-05-04
-  - 2020-06-01
-  description: This model is a baseline predictive model.
-  earliest_forecast: Monday, 06 April 2020
-  forecasts: 15
-  home_url: https://covid19forecasthub.org/
-  latest_forecast: Monday, 13 July 2020
-  name: baseline
-  team_name: COVID-19 Forecast Hub
-  url: https://zoltardata.com/model/302
-- abbreviation: CovidAnalytics-DELPHI
-  actions:
-  - label: Website
-    new_window: true
-    url: https://www.covidanalytics.io/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/196
-  dates:
-  - 2020-06-29
-  - 2020-06-22
-  - 2020-04-22
-  - 2020-04-27
-  - 2020-04-30
-  - 2020-05-04
-  - 2020-05-10
-  - 2020-05-18
-  - 2020-07-06
-  - 2020-07-13
-  - 2020-05-25
-  - 2020-06-01
-  - 2020-06-08
-  - 2020-06-15
-  description: 'This model predicts based on an SEIR model augmented with underdetection
-    and interventions. Projections account for reopening and assume interventions
-    would be re-enacted if cases continue to climb. '
-  earliest_forecast: Wednesday, 22 April 2020
-  forecasts: 14
-  home_url: https://www.covidanalytics.io/
-  latest_forecast: Monday, 13 July 2020
-  name: DELPHI
-  team_name: CovidAnalytics at MIT
-  url: https://zoltardata.com/model/196
-- abbreviation: NotreDame-FRED
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/confunguido/covid19_ND_forecasting
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/256
-  dates:
-  - 2020-07-06
-  - 2020-06-22
-  - 2020-07-13
-  - 2020-04-27
-  - 2020-05-04
-  - 2020-05-11
-  - 2020-05-18
-  - 2020-05-25
-  - 2020-06-01
-  - 2020-06-08
-  - 2020-06-15
-  - 2020-06-29
-  description: FRED is an agent-based model developed for influenza with parameters
-    modified to represent the natural history of COVID-19
-  earliest_forecast: Monday, 27 April 2020
-  forecasts: 12
-  home_url: https://github.com/confunguido/covid19_ND_forecasting
-  latest_forecast: Monday, 13 July 2020
-  name: NotreDame-FRED
-  team_name: NotreDame-FRED
-  url: https://zoltardata.com/model/256
-- abbreviation: GT-DeepCOVID
-  actions:
-  - label: Website
-    new_window: true
-    url: https://deepcovid.github.io/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/206
-  dates:
-  - 2020-06-22
-  - 2020-06-29
-  - 2020-07-13
-  - 2020-05-11
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-05-25
-  - 2020-06-01
-  - 2020-06-08
-  - 2020-06-15
-  - 2020-07-06
-  description: 'Data-driven approach based on deep learning for forecasting mortality
-    and  hospitalizations using syndromic, clinical, demographic, mobility and  point-of-care
-    data. '
-  earliest_forecast: Monday, 04 May 2020
-  forecasts: 11
-  home_url: https://deepcovid.github.io/
-  latest_forecast: Monday, 13 July 2020
-  name: DeepCOVID
-  team_name: GT
-  url: https://zoltardata.com/model/206
-- abbreviation: PSI-DRAFT
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/PSI-DRAFT
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/254
-  dates:
-  - 2020-06-29
-  - 2020-06-22
-  - 2020-07-13
-  - 2020-07-06
-  - 2020-05-18
-  - 2020-05-25
-  - 2020-06-01
-  - 2020-06-08
-  - 2020-06-15
-  description: 'A stochastic/deterministic, single-population SEIRX model that stratifies
-    by both age distribution and disease severity and includes generic intervention
-    fitting. '
-  earliest_forecast: Monday, 18 May 2020
-  forecasts: 9
-  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/PSI-DRAFT
-  latest_forecast: Monday, 13 July 2020
-  name: Disease Rapid Analysis and Forecasting Tool
-  team_name: Predictive Science Inc
-  url: https://zoltardata.com/model/254
-- abbreviation: MOBS-GLEAM_COVID
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19.gleamproject.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/158
-  dates:
-  - 2020-07-13
-  - 2020-05-04
-  - 2020-06-29
-  - 2020-06-08
-  - 2020-07-06
-  - 2020-05-11
-  - 2020-04-20
-  - 2020-04-13
-  - 2020-06-15
-  - 2020-05-25
-  - 2020-04-27
-  - 2020-06-22
-  - 2020-05-18
-  - 2020-06-01
-  description: 'This model makes predictions about the future that are dependent on
-    the assumption  that current interventions continue. Metapopulation, age structured
-    SLIR model.    '
-  earliest_forecast: Monday, 13 April 2020
-  forecasts: 14
-  home_url: https://covid19.gleamproject.org/
-  latest_forecast: Monday, 13 July 2020
-  name: GLEAM COVID-19
-  team_name: MOBS Lab at Northeastern
-  url: https://zoltardata.com/model/158
-- abbreviation: USACE-ERDC_SEIR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/USACE-ERDC_SEIR/metadata-USACE-ERDC_SEIR.txt
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/262
-  dates:
-  - 2020-06-29
-  - 2020-06-22
-  - 2020-07-13
-  - 2020-07-01
-  - 2020-05-14
-  - 2020-05-18
-  - 2020-05-25
-  - 2020-05-24
-  - 2020-07-06
-  - 2020-06-08
-  - 2020-05-28
-  - 2020-06-01
-  - 2020-06-15
-  description: The ERDC SEIR model makes predictions of several variables (e.g., reported
-    new/cumulative cases  per day, etc.). Model parameters are estimated using historical
-    data using Bayesian inference.
-  earliest_forecast: Thursday, 14 May 2020
-  forecasts: 13
-  home_url: https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/USACE-ERDC_SEIR/metadata-USACE-ERDC_SEIR.txt
-  latest_forecast: Monday, 13 July 2020
-  name: ERDC_SEIR
-  team_name: US Army Engineer Research and Development Center
-  url: https://zoltardata.com/model/262
-- abbreviation: NotreDame-mobility
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/TAlexPerkins/covid19_NDmobility_forecasting
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/291
-  dates:
-  - 2020-07-06
-  - 2020-06-22
-  - 2020-07-13
-  - 2020-06-29
-  - 2020-06-10
-  description: This is an ensemble of nine models that are identical except that they
-    are driven by different mobility indices from Apple and Google. The model underlying
-    each is a deterministic, SEIR-like model.
-  earliest_forecast: Wednesday, 10 June 2020
-  forecasts: 5
-  home_url: https://github.com/TAlexPerkins/covid19_NDmobility_forecasting
-  latest_forecast: Monday, 13 July 2020
-  name: NotreDame-mobility
-  team_name: NotreDame-mobility
-  url: https://zoltardata.com/model/291
-- abbreviation: UMass-MechBayes
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/dsheldon/covid
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/200
-  dates:
-  - 2020-07-05
-  - 2020-06-28
-  - 2020-04-26
-  - 2020-05-03
-  - 2020-05-10
-  - 2020-07-12
-  - 2020-05-17
-  - 2020-05-24
-  - 2020-06-07
-  - 2020-06-14
-  - 2020-06-21
-  - 2020-05-31
-  description: 'Bayesian compartmental model with observations on cumulative case
-    counts and cumulative deaths. Model is fit independently to each state. Model
-    includes observation noise and a case detection rate. '
-  earliest_forecast: Sunday, 26 April 2020
-  forecasts: 12
-  home_url: https://github.com/dsheldon/covid
-  latest_forecast: Sunday, 12 July 2020
-  name: MechBayes
-  team_name: UMass-Amherst Influenza Forecasting Center of Excellence & College of
-    Information and Computer Sciences
-  url: https://zoltardata.com/model/200
-- abbreviation: CU-select
-  actions:
-  - label: Website
-    new_window: true
-    url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/231
-  dates:
-  - 2020-04-23
-  - 2020-07-02
-  - 2020-04-16
-  - 2020-04-12
-  - 2020-04-26
-  - 2020-05-07
-  - 2020-04-19
-  - 2020-06-28
-  - 2020-07-12
-  - 2020-05-17
-  - 2020-05-24
-  - 2020-05-10
-  - 2020-05-14
-  - 2020-05-21
-  - 2020-05-28
-  - 2020-05-31
-  - 2020-05-03
-  - 2020-06-21
-  - 2020-06-07
-  - 2020-06-04
-  - 2020-06-11
-  - 2020-06-25
-  - 2020-07-05
-  - 2020-06-14
-  - 2020-06-18
-  description: A metapopulation county-level SEIR model for projecting future COVID-19
-    incidence and deaths. This forecast is the scenario we believe to be most plausible
-    given the current setting.
-  earliest_forecast: Sunday, 12 April 2020
-  forecasts: 25
-  home_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
-  latest_forecast: Sunday, 12 July 2020
-  name: select
-  team_name: Columbia University
-  url: https://zoltardata.com/model/231
-- abbreviation: LNQ-ens1
-  actions:
-  - label: Website
-    new_window: true
-    url: https://www.kaggle.com/sasrdw/locknquay
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/305
-  dates:
-  - 2020-07-12
-  description: County-level ensemble of boosted tree and neural net models. Lots of
-    engineered features.
-  earliest_forecast: Sunday, 12 July 2020
-  forecasts: 1
-  home_url: https://www.kaggle.com/sasrdw/locknquay
-  latest_forecast: Sunday, 12 July 2020
-  name: ens1
-  team_name: LockNQuay
-  url: https://zoltardata.com/model/305
-- abbreviation: UA-EpiCovDA
-  actions:
-  - label: Website
-    new_window: true
-    url: https://jocelinelega.github.io/EpiGro/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/253
-  dates:
-  - 2020-06-19
-  - 2020-06-28
-  - 2020-05-23
-  - 2020-06-21
-  - 2020-07-05
-  - 2020-06-07
-  - 2020-05-17
-  - 2020-05-31
-  - 2020-06-14
-  - 2020-07-12
-  description: 'SIR mechanistic model with data assimilation.  '
-  earliest_forecast: Sunday, 17 May 2020
-  forecasts: 10
-  home_url: https://jocelinelega.github.io/EpiGro/
-  latest_forecast: Sunday, 12 July 2020
-  name: EpiGro Covid-19 model with Data Assimilation
-  team_name: University of Arizona
-  url: https://zoltardata.com/model/253
-- abbreviation: CDDEP-SEIR_MCMC
-  actions:
-  - label: Website
-    new_window: true
-    url: https://cddep.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/304
-  dates:
-  - 2020-07-05
-  - 2020-07-12
-  description: County-level SEIR model forecasts of incident (weekly) cases number
-    by fitting predicted cases to the observations.
-  earliest_forecast: Sunday, 05 July 2020
-  forecasts: 2
-  home_url: https://cddep.org/
-  latest_forecast: Sunday, 12 July 2020
-  name: SEIR_Markov_Chain_Monte_Carlo
-  team_name: Center for Disease Dynamics, Economics & Policy
-  url: https://zoltardata.com/model/304
-- abbreviation: OliverWyman-Navigator
-  actions:
-  - label: Website
-    new_window: true
-    url: https://pandemicnavigator.oliverwyman.com/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/286
-  dates:
-  - 2020-07-12
-  - 2020-07-05
-  - 2020-06-21
-  - 2020-06-07
-  - 2020-06-14
-  - 2020-06-28
-  description: Oliver Wyman's Pandemic Navigator provides forecasts & scenario analysis
-    for Detected and Undetected cases and death counts following a compartmental formulation
-    with non-stationary transition rates.
-  earliest_forecast: Sunday, 07 June 2020
-  forecasts: 6
-  home_url: https://pandemicnavigator.oliverwyman.com/
-  latest_forecast: Sunday, 12 July 2020
-  name: Pandemic Navigator
-  team_name: Oliver Wyman
-  url: https://zoltardata.com/model/286
-- abbreviation: IowaStateLW-STEM
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19.stat.iastate.edu
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/266
-  dates:
-  - 2020-07-12
-  - 2020-07-05
-  - 2020-06-21
-  - 2020-05-24
-  - 2020-05-01
-  - 2020-04-26
-  - 2020-05-17
-  - 2020-05-31
-  - 2020-06-07
-  - 2020-06-14
-  - 2020-06-28
-  description: Spatiotemporal Dynamics, Nowcasting and Forecasting of COVID-19 in
-    the United States.
-  earliest_forecast: Sunday, 26 April 2020
-  forecasts: 11
-  home_url: https://covid19.stat.iastate.edu
-  latest_forecast: Sunday, 12 July 2020
-  name: Spatiotemporal Epidemic Modeling
-  team_name: Iowa State - Lily Wang's Research Group
-  url: https://zoltardata.com/model/266
-- abbreviation: RobertWalraven-ESG
-  actions:
-  - label: Website
-    new_window: true
-    url: http://rwalraven.com/COVID19
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/301
-  dates:
-  - 2020-07-12
-  - 2020-06-28
-  - 2020-06-30
-  - 2020-07-07
-  - 2020-07-06
-  description: Multiple skewed gaussian distribution peaks fit to raw data
-  earliest_forecast: Sunday, 28 June 2020
-  forecasts: 5
-  home_url: http://rwalraven.com/COVID19
-  latest_forecast: Sunday, 12 July 2020
-  name: EmpericalSkewedGaussian
-  team_name: Robert Walraven
-  url: https://zoltardata.com/model/301
-- abbreviation: Covid19Sim-Simulator
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19sim.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/285
-  dates:
-  - 2020-07-12
-  - 2020-06-28
-  - 2020-06-21
-  - 2020-07-05
-  - 2020-05-24
-  - 2020-06-07
-  - 2020-05-31
-  - 2020-06-14
-  description: An interactive tool developed by researchers at Mass General Hospital,
-    Harvard Medical School, Georgia Tech and Boston Medical Center to inform COVID-19
-    intervention policy decisions in the US.
-  earliest_forecast: Sunday, 24 May 2020
-  forecasts: 8
-  home_url: https://covid19sim.org/
-  latest_forecast: Sunday, 12 July 2020
-  name: Simulator
-  team_name: COVID-19 Simulator
-  url: https://zoltardata.com/model/285
-- abbreviation: JHU_IDD-CovidSP
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/255
-  dates:
-  - 2020-06-28
-  - 2020-07-12
-  - 2020-04-24
-  - 2020-05-17
-  - 2020-05-24
-  - 2020-05-31
-  - 2020-07-05
-  - 2020-06-07
-  - 2020-06-21
-  - 2020-06-14
-  description: County-level metapopulation model with commuting and stochastic SEIR
-    disease  dynamics with social-distancing indicators.
-  earliest_forecast: Friday, 24 April 2020
-  forecasts: 10
-  home_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
-  latest_forecast: Sunday, 12 July 2020
-  name: CovidScenarioPipeline
-  team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
-  url: https://zoltardata.com/model/255
