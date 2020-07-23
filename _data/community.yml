@@ -21,6 +21,7 @@
   - 2020-06-20
   - 2020-06-27
   - 2020-06-30
+  - 2020-07-22
   - 2020-07-14
   - 2020-07-09
   - 2020-07-01
@@ -62,9 +63,9 @@
   description: 'Model assumes pandemics hit in 3 distinct phases. Each phase can be
     represented by a single variable and therefore the variables can be isolated. '
   earliest_forecast: Friday, 29 May 2020
-  forecasts: 51
+  forecasts: 52
   home_url: https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths
-  latest_forecast: Tuesday, 21 July 2020
+  latest_forecast: Wednesday, 22 July 2020
   name: 3 Phase Unadjusted
   team_name: STH
   url: https://zoltardata.com/model/278
@@ -779,9 +780,9 @@
   dates:
   - 2020-06-21
   - 2020-07-05
-  - 2020-07-19
   - 2020-06-28
   - 2020-05-01
+  - 2020-07-19
   - 2020-05-10
   - 2020-05-17
   - 2020-05-24
