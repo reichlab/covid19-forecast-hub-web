@@ -2,6 +2,10 @@
 title: In the news
 layout: docs
 ---
+[US coronavirus cases ease in some hotspots](https://news.yahoo.com/us-coronavirus-cases-ease-hotspots-171043026.html){:target="_blank"}  
+_Yahoo News/AFP_ | 23 July 2020
+
+***
 
 [Mass. reports 192 new confirmed coronavirus cases, 18 new deaths](https://www.bostonglobe.com/2020/07/22/nation/umass-model-sees-continued-slow-decline-mass-coronavirus-deaths/){:target="_blank"}  
 _Boston Globe_ | 22 July 2020
