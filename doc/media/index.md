@@ -2,6 +2,11 @@
 title: In the news
 layout: docs
 ---
+[Statistical 'Forecasters' Try To Predict The Pandemic's Path Forward](https://www.wbur.org/commonhealth/2020/07/27/umass-amherst-coronavirus-modeling-reich){:target="_blank"}  
+_WBUR_ | 27 July 2020
+
+***
+
 [US coronavirus cases ease in some hotspots](https://news.yahoo.com/us-coronavirus-cases-ease-hotspots-171043026.html){:target="_blank"}  
 _Yahoo News/AFP_ | 23 July 2020
 
