@@ -6,7 +6,7 @@ sections:
     title: The COVID-19 Forecast Hub
     image: images/5.jpg
     content: >-
-      This site maintains the authoritative, up-to-date record for forecasts of COVID-19 deaths and hospitalizations in the US, created by dozens of leading infectious disease modeling teams from around the globe. 
+      This site maintains the authoritative, up-to-date record for forecasts of COVID-19 deaths and hospitalizations in the US, created by dozens of leading infectious disease modeling teams from around the globe, in coordination with CDC. 
     actions:
       - label: Forecast data
         url: https://zoltardata.com/project/44
