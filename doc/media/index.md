@@ -13,6 +13,12 @@ _WBUR_ | 27 July 2020
 
 ***
 
+
+[Coronavirus Hot Spots: Could The Mid-Atlantic And Northeast See A COVID-19 Rebound?](https://www.npr.org/sections/health-shots/2020/07/24/895144417/coronavirus-hot-spots-could-the-mid-atlantic-and-northeast-see-a-covid-19-reboun){:target="_blank"}  
+_NPR_ | 24 July 2020
+
+***
+
 [US coronavirus cases ease in some hotspots](https://news.yahoo.com/us-coronavirus-cases-ease-hotspots-171043026.html){:target="_blank"}  
 _Yahoo News/AFP_ | 23 July 2020
 
