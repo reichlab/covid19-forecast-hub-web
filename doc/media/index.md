@@ -2,6 +2,12 @@
 title: In the news
 layout: docs
 ---
+
+[Virus Death Toll Hits 150,000 Even as New U.S. Cases Plateau](https://www.bloomberg.com/news/articles/2020-07-29/virus-death-toll-hits-150-000-even-as-new-u-s-cases-plateau?srnd=coronavirus){:target="_blank"}  
+_Bloomberg_ | 29 July 2020
+
+***
+
 [Statistical 'Forecasters' Try To Predict The Pandemic's Path Forward](https://www.wbur.org/commonhealth/2020/07/27/umass-amherst-coronavirus-modeling-reich){:target="_blank"}  
 _WBUR_ | 27 July 2020
 

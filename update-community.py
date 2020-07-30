@@ -37,6 +37,8 @@ def parse_model(model):
     for prop in props:
         result[prop] = model[prop]
     result['forecasts'] = len(model['forecasts'])
+    if result['forecasts'] == 0:
+        return None
     dates = fetch_forecast_dates(conn, model['forecasts'])
     result['latest_forecast'] = max(dates).strftime(date_format)
     result['earliest_forecast'] = min(dates).strftime(date_format)
@@ -84,11 +86,13 @@ def gen_community():
         # print(conn.json_for_uri(model['url']))
         m = parse_model(model)
         # print(m)
-        if m['team_name'] not in team_d:
-            team_d[m['team_name']] = []
-        team_d[m['team_name']].append(m)
+        if m is not None:
+            if m['team_name'] not in team_d:
+                team_d[m['team_name']] = []
+            team_d[m['team_name']].append(m)
         # res_models.append()
-    
+    # filter out teams that have no forecasts
+    teams_final = list(filter(lambda x: x is not None,parse_teams(team_d)))
     res_models = sorted(parse_teams(team_d), key=lambda x: max(x['dates']), reverse=True)
     
     # write the data to /_data/community.yml
