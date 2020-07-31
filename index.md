@@ -8,8 +8,8 @@ sections:
     content: >-
       This site maintains the authoritative, up-to-date record for forecasts of COVID-19 deaths and hospitalizations in the US, created by dozens of leading infectious disease modeling teams from around the globe, in coordination with CDC. 
     actions:
-      - label: Forecast data
-        url: https://zoltardata.com/project/44
+      - label: Weekly Summary
+        url: /doc/reports
         type: secondary
         new_window: true
       - label: Visualization
