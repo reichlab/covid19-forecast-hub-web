@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[Coronavirus threat rises across U.S.](https://www.washingtonpost.com/health/coronavirus-threat-rises-across-us-we-just-have-to-assume-the-monster-is-everywhere/2020/08/01/cdb505e0-d1d8-11ea-8c55-61e7fa5e82ab_story.html){:target="_blank"}  
+_Washington Post_ | 1 August 2020
+
+***
+
 [Virus Death Toll Hits 150,000 Even as New U.S. Cases Plateau](https://www.bloomberg.com/news/articles/2020-07-29/virus-death-toll-hits-150-000-even-as-new-u-s-cases-plateau?srnd=coronavirus){:target="_blank"}  
 _Bloomberg_ | 29 July 2020
 
