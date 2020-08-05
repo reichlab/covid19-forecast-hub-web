@@ -441,16 +441,16 @@
     type: url
     url: https://zoltardata.com/model/301
   dates:
-  - 2020-07-27
-  - 2020-08-03
-  - 2020-07-12
-  - 2020-07-20
+  - 2020-08-01
   - 2020-06-28
   - 2020-06-30
-  - 2020-08-01
   - 2020-07-07
-  - 2020-07-06
+  - 2020-08-03
   - 2020-07-26
+  - 2020-07-27
+  - 2020-07-12
+  - 2020-07-06
+  - 2020-07-20
   description: Multiple skewed gaussian distribution peaks fit to raw data
   earliest_forecast: Sunday, 28 June 2020
   forecasts: 10
