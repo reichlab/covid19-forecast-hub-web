@@ -80,9 +80,9 @@ sections:
       _The Wall Street Journal_ | 17 March 2020  
 
     content3: >-
-      [Coronavirus hot spots erupt across the country; experts warn of second wave in South](https://www.washingtonpost.com/health/coronavirus-hot-spots-erupt-across-the-country-experts-warn-of-possible-outbreaks-in-south/2020/05/20/49bc6d10-9ab4-11ea-a282-386f56d579e6_story.html){:target="_blank"}  
-
-      _Washington Post_ | May 20, 2020 
+      [Coronavirus threat rises across U.S.: ‘We just have to assume the monster is everywhere’](https://www.washingtonpost.com/health/coronavirus-threat-rises-across-us-we-just-have-to-assume-the-monster-is-everywhere/2020/08/01/cdb505e0-d1d8-11ea-8c55-61e7fa5e82ab_story.html){:target="_blank"}  
+      
+      _Washington Post_ | 1 August 2020 
 
 
 
