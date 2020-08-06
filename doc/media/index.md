@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[U.S. COVID-19 Death Toll Might Reach 300,000 by December, Researchers Predict](https://www.npr.org/2020/08/06/899881918/u-s-covid-19-death-toll-might-reach-300-000-by-december-researchers-predict){:target="_blank"}  
+_NPR_ | 6 August 2020
+
+***
+
 [Coronavirus threat rises across U.S.](https://www.washingtonpost.com/health/coronavirus-threat-rises-across-us-we-just-have-to-assume-the-monster-is-everywhere/2020/08/01/cdb505e0-d1d8-11ea-8c55-61e7fa5e82ab_story.html){:target="_blank"}  
 _Washington Post_ | 1 August 2020
 
