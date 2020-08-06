@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[COVID-19 pandemic is not ‘fading’ in the United States](https://apnews.com/afs:Content:9213894577){:target="_blank"}  
+_AP News_ | 6 August 2020
+
+***
+
 [U.S. COVID-19 Death Toll Might Reach 300,000 by December, Researchers Predict](https://www.npr.org/2020/08/06/899881918/u-s-covid-19-death-toll-might-reach-300-000-by-december-researchers-predict){:target="_blank"}  
 _NPR_ | 6 August 2020
 
