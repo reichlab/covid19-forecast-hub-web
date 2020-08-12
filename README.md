@@ -27,5 +27,5 @@
 ## Add weekly reports
 
 1. Add the HTML file in the `reports` directory. 
-1. Add an entry in the `/doc/reports.inex.md` file to link to `/reports/[name-of-html-file]` based on the template already added in that file. 
+1. Add an entry in the `/doc/reports/index.md` file to link to `/reports/[name-of-html-file]` based on the template already added in that file. 
 
