@@ -487,6 +487,30 @@
   name: Disease Rapid Analysis and Forecasting Tool
   team_name: Predictive Science Inc
   url: https://zoltardata.com/model/254
+- abbreviation: UVA-Ensemble
+  actions:
+  - label: Website
+    new_window: true
+    url: https://biocomplexity.virginia.edu/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/308
+  dates:
+  - 2020-07-27
+  - 2020-08-03
+  - 2020-07-20
+  - 2020-08-10
+  description: An ensemble of multiple methods such as auto-regressive (AR) models
+    with exogenous variables, Long short-term memory (lSTM) models, and PatchSim (an
+    SEIR model).
+  earliest_forecast: Monday, 20 July 2020
+  forecasts: 4
+  home_url: https://biocomplexity.virginia.edu/
+  latest_forecast: Monday, 10 August 2020
+  name: Ensemble model
+  team_name: University of Virginia, Biocomplexity COVID-19 Response Team
+  url: https://zoltardata.com/model/308
 - abbreviation: YYG-ParamSearch
   actions:
   - label: Website
@@ -891,6 +915,38 @@
   name: DeterministicGrowth
   team_name: University of Geneva / Swiss Data Science Center
   url: https://zoltardata.com/model/192
+- abbreviation: UA-EpiCovDA
+  actions:
+  - label: Website
+    new_window: true
+    url: https://jocelinelega.github.io/EpiGro/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/253
+  dates:
+  - 2020-07-26
+  - 2020-06-19
+  - 2020-07-19
+  - 2020-06-28
+  - 2020-05-23
+  - 2020-08-09
+  - 2020-06-21
+  - 2020-07-05
+  - 2020-06-07
+  - 2020-05-17
+  - 2020-05-31
+  - 2020-06-14
+  - 2020-07-12
+  - 2020-08-02
+  description: 'SIR mechanistic model with data assimilation.  '
+  earliest_forecast: Sunday, 17 May 2020
+  forecasts: 14
+  home_url: https://jocelinelega.github.io/EpiGro/
+  latest_forecast: Sunday, 09 August 2020
+  name: EpiGro Covid-19 model with Data Assimilation
+  team_name: University of Arizona
+  url: https://zoltardata.com/model/253
 - abbreviation: GT_CHHS-COVID19
   actions:
   - label: Website
@@ -1294,6 +1350,26 @@
   name: Combined Linear and Exponential Predictor (CLEP)
   team_name: Berkeley Yu Group
   url: https://zoltardata.com/model/359
+- abbreviation: PandemicCentral-USCounty
+  actions:
+  - label: Website
+    new_window: true
+    url: https://itsonit.com
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/360
+  dates:
+  - 2020-08-05
+  - 2020-08-08
+  description: County-level Projected New Cases using Random Forest learning method
+  earliest_forecast: Wednesday, 05 August 2020
+  forecasts: 2
+  home_url: https://itsonit.com
+  latest_forecast: Saturday, 08 August 2020
+  name: USCounty
+  team_name: Pandemic Central (itsonit.com)
+  url: https://zoltardata.com/model/360
 - abbreviation: IHME-CurveFit
   actions:
   - label: Website
@@ -1344,26 +1420,6 @@
   name: CurveFit
   team_name: Institute for Health Metrics and Evaluation
   url: https://zoltardata.com/model/154
-- abbreviation: PandemicCentral-USCounty
-  actions:
-  - label: Website
-    new_window: true
-    url: https://itsonit.com
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/360
-  dates:
-  - 2020-08-05
-  description: County-level Projected Hospitalizations using Random Forest learning
-    method
-  earliest_forecast: Wednesday, 05 August 2020
-  forecasts: 1
-  home_url: https://itsonit.com
-  latest_forecast: Wednesday, 05 August 2020
-  name: USCounty
-  team_name: Pandemic Central (itsonit.com)
-  url: https://zoltardata.com/model/360
 - abbreviation: UT-Mobility
   actions:
   - label: Website
@@ -1427,60 +1483,6 @@
   name: Two-Stage SIR
   team_name: COVID Alliance at MIT
   url: https://zoltardata.com/model/298
-- abbreviation: UVA-Ensemble
-  actions:
-  - label: Website
-    new_window: true
-    url: https://biocomplexity.virginia.edu/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/308
-  dates:
-  - 2020-07-27
-  - 2020-08-03
-  - 2020-07-20
-  description: An ensemble of multiple methods such as auto-regressive (AR) models
-    with exogenous variables, Long short-term memory (lSTM) models, and PatchSim (an
-    SEIR model).
-  earliest_forecast: Monday, 20 July 2020
-  forecasts: 3
-  home_url: https://biocomplexity.virginia.edu/
-  latest_forecast: Monday, 03 August 2020
-  name: Ensemble model
-  team_name: University of Virginia, Biocomplexity COVID-19 Response Team
-  url: https://zoltardata.com/model/308
-- abbreviation: UA-EpiCovDA
-  actions:
-  - label: Website
-    new_window: true
-    url: https://jocelinelega.github.io/EpiGro/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/253
-  dates:
-  - 2020-07-26
-  - 2020-06-19
-  - 2020-07-19
-  - 2020-06-28
-  - 2020-05-23
-  - 2020-06-21
-  - 2020-07-05
-  - 2020-06-07
-  - 2020-05-17
-  - 2020-05-31
-  - 2020-06-14
-  - 2020-07-12
-  - 2020-08-02
-  description: 'SIR mechanistic model with data assimilation.  '
-  earliest_forecast: Sunday, 17 May 2020
-  forecasts: 13
-  home_url: https://jocelinelega.github.io/EpiGro/
-  latest_forecast: Sunday, 02 August 2020
-  name: EpiGro Covid-19 model with Data Assimilation
-  team_name: University of Arizona
-  url: https://zoltardata.com/model/253
 - abbreviation: IowaStateLW-STEM
   actions:
   - label: Website
