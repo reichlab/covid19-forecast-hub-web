@@ -24,6 +24,10 @@
 
         ./deploy.sh
 
+The community file generation takes time and if you want to skip this step (this is anyways updated daily by the CI), you can run with the `skip_gen` flag:
+
+        ./deploy.sh skip_gen
+
 ## Add weekly reports
 
 1. Add the HTML file in the `reports` directory. 
