@@ -20,7 +20,7 @@
 
 # Build the site and deploy on GitHub Pages
 
-1. Run this bash script in the root dirctory of this repository
+1. Run this bash script in the root directory of this repository
 
         ./deploy.sh
 
