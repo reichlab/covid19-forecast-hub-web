@@ -1,15 +1,15 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Deploy
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
   workflow_dispatch:
     inputs:
-      input_name:
-        description: 'dummy value here'
-        default: 'dummy'
+      params:
+        description: 'Arguments to deploy script'
+        default: ''
   schedule:
   - cron: "0 2 * * 1-5"
 
@@ -43,4 +43,4 @@ jobs:
         Z_USERNAME: ${{ secrets.Z_USERNAME }}
         Z_PASSWORD: ${{ secrets.Z_PASSWORD }}
         ENV: CI
-      run: bash deploy.sh
+      run: bash deploy.sh ${{github.event.inputs.params}}
