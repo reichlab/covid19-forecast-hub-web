@@ -1,25 +1,3 @@
-- abbreviation: PandemicCentral-USCounty
-  actions:
-  - label: Website
-    new_window: true
-    url: https://itsonit.com
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/360
-  dates:
-  - 2020-08-05
-  - 2020-08-25
-  - 2020-08-08
-  - 2020-08-21
-  description: County-level Projected New Cases using Random Forest learning method
-  earliest_forecast: Wednesday, 05 August 2020
-  forecasts: 4
-  home_url: https://itsonit.com
-  latest_forecast: Tuesday, 25 August 2020
-  name: USCounty
-  team_name: Pandemic Central (itsonit.com)
-  url: https://zoltardata.com/model/360
 - abbreviation: YYG-ParamSearch
   actions:
   - label: Website
@@ -34,6 +12,7 @@
   - 2020-07-30
   - 2020-07-09
   - 2020-07-28
+  - 2020-08-26
   - 2020-07-12
   - 2020-07-11
   - 2020-07-04
@@ -169,12 +148,34 @@
     US states. A machine learning layer learns the best parameters/inputs for each
     state. The model accounts for state reopenings.
   earliest_forecast: Monday, 13 April 2020
-  forecasts: 135
+  forecasts: 136
   home_url: https://covid19-projections.com
-  latest_forecast: Tuesday, 25 August 2020
+  latest_forecast: Wednesday, 26 August 2020
   name: ParamSearch
   team_name: Youyang Gu (YYG)
   url: https://zoltardata.com/model/202
+- abbreviation: PandemicCentral-USCounty
+  actions:
+  - label: Website
+    new_window: true
+    url: https://itsonit.com
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/360
+  dates:
+  - 2020-08-05
+  - 2020-08-25
+  - 2020-08-08
+  - 2020-08-21
+  description: County-level Projected New Cases using Random Forest learning method
+  earliest_forecast: Wednesday, 05 August 2020
+  forecasts: 4
+  home_url: https://itsonit.com
+  latest_forecast: Tuesday, 25 August 2020
+  name: USCounty
+  team_name: Pandemic Central (itsonit.com)
+  url: https://zoltardata.com/model/360
 - abbreviation: Auquan-SEIR
   actions:
   - label: Website
