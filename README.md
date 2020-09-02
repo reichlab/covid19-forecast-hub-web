@@ -32,4 +32,5 @@ The community file generation takes time and if you want to skip this step (this
 
 1. Add the HTML file in the `reports` directory. 
 1. Add an entry in the `/doc/reports/index.md` file to link to `/reports/[name-of-html-file]` based on the template already added in that file. 
-
+1. Additionally, you could also deploy the site after adding the weekly report from GitHub Actions [here](https://github.com/reichlab/covid19-forecast-hub-web/actions?query=workflow%3ADeploy).  
+Press the `Run workflow` button and if you want to skip the community generation step (it takes time!), specify `skip_gen` in the `Arguments to deploy script` field. Click `Run workflow`. 
