@@ -16,6 +16,7 @@
   - 2020-08-27
   - 2020-08-30
   - 2020-08-31
+  - 2020-09-03
   - 2020-07-12
   - 2020-08-29
   - 2020-07-11
@@ -155,9 +156,9 @@
     US states. A machine learning layer learns the best parameters/inputs for each
     state. The model accounts for state reopenings.
   earliest_forecast: Monday, 13 April 2020
-  forecasts: 143
+  forecasts: 144
   home_url: https://covid19-projections.com
-  latest_forecast: Wednesday, 02 September 2020
+  latest_forecast: Thursday, 03 September 2020
   name: ParamSearch
   team_name: Youyang Gu (YYG)
   url: https://zoltardata.com/model/202
