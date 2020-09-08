@@ -147,6 +147,86 @@
   name: ensemble1
   team_name: EpiForecasts group at the London School of Hygiene & Tropical Medicine
   url: https://zoltardata.com/model/290
+- abbreviation: UCSD_NEU-DeepGLEAM
+  actions:
+  - label: Website
+    new_window: true
+    url: https://sites.google.com/view/yianma/epidemiology
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/378
+  dates:
+  - 2020-09-07
+  description: This forecasting model combines the signal of a discrete stochastic
+    epidemic computational model GLEAM with a deep learning spatiotemporal forecasting
+    framework to further improve predictions.
+  earliest_forecast: Monday, 07 September 2020
+  forecasts: 1
+  home_url: https://sites.google.com/view/yianma/epidemiology
+  latest_forecast: Monday, 07 September 2020
+  name: DeepGLEAM
+  team_name: UCSD_NEU
+  url: https://zoltardata.com/model/378
+- abbreviation: NotreDame-FRED
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/confunguido/covid19_ND_forecasting
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/256
+  dates:
+  - 2020-07-06
+  - 2020-08-17
+  - 2020-08-03
+  - 2020-08-31
+  - 2020-06-22
+  - 2020-07-27
+  - 2020-08-24
+  - 2020-09-07
+  - 2020-07-20
+  - 2020-07-13
+  - 2020-04-27
+  - 2020-05-04
+  - 2020-05-11
+  - 2020-05-18
+  - 2020-05-25
+  - 2020-06-01
+  - 2020-06-08
+  - 2020-08-10
+  - 2020-06-15
+  - 2020-06-29
+  description: FRED is an agent-based model developed for influenza with parameters
+    modified to represent the natural history of COVID-19
+  earliest_forecast: Monday, 27 April 2020
+  forecasts: 20
+  home_url: https://github.com/confunguido/covid19_ND_forecasting
+  latest_forecast: Monday, 07 September 2020
+  name: NotreDame-FRED
+  team_name: NotreDame-FRED
+  url: https://zoltardata.com/model/256
+- abbreviation: IBF-TimeSeries
+  actions:
+  - label: Website
+    new_window: true
+    url: https://ibf.org
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/379
+  dates:
+  - 2020-09-07
+  description: Time Series Model with proprietary modifications
+  earliest_forecast: Monday, 07 September 2020
+  forecasts: 1
+  home_url: https://ibf.org
+  latest_forecast: Monday, 07 September 2020
+  name: Time Series Model with a unique technique to capture the pattern and using
+    it to prepare the forecast.
+  team_name: Institute of Business Forecasting
+  url: https://zoltardata.com/model/379
 - abbreviation: USACE-ERDC_SEIR
   actions:
   - label: Website
@@ -249,8 +329,8 @@
   - 2020-08-30
   - 2020-09-06
   - 2020-08-24
-  - 2020-08-01
   - 2020-09-07
+  - 2020-08-01
   - 2020-06-28
   - 2020-06-30
   - 2020-07-07
@@ -628,6 +708,34 @@
   name: ParamSearch
   team_name: Youyang Gu (YYG)
   url: https://zoltardata.com/model/202
+- abbreviation: UVA-Ensemble
+  actions:
+  - label: Website
+    new_window: true
+    url: https://biocomplexity.virginia.edu/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/308
+  dates:
+  - 2020-08-17
+  - 2020-08-31
+  - 2020-08-24
+  - 2020-07-27
+  - 2020-09-07
+  - 2020-08-03
+  - 2020-07-20
+  - 2020-08-10
+  description: An ensemble of multiple methods such as auto-regressive (AR) models
+    with exogenous variables, Long short-term memory (lSTM) models, and PatchSim (an
+    SEIR model).
+  earliest_forecast: Monday, 20 July 2020
+  forecasts: 8
+  home_url: https://biocomplexity.virginia.edu/
+  latest_forecast: Monday, 07 September 2020
+  name: Ensemble model
+  team_name: University of Virginia, Biocomplexity COVID-19 Response Team
+  url: https://zoltardata.com/model/308
 - abbreviation: JCB-PRM
   actions:
   - label: Website
@@ -1407,6 +1515,30 @@
   name: Two-Stage SIR
   team_name: COVID Alliance at MIT
   url: https://zoltardata.com/model/298
+- abbreviation: RPI_UW-Mob_Collision
+  actions:
+  - label: Website
+    new_window: true
+    url: http://rpi-uw-covid-mobility.herokuapp.com/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/367
+  dates:
+  - 2020-08-23
+  - 2020-09-06
+  - 2020-08-10
+  - 2020-08-03
+  - 2020-08-30
+  - 2020-08-16
+  description: A mobility-informed simplified SIR model motivated by collision theory.
+  earliest_forecast: Monday, 03 August 2020
+  forecasts: 6
+  home_url: http://rpi-uw-covid-mobility.herokuapp.com/
+  latest_forecast: Sunday, 06 September 2020
+  name: Mobility-informed Collision Model
+  team_name: RPI and UW
+  url: https://zoltardata.com/model/367
 - abbreviation: Karlen-pypm
   actions:
   - label: Website
@@ -1635,44 +1767,6 @@
   name: CurveFit
   team_name: Institute for Health Metrics and Evaluation
   url: https://zoltardata.com/model/154
-- abbreviation: NotreDame-FRED
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/confunguido/covid19_ND_forecasting
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/256
-  dates:
-  - 2020-07-06
-  - 2020-08-17
-  - 2020-08-03
-  - 2020-08-31
-  - 2020-06-22
-  - 2020-07-27
-  - 2020-08-24
-  - 2020-07-20
-  - 2020-07-13
-  - 2020-04-27
-  - 2020-05-04
-  - 2020-05-11
-  - 2020-05-18
-  - 2020-05-25
-  - 2020-06-01
-  - 2020-06-08
-  - 2020-08-10
-  - 2020-06-15
-  - 2020-06-29
-  description: FRED is an agent-based model developed for influenza with parameters
-    modified to represent the natural history of COVID-19
-  earliest_forecast: Monday, 27 April 2020
-  forecasts: 19
-  home_url: https://github.com/confunguido/covid19_ND_forecasting
-  latest_forecast: Monday, 31 August 2020
-  name: NotreDame-FRED
-  team_name: NotreDame-FRED
-  url: https://zoltardata.com/model/256
 - abbreviation: PandemicCentral-USCounty
   actions:
   - label: Website
@@ -1696,33 +1790,6 @@
   name: USCounty
   team_name: Pandemic Central (itsonit.com)
   url: https://zoltardata.com/model/360
-- abbreviation: UVA-Ensemble
-  actions:
-  - label: Website
-    new_window: true
-    url: https://biocomplexity.virginia.edu/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/308
-  dates:
-  - 2020-08-17
-  - 2020-08-31
-  - 2020-08-24
-  - 2020-07-27
-  - 2020-08-03
-  - 2020-07-20
-  - 2020-08-10
-  description: An ensemble of multiple methods such as auto-regressive (AR) models
-    with exogenous variables, Long short-term memory (lSTM) models, and PatchSim (an
-    SEIR model).
-  earliest_forecast: Monday, 20 July 2020
-  forecasts: 7
-  home_url: https://biocomplexity.virginia.edu/
-  latest_forecast: Monday, 31 August 2020
-  name: Ensemble model
-  team_name: University of Virginia, Biocomplexity COVID-19 Response Team
-  url: https://zoltardata.com/model/308
 - abbreviation: Covid19Sim-Simulator
   actions:
   - label: Website
@@ -1757,26 +1824,3 @@
   name: Simulator
   team_name: COVID-19 Simulator
   url: https://zoltardata.com/model/285
-- abbreviation: RPI_UW-Mob_Collision
-  actions:
-  - label: Website
-    new_window: true
-    url: http://rpi-uw-covid-mobility.herokuapp.com/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/367
-  dates:
-  - 2020-08-23
-  - 2020-08-10
-  - 2020-08-03
-  - 2020-08-30
-  - 2020-08-16
-  description: A mobility-informed simplified SIR model motivated by collision theory.
-  earliest_forecast: Monday, 03 August 2020
-  forecasts: 5
-  home_url: http://rpi-uw-covid-mobility.herokuapp.com/
-  latest_forecast: Sunday, 30 August 2020
-  name: Mobility-informed Collision Model
-  team_name: RPI and UW
-  url: https://zoltardata.com/model/367
