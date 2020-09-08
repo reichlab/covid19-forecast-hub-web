@@ -11,11 +11,11 @@ sections:
       - label: Weekly Summary
         url: /doc/reports
         type: secondary
-        new_window: true
+        new_window: false
       - label: Visualization
         url: https://viz.covid19forecasthub.org/
         type: secondary
-        new_window: true
+        new_window: false
       - label: Community
         url: /community/
         type: secondary
