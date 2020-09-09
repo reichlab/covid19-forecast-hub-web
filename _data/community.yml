@@ -352,6 +352,30 @@
   name: EmpericalSkewedGaussian
   team_name: Robert Walraven
   url: https://zoltardata.com/model/301
+- abbreviation: PandemicCentral-USCounty
+  actions:
+  - label: Website
+    new_window: true
+    url: https://itsonit.com
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/360
+  dates:
+  - 2020-08-31
+  - 2020-08-05
+  - 2020-08-25
+  - 2020-09-07
+  - 2020-08-08
+  - 2020-08-21
+  description: County-level Projected New Cases using Random Forest learning method
+  earliest_forecast: Wednesday, 05 August 2020
+  forecasts: 6
+  home_url: https://itsonit.com
+  latest_forecast: Monday, 07 September 2020
+  name: USCounty
+  team_name: Pandemic Central (itsonit.com)
+  url: https://zoltardata.com/model/360
 - abbreviation: COVIDhub-baseline
   actions:
   - label: Website
@@ -1767,29 +1791,6 @@
   name: CurveFit
   team_name: Institute for Health Metrics and Evaluation
   url: https://zoltardata.com/model/154
-- abbreviation: PandemicCentral-USCounty
-  actions:
-  - label: Website
-    new_window: true
-    url: https://itsonit.com
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/360
-  dates:
-  - 2020-08-31
-  - 2020-08-05
-  - 2020-08-25
-  - 2020-08-08
-  - 2020-08-21
-  description: County-level Projected New Cases using Random Forest learning method
-  earliest_forecast: Wednesday, 05 August 2020
-  forecasts: 5
-  home_url: https://itsonit.com
-  latest_forecast: Monday, 31 August 2020
-  name: USCounty
-  team_name: Pandemic Central (itsonit.com)
-  url: https://zoltardata.com/model/360
 - abbreviation: Covid19Sim-Simulator
   actions:
   - label: Website
