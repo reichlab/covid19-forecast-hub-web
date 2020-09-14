@@ -3,6 +3,21 @@ title: In the news
 layout: docs
 ---
 
+[Daily infections of coronavirus fall in Miami-Dade and Broward: there are less than 500 this Sunday](https://www.univision.com/local/miami-wltv/continuan-bajando-los-casos-diarios-de-coronavirus-en-florida-las-muertes-tambien-disminuyen){:target="_blank"}  
+_Univision_ | 13 September 2020
+
+***
+
+[A Zoom Thanksgiving? Summer could give way to a bleaker fall](https://apnews.com/cc6ed42c1bcc5109b1e6b1bccc39091d){:target="_blank"}  
+_AP News_ | 31 August 2020
+
+***
+
+[The Health 202: Why individual models of coronavirus deaths are often wrong](https://www.washingtonpost.com/politics/2020/08/05/health-202-why-individual-models-coronavirus-deaths-are-often-wrong/){:target="_blank"}  
+_Washington Post_ | 5 August 2020
+
+***
+
 [COVID-19 pandemic is not ‘fading’ in the United States](https://apnews.com/afs:Content:9213894577){:target="_blank"}  
 _AP News_ | 6 August 2020
 
