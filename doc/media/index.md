@@ -8,6 +8,11 @@ _Univision_ | 13 September 2020
 
 ***
 
+[Experts warn U.S. covid-19 deaths could more than double by year’s end](https://www.washingtonpost.com/health/experts-warn-us-death-toll-could-hit-410000-by-years-end/2020/09/04/ffc34736-eea7-11ea-99a1-71343d03bc29_story.html?hpid=hp_hp-banner-low_410000deaths-10a:homepage/story-ans){:target="_blank"}  
+_Washington Post_ | 4 September 2020
+
+***
+
 [A Zoom Thanksgiving? Summer could give way to a bleaker fall](https://apnews.com/cc6ed42c1bcc5109b1e6b1bccc39091d){:target="_blank"}  
 _AP News_ | 31 August 2020
 
