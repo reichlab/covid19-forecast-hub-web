@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[Scientists want to predict covid-19’s long-term trajectory. Here’s why they can’t.](https://www.washingtonpost.com/outlook/2020/09/15/scientists-want-predict-covid-19s-long-term-trajectory-heres-why-they-cant/){:target="_blank"}  
+_Washington Post_ | 15 September 2020
+
+***
+
 [Daily infections of coronavirus fall in Miami-Dade and Broward: there are less than 500 this Sunday](https://www.univision.com/local/miami-wltv/continuan-bajando-los-casos-diarios-de-coronavirus-en-florida-las-muertes-tambien-disminuyen){:target="_blank"}  
 _Univision_ | 13 September 2020
 
