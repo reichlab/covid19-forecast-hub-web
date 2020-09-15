@@ -790,6 +790,35 @@
   name: ParamSearch
   team_name: Youyang Gu (YYG)
   url: https://zoltardata.com/model/202
+- abbreviation: UVA-Ensemble
+  actions:
+  - label: Website
+    new_window: true
+    url: https://biocomplexity.virginia.edu/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/308
+  dates:
+  - 2020-08-17
+  - 2020-08-31
+  - 2020-09-14
+  - 2020-08-24
+  - 2020-07-27
+  - 2020-09-07
+  - 2020-08-03
+  - 2020-07-20
+  - 2020-08-10
+  description: An ensemble of multiple methods such as auto-regressive (AR) models
+    with exogenous variables, Long short-term memory (lSTM) models, and PatchSim (an
+    SEIR model).
+  earliest_forecast: Monday, 20 July 2020
+  forecasts: 9
+  home_url: https://biocomplexity.virginia.edu/
+  latest_forecast: Monday, 14 September 2020
+  name: Ensemble model
+  team_name: University of Virginia, Biocomplexity COVID-19 Response Team
+  url: https://zoltardata.com/model/308
 - abbreviation: JCB-PRM
   actions:
   - label: Website
@@ -1581,6 +1610,31 @@
   name: Two-Stage SIR
   team_name: COVID Alliance at MIT
   url: https://zoltardata.com/model/298
+- abbreviation: RPI_UW-Mob_Collision
+  actions:
+  - label: Website
+    new_window: true
+    url: http://rpi-uw-covid-mobility.herokuapp.com/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/367
+  dates:
+  - 2020-08-23
+  - 2020-09-13
+  - 2020-09-06
+  - 2020-08-10
+  - 2020-08-03
+  - 2020-08-30
+  - 2020-08-16
+  description: A mobility-informed simplified SIR model motivated by collision theory.
+  earliest_forecast: Monday, 03 August 2020
+  forecasts: 7
+  home_url: http://rpi-uw-covid-mobility.herokuapp.com/
+  latest_forecast: Sunday, 13 September 2020
+  name: Mobility-informed Collision Model
+  team_name: RPI and UW
+  url: https://zoltardata.com/model/367
 - abbreviation: Karlen-pypm
   actions:
   - label: Website
@@ -1801,34 +1855,6 @@
   name: NotreDame-FRED
   team_name: NotreDame-FRED
   url: https://zoltardata.com/model/256
-- abbreviation: UVA-Ensemble
-  actions:
-  - label: Website
-    new_window: true
-    url: https://biocomplexity.virginia.edu/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/308
-  dates:
-  - 2020-08-17
-  - 2020-08-31
-  - 2020-08-24
-  - 2020-07-27
-  - 2020-09-07
-  - 2020-08-03
-  - 2020-07-20
-  - 2020-08-10
-  description: An ensemble of multiple methods such as auto-regressive (AR) models
-    with exogenous variables, Long short-term memory (lSTM) models, and PatchSim (an
-    SEIR model).
-  earliest_forecast: Monday, 20 July 2020
-  forecasts: 8
-  home_url: https://biocomplexity.virginia.edu/
-  latest_forecast: Monday, 07 September 2020
-  name: Ensemble model
-  team_name: University of Virginia, Biocomplexity COVID-19 Response Team
-  url: https://zoltardata.com/model/308
 - abbreviation: Covid19Sim-Simulator
   actions:
   - label: Website
@@ -1864,30 +1890,6 @@
   name: Simulator
   team_name: COVID-19 Simulator
   url: https://zoltardata.com/model/285
-- abbreviation: RPI_UW-Mob_Collision
-  actions:
-  - label: Website
-    new_window: true
-    url: http://rpi-uw-covid-mobility.herokuapp.com/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/367
-  dates:
-  - 2020-08-23
-  - 2020-09-06
-  - 2020-08-10
-  - 2020-08-03
-  - 2020-08-30
-  - 2020-08-16
-  description: A mobility-informed simplified SIR model motivated by collision theory.
-  earliest_forecast: Monday, 03 August 2020
-  forecasts: 6
-  home_url: http://rpi-uw-covid-mobility.herokuapp.com/
-  latest_forecast: Sunday, 06 September 2020
-  name: Mobility-informed Collision Model
-  team_name: RPI and UW
-  url: https://zoltardata.com/model/367
 - abbreviation: IHME-CurveFit
   actions:
   - label: Website
