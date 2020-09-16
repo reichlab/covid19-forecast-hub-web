@@ -175,6 +175,46 @@
   name: DeepGLEAM
   team_name: UCSD_NEU
   url: https://zoltardata.com/model/378
+- abbreviation: NotreDame-FRED
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/confunguido/covid19_ND_forecasting
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/256
+  dates:
+  - 2020-07-06
+  - 2020-08-17
+  - 2020-09-14
+  - 2020-08-03
+  - 2020-08-31
+  - 2020-06-22
+  - 2020-07-27
+  - 2020-08-24
+  - 2020-09-07
+  - 2020-07-20
+  - 2020-07-13
+  - 2020-04-27
+  - 2020-05-04
+  - 2020-05-11
+  - 2020-05-18
+  - 2020-05-25
+  - 2020-06-01
+  - 2020-06-08
+  - 2020-08-10
+  - 2020-06-15
+  - 2020-06-29
+  description: FRED is an agent-based model developed for influenza with parameters
+    modified to represent the natural history of COVID-19
+  earliest_forecast: Monday, 27 April 2020
+  forecasts: 21
+  home_url: https://github.com/confunguido/covid19_ND_forecasting
+  latest_forecast: Monday, 14 September 2020
+  name: NotreDame-FRED
+  team_name: NotreDame-FRED
+  url: https://zoltardata.com/model/256
 - abbreviation: NotreDame-mobility
   actions:
   - label: Website
@@ -1816,45 +1856,6 @@
   name: Prophet Logistic Forecasting
   team_name: Walmart Labs Data Science Team
   url: https://zoltardata.com/model/370
-- abbreviation: NotreDame-FRED
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/confunguido/covid19_ND_forecasting
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/256
-  dates:
-  - 2020-07-06
-  - 2020-08-17
-  - 2020-08-03
-  - 2020-08-31
-  - 2020-06-22
-  - 2020-07-27
-  - 2020-08-24
-  - 2020-09-07
-  - 2020-07-20
-  - 2020-07-13
-  - 2020-04-27
-  - 2020-05-04
-  - 2020-05-11
-  - 2020-05-18
-  - 2020-05-25
-  - 2020-06-01
-  - 2020-06-08
-  - 2020-08-10
-  - 2020-06-15
-  - 2020-06-29
-  description: FRED is an agent-based model developed for influenza with parameters
-    modified to represent the natural history of COVID-19
-  earliest_forecast: Monday, 27 April 2020
-  forecasts: 20
-  home_url: https://github.com/confunguido/covid19_ND_forecasting
-  latest_forecast: Monday, 07 September 2020
-  name: NotreDame-FRED
-  team_name: NotreDame-FRED
-  url: https://zoltardata.com/model/256
 - abbreviation: Covid19Sim-Simulator
   actions:
   - label: Website
