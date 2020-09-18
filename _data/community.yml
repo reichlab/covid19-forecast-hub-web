@@ -21,11 +21,13 @@
   - 2020-09-06
   - 2020-09-12
   - 2020-09-15
+  - 2020-09-16
   - 2020-07-12
   - 2020-08-29
   - 2020-09-04
   - 2020-09-05
   - 2020-09-11
+  - 2020-09-17
   - 2020-07-11
   - 2020-08-28
   - 2020-09-13
@@ -168,9 +170,9 @@
     US states. A machine learning layer learns the best parameters/inputs for each
     state. The model accounts for state reopenings.
   earliest_forecast: Monday, 13 April 2020
-  forecasts: 156
+  forecasts: 158
   home_url: https://covid19-projections.com
-  latest_forecast: Tuesday, 15 September 2020
+  latest_forecast: Thursday, 17 September 2020
   name: ParamSearch
   team_name: Youyang Gu (YYG)
   url: https://zoltardata.com/model/202
@@ -1557,6 +1559,42 @@
   name: SuEIR
   team_name: UCLA Statistical Machine Learning Lab
   url: https://zoltardata.com/model/198
+- abbreviation: Covid19Sim-Simulator
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid19sim.org/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/285
+  dates:
+  - 2020-07-12
+  - 2020-07-26
+  - 2020-08-23
+  - 2020-09-13
+  - 2020-06-28
+  - 2020-08-30
+  - 2020-09-06
+  - 2020-08-02
+  - 2020-08-16
+  - 2020-07-19
+  - 2020-06-21
+  - 2020-07-05
+  - 2020-05-24
+  - 2020-06-07
+  - 2020-05-31
+  - 2020-06-14
+  description: An interactive tool developed by researchers at Mass General Hospital,
+    Harvard Medical School, Georgia Tech and Boston Medical Center to inform COVID-19
+    intervention policy decisions in the US.
+  earliest_forecast: Sunday, 24 May 2020
+  forecasts: 16
+  home_url: https://covid19sim.org/
+  latest_forecast: Sunday, 13 September 2020
+  name: Simulator
+  team_name: COVID-19 Simulator
+  url: https://zoltardata.com/model/285
 - abbreviation: QJHong-Encounter
   actions:
   - label: Website
@@ -1857,38 +1895,3 @@
   name: Prophet Logistic Forecasting
   team_name: Walmart Labs Data Science Team
   url: https://zoltardata.com/model/370
-- abbreviation: Covid19Sim-Simulator
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19sim.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/285
-  dates:
-  - 2020-07-12
-  - 2020-07-26
-  - 2020-08-23
-  - 2020-06-28
-  - 2020-08-30
-  - 2020-09-06
-  - 2020-08-02
-  - 2020-08-16
-  - 2020-07-19
-  - 2020-06-21
-  - 2020-07-05
-  - 2020-05-24
-  - 2020-06-07
-  - 2020-05-31
-  - 2020-06-14
-  description: An interactive tool developed by researchers at Mass General Hospital,
-    Harvard Medical School, Georgia Tech and Boston Medical Center to inform COVID-19
-    intervention policy decisions in the US.
-  earliest_forecast: Sunday, 24 May 2020
-  forecasts: 15
-  home_url: https://covid19sim.org/
-  latest_forecast: Sunday, 06 September 2020
-  name: Simulator
-  team_name: COVID-19 Simulator
-  url: https://zoltardata.com/model/285
