@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[Coronavirus Models Predict Scenarios, But People Determine Outcomes](https://www.wbur.org/hereandnow/2020/09/21/coronavirus-models-outcomes){:target="_blank"}  
+_WBUR_ | 21 September 2020
+
+***
+
 [Scientists want to predict covid-19’s long-term trajectory. Here’s why they can’t.](https://www.washingtonpost.com/outlook/2020/09/15/scientists-want-predict-covid-19s-long-term-trajectory-heres-why-they-cant/){:target="_blank"}  
 _Washington Post_ | 15 September 2020
 
