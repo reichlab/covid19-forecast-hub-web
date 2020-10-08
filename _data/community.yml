@@ -1881,6 +1881,25 @@
   name: Prophet Logistic Forecasting
   team_name: Walmart Labs Data Science Team
   url: https://zoltardata.com/model/370
+- abbreviation: BPagano-RtDriven
+  actions:
+  - label: Website
+    new_window: true
+    url: https://bobpagano.com
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/427
+  dates:
+  - 2020-10-04
+  description: Projects infections and deaths for 223 locations using an SIR model.
+  earliest_forecast: Sunday, 04 October 2020
+  forecasts: 1
+  home_url: https://bobpagano.com
+  latest_forecast: Sunday, 04 October 2020
+  name: RtDriven
+  team_name: BPagano
+  url: https://zoltardata.com/model/427
 - abbreviation: IBF-TimeSeries
   actions:
   - label: Website
