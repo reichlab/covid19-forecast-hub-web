@@ -32,7 +32,7 @@ then
 
 	# Commit changes.
 	msg="rebuilding site $(date)"
-	git commit -m "$msg"
+	git diff-index --quiet HEAD || git commit -m "$msg"
 
 	git push origin master
 else
