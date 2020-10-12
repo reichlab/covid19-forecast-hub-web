@@ -22,7 +22,6 @@ if [ "$ENV" = "CI" ]; then
 	git config user.name "GitHub Action"
 	git config user.email "user@example.com"
 fi
-printf "covid19forecasthub.org" > ./docs/CNAME
 # Push source and build repos.
 if [ "$1" != "no_push" ]  && [ "$2" != "no_push" ] 
 then
