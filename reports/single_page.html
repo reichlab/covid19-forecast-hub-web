@@ -13,6 +13,32 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <style>
+
+        #loader { 
+            border: 12px solid #f3f3f3; 
+            border-radius: 50%; 
+            border-top: 12px solid #444444; 
+            width: 70px; 
+            height: 70px; 
+            animation: spin 1s linear infinite; 
+        } 
+          
+        @keyframes spin { 
+            100% { 
+                transform: rotate(360deg); 
+            } 
+        } 
+          
+        .center { 
+            position: absolute; 
+            top: 0; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            margin: auto; 
+        }
+
+
         .container {
             /* display: inline-block; */
         }
@@ -53,6 +79,13 @@
         //timeout:   3000 
     };  
 
+    function progress(show) {
+        if(show) {
+            $("#loader").show()
+        } else {
+            $("#loader").hide()
+        }
+    }
 
     function accumulatefields(reports) {
         $.each(reports, function(key, val) {
@@ -61,24 +94,34 @@
                 text: key
             }));
         });
+        accumulateWeeks($('#state').val());
     };
 
-    function accumulateWeeks() {
-        $('#week').find('option')
+    function accumulateWeeks(state) {   
+        $('#date').find('option')
                 .remove()
                 .end();
-            $.each(globalThis.report_data[$("state").val()], function(idx, val) {
-                $('#week').append($('<option>', {
+            $.each(globalThis.report_data[state], function(idx, val) {
+                $('#date').append($('<option>', {
                     value: val,
                     text: val
                 }))
-            })
-    }
-    
+            });
+    };
+
+    $('#state').on('change', function() {
+        accumulateWeeks($('#state').val());
+    });
+
+    $("#page").on("load", function () {
+        progress(false);
+    });
+
     $.getJSON(baseurl + "reports.json", function(data) {
-        console.log(data)
-        globalThis.report_data = data
-        accumulatefields(data)
+        console.log(data);
+        globalThis.report_data = data;
+        accumulatefields(data);
+        progress(false);
         // $.each(data, function(state, dates) {
 
         // })
@@ -89,7 +132,7 @@
     function showRequest(formData, jqForm, options) { 
         console.log(formData);
         def = {
-            'state': 'nat',
+            'state': 'National',
             'week': '2020-10-06'
         };
         formData.forEach(element => {
@@ -97,12 +140,13 @@
         });
         url = baseurl;
         url+=def['week']+"-";
-        if(def['state'] != 'nat') {
+        if(def['state'] != 'National') {
             url+=def['state'] +"-";
         };
         url+='weekly-report.html';
         console.log(location.host + url);
         $("#page").attr('src', url);
+        progress(true);
         return false;
     }
 
@@ -125,17 +169,11 @@
                 <label for="state">State:</label>
 
                 <select name="state" id="state" onselect="accumulateWeeks()">
-                    // <option value="ma">Massachusetts</option>
-                    // <option value="iowa">Iowa</option>
-                    // <option value="nat">National</option>
                 </select>
 
                 <label for="date">Week:</label>
 
                 <select name="week" id="date">
-                    // <option value="2020-09-15">15 September</option>
-                    // <option value="2020-09-01">1 September</option>
-                    // <option value="2020-09-08">8 September</option>
                 </select>
 
                 <input type="submit" value="Submit">
@@ -144,7 +182,8 @@
 
         
         <div class="row content">
-            <iframe id="page"></iframe>
+            <div id="loader" class="center"></div>
+            <iframe id="page" onload="progress(false)"></iframe>
         </div>
     </div>
 
