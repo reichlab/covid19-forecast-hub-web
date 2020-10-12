@@ -64,7 +64,7 @@
         formData.forEach(element => {
             def[element.name] = element.value;
         });
-        url = "/";
+        url = location.pathname.split('/').slice(0,-1).join('/') + "/";
         url+=def['week']+"-";
         if(def['state'] != 'nat') {
             url+=def['state'] +"-";
