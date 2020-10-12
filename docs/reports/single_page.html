@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        .container {
+            /* display: inline-block; */
+        }
+        .sidebar {
+            width: 100%;
+            height: 100%;
+            min-width: 100px;
+        }
+        .content {
+            background-color: aliceblue;
+            height: 100%;
+        }
+
+        #page {
+            width: 100%;
+            height: 90vh;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script> 
+
+    <script>
+            $(document).ready(function() { 
+    var options = { 
+        target:        '.content',   // target element(s) to be updated with server response 
+        beforeSubmit:  showRequest,  // pre-submit callback 
+        // success:       showResponse  // post-submit callback 
+ 
+        // other available options: 
+        //url:       url         // override for form's 'action' attribute 
+        //type:      type        // 'get' or 'post', override for form's 'method' attribute 
+        //dataType:  null        // 'xml', 'script', or 'json' (expected server response type) 
+        //clearForm: true        // clear all form fields after successful submit 
+        //resetForm: true        // reset the form after successful submit 
+ 
+        // $.ajax options can be used here too, for example: 
+        //timeout:   3000 
+    }; 
+ 
+    // bind form using 'ajaxForm' 
+    $('#queryForm').ajaxForm(options); 
+
+    function showRequest(formData, jqForm, options) { 
+        console.log(formData);
+        def = {
+            'state': 'nat',
+            'week': '2020-10-06'
+        };
+        formData.forEach(element => {
+            def[element.name] = element.value;
+        });
+        url = "/";
+        url+=def['week']+"-";
+        if(def['state'] != 'nat') {
+            url+=def['state'] +"-";
+        };
+        url+='weekly-report.html';
+        console.log(location.host + url);
+        $("#page").attr('src', url);
+        return false;
+    }
+
+    function loadPage(url) {
+        $("#page").attr('src', url);
+    }
+
+});
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-12" align="center">
+                <h1>COVID-19 Forecast hub weekly reports</h1>
+            </div>
+        </div>
+        <div class="row">
+            <form id="queryForm">
+                <label for="state">State:</label>
+
+                <select name="state" id="state">
+                    <option value="ma">Massachusetts</option>
+                    <option value="iowa">Iowa</option>
+                    <option value="nat">National</option>
+                </select>
+
+                <label for="date">Week:</label>
+
+                <select name="week" id="date">
+                    <option value="2020-09-15">15 September</option>
+                    <option value="2020-09-01">1 September</option>
+                    <option value="2020-09-08">8 September</option>
+                </select>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        
+        <div class="row content">
+            <iframe id="page"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
