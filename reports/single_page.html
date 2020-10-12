@@ -61,6 +61,16 @@
     </style>
 
     <script>
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
             baseurl = location.pathname.split('/').slice(0,-1).join('/') + "/";
             $(document).ready(function() { 
     var options = { 
@@ -95,7 +105,20 @@
             }));
         });
         accumulateWeeks($('#state').val());
-        loadOption($('#state').val(), $('#date').val())
+        st = getParameterByName('state')
+        if(!st) {
+            st = $('#state').val()
+        }
+        else {
+            $('#state').val(st)
+        }
+        wk = getParameterByName('week')
+        if(!wk) {
+            wk = $('#date').val()
+        } else {
+            $('#date').val(wk)
+        }
+        loadOption(st, wk)
     };
 
     function accumulateWeeks(state) {   
@@ -143,7 +166,11 @@
         return false;
     }
 
-    function loadOption(state, week) {
+    function loadOption(state, week, anchor) {
+        if(!anchor) {
+            anchor = location.hash
+        }
+        console.log(anchor)
         state = state.toLowerCase();
         url = baseurl;
         url+=week+"-";
@@ -151,6 +178,7 @@
             url+=state +"-";
         };
         url+='weekly-report.html';
+        url += anchor;
         console.log(location.host + url);
         $("#page").attr('src', url);
         progress(true);
