@@ -35,6 +35,7 @@
     <script src="http://malsup.github.com/jquery.form.js"></script> 
 
     <script>
+            baseurl = location.pathname.split('/').slice(0,-1).join('/') + "/";
             $(document).ready(function() { 
     var options = { 
         target:        '.content',   // target element(s) to be updated with server response 
@@ -50,8 +51,38 @@
  
         // $.ajax options can be used here too, for example: 
         //timeout:   3000 
-    }; 
- 
+    };  
+
+
+    function accumulatefields(reports) {
+        $.each(reports, function(key, val) {
+            $("#state").append($('<option>', {
+                value: key,
+                text: key
+            }));
+        });
+    };
+
+    function accumulateWeeks() {
+        $('#week').find('option')
+                .remove()
+                .end();
+            $.each(globalThis.report_data[$("state").val()], function(idx, val) {
+                $('#week').append($('<option>', {
+                    value: val,
+                    text: val
+                }))
+            })
+    }
+    
+    $.getJSON(baseurl + "reports.json", function(data) {
+        console.log(data)
+        globalThis.report_data = data
+        accumulatefields(data)
+        // $.each(data, function(state, dates) {
+
+        // })
+    });
     // bind form using 'ajaxForm' 
     $('#queryForm').ajaxForm(options); 
 
@@ -64,7 +95,7 @@
         formData.forEach(element => {
             def[element.name] = element.value;
         });
-        url = location.pathname.split('/').slice(0,-1).join('/') + "/";
+        url = baseurl;
         url+=def['week']+"-";
         if(def['state'] != 'nat') {
             url+=def['state'] +"-";
@@ -93,18 +124,18 @@
             <form id="queryForm">
                 <label for="state">State:</label>
 
-                <select name="state" id="state">
-                    <option value="ma">Massachusetts</option>
-                    <option value="iowa">Iowa</option>
-                    <option value="nat">National</option>
+                <select name="state" id="state" onselect="accumulateWeeks()">
+                    // <option value="ma">Massachusetts</option>
+                    // <option value="iowa">Iowa</option>
+                    // <option value="nat">National</option>
                 </select>
 
                 <label for="date">Week:</label>
 
                 <select name="week" id="date">
-                    <option value="2020-09-15">15 September</option>
-                    <option value="2020-09-01">1 September</option>
-                    <option value="2020-09-08">8 September</option>
+                    // <option value="2020-09-15">15 September</option>
+                    // <option value="2020-09-01">1 September</option>
+                    // <option value="2020-09-08">8 September</option>
                 </select>
 
                 <input type="submit" value="Submit">
