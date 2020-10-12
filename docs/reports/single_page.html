@@ -166,7 +166,11 @@ function getParameterByName(name, url) {
         return false;
     }
 
-    function loadOption(state, week) {
+    function loadOption(state, week, anchor) {
+        if(!anchor) {
+            anchor = location.hash
+        }
+        console.log(anchor)
         state = state.toLowerCase();
         url = baseurl;
         url+=week+"-";
@@ -174,6 +178,7 @@ function getParameterByName(name, url) {
             url+=state +"-";
         };
         url+='weekly-report.html';
+        url += anchor;
         console.log(location.host + url);
         $("#page").attr('src', url);
         progress(true);
