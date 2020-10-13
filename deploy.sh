@@ -10,6 +10,8 @@ if [ "$1" != "skip_gen" ]; then
 else
 	printf "Skipping community file generation"
 fi
+
+python3 update-reports.py
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
 # Build the project.
