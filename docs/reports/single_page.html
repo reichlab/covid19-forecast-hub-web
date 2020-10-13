@@ -81,19 +81,9 @@ function getParameterByName(name, url) {
     var options = { 
         target:        '.content',   // target element(s) to be updated with server response 
         beforeSubmit:  showRequest,  // pre-submit callback 
-        // success:       showResponse  // post-submit callback 
- 
-        // other available options: 
-        //url:       url         // override for form's 'action' attribute 
-        //type:      type        // 'get' or 'post', override for form's 'method' attribute 
-        //dataType:  null        // 'xml', 'script', or 'json' (expected server response type) 
-        //clearForm: true        // clear all form fields after successful submit 
-        //resetForm: true        // reset the form after successful submit 
- 
-        // $.ajax options can be used here too, for example: 
-        //timeout:   3000 
     };  
 
+    frame = $("#page")[0]
     function progress(show) {
         if(show) {
             $("#loader").show()
@@ -142,9 +132,17 @@ function getParameterByName(name, url) {
         accumulateWeeks($('#state').val());
     });
 
+
     $("#page").on("load", function () {
+        console.log($("#page").attr('src'));
+        frame = $("#page")[0];
+        function hashchange() {
+            location.hash =  frame.contentDocument.URL.substring(frame.contentDocument.URL.indexOf("#")+1);
+        };
+        frame.contentWindow.onhashchange = hashchange;
         progress(false);
     });
+
 
     $.getJSON(baseurl + "reports.json", function(data) {
         console.log(data);
@@ -294,13 +292,12 @@ function getParameterByName(name, url) {
             </div>
         </div> -->
 
-        <section id="hero" class="block block-hero has-gradient outer">
+        <section id="hero" class="block block-hero has-gradient outer" style="max-height: 17em; padding: 1em;">
   
   
             <div class="bg-img" style="background-image: url('/covid19-forecast-hub-web/images/5.jpg')"></div>
             
             <div class="inner-sm">
-              
               
               <div class="block-header">
                 <h1 class="block-title">Reports</h1>
@@ -308,21 +305,21 @@ function getParameterByName(name, url) {
               
               
               
-              <div class="block-content">
-                <p>We have been systematically tracking data from multiple different COVID-19 prediction models since early April 2020.</p>
-                <div class=" form-box" style="display: flexbox;width: 100%;">
+              <div class="block-content" style="padding-top: 0.5em;">
+                <p style="margin: unset;padding-top: 0.25em;padding-bottom: 0.75em;">Browse our archive of weekly forecast summaries.</p>
+                <div class=" form-box" style="display: flexbox;width: 100%;margin-bottom: unset;">
                     <form id="queryForm" style="display: inline;width: 100%;">
                         <label for="state" style="width: fit-content;display: inline-block;color: #f3f3f3;">State:</label>
         
                         <select name="state" id="state" onselect="accumulateWeeks()" style="width: fit-content;display: inline-block;">
                         </select>
         
-                        <label for="date" style="width: fit-content;display: inline-block;color: #f3f3f3;">Week:</label>
+                        <label for="date" style="width: fit-content;display: inline-block;color: #f3f3f3;padding-left: 1.3em;">Week:</label>
         
                         <select name="week" id="date" style="width: fit-content;display: inline-block;">
                         </select>
         
-                        <input class="block-buttons" type="submit" value="Submit" style="margin-left: 2em;">
+                        <input class="block-buttons" type="submit" value="Submit" style="margin-left: 2em;vertical-align: top;">
                     </form>
                 </div>
               </div>
