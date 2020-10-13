@@ -24,6 +24,11 @@
             height: 70px; 
             animation: spin 1s linear infinite; 
         } 
+
+        .form-box {
+            margin-bottom: 1em;
+            text-align: center;
+        }
           
         @keyframes spin { 
             100% { 
@@ -189,35 +194,148 @@ function getParameterByName(name, url) {
     }
 });
     </script>
+    <title>Home - COVID 19 forecast hub</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your source for up-to-date forecasts of COVID-19."/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i%26display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/covid19-forecast-hub-web/assets/css/main.css">
+    <link rel="shortcut icon" type="image/png" href="/images/forecast-hub-favicon.png">
 </head>
 <body>
+    <header id="masthead" class="site-header outer">
+        <div class="inner">
+          <div class="site-header-inside">
+            <div class="site-branding">
+              
+              
+              <p class="site-logo"><a href="/covid19-forecast-hub-web/"><img src="/covid19-forecast-hub-web/images/forecast-hub-logo_DARKBLUE.png" alt="COVID 19 forecast hub" /></a></p>
+              
+            </div><!-- .site-branding -->
+            
+            
+            <nav id="main-navigation" class="site-navigation" aria-label="Main Navigation">
+              <div class="site-nav-inside">
+                <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span></button>
+                <ul class="menu">
+                  
+                  <li class="menu-item current">
+                    
+                    
+      <a class="" href="/covid19-forecast-hub-web/">
+        
+        Home
+        
+      </a>
+      
+                    
+                  </li>
+                  
+                  <li class="menu-item">
+                    
+                    
+      <a class="" href="/covid19-forecast-hub-web/data/">
+        
+        Data
+        
+      </a>
+      
+                    
+                  </li>
+                  
+                  <li class="menu-item">
+                    
+                    
+      <a class="" href="/covid19-forecast-hub-web/community/">
+        
+        Community
+        
+      </a>
+      
+                    
+                  </li>
+                  
+                  <li class="menu-item">
+                    
+                    
+      <a class="" href="/covid19-forecast-hub-web/doc/">
+        
+        About
+        
+      </a>
+      
+                    
+                  </li>
+                  
+                  <li class="menu-item menu-button">
+                    
+                    
+      <a class="button" href="https://github.com/reichlab/covid19-forecast-hub" target="_blank" rel="noopener">
+        
+        GitHub
+        
+      </a>
+      
+                    
+                  </li>
+                  
+                </ul>
+              </div><!-- .site-nav-inside -->
+            </nav><!-- .site-navigation -->
+            <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
+            
+          </div><!-- .site-header-inside -->
+        </div><!-- .inner -->
+      </header><!-- .site-header -->
     <div class="container-fluid">
-        <div class="row justify-content-center">
+        <!-- <div class="row justify-content-center">
             <div class="col-md-12" align="center">
                 <h1>COVID-19 Forecast hub weekly reports</h1>
             </div>
-        </div>
-        <div class="row">
-            <form id="queryForm">
-                <label for="state">State:</label>
+        </div> -->
 
-                <select name="state" id="state" onselect="accumulateWeeks()">
-                </select>
-
-                <label for="date">Week:</label>
-
-                <select name="week" id="date">
-                </select>
-
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-
+        <section id="hero" class="block block-hero has-gradient outer">
+  
+  
+            <div class="bg-img" style="background-image: url('/covid19-forecast-hub-web/images/5.jpg')"></div>
+            
+            <div class="inner-sm">
+              
+              
+              <div class="block-header">
+                <h1 class="block-title">Reports</h1>
+              </div>
+              
+              
+              
+              <div class="block-content">
+                <p>We have been systematically tracking data from multiple different COVID-19 prediction models since early April 2020.</p>
+                <div class=" form-box" style="display: flexbox;width: 100%;">
+                    <form id="queryForm" style="display: inline;width: 100%;">
+                        <label for="state" style="width: fit-content;display: inline-block;color: #f3f3f3;">State:</label>
         
-        <div class="row content">
-            <div id="loader" class="center"></div>
-            <iframe id="page"></iframe>
-        </div>
+                        <select name="state" id="state" onselect="accumulateWeeks()" style="width: fit-content;display: inline-block;">
+                        </select>
+        
+                        <label for="date" style="width: fit-content;display: inline-block;color: #f3f3f3;">Week:</label>
+        
+                        <select name="week" id="date" style="width: fit-content;display: inline-block;">
+                        </select>
+        
+                        <input class="block-buttons" type="submit" value="Submit" style="margin-left: 2em;">
+                    </form>
+                </div>
+              </div>
+              
+              
+              
+            </div>
+          </section>
+
+    </div>
+    <div class="row content">
+        <div id="loader" class="center"></div>
+        <iframe id="page"></iframe>
     </div>
 
 </body>
