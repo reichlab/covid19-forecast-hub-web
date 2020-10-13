@@ -3,6 +3,12 @@ title: In the news
 layout: docs
 ---
 
+
+[5 charts that tell the story of COVID-19 in Mass.](https://www.bostonglobe.com/2020/10/05/nation/5-charts-that-tell-story-covid-19-mass/){:target="_blank"}  
+_Boston Globe_ | 5 October 2020
+
+***
+
 [Coronavirus Models Predict Scenarios, But People Determine Outcomes](https://www.wbur.org/hereandnow/2020/09/21/coronavirus-models-outcomes){:target="_blank"}  
 _WBUR_ | 21 September 2020
 
