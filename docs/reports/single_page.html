@@ -146,6 +146,9 @@
             };
 
             function accumulatefields(reports) {
+                $('#state').find('option')
+                    .remove()
+                    .end();
                 $.each(reports, function (key, val) {
                     $("#state").append($('<option>', {
                         value: key,
