@@ -327,21 +327,17 @@
                     <div class="block-content" style="padding-top: 0.25vh;">
                         <p style="margin: unset;padding-top: 0.15vh;padding-bottom: 0.25vh;">Browse our archive of
                             weekly forecast summaries.</p>
-                        <div class=" form-box" style="display: flexbox;width: 100%;margin-bottom: unset;">
-                            <form id="queryForm" style="display: inline;width: 100%;">
-                                <label for="state"
-                                    style="width: fit-content;display: inline-block;color: #f3f3f3;">State:</label>
-                                <select name="state" id="state" onselect="accumulateWeeks()"
-                                    style="width: fit-content;display: inline-block;">
-                                </select>
-                                <label for="date"
-                                    style="width: fit-content;display: inline-block;color: #f3f3f3;padding-left: 0.13vw;">Week:</label>
-                                <select name="week" id="date" style="width: fit-content;display: inline-block;">
-                                </select>
-                                <input class="block-buttons" type="submit" value="Submit"
-                                    style="margin-left: 0.25vw;vertical-align: top;">
-                            </form>
-                        </div>
+                            <div class=" form-box" style="display: inline;width: 100%;margin-bottom: unset;">
+                                <form id="queryForm" style="display: inline;width: auto;">
+                                    <label for="state" style="width: auto;color: #f3f3f3;">State:</label>
+                                    <select name="state" id="state" onselect="accumulateWeeks()" style="width: auto;display: inherit;">
+                                    <option value="national">national</option><option value="iowa">iowa</option><option value="massachusetts">massachusetts</option></select>
+                                    <label for="date" style="width: auto;display: inherit;color: #f3f3f3;padding-left: 0.13vw;">Week:</label>
+                                    <select name="week" id="date" style="width: auto;display: inherit;">
+                                    <option value="2020-10-13">2020-10-13</option><option value="2020-10-06">2020-10-06</option><option value="2020-09-29">2020-09-29</option><option value="2020-09-22">2020-09-22</option><option value="2020-09-15">2020-09-15</option><option value="2020-09-08">2020-09-08</option><option value="2020-09-01">2020-09-01</option><option value="2020-08-25">2020-08-25</option><option value="2020-08-18">2020-08-18</option><option value="2020-08-12">2020-08-12</option></select>
+                                    <input class="block-buttons" type="submit" value="Submit" style="margin-left: 0.25vw;vertical-align: top;">
+                                </form>
+                            </div>
                     </div>
                 </div>
             </section>
