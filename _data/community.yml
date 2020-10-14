@@ -1,3 +1,50 @@
+- abbreviation: CovidAnalytics-DELPHI
+  actions:
+  - label: Website
+    new_window: true
+    url: https://www.covidanalytics.io/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/196
+  dates:
+  - 2020-08-10
+  - 2020-09-14
+  - 2020-06-29
+  - 2020-07-20
+  - 2020-09-07
+  - 2020-08-03
+  - 2020-08-17
+  - 2020-09-21
+  - 2020-09-28
+  - 2020-06-22
+  - 2020-08-31
+  - 2020-04-22
+  - 2020-04-27
+  - 2020-04-30
+  - 2020-08-24
+  - 2020-05-04
+  - 2020-05-10
+  - 2020-05-18
+  - 2020-07-06
+  - 2020-07-13
+  - 2020-05-25
+  - 2020-07-27
+  - 2020-06-01
+  - 2020-06-08
+  - 2020-06-15
+  - 2020-10-05
+  - 2020-10-12
+  description: 'This model predicts based on an SEIR model augmented with underdetection
+    and interventions. Projections account for reopening and assume interventions
+    would be re-enacted if cases continue to climb. '
+  earliest_forecast: Wednesday, 22 April 2020
+  forecasts: 27
+  home_url: https://www.covidanalytics.io/
+  latest_forecast: Monday, 12 October 2020
+  name: DELPHI
+  team_name: CovidAnalytics at MIT
+  url: https://zoltardata.com/model/196
 - abbreviation: CMU-TimeSeries
   actions:
   - label: Website
@@ -88,6 +135,44 @@
   name: Bucky
   team_name: Johns Hopkins University Applied Physics Lab
   url: https://zoltardata.com/model/375
+- abbreviation: epiforecasts-ensemble1
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/epiforecasts/covid-us-deaths
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/290
+  dates:
+  - 2020-09-14
+  - 2020-07-19
+  - 2020-08-24
+  - 2020-09-21
+  - 2020-09-28
+  - 2020-09-07
+  - 2020-06-29
+  - 2020-08-10
+  - 2020-08-17
+  - 2020-07-13
+  - 2020-06-22
+  - 2020-07-26
+  - 2020-08-31
+  - 2020-07-06
+  - 2020-08-03
+  - 2020-06-15
+  - 2020-10-05
+  - 2020-10-12
+  description: 'A deaths forecast using a mean ensemble of three different models:
+    An Rt based forecast, a timeseries forecast using deaths only and a timeseries
+    forecast using deaths and cases. '
+  earliest_forecast: Monday, 15 June 2020
+  forecasts: 18
+  home_url: https://github.com/epiforecasts/covid-us-deaths
+  latest_forecast: Monday, 12 October 2020
+  name: ensemble1
+  team_name: EpiForecasts group at the London School of Hygiene & Tropical Medicine
+  url: https://zoltardata.com/model/290
 - abbreviation: UCSD_NEU-DeepGLEAM
   actions:
   - label: Website
@@ -196,6 +281,30 @@
   name: NotreDame-mobility
   team_name: NotreDame-mobility
   url: https://zoltardata.com/model/291
+- abbreviation: IBF-TimeSeries
+  actions:
+  - label: Website
+    new_window: true
+    url: https://ibf.org
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/379
+  dates:
+  - 2020-09-07
+  - 2020-09-28
+  - 2020-09-21
+  - 2020-09-14
+  - 2020-10-12
+  description: Time Series Model with proprietary modifications
+  earliest_forecast: Monday, 07 September 2020
+  forecasts: 5
+  home_url: https://ibf.org
+  latest_forecast: Monday, 12 October 2020
+  name: Time Series Model with a unique technique to capture the pattern and using
+    it to prepare the forecast.
+  team_name: Institute of Business Forecasting
+  url: https://zoltardata.com/model/379
 - abbreviation: USACE-ERDC_SEIR
   actions:
   - label: Website
@@ -764,6 +873,39 @@
   name: DeepST
   team_name: MSRA
   url: https://zoltardata.com/model/428
+- abbreviation: UVA-Ensemble
+  actions:
+  - label: Website
+    new_window: true
+    url: https://biocomplexity.virginia.edu/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/308
+  dates:
+  - 2020-08-17
+  - 2020-08-31
+  - 2020-09-14
+  - 2020-08-24
+  - 2020-07-27
+  - 2020-09-07
+  - 2020-08-03
+  - 2020-09-21
+  - 2020-07-20
+  - 2020-08-10
+  - 2020-09-28
+  - 2020-10-05
+  - 2020-10-12
+  description: An ensemble of multiple methods such as auto-regressive (AR) models
+    with exogenous variables, Long short-term memory (lSTM) models, and PatchSim (an
+    SEIR model).
+  earliest_forecast: Monday, 20 July 2020
+  forecasts: 13
+  home_url: https://biocomplexity.virginia.edu/
+  latest_forecast: Monday, 12 October 2020
+  name: Ensemble model
+  team_name: University of Virginia, Biocomplexity COVID-19 Response Team
+  url: https://zoltardata.com/model/308
 - abbreviation: JCB-PRM
   actions:
   - label: Website
@@ -796,6 +938,44 @@
   name: PRM
   team_name: John Burant (JCB)
   url: https://zoltardata.com/model/311
+- abbreviation: DDS-NBDS
+  actions:
+  - label: Website
+    new_window: true
+    url: https://dds-covid19.github.io/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/312
+  dates:
+  - 2020-08-24
+  - 2020-08-30
+  - 2020-08-03
+  - 2020-09-20
+  - 2020-07-27
+  - 2020-08-09
+  - 2020-09-28
+  - 2020-09-07
+  - 2020-09-13
+  - 2020-09-21
+  - 2020-08-17
+  - 2020-08-10
+  - 2020-09-27
+  - 2020-09-14
+  - 2020-08-31
+  - 2020-10-04
+  - 2020-10-05
+  - 2020-10-11
+  - 2020-10-12
+  description: Jointly modeling daily deaths and cases using a negative binomial distribution
+    based nonparametric Bayesian generalized linear dynamical system.
+  earliest_forecast: Monday, 27 July 2020
+  forecasts: 19
+  home_url: https://dds-covid19.github.io/
+  latest_forecast: Monday, 12 October 2020
+  name: Negative Binomial Dynamical System
+  team_name: Discrete Dynamical Systems
+  url: https://zoltardata.com/model/312
 - abbreviation: UMich-RidgeTfReg
   actions:
   - label: Website
@@ -1613,43 +1793,6 @@
   name: CovidScenarioPipeline
   team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
   url: https://zoltardata.com/model/255
-- abbreviation: DDS-NBDS
-  actions:
-  - label: Website
-    new_window: true
-    url: https://dds-covid19.github.io/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/312
-  dates:
-  - 2020-08-24
-  - 2020-08-30
-  - 2020-08-03
-  - 2020-09-20
-  - 2020-07-27
-  - 2020-08-09
-  - 2020-09-28
-  - 2020-09-07
-  - 2020-09-13
-  - 2020-09-21
-  - 2020-08-17
-  - 2020-08-10
-  - 2020-09-27
-  - 2020-09-14
-  - 2020-08-31
-  - 2020-10-04
-  - 2020-10-05
-  - 2020-10-11
-  description: Jointly modeling daily deaths and cases using a negative binomial distribution
-    based nonparametric Bayesian generalized linear dynamical system.
-  earliest_forecast: Monday, 27 July 2020
-  forecasts: 18
-  home_url: https://dds-covid19.github.io/
-  latest_forecast: Sunday, 11 October 2020
-  name: Negative Binomial Dynamical System
-  team_name: Discrete Dynamical Systems
-  url: https://zoltardata.com/model/312
 - abbreviation: UCM_MESALab-FoGSEIR
   actions:
   - label: Website
@@ -1775,89 +1918,6 @@
   name: RtDriven
   team_name: BPagano
   url: https://zoltardata.com/model/427
-- abbreviation: CovidAnalytics-DELPHI
-  actions:
-  - label: Website
-    new_window: true
-    url: https://www.covidanalytics.io/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/196
-  dates:
-  - 2020-08-10
-  - 2020-09-14
-  - 2020-06-29
-  - 2020-07-20
-  - 2020-09-07
-  - 2020-08-03
-  - 2020-08-17
-  - 2020-09-21
-  - 2020-09-28
-  - 2020-06-22
-  - 2020-08-31
-  - 2020-04-22
-  - 2020-04-27
-  - 2020-04-30
-  - 2020-08-24
-  - 2020-05-04
-  - 2020-05-10
-  - 2020-05-18
-  - 2020-07-06
-  - 2020-07-13
-  - 2020-05-25
-  - 2020-07-27
-  - 2020-06-01
-  - 2020-06-08
-  - 2020-06-15
-  - 2020-10-05
-  description: 'This model predicts based on an SEIR model augmented with underdetection
-    and interventions. Projections account for reopening and assume interventions
-    would be re-enacted if cases continue to climb. '
-  earliest_forecast: Wednesday, 22 April 2020
-  forecasts: 26
-  home_url: https://www.covidanalytics.io/
-  latest_forecast: Monday, 05 October 2020
-  name: DELPHI
-  team_name: CovidAnalytics at MIT
-  url: https://zoltardata.com/model/196
-- abbreviation: epiforecasts-ensemble1
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/epiforecasts/covid-us-deaths
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/290
-  dates:
-  - 2020-09-14
-  - 2020-07-19
-  - 2020-08-24
-  - 2020-09-21
-  - 2020-09-28
-  - 2020-09-07
-  - 2020-06-29
-  - 2020-08-10
-  - 2020-08-17
-  - 2020-07-13
-  - 2020-06-22
-  - 2020-07-26
-  - 2020-08-31
-  - 2020-07-06
-  - 2020-08-03
-  - 2020-06-15
-  - 2020-10-05
-  description: 'A deaths forecast using a mean ensemble of three different models:
-    An Rt based forecast, a timeseries forecast using deaths only and a timeseries
-    forecast using deaths and cases. '
-  earliest_forecast: Monday, 15 June 2020
-  forecasts: 17
-  home_url: https://github.com/epiforecasts/covid-us-deaths
-  latest_forecast: Monday, 05 October 2020
-  name: ensemble1
-  team_name: EpiForecasts group at the London School of Hygiene & Tropical Medicine
-  url: https://zoltardata.com/model/290
 - abbreviation: JHU_CSSE-DECOM
   actions:
   - label: Website
@@ -2074,35 +2134,3 @@
   name: ParamSearch
   team_name: Youyang Gu (YYG)
   url: https://zoltardata.com/model/202
-- abbreviation: UVA-Ensemble
-  actions:
-  - label: Website
-    new_window: true
-    url: https://biocomplexity.virginia.edu/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/308
-  dates:
-  - 2020-08-17
-  - 2020-08-31
-  - 2020-09-14
-  - 2020-08-24
-  - 2020-07-27
-  - 2020-09-07
-  - 2020-08-03
-  - 2020-09-21
-  - 2020-07-20
-  - 2020-08-10
-  - 2020-09-28
-  - 2020-10-05
-  description: An ensemble of multiple methods such as auto-regressive (AR) models
-    with exogenous variables, Long short-term memory (lSTM) models, and PatchSim (an
-    SEIR model).
-  earliest_forecast: Monday, 20 July 2020
-  forecasts: 12
-  home_url: https://biocomplexity.virginia.edu/
-  latest_forecast: Monday, 05 October 2020
-  name: Ensemble model
-  team_name: University of Virginia, Biocomplexity COVID-19 Response Team
-  url: https://zoltardata.com/model/308
