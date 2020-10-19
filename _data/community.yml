@@ -1,3 +1,358 @@
+- abbreviation: STH-3PU
+  actions:
+  - label: Website
+    new_window: true
+    url: https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/278
+  dates:
+  - 2020-10-18
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-09-29
+  - 2020-09-21
+  - 2020-09-19
+  - 2020-09-13
+  - 2020-09-12
+  - 2020-09-06
+  - 2020-09-05
+  - 2020-08-30
+  - 2020-08-23
+  - 2020-08-22
+  - 2020-08-16
+  - 2020-08-15
+  - 2020-08-09
+  - 2020-08-01
+  - 2020-07-25
+  - 2020-07-23
+  - 2020-07-22
+  - 2020-07-21
+  - 2020-07-19
+  - 2020-07-15
+  - 2020-07-16
+  - 2020-07-17
+  - 2020-07-14
+  - 2020-07-13
+  - 2020-07-10
+  - 2020-07-08
+  - 2020-07-12
+  - 2020-07-11
+  - 2020-07-09
+  - 2020-07-07
+  - 2020-07-06
+  - 2020-07-05
+  - 2020-07-04
+  - 2020-07-03
+  - 2020-07-02
+  - 2020-07-01
+  - 2020-06-30
+  - 2020-06-29
+  - 2020-06-28
+  - 2020-06-27
+  - 2020-06-25
+  - 2020-06-26
+  - 2020-06-24
+  - 2020-06-23
+  - 2020-06-22
+  - 2020-06-21
+  - 2020-06-20
+  - 2020-06-19
+  - 2020-06-18
+  - 2020-06-17
+  - 2020-06-16
+  - 2020-06-14
+  - 2020-06-15
+  - 2020-06-13
+  - 2020-06-12
+  - 2020-06-11
+  - 2020-06-10
+  - 2020-06-09
+  - 2020-06-08
+  - 2020-06-06
+  - 2020-06-05
+  - 2020-06-07
+  - 2020-06-03
+  - 2020-06-04
+  - 2020-06-02
+  - 2020-06-01
+  - 2020-05-30
+  - 2020-05-29
+  description: 'Model assumes pandemics hit in 3 distinct phases. Each phase can be
+    represented by a single function and therefore the variables can be isolated. '
+  earliest_forecast: Friday, 29 May 2020
+  forecasts: 71
+  home_url: https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths
+  latest_forecast: Sunday, 18 October 2020
+  name: 3 Phase Unadjusted
+  team_name: STH
+  url: https://zoltardata.com/model/278
+- abbreviation: CEID-Walk
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/e3bo/random-walks
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/361
+  dates:
+  - 2020-10-18
+  - 2020-10-11
+  - 2020-10-04
+  - 2020-09-27
+  - 2020-09-20
+  - 2020-09-13
+  - 2020-09-06
+  - 2020-08-30
+  - 2020-08-23
+  - 2020-08-16
+  - 2020-08-09
+  description: We use a random walk model without drift. The last few observations
+    of a target time series are used to estimate the variance in step size of the
+    random walk.
+  earliest_forecast: Sunday, 09 August 2020
+  forecasts: 11
+  home_url: https://github.com/e3bo/random-walks
+  latest_forecast: Sunday, 18 October 2020
+  name: Walk
+  team_name: University of Georgia Center for the Ecology of Infectious Diseases Forecasting
+    Working Group
+  url: https://zoltardata.com/model/361
+- abbreviation: UCM_MESALab-FoGSEIR
+  actions:
+  - label: Website
+    new_window: true
+    url: http://mechatronics.ucmerced.edu/covid19
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/310
+  dates:
+  - 2020-10-18
+  - 2020-10-11
+  - 2020-10-04
+  - 2020-09-27
+  - 2020-09-20
+  - 2020-09-13
+  - 2020-09-06
+  - 2020-08-30
+  - 2020-08-23
+  - 2020-08-16
+  - 2020-08-09
+  - 2020-08-02
+  - 2020-07-26
+  description: FoGSEIR model is a modification of integer order SEIR model considering
+    fractional integrals. The model considers the age structure and reopening intervention
+    to minimize infections and deaths.
+  earliest_forecast: Sunday, 26 July 2020
+  forecasts: 13
+  home_url: http://mechatronics.ucmerced.edu/covid19
+  latest_forecast: Sunday, 18 October 2020
+  name: Fractional order Generalized SEIR model
+  team_name: University of California Merced MESA Lab
+  url: https://zoltardata.com/model/310
+- abbreviation: IHME-CurveFit
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid19.healthdata.org/united-states-of-america
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/154
+  dates:
+  - 2020-10-16
+  - 2020-09-28
+  - 2020-09-21
+  - 2020-09-03
+  - 2020-08-27
+  - 2020-08-24
+  - 2020-08-06
+  - 2020-07-30
+  - 2020-07-23
+  - 2020-07-17
+  - 2020-07-06
+  - 2020-06-29
+  - 2020-06-24
+  - 2020-06-22
+  - 2020-06-15
+  - 2020-06-10
+  - 2020-06-08
+  - 2020-06-05
+  - 2020-05-29
+  - 2020-05-12
+  - 2020-05-18
+  - 2020-05-04
+  - 2020-05-08
+  - 2020-04-28
+  - 2020-04-27
+  - 2020-04-21
+  - 2020-04-20
+  - 2020-04-16
+  - 2020-04-12
+  - 2020-04-09
+  - 2020-04-07
+  - 2020-04-05
+  - 2020-04-01
+  - 2020-03-31
+  - 2020-03-30
+  - 2020-03-29
+  - 2020-03-27
+  description: This model makes predictions about the future that are dependent on
+    the assumption  that current interventions continue. Non-linear mixed efects curve-fitting.
+  earliest_forecast: Friday, 27 March 2020
+  forecasts: 37
+  home_url: https://covid19.healthdata.org/united-states-of-america
+  latest_forecast: Friday, 16 October 2020
+  name: CurveFit
+  team_name: Institute for Health Metrics and Evaluation
+  url: https://zoltardata.com/model/154
+- abbreviation: CU-select
+  actions:
+  - label: Website
+    new_window: true
+    url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/231
+  dates:
+  - 2020-10-15
+  - 2020-10-11
+  - 2020-10-08
+  - 2020-10-04
+  - 2020-09-24
+  - 2020-09-27
+  - 2020-09-20
+  - 2020-09-13
+  - 2020-09-06
+  - 2020-09-03
+  - 2020-08-30
+  - 2020-08-20
+  - 2020-08-23
+  - 2020-08-16
+  - 2020-08-13
+  - 2020-08-09
+  - 2020-08-06
+  - 2020-08-02
+  - 2020-07-26
+  - 2020-07-19
+  - 2020-07-12
+  - 2020-07-05
+  - 2020-07-02
+  - 2020-06-28
+  - 2020-06-25
+  - 2020-06-21
+  - 2020-05-03
+  - 2020-04-19
+  - 2020-05-07
+  - 2020-04-26
+  - 2020-04-12
+  - 2020-04-16
+  - 2020-04-23
+  - 2020-06-18
+  - 2020-06-14
+  - 2020-06-11
+  - 2020-06-04
+  - 2020-06-07
+  - 2020-05-31
+  - 2020-05-28
+  - 2020-05-21
+  - 2020-05-14
+  - 2020-05-10
+  - 2020-05-24
+  - 2020-05-17
+  description: A metapopulation county-level SEIR model for projecting future COVID-19
+    incidence and deaths. This forecast is the scenario we believe to be most plausible
+    given the current setting.
+  earliest_forecast: Sunday, 12 April 2020
+  forecasts: 45
+  home_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
+  latest_forecast: Thursday, 15 October 2020
+  name: select
+  team_name: Columbia University
+  url: https://zoltardata.com/model/231
+- abbreviation: LANL-GrowthRate
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid-19.bsvgateway.org/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/157
+  dates:
+  - 2020-10-15
+  - 2020-10-12
+  - 2020-10-08
+  - 2020-10-05
+  - 2020-10-01
+  - 2020-09-28
+  - 2020-09-24
+  - 2020-09-21
+  - 2020-09-17
+  - 2020-09-14
+  - 2020-09-10
+  - 2020-09-07
+  - 2020-09-03
+  - 2020-08-31
+  - 2020-08-27
+  - 2020-08-24
+  - 2020-08-20
+  - 2020-08-17
+  - 2020-08-13
+  - 2020-08-10
+  - 2020-08-06
+  - 2020-08-03
+  - 2020-07-30
+  - 2020-07-27
+  - 2020-07-23
+  - 2020-07-20
+  - 2020-07-16
+  - 2020-07-13
+  - 2020-07-09
+  - 2020-07-06
+  - 2020-07-03
+  - 2020-07-02
+  - 2020-06-29
+  - 2020-06-24
+  - 2020-06-21
+  - 2020-06-18
+  - 2020-06-14
+  - 2020-06-11
+  - 2020-06-08
+  - 2020-06-04
+  - 2020-06-01
+  - 2020-05-28
+  - 2020-05-24
+  - 2020-05-25
+  - 2020-05-21
+  - 2020-05-18
+  - 2020-05-04
+  - 2020-04-30
+  - 2020-04-20
+  - 2020-04-16
+  - 2020-04-23
+  - 2020-05-07
+  - 2020-04-13
+  - 2020-04-27
+  - 2020-04-09
+  - 2020-04-06
+  - 2020-05-14
+  - 2020-05-11
+  - 2020-05-03
+  description: This model makes predictions about the future, unconditional on particular
+    intervention strategies. Statistical dynamical growth model accounting for population
+    susceptibility.
+  earliest_forecast: Monday, 06 April 2020
+  forecasts: 59
+  home_url: https://covid-19.bsvgateway.org/
+  latest_forecast: Thursday, 15 October 2020
+  name: GrowthRate
+  team_name: Los Alamos National Labs
+  url: https://zoltardata.com/model/157
 - abbreviation: CovidAnalytics-DELPHI
   actions:
   - label: Website
@@ -444,95 +799,6 @@
   name: EmpericalSkewedGaussian
   team_name: Robert Walraven
   url: https://zoltardata.com/model/301
-- abbreviation: STH-3PU
-  actions:
-  - label: Website
-    new_window: true
-    url: https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/278
-  dates:
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-09-29
-  - 2020-09-21
-  - 2020-09-19
-  - 2020-09-13
-  - 2020-09-12
-  - 2020-09-06
-  - 2020-09-05
-  - 2020-08-30
-  - 2020-08-23
-  - 2020-08-22
-  - 2020-08-16
-  - 2020-08-15
-  - 2020-08-09
-  - 2020-08-01
-  - 2020-07-25
-  - 2020-07-23
-  - 2020-07-22
-  - 2020-07-21
-  - 2020-07-19
-  - 2020-07-15
-  - 2020-07-16
-  - 2020-07-17
-  - 2020-07-14
-  - 2020-07-13
-  - 2020-07-10
-  - 2020-07-08
-  - 2020-07-12
-  - 2020-07-11
-  - 2020-07-09
-  - 2020-07-07
-  - 2020-07-06
-  - 2020-07-05
-  - 2020-07-04
-  - 2020-07-03
-  - 2020-07-02
-  - 2020-07-01
-  - 2020-06-30
-  - 2020-06-29
-  - 2020-06-28
-  - 2020-06-27
-  - 2020-06-25
-  - 2020-06-26
-  - 2020-06-24
-  - 2020-06-23
-  - 2020-06-22
-  - 2020-06-21
-  - 2020-06-20
-  - 2020-06-19
-  - 2020-06-18
-  - 2020-06-17
-  - 2020-06-16
-  - 2020-06-14
-  - 2020-06-15
-  - 2020-06-13
-  - 2020-06-12
-  - 2020-06-11
-  - 2020-06-10
-  - 2020-06-09
-  - 2020-06-08
-  - 2020-06-06
-  - 2020-06-05
-  - 2020-06-07
-  - 2020-06-03
-  - 2020-06-04
-  - 2020-06-02
-  - 2020-06-01
-  - 2020-05-30
-  - 2020-05-29
-  description: 'Model assumes pandemics hit in 3 distinct phases. Each phase can be
-    represented by a single function and therefore the variables can be isolated. '
-  earliest_forecast: Friday, 29 May 2020
-  forecasts: 70
-  home_url: https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths
-  latest_forecast: Monday, 12 October 2020
-  name: 3 Phase Unadjusted
-  team_name: STH
-  url: https://zoltardata.com/model/278
 - abbreviation: PandemicCentral-USCounty
   actions:
   - label: Website
@@ -698,84 +964,6 @@
   name: GLEAM COVID-19
   team_name: MOBS Lab at Northeastern
   url: https://zoltardata.com/model/158
-- abbreviation: LANL-GrowthRate
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid-19.bsvgateway.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/157
-  dates:
-  - 2020-10-12
-  - 2020-10-08
-  - 2020-10-05
-  - 2020-10-01
-  - 2020-09-28
-  - 2020-09-24
-  - 2020-09-21
-  - 2020-09-17
-  - 2020-09-14
-  - 2020-09-10
-  - 2020-09-07
-  - 2020-09-03
-  - 2020-08-31
-  - 2020-08-27
-  - 2020-08-24
-  - 2020-08-20
-  - 2020-08-17
-  - 2020-08-13
-  - 2020-08-10
-  - 2020-08-06
-  - 2020-08-03
-  - 2020-07-30
-  - 2020-07-27
-  - 2020-07-23
-  - 2020-07-20
-  - 2020-07-16
-  - 2020-07-13
-  - 2020-07-09
-  - 2020-07-06
-  - 2020-07-03
-  - 2020-07-02
-  - 2020-06-29
-  - 2020-06-24
-  - 2020-06-21
-  - 2020-06-18
-  - 2020-06-14
-  - 2020-06-11
-  - 2020-06-08
-  - 2020-06-04
-  - 2020-06-01
-  - 2020-05-28
-  - 2020-05-24
-  - 2020-05-25
-  - 2020-05-21
-  - 2020-05-18
-  - 2020-05-04
-  - 2020-04-30
-  - 2020-04-20
-  - 2020-04-16
-  - 2020-04-23
-  - 2020-05-07
-  - 2020-04-13
-  - 2020-04-27
-  - 2020-04-09
-  - 2020-04-06
-  - 2020-05-14
-  - 2020-05-11
-  - 2020-05-03
-  description: This model makes predictions about the future, unconditional on particular
-    intervention strategies. Statistical dynamical growth model accounting for population
-    susceptibility.
-  earliest_forecast: Monday, 06 April 2020
-  forecasts: 58
-  home_url: https://covid-19.bsvgateway.org/
-  latest_forecast: Monday, 12 October 2020
-  name: GrowthRate
-  team_name: Los Alamos National Labs
-  url: https://zoltardata.com/model/157
 - abbreviation: MITCovAlliance-SIR
   actions:
   - label: Website
@@ -1125,70 +1313,6 @@
   name: Survival-Convolution Models
   team_name: Columbia_UNC
   url: https://zoltardata.com/model/292
-- abbreviation: CU-select
-  actions:
-  - label: Website
-    new_window: true
-    url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/231
-  dates:
-  - 2020-10-11
-  - 2020-10-08
-  - 2020-10-04
-  - 2020-09-24
-  - 2020-09-27
-  - 2020-09-20
-  - 2020-09-13
-  - 2020-09-06
-  - 2020-09-03
-  - 2020-08-30
-  - 2020-08-20
-  - 2020-08-23
-  - 2020-08-16
-  - 2020-08-13
-  - 2020-08-09
-  - 2020-08-06
-  - 2020-08-02
-  - 2020-07-26
-  - 2020-07-19
-  - 2020-07-12
-  - 2020-07-05
-  - 2020-07-02
-  - 2020-06-28
-  - 2020-06-25
-  - 2020-06-21
-  - 2020-05-03
-  - 2020-04-19
-  - 2020-05-07
-  - 2020-04-26
-  - 2020-04-12
-  - 2020-04-16
-  - 2020-04-23
-  - 2020-06-18
-  - 2020-06-14
-  - 2020-06-11
-  - 2020-06-04
-  - 2020-06-07
-  - 2020-05-31
-  - 2020-05-28
-  - 2020-05-21
-  - 2020-05-14
-  - 2020-05-10
-  - 2020-05-24
-  - 2020-05-17
-  description: A metapopulation county-level SEIR model for projecting future COVID-19
-    incidence and deaths. This forecast is the scenario we believe to be most plausible
-    given the current setting.
-  earliest_forecast: Sunday, 12 April 2020
-  forecasts: 44
-  home_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
-  latest_forecast: Sunday, 11 October 2020
-  name: select
-  team_name: Columbia University
-  url: https://zoltardata.com/model/231
 - abbreviation: Geneva-DetGrowth
   actions:
   - label: Website
@@ -1449,37 +1573,6 @@
   name: Combined Linear and Exponential Predictor (CLEP)
   team_name: Berkeley Yu Group
   url: https://zoltardata.com/model/359
-- abbreviation: CEID-Walk
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/e3bo/random-walks
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/361
-  dates:
-  - 2020-10-11
-  - 2020-10-04
-  - 2020-09-27
-  - 2020-09-20
-  - 2020-09-13
-  - 2020-09-06
-  - 2020-08-30
-  - 2020-08-23
-  - 2020-08-16
-  - 2020-08-09
-  description: We use a random walk model without drift. The last few observations
-    of a target time series are used to estimate the variance in step size of the
-    random walk.
-  earliest_forecast: Sunday, 09 August 2020
-  forecasts: 10
-  home_url: https://github.com/e3bo/random-walks
-  latest_forecast: Sunday, 11 October 2020
-  name: Walk
-  team_name: University of Georgia Center for the Ecology of Infectious Diseases Forecasting
-    Working Group
-  url: https://zoltardata.com/model/361
 - abbreviation: Google_Harvard-CPF
   actions:
   - label: Website
@@ -1793,38 +1886,6 @@
   name: CovidScenarioPipeline
   team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
   url: https://zoltardata.com/model/255
-- abbreviation: UCM_MESALab-FoGSEIR
-  actions:
-  - label: Website
-    new_window: true
-    url: http://mechatronics.ucmerced.edu/covid19
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/310
-  dates:
-  - 2020-10-11
-  - 2020-10-04
-  - 2020-09-27
-  - 2020-09-20
-  - 2020-09-13
-  - 2020-09-06
-  - 2020-08-30
-  - 2020-08-23
-  - 2020-08-16
-  - 2020-08-09
-  - 2020-08-02
-  - 2020-07-26
-  description: FoGSEIR model is a modification of integer order SEIR model considering
-    fractional integrals. The model considers the age structure and reopening intervention
-    to minimize infections and deaths.
-  earliest_forecast: Sunday, 26 July 2020
-  forecasts: 12
-  home_url: http://mechatronics.ucmerced.edu/covid19
-  latest_forecast: Sunday, 11 October 2020
-  name: Fractional order Generalized SEIR model
-  team_name: University of California Merced MESA Lab
-  url: https://zoltardata.com/model/310
 - abbreviation: USC-SI_kJalpha
   actions:
   - label: Website
@@ -1918,219 +1979,3 @@
   name: RtDriven
   team_name: BPagano
   url: https://zoltardata.com/model/427
-- abbreviation: JHU_CSSE-DECOM
-  actions:
-  - label: Website
-    new_window: true
-    url: https://systems.jhu.edu/research/public-health/predicting-covid-19-risk/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/426
-  dates:
-  - 2020-10-05
-  description: County-level, empirical machine learning model driven by epidemiological,
-    mobility, demographic, and behavioral data.
-  earliest_forecast: Monday, 05 October 2020
-  forecasts: 1
-  home_url: https://systems.jhu.edu/research/public-health/predicting-covid-19-risk/
-  latest_forecast: Monday, 05 October 2020
-  name: Dynamic, Empirical COVID-19 Outbreak Model
-  team_name: Johns Hopkins Center for Systems Science and Engineering
-  url: https://zoltardata.com/model/426
-- abbreviation: YYG-ParamSearch
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19-projections.com
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/202
-  dates:
-  - 2020-07-10
-  - 2020-07-30
-  - 2020-09-10
-  - 2020-09-21
-  - 2020-07-09
-  - 2020-07-28
-  - 2020-08-26
-  - 2020-08-27
-  - 2020-08-30
-  - 2020-08-31
-  - 2020-09-03
-  - 2020-09-06
-  - 2020-09-12
-  - 2020-09-15
-  - 2020-09-16
-  - 2020-09-18
-  - 2020-07-12
-  - 2020-08-29
-  - 2020-09-04
-  - 2020-09-05
-  - 2020-09-11
-  - 2020-09-17
-  - 2020-07-11
-  - 2020-08-28
-  - 2020-09-13
-  - 2020-09-27
-  - 2020-09-26
-  - 2020-09-25
-  - 2020-09-28
-  - 2020-07-04
-  - 2020-08-25
-  - 2020-07-05
-  - 2020-06-23
-  - 2020-07-06
-  - 2020-09-20
-  - 2020-07-27
-  - 2020-08-06
-  - 2020-08-07
-  - 2020-08-11
-  - 2020-08-12
-  - 2020-08-13
-  - 2020-08-14
-  - 2020-08-15
-  - 2020-08-16
-  - 2020-08-20
-  - 2020-08-21
-  - 2020-09-07
-  - 2020-09-19
-  - 2020-09-22
-  - 2020-09-24
-  - 2020-06-21
-  - 2020-06-22
-  - 2020-07-01
-  - 2020-07-16
-  - 2020-07-31
-  - 2020-08-10
-  - 2020-08-18
-  - 2020-09-08
-  - 2020-09-14
-  - 2020-06-29
-  - 2020-06-30
-  - 2020-07-15
-  - 2020-07-22
-  - 2020-04-13
-  - 2020-07-23
-  - 2020-07-24
-  - 2020-08-01
-  - 2020-08-04
-  - 2020-08-19
-  - 2020-09-09
-  - 2020-09-23
-  - 2020-05-04
-  - 2020-04-20
-  - 2020-06-25
-  - 2020-07-02
-  - 2020-07-14
-  - 2020-07-21
-  - 2020-08-05
-  - 2020-04-27
-  - 2020-06-26
-  - 2020-05-11
-  - 2020-07-19
-  - 2020-08-17
-  - 2020-05-18
-  - 2020-07-03
-  - 2020-07-18
-  - 2020-07-25
-  - 2020-08-08
-  - 2020-08-22
-  - 2020-09-02
-  - 2020-05-25
-  - 2020-07-08
-  - 2020-07-17
-  - 2020-07-26
-  - 2020-08-02
-  - 2020-08-09
-  - 2020-08-23
-  - 2020-09-01
-  - 2020-05-02
-  - 2020-04-30
-  - 2020-04-23
-  - 2020-04-18
-  - 2020-05-13
-  - 2020-04-21
-  - 2020-04-25
-  - 2020-05-17
-  - 2020-05-15
-  - 2020-05-05
-  - 2020-04-15
-  - 2020-04-29
-  - 2020-04-16
-  - 2020-04-17
-  - 2020-04-22
-  - 2020-05-10
-  - 2020-05-06
-  - 2020-04-28
-  - 2020-05-01
-  - 2020-04-26
-  - 2020-04-19
-  - 2020-05-16
-  - 2020-04-14
-  - 2020-05-07
-  - 2020-05-14
-  - 2020-05-03
-  - 2020-05-08
-  - 2020-05-09
-  - 2020-05-12
-  - 2020-04-24
-  - 2020-06-01
-  - 2020-06-27
-  - 2020-07-07
-  - 2020-06-28
-  - 2020-05-26
-  - 2020-06-08
-  - 2020-05-30
-  - 2020-06-03
-  - 2020-05-29
-  - 2020-05-19
-  - 2020-05-23
-  - 2020-06-04
-  - 2020-05-22
-  - 2020-06-02
-  - 2020-06-07
-  - 2020-05-21
-  - 2020-05-24
-  - 2020-05-31
-  - 2020-05-28
-  - 2020-06-05
-  - 2020-06-06
-  - 2020-05-27
-  - 2020-05-20
-  - 2020-06-09
-  - 2020-06-10
-  - 2020-06-11
-  - 2020-06-24
-  - 2020-07-20
-  - 2020-06-12
-  - 2020-06-15
-  - 2020-08-03
-  - 2020-06-14
-  - 2020-06-13
-  - 2020-06-16
-  - 2020-06-17
-  - 2020-07-13
-  - 2020-07-29
-  - 2020-08-24
-  - 2020-06-18
-  - 2020-06-19
-  - 2020-06-20
-  - 2020-09-30
-  - 2020-09-29
-  - 2020-10-03
-  - 2020-10-02
-  - 2020-10-01
-  - 2020-10-05
-  - 2020-10-04
-  description: An SEIR model that makes daily infections and deaths projections for
-    US states. A machine learning layer learns the best parameters/inputs for each
-    state. The model accounts for state reopenings.
-  earliest_forecast: Monday, 13 April 2020
-  forecasts: 176
-  home_url: https://covid19-projections.com
-  latest_forecast: Monday, 05 October 2020
-  name: ParamSearch
-  team_name: Youyang Gu (YYG)
-  url: https://zoltardata.com/model/202
