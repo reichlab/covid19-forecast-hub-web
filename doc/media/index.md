@@ -3,6 +3,20 @@ title: In the news
 layout: docs
 ---
 
+[Universal mask use could save 130,000 U.S. lives by the end of February, new study estimates](https://www.statnews.com/2020/10/23/universal-mask-use-could-save-130000-lives-by-the-end-of-february-new-modeling-study-says/){:target="_blank"}  
+_STAT_ | 23 October 2020
+
+***
+
+[How Covid-19 Death-Rate Predictions Have Changed Since March](https://www.wsj.com/articles/how-covid-19-death-rate-predictions-have-changed-since-march-11603445400?st=ogt1to63xgermm6&reflink=article_email_share){:target="_blank"}  
+_The Wall Street Journal_ | 23 October 2020
+
+***
+
+[What's Coming This Winter? Here's How Many More Could Die In The Pandemic](https://www.npr.org/sections/health-shots/2020/10/16/924240204/how-bad-will-coronavirus-be-this-winter-model-projects-170-000-more-u-s-deaths){:target="_blank"}  
+_NPR_ | 16 October 2020
+
+***
 
 [5 charts that tell the story of COVID-19 in Mass.](https://www.bostonglobe.com/2020/10/05/nation/5-charts-that-tell-story-covid-19-mass/){:target="_blank"}  
 _Boston Globe_ | 5 October 2020
