@@ -1943,6 +1943,27 @@
   name: Mobility-informed Collision Model
   team_name: RPI and UW
   url: https://zoltardata.com/model/367
+- abbreviation: JHU_UNC_GAS-StatMechPool
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/HopkinsIDD/EpiForecastStatMech
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/437
+  dates:
+  - 2020-10-25
+  description: This model jointly trains over locations, fitting to both  mechanistic
+    and statistical models. The statistical model  enforces  similar places having  similar
+    mechanistic coefficients.
+  earliest_forecast: Sunday, 25 October 2020
+  forecasts: 1
+  home_url: https://github.com/HopkinsIDD/EpiForecastStatMech
+  latest_forecast: Sunday, 25 October 2020
+  name: StatMechPool
+  team_name: JHU_UNC_GAS
+  url: https://zoltardata.com/model/437
 - abbreviation: JHU_CSSE-DECOM
   actions:
   - label: Website
