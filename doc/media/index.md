@@ -3,6 +3,13 @@ title: In the news
 layout: docs
 ---
 
+
+[With a meteoric rise in deaths, talk of waves is misguided, say Covid-19 modelers](https://www.statnews.com/2020/11/12/with-a-meteoric-rise-in-deaths-talk-of-waves-is-misguided-say-covid-19-modelers/){:target="_blank"}  
+_STAT_ | 12 November 2020
+
+***
+
+
 [Universal mask use could save 130,000 U.S. lives by the end of February, new study estimates](https://www.statnews.com/2020/10/23/universal-mask-use-could-save-130000-lives-by-the-end-of-february-new-modeling-study-says/){:target="_blank"}  
 _STAT_ | 23 October 2020
 
