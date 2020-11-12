@@ -49,6 +49,77 @@
   name: DELPHI
   team_name: CovidAnalytics at MIT
   url: https://zoltardata.com/model/196
+- abbreviation: CMU-TimeSeries
+  actions:
+  - label: Website
+    new_window: true
+    url: https://delphi.cmu.edu
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/307
+  dates:
+  - 2020-11-09
+  - 2020-11-02
+  - 2020-10-26
+  - 2020-10-19
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-09-28
+  - 2020-09-21
+  - 2020-09-14
+  - 2020-09-07
+  - 2020-08-31
+  - 2020-08-24
+  - 2020-08-17
+  - 2020-08-10
+  - 2020-08-02
+  - 2020-07-27
+  - 2020-07-20
+  description: (State) A basic AR-type time series model fit using case counts and
+    deaths as features. (County) Quantile regr. on county pop., case counts, self-reported
+    symptom data, and doctor's visits.
+  earliest_forecast: Monday, 20 July 2020
+  forecasts: 17
+  home_url: https://delphi.cmu.edu
+  latest_forecast: Monday, 09 November 2020
+  name: TimeSeries
+  team_name: Carnegie Mellon Delphi Group
+  url: https://zoltardata.com/model/307
+- abbreviation: SteveMcConnell-CovidComplete
+  actions:
+  - label: Website
+    new_window: true
+    url: https://stevemcconnell.com/covid
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/368
+  dates:
+  - 2020-11-09
+  - 2020-11-02
+  - 2020-10-26
+  - 2020-10-19
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-09-28
+  - 2020-09-21
+  - 2020-09-14
+  - 2020-09-13
+  - 2020-09-07
+  - 2020-08-31
+  - 2020-08-30
+  - 2020-08-24
+  - 2020-08-23
+  - 2020-08-22
+  description: National level and state level, near-term (1-4 week) fatality forecasts.
+  earliest_forecast: Saturday, 22 August 2020
+  forecasts: 16
+  home_url: https://stevemcconnell.com/covid
+  latest_forecast: Monday, 09 November 2020
+  name: Covid Complete
+  team_name: Steve McConnell
+  url: https://zoltardata.com/model/368
 - abbreviation: JHUAPL-Bucky
   actions:
   - label: Website
@@ -122,6 +193,84 @@
   name: ensemble1
   team_name: EpiForecasts group at the London School of Hygiene & Tropical Medicine
   url: https://zoltardata.com/model/290
+- abbreviation: UCSD_NEU-DeepGLEAM
+  actions:
+  - label: Website
+    new_window: true
+    url: https://datascience.ucsd.edu/COVID19/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/378
+  dates:
+  - 2020-11-09
+  - 2020-11-02
+  - 2020-10-26
+  - 2020-10-19
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-09-28
+  - 2020-09-21
+  - 2020-09-14
+  - 2020-09-07
+  description: This forecasting model combines the signal of a discrete stochastic
+    epidemic computational model GLEAM with a deep learning spatiotemporal forecasting
+    framework to further improve predictions.
+  earliest_forecast: Monday, 07 September 2020
+  forecasts: 10
+  home_url: https://datascience.ucsd.edu/COVID19/
+  latest_forecast: Monday, 09 November 2020
+  name: DeepGLEAM
+  team_name: UCSD_NEU
+  url: https://zoltardata.com/model/378
+- abbreviation: NotreDame-FRED
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/confunguido/covid19_ND_forecasting
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/256
+  dates:
+  - 2020-11-09
+  - 2020-11-02
+  - 2020-10-26
+  - 2020-10-19
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-09-28
+  - 2020-09-21
+  - 2020-09-14
+  - 2020-09-07
+  - 2020-08-31
+  - 2020-08-24
+  - 2020-08-17
+  - 2020-08-10
+  - 2020-08-03
+  - 2020-07-27
+  - 2020-07-20
+  - 2020-07-13
+  - 2020-07-06
+  - 2020-06-29
+  - 2020-06-22
+  - 2020-06-15
+  - 2020-06-08
+  - 2020-06-01
+  - 2020-05-25
+  - 2020-05-18
+  - 2020-05-11
+  - 2020-05-04
+  - 2020-04-27
+  description: FRED is an agent-based model developed for influenza with parameters
+    modified to represent the natural history of COVID-19
+  earliest_forecast: Monday, 27 April 2020
+  forecasts: 29
+  home_url: https://github.com/confunguido/covid19_ND_forecasting
+  latest_forecast: Monday, 09 November 2020
+  name: NotreDame-FRED
+  team_name: NotreDame-FRED
+  url: https://zoltardata.com/model/256
 - abbreviation: NotreDame-mobility
   actions:
   - label: Website
@@ -164,6 +313,34 @@
   name: NotreDame-mobility
   team_name: NotreDame-mobility
   url: https://zoltardata.com/model/291
+- abbreviation: IBF-TimeSeries
+  actions:
+  - label: Website
+    new_window: true
+    url: https://ibf.org
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/379
+  dates:
+  - 2020-11-09
+  - 2020-11-02
+  - 2020-10-26
+  - 2020-10-19
+  - 2020-10-12
+  - 2020-09-28
+  - 2020-09-21
+  - 2020-09-14
+  - 2020-09-07
+  description: Time Series Model with proprietary modifications
+  earliest_forecast: Monday, 07 September 2020
+  forecasts: 9
+  home_url: https://ibf.org
+  latest_forecast: Monday, 09 November 2020
+  name: Time Series Model with a unique technique to capture the pattern and using
+    it to prepare the forecast.
+  team_name: Institute of Business Forecasting
+  url: https://zoltardata.com/model/379
 - abbreviation: GT-DeepCOVID
   actions:
   - label: Website
@@ -421,6 +598,57 @@
   name: Mobility
   team_name: UT-Austin COVID-19 Consortium
   url: https://zoltardata.com/model/201
+- abbreviation: MOBS-GLEAM_COVID
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid19.gleamproject.org/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/158
+  dates:
+  - 2020-11-09
+  - 2020-11-02
+  - 2020-10-26
+  - 2020-10-19
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-09-28
+  - 2020-09-21
+  - 2020-09-14
+  - 2020-09-07
+  - 2020-08-31
+  - 2020-08-24
+  - 2020-08-17
+  - 2020-08-03
+  - 2020-08-10
+  - 2020-07-27
+  - 2020-07-20
+  - 2020-05-11
+  - 2020-07-06
+  - 2020-06-08
+  - 2020-06-29
+  - 2020-05-04
+  - 2020-07-13
+  - 2020-06-01
+  - 2020-05-18
+  - 2020-06-22
+  - 2020-04-27
+  - 2020-05-25
+  - 2020-06-15
+  - 2020-04-13
+  - 2020-04-20
+  description: 'This model makes predictions about the future that are dependent on
+    the assumption  that current interventions continue. Metapopulation, age structured
+    SLIR model.    '
+  earliest_forecast: Monday, 13 April 2020
+  forecasts: 31
+  home_url: https://covid19.gleamproject.org/
+  latest_forecast: Monday, 09 November 2020
+  name: GLEAM COVID-19
+  team_name: MOBS Lab at Northeastern
+  url: https://zoltardata.com/model/158
 - abbreviation: PSI-DRAFT
   actions:
   - label: Website
@@ -1045,6 +1273,27 @@
   name: ACTS
   team_name: UCSB
   url: https://zoltardata.com/model/436
+- abbreviation: Caltech-CS156
+  actions:
+  - label: Website
+    new_window: true
+    url: http://cs156.caltech.edu
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/439
+  dates:
+  - 2020-11-08
+  - 2020-11-01
+  description: Aggregate of 14 machine learning (neural network, autoregressive, decision
+    tree, etc.) and epidemiological models guided by machine learning.
+  earliest_forecast: Sunday, 01 November 2020
+  forecasts: 2
+  home_url: http://cs156.caltech.edu
+  latest_forecast: Sunday, 08 November 2020
+  name: CS156
+  team_name: Caltech CS156
+  url: https://zoltardata.com/model/439
 - abbreviation: UChicagoCHATTOPADHYAY-UnIT
   actions:
   - label: Website
@@ -1763,248 +2012,6 @@
   name: SI_kJalpha
   team_name: University of Southern California Data Science Lab
   url: https://zoltardata.com/model/300
-- abbreviation: CMU-TimeSeries
-  actions:
-  - label: Website
-    new_window: true
-    url: https://delphi.cmu.edu
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/307
-  dates:
-  - 2020-11-02
-  - 2020-10-26
-  - 2020-10-19
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-09-28
-  - 2020-09-21
-  - 2020-09-14
-  - 2020-09-07
-  - 2020-08-31
-  - 2020-08-24
-  - 2020-08-17
-  - 2020-08-10
-  - 2020-08-02
-  - 2020-07-27
-  - 2020-07-20
-  description: (State) A basic AR-type time series model fit using case counts and
-    deaths as features. (County) Quantile regr. on county pop., case counts, self-reported
-    symptom data, and doctor's visits.
-  earliest_forecast: Monday, 20 July 2020
-  forecasts: 16
-  home_url: https://delphi.cmu.edu
-  latest_forecast: Monday, 02 November 2020
-  name: TimeSeries
-  team_name: Carnegie Mellon Delphi Group
-  url: https://zoltardata.com/model/307
-- abbreviation: SteveMcConnell-CovidComplete
-  actions:
-  - label: Website
-    new_window: true
-    url: https://stevemcconnell.com/covid
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/368
-  dates:
-  - 2020-11-02
-  - 2020-10-26
-  - 2020-10-19
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-09-28
-  - 2020-09-21
-  - 2020-09-14
-  - 2020-09-13
-  - 2020-09-07
-  - 2020-08-31
-  - 2020-08-30
-  - 2020-08-24
-  - 2020-08-23
-  - 2020-08-22
-  description: National level and state level, near-term (1-4 week) fatality forecasts.
-  earliest_forecast: Saturday, 22 August 2020
-  forecasts: 15
-  home_url: https://stevemcconnell.com/covid
-  latest_forecast: Monday, 02 November 2020
-  name: Covid Complete
-  team_name: Steve McConnell
-  url: https://zoltardata.com/model/368
-- abbreviation: UCSD_NEU-DeepGLEAM
-  actions:
-  - label: Website
-    new_window: true
-    url: https://datascience.ucsd.edu/COVID19/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/378
-  dates:
-  - 2020-11-02
-  - 2020-10-26
-  - 2020-10-19
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-09-28
-  - 2020-09-21
-  - 2020-09-14
-  - 2020-09-07
-  description: This forecasting model combines the signal of a discrete stochastic
-    epidemic computational model GLEAM with a deep learning spatiotemporal forecasting
-    framework to further improve predictions.
-  earliest_forecast: Monday, 07 September 2020
-  forecasts: 9
-  home_url: https://datascience.ucsd.edu/COVID19/
-  latest_forecast: Monday, 02 November 2020
-  name: DeepGLEAM
-  team_name: UCSD_NEU
-  url: https://zoltardata.com/model/378
-- abbreviation: NotreDame-FRED
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/confunguido/covid19_ND_forecasting
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/256
-  dates:
-  - 2020-11-02
-  - 2020-10-26
-  - 2020-10-19
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-09-28
-  - 2020-09-21
-  - 2020-09-14
-  - 2020-09-07
-  - 2020-08-31
-  - 2020-08-24
-  - 2020-08-17
-  - 2020-08-10
-  - 2020-08-03
-  - 2020-07-27
-  - 2020-07-20
-  - 2020-07-13
-  - 2020-07-06
-  - 2020-06-29
-  - 2020-06-22
-  - 2020-06-15
-  - 2020-06-08
-  - 2020-06-01
-  - 2020-05-25
-  - 2020-05-18
-  - 2020-05-11
-  - 2020-05-04
-  - 2020-04-27
-  description: FRED is an agent-based model developed for influenza with parameters
-    modified to represent the natural history of COVID-19
-  earliest_forecast: Monday, 27 April 2020
-  forecasts: 28
-  home_url: https://github.com/confunguido/covid19_ND_forecasting
-  latest_forecast: Monday, 02 November 2020
-  name: NotreDame-FRED
-  team_name: NotreDame-FRED
-  url: https://zoltardata.com/model/256
-- abbreviation: IBF-TimeSeries
-  actions:
-  - label: Website
-    new_window: true
-    url: https://ibf.org
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/379
-  dates:
-  - 2020-11-02
-  - 2020-10-26
-  - 2020-10-19
-  - 2020-10-12
-  - 2020-09-28
-  - 2020-09-21
-  - 2020-09-14
-  - 2020-09-07
-  description: Time Series Model with proprietary modifications
-  earliest_forecast: Monday, 07 September 2020
-  forecasts: 8
-  home_url: https://ibf.org
-  latest_forecast: Monday, 02 November 2020
-  name: Time Series Model with a unique technique to capture the pattern and using
-    it to prepare the forecast.
-  team_name: Institute of Business Forecasting
-  url: https://zoltardata.com/model/379
-- abbreviation: MOBS-GLEAM_COVID
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19.gleamproject.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/158
-  dates:
-  - 2020-11-02
-  - 2020-10-26
-  - 2020-10-19
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-09-28
-  - 2020-09-21
-  - 2020-09-14
-  - 2020-09-07
-  - 2020-08-31
-  - 2020-08-24
-  - 2020-08-17
-  - 2020-08-03
-  - 2020-08-10
-  - 2020-07-27
-  - 2020-07-20
-  - 2020-05-11
-  - 2020-07-06
-  - 2020-06-08
-  - 2020-06-29
-  - 2020-05-04
-  - 2020-07-13
-  - 2020-06-01
-  - 2020-05-18
-  - 2020-06-22
-  - 2020-04-27
-  - 2020-05-25
-  - 2020-06-15
-  - 2020-04-13
-  - 2020-04-20
-  description: 'This model makes predictions about the future that are dependent on
-    the assumption  that current interventions continue. Metapopulation, age structured
-    SLIR model.    '
-  earliest_forecast: Monday, 13 April 2020
-  forecasts: 30
-  home_url: https://covid19.gleamproject.org/
-  latest_forecast: Monday, 02 November 2020
-  name: GLEAM COVID-19
-  team_name: MOBS Lab at Northeastern
-  url: https://zoltardata.com/model/158
-- abbreviation: Caltech-CS156
-  actions:
-  - label: Website
-    new_window: true
-    url: http://cs156.caltech.edu
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/439
-  dates:
-  - 2020-11-01
-  description: Aggregate of 14 machine learning (neural network, autoregressive, decision
-    tree, etc.) and epidemiological models guided by machine learning.
-  earliest_forecast: Sunday, 01 November 2020
-  forecasts: 1
-  home_url: http://cs156.caltech.edu
-  latest_forecast: Sunday, 01 November 2020
-  name: CS156
-  team_name: Caltech CS156
-  url: https://zoltardata.com/model/439
 - abbreviation: STH-3PU
   actions:
   - label: Website
