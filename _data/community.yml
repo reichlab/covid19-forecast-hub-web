@@ -1,3 +1,51 @@
+- abbreviation: FAIR-NRAR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/448
+  dates:
+  - 2020-11-18
+  description: Neural Relational Autoregressive Model
+  earliest_forecast: Wednesday, 18 November 2020
+  forecasts: 1
+  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  latest_forecast: Wednesday, 18 November 2020
+  name: NRAR
+  team_name: Facebook AI Research
+  url: https://zoltardata.com/model/448
+- abbreviation: Yu_Group-CLEP
+  actions:
+  - label: Website
+    new_window: true
+    url: covidseverity.com
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/359
+  dates:
+  - 2020-11-17
+  - 2020-10-11
+  - 2020-08-15
+  - 2020-09-06
+  - 2020-09-20
+  - 2020-08-30
+  - 2020-09-27
+  - 2020-09-13
+  - 2020-08-08
+  description: Ensemble of a linear and exponential predictor (CLEP) for forecasting
+    county-level deaths and cases with prediction intervals. CLEP weighs each method
+    by its recent historical prediction performance
+  earliest_forecast: Saturday, 08 August 2020
+  forecasts: 9
+  home_url: covidseverity.com
+  latest_forecast: Tuesday, 17 November 2020
+  name: Combined Linear and Exponential Predictor (CLEP)
+  team_name: Berkeley Yu Group
+  url: https://zoltardata.com/model/359
 - abbreviation: CovidAnalytics-DELPHI
   actions:
   - label: Website
@@ -229,6 +277,55 @@
   name: DeepGLEAM
   team_name: UCSD_NEU
   url: https://zoltardata.com/model/378
+- abbreviation: NotreDame-FRED
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/confunguido/covid19_ND_forecasting
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/256
+  dates:
+  - 2020-11-16
+  - 2020-10-19
+  - 2020-10-26
+  - 2020-11-09
+  - 2020-11-02
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-06-29
+  - 2020-06-15
+  - 2020-08-10
+  - 2020-06-08
+  - 2020-06-01
+  - 2020-05-25
+  - 2020-05-18
+  - 2020-05-11
+  - 2020-05-04
+  - 2020-04-27
+  - 2020-07-13
+  - 2020-07-20
+  - 2020-09-07
+  - 2020-08-24
+  - 2020-07-27
+  - 2020-09-21
+  - 2020-06-22
+  - 2020-08-31
+  - 2020-08-03
+  - 2020-09-28
+  - 2020-09-14
+  - 2020-08-17
+  - 2020-07-06
+  description: FRED is an agent-based model developed for influenza with parameters
+    modified to represent the natural history of COVID-19
+  earliest_forecast: Monday, 27 April 2020
+  forecasts: 30
+  home_url: https://github.com/confunguido/covid19_ND_forecasting
+  latest_forecast: Monday, 16 November 2020
+  name: NotreDame-FRED
+  team_name: NotreDame-FRED
+  url: https://zoltardata.com/model/256
 - abbreviation: NotreDame-mobility
   actions:
   - label: Website
@@ -2015,54 +2112,6 @@
   name: SI_kJalpha
   team_name: University of Southern California Data Science Lab
   url: https://zoltardata.com/model/300
-- abbreviation: NotreDame-FRED
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/confunguido/covid19_ND_forecasting
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/256
-  dates:
-  - 2020-10-19
-  - 2020-10-26
-  - 2020-11-09
-  - 2020-11-02
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-06-29
-  - 2020-06-15
-  - 2020-08-10
-  - 2020-06-08
-  - 2020-06-01
-  - 2020-05-25
-  - 2020-05-18
-  - 2020-05-11
-  - 2020-05-04
-  - 2020-04-27
-  - 2020-07-13
-  - 2020-07-20
-  - 2020-09-07
-  - 2020-08-24
-  - 2020-07-27
-  - 2020-09-21
-  - 2020-06-22
-  - 2020-08-31
-  - 2020-08-03
-  - 2020-09-28
-  - 2020-09-14
-  - 2020-08-17
-  - 2020-07-06
-  description: FRED is an agent-based model developed for influenza with parameters
-    modified to represent the natural history of COVID-19
-  earliest_forecast: Monday, 27 April 2020
-  forecasts: 29
-  home_url: https://github.com/confunguido/covid19_ND_forecasting
-  latest_forecast: Monday, 09 November 2020
-  name: NotreDame-FRED
-  team_name: NotreDame-FRED
-  url: https://zoltardata.com/model/256
 - abbreviation: Covid19Sim-Simulator
   actions:
   - label: Website
