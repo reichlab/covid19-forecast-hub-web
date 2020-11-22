@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[How Many Americans Are About to Die?](https://www.theatlantic.com/science/archive/2020/11/coronavirus-death-rate-third-surge/617150/){:target="_blank"}  
+_The Atlantic_ | 19 November 2020
+
+***
+
 
 [With a meteoric rise in deaths, talk of waves is misguided, say Covid-19 modelers](https://www.statnews.com/2020/11/12/with-a-meteoric-rise-in-deaths-talk-of-waves-is-misguided-say-covid-19-modelers/){:target="_blank"}  
 _STAT_ | 12 November 2020
