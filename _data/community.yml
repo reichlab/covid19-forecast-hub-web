@@ -1,3 +1,59 @@
+- abbreviation: UChicagoCHATTOPADHYAY-UnIT
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/zeroknowledgediscovery/unitcov
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/443
+  dates:
+  - 2020-11-29
+  - 2020-11-22
+  - 2020-11-15
+  - 2020-11-08
+  description: Stochastic similarity via sequence likelihood divergence, General Linear
+    Models, Tensorflow, Ensemble Regressors
+  earliest_forecast: Sunday, 08 November 2020
+  forecasts: 4
+  home_url: https://github.com/zeroknowledgediscovery/unitcov
+  latest_forecast: Sunday, 29 November 2020
+  name: Universal Influenza-like Transmission Risk
+  team_name: University of Chicago, Chattopadhyay Lab
+  url: https://zoltardata.com/model/443
+- abbreviation: TTU-squider
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/fvbttu/squider
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/366
+  dates:
+  - 2020-11-29
+  - 2020-11-22
+  - 2020-10-25
+  - 2020-10-18
+  - 2020-11-15
+  - 2020-11-08
+  - 2020-11-01
+  - 2020-10-11
+  - 2020-10-04
+  - 2020-08-23
+  - 2020-09-27
+  - 2020-08-17
+  - 2020-09-13
+  description: SIR-based compartmental model with a power law incidence rate, unknown
+    as well as known infecteds, and time dependent social contact suppression and
+    relaxation.
+  earliest_forecast: Monday, 17 August 2020
+  forecasts: 13
+  home_url: https://github.com/fvbttu/squider
+  latest_forecast: Sunday, 29 November 2020
+  name: SQUIDER
+  team_name: Hussain Lab at Texas Tech University
+  url: https://zoltardata.com/model/366
 - abbreviation: LANL-GrowthRate
   actions:
   - label: Website
@@ -1441,28 +1497,6 @@
   name: AI-Powered and Epidemiology-Informed Modeling System
   team_name: University of Central Florida
   url: https://zoltardata.com/model/444
-- abbreviation: UChicagoCHATTOPADHYAY-UnIT
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/zeroknowledgediscovery/unitcov
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/443
-  dates:
-  - 2020-11-22
-  - 2020-11-15
-  - 2020-11-08
-  description: Stochastic similarity via sequence likelihood divergence, General Linear
-    Models, Tensorflow, Ensemble Regressors
-  earliest_forecast: Sunday, 08 November 2020
-  forecasts: 3
-  home_url: https://github.com/zeroknowledgediscovery/unitcov
-  latest_forecast: Sunday, 22 November 2020
-  name: Universal Influenza-like Transmission Risk
-  team_name: University of Chicago, Chattopadhyay Lab
-  url: https://zoltardata.com/model/443
 - abbreviation: CU-select
   actions:
   - label: Website
@@ -1887,38 +1921,6 @@
   name: Encounter
   team_name: QJHong
   url: https://zoltardata.com/model/299
-- abbreviation: TTU-squider
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/fvbttu/squider
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/366
-  dates:
-  - 2020-11-22
-  - 2020-10-25
-  - 2020-10-18
-  - 2020-11-15
-  - 2020-11-08
-  - 2020-11-01
-  - 2020-10-11
-  - 2020-10-04
-  - 2020-08-23
-  - 2020-09-27
-  - 2020-08-17
-  - 2020-09-13
-  description: SIR-based compartmental model with a power law incidence rate, unknown
-    as well as known infecteds, and time dependent social contact suppression and
-    relaxation.
-  earliest_forecast: Monday, 17 August 2020
-  forecasts: 12
-  home_url: https://github.com/fvbttu/squider
-  latest_forecast: Sunday, 22 November 2020
-  name: SQUIDER
-  team_name: Hussain Lab at Texas Tech University
-  url: https://zoltardata.com/model/366
 - abbreviation: RPI_UW-Mob_Collision
   actions:
   - label: Website
@@ -2265,61 +2267,3 @@
   name: Combined Linear and Exponential Predictor (CLEP)
   team_name: Berkeley Yu Group
   url: https://zoltardata.com/model/359
-- abbreviation: PandemicCentral-USCounty
-  actions:
-  - label: Website
-    new_window: true
-    url: https://itsonit.com
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/360
-  dates:
-  - 2020-11-02
-  - 2020-10-26
-  - 2020-10-19
-  - 2020-11-09
-  - 2020-11-16
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-09-21
-  - 2020-08-21
-  - 2020-08-08
-  - 2020-09-28
-  - 2020-09-07
-  - 2020-09-14
-  - 2020-08-25
-  - 2020-08-05
-  - 2020-08-31
-  description: County-level Projected New Cases using Random Forest learning method
-  earliest_forecast: Wednesday, 05 August 2020
-  forecasts: 16
-  home_url: https://itsonit.com
-  latest_forecast: Monday, 16 November 2020
-  name: USCounty
-  team_name: Pandemic Central (itsonit.com)
-  url: https://zoltardata.com/model/360
-- abbreviation: JHU_UNC_GAS-StatMechPool
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/HopkinsIDD/EpiForecastStatMech
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/437
-  dates:
-  - 2020-10-25
-  - 2020-11-15
-  - 2020-11-01
-  - 2020-11-08
-  description: This model jointly trains over locations, fitting to both  mechanistic
-    and statistical models. The statistical model  enforces  similar places having  similar
-    mechanistic coefficients.
-  earliest_forecast: Sunday, 25 October 2020
-  forecasts: 4
-  home_url: https://github.com/HopkinsIDD/EpiForecastStatMech
-  latest_forecast: Sunday, 15 November 2020
-  name: StatMechPool
-  team_name: JHU_UNC_GAS
-  url: https://zoltardata.com/model/437
