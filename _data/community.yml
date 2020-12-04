@@ -1,3 +1,28 @@
+- abbreviation: FAIR-NRAR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/448
+  dates:
+  - 2020-12-01
+  - 2020-11-30
+  - 2020-11-29
+  - 2020-11-24
+  - 2020-11-18
+  - 2020-11-19
+  - 2020-11-22
+  description: Neural Relational Autoregressive Model
+  earliest_forecast: Wednesday, 18 November 2020
+  forecasts: 7
+  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  latest_forecast: Tuesday, 01 December 2020
+  name: NRAR
+  team_name: Facebook AI Research
+  url: https://zoltardata.com/model/448
 - abbreviation: CovidAnalytics-DELPHI
   actions:
   - label: Website
@@ -163,51 +188,6 @@
   name: Bucky
   team_name: Johns Hopkins University Applied Physics Lab
   url: https://zoltardata.com/model/375
-- abbreviation: epiforecasts-ensemble1
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/epiforecasts/covid-us-deaths
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/290
-  dates:
-  - 2020-11-30
-  - 2020-11-23
-  - 2020-10-19
-  - 2020-10-26
-  - 2020-11-16
-  - 2020-11-02
-  - 2020-11-09
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-06-15
-  - 2020-08-03
-  - 2020-07-06
-  - 2020-08-31
-  - 2020-07-26
-  - 2020-06-22
-  - 2020-07-13
-  - 2020-08-17
-  - 2020-08-10
-  - 2020-06-29
-  - 2020-09-07
-  - 2020-09-28
-  - 2020-09-21
-  - 2020-08-24
-  - 2020-07-19
-  - 2020-09-14
-  description: 'A deaths forecast using a mean ensemble of three different models:
-    An Rt based forecast, a timeseries forecast using deaths only and a timeseries
-    forecast using deaths and cases. '
-  earliest_forecast: Monday, 15 June 2020
-  forecasts: 25
-  home_url: https://github.com/epiforecasts/covid-us-deaths
-  latest_forecast: Monday, 30 November 2020
-  name: ensemble1
-  team_name: EpiForecasts group at the London School of Hygiene & Tropical Medicine
-  url: https://zoltardata.com/model/290
 - abbreviation: UCSD_NEU-DeepGLEAM
   actions:
   - label: Website
@@ -241,30 +221,6 @@
   name: DeepGLEAM
   team_name: UCSD_NEU
   url: https://zoltardata.com/model/378
-- abbreviation: FAIR-NRAR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/448
-  dates:
-  - 2020-11-30
-  - 2020-11-29
-  - 2020-11-24
-  - 2020-11-18
-  - 2020-11-19
-  - 2020-11-22
-  description: Neural Relational Autoregressive Model
-  earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 6
-  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Monday, 30 November 2020
-  name: NRAR
-  team_name: Facebook AI Research
-  url: https://zoltardata.com/model/448
 - abbreviation: NotreDame-mobility
   actions:
   - label: Website
@@ -552,6 +508,51 @@
   name: baseline
   team_name: COVID-19 Forecast Hub
   url: https://zoltardata.com/model/302
+- abbreviation: epiforecasts-ensemble1
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/epiforecasts/covid-us-deaths
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/290
+  dates:
+  - 2020-11-30
+  - 2020-11-23
+  - 2020-10-19
+  - 2020-10-26
+  - 2020-11-16
+  - 2020-11-02
+  - 2020-11-09
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-06-15
+  - 2020-08-03
+  - 2020-07-06
+  - 2020-08-31
+  - 2020-07-26
+  - 2020-06-22
+  - 2020-07-13
+  - 2020-08-17
+  - 2020-08-10
+  - 2020-06-29
+  - 2020-09-07
+  - 2020-09-28
+  - 2020-09-21
+  - 2020-08-24
+  - 2020-07-19
+  - 2020-09-14
+  description: 'A deaths forecast using a mean ensemble of three different models:
+    An Rt based forecast, a timeseries forecast using deaths only and a timeseries
+    forecast using deaths and cases. '
+  earliest_forecast: Monday, 15 June 2020
+  forecasts: 25
+  home_url: https://github.com/epiforecasts/covid-us-deaths
+  latest_forecast: Monday, 30 November 2020
+  name: ensemble1
+  team_name: EpiForecasts group at the London School of Hygiene & Tropical Medicine
+  url: https://zoltardata.com/model/290
 - abbreviation: CEID-Walk
   actions:
   - label: Website
