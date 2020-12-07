@@ -8,6 +8,7 @@
     type: url
     url: https://zoltardata.com/model/448
   dates:
+  - 2020-12-03
   - 2020-12-01
   - 2020-11-30
   - 2020-11-29
@@ -17,12 +18,106 @@
   - 2020-11-22
   description: Neural Relational Autoregressive Model
   earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 7
+  forecasts: 8
   home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Tuesday, 01 December 2020
+  latest_forecast: Thursday, 03 December 2020
   name: NRAR
   team_name: Facebook AI Research
   url: https://zoltardata.com/model/448
+- abbreviation: LANL-GrowthRate
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid-19.bsvgateway.org/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/157
+  dates:
+  - 2020-12-03
+  - 2020-11-30
+  - 2020-11-26
+  - 2020-11-23
+  - 2020-11-19
+  - 2020-11-04
+  - 2020-10-29
+  - 2020-10-19
+  - 2020-11-12
+  - 2020-11-09
+  - 2020-10-26
+  - 2020-10-15
+  - 2020-11-16
+  - 2020-10-22
+  - 2020-11-02
+  - 2020-11-05
+  - 2020-10-12
+  - 2020-10-08
+  - 2020-10-05
+  - 2020-10-01
+  - 2020-06-18
+  - 2020-09-10
+  - 2020-07-30
+  - 2020-07-20
+  - 2020-06-14
+  - 2020-09-07
+  - 2020-06-11
+  - 2020-06-08
+  - 2020-06-04
+  - 2020-06-01
+  - 2020-05-28
+  - 2020-05-24
+  - 2020-05-25
+  - 2020-05-21
+  - 2020-08-10
+  - 2020-07-02
+  - 2020-05-18
+  - 2020-05-04
+  - 2020-04-30
+  - 2020-04-20
+  - 2020-04-16
+  - 2020-04-23
+  - 2020-05-07
+  - 2020-04-13
+  - 2020-04-27
+  - 2020-04-09
+  - 2020-04-06
+  - 2020-05-14
+  - 2020-05-11
+  - 2020-05-03
+  - 2020-07-06
+  - 2020-08-17
+  - 2020-08-06
+  - 2020-07-16
+  - 2020-07-03
+  - 2020-08-20
+  - 2020-07-23
+  - 2020-06-24
+  - 2020-09-24
+  - 2020-09-21
+  - 2020-08-13
+  - 2020-06-29
+  - 2020-07-09
+  - 2020-09-28
+  - 2020-08-27
+  - 2020-09-14
+  - 2020-09-17
+  - 2020-09-03
+  - 2020-08-31
+  - 2020-08-24
+  - 2020-07-13
+  - 2020-08-03
+  - 2020-07-27
+  - 2020-06-21
+  description: This model makes predictions about the future, unconditional on particular
+    intervention strategies. Statistical dynamical growth model accounting for population
+    susceptibility.
+  earliest_forecast: Monday, 06 April 2020
+  forecasts: 74
+  home_url: https://covid-19.bsvgateway.org/
+  latest_forecast: Thursday, 03 December 2020
+  name: GrowthRate
+  team_name: Los Alamos National Labs
+  url: https://zoltardata.com/model/157
 - abbreviation: CovidAnalytics-DELPHI
   actions:
   - label: Website
@@ -937,99 +1032,6 @@
   name: RidgeTensorFlowRegressor
   team_name: The University of Michigan
   url: https://zoltardata.com/model/303
-- abbreviation: LANL-GrowthRate
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid-19.bsvgateway.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/157
-  dates:
-  - 2020-11-30
-  - 2020-11-26
-  - 2020-11-23
-  - 2020-11-19
-  - 2020-11-04
-  - 2020-10-29
-  - 2020-10-19
-  - 2020-11-12
-  - 2020-11-09
-  - 2020-10-26
-  - 2020-10-15
-  - 2020-11-16
-  - 2020-10-22
-  - 2020-11-02
-  - 2020-11-05
-  - 2020-10-12
-  - 2020-10-08
-  - 2020-10-05
-  - 2020-10-01
-  - 2020-06-18
-  - 2020-09-10
-  - 2020-07-30
-  - 2020-07-20
-  - 2020-06-14
-  - 2020-09-07
-  - 2020-06-11
-  - 2020-06-08
-  - 2020-06-04
-  - 2020-06-01
-  - 2020-05-28
-  - 2020-05-24
-  - 2020-05-25
-  - 2020-05-21
-  - 2020-08-10
-  - 2020-07-02
-  - 2020-05-18
-  - 2020-05-04
-  - 2020-04-30
-  - 2020-04-20
-  - 2020-04-16
-  - 2020-04-23
-  - 2020-05-07
-  - 2020-04-13
-  - 2020-04-27
-  - 2020-04-09
-  - 2020-04-06
-  - 2020-05-14
-  - 2020-05-11
-  - 2020-05-03
-  - 2020-07-06
-  - 2020-08-17
-  - 2020-08-06
-  - 2020-07-16
-  - 2020-07-03
-  - 2020-08-20
-  - 2020-07-23
-  - 2020-06-24
-  - 2020-09-24
-  - 2020-09-21
-  - 2020-08-13
-  - 2020-06-29
-  - 2020-07-09
-  - 2020-09-28
-  - 2020-08-27
-  - 2020-09-14
-  - 2020-09-17
-  - 2020-09-03
-  - 2020-08-31
-  - 2020-08-24
-  - 2020-07-13
-  - 2020-08-03
-  - 2020-07-27
-  - 2020-06-21
-  description: This model makes predictions about the future, unconditional on particular
-    intervention strategies. Statistical dynamical growth model accounting for population
-    susceptibility.
-  earliest_forecast: Monday, 06 April 2020
-  forecasts: 73
-  home_url: https://covid-19.bsvgateway.org/
-  latest_forecast: Monday, 30 November 2020
-  name: GrowthRate
-  team_name: Los Alamos National Labs
-  url: https://zoltardata.com/model/157
 - abbreviation: UMass-MechBayes
   actions:
   - label: Website
@@ -2181,111 +2183,3 @@
   name: Mobility-informed Collision Model
   team_name: RPI and UW
   url: https://zoltardata.com/model/367
-- abbreviation: NotreDame-FRED
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/confunguido/covid19_ND_forecasting
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/256
-  dates:
-  - 2020-11-23
-  - 2020-11-16
-  - 2020-10-19
-  - 2020-10-26
-  - 2020-11-09
-  - 2020-11-02
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-06-29
-  - 2020-06-15
-  - 2020-08-10
-  - 2020-06-08
-  - 2020-06-01
-  - 2020-05-25
-  - 2020-05-18
-  - 2020-05-11
-  - 2020-05-04
-  - 2020-04-27
-  - 2020-07-13
-  - 2020-07-20
-  - 2020-09-07
-  - 2020-08-24
-  - 2020-07-27
-  - 2020-09-21
-  - 2020-06-22
-  - 2020-08-31
-  - 2020-08-03
-  - 2020-09-28
-  - 2020-09-14
-  - 2020-08-17
-  - 2020-07-06
-  description: FRED is an agent-based model developed for influenza with parameters
-    modified to represent the natural history of COVID-19
-  earliest_forecast: Monday, 27 April 2020
-  forecasts: 31
-  home_url: https://github.com/confunguido/covid19_ND_forecasting
-  latest_forecast: Monday, 23 November 2020
-  name: NotreDame-FRED
-  team_name: NotreDame-FRED
-  url: https://zoltardata.com/model/256
-- abbreviation: IHME-CurveFit
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19.healthdata.org/united-states-of-america
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/154
-  dates:
-  - 2020-11-23
-  - 2020-10-26
-  - 2020-10-16
-  - 2020-06-15
-  - 2020-07-06
-  - 2020-06-10
-  - 2020-06-08
-  - 2020-06-05
-  - 2020-06-22
-  - 2020-06-29
-  - 2020-05-29
-  - 2020-05-12
-  - 2020-05-18
-  - 2020-05-04
-  - 2020-05-08
-  - 2020-04-28
-  - 2020-04-27
-  - 2020-04-21
-  - 2020-04-20
-  - 2020-04-16
-  - 2020-04-12
-  - 2020-04-09
-  - 2020-04-07
-  - 2020-04-05
-  - 2020-04-01
-  - 2020-03-31
-  - 2020-03-30
-  - 2020-03-29
-  - 2020-03-27
-  - 2020-07-23
-  - 2020-08-06
-  - 2020-07-30
-  - 2020-07-17
-  - 2020-09-21
-  - 2020-06-24
-  - 2020-08-27
-  - 2020-09-03
-  - 2020-09-28
-  - 2020-08-24
-  description: This model makes predictions about the future that are dependent on
-    the assumption  that current interventions continue. Non-linear mixed efects curve-fitting.
-  earliest_forecast: Friday, 27 March 2020
-  forecasts: 39
-  home_url: https://covid19.healthdata.org/united-states-of-america
-  latest_forecast: Monday, 23 November 2020
-  name: CurveFit
-  team_name: Institute for Health Metrics and Evaluation
-  url: https://zoltardata.com/model/154
