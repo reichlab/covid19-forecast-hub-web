@@ -1,3 +1,58 @@
+- abbreviation: CovidAnalytics-DELPHI
+  actions:
+  - label: Website
+    new_window: true
+    url: https://www.covidanalytics.io/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/196
+  dates:
+  - 2020-12-07
+  - 2020-11-30
+  - 2020-11-22
+  - 2020-10-26
+  - 2020-10-19
+  - 2020-11-16
+  - 2020-11-02
+  - 2020-11-09
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-06-15
+  - 2020-06-08
+  - 2020-06-01
+  - 2020-07-27
+  - 2020-05-25
+  - 2020-07-13
+  - 2020-07-06
+  - 2020-05-18
+  - 2020-05-10
+  - 2020-05-04
+  - 2020-08-24
+  - 2020-04-30
+  - 2020-04-27
+  - 2020-04-22
+  - 2020-08-31
+  - 2020-06-22
+  - 2020-09-28
+  - 2020-09-21
+  - 2020-08-17
+  - 2020-08-03
+  - 2020-09-07
+  - 2020-07-20
+  - 2020-06-29
+  - 2020-09-14
+  - 2020-08-10
+  description: 'This model predicts based on an SEIR model augmented with underdetection
+    and interventions. Projections account for reopening and assume interventions
+    would be re-enacted if cases continue to climb. '
+  earliest_forecast: Wednesday, 22 April 2020
+  forecasts: 35
+  home_url: https://www.covidanalytics.io/
+  latest_forecast: Monday, 07 December 2020
+  name: DELPHI
+  team_name: CovidAnalytics at MIT
+  url: https://zoltardata.com/model/196
 - abbreviation: CMU-TimeSeries
   actions:
   - label: Website
@@ -77,6 +132,41 @@
   name: Covid Complete
   team_name: Steve McConnell
   url: https://zoltardata.com/model/368
+- abbreviation: JHUAPL-Bucky
+  actions:
+  - label: Website
+    new_window: true
+    url: https://buckymodel.com
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/375
+  dates:
+  - 2020-12-07
+  - 2020-11-30
+  - 2020-11-23
+  - 2020-10-19
+  - 2020-11-16
+  - 2020-11-09
+  - 2020-10-26
+  - 2020-11-02
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-09-28
+  - 2020-09-07
+  - 2020-09-21
+  - 2020-08-31
+  - 2020-09-14
+  description: Metapopulation model using public mobility data. Local parameters (case
+    reporting rates, doubling times, etc) are estimated using data from CSSE and CDC
+    scenario 5. Primary output is case incidence.
+  earliest_forecast: Monday, 31 August 2020
+  forecasts: 15
+  home_url: https://buckymodel.com
+  latest_forecast: Monday, 07 December 2020
+  name: Bucky
+  team_name: Johns Hopkins University Applied Physics Lab
+  url: https://zoltardata.com/model/375
 - abbreviation: UCSD_NEU-DeepGLEAM
   actions:
   - label: Website
@@ -111,6 +201,109 @@
   name: DeepGLEAM
   team_name: UCSD_NEU
   url: https://zoltardata.com/model/378
+- abbreviation: UCF-AEM
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/UCF-AEM/UCF-AEM
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/444
+  dates:
+  - 2020-12-07
+  - 2020-11-29
+  - 2020-11-22
+  - 2020-11-15
+  description: This model leverages conventional SEIR model with mixture modeling
+    and distilled the knowledge of complex mixture modeling system with ensemble neural
+    networks.
+  earliest_forecast: Sunday, 15 November 2020
+  forecasts: 4
+  home_url: https://github.com/UCF-AEM/UCF-AEM
+  latest_forecast: Monday, 07 December 2020
+  name: AI-Powered and Epidemiology-Informed Modeling System
+  team_name: University of Central Florida
+  url: https://zoltardata.com/model/444
+- abbreviation: FAIR-NRAR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/448
+  dates:
+  - 2020-12-07
+  - 2020-12-06
+  - 2020-12-03
+  - 2020-12-01
+  - 2020-11-30
+  - 2020-11-29
+  - 2020-11-24
+  - 2020-11-18
+  - 2020-11-19
+  - 2020-11-22
+  description: Neural Relational Autoregressive Model
+  earliest_forecast: Wednesday, 18 November 2020
+  forecasts: 10
+  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  latest_forecast: Monday, 07 December 2020
+  name: NRAR
+  team_name: Facebook AI Research
+  url: https://zoltardata.com/model/448
+- abbreviation: NotreDame-FRED
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/confunguido/covid19_ND_forecasting
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/256
+  dates:
+  - 2020-12-07
+  - 2020-11-23
+  - 2020-11-16
+  - 2020-10-19
+  - 2020-10-26
+  - 2020-11-09
+  - 2020-11-02
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-06-29
+  - 2020-06-15
+  - 2020-08-10
+  - 2020-06-08
+  - 2020-06-01
+  - 2020-05-25
+  - 2020-05-18
+  - 2020-05-11
+  - 2020-05-04
+  - 2020-04-27
+  - 2020-07-13
+  - 2020-07-20
+  - 2020-09-07
+  - 2020-08-24
+  - 2020-07-27
+  - 2020-09-21
+  - 2020-06-22
+  - 2020-08-31
+  - 2020-08-03
+  - 2020-09-28
+  - 2020-09-14
+  - 2020-08-17
+  - 2020-07-06
+  description: FRED is an agent-based model developed for influenza with parameters
+    modified to represent the natural history of COVID-19
+  earliest_forecast: Monday, 27 April 2020
+  forecasts: 32
+  home_url: https://github.com/confunguido/covid19_ND_forecasting
+  latest_forecast: Monday, 07 December 2020
+  name: NotreDame-FRED
+  team_name: NotreDame-FRED
+  url: https://zoltardata.com/model/256
 - abbreviation: NotreDame-mobility
   actions:
   - label: Website
@@ -250,6 +443,57 @@
   name: ERDC_SEIR
   team_name: US Army Engineer Research and Development Center
   url: https://zoltardata.com/model/262
+- abbreviation: GT-DeepCOVID
+  actions:
+  - label: Website
+    new_window: true
+    url: https://deepcovid.github.io/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/206
+  dates:
+  - 2020-12-07
+  - 2020-11-30
+  - 2020-11-23
+  - 2020-11-09
+  - 2020-11-16
+  - 2020-10-26
+  - 2020-10-19
+  - 2020-11-02
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-07-06
+  - 2020-06-15
+  - 2020-08-24
+  - 2020-06-08
+  - 2020-06-01
+  - 2020-05-25
+  - 2020-05-18
+  - 2020-08-31
+  - 2020-05-04
+  - 2020-05-11
+  - 2020-07-27
+  - 2020-09-28
+  - 2020-09-07
+  - 2020-07-13
+  - 2020-08-17
+  - 2020-08-10
+  - 2020-07-20
+  - 2020-06-29
+  - 2020-09-21
+  - 2020-06-22
+  - 2020-08-03
+  - 2020-09-14
+  description: 'Data-driven approach based on deep learning for forecasting mortality
+    and  hospitalizations using syndromic, clinical, demographic, and mobility. '
+  earliest_forecast: Monday, 04 May 2020
+  forecasts: 32
+  home_url: https://deepcovid.github.io/
+  latest_forecast: Monday, 07 December 2020
+  name: DeepCOVID
+  team_name: GT
+  url: https://zoltardata.com/model/206
 - abbreviation: RobertWalraven-ESG
   actions:
   - label: Website
@@ -473,6 +717,77 @@
   team_name: University of Georgia Center for the Ecology of Infectious Diseases Forecasting
     Working Group
   url: https://zoltardata.com/model/361
+- abbreviation: IEM_MED-CovidProject
+  actions:
+  - label: Website
+    new_window: true
+    url: https://iem-modeling.com/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/460
+  dates:
+  - 2020-12-07
+  description: County-level, state-level, and national-level SEIR model projections
+    for daily incident confirmed COVID cases by using AI to fit actual cases observed.
+  earliest_forecast: Monday, 07 December 2020
+  forecasts: 1
+  home_url: https://iem-modeling.com/
+  latest_forecast: Monday, 07 December 2020
+  name: CovidProjections
+  team_name: IEM MED
+  url: https://zoltardata.com/model/460
+- abbreviation: UT-Mobility
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid-19.tacc.utexas.edu/projections/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/201
+  dates:
+  - 2020-12-07
+  - 2020-11-30
+  - 2020-11-23
+  - 2020-10-19
+  - 2020-11-16
+  - 2020-11-02
+  - 2020-11-09
+  - 2020-10-26
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-08-03
+  - 2020-07-20
+  - 2020-06-22
+  - 2020-06-15
+  - 2020-06-08
+  - 2020-06-01
+  - 2020-05-25
+  - 2020-07-13
+  - 2020-07-06
+  - 2020-05-18
+  - 2020-05-04
+  - 2020-04-20
+  - 2020-04-27
+  - 2020-05-11
+  - 2020-09-14
+  - 2020-09-28
+  - 2020-08-24
+  - 2020-09-21
+  - 2020-06-29
+  - 2020-08-17
+  - 2020-07-27
+  description: This model makes predictions assuming that social distancing patterns,
+    as measured by anonymized mobile-phone GPS traces,  remain constant in the future.This
+    model models only *first-wave deaths*.
+  earliest_forecast: Monday, 20 April 2020
+  forecasts: 31
+  home_url: https://covid-19.tacc.utexas.edu/projections/
+  latest_forecast: Monday, 07 December 2020
+  name: Mobility
+  team_name: UT-Austin COVID-19 Consortium
+  url: https://zoltardata.com/model/201
 - abbreviation: MOBS-GLEAM_COVID
   actions:
   - label: Website
@@ -528,6 +843,56 @@
   name: GLEAM COVID-19
   team_name: MOBS Lab at Northeastern
   url: https://zoltardata.com/model/158
+- abbreviation: PSI-DRAFT
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/PSI-DRAFT
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/254
+  dates:
+  - 2020-12-07
+  - 2020-11-30
+  - 2020-11-23
+  - 2020-11-16
+  - 2020-10-26
+  - 2020-11-02
+  - 2020-10-19
+  - 2020-11-09
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-08-17
+  - 2020-06-15
+  - 2020-06-08
+  - 2020-06-01
+  - 2020-05-25
+  - 2020-05-18
+  - 2020-07-06
+  - 2020-08-24
+  - 2020-09-21
+  - 2020-08-10
+  - 2020-07-13
+  - 2020-06-22
+  - 2020-07-20
+  - 2020-09-14
+  - 2020-07-27
+  - 2020-09-28
+  - 2020-09-07
+  - 2020-08-31
+  - 2020-08-03
+  - 2020-06-29
+  description: 'A stochastic/deterministic, single-population SEIRX model that stratifies
+    by both age distribution and disease severity and includes generic intervention
+    fitting. '
+  earliest_forecast: Monday, 18 May 2020
+  forecasts: 30
+  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/PSI-DRAFT
+  latest_forecast: Monday, 07 December 2020
+  name: Disease Rapid Analysis and Forecasting Tool
+  team_name: Predictive Science Inc
+  url: https://zoltardata.com/model/254
 - abbreviation: MSRA-DeepST
   actions:
   - label: Website
@@ -557,6 +922,87 @@
   name: DeepST
   team_name: MSRA
   url: https://zoltardata.com/model/428
+- abbreviation: UVA-Ensemble
+  actions:
+  - label: Website
+    new_window: true
+    url: https://biocomplexity.virginia.edu/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/308
+  dates:
+  - 2020-12-07
+  - 2020-11-30
+  - 2020-11-23
+  - 2020-11-02
+  - 2020-11-09
+  - 2020-11-16
+  - 2020-10-26
+  - 2020-10-19
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-09-28
+  - 2020-08-10
+  - 2020-07-20
+  - 2020-09-21
+  - 2020-08-03
+  - 2020-09-07
+  - 2020-07-27
+  - 2020-08-24
+  - 2020-09-14
+  - 2020-08-31
+  - 2020-08-17
+  description: An ensemble of multiple methods such as auto-regressive (AR) models
+    with exogenous variables, Long short-term memory (lSTM) models, and PatchSim (an
+    SEIR model).
+  earliest_forecast: Monday, 20 July 2020
+  forecasts: 21
+  home_url: https://biocomplexity.virginia.edu/
+  latest_forecast: Monday, 07 December 2020
+  name: Ensemble model
+  team_name: University of Virginia, Biocomplexity COVID-19 Response Team
+  url: https://zoltardata.com/model/308
+- abbreviation: JCB-PRM
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/JohnBurant/COVID19-PRM
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/311
+  dates:
+  - 2020-12-07
+  - 2020-11-30
+  - 2020-11-23
+  - 2020-11-09
+  - 2020-10-19
+  - 2020-10-26
+  - 2020-11-16
+  - 2020-11-02
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-09-14
+  - 2020-08-17
+  - 2020-08-10
+  - 2020-09-21
+  - 2020-09-07
+  - 2020-08-03
+  - 2020-09-28
+  - 2020-07-27
+  - 2020-08-31
+  - 2020-08-24
+  description: The Political Realities Model (PRM) is built on observations of macro-level
+    societal and political responses to COVID measured only in terms of infections
+    and deaths.
+  earliest_forecast: Monday, 27 July 2020
+  forecasts: 20
+  home_url: https://github.com/JohnBurant/COVID19-PRM
+  latest_forecast: Monday, 07 December 2020
+  name: PRM
+  team_name: John Burant (JCB)
+  url: https://zoltardata.com/model/311
 - abbreviation: DDS-NBDS
   actions:
   - label: Website
@@ -1106,33 +1552,6 @@
   name: CS156
   team_name: Caltech CS156
   url: https://zoltardata.com/model/439
-- abbreviation: FAIR-NRAR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/448
-  dates:
-  - 2020-12-06
-  - 2020-12-03
-  - 2020-12-01
-  - 2020-11-30
-  - 2020-11-29
-  - 2020-11-24
-  - 2020-11-18
-  - 2020-11-19
-  - 2020-11-22
-  description: Neural Relational Autoregressive Model
-  earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 9
-  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Sunday, 06 December 2020
-  name: NRAR
-  team_name: Facebook AI Research
-  url: https://zoltardata.com/model/448
 - abbreviation: OneQuietNight-ML
   actions:
   - label: Website
@@ -1179,6 +1598,135 @@
   name: Universal Influenza-like Transmission Risk
   team_name: University of Chicago, Chattopadhyay Lab
   url: https://zoltardata.com/model/443
+- abbreviation: CU-select
+  actions:
+  - label: Website
+    new_window: true
+    url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/231
+  dates:
+  - 2020-12-03
+  - 2020-12-06
+  - 2020-11-29
+  - 2020-11-22
+  - 2020-11-19
+  - 2020-10-25
+  - 2020-10-18
+  - 2020-11-15
+  - 2020-11-08
+  - 2020-10-29
+  - 2020-11-05
+  - 2020-11-01
+  - 2020-10-22
+  - 2020-11-12
+  - 2020-10-15
+  - 2020-10-11
+  - 2020-10-08
+  - 2020-10-04
+  - 2020-06-18
+  - 2020-08-20
+  - 2020-06-14
+  - 2020-07-05
+  - 2020-06-25
+  - 2020-06-11
+  - 2020-06-04
+  - 2020-06-07
+  - 2020-06-21
+  - 2020-08-16
+  - 2020-08-02
+  - 2020-05-03
+  - 2020-05-31
+  - 2020-09-20
+  - 2020-09-06
+  - 2020-08-23
+  - 2020-08-13
+  - 2020-05-28
+  - 2020-05-21
+  - 2020-05-14
+  - 2020-05-10
+  - 2020-05-24
+  - 2020-09-03
+  - 2020-05-17
+  - 2020-08-06
+  - 2020-08-09
+  - 2020-09-27
+  - 2020-07-26
+  - 2020-07-12
+  - 2020-06-28
+  - 2020-04-19
+  - 2020-05-07
+  - 2020-08-30
+  - 2020-04-26
+  - 2020-09-24
+  - 2020-04-12
+  - 2020-04-16
+  - 2020-09-13
+  - 2020-07-19
+  - 2020-07-02
+  - 2020-04-23
+  description: A metapopulation county-level SEIR model for projecting future COVID-19
+    incidence and deaths. This forecast is the scenario we believe to be most plausible
+    given the current setting.
+  earliest_forecast: Sunday, 12 April 2020
+  forecasts: 59
+  home_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
+  latest_forecast: Sunday, 06 December 2020
+  name: select
+  team_name: Columbia University
+  url: https://zoltardata.com/model/231
+- abbreviation: IowaStateLW-STEM
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid19.stat.iastate.edu
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/266
+  dates:
+  - 2020-12-06
+  - 2020-11-29
+  - 2020-11-22
+  - 2020-10-25
+  - 2020-11-15
+  - 2020-11-01
+  - 2020-11-08
+  - 2020-10-18
+  - 2020-10-11
+  - 2020-10-04
+  - 2020-08-23
+  - 2020-08-02
+  - 2020-06-28
+  - 2020-06-14
+  - 2020-06-07
+  - 2020-07-26
+  - 2020-05-31
+  - 2020-05-17
+  - 2020-04-26
+  - 2020-05-01
+  - 2020-05-24
+  - 2020-06-21
+  - 2020-09-27
+  - 2020-07-05
+  - 2020-09-20
+  - 2020-09-13
+  - 2020-08-30
+  - 2020-08-16
+  - 2020-07-19
+  - 2020-07-12
+  - 2020-09-06
+  description: Spatiotemporal Dynamics, Nowcasting and Forecasting of COVID-19 in
+    the United States.
+  earliest_forecast: Sunday, 26 April 2020
+  forecasts: 31
+  home_url: https://covid19.stat.iastate.edu
+  latest_forecast: Sunday, 06 December 2020
+  name: Spatiotemporal Epidemic Modeling
+  team_name: Iowa State - Lily Wang's Research Group
+  url: https://zoltardata.com/model/266
 - abbreviation: JHU_IDD-CovidSP
   actions:
   - label: Website
@@ -1520,6 +2068,31 @@
   name: SQUIDER
   team_name: Hussain Lab at Texas Tech University
   url: https://zoltardata.com/model/366
+- abbreviation: JHU_UNC_GAS-StatMechPool
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/HopkinsIDD/EpiForecastStatMech
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/437
+  dates:
+  - 2020-12-06
+  - 2020-10-25
+  - 2020-11-15
+  - 2020-11-01
+  - 2020-11-08
+  description: This model jointly trains over locations, fitting to both  mechanistic
+    and statistical models. The statistical model  enforces  similar places having  similar
+    mechanistic coefficients.
+  earliest_forecast: Sunday, 25 October 2020
+  forecasts: 5
+  home_url: https://github.com/HopkinsIDD/EpiForecastStatMech
+  latest_forecast: Sunday, 06 December 2020
+  name: StatMechPool
+  team_name: JHU_UNC_GAS
+  url: https://zoltardata.com/model/437
 - abbreviation: JHU_CSSE-DECOM
   actions:
   - label: Website
@@ -1815,468 +2388,3 @@
   name: RtDriven
   team_name: BPagano
   url: https://zoltardata.com/model/427
-- abbreviation: CovidAnalytics-DELPHI
-  actions:
-  - label: Website
-    new_window: true
-    url: https://www.covidanalytics.io/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/196
-  dates:
-  - 2020-11-30
-  - 2020-11-22
-  - 2020-10-26
-  - 2020-10-19
-  - 2020-11-16
-  - 2020-11-02
-  - 2020-11-09
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-06-15
-  - 2020-06-08
-  - 2020-06-01
-  - 2020-07-27
-  - 2020-05-25
-  - 2020-07-13
-  - 2020-07-06
-  - 2020-05-18
-  - 2020-05-10
-  - 2020-05-04
-  - 2020-08-24
-  - 2020-04-30
-  - 2020-04-27
-  - 2020-04-22
-  - 2020-08-31
-  - 2020-06-22
-  - 2020-09-28
-  - 2020-09-21
-  - 2020-08-17
-  - 2020-08-03
-  - 2020-09-07
-  - 2020-07-20
-  - 2020-06-29
-  - 2020-09-14
-  - 2020-08-10
-  description: 'This model predicts based on an SEIR model augmented with underdetection
-    and interventions. Projections account for reopening and assume interventions
-    would be re-enacted if cases continue to climb. '
-  earliest_forecast: Wednesday, 22 April 2020
-  forecasts: 34
-  home_url: https://www.covidanalytics.io/
-  latest_forecast: Monday, 30 November 2020
-  name: DELPHI
-  team_name: CovidAnalytics at MIT
-  url: https://zoltardata.com/model/196
-- abbreviation: JHUAPL-Bucky
-  actions:
-  - label: Website
-    new_window: true
-    url: https://buckymodel.com
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/375
-  dates:
-  - 2020-11-30
-  - 2020-11-23
-  - 2020-10-19
-  - 2020-11-16
-  - 2020-11-09
-  - 2020-10-26
-  - 2020-11-02
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-09-28
-  - 2020-09-07
-  - 2020-09-21
-  - 2020-08-31
-  - 2020-09-14
-  description: Metapopulation model using public mobility data. Local parameters (case
-    reporting rates, doubling times, etc) are estimated using data from CSSE and CDC
-    scenario 5. Primary output is case incidence.
-  earliest_forecast: Monday, 31 August 2020
-  forecasts: 14
-  home_url: https://buckymodel.com
-  latest_forecast: Monday, 30 November 2020
-  name: Bucky
-  team_name: Johns Hopkins University Applied Physics Lab
-  url: https://zoltardata.com/model/375
-- abbreviation: GT-DeepCOVID
-  actions:
-  - label: Website
-    new_window: true
-    url: https://deepcovid.github.io/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/206
-  dates:
-  - 2020-11-30
-  - 2020-11-23
-  - 2020-11-09
-  - 2020-11-16
-  - 2020-10-26
-  - 2020-10-19
-  - 2020-11-02
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-07-06
-  - 2020-06-15
-  - 2020-08-24
-  - 2020-06-08
-  - 2020-06-01
-  - 2020-05-25
-  - 2020-05-18
-  - 2020-08-31
-  - 2020-05-04
-  - 2020-05-11
-  - 2020-07-27
-  - 2020-09-28
-  - 2020-09-07
-  - 2020-07-13
-  - 2020-08-17
-  - 2020-08-10
-  - 2020-07-20
-  - 2020-06-29
-  - 2020-09-21
-  - 2020-06-22
-  - 2020-08-03
-  - 2020-09-14
-  description: 'Data-driven approach based on deep learning for forecasting mortality
-    and  hospitalizations using syndromic, clinical, demographic, and mobility. '
-  earliest_forecast: Monday, 04 May 2020
-  forecasts: 31
-  home_url: https://deepcovid.github.io/
-  latest_forecast: Monday, 30 November 2020
-  name: DeepCOVID
-  team_name: GT
-  url: https://zoltardata.com/model/206
-- abbreviation: UT-Mobility
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid-19.tacc.utexas.edu/projections/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/201
-  dates:
-  - 2020-11-30
-  - 2020-11-23
-  - 2020-10-19
-  - 2020-11-16
-  - 2020-11-02
-  - 2020-11-09
-  - 2020-10-26
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-08-03
-  - 2020-07-20
-  - 2020-06-22
-  - 2020-06-15
-  - 2020-06-08
-  - 2020-06-01
-  - 2020-05-25
-  - 2020-07-13
-  - 2020-07-06
-  - 2020-05-18
-  - 2020-05-04
-  - 2020-04-20
-  - 2020-04-27
-  - 2020-05-11
-  - 2020-09-14
-  - 2020-09-28
-  - 2020-08-24
-  - 2020-09-21
-  - 2020-06-29
-  - 2020-08-17
-  - 2020-07-27
-  description: This model makes predictions assuming that social distancing patterns,
-    as measured by anonymized mobile-phone GPS traces,  remain constant in the future.This
-    model models only *first-wave deaths*.
-  earliest_forecast: Monday, 20 April 2020
-  forecasts: 30
-  home_url: https://covid-19.tacc.utexas.edu/projections/
-  latest_forecast: Monday, 30 November 2020
-  name: Mobility
-  team_name: UT-Austin COVID-19 Consortium
-  url: https://zoltardata.com/model/201
-- abbreviation: PSI-DRAFT
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/PSI-DRAFT
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/254
-  dates:
-  - 2020-11-30
-  - 2020-11-23
-  - 2020-11-16
-  - 2020-10-26
-  - 2020-11-02
-  - 2020-10-19
-  - 2020-11-09
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-08-17
-  - 2020-06-15
-  - 2020-06-08
-  - 2020-06-01
-  - 2020-05-25
-  - 2020-05-18
-  - 2020-07-06
-  - 2020-08-24
-  - 2020-09-21
-  - 2020-08-10
-  - 2020-07-13
-  - 2020-06-22
-  - 2020-07-20
-  - 2020-09-14
-  - 2020-07-27
-  - 2020-09-28
-  - 2020-09-07
-  - 2020-08-31
-  - 2020-08-03
-  - 2020-06-29
-  description: 'A stochastic/deterministic, single-population SEIRX model that stratifies
-    by both age distribution and disease severity and includes generic intervention
-    fitting. '
-  earliest_forecast: Monday, 18 May 2020
-  forecasts: 29
-  home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/PSI-DRAFT
-  latest_forecast: Monday, 30 November 2020
-  name: Disease Rapid Analysis and Forecasting Tool
-  team_name: Predictive Science Inc
-  url: https://zoltardata.com/model/254
-- abbreviation: UVA-Ensemble
-  actions:
-  - label: Website
-    new_window: true
-    url: https://biocomplexity.virginia.edu/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/308
-  dates:
-  - 2020-11-30
-  - 2020-11-23
-  - 2020-11-02
-  - 2020-11-09
-  - 2020-11-16
-  - 2020-10-26
-  - 2020-10-19
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-09-28
-  - 2020-08-10
-  - 2020-07-20
-  - 2020-09-21
-  - 2020-08-03
-  - 2020-09-07
-  - 2020-07-27
-  - 2020-08-24
-  - 2020-09-14
-  - 2020-08-31
-  - 2020-08-17
-  description: An ensemble of multiple methods such as auto-regressive (AR) models
-    with exogenous variables, Long short-term memory (lSTM) models, and PatchSim (an
-    SEIR model).
-  earliest_forecast: Monday, 20 July 2020
-  forecasts: 20
-  home_url: https://biocomplexity.virginia.edu/
-  latest_forecast: Monday, 30 November 2020
-  name: Ensemble model
-  team_name: University of Virginia, Biocomplexity COVID-19 Response Team
-  url: https://zoltardata.com/model/308
-- abbreviation: JCB-PRM
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/JohnBurant/COVID19-PRM
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/311
-  dates:
-  - 2020-11-30
-  - 2020-11-23
-  - 2020-11-09
-  - 2020-10-19
-  - 2020-10-26
-  - 2020-11-16
-  - 2020-11-02
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-09-14
-  - 2020-08-17
-  - 2020-08-10
-  - 2020-09-21
-  - 2020-09-07
-  - 2020-08-03
-  - 2020-09-28
-  - 2020-07-27
-  - 2020-08-31
-  - 2020-08-24
-  description: The Political Realities Model (PRM) is built on observations of macro-level
-    societal and political responses to COVID measured only in terms of infections
-    and deaths.
-  earliest_forecast: Monday, 27 July 2020
-  forecasts: 19
-  home_url: https://github.com/JohnBurant/COVID19-PRM
-  latest_forecast: Monday, 30 November 2020
-  name: PRM
-  team_name: John Burant (JCB)
-  url: https://zoltardata.com/model/311
-- abbreviation: UCF-AEM
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/UCF-AEM/UCF-AEM
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/444
-  dates:
-  - 2020-11-29
-  - 2020-11-22
-  - 2020-11-15
-  description: This model leverages conventional SEIR model with mixture modeling
-    and distilled the knowledge of complex mixture modeling system with ensemble neural
-    networks.
-  earliest_forecast: Sunday, 15 November 2020
-  forecasts: 3
-  home_url: https://github.com/UCF-AEM/UCF-AEM
-  latest_forecast: Sunday, 29 November 2020
-  name: AI-Powered and Epidemiology-Informed Modeling System
-  team_name: University of Central Florida
-  url: https://zoltardata.com/model/444
-- abbreviation: CU-select
-  actions:
-  - label: Website
-    new_window: true
-    url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/231
-  dates:
-  - 2020-11-29
-  - 2020-11-22
-  - 2020-11-19
-  - 2020-10-25
-  - 2020-10-18
-  - 2020-11-15
-  - 2020-11-08
-  - 2020-10-29
-  - 2020-11-05
-  - 2020-11-01
-  - 2020-10-22
-  - 2020-11-12
-  - 2020-10-15
-  - 2020-10-11
-  - 2020-10-08
-  - 2020-10-04
-  - 2020-06-18
-  - 2020-08-20
-  - 2020-06-14
-  - 2020-07-05
-  - 2020-06-25
-  - 2020-06-11
-  - 2020-06-04
-  - 2020-06-07
-  - 2020-06-21
-  - 2020-08-16
-  - 2020-08-02
-  - 2020-05-03
-  - 2020-05-31
-  - 2020-09-20
-  - 2020-09-06
-  - 2020-08-23
-  - 2020-08-13
-  - 2020-05-28
-  - 2020-05-21
-  - 2020-05-14
-  - 2020-05-10
-  - 2020-05-24
-  - 2020-09-03
-  - 2020-05-17
-  - 2020-08-06
-  - 2020-08-09
-  - 2020-09-27
-  - 2020-07-26
-  - 2020-07-12
-  - 2020-06-28
-  - 2020-04-19
-  - 2020-05-07
-  - 2020-08-30
-  - 2020-04-26
-  - 2020-09-24
-  - 2020-04-12
-  - 2020-04-16
-  - 2020-09-13
-  - 2020-07-19
-  - 2020-07-02
-  - 2020-04-23
-  description: A metapopulation county-level SEIR model for projecting future COVID-19
-    incidence and deaths. This forecast is the scenario we believe to be most plausible
-    given the current setting.
-  earliest_forecast: Sunday, 12 April 2020
-  forecasts: 57
-  home_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
-  latest_forecast: Sunday, 29 November 2020
-  name: select
-  team_name: Columbia University
-  url: https://zoltardata.com/model/231
-- abbreviation: IowaStateLW-STEM
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19.stat.iastate.edu
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/266
-  dates:
-  - 2020-11-29
-  - 2020-11-22
-  - 2020-10-25
-  - 2020-11-15
-  - 2020-11-01
-  - 2020-11-08
-  - 2020-10-18
-  - 2020-10-11
-  - 2020-10-04
-  - 2020-08-23
-  - 2020-08-02
-  - 2020-06-28
-  - 2020-06-14
-  - 2020-06-07
-  - 2020-07-26
-  - 2020-05-31
-  - 2020-05-17
-  - 2020-04-26
-  - 2020-05-01
-  - 2020-05-24
-  - 2020-06-21
-  - 2020-09-27
-  - 2020-07-05
-  - 2020-09-20
-  - 2020-09-13
-  - 2020-08-30
-  - 2020-08-16
-  - 2020-07-19
-  - 2020-07-12
-  - 2020-09-06
-  description: Spatiotemporal Dynamics, Nowcasting and Forecasting of COVID-19 in
-    the United States.
-  earliest_forecast: Sunday, 26 April 2020
-  forecasts: 30
-  home_url: https://covid19.stat.iastate.edu
-  latest_forecast: Sunday, 29 November 2020
-  name: Spatiotemporal Epidemic Modeling
-  team_name: Iowa State - Lily Wang's Research Group
-  url: https://zoltardata.com/model/266
