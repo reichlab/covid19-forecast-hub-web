@@ -1,3 +1,32 @@
+- abbreviation: FAIR-NRAR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/448
+  dates:
+  - 2020-12-08
+  - 2020-12-07
+  - 2020-12-06
+  - 2020-12-03
+  - 2020-12-01
+  - 2020-11-30
+  - 2020-11-29
+  - 2020-11-24
+  - 2020-11-18
+  - 2020-11-19
+  - 2020-11-22
+  description: Neural Relational Autoregressive Model
+  earliest_forecast: Wednesday, 18 November 2020
+  forecasts: 11
+  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  latest_forecast: Tuesday, 08 December 2020
+  name: NRAR
+  team_name: Facebook AI Research
+  url: https://zoltardata.com/model/448
 - abbreviation: CovidAnalytics-DELPHI
   actions:
   - label: Website
@@ -225,34 +254,6 @@
   name: AI-Powered and Epidemiology-Informed Modeling System
   team_name: University of Central Florida
   url: https://zoltardata.com/model/444
-- abbreviation: FAIR-NRAR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/448
-  dates:
-  - 2020-12-07
-  - 2020-12-06
-  - 2020-12-03
-  - 2020-12-01
-  - 2020-11-30
-  - 2020-11-29
-  - 2020-11-24
-  - 2020-11-18
-  - 2020-11-19
-  - 2020-11-22
-  description: Neural Relational Autoregressive Model
-  earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 10
-  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Monday, 07 December 2020
-  name: NRAR
-  team_name: Facebook AI Research
-  url: https://zoltardata.com/model/448
 - abbreviation: NotreDame-FRED
   actions:
   - label: Website
@@ -494,6 +495,65 @@
   name: DeepCOVID
   team_name: GT
   url: https://zoltardata.com/model/206
+- abbreviation: IHME-CurveFit
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid19.healthdata.org/united-states-of-america
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/154
+  dates:
+  - 2020-12-07
+  - 2020-11-23
+  - 2020-10-26
+  - 2020-10-16
+  - 2020-06-15
+  - 2020-07-06
+  - 2020-06-10
+  - 2020-06-08
+  - 2020-06-05
+  - 2020-06-22
+  - 2020-06-29
+  - 2020-05-29
+  - 2020-05-12
+  - 2020-05-18
+  - 2020-05-04
+  - 2020-05-08
+  - 2020-04-28
+  - 2020-04-27
+  - 2020-04-21
+  - 2020-04-20
+  - 2020-04-16
+  - 2020-04-12
+  - 2020-04-09
+  - 2020-04-07
+  - 2020-04-05
+  - 2020-04-01
+  - 2020-03-31
+  - 2020-03-30
+  - 2020-03-29
+  - 2020-03-27
+  - 2020-07-23
+  - 2020-08-06
+  - 2020-07-30
+  - 2020-07-17
+  - 2020-09-21
+  - 2020-06-24
+  - 2020-08-27
+  - 2020-09-03
+  - 2020-09-28
+  - 2020-08-24
+  description: This model makes predictions about the future that are dependent on
+    the assumption  that current interventions continue. Non-linear mixed efects curve-fitting.
+  earliest_forecast: Friday, 27 March 2020
+  forecasts: 40
+  home_url: https://covid19.healthdata.org/united-states-of-america
+  latest_forecast: Monday, 07 December 2020
+  name: CurveFit
+  team_name: Institute for Health Metrics and Evaluation
+  url: https://zoltardata.com/model/154
 - abbreviation: RobertWalraven-ESG
   actions:
   - label: Website
@@ -737,6 +797,27 @@
   name: CovidProjections
   team_name: IEM MED
   url: https://zoltardata.com/model/460
+- abbreviation: Microsoft-DeepSTIA
+  actions:
+  - label: Website
+    new_window: true
+    url: https://www.microsoft.com/en-us/ai/ai-for-health
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/461
+  dates:
+  - 2020-12-07
+  description: Our model is a deep spatio-temporal network with intervention and hosptial
+    gate under the assumption of spatio-temporal process in pandemic of different
+    regions.
+  earliest_forecast: Monday, 07 December 2020
+  forecasts: 1
+  home_url: https://www.microsoft.com/en-us/ai/ai-for-health
+  latest_forecast: Monday, 07 December 2020
+  name: DeepSTIA
+  team_name: Microsoft
+  url: https://zoltardata.com/model/461
 - abbreviation: UT-Mobility
   actions:
   - label: Website
