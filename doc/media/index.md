@@ -3,6 +3,29 @@ title: In the news
 layout: docs
 ---
 
+[Amherst Weekly Report: Season 1 Finale](https://youtu.be/vAA7Vjow4xo){:target="_blank"}  
+_Amherst Weekly Report_ | 11 December 2020
+
+***
+
+[The number of people with the virus who died in the U.S. passes 300,000.](https://www.nytimes.com/live/2020/12/14/world/covid-19-coronavirus#the-number-of-people-with-the-virus-who-died-in-the-us-passes-300000){:target="_blank"}  
+_The New York Times_ | 14 December 2020
+
+***
+
+
+[How Many Americans Are About to Die?](https://www.theatlantic.com/science/archive/2020/11/coronavirus-death-rate-third-surge/617150/){:target="_blank"}  
+_The Atlantic_ | 19 November 2020
+
+***
+
+
+[With a meteoric rise in deaths, talk of waves is misguided, say Covid-19 modelers](https://www.statnews.com/2020/11/12/with-a-meteoric-rise-in-deaths-talk-of-waves-is-misguided-say-covid-19-modelers/){:target="_blank"}  
+_STAT_ | 12 November 2020
+
+***
+
+
 [Universal mask use could save 130,000 U.S. lives by the end of February, new study estimates](https://www.statnews.com/2020/10/23/universal-mask-use-could-save-130000-lives-by-the-end-of-february-new-modeling-study-says/){:target="_blank"}  
 _STAT_ | 23 October 2020
 

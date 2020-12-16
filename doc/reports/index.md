@@ -2,6 +2,13 @@
 title: Weekly reports
 layout: docs
 ---
+- 15 December 2020 - [Weekly Report](/reports/2020-12-15-weekly-report.html){:target="_blank"}
+- 8 December 2020 - [Weekly Report](/reports/2020-12-08-weekly-report.html){:target="_blank"}
+- 1 December 2020 - [Weekly Report](/reports/2020-12-01-weekly-report.html){:target="_blank"}
+- 24 November 2020 - [Weekly Report](/reports/2020-11-24-weekly-report.html){:target="_blank"}
+- 17 November 2020 - [Weekly Report](/reports/2020-11-17-weekly-report.html){:target="_blank"}
+- 10 November 2020 - [Weekly Report](/reports/2020-11-10-weekly-report.html){:target="_blank"}
+- 3 November 2020 - [Weekly Report](/reports/2020-11-03-weekly-report.html){:target="_blank"}
 - 27 October 2020 - [Weekly Report](/reports/2020-10-27-weekly-report.html){:target="_blank"}
 - 20 October 2020 - [Weekly Report](/reports/2020-10-20-weekly-report.html){:target="_blank"}
 - 13 October 2020 - [Weekly Report](/reports/2020-10-13-weekly-report.html){:target="_blank"}
