@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[Amherst Weekly Report: Season 1 Finale](https://youtu.be/vAA7Vjow4xo){:target="_blank"}  
+_Amherst Weekly Report_ | 11 December 2020
+
+***
+
 [The number of people with the virus who died in the U.S. passes 300,000.](https://www.nytimes.com/live/2020/12/14/world/covid-19-coronavirus#the-number-of-people-with-the-virus-who-died-in-the-us-passes-300000){:target="_blank"}  
 _The New York Times_ | 14 December 2020
 
