@@ -8,6 +8,9 @@
     type: url
     url: https://zoltardata.com/model/448
   dates:
+  - 2020-12-18
+  - 2020-12-17
+  - 2020-12-16
   - 2020-12-15
   - 2020-12-14
   - 2020-12-13
@@ -26,12 +29,171 @@
   - 2020-11-22
   description: Neural Relational Autoregressive Model
   earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 16
+  forecasts: 19
   home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Tuesday, 15 December 2020
+  latest_forecast: Friday, 18 December 2020
   name: NRAR
   team_name: Facebook AI Research
   url: https://zoltardata.com/model/448
+- abbreviation: IHME-CurveFit
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid19.healthdata.org/united-states-of-america
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/154
+  dates:
+  - 2020-12-18
+  - 2020-12-10
+  - 2020-12-07
+  - 2020-11-23
+  - 2020-10-26
+  - 2020-10-16
+  - 2020-06-15
+  - 2020-07-06
+  - 2020-06-10
+  - 2020-06-08
+  - 2020-06-05
+  - 2020-06-22
+  - 2020-06-29
+  - 2020-05-29
+  - 2020-05-12
+  - 2020-05-18
+  - 2020-05-04
+  - 2020-05-08
+  - 2020-04-28
+  - 2020-04-27
+  - 2020-04-21
+  - 2020-04-20
+  - 2020-04-16
+  - 2020-04-12
+  - 2020-04-09
+  - 2020-04-07
+  - 2020-04-05
+  - 2020-04-01
+  - 2020-03-31
+  - 2020-03-30
+  - 2020-03-29
+  - 2020-03-27
+  - 2020-07-23
+  - 2020-08-06
+  - 2020-07-30
+  - 2020-07-17
+  - 2020-09-21
+  - 2020-06-24
+  - 2020-08-27
+  - 2020-09-03
+  - 2020-09-28
+  - 2020-08-24
+  description: This model makes predictions about the future that are dependent on
+    the assumption  that current interventions continue. Non-linear mixed efects curve-fitting.
+  earliest_forecast: Friday, 27 March 2020
+  forecasts: 42
+  home_url: https://covid19.healthdata.org/united-states-of-america
+  latest_forecast: Friday, 18 December 2020
+  name: CurveFit
+  team_name: Institute for Health Metrics and Evaluation
+  url: https://zoltardata.com/model/154
+- abbreviation: LANL-GrowthRate
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid-19.bsvgateway.org/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/157
+  dates:
+  - 2020-12-17
+  - 2020-12-14
+  - 2020-12-10
+  - 2020-12-07
+  - 2020-12-03
+  - 2020-11-30
+  - 2020-11-26
+  - 2020-11-23
+  - 2020-11-19
+  - 2020-11-04
+  - 2020-10-29
+  - 2020-10-19
+  - 2020-11-12
+  - 2020-11-09
+  - 2020-10-26
+  - 2020-10-15
+  - 2020-11-16
+  - 2020-10-22
+  - 2020-11-02
+  - 2020-11-05
+  - 2020-10-12
+  - 2020-10-08
+  - 2020-10-05
+  - 2020-10-01
+  - 2020-06-18
+  - 2020-09-10
+  - 2020-07-30
+  - 2020-07-20
+  - 2020-06-14
+  - 2020-09-07
+  - 2020-06-11
+  - 2020-06-08
+  - 2020-06-04
+  - 2020-06-01
+  - 2020-05-28
+  - 2020-05-24
+  - 2020-05-25
+  - 2020-05-21
+  - 2020-08-10
+  - 2020-07-02
+  - 2020-05-18
+  - 2020-05-04
+  - 2020-04-30
+  - 2020-04-20
+  - 2020-04-16
+  - 2020-04-23
+  - 2020-05-07
+  - 2020-04-13
+  - 2020-04-27
+  - 2020-04-09
+  - 2020-04-06
+  - 2020-05-14
+  - 2020-05-11
+  - 2020-05-03
+  - 2020-07-06
+  - 2020-08-17
+  - 2020-08-06
+  - 2020-07-16
+  - 2020-07-03
+  - 2020-08-20
+  - 2020-07-23
+  - 2020-06-24
+  - 2020-09-24
+  - 2020-09-21
+  - 2020-08-13
+  - 2020-06-29
+  - 2020-07-09
+  - 2020-09-28
+  - 2020-08-27
+  - 2020-09-14
+  - 2020-09-17
+  - 2020-09-03
+  - 2020-08-31
+  - 2020-08-24
+  - 2020-07-13
+  - 2020-08-03
+  - 2020-07-27
+  - 2020-06-21
+  description: This model makes predictions about the future, unconditional on particular
+    intervention strategies. Statistical dynamical growth model accounting for population
+    susceptibility.
+  earliest_forecast: Monday, 06 April 2020
+  forecasts: 78
+  home_url: https://covid-19.bsvgateway.org/
+  latest_forecast: Thursday, 17 December 2020
+  name: GrowthRate
+  team_name: Los Alamos National Labs
+  url: https://zoltardata.com/model/157
 - abbreviation: CovidAnalytics-DELPHI
   actions:
   - label: Website
@@ -1071,103 +1233,6 @@
   name: RidgeTensorFlowRegressor
   team_name: The University of Michigan
   url: https://zoltardata.com/model/303
-- abbreviation: LANL-GrowthRate
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid-19.bsvgateway.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/157
-  dates:
-  - 2020-12-14
-  - 2020-12-10
-  - 2020-12-07
-  - 2020-12-03
-  - 2020-11-30
-  - 2020-11-26
-  - 2020-11-23
-  - 2020-11-19
-  - 2020-11-04
-  - 2020-10-29
-  - 2020-10-19
-  - 2020-11-12
-  - 2020-11-09
-  - 2020-10-26
-  - 2020-10-15
-  - 2020-11-16
-  - 2020-10-22
-  - 2020-11-02
-  - 2020-11-05
-  - 2020-10-12
-  - 2020-10-08
-  - 2020-10-05
-  - 2020-10-01
-  - 2020-06-18
-  - 2020-09-10
-  - 2020-07-30
-  - 2020-07-20
-  - 2020-06-14
-  - 2020-09-07
-  - 2020-06-11
-  - 2020-06-08
-  - 2020-06-04
-  - 2020-06-01
-  - 2020-05-28
-  - 2020-05-24
-  - 2020-05-25
-  - 2020-05-21
-  - 2020-08-10
-  - 2020-07-02
-  - 2020-05-18
-  - 2020-05-04
-  - 2020-04-30
-  - 2020-04-20
-  - 2020-04-16
-  - 2020-04-23
-  - 2020-05-07
-  - 2020-04-13
-  - 2020-04-27
-  - 2020-04-09
-  - 2020-04-06
-  - 2020-05-14
-  - 2020-05-11
-  - 2020-05-03
-  - 2020-07-06
-  - 2020-08-17
-  - 2020-08-06
-  - 2020-07-16
-  - 2020-07-03
-  - 2020-08-20
-  - 2020-07-23
-  - 2020-06-24
-  - 2020-09-24
-  - 2020-09-21
-  - 2020-08-13
-  - 2020-06-29
-  - 2020-07-09
-  - 2020-09-28
-  - 2020-08-27
-  - 2020-09-14
-  - 2020-09-17
-  - 2020-09-03
-  - 2020-08-31
-  - 2020-08-24
-  - 2020-07-13
-  - 2020-08-03
-  - 2020-07-27
-  - 2020-06-21
-  description: This model makes predictions about the future, unconditional on particular
-    intervention strategies. Statistical dynamical growth model accounting for population
-    susceptibility.
-  earliest_forecast: Monday, 06 April 2020
-  forecasts: 77
-  home_url: https://covid-19.bsvgateway.org/
-  latest_forecast: Monday, 14 December 2020
-  name: GrowthRate
-  team_name: Los Alamos National Labs
-  url: https://zoltardata.com/model/157
 - abbreviation: UMass-MechBayes
   actions:
   - label: Website
@@ -2375,180 +2440,3 @@
   name: Mobility-informed Collision Model
   team_name: RPI and UW
   url: https://zoltardata.com/model/367
-- abbreviation: IHME-CurveFit
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19.healthdata.org/united-states-of-america
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/154
-  dates:
-  - 2020-12-10
-  - 2020-12-07
-  - 2020-11-23
-  - 2020-10-26
-  - 2020-10-16
-  - 2020-06-15
-  - 2020-07-06
-  - 2020-06-10
-  - 2020-06-08
-  - 2020-06-05
-  - 2020-06-22
-  - 2020-06-29
-  - 2020-05-29
-  - 2020-05-12
-  - 2020-05-18
-  - 2020-05-04
-  - 2020-05-08
-  - 2020-04-28
-  - 2020-04-27
-  - 2020-04-21
-  - 2020-04-20
-  - 2020-04-16
-  - 2020-04-12
-  - 2020-04-09
-  - 2020-04-07
-  - 2020-04-05
-  - 2020-04-01
-  - 2020-03-31
-  - 2020-03-30
-  - 2020-03-29
-  - 2020-03-27
-  - 2020-07-23
-  - 2020-08-06
-  - 2020-07-30
-  - 2020-07-17
-  - 2020-09-21
-  - 2020-06-24
-  - 2020-08-27
-  - 2020-09-03
-  - 2020-09-28
-  - 2020-08-24
-  description: This model makes predictions about the future that are dependent on
-    the assumption  that current interventions continue. Non-linear mixed efects curve-fitting.
-  earliest_forecast: Friday, 27 March 2020
-  forecasts: 41
-  home_url: https://covid19.healthdata.org/united-states-of-america
-  latest_forecast: Thursday, 10 December 2020
-  name: CurveFit
-  team_name: Institute for Health Metrics and Evaluation
-  url: https://zoltardata.com/model/154
-- abbreviation: USACE-ERDC_SEIR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/erdc-cv19/seir-model
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/262
-  dates:
-  - 2020-12-07
-  - 2020-11-30
-  - 2020-11-23
-  - 2020-11-16
-  - 2020-10-26
-  - 2020-11-12
-  - 2020-10-12
-  - 2020-09-28
-  - 2020-09-07
-  - 2020-07-20
-  - 2020-06-15
-  - 2020-08-17
-  - 2020-07-24
-  - 2020-06-01
-  - 2020-05-28
-  - 2020-06-08
-  - 2020-07-06
-  - 2020-09-21
-  - 2020-08-02
-  - 2020-05-24
-  - 2020-05-25
-  - 2020-05-18
-  - 2020-05-14
-  - 2020-07-29
-  - 2020-08-03
-  - 2020-07-27
-  - 2020-08-01
-  - 2020-08-24
-  - 2020-07-28
-  - 2020-07-01
-  - 2020-08-10
-  - 2020-07-31
-  - 2020-07-13
-  - 2020-09-14
-  - 2020-07-30
-  - 2020-07-21
-  - 2020-07-22
-  - 2020-06-22
-  - 2020-08-31
-  - 2020-07-23
-  - 2020-06-29
-  description: The ERDC SEIR model makes predictions of several variables (e.g., reported
-    new/cumulative cases  per day, etc.). Model parameters are estimated using historical
-    data using Bayesian inference.
-  earliest_forecast: Thursday, 14 May 2020
-  forecasts: 41
-  home_url: https://github.com/erdc-cv19/seir-model
-  latest_forecast: Monday, 07 December 2020
-  name: ERDC_SEIR
-  team_name: US Army Engineer Research and Development Center
-  url: https://zoltardata.com/model/262
-- abbreviation: MSRA-DeepST
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid.msra.cn
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/428
-  dates:
-  - 2020-12-07
-  - 2020-11-30
-  - 2020-11-23
-  - 2020-11-16
-  - 2020-10-19
-  - 2020-11-09
-  - 2020-11-02
-  - 2020-10-26
-  - 2020-10-12
-  description: Our model is a deep spatio-temporal network with knowledge based SEIR
-    as a regularier under the assumption of spatio-temporal process in pandemic of
-    different regions.
-  earliest_forecast: Monday, 12 October 2020
-  forecasts: 9
-  home_url: https://covid.msra.cn
-  latest_forecast: Monday, 07 December 2020
-  name: DeepST
-  team_name: MSRA
-  url: https://zoltardata.com/model/428
-- abbreviation: UCSB-ACTS
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/Gandor26/covid-open
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/436
-  dates:
-  - 2020-12-06
-  - 2020-11-29
-  - 2020-11-22
-  - 2020-11-08
-  - 2020-11-15
-  - 2020-10-25
-  - 2020-11-01
-  description: This data-driven machine learning model makes predictions by referring
-    to other regions with similar growth patterns and assuming the similar development
-    will take place in the current region.
-  earliest_forecast: Sunday, 25 October 2020
-  forecasts: 7
-  home_url: https://github.com/Gandor26/covid-open
-  latest_forecast: Sunday, 06 December 2020
-  name: ACTS
-  team_name: UCSB
-  url: https://zoltardata.com/model/436
