@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[U.S. Covid Deaths Match April Peak With Hospitals Still Filling](https://www.bloomberg.com/news/articles/2020-12-07/u-s-covid-deaths-match-april-peak-with-hospitals-still-filling){:target="_blank"}  
+_Bloomberg_ | 7 December 2020
+
+***
+
 [Amherst Weekly Report: Season 1 Finale](https://youtu.be/vAA7Vjow4xo){:target="_blank"}  
 _Amherst Weekly Report_ | 11 December 2020
 
