@@ -2,6 +2,7 @@
 title: Weekly reports
 layout: docs
 ---
+- 29 December 2020 - [Weekly Report](/reports/2020-12-29-weekly-report.html){:target="_blank"}
 - 22 December 2020 - [Weekly Report](/reports/2020-12-22-weekly-report.html){:target="_blank"}
 - 15 December 2020 - [Weekly Report](/reports/2020-12-15-weekly-report.html){:target="_blank"}
 - 8 December 2020 - [Weekly Report](/reports/2020-12-08-weekly-report.html){:target="_blank"}
