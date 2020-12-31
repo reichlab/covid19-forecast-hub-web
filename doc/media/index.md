@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[US sets daily Covid-19 death record for the second straight day. Another 80,000 could die in next 3 weeks, new forecast says](https://www.cnn.com/2020/12/31/health/us-coronavirus-thursday/index.html){:target="_blank"}  
+_CNN_ | 31 December 2020
+
+***
+
 [U.S. Covid Deaths Match April Peak With Hospitals Still Filling](https://www.bloomberg.com/news/articles/2020-12-07/u-s-covid-deaths-match-april-peak-with-hospitals-still-filling){:target="_blank"}  
 _Bloomberg_ | 7 December 2020
 
