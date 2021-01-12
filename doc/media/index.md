@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[We Can Still Change The Course Of The Pandemic, COVID Modeler Says](https://www.wgbh.org/news/local-news/2021/01/05/we-can-still-change-the-course-of-the-pandemic-covid-modeler-says){:target="_blank"}  
+_WGBH_ | 5 January 2021
+
+***
+
 [US sets daily Covid-19 death record for the second straight day. Another 80,000 could die in next 3 weeks, new forecast says](https://www.cnn.com/2020/12/31/health/us-coronavirus-thursday/index.html){:target="_blank"}  
 _CNN_ | 31 December 2020
 
