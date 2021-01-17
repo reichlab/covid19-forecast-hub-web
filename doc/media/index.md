@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[More than 90,000 Americans could die of Covid-19 in next three weeks, CDC forecast shows](https://www.cnn.com/2021/01/14/health/us-coronavirus-thursday/index.html){:target="_blank"}  
+_CNN_ | 14 January 2021
+
+***
+
 [We Can Still Change The Course Of The Pandemic, COVID Modeler Says](https://www.wgbh.org/news/local-news/2021/01/05/we-can-still-change-the-course-of-the-pandemic-covid-modeler-says){:target="_blank"}  
 _WGBH_ | 5 January 2021
 
