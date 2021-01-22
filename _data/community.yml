@@ -1,3 +1,61 @@
+- abbreviation: FAIR-NRAR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/448
+  dates:
+  - 2020-11-24
+  - 2020-12-01
+  - 2020-11-30
+  - 2020-12-03
+  - 2020-12-07
+  - 2020-12-15
+  - 2020-12-08
+  - 2021-01-19
+  - 2020-12-14
+  - 2020-12-10
+  - 2020-12-11
+  - 2021-01-13
+  - 2020-12-06
+  - 2021-01-11
+  - 2021-01-15
+  - 2020-12-13
+  - 2021-01-16
+  - 2020-12-16
+  - 2020-12-17
+  - 2021-01-17
+  - 2020-12-18
+  - 2020-12-22
+  - 2020-11-29
+  - 2020-12-19
+  - 2020-12-23
+  - 2020-12-20
+  - 2020-12-24
+  - 2020-11-22
+  - 2020-12-30
+  - 2020-12-28
+  - 2020-12-21
+  - 2021-01-05
+  - 2021-01-06
+  - 2021-01-03
+  - 2021-01-09
+  - 2021-01-18
+  - 2020-11-19
+  - 2020-11-18
+  - 2020-11-18
+  - 2020-11-19
+  description: Neural Relational Autoregressive Model
+  earliest_forecast: Wednesday, 18 November 2020
+  forecasts: 40
+  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  latest_forecast: Tuesday, 19 January 2021
+  name: NRAR
+  team_name: Facebook AI Research
+  url: https://zoltardata.com/model/448
 - abbreviation: CovidAnalytics-DELPHI
   actions:
   - label: Website
@@ -259,63 +317,6 @@
   name: DeepGLEAM
   team_name: UCSD_NEU
   url: https://zoltardata.com/model/378
-- abbreviation: FAIR-NRAR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/448
-  dates:
-  - 2020-11-24
-  - 2020-12-01
-  - 2020-11-30
-  - 2020-12-03
-  - 2020-12-07
-  - 2020-12-15
-  - 2020-12-08
-  - 2020-12-14
-  - 2020-12-10
-  - 2020-12-11
-  - 2021-01-13
-  - 2020-12-06
-  - 2021-01-11
-  - 2021-01-15
-  - 2020-12-13
-  - 2021-01-16
-  - 2020-12-16
-  - 2020-12-17
-  - 2021-01-17
-  - 2020-12-18
-  - 2020-12-22
-  - 2020-11-29
-  - 2020-12-19
-  - 2020-12-23
-  - 2020-12-20
-  - 2020-12-24
-  - 2020-11-22
-  - 2020-12-30
-  - 2020-12-28
-  - 2020-12-21
-  - 2021-01-05
-  - 2021-01-06
-  - 2021-01-03
-  - 2021-01-09
-  - 2021-01-18
-  - 2020-11-19
-  - 2020-11-18
-  - 2020-11-18
-  - 2020-11-19
-  description: Neural Relational Autoregressive Model
-  earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 39
-  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Monday, 18 January 2021
-  name: NRAR
-  team_name: Facebook AI Research
-  url: https://zoltardata.com/model/448
 - abbreviation: IBF-TimeSeries
   actions:
   - label: Website
@@ -956,6 +957,58 @@
   name: Ensemble model
   team_name: University of Virginia, Biocomplexity COVID-19 Response Team
   url: https://zoltardata.com/model/308
+- abbreviation: DDS-NBDS
+  actions:
+  - label: Website
+    new_window: true
+    url: https://dds-covid19.github.io/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/312
+  dates:
+  - 2021-01-18
+  - 2020-12-07
+  - 2020-12-14
+  - 2020-11-23
+  - 2020-12-21
+  - 2020-11-30
+  - 2021-01-04
+  - 2020-12-28
+  - 2021-01-11
+  - 2020-08-24
+  - 2020-08-30
+  - 2020-08-03
+  - 2020-09-20
+  - 2020-07-27
+  - 2020-08-09
+  - 2020-09-28
+  - 2020-09-07
+  - 2020-09-13
+  - 2020-09-21
+  - 2020-08-17
+  - 2020-08-10
+  - 2020-09-27
+  - 2020-09-14
+  - 2020-08-31
+  - 2020-10-04
+  - 2020-10-05
+  - 2020-10-11
+  - 2020-10-12
+  - 2020-11-02
+  - 2020-10-26
+  - 2020-11-09
+  - 2020-10-19
+  - 2020-11-16
+  description: Jointly modeling daily deaths and cases using a negative binomial distribution
+    based nonparametric Bayesian generalized linear dynamical system.
+  earliest_forecast: Monday, 27 July 2020
+  forecasts: 33
+  home_url: https://dds-covid19.github.io/
+  latest_forecast: Monday, 18 January 2021
+  name: Negative Binomial Dynamical System
+  team_name: Discrete Dynamical Systems
+  url: https://zoltardata.com/model/312
 - abbreviation: UMich-RidgeTfReg
   actions:
   - label: Website
@@ -2642,57 +2695,6 @@
   name: Two-Stage SIR
   team_name: COVID Alliance at MIT
   url: https://zoltardata.com/model/298
-- abbreviation: DDS-NBDS
-  actions:
-  - label: Website
-    new_window: true
-    url: https://dds-covid19.github.io/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/312
-  dates:
-  - 2020-12-07
-  - 2020-12-14
-  - 2020-11-23
-  - 2020-12-21
-  - 2020-11-30
-  - 2021-01-04
-  - 2020-12-28
-  - 2021-01-11
-  - 2020-08-24
-  - 2020-08-30
-  - 2020-08-03
-  - 2020-09-20
-  - 2020-07-27
-  - 2020-08-09
-  - 2020-09-28
-  - 2020-09-07
-  - 2020-09-13
-  - 2020-09-21
-  - 2020-08-17
-  - 2020-08-10
-  - 2020-09-27
-  - 2020-09-14
-  - 2020-08-31
-  - 2020-10-04
-  - 2020-10-05
-  - 2020-10-11
-  - 2020-10-12
-  - 2020-11-02
-  - 2020-10-26
-  - 2020-11-09
-  - 2020-10-19
-  - 2020-11-16
-  description: Jointly modeling daily deaths and cases using a negative binomial distribution
-    based nonparametric Bayesian generalized linear dynamical system.
-  earliest_forecast: Monday, 27 July 2020
-  forecasts: 32
-  home_url: https://dds-covid19.github.io/
-  latest_forecast: Monday, 11 January 2021
-  name: Negative Binomial Dynamical System
-  team_name: Discrete Dynamical Systems
-  url: https://zoltardata.com/model/312
 - abbreviation: JHU_UNC_GAS-StatMechPool
   actions:
   - label: Website
