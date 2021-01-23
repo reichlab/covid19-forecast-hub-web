@@ -44,12 +44,12 @@ sections:
             url: https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/hospitalizations-forecasts.html
             type: link
             new_window: true
-      - title: Collaborative science
+      - title: We are hiring!
         content: >-
-          We work collaboratively in an open-science framework, welcoming participation from modeling teams around the globe to submit predictions from their best COVID-19 models.
+           We have an open position for a post-doctoral researcher to join our team to work on applied and methodological research on forecasting and ensemble modeling. Strong quantitative background and formal training in statistics, machine learning, data science, computational epidemiology, or a closely related field is required. 
         actions:
-          - label: How to join
-            url: doc/participate/
+          - label: See job description
+            url: http://reichlab.io/pdfs/jobs/post-doc-job-description.pdf
             type: link
   - section_id: text-img
     type: section_media

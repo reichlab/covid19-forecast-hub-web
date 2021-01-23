@@ -3,6 +3,63 @@ title: In the news
 layout: docs
 ---
 
+[More than 90,000 Americans could die of Covid-19 in next three weeks, CDC forecast shows](https://www.cnn.com/2021/01/14/health/us-coronavirus-thursday/index.html){:target="_blank"}  
+_CNN_ | 14 January 2021
+
+***
+
+[We Can Still Change The Course Of The Pandemic, COVID Modeler Says](https://www.wgbh.org/news/local-news/2021/01/05/we-can-still-change-the-course-of-the-pandemic-covid-modeler-says){:target="_blank"}  
+_WGBH_ | 5 January 2021
+
+***
+
+[US sets daily Covid-19 death record for the second straight day. Another 80,000 could die in next 3 weeks, new forecast says](https://www.cnn.com/2020/12/31/health/us-coronavirus-thursday/index.html){:target="_blank"}  
+_CNN_ | 31 December 2020
+
+***
+
+[U.S. Covid Deaths Match April Peak With Hospitals Still Filling](https://www.bloomberg.com/news/articles/2020-12-07/u-s-covid-deaths-match-april-peak-with-hospitals-still-filling){:target="_blank"}  
+_Bloomberg_ | 7 December 2020
+
+***
+
+[Amherst Weekly Report: Season 1 Finale](https://youtu.be/vAA7Vjow4xo){:target="_blank"}  
+_Amherst Weekly Report_ | 11 December 2020
+
+***
+
+[The number of people with the virus who died in the U.S. passes 300,000.](https://www.nytimes.com/live/2020/12/14/world/covid-19-coronavirus#the-number-of-people-with-the-virus-who-died-in-the-us-passes-300000){:target="_blank"}  
+_The New York Times_ | 14 December 2020
+
+***
+
+
+[How Many Americans Are About to Die?](https://www.theatlantic.com/science/archive/2020/11/coronavirus-death-rate-third-surge/617150/){:target="_blank"}  
+_The Atlantic_ | 19 November 2020
+
+***
+
+
+[With a meteoric rise in deaths, talk of waves is misguided, say Covid-19 modelers](https://www.statnews.com/2020/11/12/with-a-meteoric-rise-in-deaths-talk-of-waves-is-misguided-say-covid-19-modelers/){:target="_blank"}  
+_STAT_ | 12 November 2020
+
+***
+
+
+[Universal mask use could save 130,000 U.S. lives by the end of February, new study estimates](https://www.statnews.com/2020/10/23/universal-mask-use-could-save-130000-lives-by-the-end-of-february-new-modeling-study-says/){:target="_blank"}  
+_STAT_ | 23 October 2020
+
+***
+
+[How Covid-19 Death-Rate Predictions Have Changed Since March](https://www.wsj.com/articles/how-covid-19-death-rate-predictions-have-changed-since-march-11603445400?st=ogt1to63xgermm6&reflink=article_email_share){:target="_blank"}  
+_The Wall Street Journal_ | 23 October 2020
+
+***
+
+[What's Coming This Winter? Here's How Many More Could Die In The Pandemic](https://www.npr.org/sections/health-shots/2020/10/16/924240204/how-bad-will-coronavirus-be-this-winter-model-projects-170-000-more-u-s-deaths){:target="_blank"}  
+_NPR_ | 16 October 2020
+
+***
 
 [5 charts that tell the story of COVID-19 in Mass.](https://www.bostonglobe.com/2020/10/05/nation/5-charts-that-tell-story-covid-19-mass/){:target="_blank"}  
 _Boston Globe_ | 5 October 2020
