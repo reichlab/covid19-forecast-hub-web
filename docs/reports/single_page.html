@@ -233,7 +233,8 @@
                     anchor = location.hash
                 }
                 console.log(anchor)
-                state = state.toLowerCase();
+                // don't need this now as this causes an error
+                // state = state.toLowerCase();
                 url = baseurl;
                 url += week + "-";
                 if (state != 'national') {
