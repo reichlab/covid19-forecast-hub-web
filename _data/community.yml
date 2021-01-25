@@ -1,3 +1,127 @@
+- abbreviation: Columbia_UNC-SurvCon
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/COVID19BIOSTAT/covid19_prediction
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/292
+  dates:
+  - 2020-11-22
+  - 2020-12-13
+  - 2020-12-06
+  - 2020-11-29
+  - 2021-01-24
+  - 2021-01-17
+  - 2020-12-20
+  - 2020-12-27
+  - 2021-01-03
+  - 2021-01-10
+  - 2021-01-03
+  - 2020-12-13
+  - 2020-09-20
+  - 2020-08-23
+  - 2020-07-12
+  - 2020-09-06
+  - 2020-09-13
+  - 2020-09-27
+  - 2020-07-26
+  - 2020-08-30
+  - 2020-08-09
+  - 2020-08-16
+  - 2020-07-05
+  - 2020-06-28
+  - 2020-08-02
+  - 2020-07-19
+  - 2020-06-16
+  - 2020-10-04
+  - 2020-10-11
+  - 2020-11-15
+  - 2020-10-25
+  - 2020-11-01
+  - 2020-10-18
+  - 2020-11-08
+  description: A survival-convolution model with piece-wise transmission rates that
+    incorporates latent incubation period and provides time-varying effective reproductive
+    number.
+  earliest_forecast: Tuesday, 16 June 2020
+  forecasts: 34
+  home_url: https://github.com/COVID19BIOSTAT/covid19_prediction
+  latest_forecast: Sunday, 24 January 2021
+  name: Survival-Convolution Models
+  team_name: Columbia_UNC
+  url: https://zoltardata.com/model/292
+- abbreviation: OneQuietNight-ML
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/One-Quiet-Night/COVID-19-forecast
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/449
+  dates:
+  - 2020-12-06
+  - 2020-12-13
+  - 2020-11-29
+  - 2020-11-21
+  - 2021-01-17
+  - 2021-01-24
+  - 2020-12-20
+  - 2020-12-27
+  - 2021-01-03
+  - 2021-01-10
+  description: OneQuietNight ML model uses high-level features of daily case reports
+    and movement trends data to make predictions about future Covid-19 cases.
+  earliest_forecast: Saturday, 21 November 2020
+  forecasts: 10
+  home_url: https://github.com/One-Quiet-Night/COVID-19-forecast
+  latest_forecast: Sunday, 24 January 2021
+  name: ML
+  team_name: OneQuietNight
+  url: https://zoltardata.com/model/449
+- abbreviation: TTU-squider
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/fvbttu/squider
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/366
+  dates:
+  - 2020-11-22
+  - 2020-11-29
+  - 2020-12-13
+  - 2020-12-06
+  - 2021-01-24
+  - 2021-01-17
+  - 2020-12-20
+  - 2020-12-27
+  - 2021-01-03
+  - 2021-01-10
+  - 2020-09-13
+  - 2020-08-17
+  - 2020-09-27
+  - 2020-08-23
+  - 2020-10-04
+  - 2020-10-11
+  - 2020-11-01
+  - 2020-11-08
+  - 2020-11-15
+  - 2020-10-18
+  - 2020-10-25
+  description: SIR-based compartmental model with a power law incidence rate, unknown
+    as well as known infecteds, and time dependent social contact suppression and
+    relaxation.
+  earliest_forecast: Monday, 17 August 2020
+  forecasts: 21
+  home_url: https://github.com/fvbttu/squider
+  latest_forecast: Sunday, 24 January 2021
+  name: SQUIDER
+  team_name: Hussain Lab at Texas Tech University
+  url: https://zoltardata.com/model/366
 - abbreviation: FAIR-NRAR
   actions:
   - label: Website
@@ -8,8 +132,10 @@
     type: url
     url: https://zoltardata.com/model/448
   dates:
+  - 2021-01-21
   - 2020-11-24
   - 2020-12-01
+  - 2021-01-22
   - 2020-11-30
   - 2020-12-03
   - 2020-12-07
@@ -22,6 +148,7 @@
   - 2021-01-13
   - 2020-12-06
   - 2021-01-11
+  - 2021-01-23
   - 2021-01-15
   - 2020-12-13
   - 2021-01-16
@@ -50,12 +177,122 @@
   - 2020-11-19
   description: Neural Relational Autoregressive Model
   earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 40
+  forecasts: 43
   home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Tuesday, 19 January 2021
+  latest_forecast: Saturday, 23 January 2021
   name: NRAR
   team_name: Facebook AI Research
   url: https://zoltardata.com/model/448
+- abbreviation: LANL-GrowthRate
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid-19.bsvgateway.org/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/157
+  dates:
+  - 2020-05-07
+  - 2021-01-21
+  - 2020-05-07
+  - 2020-11-19
+  - 2020-11-26
+  - 2020-12-03
+  - 2020-12-10
+  - 2021-01-14
+  - 2020-12-17
+  - 2020-12-24
+  - 2020-12-07
+  - 2020-12-14
+  - 2020-11-30
+  - 2021-01-06
+  - 2020-11-23
+  - 2021-01-18
+  - 2020-05-11
+  - 2020-06-14
+  - 2020-12-21
+  - 2021-01-04
+  - 2021-01-11
+  - 2020-06-21
+  - 2020-07-27
+  - 2020-08-03
+  - 2020-07-13
+  - 2020-08-24
+  - 2020-08-31
+  - 2020-09-03
+  - 2020-09-17
+  - 2020-09-14
+  - 2020-08-27
+  - 2020-09-28
+  - 2020-07-09
+  - 2020-06-29
+  - 2020-08-13
+  - 2020-09-21
+  - 2020-09-24
+  - 2020-06-24
+  - 2020-07-23
+  - 2020-08-20
+  - 2020-07-03
+  - 2020-07-16
+  - 2020-08-06
+  - 2020-08-17
+  - 2020-07-06
+  - 2020-05-03
+  - 2020-05-11
+  - 2020-05-14
+  - 2020-04-06
+  - 2020-04-09
+  - 2020-04-27
+  - 2020-04-13
+  - 2020-05-07
+  - 2020-04-23
+  - 2020-04-16
+  - 2020-04-20
+  - 2020-04-30
+  - 2020-05-04
+  - 2020-05-18
+  - 2020-07-02
+  - 2020-08-10
+  - 2020-05-21
+  - 2020-05-25
+  - 2020-05-24
+  - 2020-05-28
+  - 2020-06-01
+  - 2020-06-04
+  - 2020-06-08
+  - 2020-06-11
+  - 2020-09-07
+  - 2020-06-14
+  - 2020-07-20
+  - 2020-07-30
+  - 2020-09-10
+  - 2020-06-18
+  - 2020-10-01
+  - 2020-10-05
+  - 2020-10-08
+  - 2020-10-12
+  - 2020-11-05
+  - 2020-11-02
+  - 2020-10-22
+  - 2020-11-16
+  - 2020-10-15
+  - 2020-10-26
+  - 2020-11-09
+  - 2020-11-12
+  - 2020-10-19
+  - 2020-10-29
+  - 2020-11-04
+  description: This model makes predictions about the future, unconditional on particular
+    intervention strategies. Statistical dynamical growth model accounting for population
+    susceptibility.
+  earliest_forecast: Monday, 06 April 2020
+  forecasts: 90
+  home_url: https://covid-19.bsvgateway.org/
+  latest_forecast: Thursday, 21 January 2021
+  name: GrowthRate
+  team_name: Los Alamos National Labs
+  url: https://zoltardata.com/model/157
 - abbreviation: CovidAnalytics-DELPHI
   actions:
   - label: Website
@@ -1057,115 +1294,6 @@
   name: RidgeTensorFlowRegressor
   team_name: The University of Michigan
   url: https://zoltardata.com/model/303
-- abbreviation: LANL-GrowthRate
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid-19.bsvgateway.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/157
-  dates:
-  - 2020-05-07
-  - 2020-05-07
-  - 2020-11-19
-  - 2020-11-26
-  - 2020-12-03
-  - 2020-12-10
-  - 2021-01-14
-  - 2020-12-17
-  - 2020-12-24
-  - 2020-12-07
-  - 2020-12-14
-  - 2020-11-30
-  - 2021-01-06
-  - 2020-11-23
-  - 2021-01-18
-  - 2020-05-11
-  - 2020-06-14
-  - 2020-12-21
-  - 2021-01-04
-  - 2021-01-11
-  - 2020-06-21
-  - 2020-07-27
-  - 2020-08-03
-  - 2020-07-13
-  - 2020-08-24
-  - 2020-08-31
-  - 2020-09-03
-  - 2020-09-17
-  - 2020-09-14
-  - 2020-08-27
-  - 2020-09-28
-  - 2020-07-09
-  - 2020-06-29
-  - 2020-08-13
-  - 2020-09-21
-  - 2020-09-24
-  - 2020-06-24
-  - 2020-07-23
-  - 2020-08-20
-  - 2020-07-03
-  - 2020-07-16
-  - 2020-08-06
-  - 2020-08-17
-  - 2020-07-06
-  - 2020-05-03
-  - 2020-05-11
-  - 2020-05-14
-  - 2020-04-06
-  - 2020-04-09
-  - 2020-04-27
-  - 2020-04-13
-  - 2020-05-07
-  - 2020-04-23
-  - 2020-04-16
-  - 2020-04-20
-  - 2020-04-30
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-07-02
-  - 2020-08-10
-  - 2020-05-21
-  - 2020-05-25
-  - 2020-05-24
-  - 2020-05-28
-  - 2020-06-01
-  - 2020-06-04
-  - 2020-06-08
-  - 2020-06-11
-  - 2020-09-07
-  - 2020-06-14
-  - 2020-07-20
-  - 2020-07-30
-  - 2020-09-10
-  - 2020-06-18
-  - 2020-10-01
-  - 2020-10-05
-  - 2020-10-08
-  - 2020-10-12
-  - 2020-11-05
-  - 2020-11-02
-  - 2020-10-22
-  - 2020-11-16
-  - 2020-10-15
-  - 2020-10-26
-  - 2020-11-09
-  - 2020-11-12
-  - 2020-10-19
-  - 2020-10-29
-  - 2020-11-04
-  description: This model makes predictions about the future, unconditional on particular
-    intervention strategies. Statistical dynamical growth model accounting for population
-    susceptibility.
-  earliest_forecast: Monday, 06 April 2020
-  forecasts: 89
-  home_url: https://covid-19.bsvgateway.org/
-  latest_forecast: Monday, 18 January 2021
-  name: GrowthRate
-  team_name: Los Alamos National Labs
-  url: https://zoltardata.com/model/157
 - abbreviation: UpstateSU-GRU
   actions:
   - label: Website
@@ -1342,59 +1470,6 @@
   name: ens1
   team_name: LockNQuay
   url: https://zoltardata.com/model/305
-- abbreviation: Columbia_UNC-SurvCon
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/COVID19BIOSTAT/covid19_prediction
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/292
-  dates:
-  - 2020-11-22
-  - 2020-12-13
-  - 2020-12-06
-  - 2020-11-29
-  - 2021-01-17
-  - 2020-12-20
-  - 2020-12-27
-  - 2021-01-03
-  - 2021-01-10
-  - 2021-01-03
-  - 2020-12-13
-  - 2020-09-20
-  - 2020-08-23
-  - 2020-07-12
-  - 2020-09-06
-  - 2020-09-13
-  - 2020-09-27
-  - 2020-07-26
-  - 2020-08-30
-  - 2020-08-09
-  - 2020-08-16
-  - 2020-07-05
-  - 2020-06-28
-  - 2020-08-02
-  - 2020-07-19
-  - 2020-06-16
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-15
-  - 2020-10-25
-  - 2020-11-01
-  - 2020-10-18
-  - 2020-11-08
-  description: A survival-convolution model with piece-wise transmission rates that
-    incorporates latent incubation period and provides time-varying effective reproductive
-    number.
-  earliest_forecast: Tuesday, 16 June 2020
-  forecasts: 33
-  home_url: https://github.com/COVID19BIOSTAT/covid19_prediction
-  latest_forecast: Sunday, 17 January 2021
-  name: Survival-Convolution Models
-  team_name: Columbia_UNC
-  url: https://zoltardata.com/model/292
 - abbreviation: Geneva-DetGrowth
   actions:
   - label: Website
@@ -1683,34 +1758,6 @@
   name: AI-Powered and Epidemiology-Informed Modeling System
   team_name: University of Central Florida
   url: https://zoltardata.com/model/444
-- abbreviation: OneQuietNight-ML
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/One-Quiet-Night/COVID-19-forecast
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/449
-  dates:
-  - 2020-12-06
-  - 2020-12-13
-  - 2020-11-29
-  - 2020-11-21
-  - 2021-01-17
-  - 2020-12-20
-  - 2020-12-27
-  - 2021-01-03
-  - 2021-01-10
-  description: OneQuietNight ML model uses high-level features of daily case reports
-    and movement trends data to make predictions about future Covid-19 cases.
-  earliest_forecast: Saturday, 21 November 2020
-  forecasts: 9
-  home_url: https://github.com/One-Quiet-Night/COVID-19-forecast
-  latest_forecast: Sunday, 17 January 2021
-  name: ML
-  team_name: OneQuietNight
-  url: https://zoltardata.com/model/449
 - abbreviation: UChicagoCHATTOPADHYAY-UnIT
   actions:
   - label: Website
@@ -2099,46 +2146,6 @@
   name: Simulator
   team_name: COVID-19 Simulator
   url: https://zoltardata.com/model/285
-- abbreviation: TTU-squider
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/fvbttu/squider
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/366
-  dates:
-  - 2020-11-22
-  - 2020-11-29
-  - 2020-12-13
-  - 2020-12-06
-  - 2021-01-17
-  - 2020-12-20
-  - 2020-12-27
-  - 2021-01-03
-  - 2021-01-10
-  - 2020-09-13
-  - 2020-08-17
-  - 2020-09-27
-  - 2020-08-23
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-01
-  - 2020-11-08
-  - 2020-11-15
-  - 2020-10-18
-  - 2020-10-25
-  description: SIR-based compartmental model with a power law incidence rate, unknown
-    as well as known infecteds, and time dependent social contact suppression and
-    relaxation.
-  earliest_forecast: Monday, 17 August 2020
-  forecasts: 20
-  home_url: https://github.com/fvbttu/squider
-  latest_forecast: Sunday, 17 January 2021
-  name: SQUIDER
-  team_name: Hussain Lab at Texas Tech University
-  url: https://zoltardata.com/model/366
 - abbreviation: JHU_CSSE-DECOM
   actions:
   - label: Website
@@ -2601,127 +2608,3 @@
   name: CurveFit
   team_name: Institute for Health Metrics and Evaluation
   url: https://zoltardata.com/model/154
-- abbreviation: UT-Mobility
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid-19.tacc.utexas.edu/projections/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/201
-  dates:
-  - 2020-12-07
-  - 2020-11-30
-  - 2020-11-23
-  - 2020-12-14
-  - 2020-12-21
-  - 2020-05-25
-  - 2021-01-11
-  - 2020-07-27
-  - 2020-08-17
-  - 2020-06-29
-  - 2020-09-21
-  - 2020-08-24
-  - 2020-09-28
-  - 2020-09-14
-  - 2020-05-11
-  - 2020-04-27
-  - 2020-04-20
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-07-06
-  - 2020-07-13
-  - 2020-05-25
-  - 2020-06-01
-  - 2020-06-08
-  - 2020-06-15
-  - 2020-06-22
-  - 2020-07-20
-  - 2020-08-03
-  - 2020-10-05
-  - 2020-10-12
-  - 2020-10-26
-  - 2020-11-09
-  - 2020-11-02
-  - 2020-11-16
-  - 2020-10-19
-  description: This model makes predictions assuming that social distancing patterns,
-    as measured by anonymized mobile-phone GPS traces,  remain constant in the future.This
-    model models only *first-wave deaths*.
-  earliest_forecast: Monday, 20 April 2020
-  forecasts: 35
-  home_url: https://covid-19.tacc.utexas.edu/projections/
-  latest_forecast: Monday, 11 January 2021
-  name: Mobility
-  team_name: UT-Austin COVID-19 Consortium
-  url: https://zoltardata.com/model/201
-- abbreviation: MITCovAlliance-SIR
-  actions:
-  - label: Website
-    new_window: true
-    url: http://infectiontrajectory.covidalliance.com/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/298
-  dates:
-  - 2021-01-03
-  - 2020-12-28
-  - 2021-01-11
-  - 2020-07-19
-  - 2020-07-05
-  - 2020-08-17
-  - 2020-08-31
-  - 2020-09-13
-  - 2020-09-28
-  - 2020-06-18
-  - 2020-07-26
-  - 2020-09-21
-  - 2020-06-28
-  - 2020-07-12
-  - 2020-08-03
-  - 2020-09-06
-  - 2020-10-12
-  - 2020-10-26
-  - 2020-10-19
-  description: SIR model trained on public heath regions. SIR parameters are functions
-    of static demographic and time-varying mobility features. Two-stage approach that
-    first learns magnitude of peak infections.
-  earliest_forecast: Thursday, 18 June 2020
-  forecasts: 19
-  home_url: http://infectiontrajectory.covidalliance.com/
-  latest_forecast: Monday, 11 January 2021
-  name: Two-Stage SIR
-  team_name: COVID Alliance at MIT
-  url: https://zoltardata.com/model/298
-- abbreviation: JHU_UNC_GAS-StatMechPool
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/HopkinsIDD/EpiForecastStatMech
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/437
-  dates:
-  - 2020-12-06
-  - 2021-01-03
-  - 2020-12-13
-  - 2020-12-20
-  - 2020-12-27
-  - 2021-01-10
-  - 2020-11-08
-  - 2020-11-01
-  - 2020-11-15
-  - 2020-10-25
-  description: This model jointly trains over locations, fitting to both  mechanistic
-    and statistical models. The statistical model  enforces  similar places having  similar
-    mechanistic coefficients.
-  earliest_forecast: Sunday, 25 October 2020
-  forecasts: 10
-  home_url: https://github.com/HopkinsIDD/EpiForecastStatMech
-  latest_forecast: Sunday, 10 January 2021
-  name: StatMechPool
-  team_name: JHU_UNC_GAS
-  url: https://zoltardata.com/model/437
