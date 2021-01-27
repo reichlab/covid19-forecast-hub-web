@@ -97,3 +97,4 @@ exclude:
   - README.theme.md
   - stackbit.yaml
   - requirements.txt
+  - update-reports.py

@@ -448,7 +448,7 @@ input[type="reset"],
   .button:hover,
   .button:focus,
   .button:active {
-    background-color: transparent;
+    background-color: white;
     color: #004e92;
     outline: 0; }
 
