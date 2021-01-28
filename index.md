@@ -66,7 +66,7 @@ sections:
       - title_url: https://google.com
         title_name: PBS
     content1: >-
-      [More than 90,000 Americans could die of Covid-19 in next three weeks, CDC forecast shows](https://www.cnn.com/2021/01/14/health/us-coronavirus-thursday/index.html){:target="_blank"}  
+      [More than 90,000 could die of Covid-19 in next three weeks, CDC forecast shows](https://www.cnn.com/2021/01/14/health/us-coronavirus-thursday/index.html){:target="_blank"}  
       
       _CNN_ | 14 January 2021   
 
@@ -81,7 +81,7 @@ sections:
 
       _WGBH_ | 5 January 2021  
 
-[]
+
       [How Many Americans Are About to Die?](https://www.theatlantic.com/science/archive/2020/11/coronavirus-death-rate-third-surge/617150/){:target="_blank"}  
       
       _The Atlantic_ | 19 November 2020  
