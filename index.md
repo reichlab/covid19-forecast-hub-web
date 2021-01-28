@@ -87,9 +87,9 @@ sections:
       _The Atlantic_ | 19 November 2020  
 
     content3: >-
-      [The number of people with the virus who died in the U.S. passes 300,000](https://www.nytimes.com/live/2020/12/14/world/covid-19-coronavirus#the-number-of-people-with-the-virus-who-died-in-the-us-passes-300000){:target="_blank"}
+      [The number of people with the virus who died in the U.S. passes 300,000](https://www.nytimes.com/live/2020/12/14/world/covid-19-coronavirus#the-number-of-people-with-the-virus-who-died-in-the-us-passes-300000){:target="_blank"}  
 
-      _The New York Times_ | 14 December 2020
+      _The New York Times_ | 14 December 2020  
 
 
       [With a meteoric rise in deaths, talk of waves is misguided, say Covid-19 modelers](https://www.statnews.com/2020/11/12/with-a-meteoric-rise-in-deaths-talk-of-waves-is-misguided-say-covid-19-modelers/){:target="_blank"}  
