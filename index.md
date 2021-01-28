@@ -8,7 +8,7 @@ sections:
     content: >-
       This site maintains the authoritative, up-to-date record for forecasts of COVID-19 cases, deaths and hospitalizations in the US, created by dozens of leading infectious disease modeling teams from around the globe, in coordination with the US CDC. 
     actions:
-      - label: Weekly Summary
+      - label: Weekly Reports
         url: /doc/reports
         type: secondary
         new_window: false
@@ -26,7 +26,7 @@ sections:
     grid_items:
       - title: Up-to-date forecasts
         content: >-
-          Every Monday dozens of modeling teams from across the globe submit forecasts of the trajectory of the COVID-19 outbreak in the US to our forecast data repository. We take these data and build a single [ensemble forecast](doc/ensemble/).
+          Every week dozens of modeling teams from across the globe submit forecasts of the trajectory of the COVID-19 pandemic in the US to our [forecast data repository](https://github.com/reichlab/covid19-forecast-hub). In collaboration with the US CDC, we take these data and build a single ensemble forecast which is later analyzed by, and communicated to the general public by CDC.
         actions:
           - label: Browse recent forecast data
             url: https://zoltardata.com/project/44
