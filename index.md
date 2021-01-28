@@ -38,7 +38,7 @@ sections:
             new_window: true
       - title: Public health impact
         content: >-
-           COVID-19 Forecast Hub data are used by the <a href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html" target="_blank">US Centers for Disease Control and Prevention</a> and the data journalism site <a href="https://projects.fivethirtyeight.com/covid-forecasts/" target="_blank">FiveThirtyEight</a>. Through these channels, and our public data repository, our work serves as a vital source of public information about where the outbreak is headed next.
+           COVID-19 Forecast Hub data are used by the <a href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html" target="_blank">US Centers for Disease Control and Prevention</a> and the data journalism site <a href="https://projects.fivethirtyeight.com/covid-forecasts/" target="_blank">FiveThirtyEight</a>. Through these channels, and our [public data repository](https://github.com/reichlab/covid19-forecast-hub), our work serves as a vital source of public information about where the outbreak is headed.
         actions:
           - label: Mortality forecasts @ CDC
             url: https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html
@@ -48,12 +48,16 @@ sections:
             url: https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/hospitalizations-forecasts.html
             type: link
             new_window: true
-      - title: We are hiring!
+          - label: Case forecasts @ CDC
+            url: https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/forecasts-cases.html
+            type: link
+            new_window: true
+      - title: Collaborative science
         content: >-
-           We have an open position for a post-doctoral researcher to join our team to work on applied and methodological research on forecasting and ensemble modeling. Strong quantitative background and formal training in statistics, machine learning, data science, computational epidemiology, or a closely related field is required. 
+           We work collaboratively in an open-science framework, welcoming participation from modeling teams around the globe to submit predictions from their best COVID-19 models. 
         actions:
-          - label: See job description
-            url: http://reichlab.io/pdfs/jobs/post-doc-job-description.pdf
+          - label: How to join
+            url: doc/participate/
             type: link
   - section_id: text-img
     type: section_media
