@@ -66,37 +66,37 @@ sections:
       - title_url: https://google.com
         title_name: PBS
     content1: >-
-      [Early projections of covid-19 in America underestimated its severity.](https://www.economist.com/graphic-detail/2020/05/23/early-projections-of-covid-19-in-america-underestimated-its-severity){:target="_blank"}  
+      [More than 90,000 Americans could die of Covid-19 in next three weeks, CDC forecast shows](https://www.cnn.com/2021/01/14/health/us-coronavirus-thursday/index.html){:target="_blank"}  
       
-      _The Economist_ | 23 May 2020   
+      _CNN_ | 14 January 2021   
 
 
 
-      [What computer-based models can tell us about coronavirus-and what they can't](https://www.pbs.org/newshour/show/what-computer-based-models-can-tell-us-about-coronavirus-and-what-they-cant){:target="_blank"}  
+      [We Can Still Change The Course Of The Pandemic, COVID Modeler Says](https://www.wgbh.org/news/local-news/2021/01/05/we-can-still-change-the-course-of-the-pandemic-covid-modeler-says){:target="_blank"}  
 
-      _PBS NewsHour_ | 20 May 2020 
+      _WGBH_ | 5 January 2021 
 
     content2: >-
-      [How To Make Sense of All The COVID-19 Projections? A New Model Combines Them](https://www.npr.org/sections/health-shots/2020/05/13/855038708/combining-different-models-new-coronavirus-projection-shows-110-000-deaths-by-ju){:target="_blank"}  
+      [U.S. Covid Deaths Match April Peak With Hospitals Still Filling](https://www.bloomberg.com/news/articles/2020-12-07/u-s-covid-deaths-match-april-peak-with-hospitals-still-filling){:target="_blank"}  
 
-      _NPR Morning Edition_ | 13 May 2020  
+      _Bloomberg_ | 7 December 2020  
 
 
 
-      [Scientists Crunch Data to Predict How Many People Will Get Coronavirus](https://www.wsj.com/articles/scientists-crunch-data-to-predict-how-many-people-will-get-coronavirus-11584479851){:target="_blank"}  
+      [The number of people with the virus who died in the U.S. passes 300,000](https://www.nytimes.com/live/2020/12/14/world/covid-19-coronavirus#the-number-of-people-with-the-virus-who-died-in-the-us-passes-300000){:target="_blank"}  
 
-      _The Wall Street Journal_ | 17 March 2020  
+      _The New York Times_ | 14 December 2020  
 
     content3: >-
-      [Coronavirus threat rises across U.S.: ‘We just have to assume the monster is everywhere’](https://www.washingtonpost.com/health/coronavirus-threat-rises-across-us-we-just-have-to-assume-the-monster-is-everywhere/2020/08/01/cdb505e0-d1d8-11ea-8c55-61e7fa5e82ab_story.html){:target="_blank"}  
+      [How Many Americans Are About to Die?](https://www.theatlantic.com/science/archive/2020/11/coronavirus-death-rate-third-surge/617150/){:target="_blank"}  
       
-      _Washington Post_ | 1 August 2020 
+      _The Atlantic_ | 19 November 2020 
 
 
 
-      [Where The Latest COVID-19 Models Think We're Headed ? And Why They Disagree](https://projects.fivethirtyeight.com/covid-forecasts/){:target="_blank"}  
+      [With a meteoric rise in deaths, talk of waves is misguided, say Covid-19 modelers](https://www.statnews.com/2020/11/12/with-a-meteoric-rise-in-deaths-talk-of-waves-is-misguided-say-covid-19-modelers/){:target="_blank"}  
 
-      _FiveThirtyEight_ | 1 May 2020  
+      _STAT_ | 12 November 2020  
 
     actions:
       - label: See more
