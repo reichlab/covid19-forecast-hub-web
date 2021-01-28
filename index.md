@@ -32,6 +32,10 @@ sections:
             url: https://zoltardata.com/project/44
             type: link
             new_window: true
+          - label: Read more about our weekly updates
+            url: https://covid19forecasthub.org/doc/reports/
+            type: link
+            new_window: true
       - title: Public health impact
         content: >-
            COVID-19 Forecast Hub data are used by the <a href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html" target="_blank">US Centers for Disease Control and Prevention</a> and the data journalism site <a href="https://projects.fivethirtyeight.com/covid-forecasts/" target="_blank">FiveThirtyEight</a>. Through these channels, and our public data repository, our work serves as a vital source of public information about where the outbreak is headed next.
