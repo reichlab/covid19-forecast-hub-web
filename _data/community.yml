@@ -61,6 +61,34 @@
   name: DELPHI
   team_name: CovidAnalytics at MIT
   url: https://zoltardata.com/model/196
+- abbreviation: JHUAPL-SLPHospEns
+  actions:
+  - label: Website
+    new_window: true
+    url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/462
+  dates:
+  - 2020-12-14
+  - 2021-01-11
+  - 2021-01-25
+  - 2020-12-06
+  - 2020-12-28
+  - 2020-12-21
+  - 2021-01-04
+  - 2021-01-18
+  description: Estimates an ensemble of hospitalization forecasts by simulating the
+    individual model-specific forecasts from the submitted quantile functions, and
+    linearly pooling.
+  earliest_forecast: Sunday, 06 December 2020
+  forecasts: 8
+  home_url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
+  latest_forecast: Monday, 25 January 2021
+  name: SLPHospEns
+  team_name: JHUAPL
+  url: https://zoltardata.com/model/462
 - abbreviation: CMU-TimeSeries
   actions:
   - label: Website
@@ -399,6 +427,64 @@
   name: DeepCOVID
   team_name: GT
   url: https://zoltardata.com/model/206
+- abbreviation: RobertWalraven-ESG
+  actions:
+  - label: Website
+    new_window: true
+    url: http://rwalraven.com/COVID19
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/301
+  dates:
+  - 2020-09-14
+  - 2021-01-25
+  - 2020-12-07
+  - 2020-11-30
+  - 2020-11-23
+  - 2020-12-14
+  - 2020-12-21
+  - 2021-01-18
+  - 2021-01-04
+  - 2020-12-28
+  - 2021-01-11
+  - 2020-08-10
+  - 2020-08-30
+  - 2020-09-06
+  - 2020-09-14
+  - 2020-09-28
+  - 2020-08-24
+  - 2020-09-07
+  - 2020-08-01
+  - 2020-06-28
+  - 2020-06-30
+  - 2020-07-07
+  - 2020-08-16
+  - 2020-08-03
+  - 2020-08-17
+  - 2020-07-26
+  - 2020-08-10
+  - 2020-07-27
+  - 2020-07-12
+  - 2020-08-23
+  - 2020-07-06
+  - 2020-09-21
+  - 2020-07-20
+  - 2020-10-05
+  - 2020-10-12
+  - 2020-11-16
+  - 2020-11-02
+  - 2020-11-09
+  - 2020-10-19
+  - 2020-10-26
+  description: Multiple skewed gaussian distribution peaks fit to raw data
+  earliest_forecast: Sunday, 28 June 2020
+  forecasts: 40
+  home_url: http://rwalraven.com/COVID19
+  latest_forecast: Monday, 25 January 2021
+  name: EmpericalSkewedGaussian
+  team_name: Robert Walraven
+  url: https://zoltardata.com/model/301
 - abbreviation: COVIDhub-ensemble
   actions:
   - label: Website
@@ -2631,90 +2717,6 @@
   name: CurveFit
   team_name: Institute for Health Metrics and Evaluation
   url: https://zoltardata.com/model/154
-- abbreviation: JHUAPL-SLPHospEns
-  actions:
-  - label: Website
-    new_window: true
-    url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/462
-  dates:
-  - 2020-12-14
-  - 2021-01-11
-  - 2020-12-06
-  - 2020-12-28
-  - 2020-12-21
-  - 2021-01-04
-  - 2021-01-18
-  description: Estimates an ensemble of hospitalization forecasts by simulating the
-    individual model-specific forecasts from the submitted quantile functions, and
-    linearly pooling.
-  earliest_forecast: Sunday, 06 December 2020
-  forecasts: 7
-  home_url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
-  latest_forecast: Monday, 18 January 2021
-  name: SLPHospEns
-  team_name: JHUAPL
-  url: https://zoltardata.com/model/462
-- abbreviation: RobertWalraven-ESG
-  actions:
-  - label: Website
-    new_window: true
-    url: http://rwalraven.com/COVID19
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/301
-  dates:
-  - 2020-09-14
-  - 2020-12-07
-  - 2020-11-30
-  - 2020-11-23
-  - 2020-12-14
-  - 2020-12-21
-  - 2021-01-18
-  - 2021-01-04
-  - 2020-12-28
-  - 2021-01-11
-  - 2020-08-10
-  - 2020-08-30
-  - 2020-09-06
-  - 2020-09-14
-  - 2020-09-28
-  - 2020-08-24
-  - 2020-09-07
-  - 2020-08-01
-  - 2020-06-28
-  - 2020-06-30
-  - 2020-07-07
-  - 2020-08-16
-  - 2020-08-03
-  - 2020-08-17
-  - 2020-07-26
-  - 2020-08-10
-  - 2020-07-27
-  - 2020-07-12
-  - 2020-08-23
-  - 2020-07-06
-  - 2020-09-21
-  - 2020-07-20
-  - 2020-10-05
-  - 2020-10-12
-  - 2020-11-16
-  - 2020-11-02
-  - 2020-11-09
-  - 2020-10-19
-  - 2020-10-26
-  description: Multiple skewed gaussian distribution peaks fit to raw data
-  earliest_forecast: Sunday, 28 June 2020
-  forecasts: 39
-  home_url: http://rwalraven.com/COVID19
-  latest_forecast: Monday, 18 January 2021
-  name: EmpericalSkewedGaussian
-  team_name: Robert Walraven
-  url: https://zoltardata.com/model/301
 - abbreviation: Caltech-CS156
   actions:
   - label: Website
