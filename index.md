@@ -66,7 +66,7 @@ sections:
       - title_url: https://google.com
         title_name: PBS
     content1: >-
-      [More than 90,000 Americans could die of Covid-19 in next 3 weeks, CDC forecast shows](https://www.cnn.com/2021/01/14/health/us-coronavirus-thursday/index.html){:target="_blank"}  
+      [More than 90,000 Americans could die of Covid-19 in next three weeks, CDC forecast shows](https://www.cnn.com/2021/01/14/health/us-coronavirus-thursday/index.html){:target="_blank"}  
       
       _CNN_ | 14 January 2021   
 
