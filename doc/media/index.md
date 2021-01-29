@@ -3,6 +3,17 @@ title: In the news
 layout: docs
 ---
 
+
+[Fauci: Vaccinations will help coronavirus variants from emerging](https://www.cnn.com/2021/01/21/health/us-coronavirus-thursday/index.html){:target="_blank"}  
+_CNN_ | 22 January 2021
+
+***
+
+[Covid Death Rate in U.S. Expected to Dip Further in Next Month](https://www.bloomberg.com/news/articles/2021-01-20/covid-death-rate-in-u-s-is-expected-to-decline-in-next-month){:target="_blank"}  
+_Bloomberg_ | 20 January 2021
+
+***
+
 [More than 90,000 Americans could die of Covid-19 in next three weeks, CDC forecast shows](https://www.cnn.com/2021/01/14/health/us-coronavirus-thursday/index.html){:target="_blank"}  
 _CNN_ | 14 January 2021
 
