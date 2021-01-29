@@ -1,5 +1,5 @@
 ---
-title: Weekly Reports
+title: Weekly reports
 layout: docs
 ---
 
