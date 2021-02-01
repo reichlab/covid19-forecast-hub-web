@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[The Hard Lessons of Modeling the Coronavirus Pandemic](https://www.quantamagazine.org/the-hard-lessons-of-modeling-the-coronavirus-pandemic-20210128/){:target="_blank"}  
+_Quanta Magazine_ | 28 January 2021
+
+***
+
 [More than 90,000 Americans could die of Covid-19 in next three weeks, CDC forecast shows](https://www.cnn.com/2021/01/14/health/us-coronavirus-thursday/index.html){:target="_blank"}  
 _CNN_ | 14 January 2021
 
