@@ -62,6 +62,35 @@
   name: DELPHI
   team_name: CovidAnalytics at MIT
   url: https://zoltardata.com/model/196
+- abbreviation: JHUAPL-SLPHospEns
+  actions:
+  - label: Website
+    new_window: true
+    url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/462
+  dates:
+  - 2020-12-14
+  - 2021-01-11
+  - 2021-01-25
+  - 2020-12-06
+  - 2021-02-01
+  - 2020-12-28
+  - 2020-12-21
+  - 2021-01-04
+  - 2021-01-18
+  description: Estimates an ensemble of hospitalization forecasts by simulating the
+    individual model-specific forecasts from the submitted quantile functions, and
+    linearly pooling.
+  earliest_forecast: Sunday, 06 December 2020
+  forecasts: 9
+  home_url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
+  latest_forecast: Monday, 01 February 2021
+  name: SLPHospEns
+  team_name: JHUAPL
+  url: https://zoltardata.com/model/462
 - abbreviation: CMU-TimeSeries
   actions:
   - label: Website
@@ -124,6 +153,7 @@
   - 2021-01-25
   - 2020-12-07
   - 2021-02-01
+  - 2021-02-01
   - 2020-12-14
   - 2021-01-18
   - 2020-11-30
@@ -151,7 +181,7 @@
   - 2020-11-02
   description: National level and state level, near-term (1-4 week) fatality forecasts.
   earliest_forecast: Saturday, 22 August 2020
-  forecasts: 28
+  forecasts: 29
   home_url: https://stevemcconnell.com/covid
   latest_forecast: Monday, 01 February 2021
   name: Covid Complete
@@ -242,6 +272,73 @@
   name: DeepGLEAM
   team_name: UCSD_NEU
   url: https://zoltardata.com/model/378
+- abbreviation: FAIR-NRAR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/448
+  dates:
+  - 2021-01-21
+  - 2020-11-24
+  - 2020-12-01
+  - 2021-01-22
+  - 2020-11-30
+  - 2020-12-03
+  - 2020-12-07
+  - 2020-12-15
+  - 2020-12-08
+  - 2021-01-19
+  - 2020-12-14
+  - 2020-12-10
+  - 2020-12-11
+  - 2021-01-13
+  - 2020-12-06
+  - 2021-01-11
+  - 2021-01-23
+  - 2021-01-15
+  - 2021-01-25
+  - 2020-12-13
+  - 2021-01-27
+  - 2021-01-16
+  - 2020-12-16
+  - 2020-12-17
+  - 2021-01-17
+  - 2021-01-24
+  - 2020-12-18
+  - 2020-12-22
+  - 2020-11-29
+  - 2020-12-19
+  - 2020-12-23
+  - 2020-12-20
+  - 2021-01-29
+  - 2020-12-24
+  - 2020-11-22
+  - 2021-01-31
+  - 2021-02-01
+  - 2020-12-30
+  - 2020-12-28
+  - 2020-12-21
+  - 2021-01-05
+  - 2021-01-06
+  - 2021-01-03
+  - 2021-01-09
+  - 2021-01-18
+  - 2020-11-19
+  - 2020-11-18
+  - 2020-11-18
+  - 2020-11-19
+  description: Neural Relational Autoregressive Model
+  earliest_forecast: Wednesday, 18 November 2020
+  forecasts: 49
+  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  latest_forecast: Monday, 01 February 2021
+  name: NRAR
+  team_name: Facebook AI Research
+  url: https://zoltardata.com/model/448
 - abbreviation: IBF-TimeSeries
   actions:
   - label: Website
@@ -356,8 +453,16 @@
   - 2020-09-14
   - 2021-01-25
   - 2021-02-01
+  - 2020-07-06
+  - 2020-07-07
   - 2020-12-07
+  - 2020-07-12
+  - 2020-07-27
+  - 2020-08-01
   - 2020-11-30
+  - 2020-07-20
+  - 2020-07-26
+  - 2020-08-03
   - 2020-11-23
   - 2020-12-14
   - 2020-12-21
@@ -396,7 +501,7 @@
   - 2020-10-26
   description: Multiple skewed gaussian distribution peaks fit to raw data
   earliest_forecast: Sunday, 28 June 2020
-  forecasts: 41
+  forecasts: 49
   home_url: http://rwalraven.com/COVID19
   latest_forecast: Monday, 01 February 2021
   name: EmpericalSkewedGaussian
@@ -446,7 +551,7 @@
   name: USCounty
   team_name: Pandemic Central (itsonit.com)
   url: https://zoltardata.com/model/360
-- abbreviation: COVIDhub-ensemble
+- abbreviation: COVIDhub-baseline
   actions:
   - label: Website
     new_window: true
@@ -454,60 +559,60 @@
   - label: Forecast data
     new_window: true
     type: url
-    url: https://zoltardata.com/model/159
+    url: https://zoltardata.com/model/302
   dates:
-  - 2020-11-23
-  - 2020-11-30
-  - 2020-12-14
   - 2020-12-07
-  - 2021-01-11
-  - 2020-12-21
-  - 2020-12-28
-  - 2021-02-01
+  - 2020-12-14
   - 2021-01-25
+  - 2021-02-01
+  - 2020-11-30
+  - 2020-12-28
   - 2021-01-18
-  - 2021-01-04
+  - 2020-12-21
   - 2021-01-11
-  - 2020-08-17
+  - 2020-11-23
+  - 2021-01-04
   - 2020-07-06
-  - 2020-09-14
-  - 2020-07-27
-  - 2020-08-24
   - 2020-09-07
-  - 2020-08-10
-  - 2020-09-21
-  - 2020-06-29
   - 2020-07-13
-  - 2020-08-03
+  - 2020-05-25
   - 2020-08-31
-  - 2020-05-04
+  - 2020-05-18
+  - 2020-08-24
+  - 2020-09-28
+  - 2020-06-15
+  - 2020-06-22
+  - 2020-08-10
+  - 2020-09-14
+  - 2020-08-03
+  - 2020-08-17
+  - 2020-09-21
+  - 2020-07-20
+  - 2020-04-20
+  - 2020-04-06
+  - 2020-04-27
+  - 2020-06-08
   - 2020-05-11
   - 2020-04-13
-  - 2020-04-27
-  - 2020-05-25
-  - 2020-05-18
+  - 2020-06-29
+  - 2020-05-04
   - 2020-06-01
-  - 2020-07-20
-  - 2020-06-22
-  - 2020-06-08
-  - 2020-06-15
-  - 2020-09-28
+  - 2020-07-27
   - 2020-10-05
   - 2020-10-12
-  - 2020-11-02
-  - 2020-10-19
-  - 2020-10-26
   - 2020-11-09
   - 2020-11-16
-  description: An ensemble, or model average, of submitted forecasts to the COVID-19
-    Forecast Hub.
-  earliest_forecast: Monday, 13 April 2020
-  forecasts: 43
+  - 2020-10-19
+  - 2020-11-02
+  - 2020-10-26
+  description: This model is a baseline predictive model.
+  earliest_forecast: Monday, 06 April 2020
+  forecasts: 44
   home_url: https://covid19forecasthub.org/
   latest_forecast: Monday, 01 February 2021
-  name: ensemble
+  name: baseline
   team_name: COVID-19 Forecast Hub
-  url: https://zoltardata.com/model/159
+  url: https://zoltardata.com/model/302
 - abbreviation: epiforecasts-ensemble1
   actions:
   - label: Website
@@ -1397,6 +1502,106 @@
   name: Survival-Convolution Models
   team_name: Columbia_UNC
   url: https://zoltardata.com/model/292
+- abbreviation: Geneva-DetGrowth
+  actions:
+  - label: Website
+    new_window: true
+    url: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/192
+  dates:
+  - 2020-12-13
+  - 2020-12-06
+  - 2020-11-29
+  - 2021-01-24
+  - 2021-01-17
+  - 2020-12-20
+  - 2020-11-22
+  - 2021-01-31
+  - 2021-01-03
+  - 2021-01-10
+  - 2020-12-27
+  - 2020-06-07
+  - 2020-05-19
+  - 2020-09-20
+  - 2020-04-27
+  - 2020-07-19
+  - 2020-09-06
+  - 2020-09-13
+  - 2020-04-18
+  - 2020-04-24
+  - 2020-08-23
+  - 2020-06-14
+  - 2020-06-01
+  - 2020-06-21
+  - 2020-07-05
+  - 2020-04-17
+  - 2020-05-02
+  - 2020-04-20
+  - 2020-04-30
+  - 2020-07-12
+  - 2020-08-30
+  - 2020-05-26
+  - 2020-08-02
+  - 2020-09-27
+  - 2020-07-26
+  - 2020-08-16
+  - 2020-06-28
+  - 2020-08-09
+  - 2020-05-07
+  - 2020-04-21
+  - 2020-05-09
+  - 2020-05-11
+  - 2020-05-14
+  - 2020-04-25
+  - 2020-04-22
+  - 2020-04-16
+  - 2020-04-29
+  - 2020-05-12
+  - 2020-05-24
+  - 2020-05-22
+  - 2020-05-15
+  - 2020-05-17
+  - 2020-05-06
+  - 2020-05-16
+  - 2020-05-18
+  - 2020-05-04
+  - 2020-05-20
+  - 2020-04-28
+  - 2020-05-08
+  - 2020-04-15
+  - 2020-05-21
+  - 2020-05-31
+  - 2020-05-25
+  - 2020-05-10
+  - 2020-05-13
+  - 2020-05-03
+  - 2020-05-28
+  - 2020-04-19
+  - 2020-04-23
+  - 2020-05-05
+  - 2020-05-23
+  - 2020-05-27
+  - 2020-05-01
+  - 2020-10-04
+  - 2020-10-11
+  - 2020-11-08
+  - 2020-10-25
+  - 2020-11-01
+  - 2020-11-15
+  - 2020-10-18
+  description: We calculate the growth rate of cumulative cases (resp. deaths) between
+    two days ago and today.  If greater than 5%, we use an exponential model to forecast.
+    Otherwise, we use a linear model.
+  earliest_forecast: Wednesday, 15 April 2020
+  forecasts: 80
+  home_url: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
+  latest_forecast: Sunday, 31 January 2021
+  name: DeterministicGrowth
+  team_name: University of Geneva / Swiss Data Science Center
+  url: https://zoltardata.com/model/192
 - abbreviation: MIT_CritData-GBCF
   actions:
   - label: Website
@@ -1560,72 +1765,6 @@
   name: AI-Powered and Epidemiology-Informed Modeling System
   team_name: University of Central Florida
   url: https://zoltardata.com/model/444
-- abbreviation: FAIR-NRAR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/448
-  dates:
-  - 2021-01-21
-  - 2020-11-24
-  - 2020-12-01
-  - 2021-01-22
-  - 2020-11-30
-  - 2020-12-03
-  - 2020-12-07
-  - 2020-12-15
-  - 2020-12-08
-  - 2021-01-19
-  - 2020-12-14
-  - 2020-12-10
-  - 2020-12-11
-  - 2021-01-13
-  - 2020-12-06
-  - 2021-01-11
-  - 2021-01-23
-  - 2021-01-15
-  - 2021-01-25
-  - 2020-12-13
-  - 2021-01-27
-  - 2021-01-16
-  - 2020-12-16
-  - 2020-12-17
-  - 2021-01-17
-  - 2021-01-24
-  - 2020-12-18
-  - 2020-12-22
-  - 2020-11-29
-  - 2020-12-19
-  - 2020-12-23
-  - 2020-12-20
-  - 2021-01-29
-  - 2020-12-24
-  - 2020-11-22
-  - 2021-01-31
-  - 2020-12-30
-  - 2020-12-28
-  - 2020-12-21
-  - 2021-01-05
-  - 2021-01-06
-  - 2021-01-03
-  - 2021-01-09
-  - 2021-01-18
-  - 2020-11-19
-  - 2020-11-18
-  - 2020-11-18
-  - 2020-11-19
-  description: Neural Relational Autoregressive Model
-  earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 48
-  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Sunday, 31 January 2021
-  name: NRAR
-  team_name: Facebook AI Research
-  url: https://zoltardata.com/model/448
 - abbreviation: OneQuietNight-ML
   actions:
   - label: Website
@@ -2338,6 +2477,68 @@
   name: SI_kJalpha
   team_name: University of Southern California Data Science Lab
   url: https://zoltardata.com/model/300
+- abbreviation: JHU_IDD-CovidSP
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/255
+  dates:
+  - 2021-01-31
+  - 2020-12-06
+  - 2020-12-20
+  - 2021-01-24
+  - 2020-11-22
+  - 2020-12-13
+  - 2020-12-27
+  - 2020-05-24
+  - 2020-11-29
+  - 2021-01-17
+  - 2021-01-03
+  - 2021-01-10
+  - 2020-09-13
+  - 2020-09-20
+  - 2020-09-27
+  - 2020-08-30
+  - 2020-08-02
+  - 2020-08-23
+  - 2020-06-28
+  - 2020-07-12
+  - 2020-07-26
+  - 2020-09-06
+  - 2020-07-19
+  - 2020-04-24
+  - 2020-05-17
+  - 2020-05-24
+  - 2020-08-16
+  - 2020-05-31
+  - 2020-07-05
+  - 2020-06-07
+  - 2020-06-21
+  - 2020-06-14
+  - 2020-08-09
+  - 2020-09-20
+  - 2020-09-13
+  - 2020-10-04
+  - 2020-09-27
+  - 2020-10-11
+  - 2020-11-08
+  - 2020-10-18
+  - 2020-11-01
+  - 2020-10-25
+  - 2020-11-15
+  description: County-level metapopulation model with commuting and stochastic SEIR
+    disease dynamics with social-distancing indicators.
+  earliest_forecast: Friday, 24 April 2020
+  forecasts: 43
+  home_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
+  latest_forecast: Sunday, 31 January 2021
+  name: CovidScenarioPipeline
+  team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
+  url: https://zoltardata.com/model/255
 - abbreviation: RPI_UW-Mob_Collision
   actions:
   - label: Website
@@ -2489,34 +2690,6 @@
   name: CurveFit
   team_name: Institute for Health Metrics and Evaluation
   url: https://zoltardata.com/model/154
-- abbreviation: JHUAPL-SLPHospEns
-  actions:
-  - label: Website
-    new_window: true
-    url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/462
-  dates:
-  - 2020-12-14
-  - 2021-01-11
-  - 2021-01-25
-  - 2020-12-06
-  - 2020-12-28
-  - 2020-12-21
-  - 2021-01-04
-  - 2021-01-18
-  description: Estimates an ensemble of hospitalization forecasts by simulating the
-    individual model-specific forecasts from the submitted quantile functions, and
-    linearly pooling.
-  earliest_forecast: Sunday, 06 December 2020
-  forecasts: 8
-  home_url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
-  latest_forecast: Monday, 25 January 2021
-  name: SLPHospEns
-  team_name: JHUAPL
-  url: https://zoltardata.com/model/462
 - abbreviation: UT-Mobility
   actions:
   - label: Website
@@ -2573,105 +2746,6 @@
   name: Mobility
   team_name: UT-Austin COVID-19 Consortium
   url: https://zoltardata.com/model/201
-- abbreviation: Geneva-DetGrowth
-  actions:
-  - label: Website
-    new_window: true
-    url: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/192
-  dates:
-  - 2020-12-13
-  - 2020-12-06
-  - 2020-11-29
-  - 2021-01-24
-  - 2021-01-17
-  - 2020-12-20
-  - 2020-11-22
-  - 2021-01-03
-  - 2021-01-10
-  - 2020-12-27
-  - 2020-06-07
-  - 2020-05-19
-  - 2020-09-20
-  - 2020-04-27
-  - 2020-07-19
-  - 2020-09-06
-  - 2020-09-13
-  - 2020-04-18
-  - 2020-04-24
-  - 2020-08-23
-  - 2020-06-14
-  - 2020-06-01
-  - 2020-06-21
-  - 2020-07-05
-  - 2020-04-17
-  - 2020-05-02
-  - 2020-04-20
-  - 2020-04-30
-  - 2020-07-12
-  - 2020-08-30
-  - 2020-05-26
-  - 2020-08-02
-  - 2020-09-27
-  - 2020-07-26
-  - 2020-08-16
-  - 2020-06-28
-  - 2020-08-09
-  - 2020-05-07
-  - 2020-04-21
-  - 2020-05-09
-  - 2020-05-11
-  - 2020-05-14
-  - 2020-04-25
-  - 2020-04-22
-  - 2020-04-16
-  - 2020-04-29
-  - 2020-05-12
-  - 2020-05-24
-  - 2020-05-22
-  - 2020-05-15
-  - 2020-05-17
-  - 2020-05-06
-  - 2020-05-16
-  - 2020-05-18
-  - 2020-05-04
-  - 2020-05-20
-  - 2020-04-28
-  - 2020-05-08
-  - 2020-04-15
-  - 2020-05-21
-  - 2020-05-31
-  - 2020-05-25
-  - 2020-05-10
-  - 2020-05-13
-  - 2020-05-03
-  - 2020-05-28
-  - 2020-04-19
-  - 2020-04-23
-  - 2020-05-05
-  - 2020-05-23
-  - 2020-05-27
-  - 2020-05-01
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-08
-  - 2020-10-25
-  - 2020-11-01
-  - 2020-11-15
-  - 2020-10-18
-  description: We calculate the growth rate of cumulative cases (resp. deaths) between
-    two days ago and today.  If greater than 5%, we use an exponential model to forecast.
-    Otherwise, we use a linear model.
-  earliest_forecast: Wednesday, 15 April 2020
-  forecasts: 79
-  home_url: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
-  latest_forecast: Sunday, 24 January 2021
-  name: DeterministicGrowth
-  team_name: University of Geneva / Swiss Data Science Center
-  url: https://zoltardata.com/model/192
 - abbreviation: UCSB-ACTS
   actions:
   - label: Website
@@ -2764,64 +2838,3 @@
   name: Spatiotemporal Epidemic Modeling
   team_name: Iowa State - Lily Wang's Research Group
   url: https://zoltardata.com/model/266
-- abbreviation: JHU_IDD-CovidSP
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/255
-  dates:
-  - 2020-12-06
-  - 2020-12-20
-  - 2021-01-24
-  - 2020-11-22
-  - 2020-12-13
-  - 2020-12-27
-  - 2020-05-24
-  - 2020-11-29
-  - 2021-01-17
-  - 2021-01-03
-  - 2021-01-10
-  - 2020-09-13
-  - 2020-09-20
-  - 2020-09-27
-  - 2020-08-30
-  - 2020-08-02
-  - 2020-08-23
-  - 2020-06-28
-  - 2020-07-12
-  - 2020-07-26
-  - 2020-09-06
-  - 2020-07-19
-  - 2020-04-24
-  - 2020-05-17
-  - 2020-05-24
-  - 2020-08-16
-  - 2020-05-31
-  - 2020-07-05
-  - 2020-06-07
-  - 2020-06-21
-  - 2020-06-14
-  - 2020-08-09
-  - 2020-09-20
-  - 2020-09-13
-  - 2020-10-04
-  - 2020-09-27
-  - 2020-10-11
-  - 2020-11-08
-  - 2020-10-18
-  - 2020-11-01
-  - 2020-10-25
-  - 2020-11-15
-  description: County-level metapopulation model with commuting and stochastic SEIR
-    disease dynamics with social-distancing indicators.
-  earliest_forecast: Friday, 24 April 2020
-  forecasts: 42
-  home_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
-  latest_forecast: Sunday, 24 January 2021
-  name: CovidScenarioPipeline
-  team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
-  url: https://zoltardata.com/model/255
