@@ -18,7 +18,7 @@ for rep in reps:
         continue
     date = '-'.join(parts[:3])
     if len(parts)==5:
-        state="national"
+        state="US"
     elif len(parts)==6:
         state = parts[3]
     else:
@@ -28,5 +28,7 @@ for rep in reps:
     result[state].append(date)
 for k in result:
     result[k] = sorted(result[k], reverse=True)
-result = collections.OrderedDict(sorted(result.items(), key = lambda x: len(x[1]), reverse=True))
+
+# Sort keys alphabetically, keeping US at the top. 
+result = collections.OrderedDict(sorted(result.items(), key = lambda x: 'AAA' if x[0] == 'US' else x[0]))
 json.dump(result, open("reports/reports.json", "w"))
