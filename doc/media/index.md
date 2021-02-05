@@ -3,8 +3,19 @@ title: In the news
 layout: docs
 ---
 
+
 [The Hard Lessons of Modeling the Coronavirus Pandemic](https://www.quantamagazine.org/the-hard-lessons-of-modeling-the-coronavirus-pandemic-20210128/){:target="_blank"}  
 _Quanta Magazine_ | 28 January 2021
+
+***
+
+[Fauci: Vaccinations will help coronavirus variants from emerging](https://www.cnn.com/2021/01/21/health/us-coronavirus-thursday/index.html){:target="_blank"}  
+_CNN_ | 22 January 2021
+
+***
+
+[Covid Death Rate in U.S. Expected to Dip Further in Next Month](https://www.bloomberg.com/news/articles/2021-01-20/covid-death-rate-in-u-s-is-expected-to-decline-in-next-month){:target="_blank"}  
+_Bloomberg_ | 20 January 2021
 
 ***
 
