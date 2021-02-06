@@ -38,7 +38,7 @@ header:
 #      has_subnav: false
     - label: Visualization
       url: 'https://viz.covid19forecasthub.org/'
-      type: primary
+      type: link
       has_subnav: false
       new_window: true
     - label: Reports
