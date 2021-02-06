@@ -6,9 +6,9 @@ sections:
     title: The COVID-19 Forecast Hub
     image: images/5.jpg
     content: >-
-      This site maintains the authoritative, up-to-date record for forecasts of COVID-19 deaths and hospitalizations in the US, created by dozens of leading infectious disease modeling teams from around the globe, in coordination with CDC. 
+      This site maintains the authoritative, up-to-date record for forecasts of COVID-19 cases, deaths and hospitalizations in the US, created by dozens of leading infectious disease modeling teams from around the globe, in coordination with the US CDC. 
     actions:
-      - label: Weekly Summary
+      - label: Weekly Reports
         url: /doc/reports
         type: secondary
         new_window: false
@@ -26,15 +26,19 @@ sections:
     grid_items:
       - title: Up-to-date forecasts
         content: >-
-          Every Monday dozens of modeling teams from across the globe submit forecasts of the trajectory of the COVID-19 outbreak in the US to our forecast data repository. We take these data and build a single [ensemble forecast](doc/ensemble/).
+          Every week dozens of modeling teams from across the globe submit forecasts of the trajectory of the COVID-19 pandemic in the US to our [forecast data repository](https://github.com/reichlab/covid19-forecast-hub). In collaboration with the US CDC, we take these data and build a single ensemble forecast which is later analyzed by, and communicated to the general public by CDC.
         actions:
           - label: Browse recent forecast data
             url: https://zoltardata.com/project/44
             type: link
             new_window: true
+          - label: Read more about our weekly updates
+            url: https://covid19forecasthub.org/doc/reports/
+            type: link
+            new_window: true
       - title: Public health impact
         content: >-
-           COVID-19 Forecast Hub data are used by the <a href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html" target="_blank">US Centers for Disease Control and Prevention</a> and the data journalism site <a href="https://projects.fivethirtyeight.com/covid-forecasts/" target="_blank">FiveThirtyEight</a>. Through these channels, and our public data repository, our work serves as a vital source of public information about where the outbreak is headed next.
+           COVID-19 Forecast Hub data are used by the <a href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html" target="_blank">US Centers for Disease Control and Prevention</a> and the data journalism site <a href="https://projects.fivethirtyeight.com/covid-forecasts/" target="_blank">FiveThirtyEight</a>. Through these channels, and our [public data repository](https://github.com/reichlab/covid19-forecast-hub), our work serves as a vital source of public information about where the outbreak is headed.
         actions:
           - label: Mortality forecasts @ CDC
             url: https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html
@@ -44,12 +48,16 @@ sections:
             url: https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/hospitalizations-forecasts.html
             type: link
             new_window: true
-      - title: We are hiring!
+          - label: Case forecasts @ CDC
+            url: https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/forecasts-cases.html
+            type: link
+            new_window: true
+      - title: Collaborative science
         content: >-
-           We have an open position for a post-doctoral researcher to join our team to work on applied and methodological research on forecasting and ensemble modeling. Strong quantitative background and formal training in statistics, machine learning, data science, computational epidemiology, or a closely related field is required. 
+           We work collaboratively in an open-science framework, welcoming participation from modeling teams around the globe to submit predictions from their best COVID-19 models. 
         actions:
-          - label: See job description
-            url: http://reichlab.io/pdfs/jobs/post-doc-job-description.pdf
+          - label: How to join
+            url: doc/participate/
             type: link
   - section_id: text-img
     type: section_media
@@ -58,37 +66,35 @@ sections:
       - title_url: https://google.com
         title_name: PBS
     content1: >-
-      [Early projections of covid-19 in America underestimated its severity.](https://www.economist.com/graphic-detail/2020/05/23/early-projections-of-covid-19-in-america-underestimated-its-severity){:target="_blank"}  
+      [More than 90,000 could die of Covid-19 in next three weeks, CDC forecast shows](https://www.cnn.com/2021/01/14/health/us-coronavirus-thursday/index.html){:target="_blank"}  
       
-      _The Economist_ | 23 May 2020   
+      _CNN_ | 14 January 2021   
 
 
+      [U.S. Covid Deaths Match April Peak With Hospitals Still Filling](https://www.bloomberg.com/news/articles/2020-12-07/u-s-covid-deaths-match-april-peak-with-hospitals-still-filling){:target="_blank"}  
 
-      [What computer-based models can tell us about coronavirus-and what they can't](https://www.pbs.org/newshour/show/what-computer-based-models-can-tell-us-about-coronavirus-and-what-they-cant){:target="_blank"}  
+      _Bloomberg_ | 7 December 2020
 
-      _PBS NewsHour_ | 20 May 2020 
 
     content2: >-
-      [How To Make Sense of All The COVID-19 Projections? A New Model Combines Them](https://www.npr.org/sections/health-shots/2020/05/13/855038708/combining-different-models-new-coronavirus-projection-shows-110-000-deaths-by-ju){:target="_blank"}  
+      [We Can Still Change The Course Of The Pandemic, COVID Modeler Says](https://www.wgbh.org/news/local-news/2021/01/05/we-can-still-change-the-course-of-the-pandemic-covid-modeler-says){:target="_blank"}  
 
-      _NPR Morning Edition_ | 13 May 2020  
+      _WGBH_ | 5 January 2021  
 
 
-
-      [Scientists Crunch Data to Predict How Many People Will Get Coronavirus](https://www.wsj.com/articles/scientists-crunch-data-to-predict-how-many-people-will-get-coronavirus-11584479851){:target="_blank"}  
-
-      _The Wall Street Journal_ | 17 March 2020  
+      [How Many Americans Are About to Die?](https://www.theatlantic.com/science/archive/2020/11/coronavirus-death-rate-third-surge/617150/){:target="_blank"}  
+      
+      _The Atlantic_ | 19 November 2020  
 
     content3: >-
-      [Coronavirus threat rises across U.S.: ‘We just have to assume the monster is everywhere’](https://www.washingtonpost.com/health/coronavirus-threat-rises-across-us-we-just-have-to-assume-the-monster-is-everywhere/2020/08/01/cdb505e0-d1d8-11ea-8c55-61e7fa5e82ab_story.html){:target="_blank"}  
-      
-      _Washington Post_ | 1 August 2020 
+      [The number of people with the virus who died in the U.S. passes 300,000](https://www.nytimes.com/live/2020/12/14/world/covid-19-coronavirus#the-number-of-people-with-the-virus-who-died-in-the-us-passes-300000){:target="_blank"}  
+
+      _The New York Times_ | 14 December 2020  
 
 
+      [With a meteoric rise in deaths, talk of waves is misguided, say Covid-19 modelers](https://www.statnews.com/2020/11/12/with-a-meteoric-rise-in-deaths-talk-of-waves-is-misguided-say-covid-19-modelers/){:target="_blank"}  
 
-      [Where The Latest COVID-19 Models Think We're Headed ? And Why They Disagree](https://projects.fivethirtyeight.com/covid-forecasts/){:target="_blank"}  
-
-      _FiveThirtyEight_ | 1 May 2020  
+      _STAT_ | 12 November 2020  
 
     actions:
       - label: See more
