@@ -1,3 +1,222 @@
+- abbreviation: GT_CHHS-COVID19
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/pkeskinocak/Center-for-Health-and-Humanitarian-Systems/tree/master/COVID-19
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/279
+  dates:
+  - 2021-02-06
+  - 2020-09-13
+  - 2020-09-06
+  - 2020-08-30
+  - 2020-07-05
+  - 2020-07-12
+  - 2020-08-09
+  - 2020-06-21
+  - 2020-07-19
+  - 2020-08-16
+  - 2020-06-28
+  - 2020-07-26
+  - 2020-08-02
+  - 2020-05-31
+  - 2020-06-07
+  - 2020-06-14
+  - 2020-08-23
+  description: Agent-based simulation model to project COVID19 infection spread.
+  earliest_forecast: Sunday, 31 May 2020
+  forecasts: 17
+  home_url: https://github.com/pkeskinocak/Center-for-Health-and-Humanitarian-Systems/tree/master/COVID-19
+  latest_forecast: Saturday, 06 February 2021
+  name: COVID19
+  team_name: Georgia Institute of Technology Center for Health and Humanitarian Systems
+  url: https://zoltardata.com/model/279
+- abbreviation: FAIR-NRAR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/448
+  dates:
+  - 2021-01-21
+  - 2020-11-24
+  - 2020-12-01
+  - 2021-01-22
+  - 2020-11-30
+  - 2020-12-03
+  - 2020-12-07
+  - 2020-12-15
+  - 2020-12-08
+  - 2021-01-19
+  - 2020-12-14
+  - 2020-12-10
+  - 2020-12-11
+  - 2021-01-13
+  - 2020-12-06
+  - 2021-01-11
+  - 2021-01-23
+  - 2021-01-15
+  - 2021-01-25
+  - 2020-12-13
+  - 2021-01-27
+  - 2021-01-16
+  - 2020-12-16
+  - 2020-12-17
+  - 2021-01-17
+  - 2021-01-24
+  - 2020-12-18
+  - 2020-12-22
+  - 2020-11-29
+  - 2020-12-19
+  - 2020-12-23
+  - 2021-02-02
+  - 2021-02-05
+  - 2020-12-20
+  - 2021-01-29
+  - 2020-12-24
+  - 2021-02-04
+  - 2020-11-22
+  - 2021-01-31
+  - 2021-02-01
+  - 2020-12-30
+  - 2020-12-28
+  - 2020-12-21
+  - 2021-01-05
+  - 2021-01-06
+  - 2021-01-03
+  - 2021-01-09
+  - 2021-01-18
+  - 2020-11-19
+  - 2020-11-18
+  - 2020-11-18
+  - 2020-11-19
+  description: Neural Relational Autoregressive Model
+  earliest_forecast: Wednesday, 18 November 2020
+  forecasts: 52
+  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  latest_forecast: Friday, 05 February 2021
+  name: NRAR
+  team_name: Facebook AI Research
+  url: https://zoltardata.com/model/448
+- abbreviation: LANL-GrowthRate
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid-19.bsvgateway.org/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/157
+  dates:
+  - 2020-05-07
+  - 2021-01-21
+  - 2020-05-07
+  - 2020-11-19
+  - 2020-11-26
+  - 2020-12-03
+  - 2020-12-10
+  - 2021-01-14
+  - 2021-01-28
+  - 2020-12-17
+  - 2020-12-24
+  - 2021-02-01
+  - 2021-02-04
+  - 2020-12-07
+  - 2021-01-25
+  - 2020-12-14
+  - 2020-11-30
+  - 2021-01-06
+  - 2020-11-23
+  - 2021-01-18
+  - 2020-05-11
+  - 2020-06-14
+  - 2020-12-21
+  - 2021-01-04
+  - 2021-01-11
+  - 2020-06-21
+  - 2020-07-27
+  - 2020-08-03
+  - 2020-07-13
+  - 2020-08-24
+  - 2020-08-31
+  - 2020-09-03
+  - 2020-09-17
+  - 2020-09-14
+  - 2020-08-27
+  - 2020-09-28
+  - 2020-07-09
+  - 2020-06-29
+  - 2020-08-13
+  - 2020-09-21
+  - 2020-09-24
+  - 2020-06-24
+  - 2020-07-23
+  - 2020-08-20
+  - 2020-07-03
+  - 2020-07-16
+  - 2020-08-06
+  - 2020-08-17
+  - 2020-07-06
+  - 2020-05-03
+  - 2020-05-11
+  - 2020-05-14
+  - 2020-04-06
+  - 2020-04-09
+  - 2020-04-27
+  - 2020-04-13
+  - 2020-05-07
+  - 2020-04-23
+  - 2020-04-16
+  - 2020-04-20
+  - 2020-04-30
+  - 2020-05-04
+  - 2020-05-18
+  - 2020-07-02
+  - 2020-08-10
+  - 2020-05-21
+  - 2020-05-25
+  - 2020-05-24
+  - 2020-05-28
+  - 2020-06-01
+  - 2020-06-04
+  - 2020-06-08
+  - 2020-06-11
+  - 2020-09-07
+  - 2020-06-14
+  - 2020-07-20
+  - 2020-07-30
+  - 2020-09-10
+  - 2020-06-18
+  - 2020-10-01
+  - 2020-10-05
+  - 2020-10-08
+  - 2020-10-12
+  - 2020-11-05
+  - 2020-11-02
+  - 2020-10-22
+  - 2020-11-16
+  - 2020-10-15
+  - 2020-10-26
+  - 2020-11-09
+  - 2020-11-12
+  - 2020-10-19
+  - 2020-10-29
+  - 2020-11-04
+  description: This model makes predictions about the future, unconditional on particular
+    intervention strategies. Statistical dynamical growth model accounting for population
+    susceptibility.
+  earliest_forecast: Monday, 06 April 2020
+  forecasts: 94
+  home_url: https://covid-19.bsvgateway.org/
+  latest_forecast: Thursday, 04 February 2021
+  name: GrowthRate
+  team_name: Los Alamos National Labs
+  url: https://zoltardata.com/model/157
 - abbreviation: CovidAnalytics-DELPHI
   actions:
   - label: Website
@@ -272,73 +491,6 @@
   name: DeepGLEAM
   team_name: UCSD_NEU
   url: https://zoltardata.com/model/378
-- abbreviation: FAIR-NRAR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/448
-  dates:
-  - 2021-01-21
-  - 2020-11-24
-  - 2020-12-01
-  - 2021-01-22
-  - 2020-11-30
-  - 2020-12-03
-  - 2020-12-07
-  - 2020-12-15
-  - 2020-12-08
-  - 2021-01-19
-  - 2020-12-14
-  - 2020-12-10
-  - 2020-12-11
-  - 2021-01-13
-  - 2020-12-06
-  - 2021-01-11
-  - 2021-01-23
-  - 2021-01-15
-  - 2021-01-25
-  - 2020-12-13
-  - 2021-01-27
-  - 2021-01-16
-  - 2020-12-16
-  - 2020-12-17
-  - 2021-01-17
-  - 2021-01-24
-  - 2020-12-18
-  - 2020-12-22
-  - 2020-11-29
-  - 2020-12-19
-  - 2020-12-23
-  - 2020-12-20
-  - 2021-01-29
-  - 2020-12-24
-  - 2020-11-22
-  - 2021-01-31
-  - 2021-02-01
-  - 2020-12-30
-  - 2020-12-28
-  - 2020-12-21
-  - 2021-01-05
-  - 2021-01-06
-  - 2021-01-03
-  - 2021-01-09
-  - 2021-01-18
-  - 2020-11-19
-  - 2020-11-18
-  - 2020-11-18
-  - 2020-11-19
-  description: Neural Relational Autoregressive Model
-  earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 49
-  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Monday, 01 February 2021
-  name: NRAR
-  team_name: Facebook AI Research
-  url: https://zoltardata.com/model/448
 - abbreviation: IBF-TimeSeries
   actions:
   - label: Website
@@ -1105,119 +1257,6 @@
   name: RidgeTensorFlowRegressor
   team_name: The University of Michigan
   url: https://zoltardata.com/model/303
-- abbreviation: LANL-GrowthRate
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid-19.bsvgateway.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/157
-  dates:
-  - 2020-05-07
-  - 2021-01-21
-  - 2020-05-07
-  - 2020-11-19
-  - 2020-11-26
-  - 2020-12-03
-  - 2020-12-10
-  - 2021-01-14
-  - 2021-01-28
-  - 2020-12-17
-  - 2020-12-24
-  - 2021-02-01
-  - 2020-12-07
-  - 2021-01-25
-  - 2020-12-14
-  - 2020-11-30
-  - 2021-01-06
-  - 2020-11-23
-  - 2021-01-18
-  - 2020-05-11
-  - 2020-06-14
-  - 2020-12-21
-  - 2021-01-04
-  - 2021-01-11
-  - 2020-06-21
-  - 2020-07-27
-  - 2020-08-03
-  - 2020-07-13
-  - 2020-08-24
-  - 2020-08-31
-  - 2020-09-03
-  - 2020-09-17
-  - 2020-09-14
-  - 2020-08-27
-  - 2020-09-28
-  - 2020-07-09
-  - 2020-06-29
-  - 2020-08-13
-  - 2020-09-21
-  - 2020-09-24
-  - 2020-06-24
-  - 2020-07-23
-  - 2020-08-20
-  - 2020-07-03
-  - 2020-07-16
-  - 2020-08-06
-  - 2020-08-17
-  - 2020-07-06
-  - 2020-05-03
-  - 2020-05-11
-  - 2020-05-14
-  - 2020-04-06
-  - 2020-04-09
-  - 2020-04-27
-  - 2020-04-13
-  - 2020-05-07
-  - 2020-04-23
-  - 2020-04-16
-  - 2020-04-20
-  - 2020-04-30
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-07-02
-  - 2020-08-10
-  - 2020-05-21
-  - 2020-05-25
-  - 2020-05-24
-  - 2020-05-28
-  - 2020-06-01
-  - 2020-06-04
-  - 2020-06-08
-  - 2020-06-11
-  - 2020-09-07
-  - 2020-06-14
-  - 2020-07-20
-  - 2020-07-30
-  - 2020-09-10
-  - 2020-06-18
-  - 2020-10-01
-  - 2020-10-05
-  - 2020-10-08
-  - 2020-10-12
-  - 2020-11-05
-  - 2020-11-02
-  - 2020-10-22
-  - 2020-11-16
-  - 2020-10-15
-  - 2020-10-26
-  - 2020-11-09
-  - 2020-11-12
-  - 2020-10-19
-  - 2020-10-29
-  - 2020-11-04
-  description: This model makes predictions about the future, unconditional on particular
-    intervention strategies. Statistical dynamical growth model accounting for population
-    susceptibility.
-  earliest_forecast: Monday, 06 April 2020
-  forecasts: 93
-  home_url: https://covid-19.bsvgateway.org/
-  latest_forecast: Monday, 01 February 2021
-  name: GrowthRate
-  team_name: Los Alamos National Labs
-  url: https://zoltardata.com/model/157
 - abbreviation: AIpert-pwllnod
   actions:
   - label: Website
@@ -2690,151 +2729,3 @@
   name: CurveFit
   team_name: Institute for Health Metrics and Evaluation
   url: https://zoltardata.com/model/154
-- abbreviation: UT-Mobility
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid-19.tacc.utexas.edu/projections/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/201
-  dates:
-  - 2020-12-07
-  - 2021-01-25
-  - 2020-11-30
-  - 2020-11-23
-  - 2020-12-14
-  - 2020-12-21
-  - 2020-05-25
-  - 2021-01-11
-  - 2020-07-27
-  - 2020-08-17
-  - 2020-06-29
-  - 2020-09-21
-  - 2020-08-24
-  - 2020-09-28
-  - 2020-09-14
-  - 2020-05-11
-  - 2020-04-27
-  - 2020-04-20
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-07-06
-  - 2020-07-13
-  - 2020-05-25
-  - 2020-06-01
-  - 2020-06-08
-  - 2020-06-15
-  - 2020-06-22
-  - 2020-07-20
-  - 2020-08-03
-  - 2020-10-05
-  - 2020-10-12
-  - 2020-10-26
-  - 2020-11-09
-  - 2020-11-02
-  - 2020-11-16
-  - 2020-10-19
-  description: This model makes predictions assuming that social distancing patterns,
-    as measured by anonymized mobile-phone GPS traces,  remain constant in the future.This
-    model models only *first-wave deaths*.
-  earliest_forecast: Monday, 20 April 2020
-  forecasts: 36
-  home_url: https://covid-19.tacc.utexas.edu/projections/
-  latest_forecast: Monday, 25 January 2021
-  name: Mobility
-  team_name: UT-Austin COVID-19 Consortium
-  url: https://zoltardata.com/model/201
-- abbreviation: UCSB-ACTS
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/Gandor26/covid-open
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/436
-  dates:
-  - 2020-11-29
-  - 2020-12-06
-  - 2020-11-22
-  - 2021-01-24
-  - 2020-12-06
-  - 2020-12-20
-  - 2020-12-13
-  - 2021-01-17
-  - 2021-01-03
-  - 2020-12-27
-  - 2021-01-10
-  - 2020-11-01
-  - 2020-10-25
-  - 2020-11-15
-  - 2020-11-08
-  description: This data-driven machine learning model makes predictions by referring
-    to other regions with similar growth patterns and assuming the similar development
-    will take place in the current region.
-  earliest_forecast: Sunday, 25 October 2020
-  forecasts: 15
-  home_url: https://github.com/Gandor26/covid-open
-  latest_forecast: Sunday, 24 January 2021
-  name: ACTS
-  team_name: UCSB
-  url: https://zoltardata.com/model/436
-- abbreviation: IowaStateLW-STEM
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19.stat.iastate.edu
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/266
-  dates:
-  - 2020-12-06
-  - 2020-11-22
-  - 2021-01-24
-  - 2020-12-20
-  - 2021-01-03
-  - 2020-12-13
-  - 2021-01-17
-  - 2020-11-29
-  - 2020-12-27
-  - 2021-01-10
-  - 2020-09-06
-  - 2020-07-12
-  - 2020-07-19
-  - 2020-08-16
-  - 2020-08-30
-  - 2020-09-13
-  - 2020-09-20
-  - 2020-07-05
-  - 2020-09-27
-  - 2020-06-21
-  - 2020-05-24
-  - 2020-05-01
-  - 2020-04-26
-  - 2020-05-17
-  - 2020-05-31
-  - 2020-07-26
-  - 2020-06-07
-  - 2020-06-14
-  - 2020-06-28
-  - 2020-08-02
-  - 2020-08-23
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-10-18
-  - 2020-11-08
-  - 2020-11-01
-  - 2020-11-15
-  - 2020-10-25
-  description: Spatiotemporal Dynamics, Nowcasting and Forecasting of COVID-19 in
-    the United States.
-  earliest_forecast: Sunday, 26 April 2020
-  forecasts: 38
-  home_url: https://covid19.stat.iastate.edu
-  latest_forecast: Sunday, 24 January 2021
-  name: Spatiotemporal Epidemic Modeling
-  team_name: Iowa State - Lily Wang's Research Group
-  url: https://zoltardata.com/model/266
