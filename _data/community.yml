@@ -1,3 +1,277 @@
+- abbreviation: TTU-squider
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/fvbttu/squider
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/366
+  dates:
+  - 2020-11-22
+  - 2020-11-29
+  - 2020-12-13
+  - 2020-12-06
+  - 2021-01-24
+  - 2021-01-17
+  - 2021-01-31
+  - 2020-12-20
+  - 2020-12-27
+  - 2021-02-07
+  - 2021-01-03
+  - 2021-02-14
+  - 2021-01-10
+  - 2020-09-13
+  - 2020-08-17
+  - 2020-09-27
+  - 2020-08-23
+  - 2020-10-04
+  - 2020-10-11
+  - 2020-11-01
+  - 2020-11-08
+  - 2020-11-15
+  - 2020-10-18
+  - 2020-10-25
+  description: SIR-based compartmental model with a power law incidence rate, unknown
+    as well as known infecteds, and time dependent social contact suppression and
+    relaxation.
+  earliest_forecast: Monday, 17 August 2020
+  forecasts: 24
+  home_url: https://github.com/fvbttu/squider
+  latest_forecast: Sunday, 14 February 2021
+  name: SQUIDER
+  team_name: Hussain Lab at Texas Tech University
+  url: https://zoltardata.com/model/366
+- abbreviation: UCM_MESALab-FoGSEIR
+  actions:
+  - label: Website
+    new_window: true
+    url: http://mechatronics.ucmerced.edu/covid19
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/310
+  dates:
+  - 2020-11-29
+  - 2020-12-13
+  - 2021-01-24
+  - 2020-12-20
+  - 2021-01-31
+  - 2020-12-06
+  - 2021-02-07
+  - 2020-12-27
+  - 2021-01-03
+  - 2021-01-17
+  - 2021-02-14
+  - 2020-11-22
+  - 2021-01-10
+  - 2020-09-13
+  - 2020-08-16
+  - 2020-07-26
+  - 2020-09-06
+  - 2020-08-23
+  - 2020-08-30
+  - 2020-09-27
+  - 2020-08-09
+  - 2020-08-02
+  - 2020-09-20
+  - 2020-10-04
+  - 2020-10-11
+  - 2020-11-08
+  - 2020-10-25
+  - 2020-10-18
+  - 2020-11-15
+  - 2020-11-01
+  description: FoGSEIR model is a modification of integer order SEIR model considering
+    fractional integrals. The model considers the age structure and reopening intervention
+    to minimize infections and deaths.
+  earliest_forecast: Sunday, 26 July 2020
+  forecasts: 30
+  home_url: http://mechatronics.ucmerced.edu/covid19
+  latest_forecast: Sunday, 14 February 2021
+  name: Fractional order Generalized SEIR model
+  team_name: University of California Merced MESA Lab
+  url: https://zoltardata.com/model/310
+- abbreviation: GT_CHHS-COVID19
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/pkeskinocak/Center-for-Health-and-Humanitarian-Systems/tree/master/COVID-19
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/279
+  dates:
+  - 2021-02-06
+  - 2021-02-13
+  - 2020-09-13
+  - 2020-09-06
+  - 2020-08-30
+  - 2020-07-05
+  - 2020-07-12
+  - 2020-08-09
+  - 2020-06-21
+  - 2020-07-19
+  - 2020-08-16
+  - 2020-06-28
+  - 2020-07-26
+  - 2020-08-02
+  - 2020-05-31
+  - 2020-06-07
+  - 2020-06-14
+  - 2020-08-23
+  description: Agent-based simulation model to project COVID19 infection spread.
+  earliest_forecast: Sunday, 31 May 2020
+  forecasts: 18
+  home_url: https://github.com/pkeskinocak/Center-for-Health-and-Humanitarian-Systems/tree/master/COVID-19
+  latest_forecast: Saturday, 13 February 2021
+  name: COVID19
+  team_name: Georgia Institute of Technology Center for Health and Humanitarian Systems
+  url: https://zoltardata.com/model/279
+- abbreviation: FAIR-NRAR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/448
+  dates:
+  - 2021-01-21
+  - 2020-11-24
+  - 2020-12-01
+  - 2021-01-22
+  - 2020-11-30
+  - 2020-12-03
+  - 2020-12-07
+  - 2020-12-15
+  - 2020-12-08
+  - 2021-01-19
+  - 2020-12-14
+  - 2020-12-10
+  - 2020-12-11
+  - 2021-01-13
+  - 2020-12-06
+  - 2021-01-11
+  - 2021-01-23
+  - 2021-01-15
+  - 2021-01-25
+  - 2020-12-13
+  - 2021-01-27
+  - 2021-01-16
+  - 2020-12-16
+  - 2020-12-17
+  - 2021-01-17
+  - 2021-01-24
+  - 2020-12-18
+  - 2020-12-22
+  - 2020-11-29
+  - 2020-12-19
+  - 2020-12-23
+  - 2021-02-02
+  - 2021-02-05
+  - 2020-12-20
+  - 2021-01-29
+  - 2020-12-24
+  - 2021-02-04
+  - 2020-11-22
+  - 2021-01-31
+  - 2021-02-01
+  - 2020-12-30
+  - 2020-12-28
+  - 2021-02-06
+  - 2021-02-08
+  - 2021-02-12
+  - 2020-12-21
+  - 2021-01-05
+  - 2021-02-07
+  - 2021-01-06
+  - 2021-01-03
+  - 2021-01-09
+  - 2021-01-18
+  - 2021-02-13
+  - 2020-11-19
+  - 2020-11-18
+  - 2020-11-18
+  - 2020-11-19
+  description: Neural Relational Autoregressive Model
+  earliest_forecast: Wednesday, 18 November 2020
+  forecasts: 57
+  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  latest_forecast: Saturday, 13 February 2021
+  name: NRAR
+  team_name: Facebook AI Research
+  url: https://zoltardata.com/model/448
+- abbreviation: IHME-CurveFit
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid19.healthdata.org/united-states-of-america
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/154
+  dates:
+  - 2020-05-12
+  - 2020-05-12
+  - 2020-11-23
+  - 2020-12-10
+  - 2020-12-07
+  - 2020-12-18
+  - 2021-01-15
+  - 2021-01-29
+  - 2021-01-22
+  - 2020-12-23
+  - 2021-02-05
+  - 2021-02-12
+  - 2020-08-24
+  - 2020-09-28
+  - 2020-09-03
+  - 2020-08-27
+  - 2020-06-24
+  - 2020-09-21
+  - 2020-07-17
+  - 2020-07-30
+  - 2020-08-06
+  - 2020-07-23
+  - 2020-03-27
+  - 2020-03-29
+  - 2020-03-30
+  - 2020-03-31
+  - 2020-04-01
+  - 2020-04-05
+  - 2020-04-07
+  - 2020-04-09
+  - 2020-04-12
+  - 2020-04-16
+  - 2020-04-20
+  - 2020-04-21
+  - 2020-04-27
+  - 2020-04-28
+  - 2020-05-08
+  - 2020-05-04
+  - 2020-05-18
+  - 2020-05-12
+  - 2020-05-29
+  - 2020-06-29
+  - 2020-06-22
+  - 2020-06-05
+  - 2020-06-08
+  - 2020-06-10
+  - 2020-07-06
+  - 2020-06-15
+  - 2020-10-16
+  - 2020-10-26
+  description: This model makes predictions about the future that are dependent on
+    the assumption  that current interventions continue. Non-linear mixed efects curve-fitting.
+  earliest_forecast: Friday, 27 March 2020
+  forecasts: 50
+  home_url: https://covid19.healthdata.org/united-states-of-america
+  latest_forecast: Friday, 12 February 2021
+  name: CurveFit
+  team_name: Institute for Health Metrics and Evaluation
+  url: https://zoltardata.com/model/154
 - abbreviation: LANL-GrowthRate
   actions:
   - label: Website
@@ -394,79 +668,6 @@
   name: DeepGLEAM
   team_name: UCSD_NEU
   url: https://zoltardata.com/model/378
-- abbreviation: FAIR-NRAR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/448
-  dates:
-  - 2021-01-21
-  - 2020-11-24
-  - 2020-12-01
-  - 2021-01-22
-  - 2020-11-30
-  - 2020-12-03
-  - 2020-12-07
-  - 2020-12-15
-  - 2020-12-08
-  - 2021-01-19
-  - 2020-12-14
-  - 2020-12-10
-  - 2020-12-11
-  - 2021-01-13
-  - 2020-12-06
-  - 2021-01-11
-  - 2021-01-23
-  - 2021-01-15
-  - 2021-01-25
-  - 2020-12-13
-  - 2021-01-27
-  - 2021-01-16
-  - 2020-12-16
-  - 2020-12-17
-  - 2021-01-17
-  - 2021-01-24
-  - 2020-12-18
-  - 2020-12-22
-  - 2020-11-29
-  - 2020-12-19
-  - 2020-12-23
-  - 2021-02-02
-  - 2021-02-05
-  - 2020-12-20
-  - 2021-01-29
-  - 2020-12-24
-  - 2021-02-04
-  - 2020-11-22
-  - 2021-01-31
-  - 2021-02-01
-  - 2020-12-30
-  - 2020-12-28
-  - 2021-02-06
-  - 2021-02-08
-  - 2020-12-21
-  - 2021-01-05
-  - 2021-02-07
-  - 2021-01-06
-  - 2021-01-03
-  - 2021-01-09
-  - 2021-01-18
-  - 2020-11-19
-  - 2020-11-18
-  - 2020-11-18
-  - 2020-11-19
-  description: Neural Relational Autoregressive Model
-  earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 55
-  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Monday, 08 February 2021
-  name: NRAR
-  team_name: Facebook AI Research
-  url: https://zoltardata.com/model/448
 - abbreviation: IBF-TimeSeries
   actions:
   - label: Website
@@ -2214,49 +2415,6 @@
   name: Simulator
   team_name: COVID-19 Simulator
   url: https://zoltardata.com/model/285
-- abbreviation: TTU-squider
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/fvbttu/squider
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/366
-  dates:
-  - 2020-11-22
-  - 2020-11-29
-  - 2020-12-13
-  - 2020-12-06
-  - 2021-01-24
-  - 2021-01-17
-  - 2021-01-31
-  - 2020-12-20
-  - 2020-12-27
-  - 2021-02-07
-  - 2021-01-03
-  - 2021-01-10
-  - 2020-09-13
-  - 2020-08-17
-  - 2020-09-27
-  - 2020-08-23
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-01
-  - 2020-11-08
-  - 2020-11-15
-  - 2020-10-18
-  - 2020-10-25
-  description: SIR-based compartmental model with a power law incidence rate, unknown
-    as well as known infecteds, and time dependent social contact suppression and
-    relaxation.
-  earliest_forecast: Monday, 17 August 2020
-  forecasts: 23
-  home_url: https://github.com/fvbttu/squider
-  latest_forecast: Sunday, 07 February 2021
-  name: SQUIDER
-  team_name: Hussain Lab at Texas Tech University
-  url: https://zoltardata.com/model/366
 - abbreviation: JHU_UNC_GAS-StatMechPool
   actions:
   - label: Website
@@ -2379,55 +2537,6 @@
   name: python Population Modeller
   team_name: Karlen Working Group
   url: https://zoltardata.com/model/309
-- abbreviation: UCM_MESALab-FoGSEIR
-  actions:
-  - label: Website
-    new_window: true
-    url: http://mechatronics.ucmerced.edu/covid19
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/310
-  dates:
-  - 2020-11-29
-  - 2020-12-13
-  - 2021-01-24
-  - 2020-12-20
-  - 2021-01-31
-  - 2020-12-06
-  - 2021-02-07
-  - 2020-12-27
-  - 2021-01-03
-  - 2021-01-17
-  - 2020-11-22
-  - 2021-01-10
-  - 2020-09-13
-  - 2020-08-16
-  - 2020-07-26
-  - 2020-09-06
-  - 2020-08-23
-  - 2020-08-30
-  - 2020-09-27
-  - 2020-08-09
-  - 2020-08-02
-  - 2020-09-20
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-08
-  - 2020-10-25
-  - 2020-10-18
-  - 2020-11-15
-  - 2020-11-01
-  description: FoGSEIR model is a modification of integer order SEIR model considering
-    fractional integrals. The model considers the age structure and reopening intervention
-    to minimize infections and deaths.
-  earliest_forecast: Sunday, 26 July 2020
-  forecasts: 29
-  home_url: http://mechatronics.ucmerced.edu/covid19
-  latest_forecast: Sunday, 07 February 2021
-  name: Fractional order Generalized SEIR model
-  team_name: University of California Merced MESA Lab
-  url: https://zoltardata.com/model/310
 - abbreviation: WalmartLabsML-LogForecasting
   actions:
   - label: Website
@@ -2692,155 +2801,3 @@
   name: RtDriven
   team_name: BPagano
   url: https://zoltardata.com/model/427
-- abbreviation: GT_CHHS-COVID19
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/pkeskinocak/Center-for-Health-and-Humanitarian-Systems/tree/master/COVID-19
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/279
-  dates:
-  - 2021-02-06
-  - 2020-09-13
-  - 2020-09-06
-  - 2020-08-30
-  - 2020-07-05
-  - 2020-07-12
-  - 2020-08-09
-  - 2020-06-21
-  - 2020-07-19
-  - 2020-08-16
-  - 2020-06-28
-  - 2020-07-26
-  - 2020-08-02
-  - 2020-05-31
-  - 2020-06-07
-  - 2020-06-14
-  - 2020-08-23
-  description: Agent-based simulation model to project COVID19 infection spread.
-  earliest_forecast: Sunday, 31 May 2020
-  forecasts: 17
-  home_url: https://github.com/pkeskinocak/Center-for-Health-and-Humanitarian-Systems/tree/master/COVID-19
-  latest_forecast: Saturday, 06 February 2021
-  name: COVID19
-  team_name: Georgia Institute of Technology Center for Health and Humanitarian Systems
-  url: https://zoltardata.com/model/279
-- abbreviation: IHME-CurveFit
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19.healthdata.org/united-states-of-america
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/154
-  dates:
-  - 2020-05-12
-  - 2020-05-12
-  - 2020-11-23
-  - 2020-12-10
-  - 2020-12-07
-  - 2020-12-18
-  - 2021-01-15
-  - 2021-01-29
-  - 2021-01-22
-  - 2020-12-23
-  - 2021-02-05
-  - 2020-08-24
-  - 2020-09-28
-  - 2020-09-03
-  - 2020-08-27
-  - 2020-06-24
-  - 2020-09-21
-  - 2020-07-17
-  - 2020-07-30
-  - 2020-08-06
-  - 2020-07-23
-  - 2020-03-27
-  - 2020-03-29
-  - 2020-03-30
-  - 2020-03-31
-  - 2020-04-01
-  - 2020-04-05
-  - 2020-04-07
-  - 2020-04-09
-  - 2020-04-12
-  - 2020-04-16
-  - 2020-04-20
-  - 2020-04-21
-  - 2020-04-27
-  - 2020-04-28
-  - 2020-05-08
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-05-12
-  - 2020-05-29
-  - 2020-06-29
-  - 2020-06-22
-  - 2020-06-05
-  - 2020-06-08
-  - 2020-06-10
-  - 2020-07-06
-  - 2020-06-15
-  - 2020-10-16
-  - 2020-10-26
-  description: This model makes predictions about the future that are dependent on
-    the assumption  that current interventions continue. Non-linear mixed efects curve-fitting.
-  earliest_forecast: Friday, 27 March 2020
-  forecasts: 49
-  home_url: https://covid19.healthdata.org/united-states-of-america
-  latest_forecast: Friday, 05 February 2021
-  name: CurveFit
-  team_name: Institute for Health Metrics and Evaluation
-  url: https://zoltardata.com/model/154
-- abbreviation: UVA-Ensemble
-  actions:
-  - label: Website
-    new_window: true
-    url: https://biocomplexity.virginia.edu/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/308
-  dates:
-  - 2020-12-07
-  - 2021-01-25
-  - 2021-02-01
-  - 2020-12-21
-  - 2021-01-04
-  - 2020-11-23
-  - 2020-12-14
-  - 2020-12-28
-  - 2021-01-18
-  - 2020-11-30
-  - 2021-01-11
-  - 2020-08-17
-  - 2020-08-31
-  - 2020-09-14
-  - 2020-08-24
-  - 2020-07-27
-  - 2020-09-07
-  - 2020-08-03
-  - 2020-09-21
-  - 2020-07-20
-  - 2020-08-10
-  - 2020-09-28
-  - 2020-10-05
-  - 2020-10-12
-  - 2020-10-19
-  - 2020-10-26
-  - 2020-11-16
-  - 2020-11-09
-  - 2020-11-02
-  description: An ensemble of multiple methods such as auto-regressive (AR) models
-    with exogenous variables, Long short-term memory (lSTM) models, and PatchSim (an
-    SEIR model).
-  earliest_forecast: Monday, 20 July 2020
-  forecasts: 29
-  home_url: https://biocomplexity.virginia.edu/
-  latest_forecast: Monday, 01 February 2021
-  name: Ensemble model
-  team_name: University of Virginia, Biocomplexity COVID-19 Response Team
-  url: https://zoltardata.com/model/308
