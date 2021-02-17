@@ -64,6 +64,37 @@
   name: DELPHI
   team_name: CovidAnalytics at MIT
   url: https://zoltardata.com/model/196
+- abbreviation: JHUAPL-SLPHospEns
+  actions:
+  - label: Website
+    new_window: true
+    url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/462
+  dates:
+  - 2021-02-15
+  - 2020-12-14
+  - 2021-01-11
+  - 2021-01-25
+  - 2020-12-06
+  - 2021-02-01
+  - 2020-12-28
+  - 2021-02-08
+  - 2020-12-21
+  - 2021-01-04
+  - 2021-01-18
+  description: Estimates an ensemble of hospitalization forecasts by simulating the
+    individual model-specific forecasts from the submitted quantile functions, and
+    linearly pooling.
+  earliest_forecast: Sunday, 06 December 2020
+  forecasts: 11
+  home_url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
+  latest_forecast: Monday, 15 February 2021
+  name: SLPHospEns
+  team_name: JHUAPL
+  url: https://zoltardata.com/model/462
 - abbreviation: CMU-TimeSeries
   actions:
   - label: Website
@@ -723,6 +754,38 @@
   name: Google-Harvard CPF
   team_name: Google Cloud AI
   url: https://zoltardata.com/model/365
+- abbreviation: Microsoft-DeepSTIA
+  actions:
+  - label: Website
+    new_window: true
+    url: https://www.microsoft.com/en-us/ai/ai-for-health
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/461
+  dates:
+  - 2020-12-14
+  - 2020-12-07
+  - 2021-02-01
+  - 2020-12-21
+  - 2020-12-14
+  - 2021-01-25
+  - 2021-02-08
+  - 2021-01-18
+  - 2021-02-15
+  - 2021-01-04
+  - 2020-12-28
+  - 2021-01-11
+  description: Our model is a deep spatio-temporal network with intervention and hosptial
+    gate under the assumption of spatio-temporal process in pandemic of different
+    regions.
+  earliest_forecast: Monday, 07 December 2020
+  forecasts: 12
+  home_url: https://www.microsoft.com/en-us/ai/ai-for-health
+  latest_forecast: Monday, 15 February 2021
+  name: DeepSTIA
+  team_name: Microsoft
+  url: https://zoltardata.com/model/461
 - abbreviation: MOBS-GLEAM_COVID
   actions:
   - label: Website
@@ -1130,6 +1193,29 @@
   name: GRU
   team_name: SUNY Upstate and SU Covid-19 Prediction Team
   url: https://zoltardata.com/model/470
+- abbreviation: FDANIHASU-Sweight
+  actions:
+  - label: Website
+    new_window: true
+    url: http://covidforeca.st/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/506
+  dates:
+  - 2021-02-15
+  - 2021-01-25
+  - 2021-02-08
+  - 2021-02-01
+  description: An ensemble, or model average, of submitted forecasts to the COVID-19
+    Forecast Hub.
+  earliest_forecast: Monday, 25 January 2021
+  forecasts: 4
+  home_url: http://covidforeca.st/
+  latest_forecast: Monday, 15 February 2021
+  name: Sweight
+  team_name: FDANIHASU
+  url: https://zoltardata.com/model/506
 - abbreviation: SigSci-TS
   actions:
   - label: Website
@@ -2293,6 +2379,70 @@
   name: SI_kJalpha
   team_name: University of Southern California Data Science Lab
   url: https://zoltardata.com/model/300
+- abbreviation: JHU_IDD-CovidSP
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/255
+  dates:
+  - 2021-01-31
+  - 2020-12-06
+  - 2020-12-20
+  - 2021-01-24
+  - 2020-11-22
+  - 2020-12-13
+  - 2020-12-27
+  - 2020-05-24
+  - 2021-02-07
+  - 2020-11-29
+  - 2021-01-17
+  - 2021-02-14
+  - 2021-01-03
+  - 2021-01-10
+  - 2020-09-13
+  - 2020-09-20
+  - 2020-09-27
+  - 2020-08-30
+  - 2020-08-02
+  - 2020-08-23
+  - 2020-06-28
+  - 2020-07-12
+  - 2020-07-26
+  - 2020-09-06
+  - 2020-07-19
+  - 2020-04-24
+  - 2020-05-17
+  - 2020-05-24
+  - 2020-08-16
+  - 2020-05-31
+  - 2020-07-05
+  - 2020-06-07
+  - 2020-06-21
+  - 2020-06-14
+  - 2020-08-09
+  - 2020-09-20
+  - 2020-09-13
+  - 2020-10-04
+  - 2020-09-27
+  - 2020-10-11
+  - 2020-11-08
+  - 2020-10-18
+  - 2020-11-01
+  - 2020-10-25
+  - 2020-11-15
+  description: County-level metapopulation model with commuting and stochastic SEIR
+    disease dynamics with social-distancing indicators.
+  earliest_forecast: Friday, 24 April 2020
+  forecasts: 45
+  home_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
+  latest_forecast: Sunday, 14 February 2021
+  name: CovidScenarioPipeline
+  team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
+  url: https://zoltardata.com/model/255
 - abbreviation: RPI_UW-Mob_Collision
   actions:
   - label: Website
@@ -2561,67 +2711,6 @@
   name: CurveFit
   team_name: Institute for Health Metrics and Evaluation
   url: https://zoltardata.com/model/154
-- abbreviation: JHUAPL-SLPHospEns
-  actions:
-  - label: Website
-    new_window: true
-    url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/462
-  dates:
-  - 2020-12-14
-  - 2021-01-11
-  - 2021-01-25
-  - 2020-12-06
-  - 2021-02-01
-  - 2020-12-28
-  - 2021-02-08
-  - 2020-12-21
-  - 2021-01-04
-  - 2021-01-18
-  description: Estimates an ensemble of hospitalization forecasts by simulating the
-    individual model-specific forecasts from the submitted quantile functions, and
-    linearly pooling.
-  earliest_forecast: Sunday, 06 December 2020
-  forecasts: 10
-  home_url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
-  latest_forecast: Monday, 08 February 2021
-  name: SLPHospEns
-  team_name: JHUAPL
-  url: https://zoltardata.com/model/462
-- abbreviation: Microsoft-DeepSTIA
-  actions:
-  - label: Website
-    new_window: true
-    url: https://www.microsoft.com/en-us/ai/ai-for-health
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/461
-  dates:
-  - 2020-12-14
-  - 2020-12-07
-  - 2021-02-01
-  - 2020-12-21
-  - 2020-12-14
-  - 2021-01-25
-  - 2021-02-08
-  - 2021-01-18
-  - 2021-01-04
-  - 2020-12-28
-  - 2021-01-11
-  description: Our model is a deep spatio-temporal network with intervention and hosptial
-    gate under the assumption of spatio-temporal process in pandemic of different
-    regions.
-  earliest_forecast: Monday, 07 December 2020
-  forecasts: 11
-  home_url: https://www.microsoft.com/en-us/ai/ai-for-health
-  latest_forecast: Monday, 08 February 2021
-  name: DeepSTIA
-  team_name: Microsoft
-  url: https://zoltardata.com/model/461
 - abbreviation: DDS-NBDS
   actions:
   - label: Website
@@ -2677,28 +2766,6 @@
   name: Negative Binomial Dynamical System
   team_name: Discrete Dynamical Systems
   url: https://zoltardata.com/model/312
-- abbreviation: FDANIHASU-Sweight
-  actions:
-  - label: Website
-    new_window: true
-    url: http://covidforeca.st/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/506
-  dates:
-  - 2021-01-25
-  - 2021-02-08
-  - 2021-02-01
-  description: An ensemble, or model average, of submitted forecasts to the COVID-19
-    Forecast Hub.
-  earliest_forecast: Monday, 25 January 2021
-  forecasts: 3
-  home_url: http://covidforeca.st/
-  latest_forecast: Monday, 08 February 2021
-  name: Sweight
-  team_name: FDANIHASU
-  url: https://zoltardata.com/model/506
 - abbreviation: Caltech-CS156
   actions:
   - label: Website
@@ -2830,66 +2897,3 @@
   name: SuEIR
   team_name: UCLA Statistical Machine Learning Lab
   url: https://zoltardata.com/model/198
-- abbreviation: JHU_IDD-CovidSP
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/255
-  dates:
-  - 2021-01-31
-  - 2020-12-06
-  - 2020-12-20
-  - 2021-01-24
-  - 2020-11-22
-  - 2020-12-13
-  - 2020-12-27
-  - 2020-05-24
-  - 2021-02-07
-  - 2020-11-29
-  - 2021-01-17
-  - 2021-01-03
-  - 2021-01-10
-  - 2020-09-13
-  - 2020-09-20
-  - 2020-09-27
-  - 2020-08-30
-  - 2020-08-02
-  - 2020-08-23
-  - 2020-06-28
-  - 2020-07-12
-  - 2020-07-26
-  - 2020-09-06
-  - 2020-07-19
-  - 2020-04-24
-  - 2020-05-17
-  - 2020-05-24
-  - 2020-08-16
-  - 2020-05-31
-  - 2020-07-05
-  - 2020-06-07
-  - 2020-06-21
-  - 2020-06-14
-  - 2020-08-09
-  - 2020-09-20
-  - 2020-09-13
-  - 2020-10-04
-  - 2020-09-27
-  - 2020-10-11
-  - 2020-11-08
-  - 2020-10-18
-  - 2020-11-01
-  - 2020-10-25
-  - 2020-11-15
-  description: County-level metapopulation model with commuting and stochastic SEIR
-    disease dynamics with social-distancing indicators.
-  earliest_forecast: Friday, 24 April 2020
-  forecasts: 44
-  home_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
-  latest_forecast: Sunday, 07 February 2021
-  name: CovidScenarioPipeline
-  team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
-  url: https://zoltardata.com/model/255
