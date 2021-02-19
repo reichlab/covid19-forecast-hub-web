@@ -3,6 +3,10 @@ title: In the news
 layout: docs
 ---
 
+[The 27-Year-Old Who Became a Covid-19 Data Superstar](https://www.bloomberg.com/news/articles/2021-02-19/covid-pandemic-how-youyang-gu-used-ai-and-data-to-make-most-accurate-prediction){:target="_blank"}  
+_Bloomberg_ | 19 February 2021
+
+***
 
 [The Hard Lessons of Modeling the Coronavirus Pandemic](https://www.quantamagazine.org/the-hard-lessons-of-modeling-the-coronavirus-pandemic-20210128/){:target="_blank"}  
 _Quanta Magazine_ | 28 January 2021
