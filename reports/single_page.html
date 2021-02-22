@@ -188,6 +188,10 @@
                 accumulateWeeks($('#state').val());
             });
 
+            $('#date').on('change', function () {
+                $('#queryForm').submit();
+            });
+
 
             $("#page").on("load", function () {
                 console.log($("#page").attr('src'));
