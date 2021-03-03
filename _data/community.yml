@@ -67,6 +67,39 @@
   name: DELPHI
   team_name: CovidAnalytics at MIT
   url: https://zoltardata.com/model/196
+- abbreviation: JHUAPL-SLPHospEns
+  actions:
+  - label: Website
+    new_window: true
+    url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/462
+  dates:
+  - 2021-02-15
+  - 2020-12-14
+  - 2021-02-22
+  - 2021-01-11
+  - 2021-01-25
+  - 2021-03-01
+  - 2020-12-06
+  - 2021-02-01
+  - 2020-12-28
+  - 2021-02-08
+  - 2020-12-21
+  - 2021-01-04
+  - 2021-01-18
+  description: Estimates an ensemble of hospitalization forecasts by simulating the
+    individual model-specific forecasts from the submitted quantile functions, and
+    linearly pooling.
+  earliest_forecast: Sunday, 06 December 2020
+  forecasts: 13
+  home_url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
+  latest_forecast: Monday, 01 March 2021
+  name: SLPHospEns
+  team_name: JHUAPL
+  url: https://zoltardata.com/model/462
 - abbreviation: CMU-TimeSeries
   actions:
   - label: Website
@@ -215,6 +248,93 @@
   name: DeepGLEAM
   team_name: UCSD_NEU
   url: https://zoltardata.com/model/378
+- abbreviation: FAIR-NRAR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/448
+  dates:
+  - 2021-02-18
+  - 2021-02-15
+  - 2021-02-16
+  - 2021-01-21
+  - 2020-11-24
+  - 2020-12-01
+  - 2021-01-22
+  - 2021-02-17
+  - 2020-11-30
+  - 2020-12-03
+  - 2020-12-07
+  - 2020-12-15
+  - 2020-12-08
+  - 2021-01-19
+  - 2020-12-14
+  - 2021-02-20
+  - 2020-12-10
+  - 2021-02-21
+  - 2021-02-22
+  - 2021-02-23
+  - 2020-12-11
+  - 2021-02-24
+  - 2021-01-13
+  - 2020-12-06
+  - 2021-01-11
+  - 2021-01-23
+  - 2021-01-15
+  - 2021-01-25
+  - 2021-02-25
+  - 2020-12-13
+  - 2021-01-27
+  - 2021-01-16
+  - 2020-12-16
+  - 2020-12-17
+  - 2021-03-01
+  - 2021-01-17
+  - 2021-01-24
+  - 2021-02-28
+  - 2020-12-18
+  - 2020-12-22
+  - 2020-11-29
+  - 2020-12-19
+  - 2020-12-23
+  - 2021-02-02
+  - 2021-02-05
+  - 2020-12-20
+  - 2021-01-29
+  - 2020-12-24
+  - 2021-02-04
+  - 2020-11-22
+  - 2021-01-31
+  - 2021-02-01
+  - 2020-12-30
+  - 2020-12-28
+  - 2021-02-06
+  - 2021-02-08
+  - 2021-02-12
+  - 2020-12-21
+  - 2021-01-05
+  - 2021-02-07
+  - 2021-01-06
+  - 2021-01-03
+  - 2021-01-09
+  - 2021-01-18
+  - 2021-02-13
+  - 2020-11-19
+  - 2020-11-18
+  - 2020-11-18
+  - 2020-11-19
+  description: Neural Relational Autoregressive Model
+  earliest_forecast: Wednesday, 18 November 2020
+  forecasts: 69
+  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  latest_forecast: Monday, 01 March 2021
+  name: NRAR
+  team_name: Facebook AI Research
+  url: https://zoltardata.com/model/448
 - abbreviation: IBF-TimeSeries
   actions:
   - label: Website
@@ -326,6 +446,144 @@
   name: DeepCOVID
   team_name: GT
   url: https://zoltardata.com/model/206
+- abbreviation: RobertWalraven-ESG
+  actions:
+  - label: Website
+    new_window: true
+    url: http://rwalraven.com/COVID19
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/301
+  dates:
+  - 2020-09-14
+  - 2021-02-22
+  - 2021-02-22
+  - 2021-01-25
+  - 2021-02-01
+  - 2020-07-06
+  - 2020-07-07
+  - 2020-12-07
+  - 2020-07-12
+  - 2020-07-27
+  - 2020-08-01
+  - 2020-11-30
+  - 2020-07-20
+  - 2020-07-26
+  - 2020-08-03
+  - 2020-11-23
+  - 2020-12-14
+  - 2020-12-21
+  - 2021-03-01
+  - 2021-02-08
+  - 2021-01-18
+  - 2021-01-04
+  - 2020-12-28
+  - 2021-02-15
+  - 2021-01-11
+  - 2020-08-10
+  - 2020-08-30
+  - 2020-09-06
+  - 2020-09-14
+  - 2020-09-28
+  - 2020-08-24
+  - 2020-09-07
+  - 2020-08-01
+  - 2020-06-28
+  - 2020-06-30
+  - 2020-07-07
+  - 2020-08-16
+  - 2020-08-03
+  - 2020-08-17
+  - 2020-07-26
+  - 2020-08-10
+  - 2020-07-27
+  - 2020-07-12
+  - 2020-08-23
+  - 2020-07-06
+  - 2020-09-21
+  - 2020-07-20
+  - 2020-10-05
+  - 2020-10-12
+  - 2020-11-16
+  - 2020-11-02
+  - 2020-11-09
+  - 2020-10-19
+  - 2020-10-26
+  description: Multiple skewed gaussian distribution peaks fit to raw data
+  earliest_forecast: Sunday, 28 June 2020
+  forecasts: 54
+  home_url: http://rwalraven.com/COVID19
+  latest_forecast: Monday, 01 March 2021
+  name: EmpericalSkewedGaussian
+  team_name: Robert Walraven
+  url: https://zoltardata.com/model/301
+- abbreviation: COVIDhub-ensemble
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid19forecasthub.org/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/159
+  dates:
+  - 2020-11-23
+  - 2020-11-30
+  - 2020-12-14
+  - 2020-12-07
+  - 2021-02-22
+  - 2021-01-11
+  - 2020-12-21
+  - 2020-12-28
+  - 2021-02-08
+  - 2021-02-01
+  - 2021-03-01
+  - 2021-01-25
+  - 2021-01-18
+  - 2021-02-15
+  - 2021-01-04
+  - 2021-01-11
+  - 2020-08-17
+  - 2020-07-06
+  - 2020-09-14
+  - 2020-07-27
+  - 2020-08-24
+  - 2020-09-07
+  - 2020-08-10
+  - 2020-09-21
+  - 2020-06-29
+  - 2020-07-13
+  - 2020-08-03
+  - 2020-08-31
+  - 2020-05-04
+  - 2020-05-11
+  - 2020-04-13
+  - 2020-04-27
+  - 2020-05-25
+  - 2020-05-18
+  - 2020-06-01
+  - 2020-07-20
+  - 2020-06-22
+  - 2020-06-08
+  - 2020-06-15
+  - 2020-09-28
+  - 2020-10-05
+  - 2020-10-12
+  - 2020-11-02
+  - 2020-10-19
+  - 2020-10-26
+  - 2020-11-09
+  - 2020-11-16
+  description: An ensemble, or model average, of submitted forecasts to the COVID-19
+    Forecast Hub.
+  earliest_forecast: Monday, 13 April 2020
+  forecasts: 47
+  home_url: https://covid19forecasthub.org/
+  latest_forecast: Monday, 01 March 2021
+  name: ensemble
+  team_name: COVID-19 Forecast Hub
+  url: https://zoltardata.com/model/159
 - abbreviation: epiforecasts-ensemble1
   actions:
   - label: Website
@@ -1056,6 +1314,31 @@
   name: GRU
   team_name: SUNY Upstate and SU Covid-19 Prediction Team
   url: https://zoltardata.com/model/470
+- abbreviation: FDANIHASU-Sweight
+  actions:
+  - label: Website
+    new_window: true
+    url: http://covidforeca.st/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/506
+  dates:
+  - 2021-02-15
+  - 2021-02-22
+  - 2021-03-01
+  - 2021-01-25
+  - 2021-02-08
+  - 2021-02-01
+  description: An ensemble, or model average, of submitted forecasts to the COVID-19
+    Forecast Hub.
+  earliest_forecast: Monday, 25 January 2021
+  forecasts: 6
+  home_url: http://covidforeca.st/
+  latest_forecast: Monday, 01 March 2021
+  name: Sweight
+  team_name: FDANIHASU
+  url: https://zoltardata.com/model/506
 - abbreviation: SigSci-TS
   actions:
   - label: Website
@@ -1575,92 +1858,6 @@
   name: AI-Powered and Epidemiology-Informed Modeling System
   team_name: University of Central Florida
   url: https://zoltardata.com/model/444
-- abbreviation: FAIR-NRAR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/448
-  dates:
-  - 2021-02-18
-  - 2021-02-15
-  - 2021-02-16
-  - 2021-01-21
-  - 2020-11-24
-  - 2020-12-01
-  - 2021-01-22
-  - 2021-02-17
-  - 2020-11-30
-  - 2020-12-03
-  - 2020-12-07
-  - 2020-12-15
-  - 2020-12-08
-  - 2021-01-19
-  - 2020-12-14
-  - 2021-02-20
-  - 2020-12-10
-  - 2021-02-21
-  - 2021-02-22
-  - 2021-02-23
-  - 2020-12-11
-  - 2021-02-24
-  - 2021-01-13
-  - 2020-12-06
-  - 2021-01-11
-  - 2021-01-23
-  - 2021-01-15
-  - 2021-01-25
-  - 2021-02-25
-  - 2020-12-13
-  - 2021-01-27
-  - 2021-01-16
-  - 2020-12-16
-  - 2020-12-17
-  - 2021-01-17
-  - 2021-01-24
-  - 2021-02-28
-  - 2020-12-18
-  - 2020-12-22
-  - 2020-11-29
-  - 2020-12-19
-  - 2020-12-23
-  - 2021-02-02
-  - 2021-02-05
-  - 2020-12-20
-  - 2021-01-29
-  - 2020-12-24
-  - 2021-02-04
-  - 2020-11-22
-  - 2021-01-31
-  - 2021-02-01
-  - 2020-12-30
-  - 2020-12-28
-  - 2021-02-06
-  - 2021-02-08
-  - 2021-02-12
-  - 2020-12-21
-  - 2021-01-05
-  - 2021-02-07
-  - 2021-01-06
-  - 2021-01-03
-  - 2021-01-09
-  - 2021-01-18
-  - 2021-02-13
-  - 2020-11-19
-  - 2020-11-18
-  - 2020-11-18
-  - 2020-11-19
-  description: Neural Relational Autoregressive Model
-  earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 68
-  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Sunday, 28 February 2021
-  name: NRAR
-  team_name: Facebook AI Research
-  url: https://zoltardata.com/model/448
 - abbreviation: OneQuietNight-ML
   actions:
   - label: Website
@@ -2763,38 +2960,6 @@
   name: CurveFit
   team_name: Institute for Health Metrics and Evaluation
   url: https://zoltardata.com/model/154
-- abbreviation: JHUAPL-SLPHospEns
-  actions:
-  - label: Website
-    new_window: true
-    url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/462
-  dates:
-  - 2021-02-15
-  - 2020-12-14
-  - 2021-02-22
-  - 2021-01-11
-  - 2021-01-25
-  - 2020-12-06
-  - 2021-02-01
-  - 2020-12-28
-  - 2021-02-08
-  - 2020-12-21
-  - 2021-01-04
-  - 2021-01-18
-  description: Estimates an ensemble of hospitalization forecasts by simulating the
-    individual model-specific forecasts from the submitted quantile functions, and
-    linearly pooling.
-  earliest_forecast: Sunday, 06 December 2020
-  forecasts: 12
-  home_url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
-  latest_forecast: Monday, 22 February 2021
-  name: SLPHospEns
-  team_name: JHUAPL
-  url: https://zoltardata.com/model/462
 - abbreviation: NotreDame-FRED
   actions:
   - label: Website
@@ -2849,166 +3014,6 @@
   name: NotreDame-FRED
   team_name: NotreDame-FRED
   url: https://zoltardata.com/model/256
-- abbreviation: RobertWalraven-ESG
-  actions:
-  - label: Website
-    new_window: true
-    url: http://rwalraven.com/COVID19
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/301
-  dates:
-  - 2020-09-14
-  - 2021-02-22
-  - 2021-02-22
-  - 2021-01-25
-  - 2021-02-01
-  - 2020-07-06
-  - 2020-07-07
-  - 2020-12-07
-  - 2020-07-12
-  - 2020-07-27
-  - 2020-08-01
-  - 2020-11-30
-  - 2020-07-20
-  - 2020-07-26
-  - 2020-08-03
-  - 2020-11-23
-  - 2020-12-14
-  - 2020-12-21
-  - 2021-02-08
-  - 2021-01-18
-  - 2021-01-04
-  - 2020-12-28
-  - 2021-02-15
-  - 2021-01-11
-  - 2020-08-10
-  - 2020-08-30
-  - 2020-09-06
-  - 2020-09-14
-  - 2020-09-28
-  - 2020-08-24
-  - 2020-09-07
-  - 2020-08-01
-  - 2020-06-28
-  - 2020-06-30
-  - 2020-07-07
-  - 2020-08-16
-  - 2020-08-03
-  - 2020-08-17
-  - 2020-07-26
-  - 2020-08-10
-  - 2020-07-27
-  - 2020-07-12
-  - 2020-08-23
-  - 2020-07-06
-  - 2020-09-21
-  - 2020-07-20
-  - 2020-10-05
-  - 2020-10-12
-  - 2020-11-16
-  - 2020-11-02
-  - 2020-11-09
-  - 2020-10-19
-  - 2020-10-26
-  description: Multiple skewed gaussian distribution peaks fit to raw data
-  earliest_forecast: Sunday, 28 June 2020
-  forecasts: 53
-  home_url: http://rwalraven.com/COVID19
-  latest_forecast: Monday, 22 February 2021
-  name: EmpericalSkewedGaussian
-  team_name: Robert Walraven
-  url: https://zoltardata.com/model/301
-- abbreviation: COVIDhub-ensemble
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19forecasthub.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/159
-  dates:
-  - 2020-11-23
-  - 2020-11-30
-  - 2020-12-14
-  - 2020-12-07
-  - 2021-02-22
-  - 2021-01-11
-  - 2020-12-21
-  - 2020-12-28
-  - 2021-02-08
-  - 2021-02-01
-  - 2021-01-25
-  - 2021-01-18
-  - 2021-02-15
-  - 2021-01-04
-  - 2021-01-11
-  - 2020-08-17
-  - 2020-07-06
-  - 2020-09-14
-  - 2020-07-27
-  - 2020-08-24
-  - 2020-09-07
-  - 2020-08-10
-  - 2020-09-21
-  - 2020-06-29
-  - 2020-07-13
-  - 2020-08-03
-  - 2020-08-31
-  - 2020-05-04
-  - 2020-05-11
-  - 2020-04-13
-  - 2020-04-27
-  - 2020-05-25
-  - 2020-05-18
-  - 2020-06-01
-  - 2020-07-20
-  - 2020-06-22
-  - 2020-06-08
-  - 2020-06-15
-  - 2020-09-28
-  - 2020-10-05
-  - 2020-10-12
-  - 2020-11-02
-  - 2020-10-19
-  - 2020-10-26
-  - 2020-11-09
-  - 2020-11-16
-  description: An ensemble, or model average, of submitted forecasts to the COVID-19
-    Forecast Hub.
-  earliest_forecast: Monday, 13 April 2020
-  forecasts: 46
-  home_url: https://covid19forecasthub.org/
-  latest_forecast: Monday, 22 February 2021
-  name: ensemble
-  team_name: COVID-19 Forecast Hub
-  url: https://zoltardata.com/model/159
-- abbreviation: FDANIHASU-Sweight
-  actions:
-  - label: Website
-    new_window: true
-    url: http://covidforeca.st/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/506
-  dates:
-  - 2021-02-15
-  - 2021-02-22
-  - 2021-01-25
-  - 2021-02-08
-  - 2021-02-01
-  description: An ensemble, or model average, of submitted forecasts to the COVID-19
-    Forecast Hub.
-  earliest_forecast: Monday, 25 January 2021
-  forecasts: 5
-  home_url: http://covidforeca.st/
-  latest_forecast: Monday, 22 February 2021
-  name: Sweight
-  team_name: FDANIHASU
-  url: https://zoltardata.com/model/506
 - abbreviation: IUPUI-HkPrMobiDyR
   actions:
   - label: Website
