@@ -184,10 +184,6 @@
                 });
             };
 
-            $('#state').on('change', function () {
-                accumulateWeeks($('#state').val());
-            });
-
             $('#date').on('change', function () {
                 $('#queryForm').submit();
             });
@@ -244,7 +240,7 @@
                 if (state != 'US') {
                     url += state + "-";
                 };
-                url += 'weekly-report.html';
+                url += 'Weekly-Model-Evaluation';
                 url += anchor;
                 console.log(location.host + url);
                 $("#page").attr('src', url);
@@ -330,19 +326,18 @@
                 <div class="bg-img" style="background-image: url('/images/5.jpg')"></div>
                 <div class="inner-sm">
                     <div class="block-header">
-                        <h1 class="block-title">Weekly Forecast Summaries</h1>
+                        <h1 class="block-title">Forecast Evaluations</h1>
                     </div>
                     <div class="block-content" style="padding-top: 0.25vh;">
                         <p style="margin: unset;padding-top: 0.15vh;padding-bottom: 0.25vh;">Browse the archive</p>
                             <div class=" form-box" style="display: inline;width: 100%;margin-bottom: unset;">
                                 <form id="queryForm" style="display: inline;width: auto;">
-                                    <label for="state" style="width: auto;color: #f3f3f3;">State:</label>
-                                    <select name="state" id="state" onselect="accumulateWeeks()" style="width: auto;display: inherit;">
+                                    <select name="state" id="state" onselect="accumulateWeeks()" style="width: auto;display: none;">
                                     <option value="national">national</option><option value="iowa">iowa</option><option value="massachusetts">massachusetts</option></select>
                                     <label for="date" style="width: auto;display: inherit;color: #f3f3f3;padding-left: 0.13vw;">Date:</label>
                                     <select name="week" id="date" style="width: auto;display: inherit;">
                                     <option value="2020-10-13">2020-10-13</option><option value="2020-10-06">2020-10-06</option><option value="2020-09-29">2020-09-29</option><option value="2020-09-22">2020-09-22</option><option value="2020-09-15">2020-09-15</option><option value="2020-09-08">2020-09-08</option><option value="2020-09-01">2020-09-01</option><option value="2020-08-25">2020-08-25</option><option value="2020-08-18">2020-08-18</option><option value="2020-08-12">2020-08-12</option></select>
-                                    <input class="block-buttons" type="submit" value="Submit" style="margin-left: 0.25vw;vertical-align: top;">
+                                    <input class="block-buttons" type="submit" value="Submit" style="margin-left: 0.25vw;vertical-align: top;display: none;">
                                 </form>
                             </div>
                     </div>
