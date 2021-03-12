@@ -8,4 +8,7 @@ We follow a weekly update cycle at the COVID-19 Forecast Hub. Every Tuesday morn
 ## Forecast Summaries
 Each week, we also generate a weekly report that provides some top-level summary numbers from the ensemble forecast. These reports summarize the number of expected deaths for the following four weeks in the United States on a national and state level. <a href="https://covid19forecasthub.org/reports/single_page.html" target="_blank">Browse current and past forecast summaries</a>.
 
+## Forecast Evaluations
+Periodically, we evaluate the accuracy and precision of the <a href="https://covid19forecasthub.org/doc/ensemble/" target="_blank">ensemble forecast</a> and component models over recent and historical forecasting periods. Models forecasting incident cases and incident deaths at a national and state level are evaluated using (<a href="https://arxiv.org/abs/2005.12881" target="_blank">adjusted relative weighted interval scores (WIS, a measure of distributional accuracy)</a>, and adjusted relative mean absolute error (MAE), and calibration scores. Scores are evaluated across weeks, locations, and targets. You can read <a href="https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1" target="_blank">a paper explaining these procedures in more detail</a>, and look at <a href="https://covid19forecasthub.org/eval-reports" target="_blank">the most recent weekly evaluation reports</a>.
+
 ***
