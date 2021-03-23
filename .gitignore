@@ -7,3 +7,5 @@ _site/
 *.Rproj
 *.DS_Store
 *.Rhistory
+
+.vscode
