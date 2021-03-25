@@ -1628,6 +1628,27 @@
   name: Covid Complete
   team_name: Steve McConnell
   url: https://zoltardata.com/model/368
+- abbreviation: IUPUI-HkPrMobiDyR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/chiangwe/HawkPR
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/508
+  dates:
+  - 2021-03-15
+  - 2021-02-22
+  - 2021-03-22
+  description: Hawkes processes with Dynamic reproduce number.
+  earliest_forecast: Monday, 22 February 2021
+  forecasts: 3
+  home_url: https://github.com/chiangwe/HawkPR
+  latest_forecast: Monday, 22 March 2021
+  name: HkPrMobiDyR
+  team_name: IUPUI CIS
+  url: https://zoltardata.com/model/508
 - abbreviation: FRBSF_Wilson-Econometric
   actions:
   - label: Website
@@ -1650,6 +1671,42 @@
   name: Econometric
   team_name: Federal Reserve Bank of San Francisco/Wilson
   url: https://zoltardata.com/model/537
+- abbreviation: JHUAPL-SLPHospEns
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/lmullany/JHUAPL-SLPHospEns
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/462
+  dates:
+  - 2021-02-15
+  - 2020-12-14
+  - 2021-02-22
+  - 2021-01-11
+  - 2021-01-25
+  - 2021-03-22
+  - 2021-03-15
+  - 2021-03-01
+  - 2020-12-06
+  - 2021-02-01
+  - 2020-12-28
+  - 2021-02-08
+  - 2021-03-08
+  - 2020-12-21
+  - 2021-01-04
+  - 2021-01-18
+  description: Estimates an ensemble of hospitalization forecasts by simulating the
+    individual model-specific forecasts from the submitted quantile functions, and
+    linearly pooling.
+  earliest_forecast: Sunday, 06 December 2020
+  forecasts: 16
+  home_url: https://github.com/lmullany/JHUAPL-SLPHospEns
+  latest_forecast: Monday, 22 March 2021
+  name: SLPHospEns
+  team_name: JHUAPL
+  url: https://zoltardata.com/model/462
 - abbreviation: UMass-MechBayes
   actions:
   - label: Website
@@ -1787,114 +1844,6 @@
   name: Survival-Convolution Models
   team_name: Columbia_UNC
   url: https://zoltardata.com/model/292
-- abbreviation: Geneva-DetGrowth
-  actions:
-  - label: Website
-    new_window: true
-    url: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/192
-  dates:
-  - 2020-12-13
-  - 2020-12-06
-  - 2020-11-29
-  - 2021-02-21
-  - 2021-01-24
-  - 2021-01-17
-  - 2021-03-14
-  - 2020-12-20
-  - 2021-02-28
-  - 2020-11-22
-  - 2021-01-31
-  - 2021-02-07
-  - 2021-03-07
-  - 2021-03-21
-  - 2021-01-03
-  - 2021-01-10
-  - 2021-02-14
-  - 2021-03-14
-  - 2020-12-27
-  - 2020-06-07
-  - 2020-05-19
-  - 2020-09-20
-  - 2020-04-27
-  - 2020-07-19
-  - 2020-09-06
-  - 2020-09-13
-  - 2020-04-18
-  - 2020-04-24
-  - 2020-08-23
-  - 2020-06-14
-  - 2020-06-01
-  - 2020-06-21
-  - 2020-07-05
-  - 2020-04-17
-  - 2020-05-02
-  - 2020-04-20
-  - 2020-04-30
-  - 2020-07-12
-  - 2020-08-30
-  - 2020-05-26
-  - 2020-08-02
-  - 2020-09-27
-  - 2020-07-26
-  - 2020-08-16
-  - 2020-06-28
-  - 2020-08-09
-  - 2020-05-07
-  - 2020-04-21
-  - 2020-05-09
-  - 2020-05-11
-  - 2020-05-14
-  - 2020-04-25
-  - 2020-04-22
-  - 2020-04-16
-  - 2020-04-29
-  - 2020-05-12
-  - 2020-05-24
-  - 2020-05-22
-  - 2020-05-15
-  - 2020-05-17
-  - 2020-05-06
-  - 2020-05-16
-  - 2020-05-18
-  - 2020-05-04
-  - 2020-05-20
-  - 2020-04-28
-  - 2020-05-08
-  - 2020-04-15
-  - 2020-05-21
-  - 2020-05-31
-  - 2020-05-25
-  - 2020-05-10
-  - 2020-05-13
-  - 2020-05-03
-  - 2020-05-28
-  - 2020-04-19
-  - 2020-04-23
-  - 2020-05-05
-  - 2020-05-23
-  - 2020-05-27
-  - 2020-05-01
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-08
-  - 2020-10-25
-  - 2020-11-01
-  - 2020-11-15
-  - 2020-10-18
-  description: We calculate the growth rate of cumulative cases (resp. deaths) between
-    two days ago and today.  If greater than 5%, we use an exponential model to forecast.
-    Otherwise, we use a linear model.
-  earliest_forecast: Wednesday, 15 April 2020
-  forecasts: 88
-  home_url: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
-  latest_forecast: Sunday, 21 March 2021
-  name: DeterministicGrowth
-  team_name: University of Geneva / Swiss Data Science Center
-  url: https://zoltardata.com/model/192
 - abbreviation: MIT_CritData-GBCF
   actions:
   - label: Website
@@ -3160,6 +3109,114 @@
   name: StatMechPool
   team_name: JHU_UNC_GAS
   url: https://zoltardata.com/model/437
+- abbreviation: Geneva-DetGrowth
+  actions:
+  - label: Website
+    new_window: true
+    url: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/192
+  dates:
+  - 2020-12-13
+  - 2020-12-06
+  - 2020-11-29
+  - 2021-02-21
+  - 2021-01-24
+  - 2021-01-17
+  - 2021-03-14
+  - 2020-12-20
+  - 2021-02-28
+  - 2020-11-22
+  - 2021-01-31
+  - 2021-02-07
+  - 2021-03-07
+  - 2021-03-21
+  - 2021-01-03
+  - 2021-01-10
+  - 2021-02-14
+  - 2021-03-14
+  - 2020-12-27
+  - 2020-06-07
+  - 2020-05-19
+  - 2020-09-20
+  - 2020-04-27
+  - 2020-07-19
+  - 2020-09-06
+  - 2020-09-13
+  - 2020-04-18
+  - 2020-04-24
+  - 2020-08-23
+  - 2020-06-14
+  - 2020-06-01
+  - 2020-06-21
+  - 2020-07-05
+  - 2020-04-17
+  - 2020-05-02
+  - 2020-04-20
+  - 2020-04-30
+  - 2020-07-12
+  - 2020-08-30
+  - 2020-05-26
+  - 2020-08-02
+  - 2020-09-27
+  - 2020-07-26
+  - 2020-08-16
+  - 2020-06-28
+  - 2020-08-09
+  - 2020-05-07
+  - 2020-04-21
+  - 2020-05-09
+  - 2020-05-11
+  - 2020-05-14
+  - 2020-04-25
+  - 2020-04-22
+  - 2020-04-16
+  - 2020-04-29
+  - 2020-05-12
+  - 2020-05-24
+  - 2020-05-22
+  - 2020-05-15
+  - 2020-05-17
+  - 2020-05-06
+  - 2020-05-16
+  - 2020-05-18
+  - 2020-05-04
+  - 2020-05-20
+  - 2020-04-28
+  - 2020-05-08
+  - 2020-04-15
+  - 2020-05-21
+  - 2020-05-31
+  - 2020-05-25
+  - 2020-05-10
+  - 2020-05-13
+  - 2020-05-03
+  - 2020-05-28
+  - 2020-04-19
+  - 2020-04-23
+  - 2020-05-05
+  - 2020-05-23
+  - 2020-05-27
+  - 2020-05-01
+  - 2020-10-04
+  - 2020-10-11
+  - 2020-11-08
+  - 2020-10-25
+  - 2020-11-01
+  - 2020-11-15
+  - 2020-10-18
+  description: The Trend Model predicts daily cases and deaths using linear extrapolation
+    on the linear or log scale of the underlying trend estimated by a robust LOESS
+    seasonal-trend decomposition model.
+  earliest_forecast: Wednesday, 15 April 2020
+  forecasts: 88
+  home_url: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
+  latest_forecast: Sunday, 21 March 2021
+  name: Trend Model
+  team_name: Swiss Data Science Center / University of Geneva
+  url: https://zoltardata.com/model/192
 - abbreviation: GT_CHHS-COVID19
   actions:
   - label: Website
@@ -3276,58 +3333,3 @@
   name: CurveFit
   team_name: Institute for Health Metrics and Evaluation
   url: https://zoltardata.com/model/154
-- abbreviation: JHUAPL-SLPHospEns
-  actions:
-  - label: Website
-    new_window: true
-    url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/462
-  dates:
-  - 2021-02-15
-  - 2020-12-14
-  - 2021-02-22
-  - 2021-01-11
-  - 2021-01-25
-  - 2021-03-15
-  - 2021-03-01
-  - 2020-12-06
-  - 2021-02-01
-  - 2020-12-28
-  - 2021-02-08
-  - 2021-03-08
-  - 2020-12-21
-  - 2021-01-04
-  - 2021-01-18
-  description: Estimates an ensemble of hospitalization forecasts by simulating the
-    individual model-specific forecasts from the submitted quantile functions, and
-    linearly pooling.
-  earliest_forecast: Sunday, 06 December 2020
-  forecasts: 15
-  home_url: https://gitlab.jhuapl.edu/mullalc1/covid-19-hospitalization-ensemble
-  latest_forecast: Monday, 15 March 2021
-  name: SLPHospEns
-  team_name: JHUAPL
-  url: https://zoltardata.com/model/462
-- abbreviation: IUPUI-HkPrMobiDyR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/chiangwe/HawkPR
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/508
-  dates:
-  - 2021-03-15
-  - 2021-02-22
-  description: Hawkes processes with Dynamic reproduce number.
-  earliest_forecast: Monday, 22 February 2021
-  forecasts: 2
-  home_url: https://github.com/chiangwe/HawkPR
-  latest_forecast: Monday, 15 March 2021
-  name: HkPrMobiDyR
-  team_name: IUPUI CIS
-  url: https://zoltardata.com/model/508
