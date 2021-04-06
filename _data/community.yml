@@ -239,6 +239,123 @@
   name: DeepGLEAM
   team_name: UCSD_NEU
   url: https://zoltardata.com/model/378
+- abbreviation: FAIR-NRAR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/448
+  dates:
+  - 2021-02-18
+  - 2021-03-29
+  - 2021-02-15
+  - 2021-02-16
+  - 2021-01-21
+  - 2021-03-30
+  - 2020-11-24
+  - 2020-12-01
+  - 2021-01-22
+  - 2021-03-31
+  - 2021-03-24
+  - 2021-02-17
+  - 2020-11-30
+  - 2020-12-03
+  - 2020-12-07
+  - 2020-12-15
+  - 2020-12-08
+  - 2021-03-25
+  - 2021-01-19
+  - 2021-04-01
+  - 2020-12-14
+  - 2021-04-02
+  - 2021-03-26
+  - 2021-02-20
+  - 2020-12-10
+  - 2021-02-21
+  - 2021-02-22
+  - 2021-02-23
+  - 2020-12-11
+  - 2021-02-24
+  - 2021-01-13
+  - 2021-03-27
+  - 2020-12-06
+  - 2021-01-11
+  - 2021-01-23
+  - 2021-01-15
+  - 2021-01-25
+  - 2021-02-25
+  - 2020-12-13
+  - 2021-01-27
+  - 2021-01-16
+  - 2020-12-16
+  - 2020-12-17
+  - 2021-03-20
+  - 2021-03-19
+  - 2021-03-17
+  - 2021-03-28
+  - 2021-03-01
+  - 2021-03-02
+  - 2021-03-04
+  - 2021-03-05
+  - 2021-01-17
+  - 2021-01-24
+  - 2021-02-28
+  - 2021-03-03
+  - 2020-12-18
+  - 2020-12-22
+  - 2021-04-05
+  - 2020-11-29
+  - 2020-12-19
+  - 2020-12-23
+  - 2021-02-02
+  - 2021-02-05
+  - 2021-04-03
+  - 2020-12-20
+  - 2021-01-29
+  - 2020-12-24
+  - 2021-02-04
+  - 2020-11-22
+  - 2021-01-31
+  - 2021-03-21
+  - 2021-02-01
+  - 2021-04-04
+  - 2020-12-30
+  - 2020-12-28
+  - 2021-03-15
+  - 2021-02-06
+  - 2021-03-08
+  - 2021-03-10
+  - 2021-03-09
+  - 2021-02-08
+  - 2021-03-11
+  - 2021-02-12
+  - 2021-03-12
+  - 2020-12-21
+  - 2021-01-05
+  - 2021-02-07
+  - 2021-03-07
+  - 2021-01-06
+  - 2021-01-03
+  - 2021-01-09
+  - 2021-03-13
+  - 2021-03-22
+  - 2021-01-18
+  - 2021-02-13
+  - 2020-11-19
+  - 2020-11-18
+  - 2020-11-18
+  - 2020-11-19
+  description: Neural Relational Autoregressive Model
+  earliest_forecast: Wednesday, 18 November 2020
+  forecasts: 99
+  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  latest_forecast: Monday, 05 April 2021
+  name: NRAR
+  team_name: Facebook AI Research
+  url: https://zoltardata.com/model/448
 - abbreviation: IBF-TimeSeries
   actions:
   - label: Website
@@ -1181,6 +1298,36 @@
   name: GRU
   team_name: SUNY Upstate and SU Covid-19 Prediction Team
   url: https://zoltardata.com/model/470
+- abbreviation: FDANIHASU-Sweight
+  actions:
+  - label: Website
+    new_window: true
+    url: http://covidforeca.st/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/506
+  dates:
+  - 2021-02-15
+  - 2021-02-22
+  - 2021-03-29
+  - 2021-03-01
+  - 2021-01-25
+  - 2021-03-15
+  - 2021-02-08
+  - 2021-03-08
+  - 2021-02-01
+  - 2021-04-05
+  - 2021-03-22
+  description: An ensemble, or model average, of submitted forecasts to the COVID-19
+    Forecast Hub.
+  earliest_forecast: Monday, 25 January 2021
+  forecasts: 11
+  home_url: http://covidforeca.st/
+  latest_forecast: Monday, 05 April 2021
+  name: Sweight
+  team_name: FDANIHASU
+  url: https://zoltardata.com/model/506
 - abbreviation: SigSci-TS
   actions:
   - label: Website
@@ -1304,6 +1451,29 @@
   name: Covid Complete
   team_name: Steve McConnell
   url: https://zoltardata.com/model/368
+- abbreviation: IUPUI-HkPrMobiDyR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/chiangwe/HawkPR
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/508
+  dates:
+  - 2021-03-29
+  - 2021-03-15
+  - 2021-02-22
+  - 2021-03-22
+  - 2021-04-05
+  description: Hawkes processes with Dynamic reproduce number.
+  earliest_forecast: Monday, 22 February 2021
+  forecasts: 5
+  home_url: https://github.com/chiangwe/HawkPR
+  latest_forecast: Monday, 05 April 2021
+  name: HkPrMobiDyR
+  team_name: IUPUI CIS
+  url: https://zoltardata.com/model/508
 - abbreviation: FRBSF_Wilson-Econometric
   actions:
   - label: Website
@@ -1709,122 +1879,6 @@
   name: AI-Powered and Epidemiology-Informed Modeling System
   team_name: University of Central Florida
   url: https://zoltardata.com/model/444
-- abbreviation: FAIR-NRAR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/448
-  dates:
-  - 2021-02-18
-  - 2021-03-29
-  - 2021-02-15
-  - 2021-02-16
-  - 2021-01-21
-  - 2021-03-30
-  - 2020-11-24
-  - 2020-12-01
-  - 2021-01-22
-  - 2021-03-31
-  - 2021-03-24
-  - 2021-02-17
-  - 2020-11-30
-  - 2020-12-03
-  - 2020-12-07
-  - 2020-12-15
-  - 2020-12-08
-  - 2021-03-25
-  - 2021-01-19
-  - 2021-04-01
-  - 2020-12-14
-  - 2021-04-02
-  - 2021-03-26
-  - 2021-02-20
-  - 2020-12-10
-  - 2021-02-21
-  - 2021-02-22
-  - 2021-02-23
-  - 2020-12-11
-  - 2021-02-24
-  - 2021-01-13
-  - 2021-03-27
-  - 2020-12-06
-  - 2021-01-11
-  - 2021-01-23
-  - 2021-01-15
-  - 2021-01-25
-  - 2021-02-25
-  - 2020-12-13
-  - 2021-01-27
-  - 2021-01-16
-  - 2020-12-16
-  - 2020-12-17
-  - 2021-03-20
-  - 2021-03-19
-  - 2021-03-17
-  - 2021-03-28
-  - 2021-03-01
-  - 2021-03-02
-  - 2021-03-04
-  - 2021-03-05
-  - 2021-01-17
-  - 2021-01-24
-  - 2021-02-28
-  - 2021-03-03
-  - 2020-12-18
-  - 2020-12-22
-  - 2020-11-29
-  - 2020-12-19
-  - 2020-12-23
-  - 2021-02-02
-  - 2021-02-05
-  - 2021-04-03
-  - 2020-12-20
-  - 2021-01-29
-  - 2020-12-24
-  - 2021-02-04
-  - 2020-11-22
-  - 2021-01-31
-  - 2021-03-21
-  - 2021-02-01
-  - 2021-04-04
-  - 2020-12-30
-  - 2020-12-28
-  - 2021-03-15
-  - 2021-02-06
-  - 2021-03-08
-  - 2021-03-10
-  - 2021-03-09
-  - 2021-02-08
-  - 2021-03-11
-  - 2021-02-12
-  - 2021-03-12
-  - 2020-12-21
-  - 2021-01-05
-  - 2021-02-07
-  - 2021-03-07
-  - 2021-01-06
-  - 2021-01-03
-  - 2021-01-09
-  - 2021-03-13
-  - 2021-03-22
-  - 2021-01-18
-  - 2021-02-13
-  - 2020-11-19
-  - 2020-11-18
-  - 2020-11-18
-  - 2020-11-19
-  description: Neural Relational Autoregressive Model
-  earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 98
-  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Sunday, 04 April 2021
-  name: NRAR
-  team_name: Facebook AI Research
-  url: https://zoltardata.com/model/448
 - abbreviation: UChicagoCHATTOPADHYAY-UnIT
   actions:
   - label: Website
@@ -3071,57 +3125,6 @@
   team_name: University of Georgia Center for the Ecology of Infectious Diseases Forecasting
     Working Group
   url: https://zoltardata.com/model/361
-- abbreviation: FDANIHASU-Sweight
-  actions:
-  - label: Website
-    new_window: true
-    url: http://covidforeca.st/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/506
-  dates:
-  - 2021-02-15
-  - 2021-02-22
-  - 2021-03-29
-  - 2021-03-01
-  - 2021-01-25
-  - 2021-03-15
-  - 2021-02-08
-  - 2021-03-08
-  - 2021-02-01
-  - 2021-03-22
-  description: An ensemble, or model average, of submitted forecasts to the COVID-19
-    Forecast Hub.
-  earliest_forecast: Monday, 25 January 2021
-  forecasts: 10
-  home_url: http://covidforeca.st/
-  latest_forecast: Monday, 29 March 2021
-  name: Sweight
-  team_name: FDANIHASU
-  url: https://zoltardata.com/model/506
-- abbreviation: IUPUI-HkPrMobiDyR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/chiangwe/HawkPR
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/508
-  dates:
-  - 2021-03-29
-  - 2021-03-15
-  - 2021-02-22
-  - 2021-03-22
-  description: Hawkes processes with Dynamic reproduce number.
-  earliest_forecast: Monday, 22 February 2021
-  forecasts: 4
-  home_url: https://github.com/chiangwe/HawkPR
-  latest_forecast: Monday, 29 March 2021
-  name: HkPrMobiDyR
-  team_name: IUPUI CIS
-  url: https://zoltardata.com/model/508
 - abbreviation: JHUAPL-SLPHospEns
   actions:
   - label: Website
