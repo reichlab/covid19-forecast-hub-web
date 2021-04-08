@@ -1597,6 +1597,7 @@
   - 2020-07-05
   - 2021-01-24
   - 2021-02-28
+  - 2021-04-04
   - 2021-01-31
   - 2021-03-21
   - 2021-03-07
@@ -1646,7 +1647,7 @@
     counts and cumulative deaths. Model is fit independently to each state. Model
     includes observation noise and a case detection rate. '
   earliest_forecast: Sunday, 26 April 2020
-  forecasts: 56
+  forecasts: 57
   home_url: https://github.com/dsheldon/covid
   latest_forecast: Sunday, 04 April 2021
   name: MechBayes
