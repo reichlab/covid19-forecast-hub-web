@@ -1,3 +1,254 @@
+- abbreviation: FAIR-NRAR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/448
+  dates:
+  - 2021-02-18
+  - 2021-03-29
+  - 2021-04-10
+  - 2021-02-15
+  - 2021-02-16
+  - 2021-01-21
+  - 2021-03-30
+  - 2020-11-24
+  - 2020-12-01
+  - 2021-01-22
+  - 2021-03-31
+  - 2021-03-24
+  - 2021-02-17
+  - 2020-11-30
+  - 2020-12-03
+  - 2020-12-07
+  - 2020-12-15
+  - 2020-12-08
+  - 2021-03-25
+  - 2021-01-19
+  - 2021-04-01
+  - 2020-12-14
+  - 2021-04-02
+  - 2021-03-26
+  - 2021-02-20
+  - 2020-12-10
+  - 2021-02-21
+  - 2021-02-22
+  - 2021-02-23
+  - 2020-12-11
+  - 2021-02-24
+  - 2021-01-13
+  - 2021-03-27
+  - 2020-12-06
+  - 2021-01-11
+  - 2021-01-23
+  - 2021-01-15
+  - 2021-01-25
+  - 2021-02-25
+  - 2020-12-13
+  - 2021-01-27
+  - 2021-01-16
+  - 2020-12-16
+  - 2020-12-17
+  - 2021-03-20
+  - 2021-03-19
+  - 2021-03-17
+  - 2021-03-28
+  - 2021-03-01
+  - 2021-03-02
+  - 2021-03-04
+  - 2021-03-05
+  - 2021-01-17
+  - 2021-01-24
+  - 2021-02-28
+  - 2021-03-03
+  - 2020-12-18
+  - 2020-12-22
+  - 2021-04-05
+  - 2020-11-29
+  - 2020-12-19
+  - 2020-12-23
+  - 2021-02-02
+  - 2021-02-05
+  - 2021-04-03
+  - 2020-12-20
+  - 2021-01-29
+  - 2020-12-24
+  - 2021-02-04
+  - 2020-11-22
+  - 2021-01-31
+  - 2021-03-21
+  - 2021-02-01
+  - 2021-04-04
+  - 2020-12-30
+  - 2020-12-28
+  - 2021-03-15
+  - 2021-02-06
+  - 2021-03-08
+  - 2021-03-10
+  - 2021-03-09
+  - 2021-02-08
+  - 2021-03-11
+  - 2021-02-12
+  - 2021-03-12
+  - 2020-12-21
+  - 2021-01-05
+  - 2021-02-07
+  - 2021-03-07
+  - 2021-01-06
+  - 2021-01-03
+  - 2021-01-09
+  - 2021-03-13
+  - 2021-03-22
+  - 2021-01-18
+  - 2021-02-13
+  - 2020-11-19
+  - 2021-04-08
+  - 2020-11-18
+  - 2020-11-18
+  - 2020-11-19
+  description: Neural Relational Autoregressive Model
+  earliest_forecast: Wednesday, 18 November 2020
+  forecasts: 101
+  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+  latest_forecast: Saturday, 10 April 2021
+  name: NRAR
+  team_name: Facebook AI Research
+  url: https://zoltardata.com/model/448
+- abbreviation: LANL-GrowthRate
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid-19.bsvgateway.org/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/157
+  dates:
+  - 2021-01-21
+  - 2020-05-07
+  - 2020-05-07
+  - 2020-11-19
+  - 2021-02-18
+  - 2020-11-26
+  - 2020-12-03
+  - 2020-12-10
+  - 2021-04-01
+  - 2021-02-25
+  - 2021-02-22
+  - 2021-02-22
+  - 2021-01-14
+  - 2021-03-29
+  - 2021-01-28
+  - 2021-03-15
+  - 2020-12-17
+  - 2020-12-24
+  - 2021-03-04
+  - 2021-03-01
+  - 2021-02-01
+  - 2021-02-04
+  - 2020-12-07
+  - 2021-01-25
+  - 2020-12-14
+  - 2021-03-11
+  - 2021-02-11
+  - 2021-03-22
+  - 2020-11-30
+  - 2021-01-06
+  - 2021-03-08
+  - 2020-11-23
+  - 2021-04-05
+  - 2021-01-18
+  - 2021-04-08
+  - 2020-05-11
+  - 2021-02-15
+  - 2021-02-08
+  - 2020-06-14
+  - 2020-12-21
+  - 2021-01-04
+  - 2021-03-15
+  - 2021-01-11
+  - 2020-06-21
+  - 2020-07-27
+  - 2020-08-03
+  - 2020-07-13
+  - 2020-08-24
+  - 2020-08-31
+  - 2020-09-03
+  - 2020-09-17
+  - 2020-09-14
+  - 2020-08-27
+  - 2020-09-28
+  - 2020-07-09
+  - 2020-06-29
+  - 2020-08-13
+  - 2020-09-21
+  - 2020-09-24
+  - 2020-06-24
+  - 2020-07-23
+  - 2020-08-20
+  - 2020-07-03
+  - 2020-07-16
+  - 2020-08-06
+  - 2020-08-17
+  - 2020-07-06
+  - 2020-05-03
+  - 2020-05-11
+  - 2020-05-14
+  - 2020-04-06
+  - 2020-04-09
+  - 2020-04-27
+  - 2020-04-13
+  - 2020-05-07
+  - 2020-04-23
+  - 2020-04-16
+  - 2020-04-20
+  - 2020-04-30
+  - 2020-05-04
+  - 2020-05-18
+  - 2020-07-02
+  - 2020-08-10
+  - 2020-05-21
+  - 2020-05-25
+  - 2020-05-24
+  - 2020-05-28
+  - 2020-06-01
+  - 2020-06-04
+  - 2020-06-08
+  - 2020-06-11
+  - 2020-09-07
+  - 2020-06-14
+  - 2020-07-20
+  - 2020-07-30
+  - 2020-09-10
+  - 2020-06-18
+  - 2020-10-01
+  - 2020-10-05
+  - 2020-10-08
+  - 2020-10-12
+  - 2020-11-05
+  - 2020-11-02
+  - 2020-10-22
+  - 2020-11-16
+  - 2020-10-15
+  - 2020-10-26
+  - 2020-11-09
+  - 2020-11-12
+  - 2020-10-19
+  - 2020-10-29
+  - 2020-11-04
+  description: This model makes predictions about the future, unconditional on particular
+    intervention strategies. Statistical dynamical growth model accounting for population
+    susceptibility.
+  earliest_forecast: Monday, 06 April 2020
+  forecasts: 112
+  home_url: https://covid-19.bsvgateway.org/
+  latest_forecast: Thursday, 08 April 2021
+  name: GrowthRate
+  team_name: Los Alamos National Labs
+  url: https://zoltardata.com/model/157
 - abbreviation: CovidAnalytics-DELPHI
   actions:
   - label: Website
@@ -239,123 +490,6 @@
   name: DeepGLEAM
   team_name: UCSD_NEU
   url: https://zoltardata.com/model/378
-- abbreviation: FAIR-NRAR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/448
-  dates:
-  - 2021-02-18
-  - 2021-03-29
-  - 2021-02-15
-  - 2021-02-16
-  - 2021-01-21
-  - 2021-03-30
-  - 2020-11-24
-  - 2020-12-01
-  - 2021-01-22
-  - 2021-03-31
-  - 2021-03-24
-  - 2021-02-17
-  - 2020-11-30
-  - 2020-12-03
-  - 2020-12-07
-  - 2020-12-15
-  - 2020-12-08
-  - 2021-03-25
-  - 2021-01-19
-  - 2021-04-01
-  - 2020-12-14
-  - 2021-04-02
-  - 2021-03-26
-  - 2021-02-20
-  - 2020-12-10
-  - 2021-02-21
-  - 2021-02-22
-  - 2021-02-23
-  - 2020-12-11
-  - 2021-02-24
-  - 2021-01-13
-  - 2021-03-27
-  - 2020-12-06
-  - 2021-01-11
-  - 2021-01-23
-  - 2021-01-15
-  - 2021-01-25
-  - 2021-02-25
-  - 2020-12-13
-  - 2021-01-27
-  - 2021-01-16
-  - 2020-12-16
-  - 2020-12-17
-  - 2021-03-20
-  - 2021-03-19
-  - 2021-03-17
-  - 2021-03-28
-  - 2021-03-01
-  - 2021-03-02
-  - 2021-03-04
-  - 2021-03-05
-  - 2021-01-17
-  - 2021-01-24
-  - 2021-02-28
-  - 2021-03-03
-  - 2020-12-18
-  - 2020-12-22
-  - 2021-04-05
-  - 2020-11-29
-  - 2020-12-19
-  - 2020-12-23
-  - 2021-02-02
-  - 2021-02-05
-  - 2021-04-03
-  - 2020-12-20
-  - 2021-01-29
-  - 2020-12-24
-  - 2021-02-04
-  - 2020-11-22
-  - 2021-01-31
-  - 2021-03-21
-  - 2021-02-01
-  - 2021-04-04
-  - 2020-12-30
-  - 2020-12-28
-  - 2021-03-15
-  - 2021-02-06
-  - 2021-03-08
-  - 2021-03-10
-  - 2021-03-09
-  - 2021-02-08
-  - 2021-03-11
-  - 2021-02-12
-  - 2021-03-12
-  - 2020-12-21
-  - 2021-01-05
-  - 2021-02-07
-  - 2021-03-07
-  - 2021-01-06
-  - 2021-01-03
-  - 2021-01-09
-  - 2021-03-13
-  - 2021-03-22
-  - 2021-01-18
-  - 2021-02-13
-  - 2020-11-19
-  - 2020-11-18
-  - 2020-11-18
-  - 2020-11-19
-  description: Neural Relational Autoregressive Model
-  earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 99
-  home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Monday, 05 April 2021
-  name: NRAR
-  team_name: Facebook AI Research
-  url: https://zoltardata.com/model/448
 - abbreviation: IBF-TimeSeries
   actions:
   - label: Website
@@ -619,6 +753,64 @@
   name: ensemble1
   team_name: EpiForecasts group at the London School of Hygiene & Tropical Medicine
   url: https://zoltardata.com/model/290
+- abbreviation: CEID-Walk
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/e3bo/random-walks
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/361
+  dates:
+  - 2020-12-07
+  - 2021-02-22
+  - 2020-12-14
+  - 2021-01-25
+  - 2020-11-30
+  - 2021-03-15
+  - 2021-03-29
+  - 2020-11-23
+  - 2021-01-18
+  - 2021-03-01
+  - 2021-02-01
+  - 2021-03-22
+  - 2020-12-21
+  - 2021-03-08
+  - 2021-02-08
+  - 2021-01-04
+  - 2021-04-05
+  - 2021-02-15
+  - 2021-01-11
+  - 2020-12-28
+  - 2021-03-15
+  - 2020-12-28
+  - 2020-09-20
+  - 2020-09-13
+  - 2020-08-30
+  - 2020-09-06
+  - 2020-08-16
+  - 2020-09-27
+  - 2020-08-09
+  - 2020-08-23
+  - 2020-10-04
+  - 2020-10-11
+  - 2020-10-25
+  - 2020-10-18
+  - 2020-11-16
+  - 2020-11-01
+  - 2020-11-09
+  description: We use a random walk model without drift. The last few observations
+    of a target time series are used to estimate the variance in step size of the
+    random walk.
+  earliest_forecast: Sunday, 09 August 2020
+  forecasts: 37
+  home_url: https://github.com/e3bo/random-walks
+  latest_forecast: Monday, 05 April 2021
+  name: Walk
+  team_name: University of Georgia Center for the Ecology of Infectious Diseases Forecasting
+    Working Group
+  url: https://zoltardata.com/model/361
 - abbreviation: IEM_MED-CovidProject
   actions:
   - label: Website
@@ -1097,137 +1289,6 @@
   name: RidgeTensorFlowRegressor
   team_name: The University of Michigan
   url: https://zoltardata.com/model/303
-- abbreviation: LANL-GrowthRate
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid-19.bsvgateway.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/157
-  dates:
-  - 2021-01-21
-  - 2020-05-07
-  - 2020-05-07
-  - 2020-11-19
-  - 2021-02-18
-  - 2020-11-26
-  - 2020-12-03
-  - 2020-12-10
-  - 2021-04-01
-  - 2021-02-25
-  - 2021-02-22
-  - 2021-02-22
-  - 2021-01-14
-  - 2021-03-29
-  - 2021-01-28
-  - 2021-03-15
-  - 2020-12-17
-  - 2020-12-24
-  - 2021-03-04
-  - 2021-03-01
-  - 2021-02-01
-  - 2021-02-04
-  - 2020-12-07
-  - 2021-01-25
-  - 2020-12-14
-  - 2021-03-11
-  - 2021-02-11
-  - 2021-03-22
-  - 2020-11-30
-  - 2021-01-06
-  - 2021-03-08
-  - 2020-11-23
-  - 2021-04-05
-  - 2021-01-18
-  - 2020-05-11
-  - 2021-02-15
-  - 2021-02-08
-  - 2020-06-14
-  - 2020-12-21
-  - 2021-01-04
-  - 2021-03-15
-  - 2021-01-11
-  - 2020-06-21
-  - 2020-07-27
-  - 2020-08-03
-  - 2020-07-13
-  - 2020-08-24
-  - 2020-08-31
-  - 2020-09-03
-  - 2020-09-17
-  - 2020-09-14
-  - 2020-08-27
-  - 2020-09-28
-  - 2020-07-09
-  - 2020-06-29
-  - 2020-08-13
-  - 2020-09-21
-  - 2020-09-24
-  - 2020-06-24
-  - 2020-07-23
-  - 2020-08-20
-  - 2020-07-03
-  - 2020-07-16
-  - 2020-08-06
-  - 2020-08-17
-  - 2020-07-06
-  - 2020-05-03
-  - 2020-05-11
-  - 2020-05-14
-  - 2020-04-06
-  - 2020-04-09
-  - 2020-04-27
-  - 2020-04-13
-  - 2020-05-07
-  - 2020-04-23
-  - 2020-04-16
-  - 2020-04-20
-  - 2020-04-30
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-07-02
-  - 2020-08-10
-  - 2020-05-21
-  - 2020-05-25
-  - 2020-05-24
-  - 2020-05-28
-  - 2020-06-01
-  - 2020-06-04
-  - 2020-06-08
-  - 2020-06-11
-  - 2020-09-07
-  - 2020-06-14
-  - 2020-07-20
-  - 2020-07-30
-  - 2020-09-10
-  - 2020-06-18
-  - 2020-10-01
-  - 2020-10-05
-  - 2020-10-08
-  - 2020-10-12
-  - 2020-11-05
-  - 2020-11-02
-  - 2020-10-22
-  - 2020-11-16
-  - 2020-10-15
-  - 2020-10-26
-  - 2020-11-09
-  - 2020-11-12
-  - 2020-10-19
-  - 2020-10-29
-  - 2020-11-04
-  description: This model makes predictions about the future, unconditional on particular
-    intervention strategies. Statistical dynamical growth model accounting for population
-    susceptibility.
-  earliest_forecast: Monday, 06 April 2020
-  forecasts: 111
-  home_url: https://covid-19.bsvgateway.org/
-  latest_forecast: Monday, 05 April 2021
-  name: GrowthRate
-  team_name: Los Alamos National Labs
-  url: https://zoltardata.com/model/157
 - abbreviation: AIpert-pwllnod
   actions:
   - label: Website
@@ -3069,265 +3130,3 @@
   name: CurveFit
   team_name: Institute for Health Metrics and Evaluation
   url: https://zoltardata.com/model/154
-- abbreviation: CEID-Walk
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/e3bo/random-walks
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/361
-  dates:
-  - 2020-12-07
-  - 2021-02-22
-  - 2020-12-14
-  - 2021-01-25
-  - 2020-11-30
-  - 2021-03-15
-  - 2021-03-29
-  - 2020-11-23
-  - 2021-01-18
-  - 2021-03-01
-  - 2021-02-01
-  - 2021-03-22
-  - 2020-12-21
-  - 2021-03-08
-  - 2021-02-08
-  - 2021-01-04
-  - 2021-02-15
-  - 2021-01-11
-  - 2020-12-28
-  - 2021-03-15
-  - 2020-12-28
-  - 2020-09-20
-  - 2020-09-13
-  - 2020-08-30
-  - 2020-09-06
-  - 2020-08-16
-  - 2020-09-27
-  - 2020-08-09
-  - 2020-08-23
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-10-25
-  - 2020-10-18
-  - 2020-11-16
-  - 2020-11-01
-  - 2020-11-09
-  description: We use a random walk model without drift. The last few observations
-    of a target time series are used to estimate the variance in step size of the
-    random walk.
-  earliest_forecast: Sunday, 09 August 2020
-  forecasts: 36
-  home_url: https://github.com/e3bo/random-walks
-  latest_forecast: Monday, 29 March 2021
-  name: Walk
-  team_name: University of Georgia Center for the Ecology of Infectious Diseases Forecasting
-    Working Group
-  url: https://zoltardata.com/model/361
-- abbreviation: JHUAPL-SLPHospEns
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/lmullany/JHUAPL-SLPHospEns
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/462
-  dates:
-  - 2021-02-15
-  - 2021-03-29
-  - 2020-12-14
-  - 2021-02-22
-  - 2021-01-11
-  - 2021-01-25
-  - 2021-03-22
-  - 2021-03-15
-  - 2021-03-01
-  - 2020-12-06
-  - 2021-02-01
-  - 2020-12-28
-  - 2021-02-08
-  - 2021-03-08
-  - 2020-12-21
-  - 2021-01-04
-  - 2021-01-18
-  description: Estimates an ensemble of hospitalization forecasts by simulating the
-    individual model-specific forecasts from the submitted quantile functions, and
-    linearly pooling.
-  earliest_forecast: Sunday, 06 December 2020
-  forecasts: 17
-  home_url: https://github.com/lmullany/JHUAPL-SLPHospEns
-  latest_forecast: Monday, 29 March 2021
-  name: SLPHospEns
-  team_name: JHUAPL
-  url: https://zoltardata.com/model/462
-- abbreviation: Caltech-CS156
-  actions:
-  - label: Website
-    new_window: true
-    url: http://cs156.caltech.edu
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/439
-  dates:
-  - 2021-03-28
-  - 2021-02-21
-  - 2021-03-14
-  - 2020-11-29
-  - 2020-12-06
-  - 2021-01-31
-  - 2021-02-28
-  - 2020-12-13
-  - 2020-12-20
-  - 2021-02-07
-  - 2021-03-07
-  - 2021-01-03
-  - 2021-03-21
-  - 2020-12-27
-  - 2021-01-17
-  - 2020-11-22
-  - 2021-01-10
-  - 2021-03-14
-  - 2020-11-08
-  - 2020-11-15
-  - 2020-11-01
-  description: Aggregate of 14 machine learning (neural network, autoregressive, decision
-    tree, etc.) and epidemiological models guided by machine learning.
-  earliest_forecast: Sunday, 01 November 2020
-  forecasts: 21
-  home_url: http://cs156.caltech.edu
-  latest_forecast: Sunday, 28 March 2021
-  name: CS156
-  team_name: Caltech CS156
-  url: https://zoltardata.com/model/439
-- abbreviation: UCLA-SuEIR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19.uclaml.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/198
-  dates:
-  - 2020-11-22
-  - 2020-11-29
-  - 2020-12-06
-  - 2021-02-21
-  - 2020-07-05
-  - 2020-11-29
-  - 2020-07-19
-  - 2021-03-28
-  - 2020-12-20
-  - 2021-01-24
-  - 2021-03-21
-  - 2021-02-28
-  - 2021-01-31
-  - 2021-03-14
-  - 2021-03-07
-  - 2020-12-27
-  - 2021-01-17
-  - 2021-01-03
-  - 2020-12-13
-  - 2021-02-07
-  - 2020-05-01
-  - 2020-05-10
-  - 2021-01-10
-  - 2020-06-21
-  - 2020-08-23
-  - 2020-07-05
-  - 2020-08-09
-  - 2020-08-30
-  - 2020-09-13
-  - 2020-06-28
-  - 2020-09-27
-  - 2020-07-19
-  - 2020-09-20
-  - 2020-05-01
-  - 2020-07-26
-  - 2020-05-10
-  - 2020-08-02
-  - 2020-08-16
-  - 2020-05-17
-  - 2020-09-06
-  - 2020-05-24
-  - 2020-05-31
-  - 2020-06-07
-  - 2020-06-14
-  - 2020-07-12
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-15
-  - 2020-11-01
-  - 2020-10-18
-  - 2020-10-25
-  - 2020-11-08
-  description: The SuEIR model is a variant of the SEIR model considering both untested
-    and unreported cases. The model considers reopening and assumes susceptible population
-    will increase after the reopen.
-  earliest_forecast: Friday, 01 May 2020
-  forecasts: 52
-  home_url: https://covid19.uclaml.org/
-  latest_forecast: Sunday, 28 March 2021
-  name: SuEIR
-  team_name: UCLA Statistical Machine Learning Lab
-  url: https://zoltardata.com/model/198
-- abbreviation: RPI_UW-Mob_Collision
-  actions:
-  - label: Website
-    new_window: true
-    url: http://rpi-uw-covid-mobility.herokuapp.com/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/367
-  dates:
-  - 2020-11-15
-  - 2020-11-22
-  - 2020-11-29
-  - 2020-12-06
-  - 2021-03-28
-  - 2021-02-21
-  - 2021-02-21
-  - 2021-01-24
-  - 2021-01-17
-  - 2020-12-13
-  - 2021-03-14
-  - 2021-03-21
-  - 2021-02-28
-  - 2021-01-31
-  - 2020-12-27
-  - 2021-02-07
-  - 2020-11-15
-  - 2021-03-07
-  - 2021-02-14
-  - 2020-12-20
-  - 2021-01-10
-  - 2021-03-14
-  - 2021-01-03
-  - 2020-08-23
-  - 2020-09-13
-  - 2020-09-06
-  - 2020-09-27
-  - 2020-09-20
-  - 2020-08-10
-  - 2020-08-03
-  - 2020-08-30
-  - 2020-08-16
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-08
-  - 2020-10-18
-  - 2020-11-01
-  - 2020-10-25
-  description: A mobility-informed simplified SIR model motivated by collision theory.
-  earliest_forecast: Monday, 03 August 2020
-  forecasts: 38
-  home_url: http://rpi-uw-covid-mobility.herokuapp.com/
-  latest_forecast: Sunday, 28 March 2021
-  name: Mobility-informed Collision Model
-  team_name: RPI and UW
-  url: https://zoltardata.com/model/367
