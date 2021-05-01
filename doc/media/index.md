@@ -3,8 +3,38 @@ title: In the news
 layout: docs
 ---
 
+[Herd Immunity Is Humanity’s Great Hope, and It’s Proving Elusive](https://www.bloomberg.com/news/articles/2021-04-22/herd-immunity-hard-to-achieve-as-covid-variants-grow-experts-say){:target="_blank"}  
+_Bloomberg Businessweek_ | 22 April 2021
+
+***
+
+[Amherst Weekly Report: April 16, 2021](https://youtu.be/BmG1iJ9ihYI?t=266){:target="_blank"}  
+_Amherst Media_ | 16 April 2021
+
+***
+
+[A 4th COVID-19 Surge May Be Starting. How Bad Could It Get?](https://www.npr.org/sections/health-shots/2021/04/02/983521198/a-4th-covid-19-surge-may-be-starting-how-bad-could-it-get){:target="_blank"}  
+_NPR_ | 2 April 2021
+
+***
+
+['We're skating on a knife's edge right now': Scientists worry US could be headed for yet another COVID-19 surge](https://www.usatoday.com/story/news/health/2021/03/30/covid-19-us-4th-surge-rising-case-count-coronavirus/7049877002/){:target="_blank"}  
+_USA Today_ | 30 March 2021
+
+***
+
+[Balance of Power: Concerns Over New Covid-19 Wave (Podcast)](https://www.bloomberg.com/news/audio/2021-03-24/balance-of-power-concerns-over-new-covid-19-wave-podcast){:target="_blank"}  
+_Bloomberg_ | 24 March 2021
+
+***
+
 [The 27-Year-Old Who Became a Covid-19 Data Superstar](https://www.bloomberg.com/news/articles/2021-02-19/covid-pandemic-how-youyang-gu-used-ai-and-data-to-make-most-accurate-prediction){:target="_blank"}  
 _Bloomberg_ | 19 February 2021
+
+***
+
+[U.S. Covid-19 Deaths Seen Falling to Lowest Level Since November](https://www.bloomberg.com/news/articles/2021-02-16/covid-19-deaths-seen-falling-to-slowest-pace-since-november){:target="_blank"}  
+_Bloomberg_ | 16 February 2021
 
 ***
 
@@ -38,33 +68,35 @@ _CNN_ | 31 December 2020
 
 ***
 
-[U.S. Covid Deaths Match April Peak With Hospitals Still Filling](https://www.bloomberg.com/news/articles/2020-12-07/u-s-covid-deaths-match-april-peak-with-hospitals-still-filling){:target="_blank"}  
-_Bloomberg_ | 7 December 2020
+[UMass model sees cases continuing to climb into early January](https://www.bostonglobe.com/2020/12/15/nation/umass-model-sees-cases-continuing-climb-into-early-january/){:target="_blank"}  
+_The Boston Globe_ | 15 December 2020
 
 ***
 
-[Amherst Weekly Report: Season 1 Finale](https://youtu.be/vAA7Vjow4xo){:target="_blank"}  
-_Amherst Weekly Report_ | 11 December 2020
-
-***
-
-[The number of people with the virus who died in the U.S. passes 300,000.](https://www.nytimes.com/live/2020/12/14/world/covid-19-coronavirus#the-number-of-people-with-the-virus-who-died-in-the-us-passes-300000){:target="_blank"}  
+[The number of people with the virus who died in the U.S. passes 300,000](https://www.nytimes.com/live/2020/12/14/world/covid-19-coronavirus#the-number-of-people-with-the-virus-who-died-in-the-us-passes-300000){:target="_blank"}  
 _The New York Times_ | 14 December 2020
 
 ***
 
+[Amherst Weekly Report: Season 1 Finale - December 11, 2020](https://youtu.be/vAA7Vjow4xo){:target="_blank"}  
+_Amherst Media_ | 11 December 2020
+
+***
+
+[U.S. Covid Deaths Match April Peak With Hospitals Still Filling](https://www.bloomberg.com/news/articles/2020-12-07/u-s-covid-deaths-match-april-peak-with-hospitals-still-filling){:target="_blank"}  
+_Bloomberg_ | 7 December 2020
+
+***
 
 [How Many Americans Are About to Die?](https://www.theatlantic.com/science/archive/2020/11/coronavirus-death-rate-third-surge/617150/){:target="_blank"}  
 _The Atlantic_ | 19 November 2020
 
 ***
 
-
 [With a meteoric rise in deaths, talk of waves is misguided, say Covid-19 modelers](https://www.statnews.com/2020/11/12/with-a-meteoric-rise-in-deaths-talk-of-waves-is-misguided-say-covid-19-modelers/){:target="_blank"}  
 _STAT_ | 12 November 2020
 
 ***
-
 
 [Universal mask use could save 130,000 U.S. lives by the end of February, new study estimates](https://www.statnews.com/2020/10/23/universal-mask-use-could-save-130000-lives-by-the-end-of-february-new-modeling-study-says/){:target="_blank"}  
 _STAT_ | 23 October 2020
@@ -111,11 +143,6 @@ _AP News_ | 31 August 2020
 
 ***
 
-[The Health 202: Why individual models of coronavirus deaths are often wrong](https://www.washingtonpost.com/politics/2020/08/05/health-202-why-individual-models-coronavirus-deaths-are-often-wrong/){:target="_blank"}  
-_Washington Post_ | 5 August 2020
-
-***
-
 [COVID-19 pandemic is not ‘fading’ in the United States](https://apnews.com/afs:Content:9213894577){:target="_blank"}  
 _AP News_ | 6 August 2020
 
@@ -123,6 +150,11 @@ _AP News_ | 6 August 2020
 
 [U.S. COVID-19 Death Toll Might Reach 300,000 by December, Researchers Predict](https://www.npr.org/2020/08/06/899881918/u-s-covid-19-death-toll-might-reach-300-000-by-december-researchers-predict){:target="_blank"}  
 _NPR_ | 6 August 2020
+
+***
+
+[The Health 202: Why individual models of coronavirus deaths are often wrong](https://www.washingtonpost.com/politics/2020/08/05/health-202-why-individual-models-coronavirus-deaths-are-often-wrong/){:target="_blank"}  
+_Washington Post_ | 5 August 2020
 
 ***
 
@@ -157,16 +189,15 @@ _Boston Globe_ | 22 July 2020
 
 ***
 
-[US COVID-19 Epidemic Projected To Worsen](https://www.barrons.com/news/us-covid-19-epidemic-projected-to-worsen-01594826104){:target="_blank"}  
-_AFP News_ | 15 July 2020
-
-***
-
 [Florida coronavirus cases surge for fifth day as Trump pledges outbreak will be under control](https://www.reuters.com/article/us-health-coronavirus-usa-idUSKCN24K0IP){:target="_blank"}  
 _Reuters_ | 19 July 2020
 
 ***
 
+[US COVID-19 Epidemic Projected To Worsen](https://www.barrons.com/news/us-covid-19-epidemic-projected-to-worsen-01594826104){:target="_blank"}  
+_AFP News_ | 15 July 2020
+
+***
 
 [Mass. reports 142 new confirmed coronavirus cases, 27 new deaths](https://www.bostonglobe.com/2020/07/15/nation/umass-model-predicts-total-8774-mass-coronavirus-deaths-four-weeks/){:target="_blank"}  
 _Boston Globe_ | 15 July 2020

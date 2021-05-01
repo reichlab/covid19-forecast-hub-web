@@ -8,8 +8,8 @@ sections:
     content: >-
       This site maintains the authoritative, up-to-date record for forecasts of COVID-19 cases, deaths and hospitalizations in the US, created by dozens of leading infectious disease modeling teams from around the globe, in coordination with the US CDC. 
     actions:
-      - label: Weekly Reports
-        url: /doc/reports
+      - label: Forecast Summaries
+        url: https://covid19forecasthub.org/reports/single_page.html
         type: secondary
         new_window: false
       - label: Visualization
@@ -20,6 +20,10 @@ sections:
         url: /community/
         type: secondary
         new_window: false
+      - label: Forecast Evaluation Dashboard
+        url: https://delphi.cmu.edu/forecast-eval/
+        type: secondary
+        new_window: true
   - section_id: features
     type: section_grid
     col_number: three
@@ -65,36 +69,34 @@ sections:
     link_items: 
       - title_url: https://google.com
         title_name: PBS
-    content1: >-
+
+
+    content1: >-  
+
+      [Herd Immunity Is Humanity’s Great Hope, and It’s Proving Elusive](https://www.bloomberg.com/news/articles/2021-04-22/herd-immunity-hard-to-achieve-as-covid-variants-grow-experts-say){:target="_blank"}  
+      _Bloomberg Businessweek_ | 22 April 2021   
+
       [More than 90,000 could die of Covid-19 in next three weeks, CDC forecast shows](https://www.cnn.com/2021/01/14/health/us-coronavirus-thursday/index.html){:target="_blank"}  
-      
       _CNN_ | 14 January 2021   
 
 
-      [U.S. Covid Deaths Match April Peak With Hospitals Still Filling](https://www.bloomberg.com/news/articles/2020-12-07/u-s-covid-deaths-match-april-peak-with-hospitals-still-filling){:target="_blank"}  
+    content2: >-  
 
-      _Bloomberg_ | 7 December 2020
+      [A 4th COVID-19 Surge May Be Starting. How Bad Could It Get?](https://www.npr.org/sections/health-shots/2021/04/02/983521198/a-4th-covid-19-surge-may-be-starting-how-bad-could-it-get){:target="_blank"}  
+      _NPR_ | 2 April 2021  
 
+      [UMass model sees cases continuing to climb into early January](https://www.bostonglobe.com/2020/12/15/nation/umass-model-sees-cases-continuing-climb-into-early-january/){:target="_blank"}  
+      _The Boston Globe_ | 15 December 2020  
 
-    content2: >-
-      [We Can Still Change The Course Of The Pandemic, COVID Modeler Says](https://www.wgbh.org/news/local-news/2021/01/05/we-can-still-change-the-course-of-the-pandemic-covid-modeler-says){:target="_blank"}  
-
-      _WGBH_ | 5 January 2021  
-
-
-      [How Many Americans Are About to Die?](https://www.theatlantic.com/science/archive/2020/11/coronavirus-death-rate-third-surge/617150/){:target="_blank"}  
-      
-      _The Atlantic_ | 19 November 2020  
 
     content3: >-
-      [The number of people with the virus who died in the U.S. passes 300,000](https://www.nytimes.com/live/2020/12/14/world/covid-19-coronavirus#the-number-of-people-with-the-virus-who-died-in-the-us-passes-300000){:target="_blank"}  
 
+      ['We're skating on a knife's edge right now': Scientists worry US could be headed for yet another COVID-19 surge](https://www.usatoday.com/story/news/health/2021/03/30/covid-19-us-4th-surge-rising-case-count-coronavirus/7049877002/){:target="_blank"}  
+      _USA Today_ | 30 March 2021  
+
+      [The number of people with the virus who died in the U.S. passes 300,000](https://www.nytimes.com/live/2020/12/14/world/covid-19-coronavirus#the-number-of-people-with-the-virus-who-died-in-the-us-passes-300000){:target="_blank"}  
       _The New York Times_ | 14 December 2020  
 
-
-      [With a meteoric rise in deaths, talk of waves is misguided, say Covid-19 modelers](https://www.statnews.com/2020/11/12/with-a-meteoric-rise-in-deaths-talk-of-waves-is-misguided-say-covid-19-modelers/){:target="_blank"}  
-
-      _STAT_ | 12 November 2020  
 
     actions:
       - label: See more
