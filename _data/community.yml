@@ -1328,6 +1328,34 @@
   name: Covid Complete
   team_name: Steve McConnell
   url: https://zoltardata.com/model/368
+- abbreviation: IUPUI-HkPrMobiDyR
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/chiangwe/HawkPR
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/508
+  dates:
+  - 2021-03-29
+  - 2021-03-15
+  - 2021-04-12
+  - 2021-02-22
+  - 2021-03-22
+  - 2021-04-05
+  - 2021-04-19
+  - 2021-04-26
+  - 2021-05-10
+  - 2021-05-17
+  description: Hawkes processes with Dynamic reproduce number.
+  earliest_forecast: Monday, 22 February 2021
+  forecasts: 10
+  home_url: https://github.com/chiangwe/HawkPR
+  latest_forecast: Monday, 17 May 2021
+  name: HkPrMobiDyR
+  team_name: IUPUI CIS
+  url: https://zoltardata.com/model/508
 - abbreviation: JHUAPL-SLPHospEns
   actions:
   - label: Website
@@ -3287,33 +3315,6 @@
   name: CovidScenarioPipeline
   team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
   url: https://zoltardata.com/model/255
-- abbreviation: IUPUI-HkPrMobiDyR
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/chiangwe/HawkPR
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/508
-  dates:
-  - 2021-03-29
-  - 2021-03-15
-  - 2021-04-12
-  - 2021-02-22
-  - 2021-03-22
-  - 2021-04-05
-  - 2021-04-19
-  - 2021-04-26
-  - 2021-05-10
-  description: Hawkes processes with Dynamic reproduce number.
-  earliest_forecast: Monday, 22 February 2021
-  forecasts: 9
-  home_url: https://github.com/chiangwe/HawkPR
-  latest_forecast: Monday, 10 May 2021
-  name: HkPrMobiDyR
-  team_name: IUPUI CIS
-  url: https://zoltardata.com/model/508
 - abbreviation: UCLA-SuEIR
   actions:
   - label: Website
