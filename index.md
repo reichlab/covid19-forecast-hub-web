@@ -73,13 +73,13 @@ sections:
 
     content1: >-  
 
+      [All together now: the most trustworthy covid-19 model is an ensemble](https://www.technologyreview.com/2021/05/28/1025478/covid-ensemble-model-forecast-trustworthy/){:target="_blank"}  
+      
+      _MIT Technology Review_ | 28 May 2021  
+      
       [Herd Immunity Is Humanity’s Great Hope, and It’s Proving Elusive](https://www.bloomberg.com/news/articles/2021-04-22/herd-immunity-hard-to-achieve-as-covid-variants-grow-experts-say){:target="_blank"}  
       
-      _Bloomberg Businessweek_ | 22 April 2021   
-
-      [More than 90,000 could die of Covid-19 in next three weeks, CDC forecast shows](https://www.cnn.com/2021/01/14/health/us-coronavirus-thursday/index.html){:target="_blank"}  
-      
-      _CNN_ | 14 January 2021   
+      _Bloomberg Businessweek_ | 22 April 2021  
 
 
     content2: >-  
@@ -87,21 +87,21 @@ sections:
       [A 4th COVID-19 Surge May Be Starting. How Bad Could It Get?](https://www.npr.org/sections/health-shots/2021/04/02/983521198/a-4th-covid-19-surge-may-be-starting-how-bad-could-it-get){:target="_blank"}  
       
       _NPR_ | 2 April 2021  
-
-      [UMass model sees cases continuing to climb into early January](https://www.bostonglobe.com/2020/12/15/nation/umass-model-sees-cases-continuing-climb-into-early-january/){:target="_blank"}  
       
-      _The Boston Globe_ | 15 December 2020  
-
-
-    content3: >-
-
       ['We're skating on a knife's edge right now': Scientists worry US could be headed for yet another COVID-19 surge](https://www.usatoday.com/story/news/health/2021/03/30/covid-19-us-4th-surge-rising-case-count-coronavirus/7049877002/){:target="_blank"}  
       
       _USA Today_ | 30 March 2021  
 
-      [The number of people with the virus who died in the U.S. passes 300,000](https://www.nytimes.com/live/2020/12/14/world/covid-19-coronavirus#the-number-of-people-with-the-virus-who-died-in-the-us-passes-300000){:target="_blank"}  
+
+    content3: >-
+
+            [More than 90,000 could die of Covid-19 in next three weeks, CDC forecast shows](https://www.cnn.com/2021/01/14/health/us-coronavirus-thursday/index.html){:target="_blank"}  
       
-      _The New York Times_ | 14 December 2020  
+      _CNN_ | 14 January 2021  
+
+      [UMass model sees cases continuing to climb into early January](https://www.bostonglobe.com/2020/12/15/nation/umass-model-sees-cases-continuing-climb-into-early-january/){:target="_blank"}  
+      
+      _The Boston Globe_ | 15 December 2020  
 
 
     actions:

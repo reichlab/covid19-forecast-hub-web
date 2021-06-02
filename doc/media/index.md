@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[All together now: the most trustworthy covid-19 model is an ensemble](https://www.technologyreview.com/2021/05/28/1025478/covid-ensemble-model-forecast-trustworthy/){:target="_blank"}  
+_MIT Technology Review_ | 28 May 2021
+
+***
+
 [Herd Immunity Is Humanity’s Great Hope, and It’s Proving Elusive](https://www.bloomberg.com/news/articles/2021-04-22/herd-immunity-hard-to-achieve-as-covid-variants-grow-experts-say){:target="_blank"}  
 _Bloomberg Businessweek_ | 22 April 2021
 
