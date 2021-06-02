@@ -93,7 +93,7 @@ sections:
       _USA Today_ | 30 March 2021  
 
 
-    content3: >-
+    content3: >-  
 
             [More than 90,000 could die of Covid-19 in next three weeks, CDC forecast shows](https://www.cnn.com/2021/01/14/health/us-coronavirus-thursday/index.html){:target="_blank"}  
       
