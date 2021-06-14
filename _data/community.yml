@@ -1,3 +1,184 @@
+- abbreviation: USC-SI_kJalpha
+  actions:
+  - label: Website
+    new_window: true
+    url: https://scc-usc.github.io/ReCOVER-COVID-19
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/300
+  dates:
+  - 2020-12-13
+  - 2021-04-11
+  - 2021-03-28
+  - 2021-02-21
+  - 2020-09-20
+  - 2021-05-30
+  - 2021-01-31
+  - 2021-04-04
+  - 2021-05-23
+  - 2021-04-18
+  - 2021-03-07
+  - 2021-02-07
+  - 2020-05-24
+  - 2020-06-14
+  - 2020-05-10
+  - 2020-06-07
+  - 2020-05-31
+  - 2020-05-17
+  - 2020-06-21
+  - 2020-10-26
+  - 2020-12-13
+  - 2020-11-29
+  - 2020-11-01
+  - 2020-11-22
+  - 2020-12-06
+  - 2021-03-21
+  - 2021-06-06
+  - 2021-01-24
+  - 2021-01-17
+  - 2021-02-28
+  - 2021-05-09
+  - 2021-05-16
+  - 2021-04-25
+  - 2020-12-20
+  - 2021-01-03
+  - 2020-12-27
+  - 2021-02-14
+  - 2021-03-14
+  - 2020-11-22
+  - 2021-05-02
+  - 2020-12-20
+  - 2021-01-10
+  - 2020-12-06
+  - 2020-12-27
+  - 2021-01-03
+  - 2021-06-13
+  - 2020-06-23
+  - 2020-07-05
+  - 2020-05-10
+  - 2020-06-28
+  - 2020-06-07
+  - 2020-05-31
+  - 2020-07-27
+  - 2020-05-17
+  - 2020-06-27
+  - 2020-06-21
+  - 2020-09-06
+  - 2020-09-13
+  - 2020-09-27
+  - 2020-08-30
+  - 2020-09-20
+  - 2020-07-19
+  - 2020-08-09
+  - 2020-08-16
+  - 2020-07-12
+  - 2020-08-23
+  - 2020-08-02
+  - 2020-05-24
+  - 2020-07-26
+  - 2020-06-14
+  - 2020-10-04
+  - 2020-10-11
+  - 2020-10-25
+  - 2020-10-26
+  - 2020-11-08
+  - 2020-11-15
+  - 2020-10-18
+  - 2020-11-01
+  description: A heterogeneous infection rate model with vaccines and multiple variants
+    and adaptive to changing trends. Uses genomics data to estimate the prevelance
+    of the variants.
+  earliest_forecast: Sunday, 10 May 2020
+  forecasts: 78
+  home_url: https://scc-usc.github.io/ReCOVER-COVID-19
+  latest_forecast: Sunday, 13 June 2021
+  name: SI_kJalpha
+  team_name: University of Southern California
+  url: https://zoltardata.com/model/300
+- abbreviation: IHME-CurveFit
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid19.healthdata.org/united-states-of-america
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/154
+  dates:
+  - 2020-05-12
+  - 2021-05-28
+  - 2020-05-12
+  - 2020-11-23
+  - 2020-12-07
+  - 2021-04-01
+  - 2021-02-25
+  - 2021-01-29
+  - 2021-01-22
+  - 2021-05-07
+  - 2021-05-24
+  - 2020-12-10
+  - 2021-03-25
+  - 2021-02-22
+  - 2021-04-16
+  - 2021-06-11
+  - 2020-12-18
+  - 2021-01-15
+  - 2021-03-18
+  - 2021-04-23
+  - 2021-06-07
+  - 2020-12-23
+  - 2021-02-05
+  - 2021-02-12
+  - 2021-05-17
+  - 2021-03-15
+  - 2020-08-24
+  - 2020-09-28
+  - 2020-09-03
+  - 2020-08-27
+  - 2020-06-24
+  - 2020-09-21
+  - 2020-07-17
+  - 2020-07-30
+  - 2020-08-06
+  - 2020-07-23
+  - 2020-03-27
+  - 2020-03-29
+  - 2020-03-30
+  - 2020-03-31
+  - 2020-04-01
+  - 2020-04-05
+  - 2020-04-07
+  - 2020-04-09
+  - 2020-04-12
+  - 2020-04-16
+  - 2020-04-20
+  - 2020-04-21
+  - 2020-04-27
+  - 2020-04-28
+  - 2020-05-08
+  - 2020-05-04
+  - 2020-05-18
+  - 2020-05-12
+  - 2020-05-29
+  - 2020-06-29
+  - 2020-06-22
+  - 2020-06-05
+  - 2020-06-08
+  - 2020-06-10
+  - 2020-07-06
+  - 2020-06-15
+  - 2020-10-16
+  - 2020-10-26
+  description: This model makes predictions about the future that are dependent on
+    the assumption  that current interventions continue. Non-linear mixed efects curve-fitting.
+  earliest_forecast: Friday, 27 March 2020
+  forecasts: 64
+  home_url: https://covid19.healthdata.org/united-states-of-america
+  latest_forecast: Friday, 11 June 2021
+  name: CurveFit
+  team_name: Institute for Health Metrics and Evaluation
+  url: https://zoltardata.com/model/154
 - abbreviation: FAIR-NRAR
   actions:
   - label: Website
@@ -119,6 +300,7 @@
   - 2021-06-05
   - 2021-06-08
   - 2021-06-09
+  - 2021-06-10
   - 2020-12-16
   - 2020-12-17
   - 2021-03-20
@@ -168,9 +350,9 @@
   - 2020-11-19
   description: Neural Relational Autoregressive Model
   earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 158
+  forecasts: 159
   home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Wednesday, 09 June 2021
+  latest_forecast: Thursday, 10 June 2021
   name: NRAR
   team_name: Facebook AI Research
   url: https://zoltardata.com/model/448
@@ -331,88 +513,6 @@
   name: DeepSTIA
   team_name: Microsoft
   url: https://zoltardata.com/model/461
-- abbreviation: IHME-CurveFit
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19.healthdata.org/united-states-of-america
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/154
-  dates:
-  - 2020-05-12
-  - 2021-05-28
-  - 2020-05-12
-  - 2020-11-23
-  - 2020-12-07
-  - 2021-04-01
-  - 2021-02-25
-  - 2021-01-29
-  - 2021-01-22
-  - 2021-05-07
-  - 2021-05-24
-  - 2020-12-10
-  - 2021-03-25
-  - 2021-02-22
-  - 2021-04-16
-  - 2020-12-18
-  - 2021-01-15
-  - 2021-03-18
-  - 2021-04-23
-  - 2021-06-07
-  - 2020-12-23
-  - 2021-02-05
-  - 2021-02-12
-  - 2021-05-17
-  - 2021-03-15
-  - 2020-08-24
-  - 2020-09-28
-  - 2020-09-03
-  - 2020-08-27
-  - 2020-06-24
-  - 2020-09-21
-  - 2020-07-17
-  - 2020-07-30
-  - 2020-08-06
-  - 2020-07-23
-  - 2020-03-27
-  - 2020-03-29
-  - 2020-03-30
-  - 2020-03-31
-  - 2020-04-01
-  - 2020-04-05
-  - 2020-04-07
-  - 2020-04-09
-  - 2020-04-12
-  - 2020-04-16
-  - 2020-04-20
-  - 2020-04-21
-  - 2020-04-27
-  - 2020-04-28
-  - 2020-05-08
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-05-12
-  - 2020-05-29
-  - 2020-06-29
-  - 2020-06-22
-  - 2020-06-05
-  - 2020-06-08
-  - 2020-06-10
-  - 2020-07-06
-  - 2020-06-15
-  - 2020-10-16
-  - 2020-10-26
-  description: This model makes predictions about the future that are dependent on
-    the assumption  that current interventions continue. Non-linear mixed efects curve-fitting.
-  earliest_forecast: Friday, 27 March 2020
-  forecasts: 63
-  home_url: https://covid19.healthdata.org/united-states-of-america
-  latest_forecast: Monday, 07 June 2021
-  name: CurveFit
-  team_name: Institute for Health Metrics and Evaluation
-  url: https://zoltardata.com/model/154
 - abbreviation: CMU-TimeSeries
   actions:
   - label: Website
@@ -2421,103 +2521,6 @@
   name: python Population Modeller
   team_name: Karlen Working Group
   url: https://zoltardata.com/model/309
-- abbreviation: USC-SI_kJalpha
-  actions:
-  - label: Website
-    new_window: true
-    url: https://scc-usc.github.io/ReCOVER-COVID-19
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/300
-  dates:
-  - 2020-12-13
-  - 2021-04-11
-  - 2021-03-28
-  - 2021-02-21
-  - 2020-09-20
-  - 2021-05-30
-  - 2021-01-31
-  - 2021-04-04
-  - 2021-05-23
-  - 2021-04-18
-  - 2021-03-07
-  - 2021-02-07
-  - 2020-05-24
-  - 2020-06-14
-  - 2020-05-10
-  - 2020-06-07
-  - 2020-05-31
-  - 2020-05-17
-  - 2020-06-21
-  - 2020-10-26
-  - 2020-12-13
-  - 2020-11-29
-  - 2020-11-01
-  - 2020-11-22
-  - 2020-12-06
-  - 2021-03-21
-  - 2021-06-06
-  - 2021-01-24
-  - 2021-01-17
-  - 2021-02-28
-  - 2021-05-09
-  - 2021-05-16
-  - 2021-04-25
-  - 2020-12-20
-  - 2021-01-03
-  - 2020-12-27
-  - 2021-02-14
-  - 2021-03-14
-  - 2020-11-22
-  - 2021-05-02
-  - 2020-12-20
-  - 2021-01-10
-  - 2020-12-06
-  - 2020-12-27
-  - 2021-01-03
-  - 2020-06-23
-  - 2020-07-05
-  - 2020-05-10
-  - 2020-06-28
-  - 2020-06-07
-  - 2020-05-31
-  - 2020-07-27
-  - 2020-05-17
-  - 2020-06-27
-  - 2020-06-21
-  - 2020-09-06
-  - 2020-09-13
-  - 2020-09-27
-  - 2020-08-30
-  - 2020-09-20
-  - 2020-07-19
-  - 2020-08-09
-  - 2020-08-16
-  - 2020-07-12
-  - 2020-08-23
-  - 2020-08-02
-  - 2020-05-24
-  - 2020-07-26
-  - 2020-06-14
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-10-25
-  - 2020-10-26
-  - 2020-11-08
-  - 2020-11-15
-  - 2020-10-18
-  - 2020-11-01
-  description: A heterogeneous infection rate model with human mobility for epidemic
-    modeling. Our model adapts to changing trends and provide predictions of confirmed
-    cases and deaths.
-  earliest_forecast: Sunday, 10 May 2020
-  forecasts: 77
-  home_url: https://scc-usc.github.io/ReCOVER-COVID-19
-  latest_forecast: Sunday, 06 June 2021
-  name: SI_kJalpha
-  team_name: University of Southern California Data Science Lab
-  url: https://zoltardata.com/model/300
 - abbreviation: LNQ-ens1
   actions:
   - label: Website
@@ -3274,125 +3277,3 @@
   name: RtDriven
   team_name: BPagano
   url: https://zoltardata.com/model/427
-- abbreviation: UCF-AEM
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/UCF-AEM/UCF-AEM
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/444
-  dates:
-  - 2021-03-28
-  - 2020-12-20
-  - 2020-12-07
-  - 2021-01-31
-  - 2021-05-23
-  - 2021-03-21
-  - 2021-02-07
-  - 2020-11-29
-  - 2021-03-07
-  - 2021-04-04
-  - 2020-11-22
-  - 2021-05-30
-  - 2021-04-18
-  - 2021-02-28
-  - 2021-01-24
-  - 2021-05-02
-  - 2021-02-21
-  - 2021-04-11
-  - 2021-05-09
-  - 2021-02-14
-  - 2020-12-13
-  - 2020-12-27
-  - 2021-01-17
-  - 2021-05-16
-  - 2021-03-14
-  - 2021-04-25
-  - 2021-01-03
-  - 2021-01-10
-  - 2020-11-15
-  description: This model leverages conventional SEIR model with mixture modeling
-    and distilled the knowledge of complex mixture modeling system with ensemble neural
-    networks.
-  earliest_forecast: Sunday, 15 November 2020
-  forecasts: 29
-  home_url: https://github.com/UCF-AEM/UCF-AEM
-  latest_forecast: Sunday, 30 May 2021
-  name: AI-Powered and Epidemiology-Informed Modeling System
-  team_name: University of Central Florida
-  url: https://zoltardata.com/model/444
-- abbreviation: Columbia_UNC-SurvCon
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/COVID19BIOSTAT/covid19_prediction
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/292
-  dates:
-  - 2021-04-11
-  - 2020-11-22
-  - 2020-12-13
-  - 2020-12-06
-  - 2021-02-21
-  - 2020-11-29
-  - 2021-01-24
-  - 2021-01-17
-  - 2021-03-28
-  - 2021-05-30
-  - 2020-12-20
-  - 2021-04-04
-  - 2021-01-31
-  - 2020-12-27
-  - 2021-02-07
-  - 2021-03-07
-  - 2021-04-18
-  - 2021-05-16
-  - 2021-05-09
-  - 2020-06-16
-  - 2020-06-28
-  - 2021-03-21
-  - 2021-02-28
-  - 2021-04-25
-  - 2021-01-03
-  - 2021-02-14
-  - 2021-03-14
-  - 2021-05-02
-  - 2021-01-10
-  - 2021-01-03
-  - 2020-12-13
-  - 2020-09-20
-  - 2020-08-23
-  - 2020-07-12
-  - 2020-09-06
-  - 2020-09-13
-  - 2020-09-27
-  - 2020-07-26
-  - 2020-08-30
-  - 2020-08-09
-  - 2020-08-16
-  - 2020-07-05
-  - 2020-06-28
-  - 2020-08-02
-  - 2020-07-19
-  - 2020-06-16
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-15
-  - 2020-10-25
-  - 2020-11-01
-  - 2020-10-18
-  - 2020-11-08
-  description: A survival-convolution model with piece-wise transmission rates that
-    incorporates latent incubation period and provides time-varying effective reproductive
-    number.
-  earliest_forecast: Tuesday, 16 June 2020
-  forecasts: 53
-  home_url: https://github.com/COVID19BIOSTAT/covid19_prediction
-  latest_forecast: Sunday, 30 May 2021
-  name: Survival-Convolution Models
-  team_name: Columbia_UNC
-  url: https://zoltardata.com/model/292
