@@ -1261,6 +1261,55 @@
   name: Covid Complete
   team_name: Steve McConnell
   url: https://zoltardata.com/model/368
+- abbreviation: JHUAPL-SLPHospEns
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/lmullany/JHUAPL-SLPHospEns
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/462
+  dates:
+  - 2021-02-15
+  - 2021-06-21
+  - 2021-03-29
+  - 2021-05-03
+  - 2020-12-14
+  - 2021-04-05
+  - 2021-05-24
+  - 2021-01-11
+  - 2021-01-25
+  - 2020-12-06
+  - 2021-02-01
+  - 2021-04-19
+  - 2020-12-28
+  - 2021-02-08
+  - 2021-03-08
+  - 2020-12-21
+  - 2021-01-04
+  - 2021-05-31
+  - 2021-04-12
+  - 2021-02-22
+  - 2021-06-07
+  - 2021-03-22
+  - 2021-03-15
+  - 2021-03-01
+  - 2021-04-26
+  - 2021-01-18
+  - 2021-05-10
+  - 2021-05-17
+  - 2021-06-14
+  description: Estimates an ensemble of hospitalization forecasts by simulating the
+    individual model-specific forecasts from the submitted quantile functions, and
+    linearly pooling.
+  earliest_forecast: Sunday, 06 December 2020
+  forecasts: 29
+  home_url: https://github.com/lmullany/JHUAPL-SLPHospEns
+  latest_forecast: Monday, 21 June 2021
+  name: SLPHospEns
+  team_name: JHUAPL
+  url: https://zoltardata.com/model/462
 - abbreviation: RobertWalraven-ESG
   actions:
   - label: Website
@@ -3353,54 +3402,6 @@
   name: CurveFit
   team_name: Institute for Health Metrics and Evaluation
   url: https://zoltardata.com/model/154
-- abbreviation: JHUAPL-SLPHospEns
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/lmullany/JHUAPL-SLPHospEns
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/462
-  dates:
-  - 2021-02-15
-  - 2021-03-29
-  - 2021-05-03
-  - 2020-12-14
-  - 2021-04-05
-  - 2021-05-24
-  - 2021-01-11
-  - 2021-01-25
-  - 2020-12-06
-  - 2021-02-01
-  - 2021-04-19
-  - 2020-12-28
-  - 2021-02-08
-  - 2021-03-08
-  - 2020-12-21
-  - 2021-01-04
-  - 2021-05-31
-  - 2021-04-12
-  - 2021-02-22
-  - 2021-06-07
-  - 2021-03-22
-  - 2021-03-15
-  - 2021-03-01
-  - 2021-04-26
-  - 2021-01-18
-  - 2021-05-10
-  - 2021-05-17
-  - 2021-06-14
-  description: Estimates an ensemble of hospitalization forecasts by simulating the
-    individual model-specific forecasts from the submitted quantile functions, and
-    linearly pooling.
-  earliest_forecast: Sunday, 06 December 2020
-  forecasts: 28
-  home_url: https://github.com/lmullany/JHUAPL-SLPHospEns
-  latest_forecast: Monday, 14 June 2021
-  name: SLPHospEns
-  team_name: JHUAPL
-  url: https://zoltardata.com/model/462
 - abbreviation: UCF-AEM
   actions:
   - label: Website
