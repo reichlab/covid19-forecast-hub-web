@@ -9,3 +9,4 @@ _site/
 *.Rhistory
 
 .vscode
+*.code-workspace
