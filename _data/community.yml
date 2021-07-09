@@ -91,6 +91,7 @@
   - 2021-03-15
   - 2021-05-23
   - 2021-02-06
+  - 2021-07-07
   - 2021-03-08
   - 2021-03-10
   - 2021-03-09
@@ -186,9 +187,9 @@
   - 2021-06-14
   description: Neural Relational Autoregressive Model
   earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 176
+  forecasts: 177
   home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Tuesday, 06 July 2021
+  latest_forecast: Wednesday, 07 July 2021
   name: NRAR
   team_name: Facebook AI Research
   url: https://zoltardata.com/model/448
@@ -1731,6 +1732,74 @@
   name: DeepGLEAM
   team_name: UCSD_NEU
   url: https://zoltardata.com/model/378
+- abbreviation: Google_Harvard-CPF
+  actions:
+  - label: Website
+    new_window: true
+    url: https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-is-releasing-the-covid-19-public-forecasts
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/365
+  dates:
+  - 2021-05-24
+  - 2021-06-27
+  - 2021-06-20
+  - 2021-05-30
+  - 2021-02-01
+  - 2021-02-28
+  - 2021-07-05
+  - 2020-12-06
+  - 2021-03-08
+  - 2021-03-21
+  - 2020-12-20
+  - 2021-01-25
+  - 2021-04-19
+  - 2021-04-05
+  - 2021-02-22
+  - 2021-05-03
+  - 2021-03-29
+  - 2021-04-12
+  - 2021-05-10
+  - 2020-12-27
+  - 2021-01-18
+  - 2020-12-13
+  - 2021-02-15
+  - 2020-11-29
+  - 2021-02-07
+  - 2021-05-16
+  - 2020-11-22
+  - 2021-04-26
+  - 2021-01-03
+  - 2021-03-14
+  - 2021-06-06
+  - 2021-01-11
+  - 2020-08-30
+  - 2020-09-20
+  - 2021-06-13
+  - 2020-08-23
+  - 2020-09-27
+  - 2020-09-06
+  - 2020-09-13
+  - 2020-08-13
+  - 2020-08-16
+  - 2020-10-04
+  - 2020-10-11
+  - 2020-11-01
+  - 2020-10-25
+  - 2020-11-15
+  - 2020-11-08
+  - 2020-10-18
+  description: Our model improves upon standard compartmental models by using temporally
+    and spatially rich data, and integrating covariate encodings into compartment
+    transitions via end-to-end learning.
+  earliest_forecast: Thursday, 13 August 2020
+  forecasts: 48
+  home_url: https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-is-releasing-the-covid-19-public-forecasts
+  latest_forecast: Monday, 05 July 2021
+  name: Google-Harvard CPF
+  team_name: Google Cloud AI
+  url: https://zoltardata.com/model/365
 - abbreviation: IEM_MED-CovidProject
   actions:
   - label: Website
@@ -3446,70 +3515,3 @@
   name: Universal Influenza-like Transmission Risk
   team_name: University of Chicago, Chattopadhyay Lab
   url: https://zoltardata.com/model/443
-- abbreviation: Google_Harvard-CPF
-  actions:
-  - label: Website
-    new_window: true
-    url: https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-is-releasing-the-covid-19-public-forecasts
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/365
-  dates:
-  - 2021-05-24
-  - 2021-06-27
-  - 2021-06-20
-  - 2021-05-30
-  - 2021-02-01
-  - 2021-02-28
-  - 2020-12-06
-  - 2021-03-08
-  - 2021-03-21
-  - 2020-12-20
-  - 2021-01-25
-  - 2021-04-19
-  - 2021-04-05
-  - 2021-02-22
-  - 2021-05-03
-  - 2021-03-29
-  - 2021-04-12
-  - 2021-05-10
-  - 2020-12-27
-  - 2021-01-18
-  - 2020-12-13
-  - 2021-02-15
-  - 2020-11-29
-  - 2021-02-07
-  - 2021-05-16
-  - 2020-11-22
-  - 2021-04-26
-  - 2021-01-03
-  - 2021-03-14
-  - 2021-06-06
-  - 2021-01-11
-  - 2020-08-30
-  - 2020-09-20
-  - 2021-06-13
-  - 2020-08-23
-  - 2020-09-27
-  - 2020-09-06
-  - 2020-09-13
-  - 2020-08-13
-  - 2020-08-16
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-01
-  - 2020-10-25
-  - 2020-11-15
-  - 2020-11-08
-  - 2020-10-18
-  description: Our model improves upon standard compartmental models by using temporally
-    and spatially rich data, and integrating covariate encodings into compartment
-    transitions via end-to-end learning.
-  earliest_forecast: Thursday, 13 August 2020
-  forecasts: 47
-  home_url: https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-is-releasing-the-covid-19-public-forecasts
-  latest_forecast: Sunday, 27 June 2021
-  name: Google-Harvard CPF
-  team_name: Google Cloud AI
-  url: https://zoltardata.com/model/365
