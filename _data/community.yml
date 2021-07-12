@@ -138,6 +138,7 @@
   - 2021-03-19
   - 2021-03-17
   - 2021-03-28
+  - 2021-07-08
   - 2021-03-01
   - 2021-03-02
   - 2021-03-04
@@ -187,9 +188,9 @@
   - 2021-06-14
   description: Neural Relational Autoregressive Model
   earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 177
+  forecasts: 178
   home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Wednesday, 07 July 2021
+  latest_forecast: Thursday, 08 July 2021
   name: NRAR
   team_name: Facebook AI Research
   url: https://zoltardata.com/model/448
@@ -3467,51 +3468,3 @@
   name: CurveFit
   team_name: Institute for Health Metrics and Evaluation
   url: https://zoltardata.com/model/154
-- abbreviation: UChicagoCHATTOPADHYAY-UnIT
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/zeroknowledgediscovery/unitcov
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/443
-  dates:
-  - 2021-06-20
-  - 2020-11-22
-  - 2020-11-29
-  - 2020-12-06
-  - 2021-02-21
-  - 2021-06-27
-  - 2021-01-24
-  - 2021-04-04
-  - 2021-01-31
-  - 2020-12-20
-  - 2021-01-17
-  - 2021-03-21
-  - 2021-03-07
-  - 2021-05-09
-  - 2021-05-30
-  - 2021-05-23
-  - 2020-12-13
-  - 2021-02-28
-  - 2021-06-06
-  - 2021-05-16
-  - 2021-04-18
-  - 2021-04-25
-  - 2021-01-03
-  - 2021-02-07
-  - 2021-03-14
-  - 2021-05-02
-  - 2021-01-10
-  - 2020-11-08
-  - 2020-11-15
-  description: Stochastic similarity via sequence likelihood divergence, General Linear
-    Models, Tensorflow, Ensemble Regressors
-  earliest_forecast: Sunday, 08 November 2020
-  forecasts: 29
-  home_url: https://github.com/zeroknowledgediscovery/unitcov
-  latest_forecast: Sunday, 27 June 2021
-  name: Universal Influenza-like Transmission Risk
-  team_name: University of Chicago, Chattopadhyay Lab
-  url: https://zoltardata.com/model/443
