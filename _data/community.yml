@@ -187,13 +187,14 @@
   - 2021-06-20
   - 2021-07-11
   - 2021-06-14
+  - 2021-07-14
   - 2021-07-12
   - 2021-07-13
   description: Neural Relational Autoregressive Model
   earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 181
+  forecasts: 182
   home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Tuesday, 13 July 2021
+  latest_forecast: Wednesday, 14 July 2021
   name: NRAR
   team_name: Facebook AI Research
   url: https://zoltardata.com/model/448
@@ -3551,89 +3552,3 @@
   name: Simulator
   team_name: COVID-19 Simulator
   url: https://zoltardata.com/model/285
-- abbreviation: IHME-CurveFit
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19.healthdata.org/united-states-of-america
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/154
-  dates:
-  - 2021-06-25
-  - 2020-05-12
-  - 2021-07-02
-  - 2021-05-28
-  - 2020-05-12
-  - 2020-11-23
-  - 2020-12-07
-  - 2021-04-01
-  - 2021-02-25
-  - 2021-01-29
-  - 2021-01-22
-  - 2021-05-07
-  - 2021-05-24
-  - 2020-12-10
-  - 2021-03-25
-  - 2021-02-22
-  - 2021-04-16
-  - 2021-06-11
-  - 2020-12-18
-  - 2021-01-15
-  - 2021-03-18
-  - 2021-04-23
-  - 2021-06-07
-  - 2020-12-23
-  - 2021-02-05
-  - 2021-02-12
-  - 2021-05-17
-  - 2021-03-15
-  - 2021-06-18
-  - 2020-08-24
-  - 2020-09-28
-  - 2020-09-03
-  - 2020-08-27
-  - 2020-06-24
-  - 2020-09-21
-  - 2020-07-17
-  - 2020-07-30
-  - 2020-08-06
-  - 2020-07-23
-  - 2020-03-27
-  - 2020-03-29
-  - 2020-03-30
-  - 2020-03-31
-  - 2020-04-01
-  - 2020-04-05
-  - 2020-04-07
-  - 2020-04-09
-  - 2020-04-12
-  - 2020-04-16
-  - 2020-04-20
-  - 2020-04-21
-  - 2020-04-27
-  - 2020-04-28
-  - 2020-05-08
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-05-12
-  - 2020-05-29
-  - 2020-06-29
-  - 2020-06-22
-  - 2020-06-05
-  - 2020-06-08
-  - 2020-06-10
-  - 2020-07-06
-  - 2020-06-15
-  - 2020-10-16
-  - 2020-10-26
-  description: This model makes predictions about the future that are dependent on
-    the assumption  that current interventions continue. Non-linear mixed efects curve-fitting.
-  earliest_forecast: Friday, 27 March 2020
-  forecasts: 67
-  home_url: https://covid19.healthdata.org/united-states-of-america
-  latest_forecast: Friday, 02 July 2021
-  name: CurveFit
-  team_name: Institute for Health Metrics and Evaluation
-  url: https://zoltardata.com/model/154
