@@ -1,3 +1,79 @@
+- abbreviation: QJHong-Encounter
+  actions:
+  - label: Website
+    new_window: true
+    url: https://qjhong.github.io
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/299
+  dates:
+  - 2021-03-15
+  - 2020-11-22
+  - 2020-12-13
+  - 2020-12-06
+  - 2020-11-29
+  - 2021-01-25
+  - 2021-01-31
+  - 2020-12-20
+  - 2020-12-27
+  - 2021-01-03
+  - 2021-02-08
+  - 2020-06-24
+  - 2020-06-26
+  - 2020-06-27
+  - 2020-06-29
+  - 2020-06-30
+  - 2020-07-13
+  - 2021-02-21
+  - 2021-01-18
+  - 2021-03-01
+  - 2021-03-08
+  - 2021-03-22
+  - 2021-01-10
+  - 2021-02-14
+  - 2020-08-23
+  - 2020-09-27
+  - 2020-09-13
+  - 2021-07-12
+  - 2021-07-19
+  - 2021-07-22
+  - 2020-07-03
+  - 2020-07-27
+  - 2020-07-08
+  - 2020-08-10
+  - 2020-09-20
+  - 2020-09-06
+  - 2020-07-13
+  - 2020-06-24
+  - 2020-06-26
+  - 2020-07-10
+  - 2020-06-30
+  - 2020-07-11
+  - 2020-08-03
+  - 2020-08-17
+  - 2020-06-29
+  - 2020-08-30
+  - 2020-06-27
+  - 2020-07-18
+  - 2020-07-25
+  - 2020-07-01
+  - 2020-10-04
+  - 2020-10-11
+  - 2020-11-08
+  - 2020-11-01
+  - 2020-10-18
+  - 2020-10-25
+  - 2020-11-15
+  description: today's "Daily New Confirmed Cases" + today's "Encounter Density"  ==>
+    today's newly infected Cases  ==> next 2-3 weeks' "Daily New Confirmed Cases"
+  earliest_forecast: Wednesday, 24 June 2020
+  forecasts: 57
+  home_url: https://qjhong.github.io
+  latest_forecast: Thursday, 22 July 2021
+  name: Encounter
+  team_name: QJHong
+  url: https://zoltardata.com/model/299
 - abbreviation: FAIR-NRAR
   actions:
   - label: Website
@@ -190,14 +266,15 @@
   - 2021-07-15
   - 2021-07-14
   - 2021-07-20
+  - 2021-07-21
   - 2021-07-12
   - 2021-07-13
   - 2021-07-19
   description: Neural Relational Autoregressive Model
   earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 185
+  forecasts: 186
   home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Tuesday, 20 July 2021
+  latest_forecast: Wednesday, 21 July 2021
   name: NRAR
   team_name: Facebook AI Research
   url: https://zoltardata.com/model/448
@@ -1186,81 +1263,6 @@
   name: DNN
   team_name: HKUST
   url: https://zoltardata.com/model/603
-- abbreviation: QJHong-Encounter
-  actions:
-  - label: Website
-    new_window: true
-    url: https://qjhong.github.io
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/299
-  dates:
-  - 2021-03-15
-  - 2020-11-22
-  - 2020-12-13
-  - 2020-12-06
-  - 2020-11-29
-  - 2021-01-25
-  - 2021-01-31
-  - 2020-12-20
-  - 2020-12-27
-  - 2021-01-03
-  - 2021-02-08
-  - 2020-06-24
-  - 2020-06-26
-  - 2020-06-27
-  - 2020-06-29
-  - 2020-06-30
-  - 2020-07-13
-  - 2021-02-21
-  - 2021-01-18
-  - 2021-03-01
-  - 2021-03-08
-  - 2021-03-22
-  - 2021-01-10
-  - 2021-02-14
-  - 2020-08-23
-  - 2020-09-27
-  - 2020-09-13
-  - 2021-07-12
-  - 2021-07-19
-  - 2020-07-03
-  - 2020-07-27
-  - 2020-07-08
-  - 2020-08-10
-  - 2020-09-20
-  - 2020-09-06
-  - 2020-07-13
-  - 2020-06-24
-  - 2020-06-26
-  - 2020-07-10
-  - 2020-06-30
-  - 2020-07-11
-  - 2020-08-03
-  - 2020-08-17
-  - 2020-06-29
-  - 2020-08-30
-  - 2020-06-27
-  - 2020-07-18
-  - 2020-07-25
-  - 2020-07-01
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-08
-  - 2020-11-01
-  - 2020-10-18
-  - 2020-10-25
-  - 2020-11-15
-  description: today's "Daily New Confirmed Cases" + today's "Encounter Density"  ==>
-    today's newly infected Cases  ==> next 2-3 weeks' "Daily New Confirmed Cases"
-  earliest_forecast: Wednesday, 24 June 2020
-  forecasts: 56
-  home_url: https://qjhong.github.io
-  latest_forecast: Monday, 19 July 2021
-  name: Encounter
-  team_name: QJHong
-  url: https://zoltardata.com/model/299
 - abbreviation: PSI-DRAFT
   actions:
   - label: Website
