@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[Lessons from COVID-19](https://www.umass.edu/gateway/article/lessons-covid-19){:target="_blank"}  
+_University of Massachusetts Amherst_ | July 2021
+
+***
+
 [All together now: the most trustworthy covid-19 model is an ensemble](https://www.technologyreview.com/2021/05/28/1025478/covid-ensemble-model-forecast-trustworthy/){:target="_blank"}  
 _MIT Technology Review_ | 28 May 2021
 
