@@ -18,6 +18,11 @@ _MIT Technology Review_ | 28 May 2021
 
 ***
 
+[How low can we go? Model suggests Mass. coronavirus numbers could drop even further](https://www.bostonglobe.com/2021/05/20/nation/how-low-can-we-go-model-suggests-mass-coronavirus-numbers-could-drop-even-further/){:target="_blank"}  
+_Boston Globe_ | 20 May 2021
+
+***
+
 [Herd Immunity Is Humanity’s Great Hope, and It’s Proving Elusive](https://www.bloomberg.com/news/articles/2021-04-22/herd-immunity-hard-to-achieve-as-covid-variants-grow-experts-say){:target="_blank"}  
 _Bloomberg Businessweek_ | 22 April 2021
 
