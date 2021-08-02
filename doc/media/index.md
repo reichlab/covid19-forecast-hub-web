@@ -13,6 +13,11 @@ _Minneapolis Star Tribune_ | 17 July 2021
 
 ***
 
+[What Data Scientists Learned by Modeling the Spread of Covid-19](https://www.smithsonianmag.com/science-nature/what-data-scientists-learned-modeling-spread-covid-19-180977964/){:target="_blank"}  
+_Smithsonian Magazine_ | 11 June 2021
+
+***
+
 [All together now: the most trustworthy covid-19 model is an ensemble](https://www.technologyreview.com/2021/05/28/1025478/covid-ensemble-model-forecast-trustworthy/){:target="_blank"}  
 _MIT Technology Review_ | 28 May 2021
 
