@@ -1,3 +1,193 @@
+- abbreviation: TTU-squider
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/fvbttu/squider
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/366
+  dates:
+  - 2021-07-04
+  - 2021-05-02
+  - 2021-06-20
+  - 2020-11-22
+  - 2020-11-29
+  - 2020-12-13
+  - 2020-12-06
+  - 2021-01-24
+  - 2021-01-31
+  - 2021-06-27
+  - 2020-12-20
+  - 2021-05-30
+  - 2021-05-09
+  - 2020-12-27
+  - 2021-02-07
+  - 2021-03-07
+  - 2021-04-18
+  - 2021-05-16
+  - 2021-01-03
+  - 2021-04-11
+  - 2021-02-21
+  - 2021-01-17
+  - 2021-06-06
+  - 2021-03-28
+  - 2021-02-28
+  - 2021-03-21
+  - 2021-04-04
+  - 2021-05-23
+  - 2021-02-14
+  - 2021-03-14
+  - 2021-04-25
+  - 2021-01-10
+  - 2021-06-13
+  - 2021-07-11
+  - 2021-07-18
+  - 2021-07-25
+  - 2021-08-01
+  - 2020-09-13
+  - 2020-08-17
+  - 2020-09-27
+  - 2020-08-23
+  - 2020-10-04
+  - 2020-10-11
+  - 2020-11-01
+  - 2020-11-08
+  - 2020-11-15
+  - 2020-10-18
+  - 2020-10-25
+  description: SIR-based compartmental model with a power law incidence rate, unknown
+    as well as known infecteds, and time dependent social contact suppression and
+    relaxation.
+  earliest_forecast: Monday, 17 August 2020
+  forecasts: 48
+  home_url: https://github.com/fvbttu/squider
+  latest_forecast: Sunday, 01 August 2021
+  name: SQUIDER
+  team_name: Hussain Lab at Texas Tech University
+  url: https://zoltardata.com/model/366
+- abbreviation: PandemicCentral-COVIDForest
+  actions:
+  - label: Website
+    new_window: true
+    url: https://itsonit.com
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/573
+  dates:
+  - 2021-07-05
+  - 2021-06-22
+  - 2021-06-06
+  - 2021-06-27
+  - 2021-05-31
+  - 2021-05-09
+  - 2021-04-25
+  - 2021-04-17
+  - 2021-05-16
+  - 2021-05-23
+  - 2021-05-01
+  - 2021-06-14
+  - 2021-07-17
+  - 2021-07-25
+  - 2021-07-31
+  description: County-level Projected New Cases using Random Forest learning method
+  earliest_forecast: Saturday, 17 April 2021
+  forecasts: 15
+  home_url: https://itsonit.com
+  latest_forecast: Saturday, 31 July 2021
+  name: COVIDForest
+  team_name: Pandemic Central (itsonit.com)
+  url: https://zoltardata.com/model/573
+- abbreviation: IHME-CurveFit
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid19.healthdata.org/united-states-of-america
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/154
+  dates:
+  - 2021-06-25
+  - 2020-05-12
+  - 2021-07-02
+  - 2021-05-28
+  - 2020-05-12
+  - 2020-11-23
+  - 2020-12-07
+  - 2021-04-01
+  - 2021-02-25
+  - 2021-01-29
+  - 2021-01-22
+  - 2021-05-07
+  - 2021-05-24
+  - 2020-12-10
+  - 2021-03-25
+  - 2021-02-22
+  - 2021-04-16
+  - 2021-06-11
+  - 2020-12-18
+  - 2021-01-15
+  - 2021-03-18
+  - 2021-04-23
+  - 2021-06-07
+  - 2020-12-23
+  - 2021-02-05
+  - 2021-02-12
+  - 2021-05-17
+  - 2021-03-15
+  - 2021-06-18
+  - 2020-08-24
+  - 2020-09-28
+  - 2020-09-03
+  - 2021-07-16
+  - 2021-07-30
+  - 2021-07-23
+  - 2020-08-27
+  - 2020-06-24
+  - 2020-09-21
+  - 2020-07-17
+  - 2020-07-30
+  - 2020-08-06
+  - 2020-07-23
+  - 2020-03-27
+  - 2020-03-29
+  - 2020-03-30
+  - 2020-03-31
+  - 2020-04-01
+  - 2020-04-05
+  - 2020-04-07
+  - 2020-04-09
+  - 2020-04-12
+  - 2020-04-16
+  - 2020-04-20
+  - 2020-04-21
+  - 2020-04-27
+  - 2020-04-28
+  - 2020-05-08
+  - 2020-05-04
+  - 2020-05-18
+  - 2020-05-12
+  - 2020-05-29
+  - 2020-06-29
+  - 2020-06-22
+  - 2020-06-05
+  - 2020-06-08
+  - 2020-06-10
+  - 2020-07-06
+  - 2020-06-15
+  - 2020-10-16
+  - 2020-10-26
+  description: This model makes predictions about the future that are dependent on
+    the assumption  that current interventions continue. Non-linear mixed efects curve-fitting.
+  earliest_forecast: Friday, 27 March 2020
+  forecasts: 70
+  home_url: https://covid19.healthdata.org/united-states-of-america
+  latest_forecast: Friday, 30 July 2021
+  name: CurveFit
+  team_name: Institute for Health Metrics and Evaluation
+  url: https://zoltardata.com/model/154
 - abbreviation: KITmetricslab-select_ensemble
   actions:
   - label: Website
@@ -2536,73 +2726,6 @@
   name: Universal Influenza-like Transmission Risk
   team_name: University of Chicago, Chattopadhyay Lab
   url: https://zoltardata.com/model/443
-- abbreviation: TTU-squider
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/fvbttu/squider
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/366
-  dates:
-  - 2021-07-04
-  - 2021-05-02
-  - 2021-06-20
-  - 2020-11-22
-  - 2020-11-29
-  - 2020-12-13
-  - 2020-12-06
-  - 2021-01-24
-  - 2021-01-31
-  - 2021-06-27
-  - 2020-12-20
-  - 2021-05-30
-  - 2021-05-09
-  - 2020-12-27
-  - 2021-02-07
-  - 2021-03-07
-  - 2021-04-18
-  - 2021-05-16
-  - 2021-01-03
-  - 2021-04-11
-  - 2021-02-21
-  - 2021-01-17
-  - 2021-06-06
-  - 2021-03-28
-  - 2021-02-28
-  - 2021-03-21
-  - 2021-04-04
-  - 2021-05-23
-  - 2021-02-14
-  - 2021-03-14
-  - 2021-04-25
-  - 2021-01-10
-  - 2021-06-13
-  - 2021-07-11
-  - 2021-07-18
-  - 2021-07-25
-  - 2020-09-13
-  - 2020-08-17
-  - 2020-09-27
-  - 2020-08-23
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-01
-  - 2020-11-08
-  - 2020-11-15
-  - 2020-10-18
-  - 2020-10-25
-  description: SIR-based compartmental model with a power law incidence rate, unknown
-    as well as known infecteds, and time dependent social contact suppression and
-    relaxation.
-  earliest_forecast: Monday, 17 August 2020
-  forecasts: 47
-  home_url: https://github.com/fvbttu/squider
-  latest_forecast: Sunday, 25 July 2021
-  name: SQUIDER
-  team_name: Hussain Lab at Texas Tech University
-  url: https://zoltardata.com/model/366
 - abbreviation: Karlen-pypm
   actions:
   - label: Website
@@ -2995,38 +3118,6 @@
   name: Trend Model
   team_name: Swiss Data Science Center / University of Geneva
   url: https://zoltardata.com/model/192
-- abbreviation: PandemicCentral-COVIDForest
-  actions:
-  - label: Website
-    new_window: true
-    url: https://itsonit.com
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/573
-  dates:
-  - 2021-07-05
-  - 2021-06-22
-  - 2021-06-06
-  - 2021-06-27
-  - 2021-05-31
-  - 2021-05-09
-  - 2021-04-25
-  - 2021-04-17
-  - 2021-05-16
-  - 2021-05-23
-  - 2021-05-01
-  - 2021-06-14
-  - 2021-07-17
-  - 2021-07-25
-  description: County-level Projected New Cases using Random Forest learning method
-  earliest_forecast: Saturday, 17 April 2021
-  forecasts: 14
-  home_url: https://itsonit.com
-  latest_forecast: Sunday, 25 July 2021
-  name: COVIDForest
-  team_name: Pandemic Central (itsonit.com)
-  url: https://zoltardata.com/model/573
 - abbreviation: Columbia_UNC-SurvCon
   actions:
   - label: Website
@@ -3386,94 +3477,6 @@
   name: RtDriven
   team_name: BPagano
   url: https://zoltardata.com/model/427
-- abbreviation: IHME-CurveFit
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19.healthdata.org/united-states-of-america
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/154
-  dates:
-  - 2021-06-25
-  - 2020-05-12
-  - 2021-07-02
-  - 2021-05-28
-  - 2020-05-12
-  - 2020-11-23
-  - 2020-12-07
-  - 2021-04-01
-  - 2021-02-25
-  - 2021-01-29
-  - 2021-01-22
-  - 2021-05-07
-  - 2021-05-24
-  - 2020-12-10
-  - 2021-03-25
-  - 2021-02-22
-  - 2021-04-16
-  - 2021-06-11
-  - 2020-12-18
-  - 2021-01-15
-  - 2021-03-18
-  - 2021-04-23
-  - 2021-06-07
-  - 2020-12-23
-  - 2021-02-05
-  - 2021-02-12
-  - 2021-05-17
-  - 2021-03-15
-  - 2021-06-18
-  - 2020-08-24
-  - 2020-09-28
-  - 2020-09-03
-  - 2021-07-16
-  - 2021-07-23
-  - 2020-08-27
-  - 2020-06-24
-  - 2020-09-21
-  - 2020-07-17
-  - 2020-07-30
-  - 2020-08-06
-  - 2020-07-23
-  - 2020-03-27
-  - 2020-03-29
-  - 2020-03-30
-  - 2020-03-31
-  - 2020-04-01
-  - 2020-04-05
-  - 2020-04-07
-  - 2020-04-09
-  - 2020-04-12
-  - 2020-04-16
-  - 2020-04-20
-  - 2020-04-21
-  - 2020-04-27
-  - 2020-04-28
-  - 2020-05-08
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-05-12
-  - 2020-05-29
-  - 2020-06-29
-  - 2020-06-22
-  - 2020-06-05
-  - 2020-06-08
-  - 2020-06-10
-  - 2020-07-06
-  - 2020-06-15
-  - 2020-10-16
-  - 2020-10-26
-  description: This model makes predictions about the future that are dependent on
-    the assumption  that current interventions continue. Non-linear mixed efects curve-fitting.
-  earliest_forecast: Friday, 27 March 2020
-  forecasts: 69
-  home_url: https://covid19.healthdata.org/united-states-of-america
-  latest_forecast: Friday, 23 July 2021
-  name: CurveFit
-  team_name: Institute for Health Metrics and Evaluation
-  url: https://zoltardata.com/model/154
 - abbreviation: QJHong-Encounter
   actions:
   - label: Website
@@ -3550,116 +3553,3 @@
   name: Encounter
   team_name: QJHong
   url: https://zoltardata.com/model/299
-- abbreviation: CMU-TimeSeries
-  actions:
-  - label: Website
-    new_window: true
-    url: https://delphi.cmu.edu
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/307
-  dates:
-  - 2021-03-15
-  - 2021-06-28
-  - 2021-05-03
-  - 2021-06-21
-  - 2021-07-05
-  - 2021-03-29
-  - 2021-04-12
-  - 2021-02-01
-  - 2020-12-07
-  - 2021-03-01
-  - 2020-12-14
-  - 2021-05-31
-  - 2021-04-05
-  - 2021-04-19
-  - 2021-05-24
-  - 2021-01-25
-  - 2021-02-08
-  - 2021-02-22
-  - 2020-12-21
-  - 2021-03-08
-  - 2021-03-22
-  - 2021-05-10
-  - 2021-01-18
-  - 2021-02-15
-  - 2020-12-28
-  - 2021-05-17
-  - 2020-11-30
-  - 2020-11-23
-  - 2021-04-26
-  - 2021-01-04
-  - 2021-06-07
-  - 2021-01-10
-  - 2020-08-10
-  - 2021-06-14
-  - 2021-07-12
-  - 2021-07-19
-  - 2020-09-14
-  - 2020-09-28
-  - 2020-08-17
-  - 2020-07-27
-  - 2020-08-31
-  - 2020-08-02
-  - 2020-09-21
-  - 2020-07-20
-  - 2020-08-24
-  - 2020-09-07
-  - 2020-10-05
-  - 2020-10-12
-  - 2020-10-19
-  - 2020-11-09
-  - 2020-10-26
-  - 2020-11-16
-  - 2020-11-02
-  description: (State) A basic AR-type time series model fit using case counts and
-    deaths as features. (County) Quantile regr. on county pop., case counts, self-reported
-    symptom data, and doctor's visits.
-  earliest_forecast: Monday, 20 July 2020
-  forecasts: 53
-  home_url: https://delphi.cmu.edu
-  latest_forecast: Monday, 19 July 2021
-  name: TimeSeries
-  team_name: Carnegie Mellon Delphi Group
-  url: https://zoltardata.com/model/307
-- abbreviation: FDANIHASU-Sweight
-  actions:
-  - label: Website
-    new_window: true
-    url: http://covidforeca.st/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/506
-  dates:
-  - 2021-02-15
-  - 2021-04-12
-  - 2021-05-03
-  - 2021-07-05
-  - 2021-01-25
-  - 2021-03-15
-  - 2021-02-08
-  - 2021-03-08
-  - 2021-02-01
-  - 2021-05-24
-  - 2021-02-22
-  - 2021-03-29
-  - 2021-03-01
-  - 2021-04-05
-  - 2021-03-22
-  - 2021-04-19
-  - 2021-05-10
-  - 2021-04-26
-  - 2021-05-17
-  - 2021-07-19
-  - 2021-07-12
-  description: An ensemble, or model average, of submitted forecasts to the COVID-19
-    Forecast Hub.
-  earliest_forecast: Monday, 25 January 2021
-  forecasts: 21
-  home_url: http://covidforeca.st/
-  latest_forecast: Monday, 19 July 2021
-  name: Sweight
-  team_name: FDANIHASU
-  url: https://zoltardata.com/model/506
