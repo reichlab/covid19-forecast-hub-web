@@ -28,6 +28,11 @@ _Boston Globe_ | 20 May 2021
 
 ***
 
+[The Pandemic’s Lethal Twilight](https://nymag.com/intelligencer/2021/05/when-will-the-covid-19-pandemic-end.html){:target="_blank"}  
+_New York Magazine_ | 3 May 2021
+
+***
+
 [Herd Immunity Is Humanity’s Great Hope, and It’s Proving Elusive](https://www.bloomberg.com/news/articles/2021-04-22/herd-immunity-hard-to-achieve-as-covid-variants-grow-experts-say){:target="_blank"}  
 _Bloomberg Businessweek_ | 22 April 2021
 
