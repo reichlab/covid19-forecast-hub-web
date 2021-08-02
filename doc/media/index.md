@@ -89,12 +89,12 @@ _CNN_ | 31 December 2020
 ***
 
 [UMass model sees cases continuing to climb into early January](https://www.bostonglobe.com/2020/12/15/nation/umass-model-sees-cases-continuing-climb-into-early-january/){:target="_blank"}  
-_The Boston Globe_ | 15 December 2020
+_Boston Globe_ | 15 December 2020
 
 ***
 
 [The number of people with the virus who died in the U.S. passes 300,000](https://www.nytimes.com/live/2020/12/14/world/covid-19-coronavirus#the-number-of-people-with-the-virus-who-died-in-the-us-passes-300000){:target="_blank"}  
-_The New York Times_ | 14 December 2020
+_New York Times_ | 14 December 2020
 
 ***
 
@@ -109,7 +109,7 @@ _Bloomberg_ | 7 December 2020
 ***
 
 [How Many Americans Are About to Die?](https://www.theatlantic.com/science/archive/2020/11/coronavirus-death-rate-third-surge/617150/){:target="_blank"}  
-_The Atlantic_ | 19 November 2020
+_Atlantic_ | 19 November 2020
 
 ***
 
@@ -124,7 +124,7 @@ _STAT_ | 23 October 2020
 ***
 
 [How Covid-19 Death-Rate Predictions Have Changed Since March](https://www.wsj.com/articles/how-covid-19-death-rate-predictions-have-changed-since-march-11603445400?st=ogt1to63xgermm6&reflink=article_email_share){:target="_blank"}  
-_The Wall Street Journal_ | 23 October 2020
+_Wall Street Journal_ | 23 October 2020
 
 ***
 
@@ -240,7 +240,7 @@ _WCVB Boston_ | 9 June 2020
 ***
 
 [Early projections of covid-19 in America underestimated its severity.](https://www.economist.com/graphic-detail/2020/05/23/early-projections-of-covid-19-in-america-underestimated-its-severity){:target="_blank"}  
-_The Economist_ | 23 May 2020
+_Economist_ | 23 May 2020
 
 ***  
 
@@ -275,9 +275,9 @@ _FiveThirtyEight_ | 1 May 2020
 ***
 
 [What 5 Coronavirus Models Say the Next Month Will Look Like](https://www.nytimes.com/interactive/2020/04/22/upshot/coronavirus-models.html){:target="_blank"}  
-_NY Times_ | 22 April 2020  
+_New York Times_ | 22 April 2020  
 
 ***
 [Scientists Crunch Data to Predict How Many People Will Get Coronavirus](https://www.wsj.com/articles/scientists-crunch-data-to-predict-how-many-people-will-get-coronavirus-11584479851){:target="_blank"}  
-_The Wall street Journal_ | 17 March 2020  
+_Wall street Journal_ | 17 March 2020  
 
