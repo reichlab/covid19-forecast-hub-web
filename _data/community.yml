@@ -1,3 +1,183 @@
+- abbreviation: PandemicCentral-COVIDForest
+  actions:
+  - label: Website
+    new_window: true
+    url: https://itsonit.com
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/573
+  dates:
+  - 2021-07-05
+  - 2021-06-22
+  - 2021-06-06
+  - 2021-06-27
+  - 2021-05-31
+  - 2021-05-09
+  - 2021-04-25
+  - 2021-04-17
+  - 2021-05-16
+  - 2021-05-23
+  - 2021-05-01
+  - 2021-06-14
+  - 2021-07-17
+  - 2021-07-25
+  - 2021-07-31
+  - 2021-08-08
+  description: County-level Projected New Cases using Random Forest learning method
+  earliest_forecast: Saturday, 17 April 2021
+  forecasts: 16
+  home_url: https://itsonit.com
+  latest_forecast: Sunday, 08 August 2021
+  name: COVIDForest
+  team_name: Pandemic Central (itsonit.com)
+  url: https://zoltardata.com/model/573
+- abbreviation: Columbia_UNC-SurvCon
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/COVID19BIOSTAT/covid19_prediction
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/292
+  dates:
+  - 2021-04-11
+  - 2021-07-04
+  - 2020-11-22
+  - 2020-12-13
+  - 2020-12-06
+  - 2021-02-21
+  - 2020-11-29
+  - 2021-01-24
+  - 2021-01-17
+  - 2021-03-28
+  - 2021-05-30
+  - 2021-06-27
+  - 2020-12-20
+  - 2021-04-04
+  - 2021-01-31
+  - 2020-12-27
+  - 2021-02-07
+  - 2021-03-07
+  - 2021-04-18
+  - 2021-05-16
+  - 2021-05-09
+  - 2020-06-16
+  - 2020-06-28
+  - 2021-03-21
+  - 2021-02-28
+  - 2021-04-25
+  - 2021-01-03
+  - 2021-02-14
+  - 2021-03-14
+  - 2021-05-02
+  - 2021-01-10
+  - 2021-01-03
+  - 2020-12-13
+  - 2020-09-20
+  - 2021-06-20
+  - 2021-07-18
+  - 2021-07-25
+  - 2021-08-08
+  - 2021-08-01
+  - 2020-08-23
+  - 2020-07-12
+  - 2020-09-06
+  - 2020-09-13
+  - 2020-09-27
+  - 2020-07-26
+  - 2020-08-30
+  - 2020-08-09
+  - 2020-08-16
+  - 2020-07-05
+  - 2020-06-28
+  - 2020-08-02
+  - 2020-07-19
+  - 2020-06-16
+  - 2020-10-04
+  - 2020-10-11
+  - 2020-11-15
+  - 2020-10-25
+  - 2020-11-01
+  - 2020-10-18
+  - 2020-11-08
+  description: A survival-convolution model with piece-wise transmission rates that
+    incorporates latent incubation period and provides time-varying effective reproductive
+    number.
+  earliest_forecast: Tuesday, 16 June 2020
+  forecasts: 60
+  home_url: https://github.com/COVID19BIOSTAT/covid19_prediction
+  latest_forecast: Sunday, 08 August 2021
+  name: Survival-Convolution Models
+  team_name: Columbia_UNC
+  url: https://zoltardata.com/model/292
+- abbreviation: BPagano-RtDriven
+  actions:
+  - label: Website
+    new_window: true
+    url: https://bobpagano.com
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/427
+  dates:
+  - 2021-07-04
+  - 2021-06-20
+  - 2020-12-06
+  - 2020-12-13
+  - 2021-01-24
+  - 2021-06-27
+  - 2020-11-29
+  - 2021-05-30
+  - 2021-01-31
+  - 2021-01-17
+  - 2021-05-23
+  - 2021-05-09
+  - 2021-04-18
+  - 2021-03-07
+  - 2020-10-11
+  - 2021-02-07
+  - 2020-12-27
+  - 2021-05-02
+  - 2021-04-11
+  - 2021-02-21
+  - 2020-11-22
+  - 2021-03-28
+  - 2021-01-24
+  - 2021-06-06
+  - 2021-03-21
+  - 2021-02-28
+  - 2021-04-04
+  - 2021-04-11
+  - 2021-05-16
+  - 2020-12-20
+  - 2021-01-03
+  - 2021-04-25
+  - 2021-02-14
+  - 2021-03-14
+  - 2021-01-10
+  - 2021-07-11
+  - 2021-06-13
+  - 2020-10-11
+  - 2021-07-18
+  - 2021-08-08
+  - 2021-07-25
+  - 2021-08-01
+  - 2020-10-04
+  - 2020-10-18
+  - 2020-11-08
+  - 2020-11-15
+  - 2020-11-01
+  - 2020-10-25
+  description: Projects infections and deaths using an SIR model.
+  earliest_forecast: Sunday, 04 October 2020
+  forecasts: 48
+  home_url: https://bobpagano.com
+  latest_forecast: Sunday, 08 August 2021
+  name: RtDriven
+  team_name: BPagano
+  url: https://zoltardata.com/model/427
 - abbreviation: FAIR-NRAR
   actions:
   - label: Website
@@ -199,13 +379,14 @@
   - 2021-07-19
   - 2021-07-25
   - 2021-08-05
+  - 2021-08-07
   - 2021-08-03
   - 2021-07-26
   description: Neural Relational Autoregressive Model
   earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 193
+  forecasts: 194
   home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Thursday, 05 August 2021
+  latest_forecast: Saturday, 07 August 2021
   name: NRAR
   team_name: Facebook AI Research
   url: https://zoltardata.com/model/448
@@ -2990,85 +3171,6 @@
   name: Trend Model
   team_name: Swiss Data Science Center / University of Geneva
   url: https://zoltardata.com/model/192
-- abbreviation: Columbia_UNC-SurvCon
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/COVID19BIOSTAT/covid19_prediction
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/292
-  dates:
-  - 2021-04-11
-  - 2021-07-04
-  - 2020-11-22
-  - 2020-12-13
-  - 2020-12-06
-  - 2021-02-21
-  - 2020-11-29
-  - 2021-01-24
-  - 2021-01-17
-  - 2021-03-28
-  - 2021-05-30
-  - 2021-06-27
-  - 2020-12-20
-  - 2021-04-04
-  - 2021-01-31
-  - 2020-12-27
-  - 2021-02-07
-  - 2021-03-07
-  - 2021-04-18
-  - 2021-05-16
-  - 2021-05-09
-  - 2020-06-16
-  - 2020-06-28
-  - 2021-03-21
-  - 2021-02-28
-  - 2021-04-25
-  - 2021-01-03
-  - 2021-02-14
-  - 2021-03-14
-  - 2021-05-02
-  - 2021-01-10
-  - 2021-01-03
-  - 2020-12-13
-  - 2020-09-20
-  - 2021-06-20
-  - 2021-07-18
-  - 2021-07-25
-  - 2021-08-01
-  - 2020-08-23
-  - 2020-07-12
-  - 2020-09-06
-  - 2020-09-13
-  - 2020-09-27
-  - 2020-07-26
-  - 2020-08-30
-  - 2020-08-09
-  - 2020-08-16
-  - 2020-07-05
-  - 2020-06-28
-  - 2020-08-02
-  - 2020-07-19
-  - 2020-06-16
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-15
-  - 2020-10-25
-  - 2020-11-01
-  - 2020-10-18
-  - 2020-11-08
-  description: A survival-convolution model with piece-wise transmission rates that
-    incorporates latent incubation period and provides time-varying effective reproductive
-    number.
-  earliest_forecast: Tuesday, 16 June 2020
-  forecasts: 59
-  home_url: https://github.com/COVID19BIOSTAT/covid19_prediction
-  latest_forecast: Sunday, 01 August 2021
-  name: Survival-Convolution Models
-  team_name: Columbia_UNC
-  url: https://zoltardata.com/model/292
 - abbreviation: MIT_CritData-GBCF
   actions:
   - label: Website
@@ -3368,104 +3470,6 @@
   name: CovidScenarioPipeline
   team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
   url: https://zoltardata.com/model/255
-- abbreviation: BPagano-RtDriven
-  actions:
-  - label: Website
-    new_window: true
-    url: https://bobpagano.com
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/427
-  dates:
-  - 2021-07-04
-  - 2021-06-20
-  - 2020-12-06
-  - 2020-12-13
-  - 2021-01-24
-  - 2021-06-27
-  - 2020-11-29
-  - 2021-05-30
-  - 2021-01-31
-  - 2021-01-17
-  - 2021-05-23
-  - 2021-05-09
-  - 2021-04-18
-  - 2021-03-07
-  - 2020-10-11
-  - 2021-02-07
-  - 2020-12-27
-  - 2021-05-02
-  - 2021-04-11
-  - 2021-02-21
-  - 2020-11-22
-  - 2021-03-28
-  - 2021-01-24
-  - 2021-06-06
-  - 2021-03-21
-  - 2021-02-28
-  - 2021-04-04
-  - 2021-04-11
-  - 2021-05-16
-  - 2020-12-20
-  - 2021-01-03
-  - 2021-04-25
-  - 2021-02-14
-  - 2021-03-14
-  - 2021-01-10
-  - 2021-07-11
-  - 2021-06-13
-  - 2020-10-11
-  - 2021-07-18
-  - 2021-07-25
-  - 2021-08-01
-  - 2020-10-04
-  - 2020-10-18
-  - 2020-11-08
-  - 2020-11-15
-  - 2020-11-01
-  - 2020-10-25
-  description: Projects infections and deaths using an SIR model.
-  earliest_forecast: Sunday, 04 October 2020
-  forecasts: 47
-  home_url: https://bobpagano.com
-  latest_forecast: Sunday, 01 August 2021
-  name: RtDriven
-  team_name: BPagano
-  url: https://zoltardata.com/model/427
-- abbreviation: PandemicCentral-COVIDForest
-  actions:
-  - label: Website
-    new_window: true
-    url: https://itsonit.com
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/573
-  dates:
-  - 2021-07-05
-  - 2021-06-22
-  - 2021-06-06
-  - 2021-06-27
-  - 2021-05-31
-  - 2021-05-09
-  - 2021-04-25
-  - 2021-04-17
-  - 2021-05-16
-  - 2021-05-23
-  - 2021-05-01
-  - 2021-06-14
-  - 2021-07-17
-  - 2021-07-25
-  - 2021-07-31
-  description: County-level Projected New Cases using Random Forest learning method
-  earliest_forecast: Saturday, 17 April 2021
-  forecasts: 15
-  home_url: https://itsonit.com
-  latest_forecast: Saturday, 31 July 2021
-  name: COVIDForest
-  team_name: Pandemic Central (itsonit.com)
-  url: https://zoltardata.com/model/573
 - abbreviation: IHME-CurveFit
   actions:
   - label: Website
@@ -3555,124 +3559,3 @@
   name: CurveFit
   team_name: Institute for Health Metrics and Evaluation
   url: https://zoltardata.com/model/154
-- abbreviation: Google_Harvard-CPF
-  actions:
-  - label: Website
-    new_window: true
-    url: https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-is-releasing-the-covid-19-public-forecasts
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/365
-  dates:
-  - 2021-05-24
-  - 2021-06-27
-  - 2021-06-20
-  - 2021-05-30
-  - 2021-02-01
-  - 2021-02-28
-  - 2021-07-05
-  - 2020-12-06
-  - 2021-03-08
-  - 2021-03-21
-  - 2020-12-20
-  - 2021-01-25
-  - 2021-04-19
-  - 2021-04-05
-  - 2021-02-22
-  - 2021-05-03
-  - 2021-03-29
-  - 2021-04-12
-  - 2021-05-10
-  - 2020-12-27
-  - 2021-01-18
-  - 2020-12-13
-  - 2021-02-15
-  - 2020-11-29
-  - 2021-02-07
-  - 2021-05-16
-  - 2020-11-22
-  - 2021-04-26
-  - 2021-01-03
-  - 2021-03-14
-  - 2021-06-06
-  - 2021-01-11
-  - 2020-08-30
-  - 2020-09-20
-  - 2021-06-13
-  - 2021-07-11
-  - 2021-07-18
-  - 2021-07-26
-  - 2020-08-23
-  - 2020-09-27
-  - 2020-09-06
-  - 2020-09-13
-  - 2020-08-13
-  - 2020-08-16
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-01
-  - 2020-10-25
-  - 2020-11-15
-  - 2020-11-08
-  - 2020-10-18
-  description: Our model improves upon standard compartmental models by using temporally
-    and spatially rich data, and integrating covariate encodings into compartment
-    transitions via end-to-end learning.
-  earliest_forecast: Thursday, 13 August 2020
-  forecasts: 51
-  home_url: https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-is-releasing-the-covid-19-public-forecasts
-  latest_forecast: Monday, 26 July 2021
-  name: Google-Harvard CPF
-  team_name: Google Cloud AI
-  url: https://zoltardata.com/model/365
-- abbreviation: UChicagoCHATTOPADHYAY-UnIT
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/zeroknowledgediscovery/unitcov
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/443
-  dates:
-  - 2021-06-20
-  - 2020-11-22
-  - 2020-11-29
-  - 2020-12-06
-  - 2021-02-21
-  - 2021-06-27
-  - 2021-01-24
-  - 2021-04-04
-  - 2021-01-31
-  - 2020-12-20
-  - 2021-01-17
-  - 2021-03-21
-  - 2021-03-07
-  - 2021-05-09
-  - 2021-05-30
-  - 2021-05-23
-  - 2020-12-13
-  - 2021-02-28
-  - 2021-06-06
-  - 2021-05-16
-  - 2021-04-18
-  - 2021-04-25
-  - 2021-01-03
-  - 2021-02-07
-  - 2021-03-14
-  - 2021-05-02
-  - 2021-01-10
-  - 2021-07-11
-  - 2021-07-25
-  - 2020-11-08
-  - 2020-11-15
-  description: Stochastic similarity via sequence likelihood divergence, General Linear
-    Models, Tensorflow, Ensemble Regressors
-  earliest_forecast: Sunday, 08 November 2020
-  forecasts: 31
-  home_url: https://github.com/zeroknowledgediscovery/unitcov
-  latest_forecast: Sunday, 25 July 2021
-  name: Universal Influenza-like Transmission Risk
-  team_name: University of Chicago, Chattopadhyay Lab
-  url: https://zoltardata.com/model/443
