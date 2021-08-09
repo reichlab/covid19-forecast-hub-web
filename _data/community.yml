@@ -1,3 +1,111 @@
+- abbreviation: USC-SI_kJalpha
+  actions:
+  - label: Website
+    new_window: true
+    url: https://scc-usc.github.io/ReCOVER-COVID-19
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/300
+  dates:
+  - 2020-12-13
+  - 2021-04-11
+  - 2021-06-13
+  - 2021-07-04
+  - 2021-03-28
+  - 2021-02-21
+  - 2020-09-20
+  - 2021-05-30
+  - 2021-06-27
+  - 2021-01-31
+  - 2021-04-04
+  - 2021-05-23
+  - 2021-04-18
+  - 2021-03-07
+  - 2021-02-07
+  - 2020-05-24
+  - 2020-06-14
+  - 2020-05-10
+  - 2020-06-07
+  - 2020-05-31
+  - 2020-05-17
+  - 2020-06-21
+  - 2020-10-26
+  - 2020-12-13
+  - 2020-11-29
+  - 2020-11-01
+  - 2020-11-22
+  - 2020-12-06
+  - 2021-03-21
+  - 2021-06-06
+  - 2021-01-24
+  - 2021-01-17
+  - 2021-02-28
+  - 2021-05-09
+  - 2021-05-16
+  - 2021-04-25
+  - 2020-12-20
+  - 2021-01-03
+  - 2020-12-27
+  - 2021-02-14
+  - 2021-03-14
+  - 2020-11-22
+  - 2021-05-02
+  - 2020-12-20
+  - 2021-01-10
+  - 2020-12-06
+  - 2020-12-27
+  - 2021-01-03
+  - 2021-06-13
+  - 2020-06-23
+  - 2020-07-05
+  - 2021-06-20
+  - 2020-05-10
+  - 2020-06-28
+  - 2021-07-11
+  - 2021-06-13
+  - 2021-07-18
+  - 2021-07-25
+  - 2021-08-01
+  - 2021-08-08
+  - 2020-06-07
+  - 2020-05-31
+  - 2020-07-27
+  - 2020-05-17
+  - 2020-06-27
+  - 2020-06-21
+  - 2020-09-06
+  - 2020-09-13
+  - 2020-09-27
+  - 2020-08-30
+  - 2020-09-20
+  - 2020-07-19
+  - 2020-08-09
+  - 2020-08-16
+  - 2020-07-12
+  - 2020-08-23
+  - 2020-08-02
+  - 2020-05-24
+  - 2020-07-26
+  - 2020-06-14
+  - 2020-10-04
+  - 2020-10-11
+  - 2020-10-25
+  - 2020-10-26
+  - 2020-11-08
+  - 2020-11-15
+  - 2020-10-18
+  - 2020-11-01
+  description: A heterogeneous infection rate model with vaccines and multiple variants
+    and adaptive to changing trends. Uses genomics data to estimate the prevelance
+    of the variants.
+  earliest_forecast: Sunday, 10 May 2020
+  forecasts: 88
+  home_url: https://scc-usc.github.io/ReCOVER-COVID-19
+  latest_forecast: Sunday, 08 August 2021
+  name: SI_kJalpha
+  team_name: University of Southern California
+  url: https://zoltardata.com/model/300
 - abbreviation: PandemicCentral-COVIDForest
   actions:
   - label: Website
@@ -2851,113 +2959,6 @@
   name: python Population Modeller
   team_name: Karlen Working Group
   url: https://zoltardata.com/model/309
-- abbreviation: USC-SI_kJalpha
-  actions:
-  - label: Website
-    new_window: true
-    url: https://scc-usc.github.io/ReCOVER-COVID-19
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/300
-  dates:
-  - 2020-12-13
-  - 2021-04-11
-  - 2021-06-13
-  - 2021-07-04
-  - 2021-03-28
-  - 2021-02-21
-  - 2020-09-20
-  - 2021-05-30
-  - 2021-06-27
-  - 2021-01-31
-  - 2021-04-04
-  - 2021-05-23
-  - 2021-04-18
-  - 2021-03-07
-  - 2021-02-07
-  - 2020-05-24
-  - 2020-06-14
-  - 2020-05-10
-  - 2020-06-07
-  - 2020-05-31
-  - 2020-05-17
-  - 2020-06-21
-  - 2020-10-26
-  - 2020-12-13
-  - 2020-11-29
-  - 2020-11-01
-  - 2020-11-22
-  - 2020-12-06
-  - 2021-03-21
-  - 2021-06-06
-  - 2021-01-24
-  - 2021-01-17
-  - 2021-02-28
-  - 2021-05-09
-  - 2021-05-16
-  - 2021-04-25
-  - 2020-12-20
-  - 2021-01-03
-  - 2020-12-27
-  - 2021-02-14
-  - 2021-03-14
-  - 2020-11-22
-  - 2021-05-02
-  - 2020-12-20
-  - 2021-01-10
-  - 2020-12-06
-  - 2020-12-27
-  - 2021-01-03
-  - 2021-06-13
-  - 2020-06-23
-  - 2020-07-05
-  - 2021-06-20
-  - 2020-05-10
-  - 2020-06-28
-  - 2021-07-11
-  - 2021-06-13
-  - 2021-07-18
-  - 2021-07-25
-  - 2021-08-01
-  - 2020-06-07
-  - 2020-05-31
-  - 2020-07-27
-  - 2020-05-17
-  - 2020-06-27
-  - 2020-06-21
-  - 2020-09-06
-  - 2020-09-13
-  - 2020-09-27
-  - 2020-08-30
-  - 2020-09-20
-  - 2020-07-19
-  - 2020-08-09
-  - 2020-08-16
-  - 2020-07-12
-  - 2020-08-23
-  - 2020-08-02
-  - 2020-05-24
-  - 2020-07-26
-  - 2020-06-14
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-10-25
-  - 2020-10-26
-  - 2020-11-08
-  - 2020-11-15
-  - 2020-10-18
-  - 2020-11-01
-  description: A heterogeneous infection rate model with vaccines and multiple variants
-    and adaptive to changing trends. Uses genomics data to estimate the prevelance
-    of the variants.
-  earliest_forecast: Sunday, 10 May 2020
-  forecasts: 87
-  home_url: https://scc-usc.github.io/ReCOVER-COVID-19
-  latest_forecast: Sunday, 01 August 2021
-  name: SI_kJalpha
-  team_name: University of Southern California
-  url: https://zoltardata.com/model/300
 - abbreviation: JHU_UNC_GAS-StatMechPool
   actions:
   - label: Website
