@@ -107,3 +107,6 @@ exclude:
   - stackbit.yaml
   - requirements.txt
   - update-reports.py
+  - Pipfile
+  - Pipfile.lock
+  - archive/
