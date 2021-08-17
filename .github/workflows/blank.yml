@@ -45,3 +45,11 @@ jobs:
         Z_PASSWORD: ${{ secrets.Z_PASSWORD }}
         ENV: CI
       run: bash deploy.sh ${{github.event.inputs.params}}
+      
+    - name: force GitHub Pages rebuild
+      run: |
+          curl --fail --request POST \
+            --url https://api.github.com/repos/${{ github.repository }}/pages/builds \
+            --header "Authorization: Bearer $USER_TOKEN"
+      env:
+        USER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
