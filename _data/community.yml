@@ -1,3 +1,275 @@
+- abbreviation: UChicagoCHATTOPADHYAY-UnIT
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/zeroknowledgediscovery/unitcov
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/443
+  dates:
+  - 2021-06-20
+  - 2020-11-22
+  - 2020-11-29
+  - 2020-12-06
+  - 2021-02-21
+  - 2021-06-27
+  - 2021-01-24
+  - 2021-04-04
+  - 2021-01-31
+  - 2020-12-20
+  - 2021-01-17
+  - 2021-03-21
+  - 2021-03-07
+  - 2021-05-09
+  - 2021-08-15
+  - 2021-05-30
+  - 2021-05-23
+  - 2020-12-13
+  - 2021-02-28
+  - 2021-06-06
+  - 2021-05-16
+  - 2021-04-18
+  - 2021-04-25
+  - 2021-01-03
+  - 2021-02-07
+  - 2021-03-14
+  - 2021-05-02
+  - 2021-01-10
+  - 2021-07-11
+  - 2021-08-22
+  - 2021-07-25
+  - 2021-08-08
+  - 2020-11-08
+  - 2020-11-15
+  description: Stochastic similarity via sequence likelihood divergence, General Linear
+    Models, Tensorflow, Ensemble Regressors
+  earliest_forecast: Sunday, 08 November 2020
+  forecasts: 34
+  home_url: https://github.com/zeroknowledgediscovery/unitcov
+  latest_forecast: Sunday, 22 August 2021
+  name: Universal Influenza-like Transmission Risk
+  team_name: University of Chicago, Chattopadhyay Lab
+  url: https://zoltardata.com/model/443
+- abbreviation: QJHong-Encounter
+  actions:
+  - label: Website
+    new_window: true
+    url: https://qjhong.github.io
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/299
+  dates:
+  - 2021-03-15
+  - 2020-11-22
+  - 2020-12-13
+  - 2020-12-06
+  - 2020-11-29
+  - 2021-08-09
+  - 2021-01-25
+  - 2021-01-31
+  - 2020-12-20
+  - 2020-12-27
+  - 2021-08-15
+  - 2021-01-03
+  - 2021-02-08
+  - 2020-06-24
+  - 2020-06-26
+  - 2020-06-27
+  - 2020-06-29
+  - 2020-06-30
+  - 2020-07-13
+  - 2021-02-21
+  - 2021-01-18
+  - 2021-03-01
+  - 2021-03-08
+  - 2021-03-22
+  - 2021-01-10
+  - 2021-02-14
+  - 2020-08-23
+  - 2020-09-27
+  - 2020-09-13
+  - 2021-07-12
+  - 2021-08-22
+  - 2021-07-19
+  - 2021-07-22
+  - 2021-08-02
+  - 2020-07-03
+  - 2020-07-27
+  - 2020-07-08
+  - 2020-08-10
+  - 2020-09-20
+  - 2020-09-06
+  - 2020-07-13
+  - 2020-06-24
+  - 2020-06-26
+  - 2020-07-10
+  - 2020-06-30
+  - 2020-07-11
+  - 2020-08-03
+  - 2020-08-17
+  - 2020-06-29
+  - 2020-08-30
+  - 2020-06-27
+  - 2020-07-18
+  - 2020-07-25
+  - 2020-07-01
+  - 2020-10-04
+  - 2020-10-11
+  - 2020-11-08
+  - 2020-11-01
+  - 2020-10-18
+  - 2020-10-25
+  - 2020-11-15
+  description: today's "Daily New Confirmed Cases" + today's "Encounter Density"  ==>
+    today's newly infected Cases  ==> next 2-3 weeks' "Daily New Confirmed Cases"
+  earliest_forecast: Wednesday, 24 June 2020
+  forecasts: 61
+  home_url: https://qjhong.github.io
+  latest_forecast: Sunday, 22 August 2021
+  name: Encounter
+  team_name: QJHong
+  url: https://zoltardata.com/model/299
+- abbreviation: TTU-squider
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/fvbttu/squider
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/366
+  dates:
+  - 2021-07-04
+  - 2021-05-02
+  - 2021-06-20
+  - 2020-11-22
+  - 2020-11-29
+  - 2020-12-13
+  - 2020-12-06
+  - 2021-01-24
+  - 2021-01-31
+  - 2021-06-27
+  - 2020-12-20
+  - 2021-05-30
+  - 2021-05-09
+  - 2020-12-27
+  - 2021-02-07
+  - 2021-03-07
+  - 2021-04-18
+  - 2021-08-15
+  - 2021-05-16
+  - 2021-01-03
+  - 2021-04-11
+  - 2021-02-21
+  - 2021-01-17
+  - 2021-06-06
+  - 2021-03-28
+  - 2021-02-28
+  - 2021-03-21
+  - 2021-04-04
+  - 2021-05-23
+  - 2021-02-14
+  - 2021-03-14
+  - 2021-04-25
+  - 2021-01-10
+  - 2021-06-13
+  - 2021-07-11
+  - 2021-08-22
+  - 2021-07-18
+  - 2021-07-25
+  - 2021-08-01
+  - 2021-08-08
+  - 2020-09-13
+  - 2020-08-17
+  - 2020-09-27
+  - 2020-08-23
+  - 2020-10-04
+  - 2020-10-11
+  - 2020-11-01
+  - 2020-11-08
+  - 2020-11-15
+  - 2020-10-18
+  - 2020-10-25
+  description: SIR-based compartmental model with a power law incidence rate, unknown
+    as well as known infecteds, and time dependent social contact suppression and
+    relaxation.
+  earliest_forecast: Monday, 17 August 2020
+  forecasts: 51
+  home_url: https://github.com/fvbttu/squider
+  latest_forecast: Sunday, 22 August 2021
+  name: SQUIDER
+  team_name: Hussain Lab at Texas Tech University
+  url: https://zoltardata.com/model/366
+- abbreviation: BPagano-RtDriven
+  actions:
+  - label: Website
+    new_window: true
+    url: https://bobpagano.com
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/427
+  dates:
+  - 2021-07-04
+  - 2021-06-20
+  - 2020-12-06
+  - 2020-12-13
+  - 2021-01-24
+  - 2021-06-27
+  - 2020-11-29
+  - 2021-05-30
+  - 2021-01-31
+  - 2021-01-17
+  - 2021-08-15
+  - 2021-05-23
+  - 2021-05-09
+  - 2021-04-18
+  - 2021-03-07
+  - 2020-10-11
+  - 2021-02-07
+  - 2020-12-27
+  - 2021-05-02
+  - 2021-04-11
+  - 2021-02-21
+  - 2020-11-22
+  - 2021-03-28
+  - 2021-01-24
+  - 2021-06-06
+  - 2021-03-21
+  - 2021-02-28
+  - 2021-04-04
+  - 2021-04-11
+  - 2021-05-16
+  - 2020-12-20
+  - 2021-01-03
+  - 2021-04-25
+  - 2021-02-14
+  - 2021-03-14
+  - 2021-01-10
+  - 2021-07-11
+  - 2021-06-13
+  - 2020-10-11
+  - 2021-08-22
+  - 2021-07-18
+  - 2021-08-08
+  - 2021-07-25
+  - 2021-08-01
+  - 2020-10-04
+  - 2020-10-18
+  - 2020-11-08
+  - 2020-11-15
+  - 2020-11-01
+  - 2020-10-25
+  description: Projects infections and deaths using an SIR model.
+  earliest_forecast: Sunday, 04 October 2020
+  forecasts: 50
+  home_url: https://bobpagano.com
+  latest_forecast: Sunday, 22 August 2021
+  name: RtDriven
+  team_name: BPagano
+  url: https://zoltardata.com/model/427
 - abbreviation: FAIR-NRAR
   actions:
   - label: Website
@@ -176,12 +448,14 @@
   - 2021-03-22
   - 2021-04-27
   - 2021-04-30
+  - 2021-08-19
   - 2021-01-18
   - 2021-02-13
   - 2020-11-19
   - 2021-04-25
   - 2021-04-08
   - 2020-11-18
+  - 2021-08-20
   - 2021-05-10
   - 2021-05-01
   - 2021-05-02
@@ -198,6 +472,7 @@
   - 2021-06-14
   - 2021-07-15
   - 2021-07-14
+  - 2021-08-21
   - 2021-07-20
   - 2021-07-21
   - 2021-07-22
@@ -213,9 +488,9 @@
   - 2021-07-26
   description: Neural Relational Autoregressive Model
   earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 203
+  forecasts: 206
   home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Wednesday, 18 August 2021
+  latest_forecast: Saturday, 21 August 2021
   name: NRAR
   team_name: Facebook AI Research
   url: https://zoltardata.com/model/448
@@ -2394,207 +2669,6 @@
   name: select
   team_name: Columbia University
   url: https://zoltardata.com/model/231
-- abbreviation: UChicagoCHATTOPADHYAY-UnIT
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/zeroknowledgediscovery/unitcov
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/443
-  dates:
-  - 2021-06-20
-  - 2020-11-22
-  - 2020-11-29
-  - 2020-12-06
-  - 2021-02-21
-  - 2021-06-27
-  - 2021-01-24
-  - 2021-04-04
-  - 2021-01-31
-  - 2020-12-20
-  - 2021-01-17
-  - 2021-03-21
-  - 2021-03-07
-  - 2021-05-09
-  - 2021-08-15
-  - 2021-05-30
-  - 2021-05-23
-  - 2020-12-13
-  - 2021-02-28
-  - 2021-06-06
-  - 2021-05-16
-  - 2021-04-18
-  - 2021-04-25
-  - 2021-01-03
-  - 2021-02-07
-  - 2021-03-14
-  - 2021-05-02
-  - 2021-01-10
-  - 2021-07-11
-  - 2021-07-25
-  - 2021-08-08
-  - 2020-11-08
-  - 2020-11-15
-  description: Stochastic similarity via sequence likelihood divergence, General Linear
-    Models, Tensorflow, Ensemble Regressors
-  earliest_forecast: Sunday, 08 November 2020
-  forecasts: 33
-  home_url: https://github.com/zeroknowledgediscovery/unitcov
-  latest_forecast: Sunday, 15 August 2021
-  name: Universal Influenza-like Transmission Risk
-  team_name: University of Chicago, Chattopadhyay Lab
-  url: https://zoltardata.com/model/443
-- abbreviation: QJHong-Encounter
-  actions:
-  - label: Website
-    new_window: true
-    url: https://qjhong.github.io
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/299
-  dates:
-  - 2021-03-15
-  - 2020-11-22
-  - 2020-12-13
-  - 2020-12-06
-  - 2020-11-29
-  - 2021-08-09
-  - 2021-01-25
-  - 2021-01-31
-  - 2020-12-20
-  - 2020-12-27
-  - 2021-08-15
-  - 2021-01-03
-  - 2021-02-08
-  - 2020-06-24
-  - 2020-06-26
-  - 2020-06-27
-  - 2020-06-29
-  - 2020-06-30
-  - 2020-07-13
-  - 2021-02-21
-  - 2021-01-18
-  - 2021-03-01
-  - 2021-03-08
-  - 2021-03-22
-  - 2021-01-10
-  - 2021-02-14
-  - 2020-08-23
-  - 2020-09-27
-  - 2020-09-13
-  - 2021-07-12
-  - 2021-07-19
-  - 2021-07-22
-  - 2021-08-02
-  - 2020-07-03
-  - 2020-07-27
-  - 2020-07-08
-  - 2020-08-10
-  - 2020-09-20
-  - 2020-09-06
-  - 2020-07-13
-  - 2020-06-24
-  - 2020-06-26
-  - 2020-07-10
-  - 2020-06-30
-  - 2020-07-11
-  - 2020-08-03
-  - 2020-08-17
-  - 2020-06-29
-  - 2020-08-30
-  - 2020-06-27
-  - 2020-07-18
-  - 2020-07-25
-  - 2020-07-01
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-08
-  - 2020-11-01
-  - 2020-10-18
-  - 2020-10-25
-  - 2020-11-15
-  description: today's "Daily New Confirmed Cases" + today's "Encounter Density"  ==>
-    today's newly infected Cases  ==> next 2-3 weeks' "Daily New Confirmed Cases"
-  earliest_forecast: Wednesday, 24 June 2020
-  forecasts: 60
-  home_url: https://qjhong.github.io
-  latest_forecast: Sunday, 15 August 2021
-  name: Encounter
-  team_name: QJHong
-  url: https://zoltardata.com/model/299
-- abbreviation: TTU-squider
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/fvbttu/squider
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/366
-  dates:
-  - 2021-07-04
-  - 2021-05-02
-  - 2021-06-20
-  - 2020-11-22
-  - 2020-11-29
-  - 2020-12-13
-  - 2020-12-06
-  - 2021-01-24
-  - 2021-01-31
-  - 2021-06-27
-  - 2020-12-20
-  - 2021-05-30
-  - 2021-05-09
-  - 2020-12-27
-  - 2021-02-07
-  - 2021-03-07
-  - 2021-04-18
-  - 2021-08-15
-  - 2021-05-16
-  - 2021-01-03
-  - 2021-04-11
-  - 2021-02-21
-  - 2021-01-17
-  - 2021-06-06
-  - 2021-03-28
-  - 2021-02-28
-  - 2021-03-21
-  - 2021-04-04
-  - 2021-05-23
-  - 2021-02-14
-  - 2021-03-14
-  - 2021-04-25
-  - 2021-01-10
-  - 2021-06-13
-  - 2021-07-11
-  - 2021-07-18
-  - 2021-07-25
-  - 2021-08-01
-  - 2021-08-08
-  - 2020-09-13
-  - 2020-08-17
-  - 2020-09-27
-  - 2020-08-23
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-11-01
-  - 2020-11-08
-  - 2020-11-15
-  - 2020-10-18
-  - 2020-10-25
-  description: SIR-based compartmental model with a power law incidence rate, unknown
-    as well as known infecteds, and time dependent social contact suppression and
-    relaxation.
-  earliest_forecast: Monday, 17 August 2020
-  forecasts: 50
-  home_url: https://github.com/fvbttu/squider
-  latest_forecast: Sunday, 15 August 2021
-  name: SQUIDER
-  team_name: Hussain Lab at Texas Tech University
-  url: https://zoltardata.com/model/366
 - abbreviation: Karlen-pypm
   actions:
   - label: Website
@@ -3233,449 +3307,3 @@
   name: Dynamic, Empirical COVID-19 Outbreak Model
   team_name: Johns Hopkins Center for Systems Science and Engineering
   url: https://zoltardata.com/model/426
-- abbreviation: BPagano-RtDriven
-  actions:
-  - label: Website
-    new_window: true
-    url: https://bobpagano.com
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/427
-  dates:
-  - 2021-07-04
-  - 2021-06-20
-  - 2020-12-06
-  - 2020-12-13
-  - 2021-01-24
-  - 2021-06-27
-  - 2020-11-29
-  - 2021-05-30
-  - 2021-01-31
-  - 2021-01-17
-  - 2021-08-15
-  - 2021-05-23
-  - 2021-05-09
-  - 2021-04-18
-  - 2021-03-07
-  - 2020-10-11
-  - 2021-02-07
-  - 2020-12-27
-  - 2021-05-02
-  - 2021-04-11
-  - 2021-02-21
-  - 2020-11-22
-  - 2021-03-28
-  - 2021-01-24
-  - 2021-06-06
-  - 2021-03-21
-  - 2021-02-28
-  - 2021-04-04
-  - 2021-04-11
-  - 2021-05-16
-  - 2020-12-20
-  - 2021-01-03
-  - 2021-04-25
-  - 2021-02-14
-  - 2021-03-14
-  - 2021-01-10
-  - 2021-07-11
-  - 2021-06-13
-  - 2020-10-11
-  - 2021-07-18
-  - 2021-08-08
-  - 2021-07-25
-  - 2021-08-01
-  - 2020-10-04
-  - 2020-10-18
-  - 2020-11-08
-  - 2020-11-15
-  - 2020-11-01
-  - 2020-10-25
-  description: Projects infections and deaths using an SIR model.
-  earliest_forecast: Sunday, 04 October 2020
-  forecasts: 49
-  home_url: https://bobpagano.com
-  latest_forecast: Sunday, 15 August 2021
-  name: RtDriven
-  team_name: BPagano
-  url: https://zoltardata.com/model/427
-- abbreviation: IHME-CurveFit
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19.healthdata.org/united-states-of-america
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/154
-  dates:
-  - 2021-06-25
-  - 2020-05-12
-  - 2021-07-02
-  - 2021-05-28
-  - 2020-05-12
-  - 2020-11-23
-  - 2020-12-07
-  - 2021-04-01
-  - 2021-02-25
-  - 2021-01-29
-  - 2021-01-22
-  - 2021-05-07
-  - 2021-05-24
-  - 2020-12-10
-  - 2021-03-25
-  - 2021-02-22
-  - 2021-04-16
-  - 2021-06-11
-  - 2020-12-18
-  - 2021-01-15
-  - 2021-03-18
-  - 2021-04-23
-  - 2021-06-07
-  - 2020-12-23
-  - 2021-02-05
-  - 2021-02-12
-  - 2021-05-17
-  - 2021-03-15
-  - 2021-06-18
-  - 2020-08-24
-  - 2020-09-28
-  - 2020-09-03
-  - 2021-07-16
-  - 2021-07-30
-  - 2021-07-23
-  - 2021-08-09
-  - 2020-08-27
-  - 2020-06-24
-  - 2020-09-21
-  - 2020-07-17
-  - 2020-07-30
-  - 2020-08-06
-  - 2020-07-23
-  - 2020-03-27
-  - 2020-03-29
-  - 2020-03-30
-  - 2020-03-31
-  - 2020-04-01
-  - 2020-04-05
-  - 2020-04-07
-  - 2020-04-09
-  - 2020-04-12
-  - 2020-04-16
-  - 2020-04-20
-  - 2020-04-21
-  - 2020-04-27
-  - 2020-04-28
-  - 2020-05-08
-  - 2020-05-04
-  - 2020-05-18
-  - 2020-05-12
-  - 2020-05-29
-  - 2020-06-29
-  - 2020-06-22
-  - 2020-06-05
-  - 2020-06-08
-  - 2020-06-10
-  - 2020-07-06
-  - 2020-06-15
-  - 2020-10-16
-  - 2020-10-26
-  description: This model makes predictions about the future that are dependent on
-    the assumption  that current interventions continue. Non-linear mixed efects curve-fitting.
-  earliest_forecast: Friday, 27 March 2020
-  forecasts: 71
-  home_url: https://covid19.healthdata.org/united-states-of-america
-  latest_forecast: Monday, 09 August 2021
-  name: CurveFit
-  team_name: Institute for Health Metrics and Evaluation
-  url: https://zoltardata.com/model/154
-- abbreviation: FRBSF_Wilson-Econometric
-  actions:
-  - label: Website
-    new_window: true
-    url: https://www.frbsf.org/economic-research/indicators-data/covid-19-forecasts-by-county/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/537
-  dates:
-  - 2021-07-05
-  - 2021-06-28
-  - 2021-03-29
-  - 2021-04-12
-  - 2021-06-21
-  - 2021-05-31
-  - 2021-05-03
-  - 2021-03-20
-  - 2021-03-18
-  - 2021-03-22
-  - 2021-05-24
-  - 2021-04-05
-  - 2021-04-19
-  - 2021-04-19
-  - 2021-05-10
-  - 2021-05-17
-  - 2021-04-26
-  - 2021-06-07
-  - 2021-06-14
-  - 2021-07-12
-  - 2021-07-19
-  - 2021-07-26
-  - 2021-08-02
-  - 2021-08-09
-  description: Econometric county panel data model, derived from SIR model, with transmission
-    rate assumed to be function of weather and mobility.
-  earliest_forecast: Thursday, 18 March 2021
-  forecasts: 24
-  home_url: https://www.frbsf.org/economic-research/indicators-data/covid-19-forecasts-by-county/
-  latest_forecast: Monday, 09 August 2021
-  name: Econometric
-  team_name: Federal Reserve Bank of San Francisco/Wilson
-  url: https://zoltardata.com/model/537
-- abbreviation: FDANIHASU-Sweight
-  actions:
-  - label: Website
-    new_window: true
-    url: http://covidforeca.st/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/506
-  dates:
-  - 2021-02-15
-  - 2021-04-12
-  - 2021-05-03
-  - 2021-07-05
-  - 2021-08-09
-  - 2021-01-25
-  - 2021-03-15
-  - 2021-02-08
-  - 2021-03-08
-  - 2021-02-01
-  - 2021-05-24
-  - 2021-02-22
-  - 2021-03-29
-  - 2021-03-01
-  - 2021-04-05
-  - 2021-03-22
-  - 2021-04-19
-  - 2021-05-10
-  - 2021-04-26
-  - 2021-05-17
-  - 2021-07-19
-  - 2021-07-12
-  description: An ensemble, or model average, of submitted forecasts to the COVID-19
-    Forecast Hub.
-  earliest_forecast: Monday, 25 January 2021
-  forecasts: 22
-  home_url: http://covidforeca.st/
-  latest_forecast: Monday, 09 August 2021
-  name: Sweight
-  team_name: FDANIHASU
-  url: https://zoltardata.com/model/506
-- abbreviation: JHUAPL-SLPHospEns
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/lmullany/JHUAPL-SLPHospEns
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/462
-  dates:
-  - 2021-02-15
-  - 2021-06-21
-  - 2021-03-29
-  - 2021-05-03
-  - 2020-12-14
-  - 2021-04-05
-  - 2021-05-24
-  - 2021-01-11
-  - 2021-01-25
-  - 2021-07-05
-  - 2021-06-28
-  - 2021-08-09
-  - 2020-12-06
-  - 2021-02-01
-  - 2021-04-19
-  - 2020-12-28
-  - 2021-02-08
-  - 2021-03-08
-  - 2020-12-21
-  - 2021-01-04
-  - 2021-05-31
-  - 2021-04-12
-  - 2021-02-22
-  - 2021-06-07
-  - 2021-03-22
-  - 2021-03-15
-  - 2021-03-01
-  - 2021-04-26
-  - 2021-01-18
-  - 2021-05-10
-  - 2021-05-17
-  - 2021-06-14
-  - 2021-07-19
-  - 2021-07-12
-  - 2021-07-26
-  - 2021-08-02
-  description: Estimates an ensemble of hospitalization forecasts by simulating the
-    individual model-specific forecasts from the submitted quantile functions, and
-    linearly pooling.
-  earliest_forecast: Sunday, 06 December 2020
-  forecasts: 36
-  home_url: https://github.com/lmullany/JHUAPL-SLPHospEns
-  latest_forecast: Monday, 09 August 2021
-  name: SLPHospEns
-  team_name: JHUAPL
-  url: https://zoltardata.com/model/462
-- abbreviation: MIT_CritData-GBCF
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/sakethsundar/covid-forecaster
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/377
-  dates:
-  - 2021-06-20
-  - 2021-04-11
-  - 2021-07-04
-  - 2020-12-13
-  - 2021-02-21
-  - 2021-01-24
-  - 2021-06-27
-  - 2021-03-21
-  - 2021-01-31
-  - 2021-05-30
-  - 2021-04-04
-  - 2020-12-20
-  - 2021-04-18
-  - 2021-03-07
-  - 2021-05-09
-  - 2021-02-07
-  - 2020-12-06
-  - 2021-03-28
-  - 2021-06-06
-  - 2020-11-22
-  - 2020-11-29
-  - 2021-02-28
-  - 2021-01-17
-  - 2021-05-23
-  - 2021-05-16
-  - 2020-12-27
-  - 2021-04-25
-  - 2021-01-03
-  - 2021-03-14
-  - 2021-02-14
-  - 2021-01-10
-  - 2021-05-02
-  - 2021-06-13
-  - 2021-07-11
-  - 2021-07-18
-  - 2021-07-25
-  - 2021-08-01
-  - 2021-08-08
-  - 2020-09-20
-  - 2020-09-13
-  - 2020-09-27
-  - 2020-09-06
-  - 2020-10-11
-  - 2020-10-04
-  - 2020-11-08
-  - 2020-11-01
-  - 2020-10-25
-  - 2020-11-15
-  - 2020-10-18
-  description: This gradient boosted regressor model with hyperparameter optimization
-    is trained on prior COVID metrics as well as demographic, socioeconomic, mobility,
-    and health-related county-level covariates.
-  earliest_forecast: Sunday, 06 September 2020
-  forecasts: 49
-  home_url: https://github.com/sakethsundar/covid-forecaster
-  latest_forecast: Sunday, 08 August 2021
-  name: Gradient Boosted COVID Forecaster (GBCF)
-  team_name: MIT-CriticalData
-  url: https://zoltardata.com/model/377
-- abbreviation: Covid19Sim-Simulator
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19sim.org/
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/285
-  dates:
-  - 2021-05-02
-  - 2021-07-04
-  - 2021-06-20
-  - 2021-03-28
-  - 2021-02-21
-  - 2020-12-06
-  - 2021-06-27
-  - 2021-08-08
-  - 2021-01-31
-  - 2021-05-30
-  - 2021-03-07
-  - 2021-03-21
-  - 2021-02-28
-  - 2021-04-04
-  - 2020-11-29
-  - 2020-11-22
-  - 2021-02-07
-  - 2021-04-18
-  - 2021-05-09
-  - 2021-01-24
-  - 2021-04-11
-  - 2021-06-06
-  - 2021-05-16
-  - 2021-05-23
-  - 2020-12-20
-  - 2020-12-13
-  - 2021-01-03
-  - 2021-01-17
-  - 2020-06-21
-  - 2021-04-25
-  - 2021-02-14
-  - 2020-12-27
-  - 2021-03-14
-  - 2021-01-10
-  - 2020-07-12
-  - 2021-06-13
-  - 2020-07-26
-  - 2020-08-23
-  - 2020-09-13
-  - 2021-08-01
-  - 2020-06-28
-  - 2020-08-30
-  - 2020-09-06
-  - 2020-08-02
-  - 2020-09-20
-  - 2020-08-16
-  - 2020-07-19
-  - 2020-06-21
-  - 2020-09-27
-  - 2020-07-05
-  - 2020-05-24
-  - 2020-06-07
-  - 2020-05-31
-  - 2020-06-14
-  - 2020-10-04
-  - 2020-10-11
-  - 2020-10-25
-  - 2020-11-08
-  - 2020-10-18
-  - 2020-11-01
-  description: An interactive tool developed by researchers at Mass General Hospital,
-    Harvard Medical School, Georgia Tech and Boston Medical Center to inform COVID-19
-    intervention policy decisions in the US.
-  earliest_forecast: Sunday, 24 May 2020
-  forecasts: 60
-  home_url: https://covid19sim.org/
-  latest_forecast: Sunday, 08 August 2021
-  name: Simulator
-  team_name: COVID-19 Simulator
-  url: https://zoltardata.com/model/285
