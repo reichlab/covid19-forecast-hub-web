@@ -212,6 +212,7 @@
   - 2021-08-23
   - 2021-07-13
   - 2021-07-19
+  - 2021-08-25
   - 2021-07-25
   - 2021-08-05
   - 2021-08-07
@@ -219,9 +220,9 @@
   - 2021-07-26
   description: Neural Relational Autoregressive Model
   earliest_forecast: Wednesday, 18 November 2020
-  forecasts: 209
+  forecasts: 210
   home_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
-  latest_forecast: Tuesday, 24 August 2021
+  latest_forecast: Wednesday, 25 August 2021
   name: NRAR
   team_name: Facebook AI Research
   url: https://zoltardata.com/model/448
