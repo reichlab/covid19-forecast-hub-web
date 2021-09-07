@@ -2,7 +2,9 @@
 
 # If a command fails then the deploy stops
 set -e
-pip3 install -r requirements.txt
+pip install pipenv
+pipenv install --dev
+# pip3 install -r requirements.txt
 bundle install
 if [ "$1" != "skip_gen" ]; then
 	printf "Generating community file"
