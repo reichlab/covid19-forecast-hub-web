@@ -3,7 +3,7 @@
 # If a command fails then the deploy stops
 set -e
 pip install pipenv
-pipenv install --dev
+pipenv install
 # pip3 install -r requirements.txt
 bundle install
 if [ "$1" != "skip_gen" ]; then
