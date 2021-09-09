@@ -53,6 +53,11 @@ _New York Magazine_ | 3 May 2021
 
 ***
 
+[Lessons from the pandemic’s superstar data scientist, Youyang Gu](https://www.technologyreview.com/2021/04/27/1023657/lessons-from-the-pandemics-superstar-data-scientist-youyang-gu/){:target="_blank"}  
+_MIT Technology Review_ | 27 April 2021
+
+***
+
 [Herd Immunity Is Humanity’s Great Hope, and It’s Proving Elusive](https://www.bloomberg.com/news/articles/2021-04-22/herd-immunity-hard-to-achieve-as-covid-variants-grow-experts-say){:target="_blank"}  
 _Bloomberg Businessweek_ | 22 April 2021
 
@@ -75,6 +80,26 @@ _USA Today_ | 30 March 2021
 
 [Balance of Power: Concerns Over New Covid-19 Wave (Podcast)](https://www.bloomberg.com/news/audio/2021-03-24/balance-of-power-concerns-over-new-covid-19-wave-podcast){:target="_blank"}  
 _Bloomberg_ | 24 March 2021
+
+***
+
+[Variants Rise in Some States, Adding Urgency to Vaccine Push](https://www.bloomberg.com/news/articles/2021-03-22/variants-rise-in-some-states-adding-urgency-to-speed-up-shots){:target="_blank"}  
+_Bloomberg_ | 22 March 2021
+
+***
+
+[Experts Warn U.S. Could See New Coronavirus Hot Spots](https://www.npr.org/2021/03/19/979056235/experts-warn-u-s-could-see-new-coronavirus-hot-spots){:target="_blank"}  
+_NPR_ | 19 March 2021
+
+***
+
+[Experts say COVID-19 case decline appears to be stalling, worry variants may be at work](https://www.bostonglobe.com/2021/03/18/metro/health-expert-dr-jha-warns-about-variants-rising-covid-19-cases/){:target="_blank"}  
+_Boston Globe_ | 18 March 2021
+
+***
+
+[These 3 charts offer clues to what might happen next in Mass. coronavirus pandemic](https://www.bostonglobe.com/2021/02/23/nation/these-3-charts-offer-clues-what-might-happen-next-mass-coronavirus-pandemic/){:target="_blank"}  
+_Boston Globe_ | 23 February 2021
 
 ***
 
@@ -168,6 +193,11 @@ _NPR_ | 16 October 2020
 
 ***
 
+[UMass COVID-19 model projects unsettling death toll in Massachusetts, across country](https://www.tauntongazette.com/story/news/2020/10/07/umass-covid-19-model-projects-unsettling-death-toll-in-massachusetts-across-country/42913565/){:target="_blank"}  
+_Taunton Daily Gazette_ | 7 October 2020
+
+***
+
 [5 charts that tell the story of COVID-19 in Mass.](https://www.bostonglobe.com/2020/10/05/nation/5-charts-that-tell-story-covid-19-mass/){:target="_blank"}  
 _Boston Globe_ | 5 October 2020
 
@@ -175,6 +205,11 @@ _Boston Globe_ | 5 October 2020
 
 [What Will Cold-and-Flu Season Mean for the Coronavirus Pandemic?](https://www.newyorker.com/science/elements/what-will-cold-and-flu-season-mean-for-the-coronavirus-pandemic){:target="_blank"}  
 _New Yorker_ | 1 October 2020
+
+***
+
+[9 experts reflect on the US reaching 200,000 confirmed Covid-19 deaths](https://www.vox.com/2020/9/23/21452949/us-covid-19-deaths-update-200000-total){:target="_blank"}  
+_Vox_ | 23 September 2020
 
 ***
 
@@ -206,7 +241,7 @@ _Washington Post_ | 4 September 2020
 [A Zoom Thanksgiving? Summer could give way to a bleaker fall](https://apnews.com/cc6ed42c1bcc5109b1e6b1bccc39091d){:target="_blank"}  
 _AP News_ | 31 August 2020
 
-******
+***
 
 [UMass Model Says State Coronavirus Death Toll Could Rise to Around 9200 by September 12](https://www.bostonglobe.com/2020/08/19/nation/umass-model-says-state-coronavirus-death-toll-could-rise-around-9200-four-weeks/?event=event12){:target="_blank"}  
 _Boston Globe_ | 19 August 2020
@@ -243,7 +278,6 @@ _WBUR_ | 27 July 2020
 
 ***
 
-
 [Coronavirus Hot Spots: Could The Mid-Atlantic And Northeast See A COVID-19 Rebound?](https://www.npr.org/sections/health-shots/2020/07/24/895144417/coronavirus-hot-spots-could-the-mid-atlantic-and-northeast-see-a-covid-19-reboun){:target="_blank"}  
 _NPR_ | 24 July 2020
 
@@ -277,7 +311,7 @@ _Boston Globe_ | 15 July 2020
 [Deaths Starting to Increase in States With Coronavirus Resurgences](https://www.usnews.com/news/health-news/articles/2020-07-09/coronavirus-deaths-increasing-in-states-with-resurgences){:target="_blank"}  
 _U.S. News_ | 9 July 2020
 
-******
+***
 
 [UMass Model Predicts 8,389 Total Deaths in 4 Weeks](https://www.bostonglobe.com/2020/06/23/nation/umass-model-predicts-total-8389-coronavirus-deaths-four-weeks/){:target="_blank"}  
 _Boston Globe_ | 23 June 2020
@@ -312,7 +346,7 @@ _PBS NewsHour_ | 20 May 2020
 [Coronavirus hot spots erupt across the country; experts warn of second wave in South](https://www.washingtonpost.com/health/coronavirus-hot-spots-erupt-across-the-country-experts-warn-of-possible-outbreaks-in-south/2020/05/20/49bc6d10-9ab4-11ea-a282-386f56d579e6_story.html){:target="_blank"}  
 _Washington Post_ | 20 May 2020  
 
-******
+***
 
 [UMass Model Predicts Death Toll Will Rise Over 8,100](https://www.bostonglobe.com/2020/05/19/nation/mass-reports-873-new-coronavirus-cases-76-new-fatalities-umass-model-predicts-death-toll-will-rise-over-8100/?event=event12){:target="_blank"}  
 _Boston Globe_ | 19 May 2020
@@ -348,6 +382,18 @@ _FiveThirtyEight_ | 1 May 2020
 _New York Times_ | 22 April 2020  
 
 ***
+
+[Best-Case And Worst-Case Coronavirus Forecasts Are Very Far Apart](https://fivethirtyeight.com/features/best-case-and-worst-case-coronavirus-forecasts-are-very-far-apart/){:target="_blank"}  
+_FiveThirtyEight_ | 2 April 2020  
+
+***
+
+[Here’s How More Than 20 Infectious-Disease Experts See Coronavirus Playing Out in the U.S.](https://www.yahoo.com/entertainment/more-20-infectious-disease-experts-213927106.html){:target="_blank"}  
+_Yahoo!_ | 19 March 2020  
+
+***
+
 [Scientists Crunch Data to Predict How Many People Will Get Coronavirus](https://www.wsj.com/articles/scientists-crunch-data-to-predict-how-many-people-will-get-coronavirus-11584479851){:target="_blank"}  
 _Wall street Journal_ | 17 March 2020  
 
+***
