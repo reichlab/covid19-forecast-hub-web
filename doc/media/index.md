@@ -173,6 +173,11 @@ _New Yorker_ | 1 October 2020
 
 ***
 
+[UMass Model Sees State Coronavirus Death Tally Passing 9600 in Four Weeks](https://www.bostonglobe.com/2020/09/23/nation/umass-model-sees-state-coronavirus-death-tally-passing-9600-four-weeks/){:target="_blank"}  
+_Boston Globe_ | 23 September 2020
+
+***
+
 [Coronavirus Models Predict Scenarios, But People Determine Outcomes](https://www.wbur.org/hereandnow/2020/09/21/coronavirus-models-outcomes){:target="_blank"}  
 _WBUR_ | 21 September 2020
 
