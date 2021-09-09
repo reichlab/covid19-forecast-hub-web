@@ -18,6 +18,11 @@ _The Hill_ | 4 August 2021
 
 ***
 
+[The Health 202: Delta variant cases are surging, and experts say it's hard to forecast how much worse it could get](https://www.washingtonpost.com/politics/2021/08/02/health-202-delta-variant-cases-are-surging-experts-say-it-hard-forecast-how-much-worse-it-could-get/){:target="_blank"}  
+_Washington Post_ | 2 August 2021
+
+***
+
 [Lessons from COVID-19](https://www.umass.edu/gateway/article/lessons-covid-19){:target="_blank"}  
 _University of Massachusetts Amherst_ | July 2021
 
