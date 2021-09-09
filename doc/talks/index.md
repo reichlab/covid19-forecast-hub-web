@@ -16,5 +16,6 @@ Here are links to presentations about the Hub:
 - "Zoltar: a forecast repository" - [slides](/talks/zoltar.html){:target="_blank"} (6 October 2020)
 - Harvard Data Science Zoominar - "COVID-19 Prediction Models" - [video](https://youtu.be/rnpgtWywRcU){:target="_blank"} (21 July 2020)
 - American Statistical Association and Journal of Data Science Webinar Series - "The COVID-19 Forecast Hub: using statistics and data science to support decision-making in a pandemic" - [video](https://uconn-cmr.webex.com/recordingservice/sites/uconn-cmr/recording/play/f9824b479ead48b28c24c440038ee02e){:target="_blank"} (17 July 2020)
+- UMass Institute for Applied Life Sciences COVID-19 Town Hall and Q&A - "How can COVID-19 modeling inform decisions" - [video](https://www.umass.edu/ials/ials-covid-19-town-hall-and-qa-recap){:target="_blank"} (24 April 2020)
 
 ***
