@@ -168,6 +168,11 @@ _Boston Globe_ | 5 October 2020
 
 ***
 
+[What Will Cold-and-Flu Season Mean for the Coronavirus Pandemic?](https://www.newyorker.com/science/elements/what-will-cold-and-flu-season-mean-for-the-coronavirus-pandemic){:target="_blank"}  
+_New Yorker_ | 1 October 2020
+
+***
+
 [Coronavirus Models Predict Scenarios, But People Determine Outcomes](https://www.wbur.org/hereandnow/2020/09/21/coronavirus-models-outcomes){:target="_blank"}  
 _WBUR_ | 21 September 2020
 
