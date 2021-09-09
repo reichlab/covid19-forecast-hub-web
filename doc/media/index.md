@@ -3,6 +3,21 @@ title: In the news
 layout: docs
 ---
 
+[U.S. covid death toll hits 1,500 a day amid delta scourge](https://www.washingtonpost.com/health/2021/09/03/delta-deaths-us-fourth-wave/){:target="_blank"}  
+_Washington Post_ | 3 September 2021
+
+***
+
+[COVID-19 hospitalizations could hit 32,000 a day, CDC forecast says](https://www.q13fox.com/news/covid-19-hospitalizations-could-hit-32000-a-day-cdc-forecast-says){:target="_blank"}  
+_Q 13 Fox Seattle_ | 18 August 2021
+
+***
+
+[Delta's peak is difficult to project, but could come this month](https://thehill.com/policy/healthcare/566212-deltas-peak-is-difficult-to-project-but-could-come-this-month){:target="_blank"}  
+_The Hill_ | 4 August 2021
+
+***
+
 [Lessons from COVID-19](https://www.umass.edu/gateway/article/lessons-covid-19){:target="_blank"}  
 _University of Massachusetts Amherst_ | July 2021
 
