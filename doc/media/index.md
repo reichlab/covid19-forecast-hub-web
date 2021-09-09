@@ -143,6 +143,11 @@ _STAT_ | 12 November 2020
 
 ***
 
+[Traces of Coronavirus in Waste Water Tick Upward Again](https://www.bostonglobe.com/2020/11/05/nation/traces-coronavirus-wastewater-tick-upward-again/){:target="_blank"}  
+_Boston Globe_ | 5 November 2020
+
+***
+
 [Universal mask use could save 130,000 U.S. lives by the end of February, new study estimates](https://www.statnews.com/2020/10/23/universal-mask-use-could-save-130000-lives-by-the-end-of-february-new-modeling-study-says/){:target="_blank"}  
 _STAT_ | 23 October 2020
 
