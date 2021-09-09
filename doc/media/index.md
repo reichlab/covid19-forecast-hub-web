@@ -201,6 +201,11 @@ _Washington Post_ | 4 September 2020
 [A Zoom Thanksgiving? Summer could give way to a bleaker fall](https://apnews.com/cc6ed42c1bcc5109b1e6b1bccc39091d){:target="_blank"}  
 _AP News_ | 31 August 2020
 
+******
+
+[UMass Model Says State Coronavirus Death Toll Could Rise to Around 9200 by September 12](https://www.bostonglobe.com/2020/08/19/nation/umass-model-says-state-coronavirus-death-toll-could-rise-around-9200-four-weeks/?event=event12){:target="_blank"}  
+_Boston Globe_ | 19 August 2020
+
 ***
 
 [COVID-19 pandemic is not ‘fading’ in the United States](https://apnews.com/afs:Content:9213894577){:target="_blank"}  
@@ -267,6 +272,16 @@ _Boston Globe_ | 15 July 2020
 [Deaths Starting to Increase in States With Coronavirus Resurgences](https://www.usnews.com/news/health-news/articles/2020-07-09/coronavirus-deaths-increasing-in-states-with-resurgences){:target="_blank"}  
 _U.S. News_ | 9 July 2020
 
+******
+
+[UMass Model Predicts 8,389 Total Deaths in 4 Weeks](https://www.bostonglobe.com/2020/06/23/nation/umass-model-predicts-total-8389-coronavirus-deaths-four-weeks/){:target="_blank"}  
+_Boston Globe_ | 23 June 2020
+
+***
+
+[A virus changes everything](https://www.umass.edu/magazine/spring-2020/virus){:target="_blank"}  
+_UMASS Magazine_ | Spring 2020
+
 ***
 
 [Don’t call it a second wave](https://www.politico.com/newsletters/politico-nightly-coronavirus-special-edition/2020/06/10/dont-call-it-a-second-wave-489488){:target="_blank"}  
@@ -292,6 +307,11 @@ _PBS NewsHour_ | 20 May 2020
 [Coronavirus hot spots erupt across the country; experts warn of second wave in South](https://www.washingtonpost.com/health/coronavirus-hot-spots-erupt-across-the-country-experts-warn-of-possible-outbreaks-in-south/2020/05/20/49bc6d10-9ab4-11ea-a282-386f56d579e6_story.html){:target="_blank"}  
 _Washington Post_ | 20 May 2020  
 
+******
+
+[UMass Model Predicts Death Toll Will Rise Over 8,100](https://www.bostonglobe.com/2020/05/19/nation/mass-reports-873-new-coronavirus-cases-76-new-fatalities-umass-model-predicts-death-toll-will-rise-over-8100/?event=event12){:target="_blank"}  
+_Boston Globe_ | 19 May 2020
+
 ***
 
 [How To Make Sense of All The COVID-19 Projections? A New Model Combines Them](https://www.npr.org/sections/health-shots/2020/05/13/855038708/combining-different-models-new-coronavirus-projection-shows-110-000-deaths-by-ju){:target="_blank"}  
@@ -301,6 +321,11 @@ _NPR Morning Edition_ | 13 May 2020
 
 [UMass professor develops ensemble forecast for coronavirus pandemic; projects 103,000 deaths nationwide by end of May](https://www.bostonglobe.com/2020/05/07/metro/umass-professor-develops-ensemble-forecast-coronavirus-pandemic-projects-103000-deaths-nationwide-by-end-may/){:target="_blank"}  
 _Boston Globe_ | 7 May 2020  
+
+***
+
+[With New Hot Spots Emerging, No Sign of a Respite](https://www.nytimes.com/2020/05/05/us/coronavirus-deaths-cases-united-states.html){:target="_blank"}  
+_New York Times_ | 5 May 2020  
 
 ***
 
