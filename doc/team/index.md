@@ -12,7 +12,7 @@ The COVID-19 Forecast Hub is based at the <a href="https://reichlab.io/" target=
  - Jarad Niemi, Iowa State (data curation)
  - Khoa Le, UMass-Amherst (architecture, data curation)
  - Ayush Khandelwal, UMass-Amherst (architecture, data curation)
- - Yuxin (David) Huang, UMass-Amherst (architecture, data curation)
+ - Yuxin Huang, UMass-Amherst (architecture, data curation)
  - Abdul Hannan Kanji, UMass-Amherst (architecture, data curation)
  - Katie House, UMass-Amherst (architecture, data curation)
  - Estee Cramer, UMass-Amherst (data curation, ensemble model)
