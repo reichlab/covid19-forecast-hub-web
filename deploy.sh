@@ -22,7 +22,7 @@ bundle exec jekyll build -d docs
 # Go To Public folder
 # cd public
 
-if [ "$ENV" = "CI" ]; then
+if [ "$CI" = "true" ]; then
 	git config user.name "GitHub Action"
 	git config user.email "user@example.com"
 fi
