@@ -2,7 +2,11 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/41767ddf-f342-4622-b19a-e96e8c70d16f/deploy-status)](https://app.netlify.com/sites/covid19-forecast-hub/deploys)
 
-# Running Your Site Locally
+# Website of COVID-19 Forecast Hub
+
+This repository stores source code used to generate the website of the COVID-19 Forecast Hub.
+
+# Building the site locally
 
 1. Install a full [Ruby development environment](https://jekyllrb.com/docs/installation/)
 
