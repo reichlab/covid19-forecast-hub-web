@@ -5,16 +5,15 @@ set -e
 pip install pipenv
 pipenv install
 # pip3 install -r requirements.txt
-pipenv shell
 bundle install
 if [ "$1" != "skip_gen" ]; then
 	printf "Generating community file"
-	python3 update-community.py
+	pipenv run python3 update-community.py
 else
 	printf "Skipping community file generation"
 fi
 
-python3 update-reports.py
+pipenv run python3 update-reports.py
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
 # Build the project.
