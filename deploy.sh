@@ -31,7 +31,7 @@ pipenv run python3 update-reports.py
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
 # remove old site
-rm -rf ./_site
+rm -rf ./docs
 
 # Build the project
 bundle exec jekyll build -d docs
@@ -45,12 +45,12 @@ if [ "$1" != "no_push" ]  && [ "$2" != "no_push" ]
 then
 	printf "Pushing to GitHub"
 	git fetch
-	git worktree add _site netlify
+	git worktree add docs netlify
 
 	# Commit changes.
-	msg="Auto deploy commit ${HEAD_HASH} to GitHub Pages at ${date}"
-	(cd _site; git add .)
-	(cd _site; git diff-index --quiet HEAD || git commit -am "$msg")
+	msg="Auto deploy commit ${HEAD_HASH} to Netlify at ${date}"
+	(cd docs; git add .)
+	(cd docs; git diff-index --quiet HEAD || git commit -am "$msg")
 
 	git push origin netlify
 else
