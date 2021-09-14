@@ -11,11 +11,9 @@ click = "*"
 urllib3 = "*"
 webdriver-manager = "*"
 pyyaml = "*"
+zoltpy = {git = "https://github.com/reichlab/zoltpy"}
 
 [dev-packages]
 
 [requires]
 python_version = "3.8"
-
-[packages.zoltpy]
-git = "https://github.com/reichlab/zoltpy"

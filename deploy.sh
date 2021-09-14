@@ -5,6 +5,7 @@ set -e
 pip install pipenv
 pipenv install
 # pip3 install -r requirements.txt
+pipenv shell
 bundle install
 if [ "$1" != "skip_gen" ]; then
 	printf "Generating community file"
