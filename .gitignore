@@ -12,4 +12,4 @@ _site/
 *.code-workspace
 
 # static site output folder
-docs
+docs/
