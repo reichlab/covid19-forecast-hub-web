@@ -36,6 +36,10 @@ rm -rf ./docs
 # Build the project
 bundle exec jekyll build -d docs
 
+# setup subtree pushing
+git fetch
+git worktree add docs netlify
+
 if [ "$CI" = "true" ]; then
 	git config user.name "GitHub Action"
 	git config user.email "user@example.com"
@@ -44,8 +48,6 @@ fi
 if [ "$1" != "no_push" ]  && [ "$2" != "no_push" ] 
 then
 	printf "Pushing to GitHub"
-	git fetch
-	git worktree add docs netlify
 
 	# Commit changes.
 	msg="Auto deploy commit ${HEAD_HASH} to Netlify at ${date}"
