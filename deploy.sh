@@ -33,12 +33,12 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 # remove old site
 rm -rf ./docs
 
-# Build the project
-bundle exec jekyll build -d docs
-
 # setup subtree pushing
 git fetch
 git worktree add docs netlify
+
+# Build the project
+bundle exec jekyll build -d docs
 
 if [ "$CI" = "true" ]; then
 	git config user.name "GitHub Action"
