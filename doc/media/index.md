@@ -3,6 +3,16 @@ title: In the news
 layout: docs
 ---
 
+[When Will Delta Variant Peak? Winter Uncertain As COVID Cases Drop in U.S.](https://www.newsweek.com/when-delta-covid-variant-peak-us-winter-cases-model-1632988){:target="_blank"}  
+_Newsweek_ | 27 September 2021
+
+***
+
+[UMass Amherst infectious disease forecaster gets renewed funding](https://www.umass.edu/news/article/umass-amherst-infectious-disease-forecaster-gets-renewed-funding){:target="_blank"}  
+_University of Massachusetts Amherst_ | 13 September 2021
+
+***
+
 [U.S. covid death toll hits 1,500 a day amid delta scourge](https://www.washingtonpost.com/health/2021/09/03/delta-deaths-us-fourth-wave/){:target="_blank"}  
 _Washington Post_ | 3 September 2021
 
