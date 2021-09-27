@@ -73,6 +73,17 @@ sections:
 
     content1: >-  
       
+      [When Will Delta Variant Peak? Winter Uncertain As COVID Cases Drop in U.S.](https://www.newsweek.com/when-delta-covid-variant-peak-us-winter-cases-model-1632988){:target="_blank"}  
+      
+      _Newsweek_ | 27 September 2021  
+      
+      [UMass Amherst infectious disease forecaster gets renewed funding](https://www.umass.edu/news/article/umass-amherst-infectious-disease-forecaster-gets-renewed-funding){:target="_blank"}  
+      
+      _University of Massachusetts Amherst_ | 13 September 2021  
+      
+      
+    content2: >-  
+      
       [U.S. covid death toll hits 1,500 a day amid delta scourge](https://www.washingtonpost.com/health/2021/09/03/delta-deaths-us-fourth-wave/){:target="_blank"}  
       
       _Washington Post_ | 3 September 2021  
@@ -82,7 +93,7 @@ sections:
       _Q 13 Fox Seattle_ | 18 August 2021  
       
       
-    content2: >-  
+    content3: >-  
       
       [Delta's peak is difficult to project, but could come this month](https://thehill.com/policy/healthcare/566212-deltas-peak-is-difficult-to-project-but-could-come-this-month){:target="_blank"}  
       
@@ -91,17 +102,6 @@ sections:
       [Competing models at start of pandemic hurt public's trust](https://www.startribune.com/how-accurate-were-covid-19-models-for-minnesota/600079030/){:target="_blank"}  
       
       _Minneapolis Star Tribune_ | 17 July 2021  
-      
-      
-    content3: >-  
-      
-      [What Data Scientists Learned by Modeling the Spread of Covid-19](https://www.smithsonianmag.com/science-nature/what-data-scientists-learned-modeling-spread-covid-19-180977964/){:target="_blank"}  
-      
-      _Smithsonian Magazine_ | 11 June 2021  
-      
-      [All together now: the most trustworthy covid-19 model is an ensemble](https://www.technologyreview.com/2021/05/28/1025478/covid-ensemble-model-forecast-trustworthy/){:target="_blank"}  
-      
-      _MIT Technology Review_ | 28 May 2021  
       
 
     actions:
