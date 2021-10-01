@@ -77,9 +77,9 @@ sections:
       
       _Newsweek_ | 27 September 2021  
       
-      [UMass Amherst infectious disease forecaster gets renewed funding](https://www.umass.edu/news/article/umass-amherst-infectious-disease-forecaster-gets-renewed-funding){:target="_blank"}  
+      [Facing backlog of positive tests, Maine CDC reports highest single-day case increase of pandemic](https://www.pressherald.com/2021/09/30/maine-cdc-reports-another-925-covid-19-cases-no-additional-deaths){:target="_blank"}  
       
-      _University of Massachusetts Amherst_ | 13 September 2021  
+      _Portland Press Herald_ | 30 September 2021  
       
       
     content2: >-  
