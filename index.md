@@ -13,7 +13,7 @@ sections:
         type: secondary
         new_window: false
       - label: Visualization
-        url: https://viz.covid19forecasthub.org/
+        url: https://covid.cdc.gov/covid-data-tracker/#forecasting_weeklydeaths
         type: secondary
         new_window: false
       - label: Community
@@ -73,9 +73,9 @@ sections:
 
     content1: >-  
       
-      [When Will Delta Variant Peak? Winter Uncertain As COVID Cases Drop in U.S.](https://www.newsweek.com/when-delta-covid-variant-peak-us-winter-cases-model-1632988){:target="_blank"}  
+      [Are COVID-19's big waves over? Experts are split](https://thehill.com/policy/healthcare/576030-are-covid-19s-big-waves-over-experts-are-split){:target="_blank"}  
       
-      _Newsweek_ | 27 September 2021  
+      _The Hill_ | 9 October 2021  
       
       [Facing backlog of positive tests, Maine CDC reports highest single-day case increase of pandemic](https://www.pressherald.com/2021/09/30/maine-cdc-reports-another-925-covid-19-cases-no-additional-deaths){:target="_blank"}  
       
@@ -84,6 +84,17 @@ sections:
       
     content2: >-  
       
+      [When Will Delta Variant Peak? Winter Uncertain As COVID Cases Drop in U.S.](https://www.newsweek.com/when-delta-covid-variant-peak-us-winter-cases-model-1632988){:target="_blank"}  
+      
+      _Newsweek_ | 27 September 2021  
+      
+      [UMass Amherst infectious disease forecaster gets renewed funding](https://www.umass.edu/news/article/umass-amherst-infectious-disease-forecaster-gets-renewed-funding){:target="_blank"}  
+      
+      _University of Massachusetts Amherst_ | 13 September 2021  
+      
+      
+    content3: >-  
+      
       [U.S. covid death toll hits 1,500 a day amid delta scourge](https://www.washingtonpost.com/health/2021/09/03/delta-deaths-us-fourth-wave/){:target="_blank"}  
       
       _Washington Post_ | 3 September 2021  
@@ -91,17 +102,6 @@ sections:
       [COVID-19 hospitalizations could hit 32,000 a day, CDC forecast says](https://www.q13fox.com/news/covid-19-hospitalizations-could-hit-32000-a-day-cdc-forecast-says){:target="_blank"}  
       
       _Q 13 Fox Seattle_ | 18 August 2021  
-      
-      
-    content3: >-  
-      
-      [Delta's peak is difficult to project, but could come this month](https://thehill.com/policy/healthcare/566212-deltas-peak-is-difficult-to-project-but-could-come-this-month){:target="_blank"}  
-      
-      _The Hill_ | 4 August 2021  
-      
-      [Competing models at start of pandemic hurt public's trust](https://www.startribune.com/how-accurate-were-covid-19-models-for-minnesota/600079030/){:target="_blank"}  
-      
-      _Minneapolis Star Tribune_ | 17 July 2021  
       
 
     actions:
