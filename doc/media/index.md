@@ -3,6 +3,16 @@ title: In the news
 layout: docs
 ---
 
+[Will the US face another bad COVID-19 winter? Cases are falling, but the virus isn't done with us, experts say](https://www.usatoday.com/story/news/health/2021/10/10/end-covid-us-depends-behavior-and-uncertain-virus/6037399001/){:target="_blank"}  
+_USA Today_ | 10 October 2021
+
+***
+
+[Are COVID-19's big waves over? Experts are split](https://thehill.com/policy/healthcare/576030-are-covid-19s-big-waves-over-experts-are-split){:target="_blank"}  
+_The Hill_ | 9 October 2021
+
+***
+
 [Facing backlog of positive tests, Maine CDC reports highest single-day case increase of pandemic](https://www.pressherald.com/2021/09/30/maine-cdc-reports-another-925-covid-19-cases-no-additional-deaths){:target="_blank"}  
 _Portland Press Herald_ | 30 September 2021
 
