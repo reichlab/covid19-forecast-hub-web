@@ -33,6 +33,10 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 # remove old site
 rm -rf ./docs
 
+# setup subtree pushing
+git fetch
+git worktree add docs netlify
+
 # Build the project
 bundle exec jekyll build -d docs
 
@@ -44,8 +48,6 @@ fi
 if [ "$1" != "no_push" ]  && [ "$2" != "no_push" ] 
 then
 	printf "Pushing to GitHub"
-	git fetch
-	git worktree add docs netlify
 
 	# Commit changes.
 	msg="Auto deploy commit ${HEAD_HASH} to Netlify at ${date}"

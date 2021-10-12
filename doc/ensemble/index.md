@@ -30,4 +30,4 @@ To be eligible for inclusion in the ensemble of hospitalizations, individual mod
  - On the weeks of December 28, 2020 and January 4, 2021 we used the check described above, but inclusion was determined separately for each location.
  - Starting on the week of January 11, 2021 the check is based on the mean of the predictive median during the first seven days rather than the mean point prediction.  Model inclusions are still determined separately for each location.
 
-For all checks described above, daily reported hospital admissions are taken from <a href="https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries" target="_blank">HealthData.gov</a>.
+For all checks described above, daily reported hospital admissions are taken from <a href="https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh" target="_blank">HealthData.gov</a>.

@@ -8,7 +8,7 @@ The COVID-19 Forecast Hub is based at the <a href="https://reichlab.io/" target=
  - Martha Zorn, UMass-Amherst (project management)
  - Nutcha Wattanachit, UMass-Amherst (ensemble model, data curation)
  - Serena Wang, UMass-Amherst (architecture, data curation)
- - Vrushti Modi, UMass-Amherst (architecture)
+ - Vrushti Mody, UMass-Amherst (architecture)
  - Ariane Stark, UMass-Amherst (data curation, architecture, fairness)
  - Apurv Shah, UMass-Amherst (data curation, architecture)
  - Alvaro J. Castro Rivadeneira, UMass-Amherst (communication)
