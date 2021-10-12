@@ -13,7 +13,7 @@ sections:
         type: secondary
         new_window: false
       - label: Visualization
-        url: https://covid.cdc.gov/covid-data-tracker/#forecasting_weeklydeaths
+        url: https://viz.covid19forecasthub.org/
         type: secondary
         new_window: false
       - label: Community
