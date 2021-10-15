@@ -37,7 +37,7 @@ header:
 #      type: link
 #      has_subnav: false
     - label: Visualization
-      url: 'https://covid.cdc.gov/covid-data-tracker/#forecasting_weeklydeaths'
+      url: 'https://viz.covid19forecasthub.org/'
       type: link
       has_subnav: false
       new_window: true
