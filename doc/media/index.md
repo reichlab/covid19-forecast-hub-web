@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[‘Lurching Between Crisis and Complacency’: Was This Our Last Covid Surge?](https://www.nytimes.com/2021/10/14/health/coronavirus-delta-surge.html){:target="_blank"}  
+_New York Times_ | 14 October 2021
+
+***
+
 [Will the US face another bad COVID-19 winter? Cases are falling, but the virus isn't done with us, experts say](https://www.usatoday.com/story/news/health/2021/10/10/end-covid-us-depends-behavior-and-uncertain-virus/6037399001/){:target="_blank"}  
 _USA Today_ | 10 October 2021
 
