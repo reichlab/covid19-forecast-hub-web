@@ -25,15 +25,11 @@ This repository stores source code used to generate the website of the COVID-19 
 
 1. Browse to [http://localhost:4000](http://localhost:4000)
 
-# Build the site and deploy on GitHub Pages
+# Build the site and deploy on Netlify
 
-1. Run this bash script in the root directory of this repository
+1. Run the Deploy Github action from the Actions tab.
 
-        ./deploy.sh
-
-The community file generation takes time and if you want to skip this step (this is anyways updated daily by the CI), you can run with the `skip_gen` flag:
-
-        ./deploy.sh skip_gen
+The community file generation takes time and if you want to skip this step (this is anyways updated daily by the CI), you can run the action with the `skip_gen` flag: when the dropdown menu appears after click "Run workflow", specify `skip_gen` in the `Arguments to deploy script` field, and click `Run workflow`. 
 
 ## Add weekly reports
 
