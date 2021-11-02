@@ -388,6 +388,11 @@ _NPR Morning Edition_ | 13 May 2020
 
 ***
 
+[This UMass model merges coronavirus death projections. Here’s what it forecasts for Massachusetts.](https://www.boston.com/news/coronavirus/2020/05/13/umass-coronavirus-death-forecast-massachusetts/){:target="_blank"}  
+_Boston.com_ | 13 May 2020
+
+***
+
 [UMass professor develops ensemble forecast for coronavirus pandemic; projects 103,000 deaths nationwide by end of May](https://www.bostonglobe.com/2020/05/07/metro/umass-professor-develops-ensemble-forecast-coronavirus-pandemic-projects-103000-deaths-nationwide-by-end-may/){:target="_blank"}  
 _Boston Globe_ | 7 May 2020  
 
