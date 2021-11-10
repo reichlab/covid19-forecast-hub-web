@@ -3,9 +3,31 @@ title: Research
 layout: docs
 ---
 
+### Citing the Forecast Hub
+To cite the US COVID-19 Forecast Hub dataset and project as a whole, please cite the dataset descriptor preprint:  
+Cramer EY, Huang Y, Wang Y, et al. <a href="https://www.medrxiv.org/content/10.1101/2021.11.04.21265886v1" target="_blank"> "The United States COVID-19 Forecast Hub dataset."</a> 2021. _medRxiv_. (preprint)  
+ 
+bibtex:
+```
+@article {Cramer2021-hub-dataset,
+	author = {Cramer, Estee Y and Huang, Yuxin and Wang, Yijin and Ray, Evan L and Cornell, Matthew and Bracher, Johannes and Brennen, Andrea and Castro Rivadeneira, Alvaro J and Gerding, Aaron and House, Katie and Jayawardena, Dasuni and Kanji, Abdul H and Khandelwal, Ayush and Le, Khoa and Niemi, Jarad and Stark, Ariane and Shah, Apurv and Wattanachit, Nutcha and Zorn, Martha W and Reich, Nicholas G and US COVID-19 Forecast Hub Consortium},
+	title = {The United States COVID-19 Forecast Hub dataset},
+	year = {2021},
+	doi = {10.1101/2021.11.04.21265886},
+	URL = {https://www.medrxiv.org/content/10.1101/2021.11.04.21265886v1},
+	journal = {medRxiv}
+}
+```
+  
+To cite the dataset and GitHub repository directly, we ask that you cite the Data Descriptor paper (see above) but you may also cite or refer to the <a href="https://zenodo.org/badge/latestdoi/254453761" target="_blank">permanent DOI for the GitHub repo</a> (the DOI is updated by Zenodo when we create a new "release" of this GitHub repository).  
+
+To cite research results from the hub, please review the list below and choose the relevant research publication(s).  
+
+### Research Background
 Since 2016, our team has worked closely with the US CDC on forecasting seasonal influenza outbreaks in a project called <a href="https://www.cdc.gov/flu/weekly/flusight/index.html" target="_blank">FluSight</a>. This collaborative research framework has served as a model for setting up the COVID-19 Forecast Hub. Below, we list publications that have emerged from the collaborative work of the COVID-19 Forecast Hub research team, as well as pre-COVID publications.
 
 ### COVID-19 Forecast Hub publications
+ -  Cramer EY, Huang Y, Wang Y, et al. <a href="https://www.medrxiv.org/content/10.1101/2021.11.04.21265886v1" target="_blank"> "The United States COVID-19 Forecast Hub dataset."</a> 2021. _medRxiv_. (preprint)
  -  Nicholas G. Reich, Ryan J. Tibshirani, Evan L. Ray, Roni Rosenfeld <a href="https://forecasters.org/blog/2021/09/28/on-the-predictability-of-covid-19/" target="_blank"> "On the predictability of COVID-19."</a> 2021. _International Institute of Forecasters Blog_.
  -  Cramer EY, Ray EL, Lopez VK, et al. <a href="https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v2" target="_blank"> "Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the US."</a> 2021. _medRxiv_. (preprint)
  - Evan L. Ray, et al. <a href="https://forecasters.org/blog/2021/04/09/challenges-in-training-ensembles-to-forecast-covid-19-cases-and-deaths-in-the-united-states/" target="_blank">"Challenges in training ensembles to forecast COVID-19 cases and deaths in the United States."</a> 2021. _International Institute of Forecasters Blog_.
@@ -15,7 +37,6 @@ Since 2016, our team has worked closely with the US CDC on forecasting seasonal 
 
 
 ### Partial list of relevant publications from our team (pre-COVID):
-
 We have published numerous peer-reviewed research articles on infectious disease forecasting that provide a solid foundation for understanding how to best forecast outbreaks. For example, our work has found that there <a href="https://www.pnas.org/lookup/doi/10.1073/pnas.1812594116" target="_blank">was not a large difference in predictive performance between mechanistic and statistical models</a> of seasonal influenza outbreaks. We also showed <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007486" target="_blank">modest but measurable improvements in accuracy when using an ensemble forecast</a> to forecast influenza.
 
  - Reich NG, McGowan CJ, Yamana TK, Tushar A, Ray E, Osthus D, Kandula S, Brooks LC, Crawford-Crudell W, Gibson GC, Moore E, Silva R, Biggerstaff M, Johansson MA, Rosenfeld R, Shaman J. <a href="https://doi.org/10.1371/journal.pcbi.1007486" target="_blank">"Accuracy of real-time multi-model ensemble forecasts for seasonal influenza in the U.S."</a> _PLOS Comp Bio_. 2019. 15(11): e1007486.
