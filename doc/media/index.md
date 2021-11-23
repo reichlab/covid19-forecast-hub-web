@@ -3,6 +3,16 @@ title: In the news
 layout: docs
 ---
 
+[Inside the C.D.C.’s Pandemic ‘Weather Service’](https://www.nytimes.com/2021/11/22/magazine/cdc-pandemic-prediction.html){:target="_blank"}  
+_New York Times_ | 22 November 2021
+
+***
+
+[U.S. COVID cases start to rise again as the holidays approach](https://www.npr.org/sections/health-shots/2021/11/16/1056232480/u-s-covid-cases-rising-holidays){:target="_blank"}  
+_NPR_ | 16 November 2021
+
+***
+
 [California, With Strict Mandates, Has More COVID Cases Than Florida, Texas—Here's Why](https://www.newsweek.com/california-strict-mandates-more-covid-cases-florida-texas-why-1648430){:target="_blank"}  
 _Newsweek_ | 11 November 2021
 
@@ -11,7 +21,12 @@ _Newsweek_ | 11 November 2021
 [States in the Southwest U.S. are facing COVID surges](https://www.npr.org/2021/11/11/1054884126/states-in-the-southwest-u-s-are-facing-covid-surges){:target="_blank"}  
 _NPR_ | 11 November 2021
 
-******
+***
+
+[Is it possible to predict COVID-19 trends?](https://www.news-medical.net/news/20211110/Is-it-possible-to-predict-COVID-19-trends.aspx){:target="_blank"}  
+_News Medical_ | 10 November 2021
+
+***
 
 [‘Lurching Between Crisis and Complacency’: Was This Our Last Covid Surge?](https://www.nytimes.com/2021/10/14/health/coronavirus-delta-surge.html){:target="_blank"}  
 _New York Times_ | 14 October 2021
