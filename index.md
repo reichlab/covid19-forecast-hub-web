@@ -73,35 +73,35 @@ sections:
 
     content1: >-  
       
-      [‘Lurching Between Crisis and Complacency’: Was This Our Last Covid Surge?](https://www.nytimes.com/2021/10/14/health/coronavirus-delta-surge.html){:target="_blank"}  
+      [Inside the C.D.C.’s Pandemic ‘Weather Service’](https://www.nytimes.com/2021/11/22/magazine/cdc-pandemic-prediction.html){:target="_blank"}  
       
-      _New York Times_ | 14 October 2021  
+      _New York Times_ | 22 November 2021  
+      
+      [U.S. COVID cases start to rise again as the holidays approach](https://www.npr.org/sections/health-shots/2021/11/16/1056232480/u-s-covid-cases-rising-holidays){:target="_blank"}  
+      
+      _NPR_ | 16 November 2021  
+      
+      
+    content2: >-  
+      
+      [California, With Strict Mandates, Has More COVID Cases Than Florida, Texas—Here's Why](https://www.newsweek.com/california-strict-mandates-more-covid-cases-florida-texas-why-1648430){:target="_blank"}  
+      
+      _Newsweek_ | 11 November 2021  
+      
+      [Will the US face another bad COVID-19 winter? Cases are falling, but the virus isn't done with us, experts say](https://www.usatoday.com/story/news/health/2021/10/10/end-covid-us-depends-behavior-and-uncertain-virus/6037399001/){:target="_blank"}  
+      
+      _USA Today_ | 10 October 2021  
+      
+      
+    content3: >-  
       
       [Are COVID-19's big waves over? Experts are split](https://thehill.com/policy/healthcare/576030-are-covid-19s-big-waves-over-experts-are-split){:target="_blank"}  
       
       _The Hill_ | 9 October 2021  
       
-      
-    content2: >-  
-      
       [Facing backlog of positive tests, Maine CDC reports highest single-day case increase of pandemic](https://www.pressherald.com/2021/09/30/maine-cdc-reports-another-925-covid-19-cases-no-additional-deaths){:target="_blank"}  
       
       _Portland Press Herald_ | 30 September 2021  
-      
-      [When Will Delta Variant Peak? Winter Uncertain As COVID Cases Drop in U.S.](https://www.newsweek.com/when-delta-covid-variant-peak-us-winter-cases-model-1632988){:target="_blank"}  
-      
-      _Newsweek_ | 27 September 2021  
-      
-      
-    content3: >-  
-      
-      [U.S. covid death toll hits 1,500 a day amid delta scourge](https://www.washingtonpost.com/health/2021/09/03/delta-deaths-us-fourth-wave/){:target="_blank"}  
-      
-      _Washington Post_ | 3 September 2021  
-      
-      [COVID-19 hospitalizations could hit 32,000 a day, CDC forecast says](https://www.q13fox.com/news/covid-19-hospitalizations-could-hit-32000-a-day-cdc-forecast-says){:target="_blank"}  
-      
-      _Q 13 Fox Seattle_ | 18 August 2021  
       
 
     actions:
