@@ -20,7 +20,7 @@ The following is a timeline of major changes to the ensemble methods:
 
 ### Detailed eligibility criteria
 
-Forecasts submitted by 6pm ET on Monday night are guaranteed consideration for inclusion in the ensemble for that week, as long as the forecast was associated with a date since the previous Tuesday. 
+Forecasts submitted by 3pm ET on Monday night are guaranteed consideration for inclusion in the ensemble for that week, as long as the forecast was associated with a date since the previous Tuesday. 
 
 To be included in the ensemble, a team's designated model must meet certain specified inclusion criteria.  
 We require that forecasts include a full set of 23 quantiles to be submitted for each of the one through four week ahead values for forecasts of deaths, a full set of 7 quantiles for the one through four week ahead values for forecasts of cases, or a full set of 7 quantiles for the one through twenty-eight day ahead values for forecasts of hospitalizations (see <a href="https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md#quantile">Technical README</a>) for details).
