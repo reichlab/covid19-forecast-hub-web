@@ -22,6 +22,25 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    
+    - name: Free disk space
+      run: |
+          df --human-readable
+          sudo apt clean
+          docker rmi $(docker image ls --all --quiet)
+          rm --recursive --force "$AGENT_TOOLSDIRECTORY"
+          
+    - name: Maximize build space
+      uses: easimon/maximize-build-space@v4
+      with:
+        root-reserve-mb: 4096
+        swap-size-mb: 4096
+        remove-dotnet: 'true'
+        remove-android: 'true'
+        remove-haskell: 'true'
+        
+    - name: Check space available
+      run: df --human-readable
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     
