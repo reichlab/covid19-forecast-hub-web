@@ -73,6 +73,17 @@ sections:
 
     content1: >-  
       
+      [The US COVID death toll will reach 821,000 to 837,000 by Jan. 1](https://www.poynter.org/reporting-editing/2021/the-us-covid-death-toll-will-reach-821000-to-837000-by-jan-1){:target="_blank"}  
+      
+      _Poynter_ | 15 December 2021  
+      
+      [Omicron is popping up everywhere, but the big problem in the U.S. remains the delta variant](https://www.dailykos.com/stories/2021/12/3/2067388/-Omicron-is-popping-up-everywhere-but-the-big-problem-in-the-U-S-remains-the-delta-variant){:target="_blank"}  
+      
+      _Daily Kos_ | 3 December 2021  
+      
+      
+    content2: >-  
+      
       [Inside the C.D.C.’s Pandemic ‘Weather Service’](https://www.nytimes.com/2021/11/22/magazine/cdc-pandemic-prediction.html){:target="_blank"}  
       
       _New York Times_ | 22 November 2021  
@@ -82,7 +93,7 @@ sections:
       _NPR_ | 16 November 2021  
       
       
-    content2: >-  
+    content3: >-  
       
       [California, With Strict Mandates, Has More COVID Cases Than Florida, Texas—Here's Why](https://www.newsweek.com/california-strict-mandates-more-covid-cases-florida-texas-why-1648430){:target="_blank"}  
       
@@ -91,17 +102,6 @@ sections:
       [Will the US face another bad COVID-19 winter? Cases are falling, but the virus isn't done with us, experts say](https://www.usatoday.com/story/news/health/2021/10/10/end-covid-us-depends-behavior-and-uncertain-virus/6037399001/){:target="_blank"}  
       
       _USA Today_ | 10 October 2021  
-      
-      
-    content3: >-  
-      
-      [Are COVID-19's big waves over? Experts are split](https://thehill.com/policy/healthcare/576030-are-covid-19s-big-waves-over-experts-are-split){:target="_blank"}  
-      
-      _The Hill_ | 9 October 2021  
-      
-      [Facing backlog of positive tests, Maine CDC reports highest single-day case increase of pandemic](https://www.pressherald.com/2021/09/30/maine-cdc-reports-another-925-covid-19-cases-no-additional-deaths){:target="_blank"}  
-      
-      _Portland Press Herald_ | 30 September 2021  
       
 
     actions:
