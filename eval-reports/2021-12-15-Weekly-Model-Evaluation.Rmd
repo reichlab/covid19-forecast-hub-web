@@ -1,0 +1,2615 @@
+<!-- code to run rmarkdown::render(input="./vignettes/covidHubUtils-overview.Rmd") -->
+
+<!-- Code for adding logo at the top -->
+
+<!-- <script> -->
+<!--   $(document).ready(function() { -->
+<!--     $('#TOC').parent().prepend('<div id=\"nav_logo\"><a href=\"https://covid19forecasthub.org/\" target=\"_blank\"><img src=\"https://github.com/reichlab/covid19-forecast-hub-web/raw/master/images/forecast-hub-logo_DARKBLUE.png\"></a></div>'); -->
+<!--   }); -->
+<!-- </script> -->
+
+<style>
+#nav_logo {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#TOC {
+  background: url("https://github.com/reichlab/covid19-forecast-hub-web/raw/master/images/forecast-hub-logo_DARKBLUE-20px-padding.png");
+  background-size: contain;
+  padding-top: 80px !important;
+  background-repeat: no-repeat;
+}
+</style>
+<!-- </style> -->
+
+```{r setup, include=FALSE}
+#load libraries
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(lubridate)
+library(scoringutils)
+library(RColorBrewer)
+library(DT)
+library(surveillance)
+library(htmltools)
+library(kableExtra)
+library(covidHubUtils)
+library(plotly)
+library(tidyverse)
+library(zoltr)
+library(dplyr)
+theme_set(theme_bw())
+
+source("functions_weekly_evaluation.R")
+data("hub_locations")
+```
+
+```{r prelim set values}
+# the_locations <- hub_locations %>% filter(geo_type == "state") %>%
+#   filter(abbreviation %in% datasets::state.abb) %>% pull(fips) #states, us and territories
+
+US_fips <- hub_locations %>%  filter(geo_type == "state") %>% filter(abbreviation %in% datasets::state.abb) %>% pull(fips) #only 50 states 
+
+n_weeks_ohio <- 4 #weeks to exclude truth data for ohio
+n_weeks_eval <- 10 #weeks included in evaluation
+n_weeks_submitted <- 5 #number of weeks needed for inclusion if no longer submitting
+n_weeks_history <- 26 # number of weeks for historical data
+```
+
+```{r get-date-boundaries}
+#Important dates used
+# fixed date
+# forecast_mon <- as.Date ("2021-10-11")
+
+forecast_mon <- lubridate::floor_date(Sys.Date(), unit = "week") + 1      #Even when running on Tuesday, will be Monday date
+last_eval_sat <- as.Date(calc_target_week_end_date(forecast_mon, horizon = 0))
+first_eval_sat <- last_eval_sat  - 7*(n_weeks_eval - 1)  #First Evaluated Date
+first_eval_sat_ohio <- last_eval_sat  - 7*(n_weeks_ohio - 1)  #First week to exclude truth data for Ohio
+first_eval_sat_hist <- last_eval_sat  - 7*(n_weeks_history - 1)  #First Evaluated Date (historical)
+
+last_submission_date <- last_eval_sat  - 5 #Last submission date
+first_submission_date <- first_eval_sat - 11  #First submission date
+
+first_mon_cutoff <- first_eval_sat - 5
+
+last_1wk_target_end_date <- as.Date(calc_target_week_end_date(last_submission_date, horizon = 1)) #last 1 week ahead horizon
+first_1wk_target_end_date  <- as.Date(calc_target_week_end_date(first_submission_date, horizon = 0)) #first 1 week ahead horizon
+
+first_4wk_target_end_date  <- as.Date(calc_target_week_end_date(first_submission_date, horizon = 4)) #first horizon with all 4 target weeks evaluated 
+last_4wk_target_end_date <- as.Date(calc_target_week_end_date(last_submission_date, horizon = 4))
+
+eval_sat <- c(first_eval_sat, last_eval_sat) #range of dates evaluated 
+```
+
+
+```{r load data}
+#load files generated in query-scores-weekly-report.R
+load(file = "truth_dat_case.rda")
+load(file = "truth_dat_inc.rda")
+load(file = "truth_dat_hosp.rda")
+load(file = "truth_dat_case_all.rda")
+load(file = "truth_dat_inc_all.rda")
+load(file = "truth_dat_hosp_all.rda")
+load(file = "score_case_all.rda") 
+load(file = "score_inc_all.rda") 
+load(file = "score_hosp_all.rda") 
+
+# remove COVIDhub-4_week_ensemble model from deaths 
+score_inc_all <- score_inc_all  %>% filter(model != "COVIDhub-4_week_ensemble")
+# score_case_all <- score_case_all  %>% filter(model != "COVIDhub-4_week_ensemble")
+# score_hosp_all <- score_hosp_all  %>% filter(model != "COVIDhub-4_week_ensemble")
+
+# remove most recent 4 weeks of truth/score for ohio
+truth_dat_inc_all_ohio <- truth_dat_inc_all  %>%
+  subset((location != "39") | (location == "39" & target_end_date < first_eval_sat_ohio))
+
+truth_dat_inc_ohio <- truth_dat_inc  %>%
+  subset((location != "39") | (location == "39" & target_end_date < first_eval_sat_ohio))
+
+score_inc_all_ohio <- score_inc_all  %>%
+  subset((location != "39") | (location == "39" & target_end_date < first_eval_sat_ohio))
+
+
+
+
+```
+
+
+```{r}
+location_order_case <- truth_dat_case %>% 
+  filter(target_end_date == max(target_end_date)) %>%
+  arrange(value) %>%
+  pull(location_name)
+
+location_order_death <- truth_dat_inc %>% 
+  filter(target_end_date == max(target_end_date)) %>%
+  arrange(value) %>%
+  pull(location_name)
+
+location_order_hosp <- truth_dat_hosp %>% 
+  filter(target_end_date == max(target_end_date)) %>%
+  arrange(value) %>%
+  pull(location_name)
+  
+```
+
+
+```{r inclusion in accuracy table historical}
+#at least 50% of historical WIS or historical MAE
+case_accuracy_historical <- historical_accuracy_filter(score_case_all)
+inc_accuracy_historical <- historical_accuracy_filter(score_inc_all_ohio)
+hosp_accuracy_historical <- historical_accuracy_filter(score_hosp_all)
+```
+
+
+
+# Overview
+This report provides an evaluation of the accuracy and precision of probabilistic forecasts of COVID-19 cases and deaths submitted to the [US COVID-19 Forecast Hub](https://covid19forecasthub.org/). Some analyses include forecasts submitted in the past six months, starting in `r format(first_eval_sat_hist, "%B %d, %Y")`. Others focus on evaluating "recent" forecasts, submitted only in the last `r n_weeks_eval` weeks. 
+
+<!-- The forecasts evaluated were submitted during the time period from `r format(first_submission_date, "%B %d, %Y")` through `r format(last_submission_date, "%B %d, %Y")`. The revision dates of this data was calculated as of `r today()`.
+In this weekly report we are evaluating forecasts made in 57 different locations (US on a national level, 50 states, and 6 territories), for 4 horizons over `r n_weeks_eval` submission weeks. We are evaluating incident cases, and incident deaths. 
+
+Additionally, we have included a historical score report to aggregate scores from forecasts that have been submitted to the forecast hub since the first week in April.
+-->
+
+In collaboration with the US Centers for Disease Control and Prevention (CDC), the COVID-19 Forecast hub collects short-term COVID-19 forecasts from dozens of research groups around the globe. Every week we combine the most recent forecasts from each team into a single "ensemble" forecast for each of the targets. This forecast is used as the official ensemble forecast of the CDC, typically appearing on their [forecasting website](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/mathematical-modeling.html) on Wednesday.  You can explore the full set of models, including their forecasts for past weeks online at the [Forecast Hub interactive visualization](https://viz.covid19forecasthub.org/).  Other related resources include CMU Delphi's [forecast evaluation dashboard](https://delphi.cmu.edu/forecast-eval/), a separate product of the Forecast Evaluation Research Collaborative, as well as the preprint [Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the US.](https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v2)
+
+This report evaluates forecasts at the state and national level for newly reported weekly cases, deaths and hospitalizations due to COVID-19. Data from the [JHU CSSE dashboard](https://coronavirus.jhu.edu/) is used as ground truth data for evaluating the forecasts.
+
+We evaluate models based on their [adjusted relative weighted interval scores (WIS, a measure of distributional accuracy)](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008618), and adjusted relative mean absolute error (MAE). Scores are aggregated separately for the most recent 10 weeks and for 26 historical weeks. To account for the variation in difficult of forecasting different weeks and locations, a [pairwise approach](https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v2) was used to calculated the relative adjusted WIS and MAE. Models with relative scores lower than 1 have been more accurate than the baseline on average, whereas relative scores greater than 1 indicate less accuracy than baseline on average.
+
+Starting on September 6, 2021, COVIDhub-ensemble only reported two-week ahead forecasts for cases, due to persistent large inaccuracies observed when forecasting beyond that. As of September 28, 2021, COVIDhub-ensemble only reports one-week ahead forecasts for cases and 14 day ahead forecasts for hospitalizations.  For a more complete explanation see our blog post [here](https://forecasters.org/blog/2021/09/28/on-the-predictability-of-covid-19/). 
+
+# Incident Case Forecasts {.tabset .tabset-fade}
+
+## Summary Tables {.tabset .tabset-fade}
+
+The first and second tables evaluate recent/historical forecast models based on their WIS and MAE by horizon.  
+
+The third and fourth tables evaluate recent/historical forecast models based on their prediction interval coverage at the 50% and 95% levels by horizon. 
+
+Scores are aggregated separately for the most recent 10 weeks and for 26 historical weeks. 
+
+<!-- * The **prediction interval coverage**  measures  the proportion of times a prediction interval of a certain level covered the true value, to assess the degree to which forecasts accurately characterized uncertainty about future observations. Well calibrated models should have a 50% coverage level of 0.5 and a 95% coverage level of 0.95. 
+
+* The **weighted interval score (WIS)** is a proper score that combines a set of interval scores for probabilistic forecasts that provide quantiles of the predictive forecast distribution. To account for the variation in difficult of forecasting different weeks and locations, a pairwis approach was used to calculated the relative adjusted WIS. The code for this comparison can be found [here](https://github.com/jbracher/pairwise_comparisons). A preprint on this method for calculating the WIS can be found [here](https://arxiv.org/pdf/2005.12881.pdf). Models with an adjusted relative WIS  lower than 1 are more accurate than the baseline, and models with an adjusted relative WIS greater than 1 are less accurate than the baseline is predicting the number of incident cases. 
+
+* The **mean absolute error** is defined as the the difference between the forecasted value and the actual value. For this calculation, point forecasts submitted by teams were used. When point forecasts were not available, the 0.50 quantile was used. Similar to calculating the WIS, a pairwise approach was used to account for variation across locations and weeks. Models with an adjusted relative MAE lower than 1 are more accurate than the baseline, and models with an adjusted relative MAE greater than 1 are less accurate than the baseline is predicting the number of incident cases. 
+-->
+ 
+Inclusion criteria for each column are detailed below the table. 
+
+
+```{r recent relative wis  CASE}
+#at least 50% of recent WIS or 50% of recent MAE
+case_accuracy_recent <- recent_accuracy_filter(score_case_all,first_eval_sat)
+
+inc_scores <- case_accuracy_recent %>%
+  filter(!is.na(score_value)) %>%
+  filter(n_locations >= 25) %>% 
+  droplevels()
+
+# bring all timezeros to Saturday:
+inc_scores$timezero <- inc_scores$submission_sat
+
+
+# restrict to 1-4 wk ahead state-level
+scores <- inc_scores %>% filter(horizon %in% paste(1:4)) %>%
+  filter(score_name %in% c("wis")) %>%
+  select("model", "timezero", "location", "horizon", "score_name", "score_value") %>%
+  pivot_wider(names_from = score_name, values_from = score_value) %>%
+  filter(!is.na(wis)) %>%
+  droplevels()
+
+# the included models:
+models <- unique(scores$model)
+
+# matrices to store:
+results_ratio_hzn1 <- matrix(ncol = length(models),
+                             nrow = length(models),
+                             dimnames = list(models, models))
+results_ratio_list <- list(results_ratio_hzn1, results_ratio_hzn1,
+                           results_ratio_hzn1, results_ratio_hzn1)
+
+set.seed(123) # set seed for permutation tests
+
+for(mx in seq_along(models)){
+  for(my in 1:mx){
+    for(hzn in 1:4){
+      pwc <- pairwise_comparison(scores = filter(scores, horizon==hzn), 
+                                 mx = models[mx], 
+                                 my = models[my],
+                                 permutation_test = FALSE)
+      
+      results_ratio_list[[hzn]][mx, my] <- pwc$ratio
+      results_ratio_list[[hzn]][my, mx] <- 1/pwc$ratio
+    }
+  }
+}
+
+
+ind_baseline <- which(rownames(results_ratio_list[[1]]) == "COVIDhub-baseline")
+geom_mean_ratios_hzn1 <- exp(rowMeans(log(results_ratio_list[[1]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn2 <- exp(rowMeans(log(results_ratio_list[[2]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn3 <- exp(rowMeans(log(results_ratio_list[[3]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn4 <- exp(rowMeans(log(results_ratio_list[[4]][, -ind_baseline]), na.rm = TRUE))
+
+ratios_baseline_raw_hzn1 <- results_ratio_list[[1]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn2 <- results_ratio_list[[2]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn3 <- results_ratio_list[[3]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn4 <- results_ratio_list[[4]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+
+ratios_baseline_adj_hzn1 <- geom_mean_ratios_hzn1/geom_mean_ratios_hzn1["COVIDhub-baseline"]
+ratios_baseline_adj_hzn2 <- geom_mean_ratios_hzn2/geom_mean_ratios_hzn2["COVIDhub-baseline"]
+ratios_baseline_adj_hzn3 <- geom_mean_ratios_hzn3/geom_mean_ratios_hzn3["COVIDhub-baseline"]
+ratios_baseline_adj_hzn4 <- geom_mean_ratios_hzn4/geom_mean_ratios_hzn4["COVIDhub-baseline"]
+
+tab <- data.frame(model = c(names(geom_mean_ratios_hzn1), 
+                            names(geom_mean_ratios_hzn2),
+                            names(geom_mean_ratios_hzn3), 
+                            names(geom_mean_ratios_hzn4)),
+                  horizon = rep(1:4, each=length(geom_mean_ratios_hzn1)),
+                  geom_mean_ratios = c(geom_mean_ratios_hzn1,
+                                       geom_mean_ratios_hzn2,
+                                       geom_mean_ratios_hzn3,
+                                       geom_mean_ratios_hzn4),
+                  ratios_baseline_raw = c(ratios_baseline_raw_hzn1,
+                                          ratios_baseline_raw_hzn2,
+                                          ratios_baseline_raw_hzn3,
+                                          ratios_baseline_raw_hzn4),
+                  ratios_baseline_adj = c(ratios_baseline_adj_hzn1,
+                                          ratios_baseline_adj_hzn2,
+                                          ratios_baseline_adj_hzn3,
+                                          ratios_baseline_adj_hzn4)
+                  )
+
+
+tab <- tab[order(tab$horizon,tab$ratios_baseline_adj), ]
+
+
+pairwise_scores <- tab %>%
+  mutate(relative_wis = round(ratios_baseline_adj, 2)) %>%
+  select(model, horizon, relative_wis)  %>%
+  pivot_wider(names_from = "horizon",values_from = "relative_wis")  %>% 
+  rename("1 wk relWIS" = "1", "2 wk relWIS" = "2", "3 wk relWIS" = "3", "4 wk relWIS" = "4" ) %>%
+  dplyr::rowwise() %>% 
+  dplyr::mutate(relative_wis = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup() %>% 
+  arrange(relative_wis)
+```
+
+
+```{r recent relative mae  CASE}
+
+# restrict to 1-4 wk ahead state-level
+scores <- inc_scores %>% filter(horizon %in% paste(1:4)) %>%
+  filter(score_name %in% c("abs_error", "wis")) %>%
+  select("model", "timezero", "location", "horizon", "score_name", "score_value") %>%
+  pivot_wider(names_from = score_name, values_from = score_value) %>%
+  filter(!is.na(wis)) %>%
+  droplevels()
+
+# the included models:
+models <- unique(scores$model)
+
+# the included models:
+models <- unique(scores$model)
+
+# matrices to store:
+results_ratio_hzn1 <- matrix(ncol = length(models),
+                             nrow = length(models),
+                             dimnames = list(models, models))
+results_ratio_list <- list(results_ratio_hzn1, results_ratio_hzn1,
+                           results_ratio_hzn1, results_ratio_hzn1)
+
+set.seed(123) # set seed for permutation tests
+
+for(mx in seq_along(models)){
+  for(my in 1:mx){
+    for(hzn in 1:4){
+      pwc <-  pairabs_comparison(scores = filter(scores, horizon==hzn), 
+                                 mx = models[mx], 
+                                 my = models[my],
+                                 permutation_test = FALSE)
+      
+      results_ratio_list[[hzn]][mx, my] <- pwc$ratio
+      results_ratio_list[[hzn]][my, mx] <- 1/pwc$ratio
+    }
+  }
+}
+
+ind_baseline <- which(rownames(results_ratio_list[[1]]) == "COVIDhub-baseline")
+geom_mean_ratios_hzn1 <- exp(rowMeans(log(results_ratio_list[[1]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn2 <- exp(rowMeans(log(results_ratio_list[[2]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn3 <- exp(rowMeans(log(results_ratio_list[[3]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn4 <- exp(rowMeans(log(results_ratio_list[[4]][, -ind_baseline]), na.rm = TRUE))
+
+ratios_baseline_raw_hzn1 <- results_ratio_list[[1]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn2 <- results_ratio_list[[2]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn3 <- results_ratio_list[[3]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn4 <- results_ratio_list[[4]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+
+ratios_baseline_adj_hzn1 <- geom_mean_ratios_hzn1/geom_mean_ratios_hzn1["COVIDhub-baseline"]
+ratios_baseline_adj_hzn2 <- geom_mean_ratios_hzn2/geom_mean_ratios_hzn2["COVIDhub-baseline"]
+ratios_baseline_adj_hzn3 <- geom_mean_ratios_hzn3/geom_mean_ratios_hzn3["COVIDhub-baseline"]
+ratios_baseline_adj_hzn4 <- geom_mean_ratios_hzn4/geom_mean_ratios_hzn4["COVIDhub-baseline"]
+
+tab <- data.frame(model = c(names(geom_mean_ratios_hzn1), 
+                            names(geom_mean_ratios_hzn2),
+                            names(geom_mean_ratios_hzn3), 
+                            names(geom_mean_ratios_hzn4)),
+                  horizon = rep(1:4, each=length(geom_mean_ratios_hzn1)),
+                  geom_mean_ratios = c(geom_mean_ratios_hzn1,
+                                       geom_mean_ratios_hzn2,
+                                       geom_mean_ratios_hzn3,
+                                       geom_mean_ratios_hzn4),
+                  ratios_baseline_raw = c(ratios_baseline_raw_hzn1,
+                                          ratios_baseline_raw_hzn2,
+                                          ratios_baseline_raw_hzn3,
+                                          ratios_baseline_raw_hzn4),
+                  ratios_baseline_adj = c(ratios_baseline_adj_hzn1,
+                                          ratios_baseline_adj_hzn2,
+                                          ratios_baseline_adj_hzn3,
+                                          ratios_baseline_adj_hzn4)
+                  )
+
+
+tab <- tab[order(tab$horizon,tab$ratios_baseline_adj), ]
+
+
+pairwise_scores_mae <- tab %>%
+  mutate(relative_mae = round(ratios_baseline_adj, 2)) %>%
+  select(model, horizon, relative_mae)  %>%
+  pivot_wider(names_from = "horizon",values_from = "relative_mae")  %>% 
+
+  rename("1 wk relMAE" = "1", "2 wk relMAE" = "2", "3 wk relMAE" = "3", "4 wk relMAE" = "4" ) %>%
+  dplyr::rowwise() %>% 
+  dplyr::mutate(relative_mae = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup() %>% 
+  arrange(relative_mae)
+```
+
+```{r historical relative WIS  CASE}
+inc_scores <- case_accuracy_historical %>%
+  filter(n_locations >= 25) %>%
+  filter(n_weeks >= 4) %>%
+  droplevels()
+
+# bring all timezeros to Saturday:
+inc_scores$timezero <- inc_scores$submission_sat
+
+# restrict to 1-4 wk ahead state-level
+scores <- inc_scores %>% filter(horizon %in% paste(1:4),  location %in% US_fips) %>%
+  filter(!is.na(score_value)) %>%
+  select("model", "timezero", "location", "horizon", "score_name", "score_value") %>%
+  filter(score_name %in% c("abs_error", "wis")) %>%
+  pivot_wider(names_from = score_name, values_from = score_value) %>% filter(!is.na(wis))
+
+# the included models:
+models <- unique(scores$model)
+
+
+# matrices to store:
+results_ratio_hzn1 <- matrix(ncol = length(models),
+                             nrow = length(models),
+                             dimnames = list(models, models))
+results_ratio_list <- list(results_ratio_hzn1, results_ratio_hzn1,
+                           results_ratio_hzn1, results_ratio_hzn1)
+
+set.seed(123) # set seed for permutation tests
+
+for(mx in seq_along(models)){
+  for(my in 1:mx){
+    for(hzn in 1:4){
+      pwc <- pairwise_comparison(scores = filter(scores, horizon==hzn), 
+                                 mx = models[mx], 
+                                 my = models[my],
+                                 permutation_test = FALSE)
+      
+      results_ratio_list[[hzn]][mx, my] <- pwc$ratio
+      results_ratio_list[[hzn]][my, mx] <- 1/pwc$ratio
+    }
+  }
+}
+
+# matrices to store:
+results_ratio_hzn1 <- matrix(ncol = length(models),
+                             nrow = length(models),
+                             dimnames = list(models, models))
+results_ratio_list <- list(results_ratio_hzn1, results_ratio_hzn1,
+                           results_ratio_hzn1, results_ratio_hzn1)
+
+set.seed(123) # set seed for permutation tests
+
+for(mx in seq_along(models)){
+  for(my in 1:mx){
+    for(hzn in 1:4){
+      pwc <- pairwise_comparison(scores = filter(scores, horizon==hzn), 
+                                 mx = models[mx], 
+                                 my = models[my],
+                                 permutation_test = FALSE)
+      
+      results_ratio_list[[hzn]][mx, my] <- pwc$ratio
+      results_ratio_list[[hzn]][my, mx] <- 1/pwc$ratio
+    }
+  }
+}
+
+ind_baseline <- which(rownames(results_ratio_list[[1]]) == "COVIDhub-baseline")
+geom_mean_ratios_hzn1 <- exp(rowMeans(log(results_ratio_list[[1]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn2 <- exp(rowMeans(log(results_ratio_list[[2]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn3 <- exp(rowMeans(log(results_ratio_list[[3]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn4 <- exp(rowMeans(log(results_ratio_list[[4]][, -ind_baseline]), na.rm = TRUE))
+
+ratios_baseline_raw_hzn1 <- results_ratio_list[[1]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn2 <- results_ratio_list[[2]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn3 <- results_ratio_list[[3]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn4 <- results_ratio_list[[4]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+
+ratios_baseline_adj_hzn1 <- geom_mean_ratios_hzn1/geom_mean_ratios_hzn1["COVIDhub-baseline"]
+ratios_baseline_adj_hzn2 <- geom_mean_ratios_hzn2/geom_mean_ratios_hzn2["COVIDhub-baseline"]
+ratios_baseline_adj_hzn3 <- geom_mean_ratios_hzn3/geom_mean_ratios_hzn3["COVIDhub-baseline"]
+ratios_baseline_adj_hzn4 <- geom_mean_ratios_hzn4/geom_mean_ratios_hzn4["COVIDhub-baseline"]
+
+tab <- data.frame(model = c(names(geom_mean_ratios_hzn1), 
+                            names(geom_mean_ratios_hzn2),
+                            names(geom_mean_ratios_hzn3), 
+                            names(geom_mean_ratios_hzn4)),
+                  horizon = rep(1:4, each=length(geom_mean_ratios_hzn1)),
+                  geom_mean_ratios = c(geom_mean_ratios_hzn1,
+                                       geom_mean_ratios_hzn2,
+                                       geom_mean_ratios_hzn3,
+                                       geom_mean_ratios_hzn4),
+                  ratios_baseline_raw = c(ratios_baseline_raw_hzn1,
+                                          ratios_baseline_raw_hzn2,
+                                          ratios_baseline_raw_hzn3,
+                                          ratios_baseline_raw_hzn4),
+                  ratios_baseline_adj = c(ratios_baseline_adj_hzn1,
+                                          ratios_baseline_adj_hzn2,
+                                          ratios_baseline_adj_hzn3,
+                                          ratios_baseline_adj_hzn4)
+                  )
+
+
+tab <- tab[order(tab$horizon,tab$ratios_baseline_adj), ]
+
+
+historical_wis <- tab %>%
+  mutate(relative_wis_historical  = round(ratios_baseline_adj, 2)) %>%
+  select(model, horizon, relative_wis_historical) %>% 
+  pivot_wider(names_from = "horizon",values_from = "relative_wis_historical")  %>% 
+  rename("1 wk relWIS" = "1", "2 wk relWIS" = "2", "3 wk relWIS" = "3", "4 wk relWIS" = "4" )  %>%
+    dplyr::rowwise() %>% 
+  dplyr::mutate(relative_wis = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup() %>% 
+  arrange(relative_wis)
+```
+
+```{r historical relative MAE CASE}
+
+# matrices to store:
+results_ratio_hzn1 <- matrix(ncol = length(models),
+                             nrow = length(models),
+                             dimnames = list(models, models))
+results_ratio_list <- list(results_ratio_hzn1, results_ratio_hzn1,
+                           results_ratio_hzn1, results_ratio_hzn1)
+
+set.seed(123) # set seed for permutation tests
+
+for(mx in seq_along(models)){
+  for(my in 1:mx){
+    for(hzn in 1:4){
+      pwc <- pairabs_comparison(scores = filter(scores, horizon==hzn), 
+                                 mx = models[mx], 
+                                 my = models[my],
+                                 permutation_test = FALSE)
+      
+      results_ratio_list[[hzn]][mx, my] <- pwc$ratio
+      results_ratio_list[[hzn]][my, mx] <- 1/pwc$ratio
+    }
+  }
+}
+
+ind_baseline <- which(rownames(results_ratio_list[[1]]) == "COVIDhub-baseline")
+geom_mean_ratios_hzn1 <- exp(rowMeans(log(results_ratio_list[[1]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn2 <- exp(rowMeans(log(results_ratio_list[[2]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn3 <- exp(rowMeans(log(results_ratio_list[[3]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn4 <- exp(rowMeans(log(results_ratio_list[[4]][, -ind_baseline]), na.rm = TRUE))
+
+ratios_baseline_raw_hzn1 <- results_ratio_list[[1]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn2 <- results_ratio_list[[2]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn3 <- results_ratio_list[[3]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn4 <- results_ratio_list[[4]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+
+ratios_baseline_adj_hzn1 <- geom_mean_ratios_hzn1/geom_mean_ratios_hzn1["COVIDhub-baseline"]
+ratios_baseline_adj_hzn2 <- geom_mean_ratios_hzn2/geom_mean_ratios_hzn2["COVIDhub-baseline"]
+ratios_baseline_adj_hzn3 <- geom_mean_ratios_hzn3/geom_mean_ratios_hzn3["COVIDhub-baseline"]
+ratios_baseline_adj_hzn4 <- geom_mean_ratios_hzn4/geom_mean_ratios_hzn4["COVIDhub-baseline"]
+
+tab <- data.frame(model = c(names(geom_mean_ratios_hzn1), 
+                            names(geom_mean_ratios_hzn2),
+                            names(geom_mean_ratios_hzn3), 
+                            names(geom_mean_ratios_hzn4)),
+                  horizon = rep(1:4, each=length(geom_mean_ratios_hzn1)),
+                  geom_mean_ratios = c(geom_mean_ratios_hzn1,
+                                       geom_mean_ratios_hzn2,
+                                       geom_mean_ratios_hzn3,
+                                       geom_mean_ratios_hzn4),
+                  ratios_baseline_raw = c(ratios_baseline_raw_hzn1,
+                                          ratios_baseline_raw_hzn2,
+                                          ratios_baseline_raw_hzn3,
+                                          ratios_baseline_raw_hzn4),
+                  ratios_baseline_adj = c(ratios_baseline_adj_hzn1,
+                                          ratios_baseline_adj_hzn2,
+                                          ratios_baseline_adj_hzn3,
+                                          ratios_baseline_adj_hzn4)
+                  )
+
+
+tab <- tab[order(tab$horizon,tab$ratios_baseline_adj), ]
+
+
+historical_mae <- tab %>%
+  mutate(relative_mae = round(ratios_baseline_adj, 2)) %>%
+  select(model, horizon, relative_mae)  %>%
+  pivot_wider(names_from = "horizon",values_from = "relative_mae")  %>% 
+  rename("1 wk relMAE" = "1", "2 wk relMAE" = "2", "3 wk relMAE" = "3", "4 wk relMAE" = "4" ) %>%
+    dplyr::rowwise() %>% 
+  dplyr::mutate(relative_mae = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup() %>% 
+  arrange(relative_mae)
+```
+
+```{r counts of forecasts by model and create leaderboards for CASES accuracy}
+case_count_fcasts_recent <-  case_accuracy_recent %>% group_by(model,score_name) %>%
+    summarise(n_forecasts_wis = sum(score_name == "wis" & !is.na(score_value)),
+           n_forecasts_mae = sum(score_name == "abs_error" & !is.na(score_value))) %>% ungroup() %>%
+  mutate(n_fcast = ifelse(n_forecasts_wis > 0, n_forecasts_wis, n_forecasts_mae)) %>%
+  group_by(model) %>%
+  summarise("# recent forecasts" = max(n_fcast))
+
+case_count_fcasts_historical <-  case_accuracy_historical %>% group_by(model,score_name) %>%
+    summarise(n_forecasts_wis = sum(score_name == "wis" & !is.na(score_value)),
+           n_forecasts_mae = sum(score_name == "abs_error" & !is.na(score_value))) %>% ungroup() %>%
+  mutate(n_fcast = ifelse(n_forecasts_wis > 0, n_forecasts_wis, n_forecasts_mae)) %>%
+  group_by(model) %>%
+  summarise("# historical forecasts" = max(n_fcast)) %>%
+ ungroup()
+  
+leaderboard_table <- case_count_fcasts_recent %>%
+  full_join(pairwise_scores) %>%
+  full_join(pairwise_scores_mae) %>%
+  filter(!is.na(relative_mae) | !is.na(relative_wis)) %>% 
+  arrange(relative_wis)
+
+
+leaderboard_table_historical <- case_count_fcasts_historical %>%
+  full_join(historical_wis, by = c("model")) %>%
+  full_join(historical_mae, by = c("model")) %>%
+  filter(!is.na(relative_mae) | !is.na(relative_wis)) %>% 
+  arrange(relative_wis)
+
+render <- JS(
+  "function(data, type, row) {",
+  "  if(type === 'sort' && data === null) {",
+  "    return 999999;",
+  "  }",
+  "  return data;",
+  "}"
+)
+```
+
+```{r}
+case_model_order <- leaderboard_table %>%   arrange(relative_wis) %>% pull(model)
+case_model_order_historical <- leaderboard_table_historical %>%   arrange(relative_wis) %>% pull(model)
+```
+
+### Recent accuracy 
+```{r recent Leaderboard CASES accuracy}
+
+# a custom table container
+sketch_recent_accuracy = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 2, "Model"),
+      th(rowspan = 2, "# recent forecasts"),
+      th(colspan = 4, "Relative WIS"),
+      th(colspan = 4, "Relative MAE")
+    ),
+    tr(
+ lapply((c("1 wk","2 wk","3 wk","4 wk","1 wk","2 wk","3 wk","4 wk")), th)))))
+
+leaderboard_table1<- leaderboard_table %>%
+ arrange(relative_wis) %>%  
+  mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model)) %>%
+  select (model, "# recent forecasts",  "1 wk relWIS",  "2 wk relWIS","3 wk relWIS","4 wk relWIS","1 wk relMAE","2 wk relMAE","3 wk relMAE","4 wk relMAE") 
+
+datatable(leaderboard_table1,
+            rownames= FALSE, 
+              options =  list(pageLength = 5, 
+                              # order = case_model_order,
+                             autoWidth = TRUE,
+                             columnDefs = list(list(width = '100px', targets = "_all", render = render)), 
+                             ordering = TRUE),
+              # filter = c("top")
+          colnames = c("Model", "# recent forecasts",  "1 wk relWIS",  "2 wk relWIS","3 wk relWIS","4 wk relWIS","1 wk relMAE","2 wk relMAE","3 wk relMAE","4 wk relMAE"), container=sketch_recent_accuracy) 
+              filter = c("top")
+
+```
+
+** When comparing results, keep in mind that starting on September 6, 2021, COVIDhub-ensemble only reported two-week ahead forecasts for cases and as of September 28, 2021 COVIDhub-ensemble only reports one-week ahead forecasts for cases. 
+
+To calculate each column in our table, different inclusion criteria were applied. This table only includes forecasts for the last `r n_weeks_eval` weeks, since `r format(first_eval_sat, "%B %d, %Y")`.The models included have submitted  at least 50% of forecasts during this time, where one forecast is a location, target, forecast date combination.  The data are initially ordered by model based on their relative WIS aggregated across horizons, with the most accurate models at the top. 
+
+* The column titled, "# recent forecasts" lists the number of forecasts a team has submitted with a target end date over the most recent `r n_weeks_eval` week period.
+
+* Columns 3 through 6 calculate the adjusted relative WIS over the most recent `r n_weeks_eval` week period by horizon.
+
+* Columns 7 through 10 calculate the adjusted relative MAE over the most recent `r n_weeks_eval` week period by horizon. 
+
+
+
+### Historical accuracy 
+```{r historical Leaderboard CASES accuracy}
+
+# a custom table container
+sketch_historical_accuracy = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 2, "Model"),
+      th(rowspan = 2, "# historical forecasts"),
+      th(colspan = 4, "Relative WIS"),
+      th(colspan = 4, "Relative MAE")
+    ),
+    tr(
+ lapply((c("1 wk","2 wk","3 wk","4 wk","1 wk","2 wk","3 wk","4 wk")), th)))))
+
+leaderboard_table_historical1<- leaderboard_table_historical %>%
+ arrange(relative_wis) %>%  
+  mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model)) %>%
+  select (model, "# historical forecasts",  "1 wk relWIS",  "2 wk relWIS","3 wk relWIS","4 wk relWIS","1 wk relMAE","2 wk relMAE","3 wk relMAE","4 wk relMAE") 
+
+datatable(leaderboard_table_historical1,
+            rownames= FALSE, 
+              options =  list(pageLength = 5, 
+                              # order = case_model_order_historical,
+                             autoWidth = TRUE,
+                             columnDefs = list(list(width = '100px', targets = "_all", render = render)), 
+                             ordering = TRUE),
+              # filter = c("top")
+          colnames = c("Model", "# historical forecasts",  "1 wk relWIS",  "2 wk relWIS","3 wk relWIS","4 wk relWIS","1 wk relMAE","2 wk relMAE","3 wk relMAE","4 wk relMAE"), container=sketch_historical_accuracy) 
+              filter = c("top")
+```
+
+** When comparing results, keep in mind that starting on September 6, 2021, COVIDhub-ensemble only reported two-week ahead forecasts for cases and as of September 28, 2021 COVIDhub-ensemble only reports one-week ahead forecasts for cases.
+
+To calculate each column in our table, different inclusion criteria were applied. This table only includes forecasts for the last `r n_weeks_history` weeks, since `r format(first_eval_sat_hist, "%B %d, %Y")`. The models included have submitted  at least 50% of forecasts during this time, where one forecast is a location, target, forecast date combination. The data are initially  ordered based on their relative WIS score aggregated across horizons. 
+
+* The column titled, "# historical forecasts" lists the number of forecasts a team has submitted with a target end date over the most recent `r n_weeks_history` week period.
+
+* Columns 3 through 6 calculate the adjusted relative WIS over the most recent `r n_weeks_history` week period by horizon.
+
+* Columns 7 through 10 calculate the adjusted relative MAE over the most recent `r n_weeks_history` week period by horizon. 
+
+
+```{r inclusion in coverage table recent}
+#Filtered to include only models in scoreboard (coverage table) 
+#at least 5 weeks overall or at least 2 out of the last 3 weeks 
+case_coverage_recent <- recent_coverage_filter(score_case_all)
+case_coverage_historical <- historical_coverage_filter(score_case_all)
+
+#number of forecasts by model 
+case_countc_fcasts_recent <-  case_coverage_recent %>% group_by(model,score_name) %>%
+    summarise(n_forecasts_50 = sum(score_name == "coverage_50" & !is.na(score_value)),
+           n_forecasts_95 = sum(score_name == "coverage_95" & !is.na(score_value))) %>% ungroup() %>%
+  mutate(n_fcast = ifelse(n_forecasts_50 > 0, n_forecasts_50, n_forecasts_95)) %>%
+  group_by(model) %>%
+  summarise("# recent forecasts" = max(n_fcast)) 
+
+case_countc_fcasts_historical <-  case_coverage_historical %>% group_by(model,score_name) %>%
+    summarise(n_forecasts_50 = sum(score_name == "coverage_50" & !is.na(score_value)),
+           n_forecasts_95 = sum(score_name == "coverage_95" & !is.na(score_value))) %>% ungroup() %>%
+  mutate(n_fcast = ifelse(n_forecasts_50 > 0, n_forecasts_50, n_forecasts_95)) %>%
+  group_by(model) %>%
+  summarise("# historical forecasts" = max(n_fcast)) 
+
+
+  historical_calib_50 <-  score_case_all  %>% 
+    filter(n_weeks >= 5 |  n_weeks_3wksPrior >= 2) %>% 
+    filter(!is.na(score_value))  %>%
+    filter(score_name %in% c("coverage_50")) %>%
+    select(model,horizon,score_value,n_weeks)  %>%
+    group_by(model,horizon) %>%
+    summarise(mean_PI50 = round(sum(score_value, na.rm = TRUE) / n(),2)) %>%  
+  ungroup()  %>% 
+  pivot_wider(names_from = "horizon",values_from = "mean_PI50")  %>% 
+  rename("1 wk 50% coverage" = "1", "2 wk 50% coverage" = "2", "3 wk 50% coverage" = "3", "4 wk 50% coverage" = "4" ) %>% 
+  dplyr::rowwise() %>% 
+  dplyr::mutate(coverage_50 = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup()
+  
+  
+  recent_calib_50  <- score_case_all  %>%
+    filter(n_weeks >= 5 |  n_weeks_3wksPrior >= 2) %>% 
+    filter(!is.na(score_value))  %>%
+    filter(score_name %in% c("coverage_50")) %>%
+    filter(target_end_date >= first_eval_sat) %>%  droplevels() %>%
+    select(model,horizon,score_value)  %>%
+    group_by(model,horizon) %>%
+    summarise(mean_PI50 = round(sum(score_value, na.rm = TRUE) / n(),2)) %>%  
+  ungroup()  %>% 
+  pivot_wider(names_from = "horizon",values_from = "mean_PI50")  %>% 
+  rename("1 wk 50% coverage" = "1", "2 wk 50% coverage" = "2", "3 wk 50% coverage" = "3", "4 wk 50% coverage" = "4" ) %>% 
+  dplyr::rowwise() %>% 
+  dplyr::mutate(coverage_50 = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup() 
+ 
+  historical_calib_95 <-  score_case_all  %>% 
+    filter(n_weeks >= 5 |  n_weeks_3wksPrior >= 2) %>% 
+    filter(!is.na(score_value))  %>%
+    filter(score_name %in% c("coverage_95")) %>%
+    select(model,horizon,score_value)  %>%
+    group_by(model,horizon) %>%
+    summarise(mean_PI95 = round(sum(score_value, na.rm = TRUE) / n(),2)) %>%  
+  ungroup()  %>% 
+  pivot_wider(names_from = "horizon",values_from = "mean_PI95")  %>% 
+  rename("1 wk 95% coverage" = "1", "2 wk 95% coverage" = "2", "3 wk 95% coverage" = "3", "4 wk 95% coverage" = "4" ) %>% 
+  dplyr::rowwise() %>% 
+  dplyr::mutate(coverage_95 = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::mutate(diff_95 = abs(0.95-coverage_95)) %>% 
+  dplyr::ungroup()
+  
+  
+  recent_calib_95  <- score_case_all  %>%
+    filter(n_weeks >= 5 |  n_weeks_3wksPrior >= 2) %>% 
+    filter(!is.na(score_value))  %>%
+    filter(score_name %in% c("coverage_95")) %>%
+    filter(target_end_date >= first_eval_sat) %>%  droplevels() %>%
+    select(model,horizon,score_value)  %>%
+    group_by(model,horizon) %>%
+    summarise(mean_PI95 = round(sum(score_value, na.rm = TRUE) / n(),2)) %>%  
+  ungroup()  %>% 
+  pivot_wider(names_from = "horizon",values_from = "mean_PI95")  %>% 
+  rename("1 wk 95% coverage" = "1", "2 wk 95% coverage" = "2", "3 wk 95% coverage" = "3", "4 wk 95% coverage" = "4" ) %>% 
+  dplyr::rowwise() %>% 
+  dplyr::mutate(coverage_95 = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::mutate(diff_95 = abs(0.95-coverage_95)) %>% 
+  dplyr::ungroup()
+  
+  calibration_table  <- case_countc_fcasts_recent %>%
+  full_join(recent_calib_50) %>%
+  full_join(recent_calib_95) %>%
+  filter(!is.na(coverage_95) | !is.na(coverage_50)) %>% 
+  arrange(diff_95)
+  
+  calibration_table_hist  <- case_countc_fcasts_historical %>%
+  full_join(historical_calib_50) %>%
+  full_join(historical_calib_95) %>%
+  filter(!is.na("# historical forecasts"))  %>%
+  filter(!is.na("1 wk 50% coverage") | !is.na("1 wk 95% coverage")) %>%
+  filter(!is.na(coverage_95) | !is.na(coverage_50)) %>% 
+  arrange(diff_95)
+  
+render <- JS(
+  "function(data, type, row) {",
+  "  if(type === 'sort' && data === null) {",
+  "    return 999999;",
+  "  }",
+  "  return data;",
+  "}"
+)
+```  
+```{r}
+calib_model_order <- calibration_table %>%   arrange(diff_95) %>% pull(model)
+calib_model_order_historical <- calibration_table_hist %>%   arrange(diff_95) %>% pull(model)
+```
+ 
+
+### Recent coverage
+
+This table only includes forecasts for the last `r n_weeks_eval` weeks, since `r format(first_eval_sat, "%B %d, %Y")`. For inclusion in this table,  a model must have contributed forecasts for 5 or more weeks total during this period, or have submitted forecasts during at least 2 out of the last 3 evaluated weeks. This inclusion criteria was applied in order to score models that submitted for a substantial amount of weeks at any point during the pandemic but may no longer be submitting, while also evaluating new teams that have recently joined our forecasting efforts. The data are initially ordered by model based on their 95% PI coverage, aggregated across horizons, with the most accurate models at the top. 
+
+
+```{r recent Leaderboard CASES coverage}
+
+# a custom table container
+sketch_recent_coverage = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 2, "Model"),
+      th(rowspan = 2, "# recent forecasts"),
+      th(colspan = 4, "50% PI coverage"),
+      th(colspan = 4, "95% PI coverage")
+    ),
+    tr(
+ lapply((c("1 wk","2 wk","3 wk","4 wk","1 wk","2 wk","3 wk","4 wk")), th)))))
+
+calibration_table1<- calibration_table %>%
+ arrange(diff_95)%>%    
+  mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model)) %>%
+  select (model, "# recent forecasts",  "1 wk 50% coverage", "2 wk 50% coverage", "3 wk 50% coverage", "4 wk 50% coverage","1 wk 95% coverage", "2 wk 95% coverage", "3 wk 95% coverage", "4 wk 95% coverage") 
+
+datatable(calibration_table1,
+            rownames= FALSE, 
+              options =  list(pageLength = 5, 
+                              # order = list(list(2, 'asc')),
+                             autoWidth = TRUE,
+                             columnDefs = list(list(width = '100px', targets = "_all", render = render)), 
+                             ordering = TRUE),
+              # filter = c("top")
+          colnames = c("Model", "# recent forecasts",  "1 wk 50% coverage", "2 wk 50% coverage", "3 wk 50% coverage", "4 wk 50% coverage","1 wk 95% coverage", "2 wk 95% coverage", "3 wk 95% coverage", "4 wk 95% coverage"), container=sketch_recent_coverage) 
+```
+
+** When comparing results, keep in mind that starting on September 6, 2021, COVIDhub-ensemble only reported two-week ahead forecasts for cases and as of September 28, 2021 COVIDhub-ensemble only reports one-week ahead forecasts for cases.
+
+### Historical coverage
+
+This table only includes forecasts for the last `r n_weeks_history` weeks, since `r format(first_eval_sat_hist, "%B %d, %Y")`. For inclusion in this table, a model most have contributed forecasts for 5 or more weeks total during this period, or have submitted forecasts during at least 2 out of the last 3 evaluated weeks. This inclusion criteria was applied in order to score models that submitted for a substantial amount of weeks at any point during the pandemic but may no longer be submitting, while also evaluating new teams that have recently joined our forecasting efforts. The data are initially ordered by model based on their 95% PI coverage, aggregated across horizons, with the most accurate models at the top. 
+
+
+```{r historical Leaderboard CASES coverage}
+# a custom table container
+sketch_historical_coverage = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 2, "Model"),
+      th(rowspan = 2, "# historical forecasts"),
+      th(colspan = 4, "50% PI coverage"),
+      th(colspan = 4, "95% PI coverage")
+    ),
+    tr(
+ lapply((c("1 wk","2 wk","3 wk","4 wk","1 wk","2 wk","3 wk","4 wk")), th)))))
+
+calibration_table_hist1<- calibration_table_hist %>%
+ arrange(diff_95) %>%  
+  mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model)) %>%
+  select (model, "# historical forecasts",  "1 wk 50% coverage", "2 wk 50% coverage", "3 wk 50% coverage", "4 wk 50% coverage","1 wk 95% coverage", "2 wk 95% coverage", "3 wk 95% coverage", "4 wk 95% coverage") 
+
+datatable(calibration_table_hist1,
+            rownames= FALSE, 
+              options =  list(pageLength = 5, 
+                              # order = list(list(2, 'asc')),
+                             autoWidth = TRUE,
+                             columnDefs = list(list(width = '100px', targets = "_all", render = render)), 
+                             ordering = TRUE),
+              # filter = c("top")
+          colnames = c("Model", "# recent forecasts",  "1 wk 50% coverage", "2 wk 50% coverage", "3 wk 50% coverage", "4 wk 50% coverage","1 wk 95% coverage", "2 wk 95% coverage", "3 wk 95% coverage", "4 wk 95% coverage"), container=sketch_recent_coverage) 
+
+```  
+
+** When comparing results, keep in mind that starting on September 6, 2021, COVIDhub-ensemble only reported two-week ahead forecasts for cases and as of September 28, 2021 COVIDhub-ensemble only reports one-week ahead forecasts for cases.
+
+## WIS components
+
+
+The data in this graph has been aggregated over all locations and submission weeks. We only included forecasts for the last 10 weeks. The models included have submitted  at least 50% of forecasts during this time, where one forecast is a location, target, forecast date combination. This is the same exclusion criteria applied for WIS scores in the recent evaluation period. 
+
+The sum of the bars adds up to the WIS score. Of note, these values may not be exactly the same as the relative WIS scores shown in the leaderboard table because these are not adjusted for weeks or locations missing.  The data are ordered on the x axis based on their relative WIS score shown in the accuracy table, aggregated across horizons. 
+
+
+
+```{r wis bar function, fig.height= 8, fig.width=13}
+# Add ** to COVIDhub-ensemble
+score_case_all <-   score_case_all  %>%
+    mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model)) 
+pairwise_scores <-   pairwise_scores  %>%
+    mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model))
+
+wis_barplot_function(x = score_case_all, y = pairwise_scores, order = case_model_order)
+```
+** When comparing results, keep in mind that starting on September 6, 2021, COVIDhub-ensemble only reported two-week ahead forecasts for cases and as of September 28, 2021 COVIDhub-ensemble only reports one-week ahead forecasts for cases.
+
+## Evaluation by Week  {.tabset .tabset-fade}
+
+In the following figures, we have evaluated models across multiple forecasting weeks. Points included in this comparison are for models that have submitted probabilistic forecasts for all 50 states. 
+
+For the first 2 figures, WIS is used as a metric. The first figure shows the mean WIS across all 50 states for submission weeks beginning `r format(first_eval_sat_hist, "%B %d, %Y")` at a 1 week horizon. The second figure shows the mean WIS aggregated across locations, however it is for a 4 week horizon.
+
+
+
+### 1 Week Horizon WIS
+```{r,fig.width=10, fig.height=6}
+byweek_case <- by_week_function(score_case_all, var = "wis")
+# find 97.5 percentile
+b<-byweek_case %>%
+  filter(horizon == "4") 
+p975<-quantile(b$mean_score,probs=.975, na.rm = TRUE)
+
+by_week_wis_1wk <- plot_byweek_function(byweek_case, var = "WIS", horizon_num = "1") + coord_cartesian(ylim=c(0, p975))
+ggplotly(by_week_wis_1wk, tooltip = c("label", "labelx", "labely"))
+```
+
+### 4 Week Horizon WIS
+
+In this figure, the dotted black line represents the average 1 week ahead error across all models. There is often larger error for the 4 week horizon compared to the 1 week horizon. 
+
+```{r,fig.width=10, fig.height=6}
+#calc 1 week error
+meanwis_1wk <- byweek_case %>%
+  filter(horizon == "1") %>%
+  group_by(target_end_date) %>%
+  summarise(mean_score = mean(mean_score, na.rm = TRUE)) %>%
+  mutate(model = "`average error for 1 week horizon`",
+         horizon = "4") %>%
+  select(model, horizon, target_end_date, mean_score)
+  
+
+by_week_wis_4wk <- plot_byweek_function(byweek_case, var = "WIS", horizon_num = "4") +
+   geom_line(data = meanwis_1wk, aes(label = model, x = target_end_date, y = mean_score), alpha=.5, color = "black", linetype = 2) +
+  geom_point(data = meanwis_1wk, aes(x = target_end_date, y = mean_score), alpha=.5, size = 2, color = "black") + coord_cartesian(ylim=c(0, p975))
+ggplotly(by_week_wis_4wk,tooltip = c("label", "labelx", "labely"))
+```
+
+
+### 1 Week Horizon 95% PI Coverage
+
+We would expect a well-calibrated model to have a value of 95% in this plot. 
+
+```{r,fig.width=10, fig.height=6}
+byweek_case <- by_week_function(score_case_all, var = "coverage_95")
+by_week_wis_1wk <- plot_byweek_function(byweek_case, var = "95% PI Coverage", horizon_num = "1") +
+  geom_hline(yintercept = .95)
+ggplotly(by_week_wis_1wk,tooltip = c("label", "labelx", "labely"))
+```
+
+### 4 Week Horizon 95% PI Coverage
+
+We would expect a well-calibrated model to have a value of 95% in this plot. There is typically larger error for the 4 week horizon compared to the 1 week horizon. 
+
+```{r,fig.width=10, fig.height=6}
+by_week_wis_4wk <- plot_byweek_function(byweek_case, var = "95% PI Coverage", horizon_num = "4") +
+  geom_hline(yintercept = .95)
+
+ggplotly(by_week_wis_4wk, tooltip = c("label", "labelx", "labely")) 
+```
+
+
+
+## Evaluation by location {.tabset .tabset-fade}
+
+This figures below show recent model performance stratified by location. We only included forecasts for the last 10 weeks. Models were included if they had submitted forecasts for all 4 horizons and submitted  at least 50% of forecasts during this time, where one forecast is a location, target, forecast date combination.   Locations are sorted by cumulative case counts.
+
+The color scheme shows the WIS score relative to the baseline, across all horizons. The only locations evaluated are 50 states and a national level forecast. The data are ordered on the x axis based on their relative WIS score shown in the accuracy table, aggregated across horizons.  
+
+
+```{r, fig.width=12, fig.height=16}
+# Add ** to COVIDhub-ensemble
+case_accuracy_recent <-   case_accuracy_recent  %>%
+    mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model)) 
+# case_model_order<-   case_model_order  %>%
+#     mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model)) 
+# location_order_case<-   location_order_case  %>%
+#     mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model)) 
+plot_by_location_wis(case_accuracy_recent, order = case_model_order, location_order  = location_order_case)
+```
+
+** When comparing results, keep in mind that starting on September 6, 2021, COVIDhub-ensemble only reported two-week ahead forecasts for cases and as of September 28, 2021 COVIDhub-ensemble only reports one-week ahead forecasts for cases.
+
+## Evaluation Periods  {.tabset .tabset-fade}
+
+
+This figure shows the number of incident reported COVID-19 cases reported each week in the US. The period between the vertical blue line and the black shows the weeks included in the "recent" model evaluations. The period between the vertical red line and the black shows the weeks included in the "historical" model evaluations.
+
+```{r, fig.width=8, fig.height=5}
+truth_US_case <- truth_dat_case_all %>%
+  filter(location == "US")
+
+plot_truth(dat = truth_US_case, tar="Weekly reported COVID-19 Cases")
+```
+
+# Incident Hospitalization Forecasts {.tabset .tabset-fade}
+
+## Summary Tables {.tabset .tabset-fade}
+
+The first and second tables evaluate recent/historical forecast models based on their WIS and MAE by horizon.  
+
+The third and fourth tables evaluate recent/historical forecast models based on their prediction interval coverage at the 50% and 95% levels by horizon. 
+
+Scores are aggregated separately for the most recent 10 weeks and for 26 historical weeks. Since hospitalization forecasts are made at the daily timescale, computations for a given "week" are computed by averaging scores for the daily forecasts from Tuesday through Monday.
+
+<!-- * The **prediction interval coverage**  measures  the proportion of times a prediction interval of a certain level covered the true value, to assess the degree to which forecasts accurately characterized uncertainty about future observations. Well calibrated models should have a 50% coverage level of 0.5 and a 95% coverage level of 0.95. 
+
+* The **weighted interval score (WIS)** is a proper score that combines a set of interval scores for probabilistic forecasts that provide quantiles of the predictive forecast distribution. To account for the variation in difficult of forecasting different weeks and locations, a pairwis approach was used to calculated the relative adjusted WIS. The code for this comparison can be found [here](https://github.com/jbracher/pairwise_comparisons). A preprint on this method for calculating the WIS can be found [here](https://arxiv.org/pdf/2005.12881.pdf). Models with an adjusted relative WIS  lower than 1 are more accurate than the baseline, and models with an adjusted relative WIS greater than 1 are less accurate than the baseline is predicting the number of incident cases. 
+
+* The **mean absolute error** is defined as the the difference between the forecasted value and the actual value. For this calculation, point forecasts submitted by teams were used. When point forecasts were not available, the 0.50 quantile was used. Similar to calculating the WIS, a pairwise approach was used to account for variation across locations and weeks. Models with an adjusted relative MAE lower than 1 are more accurate than the baseline, and models with an adjusted relative MAE greater than 1 are less accurate than the baseline is predicting the number of incident cases. 
+-->
+ 
+Inclusion criteria for each column are detailed below the table. 
+
+
+```{r recent relative wis  HOSP}
+#at least 50% of recent WIS or 50% of recent MAE
+hosp_accuracy_recent <- recent_accuracy_filter(score_hosp_all,first_eval_sat)
+
+inc_scores <- hosp_accuracy_recent %>%
+  filter(!is.na(score_value)) %>%
+  filter(n_locations >= 25) %>% 
+  droplevels()
+
+# bring all timezeros to Monday:
+inc_scores$timezero <- inc_scores$submission_sat +2
+  
+# restrict to 1-4 wk ahead state-level
+scores <- inc_scores %>% filter(horizon %in% paste(1:4)) %>%
+  filter(score_name %in% c("wis","abs_error")) %>%
+  select("model", "timezero", "location", "horizon", "score_name", "score_value") %>%
+  pivot_wider(names_from = score_name, values_from = score_value) %>%
+  filter(!is.na(wis)) %>%
+  droplevels()
+
+# the included models:
+models <- unique(scores$model)
+
+
+# matrices to store:
+results_ratio_hzn1 <- matrix(ncol = length(models),
+                             nrow = length(models),
+                             dimnames = list(models, models))
+results_ratio_list <- list(results_ratio_hzn1, results_ratio_hzn1,
+                           results_ratio_hzn1, results_ratio_hzn1)
+
+set.seed(123) # set seed for permutation tests
+
+for(mx in seq_along(models)){
+  for(my in 1:mx){
+    for(hzn in 1:4){
+      pwc <- pairwise_comparison(scores = filter(scores, horizon==hzn), 
+                                 mx = models[mx], 
+                                 my = models[my],
+                                 permutation_test = FALSE)
+      
+      results_ratio_list[[hzn]][mx, my] <- pwc$ratio
+      results_ratio_list[[hzn]][my, mx] <- 1/pwc$ratio
+    }
+  }
+}
+ind_baseline <- which(rownames(results_ratio_list[[1]]) == "COVIDhub-baseline")
+geom_mean_ratios_hzn1 <- exp(rowMeans(log(results_ratio_list[[1]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn2 <- exp(rowMeans(log(results_ratio_list[[2]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn3 <- exp(rowMeans(log(results_ratio_list[[3]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn4 <- exp(rowMeans(log(results_ratio_list[[4]][, -ind_baseline]), na.rm = TRUE))
+
+ratios_baseline_raw_hzn1 <- results_ratio_list[[1]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn2 <- results_ratio_list[[2]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn3 <- results_ratio_list[[3]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn4 <- results_ratio_list[[4]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+
+ratios_baseline_adj_hzn1 <- geom_mean_ratios_hzn1/geom_mean_ratios_hzn1["COVIDhub-baseline"]
+ratios_baseline_adj_hzn2 <- geom_mean_ratios_hzn2/geom_mean_ratios_hzn2["COVIDhub-baseline"]
+ratios_baseline_adj_hzn3 <- geom_mean_ratios_hzn3/geom_mean_ratios_hzn3["COVIDhub-baseline"]
+ratios_baseline_adj_hzn4 <- geom_mean_ratios_hzn4/geom_mean_ratios_hzn4["COVIDhub-baseline"]
+
+tab <- data.frame(model = c(names(geom_mean_ratios_hzn1), 
+                            names(geom_mean_ratios_hzn2),
+                            names(geom_mean_ratios_hzn3), 
+                            names(geom_mean_ratios_hzn4)),
+                  horizon = rep(1:4, each=length(geom_mean_ratios_hzn1)),
+                  geom_mean_ratios = c(geom_mean_ratios_hzn1,
+                                       geom_mean_ratios_hzn2,
+                                       geom_mean_ratios_hzn3,
+                                       geom_mean_ratios_hzn4),
+                  ratios_baseline_raw = c(ratios_baseline_raw_hzn1,
+                                          ratios_baseline_raw_hzn2,
+                                          ratios_baseline_raw_hzn3,
+                                          ratios_baseline_raw_hzn4),
+                  ratios_baseline_adj = c(ratios_baseline_adj_hzn1,
+                                          ratios_baseline_adj_hzn2,
+                                          ratios_baseline_adj_hzn3,
+                                          ratios_baseline_adj_hzn4)
+                  )
+
+
+tab <- tab[order(tab$horizon,tab$ratios_baseline_adj), ]
+
+
+pairwise_scores <- tab %>%
+  mutate(relative_wis = round(ratios_baseline_adj, 2)) %>%
+  select(model, horizon, relative_wis)  %>%
+  pivot_wider(names_from = "horizon",values_from = "relative_wis")  %>% 
+  rename("1 wk relWIS" = "1", "2 wk relWIS" = "2", "3 wk relWIS" = "3", "4 wk relWIS" = "4" ) %>%
+  dplyr::rowwise() %>% 
+  dplyr::mutate(relative_wis = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup() %>% 
+  arrange(relative_wis)
+```
+
+
+```{r recent relative mae  HOSP}
+
+# matrices to store:
+results_ratio_hzn1 <- matrix(ncol = length(models),
+                             nrow = length(models),
+                             dimnames = list(models, models))
+results_ratio_list <- list(results_ratio_hzn1, results_ratio_hzn1,
+                           results_ratio_hzn1, results_ratio_hzn1)
+
+set.seed(123) # set seed for permutation tests
+
+for(mx in seq_along(models)){
+  for(my in 1:mx){
+    for(hzn in 1:4){
+      pwc <- pairabs_comparison(scores = filter(scores, horizon==hzn), 
+                                 mx = models[mx], 
+                                 my = models[my],
+                                 permutation_test = FALSE)
+      
+      results_ratio_list[[hzn]][mx, my] <- pwc$ratio
+      results_ratio_list[[hzn]][my, mx] <- 1/pwc$ratio
+    }
+  }
+}
+
+ind_baseline <- which(rownames(results_ratio_list[[1]]) == "COVIDhub-baseline")
+geom_mean_ratios_hzn1 <- exp(rowMeans(log(results_ratio_list[[1]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn2 <- exp(rowMeans(log(results_ratio_list[[2]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn3 <- exp(rowMeans(log(results_ratio_list[[3]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn4 <- exp(rowMeans(log(results_ratio_list[[4]][, -ind_baseline]), na.rm = TRUE))
+
+ratios_baseline_raw_hzn1 <- results_ratio_list[[1]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn2 <- results_ratio_list[[2]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn3 <- results_ratio_list[[3]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn4 <- results_ratio_list[[4]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+
+ratios_baseline_adj_hzn1 <- geom_mean_ratios_hzn1/geom_mean_ratios_hzn1["COVIDhub-baseline"]
+ratios_baseline_adj_hzn2 <- geom_mean_ratios_hzn2/geom_mean_ratios_hzn2["COVIDhub-baseline"]
+ratios_baseline_adj_hzn3 <- geom_mean_ratios_hzn3/geom_mean_ratios_hzn3["COVIDhub-baseline"]
+ratios_baseline_adj_hzn4 <- geom_mean_ratios_hzn4/geom_mean_ratios_hzn4["COVIDhub-baseline"]
+
+tab <- data.frame(model = c(names(geom_mean_ratios_hzn1), 
+                            names(geom_mean_ratios_hzn2),
+                            names(geom_mean_ratios_hzn3), 
+                            names(geom_mean_ratios_hzn4)),
+                  horizon = rep(1:4, each=length(geom_mean_ratios_hzn1)),
+                  geom_mean_ratios = c(geom_mean_ratios_hzn1,
+                                       geom_mean_ratios_hzn2,
+                                       geom_mean_ratios_hzn3,
+                                       geom_mean_ratios_hzn4),
+                  ratios_baseline_raw = c(ratios_baseline_raw_hzn1,
+                                          ratios_baseline_raw_hzn2,
+                                          ratios_baseline_raw_hzn3,
+                                          ratios_baseline_raw_hzn4),
+                  ratios_baseline_adj = c(ratios_baseline_adj_hzn1,
+                                          ratios_baseline_adj_hzn2,
+                                          ratios_baseline_adj_hzn3,
+                                          ratios_baseline_adj_hzn4)
+                  )
+
+
+tab <- tab[order(tab$horizon,tab$ratios_baseline_adj), ]
+
+
+pairwise_scores_mae <- tab %>%
+  mutate(relative_mae = round(ratios_baseline_adj, 2)) %>%
+  select(model, horizon, relative_mae)  %>%
+  pivot_wider(names_from = "horizon",values_from = "relative_mae")  %>% 
+
+  rename("1 wk relMAE" = "1", "2 wk relMAE" = "2", "3 wk relMAE" = "3", "4 wk relMAE" = "4" ) %>%
+  dplyr::rowwise() %>% 
+  dplyr::mutate(relative_mae = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup() %>% 
+  arrange(relative_mae)
+```
+
+```{r historical relative WIS  HOSP}
+inc_scores <- hosp_accuracy_historical %>%
+  filter(n_locations >= 25) %>%
+  filter(n_weeks >= 4) %>%
+  droplevels()
+
+# bring all timezeros to Monday:
+inc_scores$timezero <- inc_scores$submission_sat +2
+
+  
+# restrict to 1-4 wk ahead state-level
+scores <- inc_scores %>% filter(horizon %in% paste(1:4),  location %in% US_fips) %>%
+  filter(!is.na(score_value)) %>%
+  select("model", "timezero", "location", "horizon", "score_name", "score_value") %>%
+  filter(score_name %in% c("abs_error", "wis")) %>%
+  pivot_wider(names_from = score_name, values_from = score_value) %>% filter(!is.na(wis))
+
+# the included models:
+models <- unique(scores$model)
+
+
+# matrices to store:
+results_ratio_hzn1 <- matrix(ncol = length(models),
+                             nrow = length(models),
+                             dimnames = list(models, models))
+results_ratio_list <- list(results_ratio_hzn1, results_ratio_hzn1,
+                           results_ratio_hzn1, results_ratio_hzn1)
+
+set.seed(123) # set seed for permutation tests
+
+for(mx in seq_along(models)){
+  for(my in 1:mx){
+    for(hzn in 1:4){
+      pwc <- pairwise_comparison(scores = filter(scores, horizon==hzn), 
+                                 mx = models[mx], 
+                                 my = models[my],
+                                 permutation_test = FALSE)
+      
+      results_ratio_list[[hzn]][mx, my] <- pwc$ratio
+      results_ratio_list[[hzn]][my, mx] <- 1/pwc$ratio
+    }
+  }
+}
+
+# matrices to store:
+results_ratio_hzn1 <- matrix(ncol = length(models),
+                             nrow = length(models),
+                             dimnames = list(models, models))
+results_ratio_list <- list(results_ratio_hzn1, results_ratio_hzn1,
+                           results_ratio_hzn1, results_ratio_hzn1)
+
+set.seed(123) # set seed for permutation tests
+
+for(mx in seq_along(models)){
+  for(my in 1:mx){
+    for(hzn in 1:4){
+      pwc <- pairwise_comparison(scores = filter(scores, horizon==hzn), 
+                                 mx = models[mx], 
+                                 my = models[my],
+                                 permutation_test = FALSE)
+      
+      results_ratio_list[[hzn]][mx, my] <- pwc$ratio
+      results_ratio_list[[hzn]][my, mx] <- 1/pwc$ratio
+    }
+  }
+}
+
+ind_baseline <- which(rownames(results_ratio_list[[1]]) == "COVIDhub-baseline")
+geom_mean_ratios_hzn1 <- exp(rowMeans(log(results_ratio_list[[1]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn2 <- exp(rowMeans(log(results_ratio_list[[2]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn3 <- exp(rowMeans(log(results_ratio_list[[3]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn4 <- exp(rowMeans(log(results_ratio_list[[4]][, -ind_baseline]), na.rm = TRUE))
+
+ratios_baseline_raw_hzn1 <- results_ratio_list[[1]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn2 <- results_ratio_list[[2]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn3 <- results_ratio_list[[3]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn4 <- results_ratio_list[[4]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+
+ratios_baseline_adj_hzn1 <- geom_mean_ratios_hzn1/geom_mean_ratios_hzn1["COVIDhub-baseline"]
+ratios_baseline_adj_hzn2 <- geom_mean_ratios_hzn2/geom_mean_ratios_hzn2["COVIDhub-baseline"]
+ratios_baseline_adj_hzn3 <- geom_mean_ratios_hzn3/geom_mean_ratios_hzn3["COVIDhub-baseline"]
+ratios_baseline_adj_hzn4 <- geom_mean_ratios_hzn4/geom_mean_ratios_hzn4["COVIDhub-baseline"]
+
+tab <- data.frame(model = c(names(geom_mean_ratios_hzn1), 
+                            names(geom_mean_ratios_hzn2),
+                            names(geom_mean_ratios_hzn3), 
+                            names(geom_mean_ratios_hzn4)),
+                  horizon = rep(1:4, each=length(geom_mean_ratios_hzn1)),
+                  geom_mean_ratios = c(geom_mean_ratios_hzn1,
+                                       geom_mean_ratios_hzn2,
+                                       geom_mean_ratios_hzn3,
+                                       geom_mean_ratios_hzn4),
+                  ratios_baseline_raw = c(ratios_baseline_raw_hzn1,
+                                          ratios_baseline_raw_hzn2,
+                                          ratios_baseline_raw_hzn3,
+                                          ratios_baseline_raw_hzn4),
+                  ratios_baseline_adj = c(ratios_baseline_adj_hzn1,
+                                          ratios_baseline_adj_hzn2,
+                                          ratios_baseline_adj_hzn3,
+                                          ratios_baseline_adj_hzn4)
+                  )
+
+
+tab <- tab[order(tab$horizon,tab$ratios_baseline_adj), ]
+
+
+historical_wis <- tab %>%
+  mutate(relative_wis_historical  = round(ratios_baseline_adj, 2)) %>%
+  select(model, horizon, relative_wis_historical) %>% 
+  pivot_wider(names_from = "horizon",values_from = "relative_wis_historical")  %>% 
+  rename("1 wk relWIS" = "1", "2 wk relWIS" = "2", "3 wk relWIS" = "3", "4 wk relWIS" = "4" )  %>%
+    dplyr::rowwise() %>% 
+  dplyr::mutate(relative_wis = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup() %>% 
+  arrange(relative_wis)
+```
+
+```{r historical relative MAE HOSP}
+
+# matrices to store:
+results_ratio_hzn1 <- matrix(ncol = length(models),
+                             nrow = length(models),
+                             dimnames = list(models, models))
+results_ratio_list <- list(results_ratio_hzn1, results_ratio_hzn1,
+                           results_ratio_hzn1, results_ratio_hzn1)
+
+set.seed(123) # set seed for permutation tests
+
+for(mx in seq_along(models)){
+  for(my in 1:mx){
+    for(hzn in 1:4){
+      pwc <- pairabs_comparison(scores = filter(scores, horizon==hzn), 
+                                 mx = models[mx], 
+                                 my = models[my],
+                                 permutation_test = FALSE)
+      
+      results_ratio_list[[hzn]][mx, my] <- pwc$ratio
+      results_ratio_list[[hzn]][my, mx] <- 1/pwc$ratio
+    }
+  }
+}
+
+ind_baseline <- which(rownames(results_ratio_list[[1]]) == "COVIDhub-baseline")
+geom_mean_ratios_hzn1 <- exp(rowMeans(log(results_ratio_list[[1]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn2 <- exp(rowMeans(log(results_ratio_list[[2]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn3 <- exp(rowMeans(log(results_ratio_list[[3]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn4 <- exp(rowMeans(log(results_ratio_list[[4]][, -ind_baseline]), na.rm = TRUE))
+
+ratios_baseline_raw_hzn1 <- results_ratio_list[[1]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn2 <- results_ratio_list[[2]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn3 <- results_ratio_list[[3]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn4 <- results_ratio_list[[4]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+
+ratios_baseline_adj_hzn1 <- geom_mean_ratios_hzn1/geom_mean_ratios_hzn1["COVIDhub-baseline"]
+ratios_baseline_adj_hzn2 <- geom_mean_ratios_hzn2/geom_mean_ratios_hzn2["COVIDhub-baseline"]
+ratios_baseline_adj_hzn3 <- geom_mean_ratios_hzn3/geom_mean_ratios_hzn3["COVIDhub-baseline"]
+ratios_baseline_adj_hzn4 <- geom_mean_ratios_hzn4/geom_mean_ratios_hzn4["COVIDhub-baseline"]
+
+tab <- data.frame(model = c(names(geom_mean_ratios_hzn1), 
+                            names(geom_mean_ratios_hzn2),
+                            names(geom_mean_ratios_hzn3), 
+                            names(geom_mean_ratios_hzn4)),
+                  horizon = rep(1:4, each=length(geom_mean_ratios_hzn1)),
+                  geom_mean_ratios = c(geom_mean_ratios_hzn1,
+                                       geom_mean_ratios_hzn2,
+                                       geom_mean_ratios_hzn3,
+                                       geom_mean_ratios_hzn4),
+                  ratios_baseline_raw = c(ratios_baseline_raw_hzn1,
+                                          ratios_baseline_raw_hzn2,
+                                          ratios_baseline_raw_hzn3,
+                                          ratios_baseline_raw_hzn4),
+                  ratios_baseline_adj = c(ratios_baseline_adj_hzn1,
+                                          ratios_baseline_adj_hzn2,
+                                          ratios_baseline_adj_hzn3,
+                                          ratios_baseline_adj_hzn4)
+                  )
+
+
+tab <- tab[order(tab$horizon,tab$ratios_baseline_adj), ]
+
+
+historical_mae <- tab %>%
+  mutate(relative_mae = round(ratios_baseline_adj, 2)) %>%
+  select(model, horizon, relative_mae)  %>%
+  pivot_wider(names_from = "horizon",values_from = "relative_mae")  %>% 
+  rename("1 wk relMAE" = "1", "2 wk relMAE" = "2", "3 wk relMAE" = "3", "4 wk relMAE" = "4" ) %>%
+    dplyr::rowwise() %>% 
+  dplyr::mutate(relative_mae = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup() %>% 
+  arrange(relative_mae)
+```
+
+```{r counts of forecasts by model and create leaderboards for HOSP accuracy}
+hosp_count_fcasts_recent <-  hosp_accuracy_recent %>% group_by(model,score_name) %>%
+    summarise(n_forecasts_wis = sum(score_name == "wis" & !is.na(score_value)),
+           n_forecasts_mae = sum(score_name == "abs_error" & !is.na(score_value))) %>% ungroup() %>%
+  mutate(n_fcast = ifelse(n_forecasts_wis > 0, n_forecasts_wis, n_forecasts_mae)) %>%
+  group_by(model) %>%
+  summarise("# recent forecasts" = max(n_fcast))
+
+hosp_count_fcasts_historical <-  hosp_accuracy_historical %>% group_by(model,score_name) %>%
+    summarise(n_forecasts_wis = sum(score_name == "wis" & !is.na(score_value)),
+           n_forecasts_mae = sum(score_name == "abs_error" & !is.na(score_value))) %>% ungroup() %>%
+  mutate(n_fcast = ifelse(n_forecasts_wis > 0, n_forecasts_wis, n_forecasts_mae)) %>%
+  group_by(model) %>%
+  summarise("# historical forecasts" = max(n_fcast)) %>%
+ ungroup()
+  
+leaderboard_table <- hosp_count_fcasts_recent %>%
+  full_join(pairwise_scores) %>%
+  full_join(pairwise_scores_mae) %>%
+  filter(!is.na(relative_mae) | !is.na(relative_wis)) %>% 
+  arrange(relative_wis)
+
+
+leaderboard_table_historical <- hosp_count_fcasts_historical %>%
+  full_join(historical_wis, by = c("model")) %>%
+  full_join(historical_mae, by = c("model")) %>%
+  filter(!is.na(relative_mae) | !is.na(relative_wis)) %>% 
+  arrange(relative_wis)
+
+render <- JS(
+  "function(data, type, row) {",
+  "  if(type === 'sort' && data === null) {",
+  "    return 999999;",
+  "  }",
+  "  return data;",
+  "}"
+)
+```
+
+```{r}
+hosp_model_order <- leaderboard_table %>%   arrange(relative_wis) %>% pull(model)
+hosp_model_order_historical <- leaderboard_table_historical %>%   arrange(relative_wis) %>% pull(model)
+```
+
+### Recent accuracy 
+```{r recent Leaderboard HOSP accuracy}
+
+# a custom table container
+sketch_recent_accuracy = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 2, "Model"),
+      th(rowspan = 2, "# recent forecasts"),
+      th(colspan = 4, "Relative WIS"),
+      th(colspan = 4, "Relative MAE")
+    ),
+    tr(
+ lapply((c("1 wk","2 wk","3 wk","4 wk","1 wk","2 wk","3 wk","4 wk")), th)))))
+
+leaderboard_table1<- leaderboard_table %>%
+ arrange(relative_wis) %>%    
+    mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model)) %>%
+  select (model, "# recent forecasts",  "1 wk relWIS",  "2 wk relWIS","3 wk relWIS","4 wk relWIS","1 wk relMAE","2 wk relMAE","3 wk relMAE","4 wk relMAE") 
+
+datatable(leaderboard_table1,
+            rownames= FALSE, 
+              options =  list(pageLength = 5, 
+                              # order = case_model_order,
+                             autoWidth = TRUE,
+                             columnDefs = list(list(width = '100px', targets = "_all", render = render)), 
+                             ordering = TRUE),
+              # filter = c("top")
+          colnames = c("Model", "# recent forecasts",  "1 wk relWIS",  "2 wk relWIS","3 wk relWIS","4 wk relWIS","1 wk relMAE","2 wk relMAE","3 wk relMAE","4 wk relMAE"), container=sketch_recent_accuracy) 
+              filter = c("top")
+
+```
+** When comparing results, keep in mind that as of September 28, 2021 COVIDhub-ensemble only reports 14 day ahead forecasts for hospitalizations.
+
+To calculate each column in our table, different inclusion criteria were applied. This table only includes forecasts for the last `r n_weeks_eval` weeks, since `r format(first_eval_sat, "%B %d, %Y")`. The models included have submitted  at least 50% of forecasts during this time, where one forecast is a location, target, forecast date combination.  The data are initially ordered by model based on their relative WIS score aggregated across horizons, with the most accurate models at the top. 
+
+* The column titled, "# recent forecasts" lists the number of forecasts a team has submitted with a target end date over the most recent `r n_weeks_eval` week period.
+
+* Columns 3 through 6 calculate the adjusted relative WIS over the most recent `r n_weeks_eval` week period by horizon.
+
+* Columns 7 through 10 calculate the adjusted relative MAE over the most recent `r n_weeks_eval` week period by horizon. 
+
+### Historical accuracy 
+```{r historical Leaderboard HOSP accuracy}
+
+# a custom table container
+sketch_historical_accuracy = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 2, "Model"),
+      th(rowspan = 2, "# historical forecasts"),
+      th(colspan = 4, "Relative WIS"),
+      th(colspan = 4, "Relative MAE")
+    ),
+    tr(
+ lapply((c("1 wk","2 wk","3 wk","4 wk","1 wk","2 wk","3 wk","4 wk")), th)))))
+
+leaderboard_table_historical1<- leaderboard_table_historical %>%
+ arrange(relative_wis) %>%    
+    mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model)) %>%
+  select (model, "# historical forecasts",  "1 wk relWIS",  "2 wk relWIS","3 wk relWIS","4 wk relWIS","1 wk relMAE","2 wk relMAE","3 wk relMAE","4 wk relMAE") 
+
+datatable(leaderboard_table_historical1,
+            rownames= FALSE, 
+              options =  list(pageLength = 5, 
+                              # order = case_model_order_historical,
+                             autoWidth = TRUE,
+                             columnDefs = list(list(width = '100px', targets = "_all", render = render)), 
+                             ordering = TRUE),
+              # filter = c("top")
+          colnames = c("Model", "# historical forecasts",  "1 wk relWIS",  "2 wk relWIS","3 wk relWIS","4 wk relWIS","1 wk relMAE","2 wk relMAE","3 wk relMAE","4 wk relMAE"), container=sketch_historical_accuracy) 
+              filter = c("top")
+```
+** When comparing results, keep in mind that as of September 28, 2021 COVIDhub-ensemble only reports 14 day ahead forecasts for hospitalizations.
+
+To calculate each column in our table, different inclusion criteria were applied. This table only includes forecasts for the last `r n_weeks_history` weeks, since `r format(first_eval_sat_hist, "%B %d, %Y")`. The models included have submitted  at least 50% of forecasts during this time, where one forecast is a location, target, forecast date combination. The data are initially ordered  by model based on their relative WIS score aggregated across horizons, with the most accurate models at the top. 
+
+* The column titled, "# historical forecasts" lists the number of forecasts a team has submitted with a target end date over the most recent `r n_weeks_history` week period.
+
+* Columns 3 through 6 calculate the adjusted relative WIS over the most recent `r n_weeks_history` week period by horizon.
+
+* Columns 7 through 10 calculate the adjusted relative MAE over the most recent `r n_weeks_history` week period by horizon. 
+
+
+```{r inclusion in coverage table recent HOSP}
+#Filtered to include only models in scoreboard (coverage table) 
+#at least 5 weeks overall or at least 2 out of the last 3 weeks 
+hosp_coverage_recent <- recent_coverage_filter(score_hosp_all)
+hosp_coverage_historical <- historical_coverage_filter(score_hosp_all)
+
+#number of forecasts by model 
+hosp_countc_fcasts_recent <-  hosp_coverage_recent %>% group_by(model,score_name) %>%
+    summarise(n_forecasts_50 = sum(score_name == "coverage_50" & !is.na(score_value)),
+           n_forecasts_95 = sum(score_name == "coverage_95" & !is.na(score_value))) %>% ungroup() %>%
+  mutate(n_fcast = ifelse(n_forecasts_50 > 0, n_forecasts_50, n_forecasts_95)) %>%
+  group_by(model) %>%
+  summarise("# recent forecasts" = max(n_fcast)) 
+
+hosp_countc_fcasts_historical <-  hosp_coverage_historical %>% group_by(model,score_name) %>%
+    summarise(n_forecasts_50 = sum(score_name == "coverage_50" & !is.na(score_value)),
+           n_forecasts_95 = sum(score_name == "coverage_95" & !is.na(score_value))) %>% ungroup() %>%
+  mutate(n_fcast = ifelse(n_forecasts_50 > 0, n_forecasts_50, n_forecasts_95)) %>%
+  group_by(model) %>%
+  summarise("# historical forecasts" = max(n_fcast)) 
+
+
+  
+
+  historical_calib_50 <-  score_hosp_all  %>% 
+    filter(n_weeks >= 5 |  n_weeks_3wksPrior >= 2) %>% 
+    filter(!is.na(score_value))  %>%
+    filter(score_name %in% c("coverage_50")) %>%
+    select(model,horizon,score_value,n_weeks)  %>%
+    group_by(model,horizon) %>%
+    summarise(mean_PI50 = round(sum(score_value, na.rm = TRUE) / n(),2)) %>%  
+  ungroup()  %>% 
+  pivot_wider(names_from = "horizon",values_from = "mean_PI50")  %>% 
+  rename("1 wk 50% coverage" = "1", "2 wk 50% coverage" = "2", "3 wk 50% coverage" = "3", "4 wk 50% coverage" = "4" ) %>% 
+  dplyr::rowwise() %>% 
+  dplyr::mutate(coverage_50 = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup()
+  
+  
+  recent_calib_50  <- score_hosp_all  %>%
+    filter(n_weeks >= 5 |  n_weeks_3wksPrior >= 2) %>% 
+    filter(!is.na(score_value))  %>%
+    filter(score_name %in% c("coverage_50")) %>%
+    filter(target_end_date >= first_eval_sat) %>%  droplevels() %>%
+    select(model,horizon,score_value)  %>%
+    group_by(model,horizon) %>%
+    summarise(mean_PI50 = round(sum(score_value, na.rm = TRUE) / n(),2)) %>%  
+  ungroup()  %>% 
+  pivot_wider(names_from = "horizon",values_from = "mean_PI50")  %>% 
+  rename("1 wk 50% coverage" = "1", "2 wk 50% coverage" = "2", "3 wk 50% coverage" = "3", "4 wk 50% coverage" = "4" ) %>% 
+  dplyr::rowwise() %>% 
+  dplyr::mutate(coverage_50 = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup() 
+ 
+  historical_calib_95 <-  score_hosp_all  %>% 
+    filter(n_weeks >= 5 |  n_weeks_3wksPrior >= 2) %>% 
+    filter(!is.na(score_value))  %>%
+    filter(score_name %in% c("coverage_95")) %>%
+    select(model,horizon,score_value)  %>%
+    group_by(model,horizon) %>%
+    summarise(mean_PI95 = round(sum(score_value, na.rm = TRUE) / n(),2)) %>%  
+  ungroup()  %>% 
+  pivot_wider(names_from = "horizon",values_from = "mean_PI95")  %>% 
+  rename("1 wk 95% coverage" = "1", "2 wk 95% coverage" = "2", "3 wk 95% coverage" = "3", "4 wk 95% coverage" = "4" ) %>% 
+  dplyr::rowwise() %>% 
+  dplyr::mutate(coverage_95 = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::mutate(diff_95 = abs(0.95-coverage_95)) %>% 
+  dplyr::ungroup()
+  
+  
+  recent_calib_95  <- score_hosp_all  %>%
+    filter(n_weeks >= 5 |  n_weeks_3wksPrior >= 2) %>% 
+    filter(!is.na(score_value))  %>%
+    filter(score_name %in% c("coverage_95")) %>%
+    filter(target_end_date >= first_eval_sat) %>%  droplevels() %>%
+    select(model,horizon,score_value)  %>%
+    group_by(model,horizon) %>%
+    summarise(mean_PI95 = round(sum(score_value, na.rm = TRUE) / n(),2)) %>%  
+  ungroup()  %>% 
+  pivot_wider(names_from = "horizon",values_from = "mean_PI95")  %>% 
+  rename("1 wk 95% coverage" = "1", "2 wk 95% coverage" = "2", "3 wk 95% coverage" = "3", "4 wk 95% coverage" = "4" ) %>% 
+  dplyr::rowwise() %>% 
+  dplyr::mutate(coverage_95 = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::mutate(diff_95 = abs(0.95-coverage_95)) %>% 
+  dplyr::ungroup()
+  
+  calibration_table  <- hosp_countc_fcasts_recent %>%
+  full_join(recent_calib_50) %>%
+  full_join(recent_calib_95) %>%
+  filter(!is.na(coverage_95) | !is.na(coverage_50)) %>% 
+  arrange(diff_95)
+  
+  calibration_table_hist  <- hosp_countc_fcasts_historical %>%
+  full_join(historical_calib_50) %>%
+  full_join(historical_calib_95) %>%
+  filter(!is.na("# historical forecasts"))  %>%
+  filter(!is.na("1 wk 50% coverage") | !is.na("1 wk 95% coverage")) %>%
+  filter(!is.na(coverage_95) | !is.na(coverage_50)) %>% 
+  arrange(diff_95)
+  
+render <- JS(
+  "function(data, type, row) {",
+  "  if(type === 'sort' && data === null) {",
+  "    return 999999;",
+  "  }",
+  "  return data;",
+  "}"
+)
+``` 
+
+```{r}
+calib_model_order <- calibration_table %>%   arrange(diff_95) %>% pull(model)
+calib_model_order_historical <- calibration_table_hist %>%   arrange(diff_95) %>% pull(model)
+```
+ 
+
+### Recent coverage
+
+This table only includes forecasts for the last `r n_weeks_eval` weeks, since `r format(first_eval_sat, "%B %d, %Y")`. For inclusion in this table,  a model must have contributed forecasts for 5 or more weeks total during this period, or have submitted forecasts during at least 2 out of the last 3 evaluated weeks. This inclusion criteria was applied in order to score models that submitted for a substantial amount of weeks at any point during the pandemic but may no longer be submitting, while also evaluating new teams that have recently joined our forecasting efforts. The data are initially ordered by model based on their 95% PI coverage, aggregated across horizons, with the most accurate models at the top. 
+
+
+```{r recent Leaderboard HOSP coverage}
+
+# a custom table container
+sketch_recent_coverage = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 2, "Model"),
+      th(rowspan = 2, "# recent forecasts"),
+      th(colspan = 4, "50% PI coverage"),
+      th(colspan = 4, "95% PI coverage")
+    ),
+    tr(
+ lapply((c("1 wk","2 wk","3 wk","4 wk","1 wk","2 wk","3 wk","4 wk")), th)))))
+
+calibration_table1<- calibration_table %>%
+ arrange(diff_95)%>%   
+    mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model)) %>%
+  select (model, "# recent forecasts",  "1 wk 50% coverage", "2 wk 50% coverage", "3 wk 50% coverage", "4 wk 50% coverage","1 wk 95% coverage", "2 wk 95% coverage", "3 wk 95% coverage", "4 wk 95% coverage") 
+
+datatable(calibration_table1,
+            rownames= FALSE, 
+              options =  list(pageLength = 5, 
+                              # order = list(list(2, 'asc')),
+                             autoWidth = TRUE,
+                             columnDefs = list(list(width = '100px', targets = "_all", render = render)), 
+                             ordering = TRUE),
+              # filter = c("top")
+          colnames = c("Model", "# recent forecasts",  "1 wk 50% coverage", "2 wk 50% coverage", "3 wk 50% coverage", "4 wk 50% coverage","1 wk 95% coverage", "2 wk 95% coverage", "3 wk 95% coverage", "4 wk 95% coverage"), container=sketch_recent_coverage) 
+```
+** When comparing results, keep in mind that as of September 28, 2021 COVIDhub-ensemble only reports 14 day ahead forecasts for hospitalizations.
+
+### Historical coverage
+
+This table only includes forecasts for the last `r n_weeks_history` weeks, since `r format(first_eval_sat_hist, "%B %d, %Y")`. For inclusion in this table, a model most have contributed forecasts for 5 or more weeks total during this period, or have submitted forecasts during at least 2 out of the last 3 evaluated weeks. This inclusion criteria was applied in order to score models that submitted for a substantial amount of weeks at any point during the pandemic but may no longer be submitting, while also evaluating new teams that have recently joined our forecasting efforts. The data are initially ordered by model based on their 95% PI coverage, aggregated across horizons, with the most accruate models at the top. 
+
+
+```{r historical Leaderboard HOSP coverage}
+# a custom table container
+sketch_historical_coverage = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 2, "Model"),
+      th(rowspan = 2, "# historical forecasts"),
+      th(colspan = 4, "50% PI coverage"),
+      th(colspan = 4, "95% PI coverage")
+    ),
+    tr(
+ lapply((c("1 wk","2 wk","3 wk","4 wk","1 wk","2 wk","3 wk","4 wk")), th)))))
+
+calibration_table_hist1<- calibration_table_hist %>%
+ arrange(diff_95) %>%    
+    mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model)) %>%
+  select (model, "# historical forecasts",  "1 wk 50% coverage", "2 wk 50% coverage", "3 wk 50% coverage", "4 wk 50% coverage","1 wk 95% coverage", "2 wk 95% coverage", "3 wk 95% coverage", "4 wk 95% coverage") 
+
+datatable(calibration_table_hist1,
+            rownames= FALSE, 
+              options =  list(pageLength = 5, 
+                              # order = list(list(2, 'asc')),
+                             autoWidth = TRUE,
+                             columnDefs = list(list(width = '100px', targets = "_all", render = render)), 
+                             ordering = TRUE),
+              # filter = c("top")
+          colnames = c("Model", "# recent forecasts",  "1 wk 50% coverage", "2 wk 50% coverage", "3 wk 50% coverage", "4 wk 50% coverage","1 wk 95% coverage", "2 wk 95% coverage", "3 wk 95% coverage", "4 wk 95% coverage"), container=sketch_recent_coverage) 
+
+```  
+** When comparing results, keep in mind that as of September 28, 2021 COVIDhub-ensemble only reports 14 day ahead forecasts for hospitalizations.
+
+
+## WIS components
+
+
+The data in this graph has been aggregated over all locations and submission weeks. We only included forecasts for the last 10 weeks. The models included have submitted  at least 50% of forecasts during this time. This is the same exclusion criteria applied for WIS scores in the recent evaluation period. 
+
+The sum of the bars adds up to the WIS score. Of note, these values may not be exactly the same as the relative WIS scores shown in the leaderboard table because these are not adjusted for weeks or locations missing.  The data are ordered on the x axis based on their relative WIS score shown in the accuracy table, aggregated across horizons. 
+
+
+```{r wis bar function HOSP, fig.height= 8, fig.width=13}
+# Add ** to COVIDhub-ensemble
+score_hosp_all <-   score_hosp_all  %>%
+    mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model)) 
+pairwise_scores <-   pairwise_scores  %>%
+    mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model))
+
+wis_barplot_function(x = score_hosp_all, y = pairwise_scores, order = hosp_model_order)
+```
+** When comparing results, keep in mind that as of September 28, 2021 COVIDhub-ensemble only reports 14 day ahead forecasts for hospitalizations.
+
+## Evaluation by Week  {.tabset .tabset-fade}
+
+In the following figures, we have evaluated models across multiple forecasting weeks. Points included in this comparison are for models that have submitted probabilistic forecasts for all 50 states. 
+
+For the first 2 figures, WIS is used as a metric. The first figure shows the mean WIS across all 50 states for submission weeks beginning `r format(first_eval_sat_hist, "%B %d, %Y")` at a 1 week horizon. The second figure shows the mean WIS aggregated across locations, however it is for a 4 week horizon.  Since hospitalization forecasts are made at the daily timescale, computations for a given "week" are computed by averaging scores for the daily forecasts from Tuesday through Monday.
+
+
+### 1 Week Horizon WIS
+```{r,fig.width=10, fig.height=6}
+#aggregate to weekly
+score_hosp_all_wk <- score_hosp_all %>%
+  rename(horz_day = horizon)  %>%
+  mutate(horizon = ceiling(horz_day/7))   %>%
+  mutate(timezero = submission_sat+2)   %>%
+ group_by(model,score_name,location,timezero,horizon) %>% summarize(score_value = mean(score_value))  %>%
+ mutate(target_end_date = timezero + horizon*7) 
+
+byweek_case <- by_week_function(score_hosp_all, var = "wis")
+# find 97.5 percentile
+b<-byweek_case %>%
+  filter(horizon == "4") 
+p975<-quantile(b$mean_score,probs=.975, na.rm = TRUE)
+
+by_week_wis_1wk <- plot_byweek_function(byweek_case, var = "WIS", horizon_num = "1") + coord_cartesian(ylim=c(0, p975))
+ggplotly(by_week_wis_1wk, tooltip = c("label", "labelx", "labely"))
+```
+
+### 4 Week Horizon WIS
+
+In this figure, the dotted black line represents the average 1 week ahead error across all models. There is often larger error for the 4 week horizon compared to the 1 week horizon. 
+
+```{r,fig.width=10, fig.height=6}
+#calc 1 week error
+meanwis_1wk <- byweek_case %>%
+  filter(horizon == "1") %>%
+  group_by(target_end_date) %>%
+  summarise(mean_score = mean(mean_score, na.rm = TRUE)) %>%
+  mutate(model = "`average error for 1 week horizon`",
+         horizon = "4") %>%
+  select(model, horizon, target_end_date, mean_score)
+  
+by_week_wis_4wk <- plot_byweek_function(byweek_case, var = "WIS", horizon_num = "4") +
+   geom_line(data = meanwis_1wk, aes(label = model, x = target_end_date, y = mean_score), alpha=.5, color = "black", linetype = 2) +
+  geom_point(data = meanwis_1wk, aes(x = target_end_date, y = mean_score), alpha=.5, size = 2, color = "black") + coord_cartesian(ylim=c(0, p975))
+ggplotly(by_week_wis_4wk,tooltip = c("label", "labelx", "labely"))
+```
+
+
+### 1 Week Horizon 95% PI Coverage
+
+We would expect a well-calibrated model to have a value of 95% in this plot. 
+
+```{r,fig.width=10, fig.height=6}
+byweek_case <- by_week_function(score_hosp_all, var = "coverage_95")
+by_week_wis_1wk <- plot_byweek_function(byweek_case, var = "95% PI Coverage", horizon_num = "1") +
+  geom_hline(yintercept = .95)
+ggplotly(by_week_wis_1wk,tooltip = c("label", "labelx", "labely"))
+```
+
+### 4 Week Horizon 95% PI Coverage
+
+We would expect a well-calibrated model to have a value of 95% in this plot. There is typically larger error for the 4 week horizon compared to the 1 week horizon. 
+
+```{r,fig.width=10, fig.height=6}
+by_week_wis_4wk <- plot_byweek_function(byweek_case, var = "95% PI Coverage", horizon_num = "4") +
+  geom_hline(yintercept = .95)
+
+ggplotly(by_week_wis_4wk, tooltip = c("label", "labelx", "labely")) 
+```
+
+
+
+## Evaluation by location {.tabset .tabset-fade}
+
+This figures below show recent model performance stratified by location. We only included forecasts for the last 10 weeks. Models were included if they had submitted forecasts for all 4 horizons and submitted  at least 50% of forecasts during this time, where one forecast is a location, target, forecast date combination.   Locations are sorted by cumulative hospitalization counts.
+
+The color scheme shows the WIS score relative to the baseline, across all horizons. The only locations evaluated are 50 states and a national level forecast. The data are ordered on the x axis based on their relative WIS score shown in the accuracy table, aggregated across horizons.  
+
+
+```{r, fig.width=12, fig.height=16}
+# Add ** to COVIDhub-ensemble
+hosp_accuracy_recent <-   hosp_accuracy_recent  %>%
+    mutate(model = ifelse(model == "COVIDhub-ensemble", "COVIDhub-ensemble**",model)) 
+
+plot_by_location_wis(hosp_accuracy_recent, order = hosp_model_order, location_order  = location_order_hosp)
+```
+** When comparing results, keep in mind that as of September 28, 2021 COVIDhub-ensemble only reports 14 day ahead forecasts for hospitalizations.
+
+## Evaluation Periods  {.tabset .tabset-fade}
+
+
+This figure shows the number of incident reported Daily COVID-19 hospitalizations reported in the US. The period between the vertical blue line and the black shows the weeks included in the "recent" model evaluations. The period between the vertical red line and the black shows the weeks included in the "historical" model evaluations.
+
+```{r, fig.width=8, fig.height=5}
+truth_US_hosp <- truth_dat_hosp_all %>%
+  filter(location == "US")
+
+plot_truth(dat = truth_US_hosp, tar="Daily reported COVID-19 Hospitalizations")
+```
+
+# Incident Death Forecasts {.tabset .tabset-fade}
+
+
+## Summary Tables {.tabset .tabset-fade}
+
+Due to technical issues Ohio has with reporting deaths, the most recent 4 weeks of death data for Ohio will not be included in this evaluation.
+
+The first and second tables evaluate recent/historical forecast models based on their WIS and MAE by horizon.  
+
+The third and fourth tables evaluate recent/historical forecast models based on their prediction interval coverage at the 50% and 95% levels by horizon. 
+
+Scores are aggregated separately for the most recent 10 weeks and for 26 historical weeks. 
+
+<!--The table included below evaluated models based on their prediction interval coverage (50% and 95% coverage), and their adjusted relative weighted interval scores (WIS) and adjusted relative mean absolute error (MAE) for a recent and historical number of weeks. 
+
+* The **prediction interval coverage**  measures  the proportion of times a prediction interval of a certain level covered the true value, to assess the degree to which forecasts accurately characterized uncertainty about future observations. Well calibrated models should have a 50% coverage level of 0.5 and a 95% coverage level of 0.95. 
+
+* The **weighted interval score (WIS)** is a proper score that combines a set of interval scores for probabilistic forecasts that provide quantiles of the predictive forecast distribution. To account for the variation in difficult of forecasting different weeks and locations, a pairwis approach was used to calculated the relative adjusted WIS. The code for this comparison can be found [here](https://github.com/jbracher/pairwise_comparisons). A preprint on this method for calculating the WIS can be found [here](https://arxiv.org/pdf/2005.12881.pdf). Models with an adjusted relative WIS  lower than 1 are more accurate than the baseline, and models with an adjusted relative WIS greater than 1 are less accurate than the baseline is predicting the number of incident cases. 
+
+* The **mean absolute error (MAE)** is defined as the the difference between the forecasted value and the actual value. For this calculation, point forecasts submitted by teams were used. When point forecasts were not available, the 0.50 quantile was used. Similar to calculating the WIS, a pairwise approach was used to account for variation across locations and weeks. Models with an adjusted relative MAE lower than 1 are more accurate than the baseline, and models with an adjusted relative MAE greater than 1 are less accurate than the baseline is predicting the number of incident cases. 
+-->
+ 
+Inclusion criteria for each column are detailed below the table. 
+
+
+```{r  recent relative wis  DEATHs}
+#at least 50% of recent WIS or 50% of recent MAE
+inc_accuracy_recent <- recent_accuracy_filter(score_inc_all_ohio,first_eval_sat)
+
+inc_scores <- inc_accuracy_recent %>%
+  filter(!is.na(score_value)) %>%
+  filter(n_locations >= 25) %>% 
+  filter(n_weeks >= 4) %>%
+  droplevels()
+
+# bring all timezeros to Saturday:
+inc_scores$timezero <- inc_scores$submission_sat 
+
+# restrict to 1-4 wk ahead state-level 
+scores <- inc_scores %>% filter(horizon %in% paste(1:4), location %in% US_fips) %>%
+  filter(score_name %in% c("abs_error", "wis")) %>%
+  select("model", "timezero", "location", "horizon", "score_name", "score_value") %>%
+  pivot_wider(names_from = score_name, values_from = score_value) %>%
+  filter(!is.na(wis)) %>%
+  droplevels()
+
+
+# the included models:
+models <- unique(scores$model)
+
+
+# matrices to store:
+results_ratio_hzn1 <- matrix(ncol = length(models),
+                             nrow = length(models),
+                             dimnames = list(models, models))
+results_ratio_list <- list(results_ratio_hzn1, results_ratio_hzn1,
+                           results_ratio_hzn1, results_ratio_hzn1)
+
+set.seed(123) # set seed for permutation tests
+
+for(mx in seq_along(models)){
+  for(my in 1:mx){
+    for(hzn in 1:4){
+      pwc <- pairwise_comparison(scores = filter(scores, horizon==hzn), 
+                                 mx = models[mx], 
+                                 my = models[my],
+                                 permutation_test = FALSE)
+      
+      results_ratio_list[[hzn]][mx, my] <- pwc$ratio
+      results_ratio_list[[hzn]][my, mx] <- 1/pwc$ratio
+    }
+  }
+}
+
+ind_baseline <- which(rownames(results_ratio_list[[1]]) == "COVIDhub-baseline")
+geom_mean_ratios_hzn1 <- exp(rowMeans(log(results_ratio_list[[1]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn2 <- exp(rowMeans(log(results_ratio_list[[2]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn3 <- exp(rowMeans(log(results_ratio_list[[3]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn4 <- exp(rowMeans(log(results_ratio_list[[4]][, -ind_baseline]), na.rm = TRUE))
+
+ratios_baseline_raw_hzn1 <- results_ratio_list[[1]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn2 <- results_ratio_list[[2]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn3 <- results_ratio_list[[3]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn4 <- results_ratio_list[[4]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+
+ratios_baseline_adj_hzn1 <- geom_mean_ratios_hzn1/geom_mean_ratios_hzn1["COVIDhub-baseline"]
+ratios_baseline_adj_hzn2 <- geom_mean_ratios_hzn2/geom_mean_ratios_hzn2["COVIDhub-baseline"]
+ratios_baseline_adj_hzn3 <- geom_mean_ratios_hzn3/geom_mean_ratios_hzn3["COVIDhub-baseline"]
+ratios_baseline_adj_hzn4 <- geom_mean_ratios_hzn4/geom_mean_ratios_hzn4["COVIDhub-baseline"]
+
+tab <- data.frame(model = c(names(geom_mean_ratios_hzn1), 
+                            names(geom_mean_ratios_hzn2),
+                            names(geom_mean_ratios_hzn3), 
+                            names(geom_mean_ratios_hzn4)),
+                  horizon = rep(1:4, each=length(geom_mean_ratios_hzn1)),
+                  geom_mean_ratios = c(geom_mean_ratios_hzn1,
+                                       geom_mean_ratios_hzn2,
+                                       geom_mean_ratios_hzn3,
+                                       geom_mean_ratios_hzn4),
+                  ratios_baseline_raw = c(ratios_baseline_raw_hzn1,
+                                          ratios_baseline_raw_hzn2,
+                                          ratios_baseline_raw_hzn3,
+                                          ratios_baseline_raw_hzn4),
+                  ratios_baseline_adj = c(ratios_baseline_adj_hzn1,
+                                          ratios_baseline_adj_hzn2,
+                                          ratios_baseline_adj_hzn3,
+                                          ratios_baseline_adj_hzn4)
+                  )
+
+
+tab <- tab[order(tab$horizon,tab$ratios_baseline_adj), ]
+
+
+pairwise_scores <- tab %>%
+  mutate(relative_wis = round(ratios_baseline_adj, 2)) %>%
+  select(model, horizon, relative_wis)  %>%
+  pivot_wider(names_from = "horizon",values_from = "relative_wis")  %>% 
+  rename("1 wk relWIS" = "1", "2 wk relWIS" = "2", "3 wk relWIS" = "3", "4 wk relWIS" = "4" ) %>%
+  dplyr::rowwise() %>% 
+  dplyr::mutate(relative_wis = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup() %>%   
+  arrange(relative_wis)
+```
+
+```{r recent relative mae  DEATHs}
+# matrices to store:
+results_ratio_hzn1 <- matrix(ncol = length(models),
+                             nrow = length(models),
+                             dimnames = list(models, models))
+results_ratio_list <- list(results_ratio_hzn1, results_ratio_hzn1,
+                           results_ratio_hzn1, results_ratio_hzn1)
+
+set.seed(123) # set seed for permutation tests
+
+for(mx in seq_along(models)){
+  for(my in 1:mx){
+    for(hzn in 1:4){
+      pwc <- pairabs_comparison(scores = filter(scores, horizon==hzn), 
+                                 mx = models[mx], 
+                                 my = models[my],
+                                 permutation_test = FALSE)
+      
+      results_ratio_list[[hzn]][mx, my] <- pwc$ratio
+      results_ratio_list[[hzn]][my, mx] <- 1/pwc$ratio
+    }
+  }
+}
+
+ind_baseline <- which(rownames(results_ratio_list[[1]]) == "COVIDhub-baseline")
+geom_mean_ratios_hzn1 <- exp(rowMeans(log(results_ratio_list[[1]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn2 <- exp(rowMeans(log(results_ratio_list[[2]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn3 <- exp(rowMeans(log(results_ratio_list[[3]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn4 <- exp(rowMeans(log(results_ratio_list[[4]][, -ind_baseline]), na.rm = TRUE))
+
+ratios_baseline_raw_hzn1 <- results_ratio_list[[1]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn2 <- results_ratio_list[[2]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn3 <- results_ratio_list[[3]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn4 <- results_ratio_list[[4]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+
+ratios_baseline_adj_hzn1 <- geom_mean_ratios_hzn1/geom_mean_ratios_hzn1["COVIDhub-baseline"]
+ratios_baseline_adj_hzn2 <- geom_mean_ratios_hzn2/geom_mean_ratios_hzn2["COVIDhub-baseline"]
+ratios_baseline_adj_hzn3 <- geom_mean_ratios_hzn3/geom_mean_ratios_hzn3["COVIDhub-baseline"]
+ratios_baseline_adj_hzn4 <- geom_mean_ratios_hzn4/geom_mean_ratios_hzn4["COVIDhub-baseline"]
+
+tab <- data.frame(model = c(names(geom_mean_ratios_hzn1), 
+                            names(geom_mean_ratios_hzn2),
+                            names(geom_mean_ratios_hzn3), 
+                            names(geom_mean_ratios_hzn4)),
+                  horizon = rep(1:4, each=length(geom_mean_ratios_hzn1)),
+                  geom_mean_ratios = c(geom_mean_ratios_hzn1,
+                                       geom_mean_ratios_hzn2,
+                                       geom_mean_ratios_hzn3,
+                                       geom_mean_ratios_hzn4),
+                  ratios_baseline_raw = c(ratios_baseline_raw_hzn1,
+                                          ratios_baseline_raw_hzn2,
+                                          ratios_baseline_raw_hzn3,
+                                          ratios_baseline_raw_hzn4),
+                  ratios_baseline_adj = c(ratios_baseline_adj_hzn1,
+                                          ratios_baseline_adj_hzn2,
+                                          ratios_baseline_adj_hzn3,
+                                          ratios_baseline_adj_hzn4)
+                  )
+
+
+tab <- tab[order(tab$horizon,tab$ratios_baseline_adj), ]
+
+
+pairwise_scores_mae <- tab %>%
+  mutate(relative_mae = round(ratios_baseline_adj, 2)) %>%
+  select(model, horizon, relative_mae)  %>%
+  pivot_wider(names_from = "horizon",values_from = "relative_mae")  %>% 
+
+  rename("1 wk relMAE" = "1", "2 wk relMAE" = "2", "3 wk relMAE" = "3", "4 wk relMAE" = "4" ) %>%
+  dplyr::rowwise() %>% 
+  dplyr::mutate(relative_mae = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup() %>% 
+  arrange(relative_mae)
+```
+
+
+```{r historical relative WIS DEATH}
+inc_scores <- inc_accuracy_historical %>%
+  filter(n_locations >= 25) %>%
+  filter(n_weeks >= 4) %>%
+  droplevels()
+
+# bring all timezeros to Saturday:
+inc_scores$timezero <- inc_scores$submission_sat
+
+# restrict to 1-4 wk ahead state-level
+scores <- inc_scores %>% filter(horizon %in% paste(1:4),  location %in% US_fips) %>%
+  filter(!is.na(score_value)) %>%
+  select("model", "timezero", "location", "horizon", "score_name", "score_value") %>%
+  filter(score_name %in% c("abs_error", "wis")) %>%
+  pivot_wider(names_from = score_name, values_from = score_value) %>% filter(!is.na(wis))
+
+# the included models:
+models <- unique(scores$model)
+
+
+
+# matrices to store:
+results_ratio_hzn1 <- matrix(ncol = length(models),
+                             nrow = length(models),
+                             dimnames = list(models, models))
+results_ratio_list <- list(results_ratio_hzn1, results_ratio_hzn1,
+                           results_ratio_hzn1, results_ratio_hzn1)
+
+set.seed(123) # set seed for permutation tests
+
+for(mx in seq_along(models)){
+  for(my in 1:mx){
+    for(hzn in 1:4){
+      pwc <- pairwise_comparison(scores = filter(scores, horizon==hzn), 
+                                 mx = models[mx], 
+                                 my = models[my],
+                                 permutation_test = FALSE)
+      
+      results_ratio_list[[hzn]][mx, my] <- pwc$ratio
+      results_ratio_list[[hzn]][my, mx] <- 1/pwc$ratio
+    }
+  }
+}
+
+ind_baseline <- which(rownames(results_ratio_list[[1]]) == "COVIDhub-baseline")
+geom_mean_ratios_hzn1 <- exp(rowMeans(log(results_ratio_list[[1]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn2 <- exp(rowMeans(log(results_ratio_list[[2]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn3 <- exp(rowMeans(log(results_ratio_list[[3]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn4 <- exp(rowMeans(log(results_ratio_list[[4]][, -ind_baseline]), na.rm = TRUE))
+
+ratios_baseline_raw_hzn1 <- results_ratio_list[[1]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn2 <- results_ratio_list[[2]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn3 <- results_ratio_list[[3]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn4 <- results_ratio_list[[4]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+
+ratios_baseline_adj_hzn1 <- geom_mean_ratios_hzn1/geom_mean_ratios_hzn1["COVIDhub-baseline"]
+ratios_baseline_adj_hzn2 <- geom_mean_ratios_hzn2/geom_mean_ratios_hzn2["COVIDhub-baseline"]
+ratios_baseline_adj_hzn3 <- geom_mean_ratios_hzn3/geom_mean_ratios_hzn3["COVIDhub-baseline"]
+ratios_baseline_adj_hzn4 <- geom_mean_ratios_hzn4/geom_mean_ratios_hzn4["COVIDhub-baseline"]
+
+tab <- data.frame(model = c(names(geom_mean_ratios_hzn1), 
+                            names(geom_mean_ratios_hzn2),
+                            names(geom_mean_ratios_hzn3), 
+                            names(geom_mean_ratios_hzn4)),
+                  horizon = rep(1:4, each=length(geom_mean_ratios_hzn1)),
+                  geom_mean_ratios = c(geom_mean_ratios_hzn1,
+                                       geom_mean_ratios_hzn2,
+                                       geom_mean_ratios_hzn3,
+                                       geom_mean_ratios_hzn4),
+                  ratios_baseline_raw = c(ratios_baseline_raw_hzn1,
+                                          ratios_baseline_raw_hzn2,
+                                          ratios_baseline_raw_hzn3,
+                                          ratios_baseline_raw_hzn4),
+                  ratios_baseline_adj = c(ratios_baseline_adj_hzn1,
+                                          ratios_baseline_adj_hzn2,
+                                          ratios_baseline_adj_hzn3,
+                                          ratios_baseline_adj_hzn4)
+                  )
+
+
+tab <- tab[order(tab$horizon,tab$ratios_baseline_adj), ]
+
+
+historical_wis <- tab %>%
+  mutate(relative_wis_historical  = round(ratios_baseline_adj, 2)) %>%
+  select(model, horizon, relative_wis_historical) %>% 
+  pivot_wider(names_from = "horizon",values_from = "relative_wis_historical")  %>% 
+  rename("1 wk relWIS" = "1", "2 wk relWIS" = "2", "3 wk relWIS" = "3", "4 wk relWIS" = "4" )  %>%
+    dplyr::rowwise() %>% 
+  dplyr::mutate(relative_wis = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup() %>% 
+  arrange(relative_wis)
+```
+
+```{r historical relative MAE DEATHS}
+
+# matrices to store:
+results_ratio_hzn1 <- matrix(ncol = length(models),
+                             nrow = length(models),
+                             dimnames = list(models, models))
+results_ratio_list <- list(results_ratio_hzn1, results_ratio_hzn1,
+                           results_ratio_hzn1, results_ratio_hzn1)
+
+set.seed(123) # set seed for permutation tests
+
+for(mx in seq_along(models)){
+  for(my in 1:mx){
+    for(hzn in 1:4){
+      pwc <- pairabs_comparison(scores = filter(scores, horizon==hzn), 
+                                 mx = models[mx], 
+                                 my = models[my],
+                                 permutation_test = FALSE)
+      
+      results_ratio_list[[hzn]][mx, my] <- pwc$ratio
+      results_ratio_list[[hzn]][my, mx] <- 1/pwc$ratio
+    }
+  }
+}
+
+ind_baseline <- which(rownames(results_ratio_list[[1]]) == "COVIDhub-baseline")
+geom_mean_ratios_hzn1 <- exp(rowMeans(log(results_ratio_list[[1]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn2 <- exp(rowMeans(log(results_ratio_list[[2]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn3 <- exp(rowMeans(log(results_ratio_list[[3]][, -ind_baseline]), na.rm = TRUE))
+geom_mean_ratios_hzn4 <- exp(rowMeans(log(results_ratio_list[[4]][, -ind_baseline]), na.rm = TRUE))
+
+ratios_baseline_raw_hzn1 <- results_ratio_list[[1]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn2 <- results_ratio_list[[2]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn3 <- results_ratio_list[[3]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+ratios_baseline_raw_hzn4 <- results_ratio_list[[4]][, "COVIDhub-baseline"] ## avgWIS_model / avgWIS_baseline
+
+ratios_baseline_adj_hzn1 <- geom_mean_ratios_hzn1/geom_mean_ratios_hzn1["COVIDhub-baseline"]
+ratios_baseline_adj_hzn2 <- geom_mean_ratios_hzn2/geom_mean_ratios_hzn2["COVIDhub-baseline"]
+ratios_baseline_adj_hzn3 <- geom_mean_ratios_hzn3/geom_mean_ratios_hzn3["COVIDhub-baseline"]
+ratios_baseline_adj_hzn4 <- geom_mean_ratios_hzn4/geom_mean_ratios_hzn4["COVIDhub-baseline"]
+
+tab <- data.frame(model = c(names(geom_mean_ratios_hzn1), 
+                            names(geom_mean_ratios_hzn2),
+                            names(geom_mean_ratios_hzn3), 
+                            names(geom_mean_ratios_hzn4)),
+                  horizon = rep(1:4, each=length(geom_mean_ratios_hzn1)),
+                  geom_mean_ratios = c(geom_mean_ratios_hzn1,
+                                       geom_mean_ratios_hzn2,
+                                       geom_mean_ratios_hzn3,
+                                       geom_mean_ratios_hzn4),
+                  ratios_baseline_raw = c(ratios_baseline_raw_hzn1,
+                                          ratios_baseline_raw_hzn2,
+                                          ratios_baseline_raw_hzn3,
+                                          ratios_baseline_raw_hzn4),
+                  ratios_baseline_adj = c(ratios_baseline_adj_hzn1,
+                                          ratios_baseline_adj_hzn2,
+                                          ratios_baseline_adj_hzn3,
+                                          ratios_baseline_adj_hzn4)
+                  )
+
+
+tab <- tab[order(tab$horizon,tab$ratios_baseline_adj), ]
+
+
+historical_mae <- tab %>%
+  mutate(relative_mae = round(ratios_baseline_adj, 2)) %>%
+  select(model, horizon, relative_mae)  %>%
+  pivot_wider(names_from = "horizon",values_from = "relative_mae")  %>% 
+  rename("1 wk relMAE" = "1", "2 wk relMAE" = "2", "3 wk relMAE" = "3", "4 wk relMAE" = "4" ) %>%
+    dplyr::rowwise() %>% 
+  dplyr::mutate(relative_mae = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup() %>% 
+  arrange(relative_mae)
+```
+
+
+
+```{r counts of forecasts by model and create leaderboards for DEATHS accuracy}
+inc_count_fcasts_recent <-  inc_accuracy_recent %>% group_by(model,score_name) %>%
+    summarise(n_forecasts_wis = sum(score_name == "wis" & !is.na(score_value)),
+           n_forecasts_mae = sum(score_name == "abs_error" & !is.na(score_value))) %>% ungroup() %>%
+  mutate(n_fcast = ifelse(n_forecasts_wis > 0, n_forecasts_wis, n_forecasts_mae)) %>%
+  group_by(model) %>%
+  summarise("# recent forecasts" = max(n_fcast))
+
+inc_count_fcasts_historical <-  inc_accuracy_historical %>% group_by(model,score_name) %>%
+    summarise(n_forecasts_wis = sum(score_name == "wis" & !is.na(score_value)),
+           n_forecasts_mae = sum(score_name == "abs_error" & !is.na(score_value))) %>% ungroup() %>%
+  mutate(n_fcast = ifelse(n_forecasts_wis > 0, n_forecasts_wis, n_forecasts_mae)) %>%
+  group_by(model) %>%
+  summarise("# historical forecasts" = max(n_fcast)) %>%
+ ungroup()
+  
+leaderboard_table <- inc_count_fcasts_recent %>%
+  full_join(pairwise_scores) %>%
+  full_join(pairwise_scores_mae) %>%
+  filter(!is.na(relative_mae) | !is.na(relative_wis)) %>% 
+  arrange(relative_wis)
+
+
+leaderboard_table_historical <- inc_count_fcasts_historical %>%
+  full_join(historical_wis, by = c("model")) %>%
+  full_join(historical_mae, by = c("model")) %>%
+  filter(!is.na(relative_mae) | !is.na(relative_wis)) %>% 
+  arrange(relative_wis)
+
+render <- JS(
+  "function(data, type, row) {",
+  "  if(type === 'sort' && data === null) {",
+  "    return 999999;",
+  "  }",
+  "  return data;",
+  "}"
+)
+```
+
+
+```{r}
+inc_model_order <- leaderboard_table %>%   arrange(relative_wis) %>% pull(model)
+inc_model_order_historical <- leaderboard_table_historical %>%   arrange(relative_wis) %>% pull(model)
+```
+
+
+### Recent accuracy 
+```{r recent Leaderboard DEATHS accuracy}
+
+# a custom table container
+sketch_recent_accuracy = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 2, "Model"),
+      th(rowspan = 2, "# recent forecasts"),
+      th(colspan = 4, "Relative WIS"),
+      th(colspan = 4, "Relative MAE")
+    ),
+    tr(
+ lapply((c("1 wk","2 wk","3 wk","4 wk","1 wk","2 wk","3 wk","4 wk")), th)))))
+
+leaderboard_table1<- leaderboard_table %>%
+ arrange(relative_wis) %>%    
+  select (model, "# recent forecasts",  "1 wk relWIS",  "2 wk relWIS","3 wk relWIS","4 wk relWIS","1 wk relMAE","2 wk relMAE","3 wk relMAE","4 wk relMAE") 
+
+datatable(leaderboard_table1,
+            rownames= FALSE, 
+              options =  list(pageLength = 5, 
+                              # order = case_model_order,
+                             autoWidth = TRUE,
+                             columnDefs = list(list(width = '100px', targets = "_all", render = render)), 
+                             ordering = TRUE),
+              # filter = c("top")
+          colnames = c("Model", "# recent forecasts",  "1 wk relWIS",  "2 wk relWIS","3 wk relWIS","4 wk relWIS","1 wk relMAE","2 wk relMAE","3 wk relMAE","4 wk relMAE"), container=sketch_recent_accuracy) 
+              filter = c("top")
+
+```
+
+To calculate each column in our table, different inclusion criteria were applied. This table only includes forecasts for the last `r n_weeks_eval` weeks, since `r format(first_eval_sat, "%B %d, %Y")`.The models included have submitted  at least 50% of forecasts during this time, where one forecast is a location, target, forecast date combination.  The data are initially ordered by model based on their relative WIS score aggregated across horizons, with the most accurate models at the top. 
+
+
+* The column titled, "# recent forecasts" lists the number of forecasts a team has submitted with a target end date over the most recent `r n_weeks_eval` week period.
+
+* Columns 3 through 6 calculate the adjusted relative WIS over the most recent `r n_weeks_eval` week period by horizon.
+
+* Columns 7 through 10 calculate the adjusted relative MAE over the most recent `r n_weeks_eval` week period by horizon. 
+
+
+### Historical accuracy 
+```{r historical Leaderboard DEATHS accuracy}
+
+# a custom table container
+sketch_historical_accuracy = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 2, "Model"),
+      th(rowspan = 2, "# historical forecasts"),
+      th(colspan = 4, "Relative WIS"),
+      th(colspan = 4, "Relative MAE")
+    ),
+    tr(
+ lapply((c("1 wk","2 wk","3 wk","4 wk","1 wk","2 wk","3 wk","4 wk")), th)))))
+
+leaderboard_table_historical1<- leaderboard_table_historical %>%
+ arrange(relative_wis) %>%    
+  select (model, "# historical forecasts",  "1 wk relWIS",  "2 wk relWIS","3 wk relWIS","4 wk relWIS","1 wk relMAE","2 wk relMAE","3 wk relMAE","4 wk relMAE") 
+
+datatable(leaderboard_table_historical1,
+            rownames= FALSE, 
+              options =  list(pageLength = 5, 
+                              # order = case_model_order_historical,
+                             autoWidth = TRUE,
+                             columnDefs = list(list(width = '100px', targets = "_all", render = render)), 
+                             ordering = TRUE),
+              # filter = c("top")
+          colnames = c("Model", "# historical forecasts",  "1 wk relWIS",  "2 wk relWIS","3 wk relWIS","4 wk relWIS","1 wk relMAE","2 wk relMAE","3 wk relMAE","4 wk relMAE"), container=sketch_historical_accuracy) 
+              filter = c("top")
+```
+
+
+To calculate each column in our table, different inclusion criteria were applied. This table only includes forecasts for the last `r n_weeks_history` weeks, since `r format(first_eval_sat_hist, "%B %d, %Y")`. The models included have submitted  at least 50% of forecasts during this time, where one forecast is a location, target, forecast date combination. The data are initially  ordered based on their relative WIS score aggregated across horizons.  
+
+* The column titled, "# historical forecasts" lists the number of forecasts a team has submitted with a target end date over the most recent `r n_weeks_history` week period.
+
+* Columns 3 through 6 calculate the adjusted relative WIS over the most recent `r n_weeks_history` week period by horizon.
+
+* Columns 7 through 10 calculate the adjusted relative MAE over the most recent `r n_weeks_history` week period by horizon. 
+
+
+For inclusion in this table, a model most have contributed forecasts for 5 or more weeks total since `r format(first_eval_sat_hist, "%B %d, %Y")`, or have submitted forecasts during at least 2 out of the last 3 evaluated weeks. This inclusion criteria was applied in order to score models that submitted for a substantial amount of weeks at any point during the pandemic but may no longer be submitting, while also evaluating new teams that have recently joined our forecasting efforts. 
+
+
+```{r inclusion in coverage table recent: DEATHS}
+#Filtered to include only models in scoreboard (coverage table) 
+#at least 5 weeks overall or at least 2 out of the last 3 weeks 
+inc_coverage_recent <- recent_coverage_filter(score_inc_all_ohio)
+inc_coverage_historical <- historical_coverage_filter(score_inc_all_ohio)
+
+#number of forecasts by model 
+inc_countc_fcasts_recent <-  inc_coverage_recent %>% group_by(model,score_name) %>%
+    summarise(n_forecasts_50 = sum(score_name == "coverage_50" & !is.na(score_value)),
+           n_forecasts_95 = sum(score_name == "coverage_95" & !is.na(score_value))) %>% ungroup() %>%
+  mutate(n_fcast = ifelse(n_forecasts_50 > 0, n_forecasts_50, n_forecasts_95)) %>%
+  group_by(model) %>%
+  summarise("# recent forecasts" = max(n_fcast)) 
+
+inc_countc_fcasts_historical <-  inc_coverage_historical %>% group_by(model,score_name) %>%
+    summarise(n_forecasts_50 = sum(score_name == "coverage_50" & !is.na(score_value)),
+           n_forecasts_95 = sum(score_name == "coverage_95" & !is.na(score_value))) %>% ungroup() %>%
+  mutate(n_fcast = ifelse(n_forecasts_50 > 0, n_forecasts_50, n_forecasts_95)) %>%
+  group_by(model) %>%
+  summarise("# historical forecasts" = max(n_fcast)) 
+
+  
+  historical_calib_50 <-  score_inc_all_ohio  %>% 
+    filter(n_weeks >= 5 |  n_weeks_3wksPrior >= 2) %>% 
+    filter(!is.na(score_value))  %>%
+    filter(score_name %in% c("coverage_50")) %>%
+    select(model,horizon,score_value,n_weeks)  %>%
+    group_by(model,horizon) %>%
+    summarise(mean_PI50 = round(sum(score_value, na.rm = TRUE) / n(),2)) %>%  
+  ungroup()  %>% 
+  pivot_wider(names_from = "horizon",values_from = "mean_PI50")  %>% 
+  rename("1 wk 50% coverage" = "1", "2 wk 50% coverage" = "2", "3 wk 50% coverage" = "3", "4 wk 50% coverage" = "4" ) %>% 
+  dplyr::rowwise() %>% 
+  dplyr::mutate(coverage_50 = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup()
+  
+  
+  recent_calib_50  <- score_inc_all_ohio  %>%
+    filter(n_weeks >= 5 |  n_weeks_3wksPrior >= 2) %>% 
+    filter(!is.na(score_value))  %>%
+    filter(score_name %in% c("coverage_50")) %>%
+    filter(target_end_date >= first_eval_sat) %>%  droplevels() %>%
+    select(model,horizon,score_value)  %>%
+    group_by(model,horizon) %>%
+    summarise(mean_PI50 = round(sum(score_value, na.rm = TRUE) / n(),2)) %>%  
+  ungroup()  %>% 
+  pivot_wider(names_from = "horizon",values_from = "mean_PI50")  %>% 
+  rename("1 wk 50% coverage" = "1", "2 wk 50% coverage" = "2", "3 wk 50% coverage" = "3", "4 wk 50% coverage" = "4" ) %>% 
+  dplyr::rowwise() %>% 
+  dplyr::mutate(coverage_50 = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::ungroup() 
+ 
+  historical_calib_95 <- score_inc_all_ohio  %>% 
+    filter(n_weeks >= 5 |  n_weeks_3wksPrior >= 2) %>% 
+    filter(!is.na(score_value))  %>%
+    filter(score_name %in% c("coverage_95")) %>%
+    select(model,horizon,score_value)  %>%
+    group_by(model,horizon) %>%
+    summarise(mean_PI95 = round(sum(score_value, na.rm = TRUE) / n(),2)) %>%  
+  ungroup()  %>% 
+  pivot_wider(names_from = "horizon",values_from = "mean_PI95")  %>% 
+  rename("1 wk 95% coverage" = "1", "2 wk 95% coverage" = "2", "3 wk 95% coverage" = "3", "4 wk 95% coverage" = "4" ) %>% 
+  dplyr::rowwise() %>% 
+  dplyr::mutate(coverage_95 = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::mutate(diff_95 = abs(0.95-coverage_95)) %>% 
+  dplyr::ungroup()
+  
+  
+  recent_calib_95  <- score_inc_all_ohio  %>%
+    filter(n_weeks >= 5 |  n_weeks_3wksPrior >= 2) %>% 
+    filter(!is.na(score_value))  %>%
+    filter(score_name %in% c("coverage_95")) %>%
+    filter(target_end_date >= first_eval_sat) %>%  droplevels() %>%
+    select(model,horizon,score_value)  %>%
+    group_by(model,horizon) %>%
+    summarise(mean_PI95 = round(sum(score_value, na.rm = TRUE) / n(),2)) %>%  
+  ungroup()  %>% 
+  pivot_wider(names_from = "horizon",values_from = "mean_PI95")  %>% 
+  rename("1 wk 95% coverage" = "1", "2 wk 95% coverage" = "2", "3 wk 95% coverage" = "3", "4 wk 95% coverage" = "4" ) %>% 
+  dplyr::rowwise() %>% 
+  dplyr::mutate(coverage_95 = mean(c_across(where(is.numeric)), na.rm = T)) %>%  
+  dplyr::mutate(diff_95 = abs(0.95-coverage_95)) %>% 
+  dplyr::ungroup()
+  
+  calibration_table  <- inc_countc_fcasts_recent %>%
+  full_join(recent_calib_50) %>%
+  full_join(recent_calib_95) %>%
+  filter(!is.na(coverage_95) | !is.na(coverage_50)) %>% 
+  arrange(diff_95)
+  
+  calibration_table_hist  <- inc_countc_fcasts_historical %>%
+  full_join(historical_calib_50) %>%
+  full_join(historical_calib_95) %>%
+  filter(!is.na("# historical forecasts"))  %>%
+  filter(!is.na("1 wk 50% coverage") | !is.na("1 wk 95% coverage")) %>%
+  filter(!is.na(coverage_95) | !is.na(coverage_50)) %>% 
+  arrange(diff_95)
+  
+render <- JS(
+  "function(data, type, row) {",
+  "  if(type === 'sort' && data === null) {",
+  "    return 999999;",
+  "  }",
+  "  return data;",
+  "}"
+)
+```
+
+```{r}
+calib_model_order <- calibration_table %>%   arrange(diff_95) %>% pull(model)
+calib_model_order_historical <- calibration_table_hist %>%   arrange(diff_95) %>% pull(model)
+```
+ 
+
+### Recent coverage
+
+This table only includes forecasts for the last `r n_weeks_eval` weeks, since `r format(first_eval_sat, "%B %d, %Y")`. For inclusion in this table,  a model must have contributed forecasts for 5 or more weeks total during this period, or have submitted forecasts during at least 2 out of the last 3 evaluated weeks. This inclusion criteria was applied in order to score models that submitted for a substantial amount of weeks at any point during the pandemic but may no longer be submitting, while also evaluating new teams that have recently joined our forecasting efforts. The data are initially ordered by model based on their 95% PI coverage, aggregated across horizons, with the most accurate models at the top. 
+
+```{r recent Leaderboard DEATHS coverage}
+
+# a custom table container
+sketch_recent_coverage = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 2, "Model"),
+      th(rowspan = 2, "# recent forecasts"),
+      th(colspan = 4, "50% PI coverage"),
+      th(colspan = 4, "95% PI coverage")
+    ),
+    tr(
+ lapply((c("1 wk","2 wk","3 wk","4 wk","1 wk","2 wk","3 wk","4 wk")), th)))))
+
+calibration_table1<- calibration_table %>%
+ arrange(diff_95)%>%    
+  select (model, "# recent forecasts",  "1 wk 50% coverage", "2 wk 50% coverage", "3 wk 50% coverage", "4 wk 50% coverage","1 wk 95% coverage", "2 wk 95% coverage", "3 wk 95% coverage", "4 wk 95% coverage") 
+
+datatable(calibration_table1,
+            rownames= FALSE, 
+              options =  list(pageLength = 5, 
+                              # order = list(list(2, 'asc')),
+                             autoWidth = TRUE,
+                             columnDefs = list(list(width = '100px', targets = "_all", render = render)), 
+                             ordering = TRUE),
+              # filter = c("top")
+          colnames = c("Model", "# recent forecasts",  "1 wk 50% coverage", "2 wk 50% coverage", "3 wk 50% coverage", "4 wk 50% coverage","1 wk 95% coverage", "2 wk 95% coverage", "3 wk 95% coverage", "4 wk 95% coverage"), container=sketch_recent_coverage) 
+```
+
+
+### Historical coverage
+
+This table only includes forecasts for the last `r n_weeks_history` weeks, since `r format(first_eval_sat_hist, "%B %d, %Y")`. For inclusion in this table, a model most have contributed forecasts for 5 or more weeks total during this period, or have submitted forecasts during at least 2 out of the last 3 evaluated weeks. This inclusion criteria was applied in order to score models that submitted for a substantial amount of weeks at any point during the pandemic but may no longer be submitting, while also evaluating new teams that have recently joined our forecasting efforts. The data are initially ordered by model based on their 95% PI coverage, aggregated across horizons, with the most accurate models at the top. 
+
+
+```{r historical Leaderboard DEATHS coverage}
+# a custom table container
+sketch_historical_coverage = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 2, "Model"),
+      th(rowspan = 2, "# historical forecasts"),
+      th(colspan = 4, "50% PI coverage"),
+      th(colspan = 4, "95% PI coverage")
+    ),
+    tr(
+ lapply((c("1 wk","2 wk","3 wk","4 wk","1 wk","2 wk","3 wk","4 wk")), th)))))
+
+calibration_table_hist1<- calibration_table_hist %>%
+ arrange(diff_95) %>%    
+  select (model, "# historical forecasts",  "1 wk 50% coverage", "2 wk 50% coverage", "3 wk 50% coverage", "4 wk 50% coverage","1 wk 95% coverage", "2 wk 95% coverage", "3 wk 95% coverage", "4 wk 95% coverage") 
+
+datatable(calibration_table_hist1,
+            rownames= FALSE, 
+              options =  list(pageLength = 5, 
+                              # order = list(list(2, 'asc')),
+                             autoWidth = TRUE,
+                             columnDefs = list(list(width = '100px', targets = "_all", render = render)), 
+                             ordering = TRUE),
+              # filter = c("top")
+          colnames = c("Model", "# recent forecasts",  "1 wk 50% coverage", "2 wk 50% coverage", "3 wk 50% coverage", "4 wk 50% coverage","1 wk 95% coverage", "2 wk 95% coverage", "3 wk 95% coverage", "4 wk 95% coverage"), container=sketch_recent_coverage) 
+
+```  
+
+
+
+## WIS components
+
+The data in this graph has been aggregated over all locations and submission weeks. We only included forecasts for the last 10 weeks. The models included have submitted  at least 50% of forecasts during this time, where one forecast is a location, target, forecast date combination. This is the same exclusion criteria applied for WIS scores in the recent evaluation period. 
+
+The sum of the bars adds up to the WIS score. Of note, these values may not be exactly the same as the relative WIS scores shown in the leaderboard table because these are not adjusted for weeks or locations missing.  The data are ordered on the x axis based on their relative WIS score shown in the accuracy table, aggregated across horizons.  
+
+```{r wis bar function DEATHS, fig.height=8, fig.width=13}
+wis_barplot_function(score_inc_all_ohio, y = pairwise_scores, order = inc_model_order)
+```
+
+
+## Evaluation by Week  {.tabset .tabset-fade}
+
+In the following figures, we have evaluated models across multiple forecasting weeks. Points included in this comparison are for models that have submitted probabilistic forecasts for all 50 states. 
+
+For the first 2 figures, WIS is used as a metric. The first figure shows the mean WIS across all 50 states for submission weeks beginning `r format(first_eval_sat_hist, "%B %d, %Y")` at a 1 week horizon. The second figure shows the mean WIS aggregated across locations, however it is for a 4 week horizon.
+
+
+
+### 1 Week Horizon WIS
+```{r,fig.width=10, fig.height=6}
+byweek_inc <- by_week_function(score_inc_all_ohio, var = "wis")
+# find 97.5 percentile
+b_inc<-byweek_inc %>%
+  filter(horizon == "4") 
+p975_inc<-quantile(b_inc$mean_score,probs=.975, na.rm = TRUE)
+by_week_wis_1wk <- plot_byweek_function(byweek_inc, var = "WIS", horizon_num = "1") +
+  geom_hline(yintercept = .95)+ coord_cartesian(ylim=c(0, p975_inc))
+ggplotly(by_week_wis_1wk, tooltip = c("label", "labelx", "labely"))
+```
+
+
+### 4 Week Horizon WIS
+
+In this figure, the dotted black line represents the average 1 week ahead error across all models. There is often larger error for the 4 week horizon compared to the 1 week horizon. 
+
+```{r,fig.width=10, fig.height=6}
+#calc 1 week error
+meanwis_1wk <- byweek_inc %>%
+  filter(horizon == "1") %>%
+  group_by(target_end_date) %>%
+  summarise(mean_score = mean(mean_score, na.rm = TRUE)) %>%
+  mutate(model = "`average wis or 1 week horizon`",
+         horizon = "4") %>%
+  select(model, horizon, target_end_date, mean_score)
+  
+by_week_wis_4wk <- plot_byweek_function(byweek_inc, var = "wis", horizon_num = "4") +
+   geom_line(data = meanwis_1wk, aes(x = target_end_date, y = mean_score), alpha=.5, color = "black", linetype = 2) +
+  geom_point(data = meanwis_1wk, aes(x = target_end_date, y = mean_score), alpha=.5, size = 2, color = "black") + coord_cartesian(ylim=c(0, p975_inc))
+ggplotly(by_week_wis_4wk,tooltip = c("label", "labelx", "labely"))
+```
+
+
+### 1 Week Horizon 95% PI Coverage
+
+We would expect a well-calibrated model to have a value of 95% in this plot. 
+```{r,fig.width=10, fig.height=6}
+byweek_inc <- by_week_function(score_inc_all_ohio, var = "coverage_95")
+by_week_wis_1wk <- plot_byweek_function(byweek_inc, var = "95% PI Coverage", horizon_num = "1") +
+  geom_hline(yintercept = .95)
+ggplotly(by_week_wis_1wk, tooltip = c("label", "labelx", "labely"))
+```
+
+### 4 Week Horizon 95% PI Coverage
+
+We would expect a well-calibrated model to have a value of 95% in this plot. There is typically larger error for the 4 week horizon compared to the 1 week horizon. 
+```{r,fig.width=10, fig.height=6}
+by_week_wis_4wk <- plot_byweek_function(byweek_inc, var = "95% PI Coverage", horizon_num = "4") +
+  geom_hline(yintercept = .95)
+
+ggplotly(by_week_wis_4wk, tooltip = c("label", "labelx", "labely"))
+```
+
+
+## Evaluation by location {.tabset .tabset-fade}
+
+This figures below show recent model performance stratified by location. We only included forecasts for the last 10 weeks. Models were included if they had submitted forecasts for all 4 horizons and submitted  at least 50% of forecasts during this time, where one forecast is a location, target, forecast date combination.   Locations are sorted by cumulative death counts.
+
+The color scheme shows the WIS score relative to the baseline, across all horizons. The only locations evaluated are 50 states and a national level forecast. The data are ordered on the x axis based on their relative WIS score shown in the accuracy table, aggregated across horizons.  
+
+<!-- ### Evaluation by WIS -->
+```{r, fig.width=12, fig.height=16}
+plot_by_location_wis(inc_accuracy_recent, order = inc_model_order, location_order = location_order_death)
+```
+
+## Evaluation Periods  {.tabset .tabset-fade}
+
+
+This plot shows the observed number of incident deaths over time in the US. The period between the vertical blue lines shows the weeks included in the "recent" model evaluations.
+
+
+```{r, fig.width=8, fig.height=5}
+truth_US_inc <- truth_dat_inc_all_ohio %>% filter(location == "US") 
+
+plot_truth(truth_US_inc,tar="Weekly reported COVID-19 Deaths")
+```
