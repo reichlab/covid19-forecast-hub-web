@@ -3,6 +3,26 @@ title: In the news
 layout: docs
 ---
 
+[Forecast: US could see up to 845,000 deaths by early January](https://abcnews.go.com/Health/live-updates/coronavirus/?id=81717146#81776590){:target="_blank"}  
+_ABC News_ | 15 December 2021
+
+***
+
+[The US COVID death toll will reach 821,000 to 837,000 by Jan. 1](https://www.poynter.org/reporting-editing/2021/the-us-covid-death-toll-will-reach-821000-to-837000-by-jan-1){:target="_blank"}  
+_Poynter_ | 15 December 2021
+
+***
+
+[Forecast: US death toll could reach 837,000 by the new year](https://www.whmi.com/news/national/omicron-live-updates-new-study-suggests-pfizer-biontech-vaccine-may-only-partially-protect){:target="_blank"}  
+_WHMI-FM 93.5_ | 8 December 2021
+
+***
+
+[Omicron is popping up everywhere, but the big problem in the U.S. remains the delta variant](https://www.dailykos.com/stories/2021/12/3/2067388/-Omicron-is-popping-up-everywhere-but-the-big-problem-in-the-U-S-remains-the-delta-variant){:target="_blank"}  
+_Daily Kos_ | 3 December 2021
+
+***
+
 [Inside the C.D.C.’s Pandemic ‘Weather Service’](https://www.nytimes.com/2021/11/22/magazine/cdc-pandemic-prediction.html){:target="_blank"}  
 _New York Times_ | 22 November 2021
 
