@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[CDC predicts 1.3M new COVID-19 cases by Christmas, 15K weekly deaths by Jan. 8](https://nypost.com/2021/12/16/cdc-predicts-1-3m-new-covid-19-cases-by-christmas/){:target="_blank"}  
+_New York Post_ | 16 December 2021
+
+***
+
 [Forecast: US could see up to 845,000 deaths by early January](https://abcnews.go.com/Health/live-updates/coronavirus/?id=81717146#81776590){:target="_blank"}  
 _ABC News_ | 15 December 2021
 
