@@ -3,6 +3,21 @@ title: In the news
 layout: docs
 ---
 
+[‘We Are Reaching Something Like A Peak’: COVID Forecaster Sees Brighter Future](https://boston.cbslocal.com/2022/01/19/covid-19-forecast-hub-peak-massachusetts/){:target="_blank"}  
+_WBZ CBS Boston_ | 19 January 2022
+
+***
+
+[South Florida Healthcare System Facing Challenges With Rising Omicron Cases](https://miami.cbslocal.com/2022/01/19/south-florida-healthcare-system-facing-challenges-with-rising-omicron-cases/){:target="_blank"}  
+_CBS Miami_ | 19 January 2022
+
+***
+
+[22,000 more Americans may die from COVID over next 2 weeks](https://1430wcmy.com/2022/01/12/covid-19-live-updates-west-virginias-governor-says-he-feels-extremely-unwell/#){:target="_blank"}  
+_ABC News_ | 12 January 2022
+
+***
+
 [CDC predicts 1.3M new COVID-19 cases by Christmas, 15K weekly deaths by Jan. 8](https://nypost.com/2021/12/16/cdc-predicts-1-3m-new-covid-19-cases-by-christmas/){:target="_blank"}  
 _New York Post_ | 16 December 2021
 
