@@ -73,6 +73,17 @@ sections:
 
     content1: >-  
       
+      [‘We Are Reaching Something Like A Peak’: COVID Forecaster Sees Brighter Future](https://boston.cbslocal.com/2022/01/19/covid-19-forecast-hub-peak-massachusetts/){:target="_blank"}  
+      
+      _WBZ CBS Boston_ | 19 January 2022  
+      
+      [CDC predicts 1.3M new COVID-19 cases by Christmas, 15K weekly deaths by Jan. 8](https://nypost.com/2021/12/16/cdc-predicts-1-3m-new-covid-19-cases-by-christmas/){:target="_blank"}  
+      
+      _New York Post_ | 16 December 2021  
+      
+      
+    content2: >-  
+      
       [The US COVID death toll will reach 821,000 to 837,000 by Jan. 1](https://www.poynter.org/reporting-editing/2021/the-us-covid-death-toll-will-reach-821000-to-837000-by-jan-1){:target="_blank"}  
       
       _Poynter_ | 15 December 2021  
@@ -82,7 +93,7 @@ sections:
       _Daily Kos_ | 3 December 2021  
       
       
-    content2: >-  
+    content3: >-  
       
       [Inside the C.D.C.’s Pandemic ‘Weather Service’](https://www.nytimes.com/2021/11/22/magazine/cdc-pandemic-prediction.html){:target="_blank"}  
       
@@ -91,17 +102,6 @@ sections:
       [U.S. COVID cases start to rise again as the holidays approach](https://www.npr.org/sections/health-shots/2021/11/16/1056232480/u-s-covid-cases-rising-holidays){:target="_blank"}  
       
       _NPR_ | 16 November 2021  
-      
-      
-    content3: >-  
-      
-      [California, With Strict Mandates, Has More COVID Cases Than Florida, Texas—Here's Why](https://www.newsweek.com/california-strict-mandates-more-covid-cases-florida-texas-why-1648430){:target="_blank"}  
-      
-      _Newsweek_ | 11 November 2021  
-      
-      [Will the US face another bad COVID-19 winter? Cases are falling, but the virus isn't done with us, experts say](https://www.usatoday.com/story/news/health/2021/10/10/end-covid-us-depends-behavior-and-uncertain-virus/6037399001/){:target="_blank"}  
-      
-      _USA Today_ | 10 October 2021  
       
 
     actions:
