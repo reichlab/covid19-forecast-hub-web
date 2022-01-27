@@ -3,6 +3,16 @@ title: In the news
 layout: docs
 ---
 
+[Mayo warns omicron peak means Minnesota only halfway through surge](https://www.startribune.com/mayo-warns-omicron-peak-means-minnesota-is-only-halfway-through-surge/600139827/){:target="_blank"}  
+_Star Tribune_ | 26 January 2022
+
+***
+
+[‘ERs Bursting At The Seams’: Nurses Plead For Help As Experts Predict Long Rebound From COVID](https://boston.cbslocal.com/2022/01/21/hospitals-nurses-help-covid-massachusetts/){:target="_blank"}  
+_WBZ CBS Boston_ | 21 January 2022
+
+***
+
 [‘We Are Reaching Something Like A Peak’: COVID Forecaster Sees Brighter Future](https://boston.cbslocal.com/2022/01/19/covid-19-forecast-hub-peak-massachusetts/){:target="_blank"}  
 _WBZ CBS Boston_ | 19 January 2022
 
@@ -124,7 +134,7 @@ _University of Massachusetts Amherst_ | July 2021
 ***
 
 [Competing models at start of pandemic hurt public's trust](https://www.startribune.com/how-accurate-were-covid-19-models-for-minnesota/600079030/){:target="_blank"}  
-_Minneapolis Star Tribune_ | 17 July 2021
+_Star Tribune_ | 17 July 2021
 
 ***
 
