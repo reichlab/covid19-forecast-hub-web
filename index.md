@@ -73,13 +73,13 @@ sections:
 
     content1: >-  
       
+      [Mayo warns omicron peak means Minnesota only halfway through surge](https://www.startribune.com/mayo-warns-omicron-peak-means-minnesota-is-only-halfway-through-surge/600139827/){:target="_blank"}  
+      
+      _Star Tribune_ | 26 January 2022  
+      
       [‘We Are Reaching Something Like A Peak’: COVID Forecaster Sees Brighter Future](https://boston.cbslocal.com/2022/01/19/covid-19-forecast-hub-peak-massachusetts/){:target="_blank"}  
       
       _WBZ CBS Boston_ | 19 January 2022  
-      
-      [CDC predicts 1.3M new COVID-19 cases by Christmas, 15K weekly deaths by Jan. 8](https://nypost.com/2021/12/16/cdc-predicts-1-3m-new-covid-19-cases-by-christmas/){:target="_blank"}  
-      
-      _New York Post_ | 16 December 2021  
       
       
     content2: >-  
