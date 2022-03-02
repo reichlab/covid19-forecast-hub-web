@@ -3,6 +3,16 @@ title: In the news
 layout: docs
 ---
 
+[Omicron drives US deaths higher than in fall’s delta wave](https://apnews.com/article/coronavirus-pandemic-business-health-california-public-health-83c0a053bfdd615b5ae7170007c2f1f9){:target="_blank"}  
+_AP News_ | 28 January 2022
+
+***
+
+[Endemic, ‘New Normal’ Chatter Intensifies as U.S. Coronavirus Cases Start to Decline](https://www.usnews.com/news/health-news/articles/2022-01-27/endemic-new-normal-chatter-intensifies-as-u-s-coronavirus-cases-start-to-decline){:target="_blank"}  
+_U.S. News_ | 28 January 2022
+
+***
+
 [Mayo warns omicron peak means Minnesota only halfway through surge](https://www.startribune.com/mayo-warns-omicron-peak-means-minnesota-is-only-halfway-through-surge/600139827/){:target="_blank"}  
 _Star Tribune_ | 26 January 2022
 
