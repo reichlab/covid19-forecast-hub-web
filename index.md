@@ -73,6 +73,17 @@ sections:
 
     content1: >-  
       
+      [Omicron drives US deaths higher than in fall’s delta wave](https://apnews.com/article/coronavirus-pandemic-business-health-california-public-health-83c0a053bfdd615b5ae7170007c2f1f9){:target="_blank"}  
+      
+      _AP News_ | 28 January 2022  
+      
+      [Endemic, ‘New Normal’ Chatter Intensifies as U.S. Coronavirus Cases Start to Decline](https://www.usnews.com/news/health-news/articles/2022-01-27/endemic-new-normal-chatter-intensifies-as-u-s-coronavirus-cases-start-to-decline){:target="_blank"}  
+      
+      _U.S. News_ | 28 January 2022  
+      
+      
+    content2: >-  
+      
       [Mayo warns omicron peak means Minnesota only halfway through surge](https://www.startribune.com/mayo-warns-omicron-peak-means-minnesota-is-only-halfway-through-surge/600139827/){:target="_blank"}  
       
       _Star Tribune_ | 26 January 2022  
@@ -82,7 +93,7 @@ sections:
       _WBZ CBS Boston_ | 19 January 2022  
       
       
-    content2: >-  
+    content3: >-  
       
       [The US COVID death toll will reach 821,000 to 837,000 by Jan. 1](https://www.poynter.org/reporting-editing/2021/the-us-covid-death-toll-will-reach-821000-to-837000-by-jan-1){:target="_blank"}  
       
@@ -91,17 +102,6 @@ sections:
       [Omicron is popping up everywhere, but the big problem in the U.S. remains the delta variant](https://www.dailykos.com/stories/2021/12/3/2067388/-Omicron-is-popping-up-everywhere-but-the-big-problem-in-the-U-S-remains-the-delta-variant){:target="_blank"}  
       
       _Daily Kos_ | 3 December 2021  
-      
-      
-    content3: >-  
-      
-      [Inside the C.D.C.’s Pandemic ‘Weather Service’](https://www.nytimes.com/2021/11/22/magazine/cdc-pandemic-prediction.html){:target="_blank"}  
-      
-      _New York Times_ | 22 November 2021  
-      
-      [U.S. COVID cases start to rise again as the holidays approach](https://www.npr.org/sections/health-shots/2021/11/16/1056232480/u-s-covid-cases-rising-holidays){:target="_blank"}  
-      
-      _NPR_ | 16 November 2021  
       
 
     actions:
