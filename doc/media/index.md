@@ -3,6 +3,16 @@ title: In the news
 layout: docs
 ---
 
+[What’s In The COVID-19 Forecast? New Variants Moving Into Massachusetts](https://boston.cbslocal.com/2022/03/17/covid-variant-ba2-deltacron-massachusetts-forecast/){:target="_blank"}  
+_WBZ CBS Boston_ | 17 March 2022
+
+***
+
+[‘A very different and early stage’: 2 years ago, a Biogen conference in Boston sparked a COVID super-spreader event](https://www.masslive.com/coronavirus/2022/03/a-very-different-and-early-stage-2-years-ago-a-biogen-conference-in-boston-sparked-a-covid-super-spreader-event.html){:target="_blank"}  
+_MassLive_ | 9 March 2022
+
+***
+
 [Omicron drives US deaths higher than in fall’s delta wave](https://apnews.com/article/coronavirus-pandemic-business-health-california-public-health-83c0a053bfdd615b5ae7170007c2f1f9){:target="_blank"}  
 _AP News_ | 28 January 2022
 
