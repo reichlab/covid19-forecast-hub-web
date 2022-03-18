@@ -73,6 +73,17 @@ sections:
 
     content1: >-  
       
+      [What’s In The COVID-19 Forecast? New Variants Moving Into Massachusetts](https://boston.cbslocal.com/2022/03/17/covid-variant-ba2-deltacron-massachusetts-forecast/){:target="_blank"}  
+      
+      _WBZ CBS Boston_ | 17 March 2022  
+      
+      [‘A very different and early stage’: 2 years ago, a Biogen conference in Boston sparked a COVID super-spreader event](https://www.masslive.com/coronavirus/2022/03/a-very-different-and-early-stage-2-years-ago-a-biogen-conference-in-boston-sparked-a-covid-super-spreader-event.html){:target="_blank"}  
+      
+      _MassLive_ | 9 March 2022  
+      
+      
+    content2: >-  
+      
       [Omicron drives US deaths higher than in fall’s delta wave](https://apnews.com/article/coronavirus-pandemic-business-health-california-public-health-83c0a053bfdd615b5ae7170007c2f1f9){:target="_blank"}  
       
       _AP News_ | 28 January 2022  
@@ -82,7 +93,7 @@ sections:
       _U.S. News_ | 28 January 2022  
       
       
-    content2: >-  
+    content3: >-  
       
       [Mayo warns omicron peak means Minnesota only halfway through surge](https://www.startribune.com/mayo-warns-omicron-peak-means-minnesota-is-only-halfway-through-surge/600139827/){:target="_blank"}  
       
@@ -91,17 +102,6 @@ sections:
       [‘We Are Reaching Something Like A Peak’: COVID Forecaster Sees Brighter Future](https://boston.cbslocal.com/2022/01/19/covid-19-forecast-hub-peak-massachusetts/){:target="_blank"}  
       
       _WBZ CBS Boston_ | 19 January 2022  
-      
-      
-    content3: >-  
-      
-      [The US COVID death toll will reach 821,000 to 837,000 by Jan. 1](https://www.poynter.org/reporting-editing/2021/the-us-covid-death-toll-will-reach-821000-to-837000-by-jan-1){:target="_blank"}  
-      
-      _Poynter_ | 15 December 2021  
-      
-      [Omicron is popping up everywhere, but the big problem in the U.S. remains the delta variant](https://www.dailykos.com/stories/2021/12/3/2067388/-Omicron-is-popping-up-everywhere-but-the-big-problem-in-the-U-S-remains-the-delta-variant){:target="_blank"}  
-      
-      _Daily Kos_ | 3 December 2021  
       
 
     actions:
