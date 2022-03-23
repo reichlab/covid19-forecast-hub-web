@@ -44,7 +44,7 @@ This ensemble produces forecasts of incident cases at a horizon of 1 week ahead,
 
 #### 4. COVIDhub_CDC-ensemble
 
-This ensemble pulls forecasts of cases and hospitalizations from the COVIDhub-4_week_ensemble and forecasts of deaths from the COVIDhub-trained_ensemble. The set of horizons that are included is updated regularly using rules developed by CDC based on recent forecast performance.
+This ensemble pulls forecasts of cases and hospitalizations from the COVIDhub-4_week_ensemble and forecasts of deaths from the COVIDhub-trained_ensemble. The set of horizons that are included is updated regularly using rules developed by CDC based on recent forecast performance. To be included in the COVIDhub_CDC-ensemble, models must also meet the eligibility criteria for the COVIDhub-4_week_ensemble. For example, the COVIDhub_CDC-ensemble may use hospitalization forecasts at horizons up to 25 days, but models are selected from the COVIDhub-4_week_ensemble that requires forecasts of incident hospitalizations at horizons of 1 through 28 days ahead. If a team submits a forecast of incident hospitalizations for 1 to 25 days ahead, it will not be included in the COVIDhub_CDC-ensemble (or the COVIDhub-4_week_ensemble), although it will be included in the COVIDhub-ensemble (which only requires horizons up to 14 days ahead).
 
 ### Detailed eligibility criteria
 
