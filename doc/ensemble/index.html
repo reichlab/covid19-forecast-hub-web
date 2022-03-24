@@ -309,13 +309,15 @@
 
 <h4 id="4-covidhub_cdc-ensemble">4. COVIDhub_CDC-ensemble</h4>
 
-<p>This ensemble pulls forecasts of cases and hospitalizations from the COVIDhub-4_week_ensemble and forecasts of deaths from the COVIDhub-trained_ensemble. The set of horizons that are included is updated regularly using rules developed by CDC based on recent forecast performance.</p>
+<p>This ensemble pulls forecasts of cases and hospitalizations from the COVIDhub-4_week_ensemble and forecasts of deaths from the COVIDhub-trained_ensemble. The set of horizons that are included is updated regularly using rules developed by CDC based on recent forecast performance. To be included in the COVIDhub_CDC-ensemble, models must also meet the eligibility criteria for the COVIDhub-4_week_ensemble (see “Detailed Eligibility Criteria” below for an example).</p>
 
 <h3 id="detailed-eligibility-criteria">Detailed eligibility criteria</h3>
 
 <p>Forecasts submitted by 3pm ET on Monday night are guaranteed consideration for inclusion in the ensemble for that week, as long as the forecast was associated with a date since the previous Tuesday.</p>
 
 <p>To be included in the ensemble, a team’s designated model must meet certain specified inclusion criteria. We require that forecasts include a full set of predictive quantiles (i.e., 23 for hospitalizations and deaths, 7 for cases; see <a href="https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md#quantile">Technical README</a> for details). Additionally, forecasts must include all forecast horizons that will be produced by a given ensemble to be included in that ensemble. For example, the COVIDhub-4_week_ensemble requires that a model provided forecasts at all of the 1 through 4 week ahead horizons to be included, but the COVIDhub-ensemble forecast of cases only requires forecasts of cases at a horizon of 1 week ahead for inclusion.</p>
+
+<p>To be included in the COVIDhub_CDC-ensemble, models must also meet the eligibility criteria for the COVIDhub-4_week_ensemble. For example, the COVIDhub_CDC-ensemble may use hospitalization forecasts at horizons up to 25 days, but models are selected from the COVIDhub-4_week_ensemble that requires forecasts of incident hospitalizations at horizons of 1 through 28 days ahead. If a team submits a forecast of incident hospitalizations for 1 to 25 days ahead, it will not be included in the COVIDhub_CDC-ensemble (or the COVIDhub-4_week_ensemble), although it will be included in the COVIDhub-ensemble (which only requires horizons up to 14 days ahead).</p>
 
 <p>There are also some eligibility criteria that have been used specifically for the cumulative deaths and incident hospitalizations targets:</p>
 
