@@ -5,6 +5,7 @@ layout: docs
 
 Here are links to presentations about the Hub:
 
+- PREPARE (Pandemic Research for Preparedness & Resilience) panel discussion on effective epidemiology for decision makers - "Using ensemble forecasts to support public health decision-making" - [video](https://youtu.be/hB4tW_LSxXA?t=2321){:target="_blank"} (30 March 2022)
 - CSTE/CDC Forecasting Workshop - "Predictive Modeling to Support Public Health" - [slides](/talks/20211116_-_Evan_Ray_-_Predictive_Modeling_Public_Health.pdf){:target="_blank"} (16 November 2021)
 - The University of Massachusetts, Amherst - Fall 2021 Distinguished Faculty Lecture - "How to Forecast a Pandemic: Lessons from COVID-19" - [video](https://www.umass.edu/sphhs/news-events/reich-presents-distinguished-faculty-lecture-pandemic-forecasting){:target="_blank"} and [slides](/talks/202110-chancellors.pdf){:target="_blank"} (5 October 2021)
 - ISF 2021: 41st International Symposium on Forecasting - "The computational science of infectious disease forecasting" - [video](https://www.nationalacademies.org/event/06-10-2021/data-collection-and-integration-to-enhance-public-health-making-sense-of-a-patchwork-of-data){:target="_blank"} and [slides](/talks/202106-isf-reich.pdf){:target="_blank"} (29 June 2021)
