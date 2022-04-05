@@ -1,0 +1,2147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      :root {
+	--aqua: #eaffff;
+	--beige: #f3c687;
+	--black: #000;
+	--blue: #3564ff;
+	--blueBerry: #393189;
+	--blueGrey: #3c4e7f;
+	--blueLight: #8beaf3;
+	--blueMet: #485881;
+	--brown: #a0754b;
+	--clr1: #940670;
+	--clr2: #662d90;
+	--clr3: #1b1464;
+	--crimson: #c01839;
+	--dodgerblue: #1e90ff;
+	--grey: #292829;
+	--greyDark: #808080;
+	--greyLight: #cfcfcf;
+	--earth: #a9513a;
+	--magnesium: #7783a5;
+	--orange: #f5a14f;
+	--khaki: #f0e68c;
+	--pink: #ffc0cb;
+	--pinkDark: #c56a9c;
+	--indigo: #281f7f;
+	--red: #9c3f3f;
+	--redish: #c74c43;
+	--springgreen: #00ff7f;
+	--tera: #7e3826;
+	--tea: #50a365;
+	--white: #fff;
+	--whiteOpacity: #ffffff50;
+	--yellow: #ebd34c;
+	--borderBrown: 0.24vmin solid var(--brown);
+	--borderPink: 0.24vmin solid var(--pinkDark);
+	--borderGrey: 0.24vmin solid var(--grey);
+	--boxPink: 0 0 0 0.24vmin var(--pinkDark) inset;
+	--timeSolar: 1s * 1.618033;
+}
+
+*,
+*::after,
+*::before,
+html,
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: var(--indigo);
+}
+
+body {
+	background: radial-gradient(circle at -50% 50%, var(--clr3), #1b146400),
+		radial-gradient(circle at 100% 50%, var(--clr2), #662d9000 35%),
+		linear-gradient(
+			var(--dodgerblue),
+			var(--springgreen),
+			var(--yellow),
+			var(--crimson),
+			var(--blueBerry) 75%
+		);
+	display: grid;
+	font: normal 3vmin/1 monospace;
+	min-height: 100vh;
+	place-items: end center;
+}
+
+main {
+	display: grid;
+	height: 100vh;
+	overflow: hidden;
+	place-items: end center;
+	position: relative;
+	width: 100vw;
+}
+
+#city {
+	background: linear-gradient(
+		var(--indigo) 15%,
+		var(--blueBerry),
+		var(--clr3) 70%
+	);
+	height: 43vmin;
+	display: grid;
+	position: absolute;
+	width: 100vw;
+}
+
+#building {
+	display: grid;
+	height: 26vmin;
+	place-items: end center;
+	position: absolute;
+	top: -24vmin;
+	width: 100vw;
+}
+
+.build {
+	background: linear-gradient(var(--blueBerry), var(--indigo));
+	display: grid;
+	height: 12vmin;
+	place-items: end center;
+	position: absolute;
+	right: 0;
+	width: 12vmin;
+}
+
+.build::before {
+	background: linear-gradient(90deg, var(--blueBerry) 50%, transparent 50%),
+		var(--white);
+	background-size: 3vmin 3vmin;
+	box-shadow: -10vmin 0vmin 0 var(--blueBerry),
+		-24vmin -9vmin 0 -2vmin var(--blueBerry);
+	content: "";
+	height: 10vmin;
+	opacity: 0.1;
+	position: absolute;
+	width: 12vmin;
+}
+
+.build span {
+	background: linear-gradient(var(--blueBerry), var(--indigo));
+	box-shadow: -15vmin -2vmin 0 -2vmin var(--indigo),
+		-4vmin -3vmin 0 -1vmin var(--indigo), -4vmin -12vmin 0 -4.9vmin var(--indigo),
+		-4vmin -8vmin 0 -4.7vmin var(--indigo);
+	display: grid;
+	height: 20vmin;
+	place-items: center;
+	position: absolute;
+	right: 12vmin;
+	width: 10vmin;
+}
+
+.build span::before {
+	background: linear-gradient(90deg, var(--blueBerry) 48%, transparent 50%),
+		linear-gradient(180deg, transparent 50%, var(--indigo) 54%), var(--white);
+	background-size: 0.6vmin 2vmin;
+	content: "";
+	height: 17vmin;
+	opacity: 0.2;
+	position: absolute;
+	width: 8vmin;
+}
+
+.build span:nth-child(2) {
+	box-shadow: -4vmin 1vmin 0 -1vmin var(--blueBerry);
+	right: 22vmin;
+	height: 18vmin;
+	width: 5.6vmin;
+}
+
+.build span:nth-child(2)::before {
+	background: linear-gradient(90deg, var(--blueBerry) 50%, transparent 50%),
+		var(--white);
+	background-size: 0.5vmin 0.5vmin;
+	content: "";
+	height: 16.6vmin;
+	opacity: 0.1;
+	position: absolute;
+	top: 0.2vmin;
+	width: 5vmin;
+}
+
+.build span:nth-child(2)::after {
+	background: linear-gradient(90deg, var(--blueBerry) 25%, transparent 25%),
+		var(--white);
+	background-size: 1vmin 0.25vmin;
+	bottom: 0;
+	content: "";
+	height: 1vmin;
+	opacity: 0.1;
+	position: absolute;
+	width: 5vmin;
+}
+
+.build span:nth-child(3) {
+	box-shadow: -4vmin 2vmin 0 -2vmin var(--blueBerry);
+	right: 27vmin;
+	height: 10vmin;
+	width: 10vmin;
+}
+
+.build span:nth-child(3)::before {
+	background: linear-gradient(90deg, var(--blueBerry) 50%, transparent 50%),
+		var(--white);
+	background-size: 1vmin 1vmin;
+	content: "";
+	height: 10vmin;
+	opacity: 0.1;
+	position: absolute;
+	width: 10vmin;
+}
+
+#monument {
+	background: linear-gradient(var(--blueBerry) 60%, var(--indigo));
+	border-radius: 33% 33% 0 0;
+	display: grid;
+	height: 8vmin;
+	place-items: center;
+	position: absolute;
+	right: 51vmin;
+	top: -6vmin;
+	width: 2vmin;
+}
+
+#monument::after {
+	border: 0.8vmin solid var(--blueBerry);
+	border-top: none;
+	border-left: none;
+	border-radius: 100%;
+	content: "";
+	height: 2.5vmin;
+	position: absolute;
+	top: -1.3vmin;
+	transform: rotate(65deg);
+	width: 2.5vmin;
+}
+
+#monument::before {
+	background: var(--blueBerry);
+	border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+	box-shadow: 0 0.6vmin 0 -0.2vmin var(--blueBerry),
+		-0.5vmin 1.7vmin 0 0.5vmin var(--blueBerry), -0.8vmin 3vmin 0 var(--blueBerry);
+	content: "";
+	height: 1vmin;
+	position: absolute;
+	top: -1vmin;
+	width: 0.75vmin;
+}
+
+.shield {
+	background: var(--blueBerry);
+	clip-path: polygon(50% 0, 100% 5%, 100% 75%, 50% 100%, 0 75%, 0 5%);
+	content: "";
+	height: 1.5vmin;
+	position: absolute;
+	right: -1vmin;
+	top: -1.4vmin;
+	width: 1vmin;
+}
+
+.sword {
+	background: var(--blueBerry);
+	clip-path: polygon(
+		40% 82%,
+		40% 5%,
+		50% 0,
+		60% 5%,
+		60% 82%,
+		100% 90%,
+		60% 90%,
+		60% 100%,
+		40% 100%,
+		40% 90%,
+		0 90%
+	);
+	content: "";
+	height: 3vmin;
+	left: -0.8vmin;
+	position: absolute;
+	top: -3.7vmin;
+	width: 1.8vmin;
+}
+
+#arch {
+	display: grid;
+	height: 8vmin;
+	overflow: hidden;
+	place-items: start center;
+	position: absolute;
+	right: 48vmin;
+	top: -6vmin;
+	width: 16vmin;
+}
+
+#arch::after {
+	background: radial-gradient(
+		circle at 50% 50%,
+		transparent 55%,
+		var(--indigo) 55%,
+		var(--blueBerry) 60%,
+		var(--indigo) 60%,
+		var(--blueBerry) 65%,
+		var(--indigo) 65%,
+		var(--blueBerry) 70%,
+		var(--indigo) 70%
+	);
+	border-radius: 100%;
+	content: "";
+	height: 16vmin;
+	position: absolute;
+	width: 16vmin;
+}
+
+#bridge {
+	background: linear-gradient(var(--indigo) 5%, transparent 5%),
+		radial-gradient(transparent 62%, var(--blueBerry) 62%);
+	background-size: 8vmin 8vmin;
+	background-position: top right;
+	display: grid;
+	filter: drop-shadow(0.75vmin 0 0 var(--indigo));
+	height: 4vmin;
+	left: -2vw;
+	place-items: center;
+	position: absolute;
+	top: -2vmin;
+	width: 102vw;
+}
+
+#bridge::after {
+	background-color: var(--indigo);
+	border-top: 0.5vmin dashed var(--blueBerry);
+	content: "";
+	display: flex;
+	height: 0.2vmin;
+	position: absolute;
+	top: -0.25vmin;
+	width: 100vw;
+}
+
+#bridge:before {
+	background: linear-gradient(90deg, var(--indigo) 3%, transparent 3%),
+		transparent;
+	background-size: 4vmin 4vmin;
+	content: "";
+	height: 1.2vmin;
+	position: absolute;
+	top: -1.4vmin;
+	width: 100vw;
+}
+
+#stadium {
+	background-color: var(--indigo);
+	clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+	display: grid;
+	height: 5vmin;
+	perspective: 2vmin;
+	place-items: center;
+	position: absolute;
+	right: 35vmin;
+	top: -3vmin;
+	width: 16vmin;
+}
+
+#stadium::before {
+	background: linear-gradient(90deg, var(--indigo) 20%, var(--blueBerry) 20%),
+		transparent;
+	background-size: 1vmin;
+	content: "";
+	height: 2.5vmin;
+	transform-style: preserve-3d;
+	transform: rotateX(10deg);
+	width: 16vmin;
+}
+
+#stadium:after {
+	background: linear-gradient(90deg, var(--blueBerry) 20%, var(--indigo) 20%),
+		transparent;
+	background-size: 1vmin 1vmin;
+	content: "";
+	height: 2.5vmin;
+	transform-style: preserve-3d;
+	transform: rotateX(-10deg) translateY(-0.05vmin);
+	width: 16vmin;
+}
+
+section {
+	align-items: center;
+	display: flex;
+	height: 64vmin;
+	position: absolute;
+	justify-content: center;
+	width: 64vmin;
+}
+
+section::after {
+	animation: sec 3s 4s linear both;
+	background: radial-gradient(circle at 50% 50%, var(--clr3), transparent),
+		radial-gradient(circle at 50% 80%, var(--clr1), transparent 33%),
+		radial-gradient(circle at 80% 20%, var(--blue), transparent 33%),
+		radial-gradient(circle at 0% 20%, var(--black), transparent 33%),
+		radial-gradient(circle at -15% -15%, var(--clr2), var(--clr3));
+	border-radius: 100%;
+	box-shadow: 0 0 24vmin 50vmin rgba(0, 0, 0, 0.85) inset;
+	bottom: 17vmin;
+	content: "";
+	height: 100vmin;
+	position: absolute;
+	width: 100vmin;
+}
+
+@keyframes sec {
+	0% {
+		height: 0;
+		width: 0;
+	}
+	50% {
+		height: 7vmin;
+		width: 7vmin;
+	}
+	100% {
+		box-shadow: 0 5vmin 24vmin rgba(0, 0, 0, 0.5) inset;
+		height: 100vmin;
+		width: 100vmin;
+	}
+}
+
+.cosmos {
+	animation: cosmos 6s 5s linear both;
+	bottom: 17vmin;
+	border-radius: 100%;
+	display: grid;
+	height: 100vmin;
+	overflow: hidden;
+	opacity: 0;
+	place-items: center;
+	position: absolute;
+	transform: rotate(0deg);
+	width: 100vmin;
+	z-index: 1;
+}
+
+@keyframes cosmos {
+	0% {
+		height: 0;
+		width: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	80% {
+		height: 7vmin;
+		width: 7vmin;
+	}
+	100% {
+		height: 100vmin;
+		opacity: 1;
+		transform: rotate(360deg);
+		width: 100vmin;
+	}
+}
+
+.comet {
+	border-radius: 100%;
+	display: grid;
+	height: 0.2vmin;
+	left: -25vmin;
+	overflow: hidden;
+	place-items: center;
+	position: relative;
+	transform: rotate(-45deg);
+	width: 10vmin;
+}
+
+.comet:nth-child(2) {
+	left: 25vmin;
+	top: 0vmin;
+}
+
+.comet::after {
+	animation: comet 10s 1s linear infinite;
+	background: var(--white);
+	box-shadow: 0.5vmin 0 1vmin 0.5vmin var(--white);
+	border-radius: 100%;
+	content: "";
+	height: 0.3vmin;
+	position: absolute;
+	right: -100%;
+	width: 0.3vmin;
+}
+
+.comet:nth-child(2)::after {
+	animation-delay: 6s;
+}
+
+@keyframes comet {
+	0% {
+		right: -100%;
+	}
+	100% {
+		right: 2000%;
+	}
+}
+
+#star {
+	display: grid;
+	height: 100vmin;
+	place-items: center;
+	position: absolute;
+	width: 100vmin;
+}
+
+#star > * {
+	background-color: var(--white);
+	border-radius: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#star > *:nth-child(2n) {
+	background-color: var(--pink);
+}
+
+#star > *:nth-child(5n) {
+	background-color: var(--blueBerry);
+}
+
+#sun {
+	animation: sun 3s ease-in infinite;
+	background: radial-gradient(circle at 60% 0%, var(--orange), #f5a14f00 45%),
+		radial-gradient(circle at 75% 75%, var(--orange), var(--khaki));
+	border-radius: 100%;
+	box-shadow: 0 0 6vmin var(--khaki), 0 0 0 0 #f0e68c15;
+	height: 8vmin;
+	border: 1vmin solid var(--beige);
+	position: absolute;
+	width: 8vmin;
+}
+
+@keyframes sun {
+	100% {
+		box-shadow: 0 0 6vmin var(--khaki), 0 0 0 20vmin #f0e68c00;
+	}
+}
+
+#mercury {
+	animation: mercury calc(var(--timeSolar) * 4) linear infinite;
+	background: radial-gradient(circle at 10% 10%, var(--beige), var(--clr2));
+	border-radius: 100%;
+	height: 2vmin;
+	position: absolute;
+	transform: rotate(0deg) translate(8vmin, 0);
+	width: 2vmin;
+}
+
+@keyframes mercury {
+	100% {
+		transform: rotate(360deg) translate(8vmin, 0);
+	}
+}
+
+#venus {
+	animation: venus calc(var(--timeSolar) * 5) linear infinite;
+	background: radial-gradient(circle at 10% 10%, var(--beige), var(--orange));
+	border-radius: 100%;
+	height: 3vmin;
+	position: absolute;
+	transform: rotate(0deg) translate(12vmin, 0);
+	width: 3vmin;
+}
+
+@keyframes venus {
+	100% {
+		transform: rotate(360deg) translate(12vmin, 0);
+	}
+}
+
+#earth {
+	animation: earth calc(var(--timeSolar) * 6) linear infinite;
+	background: radial-gradient(
+		circle at 0% 0%,
+		var(--blueLight) 20%,
+		var(--tea),
+		var(--blueLight),
+		var(--tea),
+		var(--blueLight),
+		var(--tea),
+		var(--blueLight),
+		var(--tea)
+	);
+	border-radius: 100%;
+	display: grid;
+	height: 3vmin;
+	place-items: center;
+	position: absolute;
+	transform: rotate(0deg) translate(16vmin, 0);
+	width: 3vmin;
+}
+
+@keyframes earth {
+	100% {
+		transform: rotate(360deg) translate(16vmin, 0);
+	}
+}
+
+#earth::after {
+	animation: luna calc(var(--timeSolar) * 3) linear infinite;
+	background: linear-gradient(45deg, var(--white), 50%, var(--brown) 85%);
+	border-radius: 100%;
+	content: "";
+	height: 0.6vmin;
+	position: absolute;
+	transform: rotate(0deg) translate(2vmin, 0);
+	width: 0.6vmin;
+}
+
+@keyframes luna {
+	100% {
+		transform: rotate(360deg) translate(2vmin, 0);
+	}
+}
+
+#mars {
+	animation: mars calc(var(--timeSolar) * 7) linear infinite;
+	background: radial-gradient(
+		circle at 105% -5%,
+		var(--redish),
+		var(--orange),
+		var(--red),
+		var(--redish)
+	);
+	border-radius: 100%;
+	height: 2.5vmin;
+	position: absolute;
+	transform: rotate(0deg) translate(20vmin, 0);
+	width: 2.5vmin;
+}
+
+@keyframes mars {
+	100% {
+		transform: rotate(360deg) translate(20vmin, 0);
+	}
+}
+
+#jupiter {
+	animation: jupiter calc(var(--timeSolar) * 8) linear infinite;
+	background: radial-gradient(
+		circle at 0% 0%,
+		var(--khaki) 20%,
+		var(--earth),
+		var(--orange),
+		var(--earth),
+		var(--khaki),
+		var(--earth),
+		var(--tera),
+		var(--orange) 90%
+	);
+	border-radius: 100%;
+	height: 5vmin;
+	position: absolute;
+	transform: rotate(0deg) translate(25vmin, 0);
+	width: 5vmin;
+}
+
+@keyframes jupiter {
+	100% {
+		transform: rotate(360deg) translate(25vmin, 0);
+	}
+}
+
+#saturn {
+	animation: saturn calc(var(--timeSolar) * 9) linear infinite;
+	position: absolute;
+	transform: rotate(0deg) translate(30vmin, 0);
+}
+
+@keyframes saturn {
+	100% {
+		transform: rotate(360deg) translate(30vmin, 0);
+	}
+}
+
+#saturn span {
+	background: radial-gradient(
+		circle at 10% 10%,
+		var(--brown) 10%,
+		var(--khaki) 20%,
+		var(--orange) 30%,
+		var(--beige) 50%,
+		var(--brown) 76%,
+		var(--grey)
+	);
+	border-radius: 50%;
+	display: grid;
+	height: 4vmin;
+	place-items: center;
+	position: absolute;
+	width: 4vmin;
+}
+
+#saturn span::after,
+#saturn span::before {
+	border: 2vmin solid var(--beige);
+	border-radius: 100%;
+	box-sizing: content-box;
+	content: "";
+	height: 6vmin;
+	position: absolute;
+	transform: rotateX(50deg) rotateY(125deg);
+	width: 6vmin;
+}
+
+#saturn span::after {
+	z-index: -1;
+}
+
+#saturn span::before {
+	border-right-color: transparent;
+	border-top-color: transparent;
+}
+
+#uranus {
+	animation: uranus calc(var(--timeSolar) * 10) linear infinite;
+	background: radial-gradient(
+		circle at 24% 76%,
+		var(--pinkDark) 5%,
+		var(--clr2),
+		var(--clr3) 60%,
+		var(--clr2) 70%,
+		var(--blueLight) 95%
+	);
+	border-radius: 100%;
+	height: 4vmin;
+	position: absolute;
+	transform: rotate(0deg) translate(38vmin, 0);
+	width: 4vmin;
+}
+
+@keyframes uranus {
+	100% {
+		transform: rotate(360deg) translate(38vmin, 0);
+	}
+}
+
+#neptune {
+	animation: neptune calc(var(--timeSolar) * 11) linear infinite;
+	background: radial-gradient(circle at 50% 100%, var(--blueLight), var(--grey));
+	border-radius: 100%;
+	height: 3vmin;
+	position: absolute;
+	transform: rotate(0deg) translate(43vmin, 0);
+	width: 3vmin;
+}
+
+@keyframes neptune {
+	100% {
+		transform: rotate(360deg) translate(43vmin, 0);
+	}
+}
+
+#pluto {
+	animation: pluto calc(var(--timeSolar) * 12) linear infinite;
+	background: radial-gradient(
+		circle at 10% 10%,
+		var(--beige),
+		var(--grey),
+		var(--brown)
+	);
+	border-radius: 100%;
+	height: 2vmin;
+	position: absolute;
+	transform: rotate(0deg) translate(47vmin, 0);
+	width: 2vmin;
+}
+
+@keyframes pluto {
+	100% {
+		transform: rotate(360deg) translate(47vmin, 0);
+	}
+}
+
+#bears {
+	left: 5vmin;
+	position: absolute;
+	top: 30vmin;
+	/* transform: scale(.6); */
+}
+
+#ursaMinor {
+	display: grid;
+	height: 20vmin;
+	place-items: center;
+	position: relative;
+	transform: rotate(140deg);
+	width: 28vmin;
+}
+
+#ursaMinor s {
+	position: absolute;
+}
+
+#ursaMinor s:nth-child(1) {
+	border-top: 0.2vmin dotted var(--whiteOpacity);
+	display: flex;
+	height: 1vmin;
+	justify-content: space-between;
+	position: relative;
+	transform: rotate(45deg) translate(-9vmin, 0vmin);
+	width: 4vmin;
+}
+
+#ursaMinor s:nth-child(1)::after {
+	background-color: var(--white);
+	border-radius: 100%;
+	content: "";
+	height: 0.5vmin;
+	position: relative;
+	top: -0.3vmin;
+	width: 0.5vmin;
+}
+
+#ursaMinor s:nth-child(1)::before {
+	background-color: var(--white);
+	border-radius: 100%;
+	content: "";
+	height: 0.8vmin;
+	position: relative;
+	top: -0.5vmin;
+	width: 0.8vmin;
+}
+
+#ursaMinor s:nth-child(2) {
+	background-color: var(--white);
+	border-radius: 100%;
+	content: "";
+	height: 0.5vmin;
+	transform: translate(-1.6vmin, -3vmin);
+	width: 0.5vmin;
+}
+
+#ursaMinor s:nth-child(2)::after {
+	border-top: 0.2vmin dotted var(--whiteOpacity);
+	content: "";
+	height: 0.2vmin;
+	position: absolute;
+	transform: rotate(37deg) translate(-3.2vmin, 1.2vmin);
+	width: 3.5vmin;
+}
+
+#ursaMinor s:nth-child(2)::before {
+	border-top: 0.2vmin dotted var(--whiteOpacity);
+	content: "";
+	height: 0.2vmin;
+	position: absolute;
+	transform: rotate(8deg) translate(0.2vmin, 0.4vmin);
+	width: 3.5vmin;
+}
+
+#ursaMinor s:nth-child(3) {
+	background-color: var(--white);
+	border-radius: 100%;
+	content: "";
+	height: 0.5vmin;
+	transform: translate(2vmin, -2.4vmin);
+	width: 0.5vmin;
+}
+
+#ursaMinor s:nth-child(3)::after {
+	border-top: 0.2vmin dotted var(--whiteOpacity);
+	content: "";
+	height: 0.2vmin;
+	position: absolute;
+	transform: rotate(83deg) translate(1.4vmin, 1vmin);
+	width: 2.5vmin;
+}
+
+#ursaMinor s:nth-child(3)::before {
+	border-top: 0.2vmin dotted var(--whiteOpacity);
+	content: "";
+	height: 0.2vmin;
+	position: absolute;
+	transform: rotate(-5deg) translate(0, -0.2vmin);
+	width: 5vmin;
+}
+
+#ursaMinor s:nth-child(4) {
+	background-color: var(--white);
+	border-radius: 100%;
+	height: 0.5vmin;
+	transform: translate(2.4vmin, 0.6vmin);
+	width: 0.5vmin;
+}
+
+#ursaMinor s:nth-child(4)::after {
+	border-top: 0.2vmin dotted var(--whiteOpacity);
+	content: "";
+	height: 0.2vmin;
+	position: absolute;
+	transform: rotate(-4deg) translate(0vmin, 0vmin);
+	width: 5.8vmin;
+}
+
+#ursaMinor s:nth-child(4)::before {
+	background-color: var(--white);
+	border-radius: 100%;
+	content: "";
+	height: 0.5vmin;
+	position: absolute;
+	transform: translate(5.6vmin, -0.4vmin);
+	width: 0.5vmin;
+}
+
+#ursaMinor s:nth-child(5) {
+	background-color: var(--white);
+	border-radius: 100%;
+	content: "";
+	height: 0.8vmin;
+	position: absolute;
+	transform: translate(7vmin, -2.8vmin);
+	width: 0.8vmin;
+}
+
+#ursaMinor s:nth-child(5)::after {
+	border-top: 0.2vmin dotted var(--whiteOpacity);
+	content: "";
+	height: 0.2vmin;
+	position: absolute;
+	transform: rotate(70deg) translate(1.4vmin, 1.1vmin);
+	width: 2.6vmin;
+}
+
+#ursaMajor {
+	display: grid;
+	height: 20vmin;
+	place-items: center;
+	position: relative;
+	width: 28vmin;
+}
+
+#ursaMajor s {
+	position: absolute;
+}
+
+#ursaMajor s:nth-child(1) {
+	border-top: 0.2vmin dotted var(--whiteOpacity);
+	display: flex;
+	height: 1vmin;
+	justify-content: space-between;
+	position: relative;
+	transform: rotate(-15deg) translate(-10vmin, -5vmin);
+	width: 5vmin;
+}
+
+#ursaMajor s:nth-child(1)::after {
+	background-color: var(--white);
+	border-radius: 100%;
+	content: "";
+	height: 0.5vmin;
+	position: relative;
+	top: -0.3vmin;
+	width: 0.5vmin;
+}
+
+#ursaMajor s:nth-child(1)::before {
+	background-color: var(--white);
+	border-radius: 100%;
+	content: "";
+	height: 0.5vmin;
+	position: relative;
+	top: -0.3vmin;
+	width: 0.5vmin;
+}
+
+#ursaMajor s:nth-child(2) {
+	background-color: var(--white);
+	border-radius: 100%;
+	content: "";
+	height: 0.5vmin;
+	transform: translate(-4vmin, -2vmin);
+	width: 0.5vmin;
+}
+
+#ursaMajor s:nth-child(2)::after {
+	border-top: 0.2vmin dotted var(--whiteOpacity);
+	content: "";
+	height: 0.2vmin;
+	position: absolute;
+	transform: rotate(12deg) translate(-4.8vmin, 0.6vmin);
+	width: 5vmin;
+}
+
+#ursaMajor s:nth-child(2)::before {
+	border-top: 0.2vmin dotted var(--whiteOpacity);
+	content: "";
+	height: 0.2vmin;
+	position: absolute;
+	transform: rotate(8deg) translate(0vmin, 0.5vmin);
+	width: 5vmin;
+}
+
+#ursaMajor s:nth-child(3) {
+	background-color: var(--white);
+	border-radius: 100%;
+	content: "";
+	height: 0.5vmin;
+	transform: translate(0.5vmin, -1.4vmin);
+	width: 0.5vmin;
+}
+
+#ursaMajor s:nth-child(3)::after {
+	border-top: 0.2vmin dotted var(--whiteOpacity);
+	content: "";
+	height: 0.2vmin;
+	position: absolute;
+	transform: rotate(83deg) translate(1.4vmin, 1.8vmin);
+	width: 4vmin;
+}
+
+#ursaMajor s:nth-child(3)::before {
+	border-top: 0.2vmin dotted var(--whiteOpacity);
+	content: "";
+	height: 0.2vmin;
+	position: absolute;
+	transform: rotate(-5deg) translate(0, -0.2vmin);
+	width: 8vmin;
+}
+
+#ursaMajor s:nth-child(4) {
+	background-color: var(--white);
+	border-radius: 100%;
+	height: 0.5vmin;
+	transform: translate(1vmin, 2vmin);
+	width: 0.5vmin;
+}
+
+#ursaMajor s:nth-child(4)::after {
+	border-top: 0.2vmin dotted var(--whiteOpacity);
+	content: "";
+	height: 0.2vmin;
+	position: absolute;
+	transform: rotate(2deg) translate(0vmin, 0.3vmin);
+	width: 7vmin;
+}
+
+#ursaMajor s:nth-child(4)::before {
+	background-color: var(--white);
+	border-radius: 100%;
+	content: "";
+	height: 0.5vmin;
+	position: absolute;
+	transform: translate(6.4vmin, 0.2vmin);
+	width: 0.5vmin;
+}
+
+#ursaMajor s:nth-child(5) {
+	background-color: var(--white);
+	border-radius: 100%;
+	content: "";
+	height: 0.5vmin;
+	position: absolute;
+	transform: translate(8.2vmin, -2vmin);
+	width: 0.5vmin;
+}
+
+#ursaMajor s:nth-child(5)::after {
+	border-top: 0.2vmin dotted var(--whiteOpacity);
+	content: "";
+	height: 0.2vmin;
+	position: absolute;
+	transform: rotate(99deg) translate(2.4vmin, 2.2vmin);
+	width: 4.5vmin;
+}
+
+#me_cat {
+	bottom: 8vmin;
+	display: flex;
+	height: 43vmin;
+	justify-content: space-around;
+	place-items: end;
+	position: relative;
+	z-index: 10;
+}
+
+#border {
+	bottom: -8vmin;
+	display: grid;
+	height: 12vmin;
+	place-items: center;
+	position: absolute;
+	width: 100vw;
+}
+
+#border::after {
+	background: linear-gradient(var(--black), #1b146400 50%);
+	content: "";
+	height: 12vmin;
+	opacity: 0.35;
+	position: absolute;
+	width: 100vw;
+}
+
+#border::before {
+	background: linear-gradient(transparent, 60%, var(--black)),
+		linear-gradient(90deg, var(--indigo) 1%, #281f7f00 1%), var(--clr3);
+	background-size: 30vmin 5vmin;
+	height: 2vmin;
+	content: "";
+	position: absolute;
+	top: -2vmin;
+	width: 100vw;
+}
+
+.borderTop {
+	display: grid;
+	height: 1vmin;
+	overflow: hidden;
+	perspective: 2vh;
+	place-items: center;
+	position: absolute;
+	top: -3vmin;
+	width: 100vw;
+}
+
+.borderTop::before {
+	background: linear-gradient(90deg, var(--clr3) 1%, #1b146400 1%), var(--indigo);
+	background-size: 20vmin 5vmin;
+	content: "";
+	height: 12vmin;
+	position: absolute;
+	top: 0;
+	transform-style: preserve-3d;
+	transform: rotateX(4deg) scale(3, 1.4);
+	width: 100vw;
+}
+
+.tiles {
+	display: grid;
+	height: 12vmin;
+	overflow: hidden;
+	perspective: 2vh;
+	place-items: center;
+	position: absolute;
+	width: 100vw;
+}
+
+.tiles::before {
+	background-image: linear-gradient(var(--blueBerry) 3%, #39318900 3%),
+		linear-gradient(to right, var(--blueBerry) 3%, var(--indigo) 3%);
+	background-size: 5vmin 5vmin;
+	content: "";
+	height: 12vmin;
+	position: absolute;
+	top: 0;
+	transform-style: preserve-3d;
+	transform: rotateX(4deg) scale(3, 1.4);
+	width: 100vw;
+}
+
+#me {
+	display: flex;
+	height: 45vmin;
+	justify-content: center;
+	position: relative;
+	width: 40vmin;
+}
+
+#me::before {
+	background-color: var(--black);
+	border-radius: 100%;
+	bottom: -1vmin;
+	content: "";
+	height: 4vmin;
+	opacity: 0.5;
+	position: absolute;
+	width: 28vmin;
+}
+
+#me.animMe::before {
+	animation: animMeShadow 5s infinite alternate;
+}
+
+@keyframes animMeShadow {
+	90% {
+		width: 28vmin;
+	}
+	100% {
+		width: 26vmin;
+	}
+}
+
+.converse {
+	bottom: 1vmin;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	width: 28vmin;
+}
+
+.converse span {
+	background-color: var(--white);
+	border: 0.24vmin solid var(--black);
+	border-radius: 100%;
+	box-shadow: 0.5vmin 0 0 var(--white) inset, 0.8vmin 0 0 var(--black) inset,
+		0 -9vmin 0 -4vmin var(--black) inset;
+	display: grid;
+	height: 9vmin;
+	place-items: center;
+	position: relative;
+	transform: rotate(-45deg) scale(1.25);
+	width: 6vmin;
+}
+
+.animMe .converse span:nth-child(1) {
+	animation: animMe1 5s infinite alternate;
+}
+
+@keyframes animMe1 {
+	90% {
+		transform: rotate(-45deg) scale(1.25);
+	}
+	100% {
+		transform: rotate(-15deg) scale(1.25) translate(2vmin, 0);
+	}
+}
+
+.converse span:nth-child(2) {
+	box-shadow: -0.5vmin 0 0 var(--white) inset, -0.8vmin 0 0 var(--black) inset,
+		0 -9vmin 0 -4vmin var(--black) inset;
+	transform: rotate(45deg) scale(1.25);
+}
+
+.animMe .converse span:nth-child(2) {
+	animation: animMe2 5s infinite alternate;
+}
+
+@keyframes animMe2 {
+	90% {
+		transform: rotate(45deg) scale(1.25);
+	}
+	100% {
+		transform: rotate(15deg) scale(1.25) translate(-2vmin, 0);
+	}
+}
+
+.converse span::before {
+	content: "\22C8\22C8";
+	color: var(--white);
+	font: normal 2vmin/1 sans-serif;
+	letter-spacing: -0.24vmin;
+	left: 24%;
+	position: absolute;
+	top: 3.6vmin;
+	transform: scaleY(0.4) rotate(90deg);
+}
+
+.converse span:nth-child(2)::before {
+	left: auto;
+	right: 24%;
+}
+
+.converse label {
+	background-color: var(--white);
+	border-radius: 100%;
+	bottom: 0.6vmin;
+	display: grid;
+	height: 1.6vmin;
+	left: 2vmin;
+	position: absolute;
+	place-items: center;
+	transform: rotate(-24deg);
+	width: 1vmin;
+}
+
+.converse label::after {
+	content: "\2605";
+	color: var(--black);
+	font-size: 1.4vmin;
+	position: absolute;
+	transform: rotate(45deg);
+}
+
+.converse span:nth-child(2) label {
+	left: auto;
+	right: 2vmin;
+	transform: rotate(24deg);
+}
+
+#mac {
+	animation: mac 0.5s 1s linear both;
+	background: linear-gradient(transparent, 45%, #e2a3ff70);
+	bottom: 15vmin;
+	clip-path: polygon(50% 0, 50% 0, 75% 100%, 25% 100%);
+	display: grid;
+	height: 0vmin;
+	mix-blend-mode: overlay;
+	overflow: hidden;
+	position: absolute;
+	place-items: start center;
+	transition: 0.3s linear;
+	width: 25vmin;
+}
+
+@keyframes mac {
+	100% {
+		clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+		height: 25vmin;
+	}
+}
+
+.code {
+	animation: code 5s 2s linear both;
+	bottom: -25vmin;
+	color: var(--springgreen);
+	font: normal 1.2vmin/1.6 monospace;
+	position: absolute;
+	word-break: break-all;
+	width: 15vmin;
+}
+
+@keyframes code {
+	100% {
+		bottom: 50vmin;
+	}
+}
+
+.hair {
+	border-radius: 100%;
+	display: flex;
+	overflow: hidden;
+	height: 18vmin;
+	justify-content: center;
+	position: absolute;
+	width: 18vmin;
+}
+
+.hair span {
+	background: linear-gradient(127deg, var(--pink) 66%, var(--pinkDark) 86%);
+	border-radius: 100%;
+	border: var(--borderPink);
+	border-top-color: transparent;
+	display: flex;
+	gap: 1vmin;
+	height: 50vmin;
+	overflow: hidden;
+	justify-content: space-around;
+	position: absolute;
+	top: -41vmin;
+	width: 50vmin;
+}
+
+.hair span::after {
+	box-shadow: var(--boxPink);
+	border-radius: 100%;
+	bottom: -9vmin;
+	content: "";
+	height: 18vmin;
+	position: absolute;
+	width: 18vmin;
+}
+
+.hair span i {
+	background-color: var(--pinkDark);
+	bottom: 2vmin;
+	border-radius: 100%;
+	height: 3vmin;
+	position: absolute;
+	transform: translateX(-3vmin) rotate(35deg);
+	width: 0.24vmin;
+}
+
+.hair span i:nth-child(2) {
+	transform: translateX(3vmin) rotate(-35deg);
+}
+
+.hair span i::after {
+	background-color: var(--pinkDark);
+	border-radius: 100%;
+	content: "";
+	height: 3vmin;
+	left: -2vmin;
+	position: absolute;
+	transform: rotate(15deg);
+	width: 0.24vmin;
+}
+
+.hair span i::before {
+	background-color: var(--pinkDark);
+	border-radius: 100%;
+	content: "";
+	height: 3vmin;
+	left: 2vmin;
+	position: absolute;
+	transform: translateX(-0.3vmin) rotate(-5deg);
+	width: 0.24vmin;
+}
+
+.head {
+	border-radius: 100%;
+	display: flex;
+	height: 15vmin;
+	justify-content: center;
+	position: absolute;
+	top: 0.75vmin;
+	width: 15vmin;
+}
+
+.head::after {
+	background-color: var(--beige);
+	border: var(--borderBrown);
+	border-radius: 100%;
+	content: "";
+	height: 15vmin;
+	position: absolute;
+	top: 0.25vmin;
+	width: 15vmin;
+}
+
+.head::before {
+	border-radius: 100%;
+	box-shadow: 0 -1.24vmin 0 0.12vmin var(--beige) inset,
+		0 -2.48vmin 0 -1vmin var(--brown) inset, 0 0.48vmin 0 -0.26vmin var(--brown);
+	content: "";
+	height: 4vmin;
+	position: absolute;
+	top: 9vmin;
+	width: 9vmin;
+	z-index: 10;
+}
+
+.ears {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 7vmin;
+	width: 16.6vmin;
+}
+
+.ears::after {
+	background-color: var(--beige);
+	border: var(--borderBrown);
+	border-radius: 100%;
+	content: "";
+	height: 3vmin;
+	width: 2vmin;
+}
+
+.ears::before {
+	background-color: var(--beige);
+	border: var(--borderBrown);
+	border-radius: 100%;
+	content: "";
+	height: 3vmin;
+	width: 2vmin;
+}
+
+.neck {
+	background-color: var(--beige);
+	border: var(--borderBrown);
+	border-top-color: var(--beige);
+	border-radius: 0 0 100% 100%;
+	display: grid;
+	height: 3vmin;
+	place-items: center;
+	position: absolute;
+	top: 15.2vmin;
+	width: 5.4vmin;
+}
+
+.neck::after {
+	background-color: var(--black);
+	content: "";
+	clip-path: polygon(
+		0 28%,
+		40% 30%,
+		38% 0,
+		62% 0,
+		60% 30%,
+		100% 28%,
+		100% 47%,
+		60% 45%,
+		62% 100%,
+		38% 100%,
+		40% 45%,
+		0 47%
+	);
+	height: 1.4vmin;
+	position: absolute;
+	top: 0.32vmin;
+	width: 1vmin;
+}
+
+.body {
+	border-radius: 100%;
+	display: flex;
+	height: 26vmin;
+	justify-content: center;
+	position: absolute;
+	top: 18.6vmin;
+	width: 24vmin;
+}
+
+.shirt {
+	background-color: var(--black);
+	box-shadow: 0 -0.32vmin 0 0.12vmin var(--grey) inset;
+	border-radius: 100%;
+	display: flex;
+	height: 26vmin;
+	justify-content: center;
+	position: absolute;
+	width: 23vmin;
+}
+
+.sleeves {
+	border-radius: 100%;
+	display: flex;
+	height: 30vmin;
+	overflow: hidden;
+	justify-content: center;
+	position: absolute;
+	top: -1vmin;
+	width: 32vmin;
+}
+
+.sleeves::after {
+	background-color: var(--black);
+	border: var(--borderGrey);
+	border-radius: 100%;
+	content: "";
+	height: 50vmin;
+	position: absolute;
+	top: -36vmin;
+	width: 55vmin;
+}
+
+.hand {
+	background-color: var(--beige);
+	border: var(--borderBrown);
+	border-radius: 100%;
+	height: 22vmin;
+	position: absolute;
+	width: 29vmin;
+}
+
+.hand::after {
+	content: "мрій";
+	color: var(--black);
+	font: italic 1vmin/2 serif;
+	position: absolute;
+	right: 0.4vmin;
+	top: 10vmin;
+	transform: rotate(-24deg);
+}
+
+.collar {
+	background-color: var(--black);
+	border-radius: 100%;
+	box-shadow: 0 0.2vmin 0 var(--grey), 0 0.5vmin 0 0.6vmin var(--black),
+		0 0.9vmin 0 0.6vmin var(--grey);
+	display: flex;
+	height: 2.4vmin;
+	justify-content: center;
+	position: absolute;
+	top: -2.2vmin;
+	width: 6vmin;
+}
+
+.pants {
+	border-radius: 100%;
+	display: grid;
+	height: 26vmin;
+	overflow: hidden;
+	place-items: center;
+	position: absolute;
+	width: 23vmin;
+}
+
+.belt {
+	border-bottom: var(--borderGrey);
+	bottom: 7vmin;
+	border-radius: 100%;
+	box-shadow: 0 -0.4vmin 0 var(--black) inset, 0 -0.54vmin 0 var(--grey) inset;
+	display: grid;
+	height: 50vmin;
+	place-items: end center;
+	position: absolute;
+	width: 60vmin;
+}
+
+.belt::after {
+	border-left: 0.6vmin double var(--grey);
+	border-right: 0.6vmin double var(--grey);
+	bottom: 0.4vmin;
+	content: "";
+	height: 0.6vmin;
+	position: absolute;
+	width: 13vmin;
+}
+
+.belt::before {
+	border-left: 0.6vmin double var(--grey);
+	bottom: -0.1vmin;
+	content: "";
+	height: 0.6vmin;
+	position: absolute;
+	transform: translateX(0.3vmin);
+	width: 0.24vmin;
+}
+
+.pocket {
+	bottom: -0.6vmin;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	width: 16vmin;
+}
+
+.pocket span {
+	border: var(--borderGrey);
+	display: flex;
+	height: 6vmin;
+	transform: rotate(24deg);
+	width: 6vmin;
+}
+
+.pocket span:nth-child(2) {
+	transform: rotate(-24deg);
+}
+
+.pocket span::before {
+	border-bottom: var(--borderGrey);
+	content: "";
+	height: 0.8vmin;
+	width: 6vmin;
+}
+
+.chain {
+	border: 0.3vmin dotted var(--greyLight);
+	border-top: none;
+	border-radius: 0 0 100% 100%;
+	bottom: 2.8vmin;
+	height: 5vmin;
+	position: absolute;
+	right: 0.4vmin;
+	width: 5vmin;
+}
+
+.chain::after {
+	border: 0.3vmin solid var(--greyLight);
+	border-top-color: transparent;
+	border-radius: 100%;
+	content: "";
+	height: 1.1vmin;
+	left: -0.7vmin;
+	position: absolute;
+	top: -0.2vmin;
+	width: 1.1vmin;
+}
+
+#cat {
+	bottom: 0;
+	display: grid;
+	height: 32vmin;
+	place-items: center;
+	position: absolute;
+	right: -20vmin;
+	width: 24vmin;
+}
+
+#cat::before {
+	background-color: var(--black);
+	border-radius: 100%;
+	bottom: 0;
+	content: "";
+	height: 3vmin;
+	opacity: 0.4;
+	position: absolute;
+	width: 10vmin;
+	z-index: 0;
+}
+
+.catHead {
+	background-color: var(--greyLight);
+	border-radius: 100%;
+	display: flex;
+	height: 8vmin;
+	justify-content: center;
+	position: relative;
+	width: 8vmin;
+}
+
+.catEars {
+	display: grid;
+	height: 4vmin;
+	justify-content: space-between;
+	position: absolute;
+	top: -1vmin;
+	width: 8vmin;
+}
+
+.catEars::after {
+	background-color: var(--greyLight);
+	border-radius: 100%;
+	box-shadow: 0 -0.65vmin 0.75vmin var(--greyDark) inset;
+	content: "";
+	height: 7.5vmin;
+	left: 50%;
+	margin: 0 0 0 -4vmin;
+	position: absolute;
+	top: 1.5vmin;
+	width: 8vmin;
+	z-index: 2;
+}
+
+.catEars::before {
+	background: radial-gradient(
+		circle at 50% -25%,
+		var(--greyDark) 25%,
+		var(--greyLight),
+		var(--greyDark)
+	);
+	border-radius: 100%;
+	box-shadow: 0 -0.65vmin 1vmin var(--greyDark) inset;
+	content: "";
+	filter: blur(5px);
+	height: 6vmin;
+	left: 50%;
+	margin: 0 0 0 -2.5vmin;
+	position: absolute;
+	top: 1.5vmin;
+	width: 5vmin;
+	z-index: 3;
+}
+
+.catEars span {
+	border-radius: 100%;
+	display: grid;
+	height: 8vmin;
+	left: -5vmin;
+	overflow: hidden;
+	place-items: center;
+	position: absolute;
+	transform: rotate(-25deg);
+	width: 8vmin;
+}
+
+.catEars span::after {
+	background-color: var(--greyDark);
+	border-radius: 100%;
+	content: "";
+	height: 8vmin;
+	left: 5.8vmin;
+	position: absolute;
+	width: 8vmin;
+}
+
+.catEars span:nth-child(2) {
+	left: auto;
+	right: -5vmin;
+	transform: rotate(25deg);
+}
+
+.catEars span:nth-child(2)::after {
+	left: auto;
+	right: 5.8vmin;
+}
+
+.must {
+	display: grid;
+	height: 2vmin;
+	position: absolute;
+	place-items: center;
+	top: 4vmin;
+	width: 2vmin;
+	z-index: -1;
+}
+
+.must::after {
+	background-color: var(--greyDark);
+	border-radius: 100%;
+	content: "";
+	height: 0.24vmin;
+	position: absolute;
+	transform: rotate(8deg);
+	width: 12vmin;
+}
+
+.animCat .must::after {
+	animation: mustAfter 5s 1s ease-out infinite alternate;
+}
+
+@keyframes mustAfter {
+	96% {
+		transform: rotate(8deg);
+	}
+	100% {
+		transform: rotate(5deg);
+	}
+}
+
+.must::before {
+	background-color: var(--greyDark);
+	border-radius: 100%;
+	content: "";
+	height: 0.24vmin;
+	position: absolute;
+	transform: rotate(-8deg);
+	width: 12vmin;
+}
+
+.animCat .must::before {
+	animation: mustBefore 5s 1s ease-out infinite alternate;
+}
+
+@keyframes mustBefore {
+	96% {
+		transform: rotate(-8deg);
+	}
+	100% {
+		transform: rotate(-5deg);
+	}
+}
+
+.catBody {
+	background: var(--greyLight);
+	border-radius: 100%;
+	display: grid;
+	height: 12vmin;
+	position: absolute;
+	place-items: center;
+	top: 17vmin;
+	width: 8vmin;
+}
+
+.catBody::after {
+	background-color: var(--greyLight);
+	border-radius: 100%;
+	box-shadow: 1vmin 0 1vmin var(--greyDark) inset;
+	bottom: -2vmin;
+	content: "";
+	height: 9vmin;
+	left: -1.5vmin;
+	position: absolute;
+	transform: rotate(-25deg);
+	width: 6vmin;
+}
+
+.catBody::before {
+	background-color: var(--greyLight);
+	border-radius: 100%;
+	box-shadow: -1vmin 0 1vmin var(--greyDark) inset;
+	bottom: -2vmin;
+	content: "";
+	height: 9vmin;
+	position: absolute;
+	transform: rotate(25deg);
+	right: -1.5vmin;
+	width: 6vmin;
+}
+
+.catBody span {
+	background: radial-gradient(
+		circle at 50% -25%,
+		var(--greyDark) 25%,
+		var(--greyLight),
+		var(--greyDark)
+	);
+	border-radius: 100%;
+	box-shadow: 0 0 2vmin var(--greyDark) inset;
+	height: 9vmin;
+	filter: blur(7px);
+	position: absolute;
+	top: 2vmin;
+	width: 5vmin;
+	z-index: 1;
+}
+
+.tail {
+	border-radius: 100%;
+	bottom: -8vmin;
+	box-shadow: -3vmin -1.5vmin 2vmin -2vmin var(--greyDark) inset,
+		-3vmin 0 0 var(--greyLight) inset, 1.5vmin 0.5vmin 0 -0.5vmin #00000050;
+	display: grid;
+	height: 9.5vmin;
+	left: -3.2vmin;
+	overflow: hidden;
+	position: absolute;
+	place-items: center;
+	transform: rotate(40deg);
+	width: 8vmin;
+	z-index: 1;
+}
+
+.animCat .tail {
+	animation: animCat 5s 2s ease-in-out infinite alternate;
+}
+
+@keyframes animCat {
+	90% {
+		bottom: -8vmin;
+		box-shadow: -3vmin -1.5vmin 2vmin -2vmin var(--greyDark) inset,
+			-3vmin 0 0 var(--greyLight) inset, 1.5vmin 0.5vmin 0 -0.5vmin #00000050;
+		left: -3.2vmin;
+		transform: rotate(40deg);
+	}
+	100% {
+		bottom: -6vmin;
+		box-shadow: -3vmin -1.5vmin 2vmin -2vmin var(--greyDark) inset,
+			-4vmin 0 0 var(--greyLight) inset, 4vmin 1.5vmin 0 -1.5vmin #00000040;
+		left: -4vmin;
+		transform: rotate(75deg);
+	}
+}
+
+.tail::after {
+	background: linear-gradient(105deg, var(--greyDark), var(--greyLight));
+	box-shadow: 1vmin 1vmin 1vmin var(--greyLight),
+		-0.5vmin 1vmin 1vmin var(--greyLight) inset;
+	border-radius: 100%;
+	bottom: 0;
+	content: "";
+	height: 5vmin;
+	left: 1vmin;
+	position: absolute;
+	width: 5vmin;
+}
+
+.animCat .tail::after {
+	animation: animCatBef 5s 2s infinite alternate;
+}
+
+@keyframes animCatBef {
+	90% {
+		bottom: 0vmin;
+		left: 1vmin;
+	}
+	100% {
+		bottom: 0.4vmin;
+		left: 0.6vmin;
+	}
+}
+
+footer {
+	align-items: flex-end;
+	bottom: 2vmin;
+	color: var(--magnesium);
+	display: flex;
+	font-size: 1.25vmin;
+	left: calc(50% - 45vw);
+	justify-content: space-between;
+	position: fixed;
+	width: 90vw;
+	z-index: 100;
+}
+
+footer a {
+	color: var(--tea);
+	text-decoration: none;
+	transition: 0.1s linear;
+}
+
+footer a:hover {
+	color: var(--pinkDark);
+}
+
+h1 {
+	font-size: 3vmin;
+	line-height: 2;
+}
+
+.copy {
+	color: var(--pinkDark);
+}
+
+.socialMe {
+	display: flex;
+	gap: 2vmin;
+	list-style: none;
+	margin: 1vmin 0 0;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.socialMe li svg {
+	fill: var(--tea);
+	height: 2vmin;
+	transition: 0.1s linear;
+	width: 2vmin;
+}
+
+.socialMe li a:hover svg {
+	fill: var(--pinkDark);
+}
+
+    </style>
+  </head>
+  <body>
+  <main>
+	<div id="city">
+		<div id="bridge" class="prlx" data-speed="5"></div>
+		<div id="arch" class="prlx" data-speed="12"></div>
+		<div id="monument" class="prlx" data-speed="16">
+			<span class="shield"></span>
+			<span class="sword"></span>
+		</div>
+		<div id="stadium" class="prlx" data-speed="10"></div>
+		<div id="building">
+			<div class="build prlx" data-speed="5">
+				<span class="prlx" data-speed="7"></span>
+				<span class="prlx" data-speed="8"></span>
+				<span class="prlx" data-speed="9"></span>
+			</div>
+		</div>
+	</div>
+	<section id="section">
+		<div class="cosmos">
+			<div id="bears">
+				<div id="ursaMinor">
+					<s></s><s></s><s></s><s></s><s></s>
+				</div>
+				<div id="ursaMajor">
+					<s></s><s></s><s></s><s></s><s></s>
+				</div>
+			</div>
+			<div class="comet"></div>
+			<div class="comet"></div>
+			<div id="star"></div>
+			<div id="sun"></div>
+			<div id="mercury"></div>
+			<div id="venus"></div>
+			<div id="earth"></div>
+			<div id="mars"></div>
+			<div id="jupiter"></div>
+			<div id="saturn"><span></span></div>
+			<div id="uranus"></div>
+			<div id="neptune"></div>
+			<div id="pluto"></div>
+		</div>
+	</section>
+	<div id="me_cat">
+		<div id="border">
+			<div class="tiles"></div>
+			<div class="borderTop"></div>
+		</div>
+		<div id="me">
+			<div class="converse">
+				<span><label></label></span>
+				<span><label></label></span>
+			</div>
+			<div id="mac">
+				<div class="code">001100010100101001011001010110010110001000010100001010110101001001011011 0101110101010001010011010100101001100010000101000101110101011000000101000 1010110010011100001010000010110000101000001101000011110000011100001101100 1011110001101000011001000011100001101100101111000110110001100100011011000
+					11010
+				</div>
+			</div>
+			<div class="body">
+				<div class="hand"></div>
+				<div class="sleeves"></div>
+				<div class="shirt">
+					<div class="collar"></div>
+				</div>
+				<div class="pants">
+					<div class="pocket"><span></span><span></span></div>
+					<div class="belt"></div>
+					<div class="chain"></div>
+				</div>
+			</div>
+			<div class="head">
+				<div class="ears"></div>
+			</div>
+			<div class="neck"></div>
+			<div class="hair">
+				<span>
+					<i></i><i></i>
+				</span>
+			</div>
+		</div>
+		<div id="cat">
+			<div class="catHead">
+				<div class="catEars">
+					<span></span><span></span>
+				</div>
+				<div class="must"></div>
+			</div>
+			<div class="catBody">
+				<div class="tail"></div>
+				<span></span>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div>
+			<h1>Cat, Kyiv and Me</h1><time datetime="15-10-2021">15/10/2021</time> &mdash;
+			<a href="//codepen.io/sparklingman/pen/qBXOgXR" target="_blank">Example code in CodePen</a>
+		</div>
+
+		<div class="copy">
+			Designed and code by Sparklingman &copy;2021
+		</div>
+		<div class="contact">
+			<div>E-mail: <a href="mailto:hi@qd.ua">hi@qd.ua</a></div>
+			<ul class="socialMe">
+				<li><a href="//instagram.com/_sparklingman_" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+							<g transform="translate(-4.5 -4.5)">
+								<path id="Path_1" data-name="Path 1" d="M25.75,7A6.268,6.268,0,0,1,32,13.25v12.5A6.268,6.268,0,0,1,25.75,32H13.25A6.268,6.268,0,0,1,7,25.75V13.25A6.268,6.268,0,0,1,13.25,7h12.5m0-2.5H13.25A8.776,8.776,0,0,0,4.5,13.25v12.5a8.776,8.776,0,0,0,8.75,8.75h12.5a8.776,8.776,0,0,0,8.75-8.75V13.25A8.776,8.776,0,0,0,25.75,4.5Z"></path>
+								<path d="M25.313,12.375A1.688,1.688,0,1,1,27,10.688,1.683,1.683,0,0,1,25.313,12.375Z" transform="translate(2.429 0.571)"></path>
+								<path d="M18,13.5A4.5,4.5,0,1,1,13.5,18,4.5,4.5,0,0,1,18,13.5m0-2.25A6.75,6.75,0,1,0,24.75,18,6.752,6.752,0,0,0,18,11.25Z" transform="translate(1.5 1.5)"></path>
+							</g>
+						</svg></a></li>
+				<li><a href="//facebook.com/sparklingman" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16.068" height="30" viewBox="0 0 16.068 30">
+							<path d="M16.624,16.875l.833-5.429h-5.21V7.922a2.715,2.715,0,0,1,3.061-2.933h2.368V.367A28.882,28.882,0,0,0,13.473,0C9.183,0,6.378,2.6,6.378,7.308v4.138H1.609v5.429H6.378V30h5.869V16.875Z" transform="translate(-1.609)"></path>
+						</svg>
+					</a></li>
+				<li><a href="//twitter.com/sparklingman" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="33.18" height="27" viewBox="0 0 33.18 27">
+							<path d="M34.594,7.7a13.763,13.763,0,0,1-3.909,1.076,6.831,6.831,0,0,0,3-3.769,13.527,13.527,0,0,1-4.324,1.652,6.805,6.805,0,0,0-11.777,4.655,6.665,6.665,0,0,0,.176,1.554A19.292,19.292,0,0,1,3.72,5.745a6.821,6.821,0,0,0,2.116,9.1,6.649,6.649,0,0,1-3.094-.851v.084a6.813,6.813,0,0,0,5.463,6.68A6.852,6.852,0,0,1,6.413,21a6.422,6.422,0,0,1-1.28-.127A6.818,6.818,0,0,0,11.5,25.6a13.648,13.648,0,0,1-8.459,2.918,13.8,13.8,0,0,1-1.624-.1,19.028,19.028,0,0,0,10.42,3.08c12.537,0,19.385-10.385,19.385-19.392,0-.3-.007-.591-.021-.879A13.858,13.858,0,0,0,34.594,7.7Z" transform="translate(-1.413 -4.5)"></path>
+						</svg></a></li>
+				<li><a href="//codepen.io/sparklingman" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36 36">
+							<path d="M35.317,11.229,18.864.26a1.563,1.563,0,0,0-1.728,0L.683,11.229A1.573,1.573,0,0,0,0,12.515V23.484a1.573,1.573,0,0,0,.683,1.286L17.136,35.74a1.563,1.563,0,0,0,1.728,0l16.453-10.97A1.573,1.573,0,0,0,36,23.484V12.515a1.573,1.573,0,0,0-.683-1.286Zm-15.77-6.79,12.114,8.076-5.4,3.616-6.71-4.48Zm-3.094,0v7.212l-6.71,4.48-5.4-3.616ZM3.094,15.408,6.971,18,3.094,20.591ZM16.453,31.56,4.339,23.484l5.4-3.616,6.71,4.48ZM18,21.655,12.536,18,18,14.343,23.464,18Zm1.547,9.9V24.347l6.71-4.48,5.4,3.616ZM32.906,20.591,29.029,18l3.877-2.592Z" transform="translate(0 0)"></path>
+						</svg>
+					</a></li>
+			</ul>
+		</div>
+	</footer>
+</main>
+<script>
+setTimeout(() => {
+	for (let i = 0; i < Math.round(innerHeight / Math.PI); i++) {
+		let size = Math.random() / 2;
+		let x = Math.round(Math.random() * 100);
+		let y = Math.round(Math.random() * 100);
+		let s = document.createElement("s");
+		s.style.width = size + "vmin";
+		s.style.height = size + "vmin";
+		s.style.left = x + "%";
+		s.style.top = y + "%";
+		star.prepend(s);
+	}
+}, 3000);
+
+setTimeout(() => {
+	cat.classList.add("animCat");
+	mac.style.opacity = 0;
+}, 12000);
+setTimeout(() => {
+	me.classList.add("animMe");
+}, 18000);
+
+function prlx(event) {
+	this.querySelectorAll(".prlx").forEach((layer) => {
+		let speed = layer.getAttribute("data-speed");
+		layer.style.transform = "translateX(" + (event.pageX * speed) / 1000 + "px)";
+		bridge.style.filter =
+			"drop-shadow(" + event.pageX / 1000 + "vmin 0 0 #281f7f)";
+	});
+}
+
+document.addEventListener("mousemove", prlx);
+
+</script>
+  </body>
+</html>
