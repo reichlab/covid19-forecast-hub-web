@@ -3,6 +3,26 @@ title: In the news
 layout: docs
 ---
 
+[UMass model was most accurate at predicting COVID-19 deaths, study finds](https://www.bostonglobe.com/2022/04/12/nation/umass-model-was-most-accurate-predicting-covid-19-deaths-study-finds/){:target="_blank"}  
+_Boston Globe_ | 12 April 2022
+
+***
+
+[UMass Amherst Ensemble Model Most Accurate for Predicting COVID-19 Deaths](https://www.umass.edu/news/article/umass-amherst-ensemble-model-most-accurate-predicting-covid-19-deaths){:target="_blank"}  
+_University of Massachusetts Amherst_ | 11 April 2022
+
+***
+
+[Collaborative modeling attempts could improve response to the COVID-19 pandemic](https://www.news-medical.net/news/20220408/Collaborative-modeling-attempts-could-improve-response-to-the-COVID-19-pandemic.aspx){:target="_blank"}  
+_News Medical_ | 8 April 2022
+
+***
+
+[Facebook data helps CU researchers predict COVID surges](https://www.9news.com/article/news/local/social-media-data-helps-predict-covid-surges/73-e1e3a90d-8f99-470f-b19d-035c86ca34a6){:target="_blank"}  
+_KUSA NBC 9 NEWS_ | 7 April 2022
+
+***
+
 [What’s In The COVID-19 Forecast? New Variants Moving Into Massachusetts](https://boston.cbslocal.com/2022/03/17/covid-variant-ba2-deltacron-massachusetts-forecast/){:target="_blank"}  
 _WBZ CBS Boston_ | 17 March 2022
 
