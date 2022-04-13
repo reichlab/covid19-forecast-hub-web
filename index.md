@@ -73,6 +73,17 @@ sections:
 
     content1: >-  
       
+      [UMass model was most accurate at predicting COVID-19 deaths, study finds](https://www.bostonglobe.com/2022/04/12/nation/umass-model-was-most-accurate-predicting-covid-19-deaths-study-finds/){:target="_blank"}  
+      
+      _Boston Globe_ | 12 April 2022  
+      
+      [Collaborative modeling attempts could improve response to the COVID-19 pandemic](https://www.news-medical.net/news/20220408/Collaborative-modeling-attempts-could-improve-response-to-the-COVID-19-pandemic.aspx){:target="_blank"}  
+      
+      _News Medical_ | 8 April 2022  
+      
+      
+    content2: >-  
+      
       [What’s In The COVID-19 Forecast? New Variants Moving Into Massachusetts](https://boston.cbslocal.com/2022/03/17/covid-variant-ba2-deltacron-massachusetts-forecast/){:target="_blank"}  
       
       _WBZ CBS Boston_ | 17 March 2022  
@@ -82,7 +93,7 @@ sections:
       _MassLive_ | 9 March 2022  
       
       
-    content2: >-  
+    content3: >-  
       
       [Omicron drives US deaths higher than in fall’s delta wave](https://apnews.com/article/coronavirus-pandemic-business-health-california-public-health-83c0a053bfdd615b5ae7170007c2f1f9){:target="_blank"}  
       
@@ -91,17 +102,6 @@ sections:
       [Endemic, ‘New Normal’ Chatter Intensifies as U.S. Coronavirus Cases Start to Decline](https://www.usnews.com/news/health-news/articles/2022-01-27/endemic-new-normal-chatter-intensifies-as-u-s-coronavirus-cases-start-to-decline){:target="_blank"}  
       
       _U.S. News_ | 28 January 2022  
-      
-      
-    content3: >-  
-      
-      [Mayo warns omicron peak means Minnesota only halfway through surge](https://www.startribune.com/mayo-warns-omicron-peak-means-minnesota-is-only-halfway-through-surge/600139827/){:target="_blank"}  
-      
-      _Star Tribune_ | 26 January 2022  
-      
-      [‘We Are Reaching Something Like A Peak’: COVID Forecaster Sees Brighter Future](https://boston.cbslocal.com/2022/01/19/covid-19-forecast-hub-peak-massachusetts/){:target="_blank"}  
-      
-      _WBZ CBS Boston_ | 19 January 2022  
       
 
     actions:
