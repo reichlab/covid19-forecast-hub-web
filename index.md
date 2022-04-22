@@ -73,13 +73,13 @@ sections:
 
     content1: >-  
       
+      [UMass lab cited for precision forecasting COVID-19 deaths](https://www.gazettenet.com/UMass-researchers-credited-with-most-accurate-COVID-19-death-projections-45989776){:target="_blank"}  
+      
+      _Daily Hampshire Gazette_ | 18 April 2022  
+      
       [UMass model was most accurate at predicting COVID-19 deaths, study finds](https://www.bostonglobe.com/2022/04/12/nation/umass-model-was-most-accurate-predicting-covid-19-deaths-study-finds/){:target="_blank"}  
       
       _Boston Globe_ | 12 April 2022  
-      
-      [Collaborative modeling attempts could improve response to the COVID-19 pandemic](https://www.news-medical.net/news/20220408/Collaborative-modeling-attempts-could-improve-response-to-the-COVID-19-pandemic.aspx){:target="_blank"}  
-      
-      _News Medical_ | 8 April 2022  
       
       
     content2: >-  
