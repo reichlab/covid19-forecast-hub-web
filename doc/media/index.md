@@ -3,6 +3,21 @@ title: In the news
 layout: docs
 ---
 
+[New White House Covid projection puzzles experts and catches some Biden officials off guard](https://www.cnn.com/2022/05/12/politics/biden-administration-covid-warnings/index.html){:target="_blank"}  
+_CNN_ | 12 May 2022
+
+***
+
+[Gov. Tim Walz, Janet Malcolm urge second COVID-19 booster shots for summer](https://www.startribune.com/walz-malcolm-receive-second-covid-19-boosters/600170465/){:target="_blank"}  
+_Star Tribune_ | 4 May 2022
+
+***
+
+[A devastating milestone looms: 1 million US deaths from COVID-19](https://www.bostonglobe.com/2022/04/28/nation/devastating-milestone-looms-1-million-us-deaths-covid-19/){:target="_blank"}  
+_Boston Globe_ | 28 April 2022
+
+***
+
 [UMass lab cited for precision forecasting COVID-19 deaths](https://www.gazettenet.com/UMass-researchers-credited-with-most-accurate-COVID-19-death-projections-45989776){:target="_blank"}  
 _Daily Hampshire Gazette_ | 18 April 2022
 
