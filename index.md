@@ -73,16 +73,27 @@ sections:
 
     content1: >-  
       
+      [New White House Covid projection puzzles experts and catches some Biden officials off guard](https://www.cnn.com/2022/05/12/politics/biden-administration-covid-warnings/index.html){:target="_blank"}  
+      
+      _CNN_ | 12 May 2022  
+      
+      [A devastating milestone looms: 1 million US deaths from COVID-19](https://www.bostonglobe.com/2022/04/28/nation/devastating-milestone-looms-1-million-us-deaths-covid-19/){:target="_blank"}  
+      
+      _Boston Globe_ | 28 April 2022  
+      
+      
+    content2: >-  
+      
       [UMass lab cited for precision forecasting COVID-19 deaths](https://www.gazettenet.com/UMass-researchers-credited-with-most-accurate-COVID-19-death-projections-45989776){:target="_blank"}  
       
       _Daily Hampshire Gazette_ | 18 April 2022  
       
-      [UMass model was most accurate at predicting COVID-19 deaths, study finds](https://www.bostonglobe.com/2022/04/12/nation/umass-model-was-most-accurate-predicting-covid-19-deaths-study-finds/){:target="_blank"}  
+      [Collaborative modeling attempts could improve response to the COVID-19 pandemic](https://www.news-medical.net/news/20220408/Collaborative-modeling-attempts-could-improve-response-to-the-COVID-19-pandemic.aspx){:target="_blank"}  
       
-      _Boston Globe_ | 12 April 2022  
+      _News Medical_ | 8 April 2022  
       
       
-    content2: >-  
+    content3: >-  
       
       [What’s In The COVID-19 Forecast? New Variants Moving Into Massachusetts](https://boston.cbslocal.com/2022/03/17/covid-variant-ba2-deltacron-massachusetts-forecast/){:target="_blank"}  
       
@@ -91,17 +102,6 @@ sections:
       [‘A very different and early stage’: 2 years ago, a Biogen conference in Boston sparked a COVID super-spreader event](https://www.masslive.com/coronavirus/2022/03/a-very-different-and-early-stage-2-years-ago-a-biogen-conference-in-boston-sparked-a-covid-super-spreader-event.html){:target="_blank"}  
       
       _MassLive_ | 9 March 2022  
-      
-      
-    content3: >-  
-      
-      [Omicron drives US deaths higher than in fall’s delta wave](https://apnews.com/article/coronavirus-pandemic-business-health-california-public-health-83c0a053bfdd615b5ae7170007c2f1f9){:target="_blank"}  
-      
-      _AP News_ | 28 January 2022  
-      
-      [Endemic, ‘New Normal’ Chatter Intensifies as U.S. Coronavirus Cases Start to Decline](https://www.usnews.com/news/health-news/articles/2022-01-27/endemic-new-normal-chatter-intensifies-as-u-s-coronavirus-cases-start-to-decline){:target="_blank"}  
-      
-      _U.S. News_ | 28 January 2022  
       
 
     actions:
