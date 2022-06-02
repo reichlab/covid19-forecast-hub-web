@@ -243,6 +243,11 @@ _USA Today_ | 30 March 2021
 
 ***
 
+[¿Comenzó ya una nueva ola de casos de coronavirus? Crecen los contagios pese a las vacunas pero aún estamos a tiempo](https://www.telemundo.com/noticias/noticias-telemundo/coronavirus/comenzo-ya-una-nueva-ola-de-casos-de-coronavirus-crecen-los-contagios-pese-las-vacunas-tmna3874380){:target="_blank"}  
+_Telemundo_ | 30 March 2021
+
+***
+
 [Balance of Power: Concerns Over New Covid-19 Wave (Podcast)](https://www.bloomberg.com/news/audio/2021-03-24/balance-of-power-concerns-over-new-covid-19-wave-podcast){:target="_blank"}  
 _Bloomberg_ | 24 March 2021
 
