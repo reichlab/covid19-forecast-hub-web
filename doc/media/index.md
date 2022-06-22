@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[CDC Says COVID Hospitalizations to Rise in Most States](https://www.webmd.com/lung/news/20220519/cdc-says-covid-hospitalizations-to-rise-in-most-states){:target="_blank"}  
+_WebMD_ | 19 May 2022
+
+***
+
 [New White House Covid projection puzzles experts and catches some Biden officials off guard](https://www.cnn.com/2022/05/12/politics/biden-administration-covid-warnings/index.html){:target="_blank"}  
 _CNN_ | 12 May 2022
 
