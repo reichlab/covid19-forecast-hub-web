@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[For now, wary US treads water with transformed COVID-19](https://apnews.com/article/covid-science-health-infectious-diseases-fb25f987bab09a11be31a32e832dd9de)){:target="_blank"}  
+_AP_ | 3 July 2022
+
+***
+
 [CDC Says COVID Hospitalizations to Rise in Most States](https://www.webmd.com/lung/news/20220519/cdc-says-covid-hospitalizations-to-rise-in-most-states){:target="_blank"}  
 _WebMD_ | 19 May 2022
 
