@@ -73,6 +73,17 @@ sections:
 
     content1: >-  
       
+      [For now, wary US treads water with transformed COVID-19](https://apnews.com/article/covid-science-health-infectious-diseases-fb25f987bab09a11be31a32e832dd9de)){:target="_blank"}  
+      
+      _AP_ | 3 July 2022  
+      
+      [CDC Says COVID Hospitalizations to Rise in Most States](https://www.webmd.com/lung/news/20220519/cdc-says-covid-hospitalizations-to-rise-in-most-states){:target="_blank"}  
+      
+      _WebMD_ | 19 May 2022  
+      
+      
+    content2: >-  
+      
       [New White House Covid projection puzzles experts and catches some Biden officials off guard](https://www.cnn.com/2022/05/12/politics/biden-administration-covid-warnings/index.html){:target="_blank"}  
       
       _CNN_ | 12 May 2022  
@@ -82,7 +93,7 @@ sections:
       _Boston Globe_ | 28 April 2022  
       
       
-    content2: >-  
+    content3: >-  
       
       [UMass lab cited for precision forecasting COVID-19 deaths](https://www.gazettenet.com/UMass-researchers-credited-with-most-accurate-COVID-19-death-projections-45989776){:target="_blank"}  
       
@@ -91,17 +102,6 @@ sections:
       [Collaborative modeling attempts could improve response to the COVID-19 pandemic](https://www.news-medical.net/news/20220408/Collaborative-modeling-attempts-could-improve-response-to-the-COVID-19-pandemic.aspx){:target="_blank"}  
       
       _News Medical_ | 8 April 2022  
-      
-      
-    content3: >-  
-      
-      [What’s In The COVID-19 Forecast? New Variants Moving Into Massachusetts](https://boston.cbslocal.com/2022/03/17/covid-variant-ba2-deltacron-massachusetts-forecast/){:target="_blank"}  
-      
-      _WBZ CBS Boston_ | 17 March 2022  
-      
-      [‘A very different and early stage’: 2 years ago, a Biogen conference in Boston sparked a COVID super-spreader event](https://www.masslive.com/coronavirus/2022/03/a-very-different-and-early-stage-2-years-ago-a-biogen-conference-in-boston-sparked-a-covid-super-spreader-event.html){:target="_blank"}  
-      
-      _MassLive_ | 9 March 2022  
       
 
     actions:
