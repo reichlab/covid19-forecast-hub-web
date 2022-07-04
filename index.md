@@ -73,7 +73,7 @@ sections:
 
     content1: >-  
       
-      [For now, wary US treads water with transformed COVID-19](https://apnews.com/article/covid-science-health-infectious-diseases-fb25f987bab09a11be31a32e832dd9de)){:target="_blank"}  
+      [For now, wary US treads water with transformed COVID-19](https://apnews.com/article/covid-science-health-infectious-diseases-fb25f987bab09a11be31a32e832dd9de){:target="_blank"}  
       
       _AP_ | 3 July 2022  
       
