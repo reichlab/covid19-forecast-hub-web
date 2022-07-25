@@ -3,7 +3,7 @@ title: Team
 layout: docs
 ---
 
-The COVID-19 Forecast Hub is based at the <a href="https://reichlab.io/" target="_blank">Reich Lab</a> at the University of Massachusetts Amherst. However the Hub team encompasses researchers from around the US and the globe. The following lists those who have helped out with the Hub effort iself, in reverse alphabetical order: 
+The COVID-19 Forecast Hub is based at the <a href="https://reichlab.io/" target="_blank">Reich Lab</a> at the University of Massachusetts Amherst. However the Hub team encompasses researchers from around the US and the globe. The following lists those who have helped out with the Hub effort itself, in reverse alphabetical order: 
 
  - Martha Zorn, UMass-Amherst (project management)
  - Nutcha Wattanachit, UMass-Amherst (ensemble model, data curation)
