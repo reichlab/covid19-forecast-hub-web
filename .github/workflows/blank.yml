@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions
+# This is a basic workflow to deploy the website
 
 name: Deploy
 
@@ -29,7 +29,9 @@ jobs:
           sudo apt clean
           docker rmi $(docker image ls --all --quiet)
           rm --recursive --force "$AGENT_TOOLSDIRECTORY"
-          
+
+    # runs a custom step to create more space for the build 
+    # more info: https://github.com/easimon/maximize-build-space
     - name: Maximize build space
       uses: easimon/maximize-build-space@v4
       with:
@@ -38,12 +40,14 @@ jobs:
         remove-dotnet: 'true'
         remove-android: 'true'
         remove-haskell: 'true'
-        
-    - name: Check space available
-      run: df --human-readable
+      
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+    - name: Check-out repo
+      uses: actions/checkout@v2
     
+    - name: Print space available
+      run: df --human-readable
+      
     - name: Setup Python
       uses: actions/setup-python@v2
       
