@@ -30,24 +30,26 @@ fi
 pipenv run python3 update-reports.py
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
-# remove old site
+# remove old site and fetch clean repo
+# might be useful for a local build, likely not impacting CI Actions 
 rm -rf ./docs
-
-# setup subtree pushing
 git fetch
-git worktree add docs netlify
 
-# Build the project
+# Build the project into a local untracked "docs" directory on the master branch
 bundle exec jekyll build -d docs
 
 if [ "$CI" = "true" ]; then
 	git config user.name "GitHub Action"
 	git config user.email "user@example.com"
 fi
+
 # Push source and build repos
 if [ "$1" != "no_push" ]  && [ "$2" != "no_push" ] 
 then
 	printf "Pushing to GitHub"
+	
+	# switch to netlify branch, bringing along untracked "docs" directory
+	git switch netlify
 
 	# Commit changes.
 	msg="Auto deploy commit ${HEAD_HASH} to Netlify at ${date}"
