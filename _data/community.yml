@@ -1,3 +1,350 @@
+- abbreviation: LUcompUncertLab-VAR_3streams
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/computationalUncertaintyLab
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/737
+  dates:
+  - 2022-09-26
+  - 2022-09-19
+  - 2022-09-12
+  - 2022-09-05
+  - 2022-08-29
+  - 2022-08-22
+  - 2022-08-15
+  - 2022-08-08
+  - 2022-08-01
+  - 2022-07-25
+  - 2022-07-18
+  - 2022-07-11
+  - 2022-07-04
+  - 2022-06-27
+  - 2022-06-20
+  - 2022-06-13
+  - 2022-06-06
+  - 2022-05-30
+  - 2022-05-23
+  - 2022-05-16
+  - 2022-05-09
+  - 2022-05-02
+  - 2022-04-25
+  - 2022-04-18
+  - 2022-04-18
+  description: Bayesian Vector Auto Regression
+  earliest_forecast: Monday, 18 April 2022
+  forecasts: 25
+  home_url: https://github.com/computationalUncertaintyLab
+  latest_forecast: Monday, 26 September 2022
+  name: VAR_3streams
+  team_name: LUcompUncertLab
+  url: https://zoltardata.com/model/737
+- abbreviation: TTU-squider
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/fvbttu/squider
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/366
+  dates:
+  - 2022-09-25
+  - 2022-09-18
+  - 2022-09-11
+  - 2022-08-28
+  - 2022-08-21
+  - 2022-08-14
+  - 2022-08-07
+  - 2022-07-31
+  - 2022-07-24
+  - 2022-07-17
+  - 2022-07-10
+  - 2022-07-03
+  - 2022-06-26
+  - 2022-06-19
+  - 2022-06-12
+  - 2022-06-05
+  - 2022-05-29
+  - 2022-05-22
+  - 2022-05-15
+  - 2022-05-08
+  - 2022-05-01
+  - 2022-04-24
+  - 2022-04-17
+  - 2022-04-10
+  - 2022-04-03
+  - 2022-03-27
+  - 2022-03-20
+  - 2022-03-13
+  - 2022-03-06
+  - 2022-02-27
+  - 2022-02-20
+  - 2022-02-13
+  - 2022-02-06
+  - 2022-01-30
+  - 2022-01-23
+  - 2022-01-16
+  - 2022-01-09
+  - 2022-01-02
+  - 2021-12-26
+  - 2021-12-19
+  - 2021-12-12
+  - 2021-12-05
+  - 2021-11-28
+  - 2021-11-21
+  - 2021-11-14
+  - 2021-11-07
+  - 2021-10-31
+  - 2021-10-24
+  - 2021-10-17
+  - 2021-10-10
+  - 2021-10-03
+  - 2021-09-26
+  - 2021-09-19
+  - 2021-09-12
+  - 2021-09-05
+  - 2021-08-29
+  - 2021-08-22
+  - 2021-08-15
+  - 2021-08-08
+  - 2021-08-01
+  - 2021-07-25
+  - 2021-07-18
+  - 2021-07-11
+  - 2021-07-04
+  - 2021-06-27
+  - 2021-06-20
+  - 2021-06-13
+  - 2021-06-06
+  - 2021-05-30
+  - 2020-10-25
+  - 2020-10-18
+  - 2020-11-15
+  - 2020-11-08
+  - 2020-11-01
+  - 2020-10-11
+  - 2020-10-04
+  - 2020-08-23
+  - 2020-09-27
+  - 2020-08-17
+  - 2020-09-13
+  - 2021-01-10
+  - 2021-04-25
+  - 2021-03-14
+  - 2021-02-14
+  - 2021-05-23
+  - 2021-04-04
+  - 2021-03-21
+  - 2021-02-28
+  - 2021-03-28
+  - 2021-01-17
+  - 2021-02-21
+  - 2021-04-11
+  - 2021-05-16
+  - 2021-05-09
+  - 2021-05-02
+  - 2021-04-18
+  - 2021-03-07
+  - 2021-02-07
+  - 2021-01-31
+  - 2021-01-24
+  - 2021-01-03
+  - 2020-12-27
+  - 2020-12-20
+  - 2020-12-13
+  - 2020-12-06
+  - 2020-11-29
+  - 2020-11-22
+  description: SIR-based compartmental model with a power law incidence rate, unknown
+    as well as known infecteds, and time dependent social contact suppression and
+    relaxation.
+  earliest_forecast: Monday, 17 August 2020
+  forecasts: 107
+  home_url: https://github.com/fvbttu/squider
+  latest_forecast: Sunday, 25 September 2022
+  name: SQUIDER
+  team_name: Hussain Lab at Texas Tech University
+  url: https://zoltardata.com/model/366
+- abbreviation: BPagano-RtDriven
+  actions:
+  - label: Website
+    new_window: true
+    url: https://bobpagano.com
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/427
+  dates:
+  - 2022-09-25
+  - 2022-09-18
+  - 2022-09-11
+  - 2022-09-04
+  - 2022-08-28
+  - 2022-08-21
+  - 2022-08-14
+  - 2022-08-07
+  - 2022-07-31
+  - 2022-07-24
+  - 2022-07-17
+  - 2022-07-10
+  - 2022-07-03
+  - 2022-06-26
+  - 2022-06-19
+  - 2022-06-12
+  - 2022-06-05
+  - 2022-05-29
+  - 2022-05-22
+  - 2022-05-15
+  - 2022-05-08
+  - 2022-05-01
+  - 2022-04-24
+  - 2022-04-17
+  - 2022-04-10
+  - 2022-04-03
+  - 2022-03-27
+  - 2022-03-20
+  - 2022-03-13
+  - 2022-03-06
+  - 2022-02-27
+  - 2022-02-20
+  - 2022-02-13
+  - 2022-02-06
+  - 2022-01-30
+  - 2022-01-23
+  - 2022-01-16
+  - 2022-01-09
+  - 2022-01-02
+  - 2021-12-27
+  - 2021-12-26
+  - 2021-12-19
+  - 2021-12-12
+  - 2021-12-05
+  - 2021-11-28
+  - 2021-11-21
+  - 2021-11-14
+  - 2021-11-07
+  - 2021-10-31
+  - 2021-10-24
+  - 2021-10-17
+  - 2021-10-10
+  - 2021-10-03
+  - 2021-09-26
+  - 2021-09-19
+  - 2021-09-12
+  - 2021-09-05
+  - 2021-08-29
+  - 2021-08-22
+  - 2021-08-15
+  - 2021-08-08
+  - 2021-08-01
+  - 2021-07-25
+  - 2021-07-18
+  - 2021-07-11
+  - 2021-07-04
+  - 2021-06-27
+  - 2021-06-20
+  - 2021-06-13
+  - 2021-06-06
+  - 2021-05-30
+  - 2020-10-25
+  - 2020-11-01
+  - 2020-11-15
+  - 2020-11-08
+  - 2020-10-18
+  - 2020-10-04
+  - 2021-03-14
+  - 2021-02-14
+  - 2021-04-25
+  - 2021-01-03
+  - 2020-12-20
+  - 2021-05-16
+  - 2021-04-11
+  - 2021-04-04
+  - 2021-02-28
+  - 2021-03-21
+  - 2021-01-24
+  - 2021-03-28
+  - 2020-11-22
+  - 2021-02-21
+  - 2021-04-11
+  - 2021-05-02
+  - 2021-05-23
+  - 2021-05-09
+  - 2021-04-18
+  - 2021-03-07
+  - 2021-02-07
+  - 2021-01-31
+  - 2021-01-24
+  - 2021-01-17
+  - 2020-10-11
+  - 2021-01-10
+  - 2020-10-11
+  - 2020-12-27
+  - 2020-12-13
+  - 2020-12-06
+  - 2020-11-29
+  description: Projects infections and deaths using an SIR model.
+  earliest_forecast: Sunday, 04 October 2020
+  forecasts: 108
+  home_url: https://bobpagano.com
+  latest_forecast: Sunday, 25 September 2022
+  name: RtDriven
+  team_name: BPagano
+  url: https://zoltardata.com/model/427
+- abbreviation: CUB_PopCouncil-SLSTM
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/geohai/covid-lstm-hosp
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/694
+  dates:
+  - 2022-09-24
+  - 2022-09-17
+  - 2022-09-10
+  - 2022-09-03
+  - 2022-08-27
+  - 2022-08-20
+  - 2022-08-13
+  - 2022-08-06
+  - 2022-07-30
+  - 2022-07-23
+  - 2022-07-16
+  - 2022-07-09
+  - 2022-07-02
+  - 2022-06-26
+  - 2022-06-19
+  - 2022-06-12
+  - 2022-06-05
+  - 2022-05-29
+  - 2022-05-22
+  - 2022-05-15
+  - 2022-05-08
+  - 2022-05-01
+  - 2022-04-24
+  - 2022-04-17
+  - 2022-04-10
+  - 2022-04-03
+  - 2022-03-27
+  - 2022-03-20
+  - 2022-03-13
+  - 2022-03-06
+  - 2022-02-27
+  description: Our forecasts are produced by a spatiotemporal LSTM classification
+    model using a multivariate time series input with two parallel temporal lags of
+    7 and 28 days and hand engineered spatial features.
+  earliest_forecast: Sunday, 27 February 2022
+  forecasts: 31
+  home_url: https://github.com/geohai/covid-lstm-hosp
+  latest_forecast: Saturday, 24 September 2022
+  name: SLSTM
+  team_name: CUB_PopCouncil
+  url: https://zoltardata.com/model/694
 - abbreviation: KITmetricslab-select_ensemble
   actions:
   - label: Website
@@ -1928,48 +2275,6 @@
   name: Osiris
   team_name: UT
   url: https://zoltardata.com/model/693
-- abbreviation: LUcompUncertLab-VAR_3streams
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/computationalUncertaintyLab
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/737
-  dates:
-  - 2022-09-19
-  - 2022-09-12
-  - 2022-09-05
-  - 2022-08-29
-  - 2022-08-22
-  - 2022-08-15
-  - 2022-08-08
-  - 2022-08-01
-  - 2022-07-25
-  - 2022-07-18
-  - 2022-07-11
-  - 2022-07-04
-  - 2022-06-27
-  - 2022-06-20
-  - 2022-06-13
-  - 2022-06-06
-  - 2022-05-30
-  - 2022-05-23
-  - 2022-05-16
-  - 2022-05-09
-  - 2022-05-02
-  - 2022-04-25
-  - 2022-04-18
-  - 2022-04-18
-  description: Bayesian Vector Auto Regression
-  earliest_forecast: Monday, 18 April 2022
-  forecasts: 24
-  home_url: https://github.com/computationalUncertaintyLab
-  latest_forecast: Monday, 19 September 2022
-  name: VAR_3streams
-  team_name: LUcompUncertLab
-  url: https://zoltardata.com/model/737
 - abbreviation: UCSD_NEU-DeepGLEAM
   actions:
   - label: Website
@@ -2611,132 +2916,6 @@
   name: select
   team_name: Columbia University
   url: https://zoltardata.com/model/231
-- abbreviation: TTU-squider
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/fvbttu/squider
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/366
-  dates:
-  - 2022-09-18
-  - 2022-09-11
-  - 2022-08-28
-  - 2022-08-21
-  - 2022-08-14
-  - 2022-08-07
-  - 2022-07-31
-  - 2022-07-24
-  - 2022-07-17
-  - 2022-07-10
-  - 2022-07-03
-  - 2022-06-26
-  - 2022-06-19
-  - 2022-06-12
-  - 2022-06-05
-  - 2022-05-29
-  - 2022-05-22
-  - 2022-05-15
-  - 2022-05-08
-  - 2022-05-01
-  - 2022-04-24
-  - 2022-04-17
-  - 2022-04-10
-  - 2022-04-03
-  - 2022-03-27
-  - 2022-03-20
-  - 2022-03-13
-  - 2022-03-06
-  - 2022-02-27
-  - 2022-02-20
-  - 2022-02-13
-  - 2022-02-06
-  - 2022-01-30
-  - 2022-01-23
-  - 2022-01-16
-  - 2022-01-09
-  - 2022-01-02
-  - 2021-12-26
-  - 2021-12-19
-  - 2021-12-12
-  - 2021-12-05
-  - 2021-11-28
-  - 2021-11-21
-  - 2021-11-14
-  - 2021-11-07
-  - 2021-10-31
-  - 2021-10-24
-  - 2021-10-17
-  - 2021-10-10
-  - 2021-10-03
-  - 2021-09-26
-  - 2021-09-19
-  - 2021-09-12
-  - 2021-09-05
-  - 2021-08-29
-  - 2021-08-22
-  - 2021-08-15
-  - 2021-08-08
-  - 2021-08-01
-  - 2021-07-25
-  - 2021-07-18
-  - 2021-07-11
-  - 2021-07-04
-  - 2021-06-27
-  - 2021-06-20
-  - 2021-06-13
-  - 2021-06-06
-  - 2021-05-30
-  - 2020-10-25
-  - 2020-10-18
-  - 2020-11-15
-  - 2020-11-08
-  - 2020-11-01
-  - 2020-10-11
-  - 2020-10-04
-  - 2020-08-23
-  - 2020-09-27
-  - 2020-08-17
-  - 2020-09-13
-  - 2021-01-10
-  - 2021-04-25
-  - 2021-03-14
-  - 2021-02-14
-  - 2021-05-23
-  - 2021-04-04
-  - 2021-03-21
-  - 2021-02-28
-  - 2021-03-28
-  - 2021-01-17
-  - 2021-02-21
-  - 2021-04-11
-  - 2021-05-16
-  - 2021-05-09
-  - 2021-05-02
-  - 2021-04-18
-  - 2021-03-07
-  - 2021-02-07
-  - 2021-01-31
-  - 2021-01-24
-  - 2021-01-03
-  - 2020-12-27
-  - 2020-12-20
-  - 2020-12-13
-  - 2020-12-06
-  - 2020-11-29
-  - 2020-11-22
-  description: SIR-based compartmental model with a power law incidence rate, unknown
-    as well as known infecteds, and time dependent social contact suppression and
-    relaxation.
-  earliest_forecast: Monday, 17 August 2020
-  forecasts: 106
-  home_url: https://github.com/fvbttu/squider
-  latest_forecast: Sunday, 18 September 2022
-  name: SQUIDER
-  team_name: Hussain Lab at Texas Tech University
-  url: https://zoltardata.com/model/366
 - abbreviation: CUBoulder-COVIDLSTM
   actions:
   - label: Website
@@ -3307,289 +3486,3 @@
   name: CovidScenarioPipeline
   team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
   url: https://zoltardata.com/model/255
-- abbreviation: BPagano-RtDriven
-  actions:
-  - label: Website
-    new_window: true
-    url: https://bobpagano.com
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/427
-  dates:
-  - 2022-09-18
-  - 2022-09-11
-  - 2022-09-04
-  - 2022-08-28
-  - 2022-08-21
-  - 2022-08-14
-  - 2022-08-07
-  - 2022-07-31
-  - 2022-07-24
-  - 2022-07-17
-  - 2022-07-10
-  - 2022-07-03
-  - 2022-06-26
-  - 2022-06-19
-  - 2022-06-12
-  - 2022-06-05
-  - 2022-05-29
-  - 2022-05-22
-  - 2022-05-15
-  - 2022-05-08
-  - 2022-05-01
-  - 2022-04-24
-  - 2022-04-17
-  - 2022-04-10
-  - 2022-04-03
-  - 2022-03-27
-  - 2022-03-20
-  - 2022-03-13
-  - 2022-03-06
-  - 2022-02-27
-  - 2022-02-20
-  - 2022-02-13
-  - 2022-02-06
-  - 2022-01-30
-  - 2022-01-23
-  - 2022-01-16
-  - 2022-01-09
-  - 2022-01-02
-  - 2021-12-27
-  - 2021-12-26
-  - 2021-12-19
-  - 2021-12-12
-  - 2021-12-05
-  - 2021-11-28
-  - 2021-11-21
-  - 2021-11-14
-  - 2021-11-07
-  - 2021-10-31
-  - 2021-10-24
-  - 2021-10-17
-  - 2021-10-10
-  - 2021-10-03
-  - 2021-09-26
-  - 2021-09-19
-  - 2021-09-12
-  - 2021-09-05
-  - 2021-08-29
-  - 2021-08-22
-  - 2021-08-15
-  - 2021-08-08
-  - 2021-08-01
-  - 2021-07-25
-  - 2021-07-18
-  - 2021-07-11
-  - 2021-07-04
-  - 2021-06-27
-  - 2021-06-20
-  - 2021-06-13
-  - 2021-06-06
-  - 2021-05-30
-  - 2020-10-25
-  - 2020-11-01
-  - 2020-11-15
-  - 2020-11-08
-  - 2020-10-18
-  - 2020-10-04
-  - 2021-03-14
-  - 2021-02-14
-  - 2021-04-25
-  - 2021-01-03
-  - 2020-12-20
-  - 2021-05-16
-  - 2021-04-11
-  - 2021-04-04
-  - 2021-02-28
-  - 2021-03-21
-  - 2021-01-24
-  - 2021-03-28
-  - 2020-11-22
-  - 2021-02-21
-  - 2021-04-11
-  - 2021-05-02
-  - 2021-05-23
-  - 2021-05-09
-  - 2021-04-18
-  - 2021-03-07
-  - 2021-02-07
-  - 2021-01-31
-  - 2021-01-24
-  - 2021-01-17
-  - 2020-10-11
-  - 2021-01-10
-  - 2020-10-11
-  - 2020-12-27
-  - 2020-12-13
-  - 2020-12-06
-  - 2020-11-29
-  description: Projects infections and deaths using an SIR model.
-  earliest_forecast: Sunday, 04 October 2020
-  forecasts: 107
-  home_url: https://bobpagano.com
-  latest_forecast: Sunday, 18 September 2022
-  name: RtDriven
-  team_name: BPagano
-  url: https://zoltardata.com/model/427
-- abbreviation: CUB_PopCouncil-SLSTM
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/geohai/covid-lstm-hosp
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/694
-  dates:
-  - 2022-09-17
-  - 2022-09-10
-  - 2022-09-03
-  - 2022-08-27
-  - 2022-08-20
-  - 2022-08-13
-  - 2022-08-06
-  - 2022-07-30
-  - 2022-07-23
-  - 2022-07-16
-  - 2022-07-09
-  - 2022-07-02
-  - 2022-06-26
-  - 2022-06-19
-  - 2022-06-12
-  - 2022-06-05
-  - 2022-05-29
-  - 2022-05-22
-  - 2022-05-15
-  - 2022-05-08
-  - 2022-05-01
-  - 2022-04-24
-  - 2022-04-17
-  - 2022-04-10
-  - 2022-04-03
-  - 2022-03-27
-  - 2022-03-20
-  - 2022-03-13
-  - 2022-03-06
-  - 2022-02-27
-  description: Our forecasts are produced by a spatiotemporal LSTM classification
-    model using a multivariate time series input with two parallel temporal lags of
-    7 and 28 days and hand engineered spatial features.
-  earliest_forecast: Sunday, 27 February 2022
-  forecasts: 30
-  home_url: https://github.com/geohai/covid-lstm-hosp
-  latest_forecast: Saturday, 17 September 2022
-  name: SLSTM
-  team_name: CUB_PopCouncil
-  url: https://zoltardata.com/model/694
-- abbreviation: IHME-CurveFit
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid19.healthdata.org/united-states-of-america
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/154
-  dates:
-  - 2022-09-12
-  - 2022-07-19
-  - 2022-06-10
-  - 2022-05-06
-  - 2022-04-11
-  - 2022-03-22
-  - 2022-02-18
-  - 2022-02-07
-  - 2022-01-24
-  - 2022-01-14
-  - 2021-12-22
-  - 2021-11-19
-  - 2021-11-04
-  - 2021-10-21
-  - 2021-10-18
-  - 2021-10-01
-  - 2021-09-23
-  - 2021-09-16
-  - 2021-09-10
-  - 2021-09-02
-  - 2021-08-27
-  - 2021-08-09
-  - 2021-07-30
-  - 2021-07-23
-  - 2021-07-16
-  - 2021-07-02
-  - 2021-06-25
-  - 2021-06-18
-  - 2021-06-11
-  - 2021-06-07
-  - 2021-05-28
-  - 2020-10-26
-  - 2020-10-16
-  - 2020-06-15
-  - 2020-07-06
-  - 2020-06-10
-  - 2020-06-08
-  - 2020-06-05
-  - 2020-06-22
-  - 2020-06-29
-  - 2020-05-29
-  - 2020-05-12
-  - 2020-05-18
-  - 2020-05-04
-  - 2020-05-08
-  - 2020-04-28
-  - 2020-04-27
-  - 2020-04-21
-  - 2020-04-20
-  - 2020-04-16
-  - 2020-04-12
-  - 2020-04-09
-  - 2020-04-07
-  - 2020-04-05
-  - 2020-04-01
-  - 2020-03-31
-  - 2020-03-30
-  - 2020-03-29
-  - 2020-03-27
-  - 2020-07-23
-  - 2020-08-06
-  - 2020-07-30
-  - 2020-07-17
-  - 2020-09-21
-  - 2020-06-24
-  - 2020-08-27
-  - 2020-09-03
-  - 2020-09-28
-  - 2020-08-24
-  - 2021-05-17
-  - 2021-02-12
-  - 2021-02-05
-  - 2020-12-23
-  - 2021-04-23
-  - 2021-03-18
-  - 2021-01-15
-  - 2020-12-18
-  - 2021-04-16
-  - 2021-02-22
-  - 2021-03-25
-  - 2020-12-10
-  - 2021-05-24
-  - 2021-05-07
-  - 2021-04-01
-  - 2021-03-15
-  - 2021-02-25
-  - 2020-05-12
-  - 2020-05-12
-  - 2021-01-29
-  - 2021-01-22
-  - 2020-12-07
-  - 2020-11-23
-  description: This model makes predictions about the future that are dependent on
-    the assumption  that current interventions continue. Non-linear mixed efects curve-fitting.
-  earliest_forecast: Friday, 27 March 2020
-  forecasts: 92
-  home_url: https://covid19.healthdata.org/united-states-of-america
-  latest_forecast: Monday, 12 September 2022
-  name: CurveFit
-  team_name: Institute for Health Metrics and Evaluation
-  url: https://zoltardata.com/model/154
