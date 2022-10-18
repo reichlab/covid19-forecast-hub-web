@@ -8,6 +8,7 @@
     type: url
     url: https://zoltardata.com/model/574
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-10-03
   - 2022-09-26
@@ -86,9 +87,9 @@
   description: A weighted ensemble of iteratively preselected forecasts from the COVID-19
     Forecast Hub.
   earliest_forecast: Monday, 19 April 2021
-  forecasts: 75
+  forecasts: 76
   home_url: https://github.com/dwolffram/covid19-ensembles
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: select_ensemble
   team_name: KITmetricslab
   url: https://zoltardata.com/model/574
@@ -102,6 +103,7 @@
     type: url
     url: https://zoltardata.com/model/688
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-10-03
   - 2022-09-26
@@ -144,9 +146,9 @@
   - 2022-01-10
   description: Equally weighted ensemble of simple time-series baseline models.
   earliest_forecast: Monday, 10 January 2022
-  forecasts: 40
+  forecasts: 41
   home_url: https://github.com/reichlab/covid-hosp-models
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: Ensemble of baseline models with trends
   team_name: UMass-Amherst
   url: https://zoltardata.com/model/688
@@ -160,6 +162,7 @@
     type: url
     url: https://zoltardata.com/model/158
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-10-03
   - 2022-09-26
@@ -299,9 +302,9 @@
     the assumption  that current interventions continue. Metapopulation, age structured
     SLIR model.    '
   earliest_forecast: Monday, 13 April 2020
-  forecasts: 135
+  forecasts: 136
   home_url: https://covid19.gleamproject.org/
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: GLEAM COVID-19
   team_name: MOBS Lab at Northeastern
   url: https://zoltardata.com/model/158
@@ -315,6 +318,7 @@
     type: url
     url: https://zoltardata.com/model/601
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-10-03
   - 2022-09-26
@@ -392,9 +396,9 @@
   description: ARIMA model with outlier detection fitted to transformed weekly aggregated
     series.
   earliest_forecast: Monday, 10 May 2021
-  forecasts: 74
+  forecasts: 75
   home_url: https://krausstat.shinyapps.io/covid19global/
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: ARIMA
   team_name: Masaryk University
   url: https://zoltardata.com/model/601
@@ -408,6 +412,7 @@
     type: url
     url: https://zoltardata.com/model/206
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-10-03
   - 2022-09-26
@@ -541,9 +546,9 @@
   description: 'Data-driven approach based on deep learning for forecasting mortality
     and  hospitalizations using syndromic, clinical, demographic, and mobility. '
   earliest_forecast: Monday, 04 May 2020
-  forecasts: 130
+  forecasts: 131
   home_url: https://deepcovid.github.io/
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: DeepCOVID
   team_name: GT
   url: https://zoltardata.com/model/206
@@ -557,6 +562,7 @@
     type: url
     url: https://zoltardata.com/model/746
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-09-19
   - 2022-09-12
@@ -571,12 +577,117 @@
   description: Learning from the past a short time forecast of the COVID-19 incidence
     curve trend.
   earliest_forecast: Monday, 05 September 2022
-  forecasts: 11
+  forecasts: 12
   home_url: https://github.com/lalvarezmat/EpiInvert
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: EpiInvert
   team_name: AMM
   url: https://zoltardata.com/model/746
+- abbreviation: CEID-Walk
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/e3bo/random-walks
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/361
+  dates:
+  - 2022-10-17
+  - 2022-09-26
+  - 2022-09-19
+  - 2022-09-12
+  - 2022-09-05
+  - 2022-08-29
+  - 2022-08-22
+  - 2022-08-08
+  - 2022-07-25
+  - 2022-07-18
+  - 2022-07-11
+  - 2022-06-20
+  - 2022-06-13
+  - 2022-06-06
+  - 2022-05-30
+  - 2022-05-23
+  - 2022-05-16
+  - 2022-05-09
+  - 2022-05-02
+  - 2022-04-25
+  - 2022-04-18
+  - 2021-10-11
+  - 2021-10-04
+  - 2021-09-27
+  - 2021-09-20
+  - 2021-09-13
+  - 2021-09-06
+  - 2021-08-30
+  - 2021-08-23
+  - 2021-08-16
+  - 2021-08-09
+  - 2021-08-02
+  - 2021-07-26
+  - 2021-07-19
+  - 2021-07-12
+  - 2021-07-05
+  - 2021-06-28
+  - 2021-06-21
+  - 2021-06-14
+  - 2021-06-07
+  - 2021-05-31
+  - 2020-11-09
+  - 2020-11-01
+  - 2020-11-16
+  - 2020-10-18
+  - 2020-10-25
+  - 2020-10-11
+  - 2020-10-04
+  - 2020-08-23
+  - 2020-08-09
+  - 2020-09-27
+  - 2020-08-16
+  - 2020-09-06
+  - 2020-08-30
+  - 2020-09-13
+  - 2020-09-20
+  - 2021-01-11
+  - 2021-02-15
+  - 2021-05-17
+  - 2021-04-26
+  - 2021-04-05
+  - 2021-01-04
+  - 2021-02-08
+  - 2021-05-10
+  - 2021-03-22
+  - 2021-03-01
+  - 2021-01-18
+  - 2020-11-23
+  - 2021-03-29
+  - 2020-11-30
+  - 2021-01-25
+  - 2021-02-22
+  - 2020-12-07
+  - 2021-05-24
+  - 2021-05-03
+  - 2021-04-19
+  - 2021-04-12
+  - 2021-03-15
+  - 2021-03-08
+  - 2021-02-01
+  - 2020-12-28
+  - 2020-12-28
+  - 2020-12-21
+  - 2020-12-14
+  description: We use a random walk model without drift. The last few observations
+    of a target time series are used to estimate the variance in step size of the
+    random walk.
+  earliest_forecast: Sunday, 09 August 2020
+  forecasts: 84
+  home_url: https://github.com/e3bo/random-walks
+  latest_forecast: Monday, 17 October 2022
+  name: Walk
+  team_name: University of Georgia Center for the Ecology of Infectious Diseases Forecasting
+    Working Group
+  url: https://zoltardata.com/model/361
 - abbreviation: COVIDhub-baseline
   actions:
   - label: Website
@@ -587,6 +698,7 @@
     type: url
     url: https://zoltardata.com/model/302
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-10-03
   - 2022-09-26
@@ -764,9 +876,9 @@
   - 2020-11-30
   description: This model is a baseline predictive model.
   earliest_forecast: Monday, 06 April 2020
-  forecasts: 175
+  forecasts: 176
   home_url: https://covid19forecasthub.org/
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: baseline
   team_name: COVID-19 Forecast Hub
   url: https://zoltardata.com/model/302
@@ -780,6 +892,7 @@
     type: url
     url: https://zoltardata.com/model/603
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-10-03
   - 2022-09-19
@@ -853,151 +966,12 @@
     the outbreak, we have trained deep neural networks to forecast state-level cumulative
     deaths.
   earliest_forecast: Monday, 14 June 2021
-  forecasts: 69
+  forecasts: 70
   home_url: https://cfong32.github.io/HKUST-DNN/
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: DNN
   team_name: HKUST
   url: https://zoltardata.com/model/603
-- abbreviation: QJHong-Encounter
-  actions:
-  - label: Website
-    new_window: true
-    url: https://qjhong.github.io
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/299
-  dates:
-  - 2022-10-10
-  - 2022-10-02
-  - 2022-09-25
-  - 2022-09-19
-  - 2022-09-11
-  - 2022-09-05
-  - 2022-08-29
-  - 2022-08-21
-  - 2022-08-14
-  - 2022-08-08
-  - 2022-08-01
-  - 2022-07-25
-  - 2022-07-17
-  - 2022-07-11
-  - 2022-07-03
-  - 2022-06-26
-  - 2022-06-20
-  - 2022-06-13
-  - 2022-06-04
-  - 2022-05-29
-  - 2022-05-23
-  - 2022-05-15
-  - 2022-05-09
-  - 2022-05-01
-  - 2022-04-24
-  - 2022-04-17
-  - 2022-04-10
-  - 2022-04-04
-  - 2022-03-27
-  - 2022-03-20
-  - 2022-03-14
-  - 2022-03-06
-  - 2022-02-28
-  - 2022-02-21
-  - 2022-02-13
-  - 2022-02-06
-  - 2022-01-30
-  - 2022-01-23
-  - 2022-01-16
-  - 2022-01-09
-  - 2022-01-03
-  - 2021-12-26
-  - 2021-12-20
-  - 2021-12-13
-  - 2021-12-05
-  - 2021-11-28
-  - 2021-11-21
-  - 2021-11-14
-  - 2021-11-07
-  - 2021-10-31
-  - 2021-10-25
-  - 2021-10-17
-  - 2021-10-10
-  - 2021-10-04
-  - 2021-09-26
-  - 2021-09-19
-  - 2021-09-12
-  - 2021-09-05
-  - 2021-08-29
-  - 2021-08-22
-  - 2021-08-15
-  - 2021-08-09
-  - 2021-08-02
-  - 2021-07-22
-  - 2021-07-19
-  - 2021-07-12
-  - 2020-11-15
-  - 2020-10-25
-  - 2020-10-18
-  - 2020-11-01
-  - 2020-11-08
-  - 2020-10-11
-  - 2020-10-04
-  - 2020-07-01
-  - 2020-07-25
-  - 2020-07-18
-  - 2020-06-27
-  - 2020-08-30
-  - 2020-06-29
-  - 2020-08-17
-  - 2020-08-03
-  - 2020-07-11
-  - 2020-06-30
-  - 2020-07-10
-  - 2020-06-26
-  - 2020-06-24
-  - 2020-07-13
-  - 2020-09-06
-  - 2020-09-20
-  - 2020-08-10
-  - 2020-07-08
-  - 2020-07-27
-  - 2020-07-03
-  - 2020-09-13
-  - 2020-09-27
-  - 2020-08-23
-  - 2021-02-14
-  - 2021-01-10
-  - 2021-03-22
-  - 2021-03-08
-  - 2021-03-01
-  - 2021-01-18
-  - 2021-02-21
-  - 2020-07-13
-  - 2020-06-30
-  - 2020-06-29
-  - 2020-06-27
-  - 2020-06-26
-  - 2020-06-24
-  - 2021-03-15
-  - 2021-02-08
-  - 2021-01-31
-  - 2021-01-25
-  - 2021-01-03
-  - 2020-12-27
-  - 2020-12-20
-  - 2020-12-13
-  - 2020-12-06
-  - 2020-11-29
-  - 2020-11-22
-  description: today's "Daily New Confirmed Cases" + today's "Encounter Density"  ==>
-    today's newly infected Cases  ==> next 2-3 weeks' "Daily New Confirmed Cases"
-  earliest_forecast: Wednesday, 24 June 2020
-  forecasts: 120
-  home_url: https://qjhong.github.io
-  latest_forecast: Monday, 10 October 2022
-  name: Encounter
-  team_name: QJHong
-  url: https://zoltardata.com/model/299
 - abbreviation: PSI-DRAFT
   actions:
   - label: Website
@@ -1008,6 +982,7 @@
     type: url
     url: https://zoltardata.com/model/254
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-10-03
   - 2022-09-26
@@ -1140,9 +1115,9 @@
     by both age distribution and disease severity and includes generic intervention
     fitting. '
   earliest_forecast: Monday, 18 May 2020
-  forecasts: 128
+  forecasts: 129
   home_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/PSI-DRAFT
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: Disease Rapid Analysis and Forecasting Tool
   team_name: Predictive Science Inc
   url: https://zoltardata.com/model/254
@@ -1156,6 +1131,7 @@
     type: url
     url: https://zoltardata.com/model/504
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-10-03
   - 2022-09-26
@@ -1247,163 +1223,12 @@
   description: Non-mechanistic, non-parametric model based on representing time series
     as a sum of bell curves.
   earliest_forecast: Sunday, 17 January 2021
-  forecasts: 88
+  forecasts: 89
   home_url: https://covidpredictions.mit.edu
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: Mixtures of Exponentials
   team_name: IDSS COVID-19 Collaboration (Isolat) at MIT
   url: https://zoltardata.com/model/504
-- abbreviation: COVIDhub_CDC-ensemble
-  actions:
-  - label: Website
-    new_window: true
-    url: https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/mathematical-modeling.html
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/673
-  dates:
-  - 2022-10-10
-  - 2022-10-03
-  - 2022-09-26
-  - 2022-09-19
-  - 2022-09-12
-  - 2022-09-05
-  - 2022-08-29
-  - 2022-08-22
-  - 2022-08-15
-  - 2022-08-08
-  - 2022-08-01
-  - 2022-07-25
-  - 2022-07-18
-  - 2022-07-11
-  - 2022-07-04
-  - 2022-06-27
-  - 2022-06-13
-  - 2022-06-20
-  - 2022-06-06
-  - 2022-05-30
-  - 2022-05-23
-  - 2022-05-16
-  - 2022-05-09
-  - 2022-05-02
-  - 2022-04-25
-  - 2022-04-18
-  - 2022-04-11
-  - 2022-04-11
-  - 2022-04-04
-  - 2022-03-28
-  - 2022-03-21
-  - 2022-03-14
-  - 2022-03-07
-  - 2022-02-28
-  - 2022-02-21
-  - 2022-02-14
-  - 2022-02-07
-  - 2022-01-31
-  - 2022-01-24
-  - 2022-01-17
-  - 2022-01-10
-  - 2022-01-03
-  - 2022-01-03
-  - 2021-12-27
-  - 2021-12-20
-  - 2021-12-13
-  - 2021-12-06
-  - 2021-11-29
-  - 2021-11-22
-  - 2021-11-15
-  - 2020-05-25
-  - 2020-04-13
-  - 2021-01-18
-  - 2020-07-27
-  - 2021-09-27
-  - 2020-09-07
-  - 2021-04-05
-  - 2020-12-14
-  - 2020-11-16
-  - 2021-05-31
-  - 2020-06-01
-  - 2021-02-08
-  - 2021-07-05
-  - 2020-09-21
-  - 2020-10-19
-  - 2021-04-19
-  - 2021-01-04
-  - 2020-06-15
-  - 2020-04-27
-  - 2020-06-08
-  - 2021-10-25
-  - 2020-08-24
-  - 2020-10-05
-  - 2020-12-07
-  - 2021-08-02
-  - 2020-05-04
-  - 2020-12-28
-  - 2021-10-18
-  - 2020-07-06
-  - 2020-08-17
-  - 2021-03-22
-  - 2021-08-16
-  - 2020-11-09
-  - 2021-07-12
-  - 2021-06-21
-  - 2020-08-31
-  - 2021-11-08
-  - 2020-12-21
-  - 2020-06-29
-  - 2021-07-26
-  - 2021-02-22
-  - 2021-05-17
-  - 2020-05-18
-  - 2021-02-15
-  - 2021-07-19
-  - 2021-01-25
-  - 2021-03-01
-  - 2021-04-12
-  - 2020-09-14
-  - 2021-03-15
-  - 2020-07-13
-  - 2021-05-10
-  - 2021-10-11
-  - 2020-08-10
-  - 2021-08-23
-  - 2021-01-11
-  - 2020-08-03
-  - 2021-06-07
-  - 2021-03-29
-  - 2021-06-14
-  - 2021-08-30
-  - 2021-04-26
-  - 2020-11-23
-  - 2021-08-09
-  - 2021-06-28
-  - 2021-03-08
-  - 2021-10-04
-  - 2021-09-06
-  - 2021-09-13
-  - 2020-10-26
-  - 2020-11-30
-  - 2020-11-02
-  - 2020-05-11
-  - 2021-11-01
-  - 2021-02-01
-  - 2020-07-20
-  - 2021-05-03
-  - 2020-09-28
-  - 2020-06-22
-  - 2021-09-20
-  - 2020-10-12
-  - 2021-05-24
-  description: An ensemble, or model combination, of submitted forecasts to the COVID-19
-    Forecast Hub.
-  earliest_forecast: Monday, 13 April 2020
-  forecasts: 132
-  home_url: https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/mathematical-modeling.html
-  latest_forecast: Monday, 10 October 2022
-  name: ensemble
-  team_name: COVIDhub_CDC
-  url: https://zoltardata.com/model/673
 - abbreviation: CMU-TimeSeries
   actions:
   - label: Website
@@ -1414,6 +1239,7 @@
     type: url
     url: https://zoltardata.com/model/307
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-10-03
   - 2022-09-26
@@ -1512,12 +1338,119 @@
 
     '
   earliest_forecast: Monday, 20 July 2020
-  forecasts: 92
+  forecasts: 93
   home_url: https://delphi.cmu.edu
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: TimeSeries
   team_name: Carnegie Mellon Delphi Group
   url: https://zoltardata.com/model/307
+- abbreviation: Microsoft-DeepSTIA
+  actions:
+  - label: Website
+    new_window: true
+    url: https://www.microsoft.com/en-us/ai/ai-for-health
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/461
+  dates:
+  - 2022-10-17
+  - 2022-09-26
+  - 2022-09-19
+  - 2022-09-12
+  - 2022-09-05
+  - 2022-08-29
+  - 2022-08-15
+  - 2022-08-08
+  - 2022-07-25
+  - 2022-07-18
+  - 2022-07-11
+  - 2022-07-04
+  - 2022-06-27
+  - 2022-06-20
+  - 2022-06-13
+  - 2022-06-06
+  - 2022-05-30
+  - 2022-05-23
+  - 2022-05-16
+  - 2022-05-09
+  - 2022-04-18
+  - 2022-04-11
+  - 2022-04-04
+  - 2022-03-28
+  - 2022-03-07
+  - 2022-02-28
+  - 2022-02-21
+  - 2022-02-14
+  - 2022-02-07
+  - 2022-01-24
+  - 2022-01-17
+  - 2022-01-10
+  - 2022-01-03
+  - 2021-12-27
+  - 2021-12-20
+  - 2021-12-13
+  - 2021-12-06
+  - 2021-11-29
+  - 2021-11-22
+  - 2021-11-01
+  - 2021-11-08
+  - 2021-11-15
+  - 2021-10-25
+  - 2021-10-11
+  - 2021-10-04
+  - 2021-09-27
+  - 2021-09-20
+  - 2021-09-13
+  - 2021-09-06
+  - 2021-08-30
+  - 2021-08-23
+  - 2021-08-16
+  - 2021-08-09
+  - 2021-08-02
+  - 2021-07-26
+  - 2021-07-19
+  - 2021-07-12
+  - 2021-07-05
+  - 2021-06-28
+  - 2021-06-21
+  - 2021-06-14
+  - 2021-06-07
+  - 2021-05-31
+  - 2021-05-17
+  - 2021-02-15
+  - 2021-04-26
+  - 2021-03-15
+  - 2021-01-18
+  - 2021-02-08
+  - 2021-01-25
+  - 2020-12-14
+  - 2021-04-04
+  - 2021-03-22
+  - 2021-03-01
+  - 2021-03-29
+  - 2021-02-22
+  - 2020-12-07
+  - 2021-05-24
+  - 2021-05-10
+  - 2021-04-19
+  - 2021-04-12
+  - 2021-03-08
+  - 2021-02-01
+  - 2020-12-14
+  - 2021-01-11
+  - 2021-01-04
+  - 2020-12-28
+  - 2020-12-21
+  description: Our model is a deep spatio-temporal network. More details can be found
+    in [the paper](https://dl.acm.org/doi/10.1145/3459637.3481927).
+  earliest_forecast: Monday, 07 December 2020
+  forecasts: 88
+  home_url: https://www.microsoft.com/en-us/ai/ai-for-health
+  latest_forecast: Monday, 17 October 2022
+  name: DeepSTIA
+  team_name: Microsoft
+  url: https://zoltardata.com/model/461
 - abbreviation: PSI-DICE
   actions:
   - label: Website
@@ -1528,6 +1461,7 @@
     type: url
     url: https://zoltardata.com/model/692
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-10-03
   - 2022-09-26
@@ -1567,9 +1501,9 @@
     and includes compartments for hospitalizations. Parameter posteriors are inferred
     using an MCMC procedure.
   earliest_forecast: Monday, 14 February 2022
-  forecasts: 35
+  forecasts: 36
   home_url: https://github.com/predsci/DICE4
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: Dynamics of Interacting Community Epidemics
   team_name: Predictive Science
   url: https://zoltardata.com/model/692
@@ -1583,6 +1517,7 @@
     type: url
     url: https://zoltardata.com/model/693
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-10-03
   - 2022-09-26
@@ -1617,9 +1552,9 @@
   - 2022-02-28
   description: TBD
   earliest_forecast: Monday, 28 February 2022
-  forecasts: 32
+  forecasts: 33
   home_url: https://covid-19.tacc.utexas.edu
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: Osiris
   team_name: UT
   url: https://zoltardata.com/model/693
@@ -1633,6 +1568,7 @@
     type: url
     url: https://zoltardata.com/model/737
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-10-03
   - 2022-09-26
@@ -1662,9 +1598,9 @@
   - 2022-04-18
   description: Bayesian Vector Auto Regression
   earliest_forecast: Monday, 18 April 2022
-  forecasts: 27
+  forecasts: 28
   home_url: https://github.com/computationalUncertaintyLab
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: VAR_3streams
   team_name: LUcompUncertLab
   url: https://zoltardata.com/model/737
@@ -1678,6 +1614,7 @@
     type: url
     url: https://zoltardata.com/model/378
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-10-03
   - 2022-09-26
@@ -1786,9 +1723,9 @@
     epidemic computational model GLEAM with a deep learning spatiotemporal forecasting
     framework to further improve predictions.
   earliest_forecast: Monday, 07 September 2020
-  forecasts: 104
+  forecasts: 105
   home_url: https://datascience.ucsd.edu/COVID19/
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: DeepGLEAM
   team_name: UCSD_NEU
   url: https://zoltardata.com/model/378
@@ -1802,6 +1739,7 @@
     type: url
     url: https://zoltardata.com/model/308
   dates:
+  - 2022-10-17
   - 2022-10-10
   - 2022-10-03
   - 2022-09-26
@@ -1924,110 +1862,12 @@
     with exogenous variables, Long short-term memory (lSTM) models, and PatchSim (an
     SEIR model).
   earliest_forecast: Monday, 20 July 2020
-  forecasts: 118
+  forecasts: 119
   home_url: https://biocomplexity.virginia.edu/
-  latest_forecast: Monday, 10 October 2022
+  latest_forecast: Monday, 17 October 2022
   name: Ensemble model
   team_name: University of Virginia, Biocomplexity COVID-19 Response Team
   url: https://zoltardata.com/model/308
-- abbreviation: MIT-Cassandra
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/oskali/mit_cassandra
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/572
-  dates:
-  - 2022-10-10
-  - 2022-10-03
-  - 2022-09-26
-  - 2022-09-19
-  - 2022-09-12
-  - 2022-09-05
-  - 2022-08-29
-  - 2022-08-22
-  - 2022-08-15
-  - 2022-08-08
-  - 2022-08-01
-  - 2022-07-25
-  - 2022-07-18
-  - 2022-07-11
-  - 2022-07-04
-  - 2022-06-27
-  - 2022-06-20
-  - 2022-06-13
-  - 2022-06-06
-  - 2022-05-30
-  - 2022-05-16
-  - 2022-05-09
-  - 2022-05-02
-  - 2022-04-25
-  - 2022-04-18
-  - 2022-04-11
-  - 2022-04-04
-  - 2022-03-28
-  - 2022-03-21
-  - 2022-03-14
-  - 2022-03-07
-  - 2022-02-28
-  - 2022-02-21
-  - 2022-02-14
-  - 2022-02-07
-  - 2022-01-31
-  - 2022-01-24
-  - 2022-01-17
-  - 2022-01-09
-  - 2022-01-03
-  - 2021-12-27
-  - 2021-12-20
-  - 2021-12-13
-  - 2021-12-06
-  - 2021-11-29
-  - 2021-11-08
-  - 2021-11-01
-  - 2021-10-25
-  - 2021-10-18
-  - 2021-10-11
-  - 2021-10-04
-  - 2021-09-27
-  - 2021-09-20
-  - 2021-09-13
-  - 2021-09-06
-  - 2021-08-30
-  - 2021-08-23
-  - 2021-08-16
-  - 2021-08-09
-  - 2021-08-02
-  - 2021-07-26
-  - 2021-07-19
-  - 2021-07-12
-  - 2021-07-05
-  - 2021-06-28
-  - 2021-06-21
-  - 2021-06-14
-  - 2021-06-07
-  - 2021-05-31
-  - 2021-04-26
-  - 2021-05-17
-  - 2021-04-19
-  - 2021-05-10
-  - 2021-05-03
-  - 2021-05-24
-  - 2021-04-26
-  - 2021-05-03
-  - 2021-04-12
-  description: Ensemble model aggregating predictions from four constituent models.
-    1. MDP feature representation 2. KNN time-series 3. Bi-LSTM time-series 4. C-SEIRD
-    epidemiological
-  earliest_forecast: Monday, 12 April 2021
-  forecasts: 78
-  home_url: https://github.com/oskali/mit_cassandra
-  latest_forecast: Monday, 10 October 2022
-  name: MIT-Cassandra
-  team_name: MIT-Cassandra
-  url: https://zoltardata.com/model/572
 - abbreviation: CU-select
   actions:
   - label: Website
@@ -2038,6 +1878,7 @@
     type: url
     url: https://zoltardata.com/model/231
   dates:
+  - 2022-10-16
   - 2022-10-09
   - 2022-10-02
   - 2022-09-25
@@ -2202,9 +2043,9 @@
     incidence and deaths. This forecast is the scenario we believe to be most plausible
     given the current setting.
   earliest_forecast: Sunday, 12 April 2020
-  forecasts: 160
+  forecasts: 161
   home_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
-  latest_forecast: Sunday, 09 October 2022
+  latest_forecast: Sunday, 16 October 2022
   name: select
   team_name: Columbia University
   url: https://zoltardata.com/model/231
@@ -2218,16 +2059,157 @@
     type: url
     url: https://zoltardata.com/model/756
   dates:
+  - 2022-10-16
   - 2022-10-09
   description: Meta-learning algorithm applied to stationary windows of state- and
     national-level case data.
   earliest_forecast: Sunday, 09 October 2022
-  forecasts: 1
+  forecasts: 2
   home_url: github.com/potomacresearch
-  latest_forecast: Sunday, 09 October 2022
+  latest_forecast: Sunday, 16 October 2022
   name: COVID Forecasting with Representational Time-series Learning
   team_name: Potomac Research and University of Maryland
   url: https://zoltardata.com/model/756
+- abbreviation: QJHong-Encounter
+  actions:
+  - label: Website
+    new_window: true
+    url: https://qjhong.github.io
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/299
+  dates:
+  - 2022-10-16
+  - 2022-10-10
+  - 2022-10-02
+  - 2022-09-25
+  - 2022-09-19
+  - 2022-09-11
+  - 2022-09-05
+  - 2022-08-29
+  - 2022-08-21
+  - 2022-08-14
+  - 2022-08-08
+  - 2022-08-01
+  - 2022-07-25
+  - 2022-07-17
+  - 2022-07-11
+  - 2022-07-03
+  - 2022-06-26
+  - 2022-06-20
+  - 2022-06-13
+  - 2022-06-04
+  - 2022-05-29
+  - 2022-05-23
+  - 2022-05-15
+  - 2022-05-09
+  - 2022-05-01
+  - 2022-04-24
+  - 2022-04-17
+  - 2022-04-10
+  - 2022-04-04
+  - 2022-03-27
+  - 2022-03-20
+  - 2022-03-14
+  - 2022-03-06
+  - 2022-02-28
+  - 2022-02-21
+  - 2022-02-13
+  - 2022-02-06
+  - 2022-01-30
+  - 2022-01-23
+  - 2022-01-16
+  - 2022-01-09
+  - 2022-01-03
+  - 2021-12-26
+  - 2021-12-20
+  - 2021-12-13
+  - 2021-12-05
+  - 2021-11-28
+  - 2021-11-21
+  - 2021-11-14
+  - 2021-11-07
+  - 2021-10-31
+  - 2021-10-25
+  - 2021-10-17
+  - 2021-10-10
+  - 2021-10-04
+  - 2021-09-26
+  - 2021-09-19
+  - 2021-09-12
+  - 2021-09-05
+  - 2021-08-29
+  - 2021-08-22
+  - 2021-08-15
+  - 2021-08-09
+  - 2021-08-02
+  - 2021-07-22
+  - 2021-07-19
+  - 2021-07-12
+  - 2020-11-15
+  - 2020-10-25
+  - 2020-10-18
+  - 2020-11-01
+  - 2020-11-08
+  - 2020-10-11
+  - 2020-10-04
+  - 2020-07-01
+  - 2020-07-25
+  - 2020-07-18
+  - 2020-06-27
+  - 2020-08-30
+  - 2020-06-29
+  - 2020-08-17
+  - 2020-08-03
+  - 2020-07-11
+  - 2020-06-30
+  - 2020-07-10
+  - 2020-06-26
+  - 2020-06-24
+  - 2020-07-13
+  - 2020-09-06
+  - 2020-09-20
+  - 2020-08-10
+  - 2020-07-08
+  - 2020-07-27
+  - 2020-07-03
+  - 2020-09-13
+  - 2020-09-27
+  - 2020-08-23
+  - 2021-02-14
+  - 2021-01-10
+  - 2021-03-22
+  - 2021-03-08
+  - 2021-03-01
+  - 2021-01-18
+  - 2021-02-21
+  - 2020-07-13
+  - 2020-06-30
+  - 2020-06-29
+  - 2020-06-27
+  - 2020-06-26
+  - 2020-06-24
+  - 2021-03-15
+  - 2021-02-08
+  - 2021-01-31
+  - 2021-01-25
+  - 2021-01-03
+  - 2020-12-27
+  - 2020-12-20
+  - 2020-12-13
+  - 2020-12-06
+  - 2020-11-29
+  - 2020-11-22
+  description: today's "Daily New Confirmed Cases" + today's "Encounter Density"  ==>
+    today's newly infected Cases  ==> next 2-3 weeks' "Daily New Confirmed Cases"
+  earliest_forecast: Wednesday, 24 June 2020
+  forecasts: 121
+  home_url: https://qjhong.github.io
+  latest_forecast: Sunday, 16 October 2022
+  name: Encounter
+  team_name: QJHong
+  url: https://zoltardata.com/model/299
 - abbreviation: TTU-squider
   actions:
   - label: Website
@@ -2238,6 +2220,7 @@
     type: url
     url: https://zoltardata.com/model/366
   dates:
+  - 2022-10-16
   - 2022-10-09
   - 2022-10-02
   - 2022-09-25
@@ -2351,9 +2334,9 @@
     as well as known infecteds, and time dependent social contact suppression and
     relaxation.
   earliest_forecast: Monday, 17 August 2020
-  forecasts: 109
+  forecasts: 110
   home_url: https://github.com/fvbttu/squider
-  latest_forecast: Sunday, 09 October 2022
+  latest_forecast: Sunday, 16 October 2022
   name: SQUIDER
   team_name: Hussain Lab at Texas Tech University
   url: https://zoltardata.com/model/366
@@ -2367,6 +2350,7 @@
     type: url
     url: https://zoltardata.com/model/650
   dates:
+  - 2022-10-16
   - 2022-10-09
   - 2022-09-25
   - 2022-09-18
@@ -2421,9 +2405,9 @@
     model using a multivariate time series input with a temporal lag of 9 weeks and
     hand engineered spatial features.
   earliest_forecast: Sunday, 22 August 2021
-  forecasts: 50
+  forecasts: 51
   home_url: https://geohai.github.io/covid-lstm/
-  latest_forecast: Sunday, 09 October 2022
+  latest_forecast: Sunday, 16 October 2022
   name: COVID LSTM
   team_name: CU Boulder
   url: https://zoltardata.com/model/650
@@ -2437,6 +2421,7 @@
     type: url
     url: https://zoltardata.com/model/651
   dates:
+  - 2022-10-16
   - 2022-10-09
   - 2022-10-02
   - 2022-09-25
@@ -2497,9 +2482,9 @@
     on the linear or log scale of the underlying trend estimated by a robust LOESS
     seasonal-trend decomposition model.
   earliest_forecast: Sunday, 05 September 2021
-  forecasts: 56
+  forecasts: 57
   home_url: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
-  latest_forecast: Sunday, 09 October 2022
+  latest_forecast: Sunday, 16 October 2022
   name: Trend Model
   team_name: Swiss Data Science Center / University of Geneva
   url: https://zoltardata.com/model/651
@@ -2513,6 +2498,7 @@
     type: url
     url: https://zoltardata.com/model/309
   dates:
+  - 2022-10-16
   - 2022-10-09
   - 2022-10-02
   - 2022-09-25
@@ -2630,9 +2616,9 @@
     rate. Jan 16 2022 - include vaccine and natural escape (Omicron). Jan 23 2022
     - include boosters.
   earliest_forecast: Monday, 20 July 2020
-  forecasts: 113
+  forecasts: 114
   home_url: https://pypm.github.io/home/
-  latest_forecast: Sunday, 09 October 2022
+  latest_forecast: Sunday, 16 October 2022
   name: python Population Modeller
   team_name: Karlen Working Group
   url: https://zoltardata.com/model/309
@@ -2646,6 +2632,7 @@
     type: url
     url: https://zoltardata.com/model/300
   dates:
+  - 2022-10-16
   - 2022-10-09
   - 2022-10-02
   - 2022-09-18
@@ -2799,12 +2786,444 @@
     and adaptive to changing trends. Uses genomics data to estimate the prevelance
     of the variants.
   earliest_forecast: Sunday, 10 May 2020
-  forecasts: 149
+  forecasts: 150
   home_url: https://scc-usc.github.io/ReCOVER-COVID-19
-  latest_forecast: Sunday, 09 October 2022
+  latest_forecast: Sunday, 16 October 2022
   name: SI_kJalpha
   team_name: University of Southern California
   url: https://zoltardata.com/model/300
+- abbreviation: BPagano-RtDriven
+  actions:
+  - label: Website
+    new_window: true
+    url: https://bobpagano.com
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/427
+  dates:
+  - 2022-10-16
+  - 2022-10-09
+  - 2022-10-02
+  - 2022-09-25
+  - 2022-09-18
+  - 2022-09-11
+  - 2022-09-04
+  - 2022-08-28
+  - 2022-08-21
+  - 2022-08-14
+  - 2022-08-07
+  - 2022-07-31
+  - 2022-07-24
+  - 2022-07-17
+  - 2022-07-10
+  - 2022-07-03
+  - 2022-06-26
+  - 2022-06-19
+  - 2022-06-12
+  - 2022-06-05
+  - 2022-05-29
+  - 2022-05-22
+  - 2022-05-15
+  - 2022-05-08
+  - 2022-05-01
+  - 2022-04-24
+  - 2022-04-17
+  - 2022-04-10
+  - 2022-04-03
+  - 2022-03-27
+  - 2022-03-20
+  - 2022-03-13
+  - 2022-03-06
+  - 2022-02-27
+  - 2022-02-20
+  - 2022-02-13
+  - 2022-02-06
+  - 2022-01-30
+  - 2022-01-23
+  - 2022-01-16
+  - 2022-01-09
+  - 2022-01-02
+  - 2021-12-27
+  - 2021-12-26
+  - 2021-12-19
+  - 2021-12-12
+  - 2021-12-05
+  - 2021-11-28
+  - 2021-11-21
+  - 2021-11-14
+  - 2021-11-07
+  - 2021-10-31
+  - 2021-10-24
+  - 2021-10-17
+  - 2021-10-10
+  - 2021-10-03
+  - 2021-09-26
+  - 2021-09-19
+  - 2021-09-12
+  - 2021-09-05
+  - 2021-08-29
+  - 2021-08-22
+  - 2021-08-15
+  - 2021-08-08
+  - 2021-08-01
+  - 2021-07-25
+  - 2021-07-18
+  - 2021-07-11
+  - 2021-07-04
+  - 2021-06-27
+  - 2021-06-20
+  - 2021-06-13
+  - 2021-06-06
+  - 2021-05-30
+  - 2020-10-25
+  - 2020-11-01
+  - 2020-11-15
+  - 2020-11-08
+  - 2020-10-18
+  - 2020-10-04
+  - 2021-03-14
+  - 2021-02-14
+  - 2021-04-25
+  - 2021-01-03
+  - 2020-12-20
+  - 2021-05-16
+  - 2021-04-11
+  - 2021-04-04
+  - 2021-02-28
+  - 2021-03-21
+  - 2021-01-24
+  - 2021-03-28
+  - 2020-11-22
+  - 2021-02-21
+  - 2021-04-11
+  - 2021-05-02
+  - 2021-05-23
+  - 2021-05-09
+  - 2021-04-18
+  - 2021-03-07
+  - 2021-02-07
+  - 2021-01-31
+  - 2021-01-24
+  - 2021-01-17
+  - 2020-10-11
+  - 2021-01-10
+  - 2020-10-11
+  - 2020-12-27
+  - 2020-12-13
+  - 2020-12-06
+  - 2020-11-29
+  description: Projects infections and deaths using an SIR model.
+  earliest_forecast: Sunday, 04 October 2020
+  forecasts: 111
+  home_url: https://bobpagano.com
+  latest_forecast: Sunday, 16 October 2022
+  name: RtDriven
+  team_name: BPagano
+  url: https://zoltardata.com/model/427
+- abbreviation: CUB_PopCouncil-SLSTM
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/geohai/covid-lstm-hosp
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/694
+  dates:
+  - 2022-10-15
+  - 2022-10-08
+  - 2022-10-01
+  - 2022-09-24
+  - 2022-09-17
+  - 2022-09-10
+  - 2022-09-03
+  - 2022-08-27
+  - 2022-08-20
+  - 2022-08-13
+  - 2022-08-06
+  - 2022-07-30
+  - 2022-07-23
+  - 2022-07-16
+  - 2022-07-09
+  - 2022-07-02
+  - 2022-06-26
+  - 2022-06-19
+  - 2022-06-12
+  - 2022-06-05
+  - 2022-05-29
+  - 2022-05-22
+  - 2022-05-15
+  - 2022-05-08
+  - 2022-05-01
+  - 2022-04-24
+  - 2022-04-17
+  - 2022-04-10
+  - 2022-04-03
+  - 2022-03-27
+  - 2022-03-20
+  - 2022-03-13
+  - 2022-03-06
+  - 2022-02-27
+  description: Our forecasts are produced by a spatiotemporal LSTM classification
+    model using a multivariate time series input with two parallel temporal lags of
+    7 and 28 days and hand engineered spatial features.
+  earliest_forecast: Sunday, 27 February 2022
+  forecasts: 34
+  home_url: https://github.com/geohai/covid-lstm-hosp
+  latest_forecast: Saturday, 15 October 2022
+  name: SLSTM
+  team_name: CUB_PopCouncil
+  url: https://zoltardata.com/model/694
+- abbreviation: COVIDhub_CDC-ensemble
+  actions:
+  - label: Website
+    new_window: true
+    url: https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/mathematical-modeling.html
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/673
+  dates:
+  - 2022-10-10
+  - 2022-10-03
+  - 2022-09-26
+  - 2022-09-19
+  - 2022-09-12
+  - 2022-09-05
+  - 2022-08-29
+  - 2022-08-22
+  - 2022-08-15
+  - 2022-08-08
+  - 2022-08-01
+  - 2022-07-25
+  - 2022-07-18
+  - 2022-07-11
+  - 2022-07-04
+  - 2022-06-27
+  - 2022-06-13
+  - 2022-06-20
+  - 2022-06-06
+  - 2022-05-30
+  - 2022-05-23
+  - 2022-05-16
+  - 2022-05-09
+  - 2022-05-02
+  - 2022-04-25
+  - 2022-04-18
+  - 2022-04-11
+  - 2022-04-11
+  - 2022-04-04
+  - 2022-03-28
+  - 2022-03-21
+  - 2022-03-14
+  - 2022-03-07
+  - 2022-02-28
+  - 2022-02-21
+  - 2022-02-14
+  - 2022-02-07
+  - 2022-01-31
+  - 2022-01-24
+  - 2022-01-17
+  - 2022-01-10
+  - 2022-01-03
+  - 2022-01-03
+  - 2021-12-27
+  - 2021-12-20
+  - 2021-12-13
+  - 2021-12-06
+  - 2021-11-29
+  - 2021-11-22
+  - 2021-11-15
+  - 2020-05-25
+  - 2020-04-13
+  - 2021-01-18
+  - 2020-07-27
+  - 2021-09-27
+  - 2020-09-07
+  - 2021-04-05
+  - 2020-12-14
+  - 2020-11-16
+  - 2021-05-31
+  - 2020-06-01
+  - 2021-02-08
+  - 2021-07-05
+  - 2020-09-21
+  - 2020-10-19
+  - 2021-04-19
+  - 2021-01-04
+  - 2020-06-15
+  - 2020-04-27
+  - 2020-06-08
+  - 2021-10-25
+  - 2020-08-24
+  - 2020-10-05
+  - 2020-12-07
+  - 2021-08-02
+  - 2020-05-04
+  - 2020-12-28
+  - 2021-10-18
+  - 2020-07-06
+  - 2020-08-17
+  - 2021-03-22
+  - 2021-08-16
+  - 2020-11-09
+  - 2021-07-12
+  - 2021-06-21
+  - 2020-08-31
+  - 2021-11-08
+  - 2020-12-21
+  - 2020-06-29
+  - 2021-07-26
+  - 2021-02-22
+  - 2021-05-17
+  - 2020-05-18
+  - 2021-02-15
+  - 2021-07-19
+  - 2021-01-25
+  - 2021-03-01
+  - 2021-04-12
+  - 2020-09-14
+  - 2021-03-15
+  - 2020-07-13
+  - 2021-05-10
+  - 2021-10-11
+  - 2020-08-10
+  - 2021-08-23
+  - 2021-01-11
+  - 2020-08-03
+  - 2021-06-07
+  - 2021-03-29
+  - 2021-06-14
+  - 2021-08-30
+  - 2021-04-26
+  - 2020-11-23
+  - 2021-08-09
+  - 2021-06-28
+  - 2021-03-08
+  - 2021-10-04
+  - 2021-09-06
+  - 2021-09-13
+  - 2020-10-26
+  - 2020-11-30
+  - 2020-11-02
+  - 2020-05-11
+  - 2021-11-01
+  - 2021-02-01
+  - 2020-07-20
+  - 2021-05-03
+  - 2020-09-28
+  - 2020-06-22
+  - 2021-09-20
+  - 2020-10-12
+  - 2021-05-24
+  description: An ensemble, or model combination, of submitted forecasts to the COVID-19
+    Forecast Hub.
+  earliest_forecast: Monday, 13 April 2020
+  forecasts: 132
+  home_url: https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/mathematical-modeling.html
+  latest_forecast: Monday, 10 October 2022
+  name: ensemble
+  team_name: COVIDhub_CDC
+  url: https://zoltardata.com/model/673
+- abbreviation: MIT-Cassandra
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/oskali/mit_cassandra
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/572
+  dates:
+  - 2022-10-10
+  - 2022-10-03
+  - 2022-09-26
+  - 2022-09-19
+  - 2022-09-12
+  - 2022-09-05
+  - 2022-08-29
+  - 2022-08-22
+  - 2022-08-15
+  - 2022-08-08
+  - 2022-08-01
+  - 2022-07-25
+  - 2022-07-18
+  - 2022-07-11
+  - 2022-07-04
+  - 2022-06-27
+  - 2022-06-20
+  - 2022-06-13
+  - 2022-06-06
+  - 2022-05-30
+  - 2022-05-16
+  - 2022-05-09
+  - 2022-05-02
+  - 2022-04-25
+  - 2022-04-18
+  - 2022-04-11
+  - 2022-04-04
+  - 2022-03-28
+  - 2022-03-21
+  - 2022-03-14
+  - 2022-03-07
+  - 2022-02-28
+  - 2022-02-21
+  - 2022-02-14
+  - 2022-02-07
+  - 2022-01-31
+  - 2022-01-24
+  - 2022-01-17
+  - 2022-01-09
+  - 2022-01-03
+  - 2021-12-27
+  - 2021-12-20
+  - 2021-12-13
+  - 2021-12-06
+  - 2021-11-29
+  - 2021-11-08
+  - 2021-11-01
+  - 2021-10-25
+  - 2021-10-18
+  - 2021-10-11
+  - 2021-10-04
+  - 2021-09-27
+  - 2021-09-20
+  - 2021-09-13
+  - 2021-09-06
+  - 2021-08-30
+  - 2021-08-23
+  - 2021-08-16
+  - 2021-08-09
+  - 2021-08-02
+  - 2021-07-26
+  - 2021-07-19
+  - 2021-07-12
+  - 2021-07-05
+  - 2021-06-28
+  - 2021-06-21
+  - 2021-06-14
+  - 2021-06-07
+  - 2021-05-31
+  - 2021-04-26
+  - 2021-05-17
+  - 2021-04-19
+  - 2021-05-10
+  - 2021-05-03
+  - 2021-05-24
+  - 2021-04-26
+  - 2021-05-03
+  - 2021-04-12
+  description: Ensemble model aggregating predictions from four constituent models.
+    1. MDP feature representation 2. KNN time-series 3. Bi-LSTM time-series 4. C-SEIRD
+    epidemiological
+  earliest_forecast: Monday, 12 April 2021
+  forecasts: 78
+  home_url: https://github.com/oskali/mit_cassandra
+  latest_forecast: Monday, 10 October 2022
+  name: MIT-Cassandra
+  team_name: MIT-Cassandra
+  url: https://zoltardata.com/model/572
 - abbreviation: JHU_IDD-CovidSP
   actions:
   - label: Website
@@ -2939,298 +3358,3 @@
   name: CovidScenarioPipeline
   team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
   url: https://zoltardata.com/model/255
-- abbreviation: BPagano-RtDriven
-  actions:
-  - label: Website
-    new_window: true
-    url: https://bobpagano.com
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/427
-  dates:
-  - 2022-10-09
-  - 2022-10-02
-  - 2022-09-25
-  - 2022-09-18
-  - 2022-09-11
-  - 2022-09-04
-  - 2022-08-28
-  - 2022-08-21
-  - 2022-08-14
-  - 2022-08-07
-  - 2022-07-31
-  - 2022-07-24
-  - 2022-07-17
-  - 2022-07-10
-  - 2022-07-03
-  - 2022-06-26
-  - 2022-06-19
-  - 2022-06-12
-  - 2022-06-05
-  - 2022-05-29
-  - 2022-05-22
-  - 2022-05-15
-  - 2022-05-08
-  - 2022-05-01
-  - 2022-04-24
-  - 2022-04-17
-  - 2022-04-10
-  - 2022-04-03
-  - 2022-03-27
-  - 2022-03-20
-  - 2022-03-13
-  - 2022-03-06
-  - 2022-02-27
-  - 2022-02-20
-  - 2022-02-13
-  - 2022-02-06
-  - 2022-01-30
-  - 2022-01-23
-  - 2022-01-16
-  - 2022-01-09
-  - 2022-01-02
-  - 2021-12-27
-  - 2021-12-26
-  - 2021-12-19
-  - 2021-12-12
-  - 2021-12-05
-  - 2021-11-28
-  - 2021-11-21
-  - 2021-11-14
-  - 2021-11-07
-  - 2021-10-31
-  - 2021-10-24
-  - 2021-10-17
-  - 2021-10-10
-  - 2021-10-03
-  - 2021-09-26
-  - 2021-09-19
-  - 2021-09-12
-  - 2021-09-05
-  - 2021-08-29
-  - 2021-08-22
-  - 2021-08-15
-  - 2021-08-08
-  - 2021-08-01
-  - 2021-07-25
-  - 2021-07-18
-  - 2021-07-11
-  - 2021-07-04
-  - 2021-06-27
-  - 2021-06-20
-  - 2021-06-13
-  - 2021-06-06
-  - 2021-05-30
-  - 2020-10-25
-  - 2020-11-01
-  - 2020-11-15
-  - 2020-11-08
-  - 2020-10-18
-  - 2020-10-04
-  - 2021-03-14
-  - 2021-02-14
-  - 2021-04-25
-  - 2021-01-03
-  - 2020-12-20
-  - 2021-05-16
-  - 2021-04-11
-  - 2021-04-04
-  - 2021-02-28
-  - 2021-03-21
-  - 2021-01-24
-  - 2021-03-28
-  - 2020-11-22
-  - 2021-02-21
-  - 2021-04-11
-  - 2021-05-02
-  - 2021-05-23
-  - 2021-05-09
-  - 2021-04-18
-  - 2021-03-07
-  - 2021-02-07
-  - 2021-01-31
-  - 2021-01-24
-  - 2021-01-17
-  - 2020-10-11
-  - 2021-01-10
-  - 2020-10-11
-  - 2020-12-27
-  - 2020-12-13
-  - 2020-12-06
-  - 2020-11-29
-  description: Projects infections and deaths using an SIR model.
-  earliest_forecast: Sunday, 04 October 2020
-  forecasts: 110
-  home_url: https://bobpagano.com
-  latest_forecast: Sunday, 09 October 2022
-  name: RtDriven
-  team_name: BPagano
-  url: https://zoltardata.com/model/427
-- abbreviation: CUB_PopCouncil-SLSTM
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/geohai/covid-lstm-hosp
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/694
-  dates:
-  - 2022-10-08
-  - 2022-10-01
-  - 2022-09-24
-  - 2022-09-17
-  - 2022-09-10
-  - 2022-09-03
-  - 2022-08-27
-  - 2022-08-20
-  - 2022-08-13
-  - 2022-08-06
-  - 2022-07-30
-  - 2022-07-23
-  - 2022-07-16
-  - 2022-07-09
-  - 2022-07-02
-  - 2022-06-26
-  - 2022-06-19
-  - 2022-06-12
-  - 2022-06-05
-  - 2022-05-29
-  - 2022-05-22
-  - 2022-05-15
-  - 2022-05-08
-  - 2022-05-01
-  - 2022-04-24
-  - 2022-04-17
-  - 2022-04-10
-  - 2022-04-03
-  - 2022-03-27
-  - 2022-03-20
-  - 2022-03-13
-  - 2022-03-06
-  - 2022-02-27
-  description: Our forecasts are produced by a spatiotemporal LSTM classification
-    model using a multivariate time series input with two parallel temporal lags of
-    7 and 28 days and hand engineered spatial features.
-  earliest_forecast: Sunday, 27 February 2022
-  forecasts: 33
-  home_url: https://github.com/geohai/covid-lstm-hosp
-  latest_forecast: Saturday, 08 October 2022
-  name: SLSTM
-  team_name: CUB_PopCouncil
-  url: https://zoltardata.com/model/694
-- abbreviation: UCF-AEM
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/UCF-AEM/UCF-AEM
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/444
-  dates:
-  - 2022-10-02
-  - 2022-09-18
-  - 2022-09-11
-  - 2022-09-04
-  - 2022-08-28
-  - 2022-08-21
-  - 2022-08-14
-  - 2022-08-07
-  - 2022-07-31
-  - 2022-07-24
-  - 2022-07-10
-  - 2022-07-03
-  - 2022-06-26
-  - 2022-06-19
-  - 2022-06-12
-  - 2022-06-05
-  - 2022-05-29
-  - 2022-05-22
-  - 2022-05-15
-  - 2022-05-08
-  - 2022-05-01
-  - 2022-04-24
-  - 2022-04-17
-  - 2022-04-10
-  - 2022-04-03
-  - 2022-03-27
-  - 2022-03-20
-  - 2022-03-13
-  - 2022-02-27
-  - 2022-02-20
-  - 2022-02-13
-  - 2022-02-06
-  - 2022-01-30
-  - 2022-01-23
-  - 2022-01-16
-  - 2022-01-09
-  - 2022-01-02
-  - 2021-12-26
-  - 2021-12-19
-  - 2021-12-05
-  - 2021-11-28
-  - 2021-11-21
-  - 2021-11-14
-  - 2021-11-07
-  - 2021-10-31
-  - 2021-10-24
-  - 2021-10-17
-  - 2021-10-10
-  - 2021-10-03
-  - 2021-09-26
-  - 2021-09-19
-  - 2021-09-12
-  - 2021-09-05
-  - 2021-08-29
-  - 2021-08-22
-  - 2021-08-15
-  - 2021-08-08
-  - 2021-08-01
-  - 2021-07-25
-  - 2021-07-18
-  - 2021-07-11
-  - 2021-07-04
-  - 2021-06-20
-  - 2021-06-27
-  - 2021-06-13
-  - 2021-05-30
-  - 2020-11-15
-  - 2021-01-03
-  - 2021-04-25
-  - 2021-03-14
-  - 2021-05-16
-  - 2021-01-17
-  - 2020-12-27
-  - 2020-12-13
-  - 2021-02-14
-  - 2021-05-09
-  - 2021-04-11
-  - 2021-02-21
-  - 2021-05-02
-  - 2021-05-23
-  - 2021-04-18
-  - 2021-04-04
-  - 2021-03-28
-  - 2021-03-21
-  - 2021-03-07
-  - 2021-02-28
-  - 2021-02-07
-  - 2021-01-31
-  - 2021-01-24
-  - 2021-01-10
-  - 2020-12-20
-  - 2020-12-07
-  - 2020-11-29
-  - 2020-11-22
-  description: This model leverages conventional SEIR model with mixture modeling
-    and distilled the knowledge of complex mixture modeling system with ensemble neural
-    networks.
-  earliest_forecast: Sunday, 15 November 2020
-  forecasts: 94
-  home_url: https://github.com/UCF-AEM/UCF-AEM
-  latest_forecast: Sunday, 02 October 2022
-  name: AI-Powered and Epidemiology-Informed Modeling System
-  team_name: University of Central Florida
-  url: https://zoltardata.com/model/444
