@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[Computer Forecasts, Expert Judgment, And ‘Chimeric Forecasting’ Of Infectious Diseases](https://www.forbes.com/sites/johndrake/2022/11/21/computer-forecasts-expert-judgment-and-chimeric-forecasting-of-infectious-diseases/){:target="_blank"}  
+_Forbes_ | 21 November 2022
+
+***
+
 [For now, wary US treads water with transformed COVID-19](https://apnews.com/article/covid-science-health-infectious-diseases-fb25f987bab09a11be31a32e832dd9de){:target="_blank"}  
 _AP_ | 3 July 2022
 
