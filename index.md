@@ -73,35 +73,35 @@ sections:
 
     content1: >-  
       
+      [Computer Forecasts, Expert Judgment, And ‘Chimeric Forecasting’ Of Infectious Diseases](https://www.forbes.com/sites/johndrake/2022/11/21/computer-forecasts-expert-judgment-and-chimeric-forecasting-of-infectious-diseases/){:target="_blank"}  
+      
+      _Forbes_ | 21 November 2022  
+      
       [For now, wary US treads water with transformed COVID-19](https://apnews.com/article/covid-science-health-infectious-diseases-fb25f987bab09a11be31a32e832dd9de){:target="_blank"}  
       
       _AP_ | 3 July 2022  
+      
+      
+    content2: >-  
       
       [CDC Says COVID Hospitalizations to Rise in Most States](https://www.webmd.com/lung/news/20220519/cdc-says-covid-hospitalizations-to-rise-in-most-states){:target="_blank"}  
       
       _WebMD_ | 19 May 2022  
       
-      
-    content2: >-  
-      
       [New White House Covid projection puzzles experts and catches some Biden officials off guard](https://www.cnn.com/2022/05/12/politics/biden-administration-covid-warnings/index.html){:target="_blank"}  
       
       _CNN_ | 12 May 2022  
       
-      [A devastating milestone looms: 1 million US deaths from COVID-19](https://www.bostonglobe.com/2022/04/28/nation/devastating-milestone-looms-1-million-us-deaths-covid-19/){:target="_blank"}  
-      
-      _Boston Globe_ | 28 April 2022  
-      
       
     content3: >-  
       
-      [UMass lab cited for precision forecasting COVID-19 deaths](https://www.gazettenet.com/UMass-researchers-credited-with-most-accurate-COVID-19-death-projections-45989776){:target="_blank"}  
+      [Gov. Tim Walz, Janet Malcolm urge second COVID-19 booster shots for summer](https://www.startribune.com/walz-malcolm-receive-second-covid-19-boosters/600170465/){:target="_blank"}  
       
-      _Daily Hampshire Gazette_ | 18 April 2022  
+      _Star Tribune_ | 4 May 2022  
       
-      [Collaborative modeling attempts could improve response to the COVID-19 pandemic](https://www.news-medical.net/news/20220408/Collaborative-modeling-attempts-could-improve-response-to-the-COVID-19-pandemic.aspx){:target="_blank"}  
+      [A devastating milestone looms: 1 million US deaths from COVID-19](https://www.bostonglobe.com/2022/04/28/nation/devastating-milestone-looms-1-million-us-deaths-covid-19/){:target="_blank"}  
       
-      _News Medical_ | 8 April 2022  
+      _Boston Globe_ | 28 April 2022  
       
 
     actions:
