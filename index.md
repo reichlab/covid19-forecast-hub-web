@@ -42,18 +42,18 @@ sections:
             new_window: true
       - title: Public health impact
         content: >-
-           COVID-19 Forecast Hub data are used by the <a href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html" target="_blank">US Centers for Disease Control and Prevention</a> and the data journalism site <a href="https://projects.fivethirtyeight.com/covid-forecasts/" target="_blank">FiveThirtyEight</a>. Through these channels, and our [public data repository](https://github.com/reichlab/covid19-forecast-hub), our work serves as a vital source of public information about where the outbreak is headed.
+           COVID-19 Forecast Hub data are used by the <a href="https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/mathematical-modeling.html" target="_blank">US Centers for Disease Control and Prevention</a> and the data journalism site <a href="https://projects.fivethirtyeight.com/covid-forecasts/" target="_blank">FiveThirtyEight</a>. Through these channels, and our [public data repository](https://github.com/reichlab/covid19-forecast-hub), our work serves as a vital source of public information about where the outbreak is headed.
         actions:
           - label: Mortality forecasts @ CDC
-            url: https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html
+            url: https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/forecasting-us.html
             type: link
             new_window: true
           - label: Hospitalization forecasts @ CDC
-            url: https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/hospitalizations-forecasts.html
+            url: https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/hospitalizations-forecasts.html
             type: link
             new_window: true
           - label: Case forecasts @ CDC
-            url: https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/forecasts-cases.html
+            url: https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/forecasts-cases.html
             type: link
             new_window: true
       - title: Collaborative science
