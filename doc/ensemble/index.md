@@ -21,6 +21,7 @@ The following is a timeline of major changes to the ensemble methods:
  * We created ensemble forecasts for hospitalizations due to COVID-19 for the first time on the week of December 7, 2020.
  * Starting the week of September 27, 2021, the official COVIDhub-ensemble only generates forecasts of incident cases for forecast horizons up to 1 week ahead and forecasts of incident hospitalizations for forecast horizons up to 14 days ahead.
  * Starting the week of November 15, 2021 we used a weighted ensemble method for forecasts of incident and cumulative deaths. In this ensemble, the ten component models with the best performance as measured by their Weighted Interval Score (WIS) in the 12 weeks prior to the forecast date are included. These component models are assigned weights that are a function of their relative WIS during those 12 weeks, with models that have a stronger record of accuracy receiving higher weight.
+ * Starting the week of January 29, 2023 we stopped generating forecasts of incident cases in the trained ensemble.
 
 ### Ensemble models
 
@@ -34,7 +35,7 @@ In the past, forecasts of cases and hospitalizations produced by this ensemble h
 
 #### 2. COVIDhub-trained_ensemble
 
-This ensemble produces forecasts of incident cases, incident deaths, and cumulative deaths at horizons of 1 through 4 weeks ahead, and forecasts of incident hospitalizations at horizons of 1 through 28 days ahead. For all of these targets, the ensemble forecasts are computed as a weighted median of the ten component forecasts with the best performance as measured by their WIS in the 12 weeks prior to the forecast date.
+This ensemble produces forecasts of incident cases (discontinued as of January 2023), incident deaths, and cumulative deaths at horizons of 1 through 4 weeks ahead, and forecasts of incident hospitalizations at horizons of 1 through 28 days ahead. For all of these targets, the ensemble forecasts are computed as a weighted median of the ten component forecasts with the best performance as measured by their WIS in the 12 weeks prior to the forecast date.
 
 In the past, forecasts of cases and hospitalizations produced by this ensemble have shown unreliable performance at longer horizons. This ensemble is produced for research purposes only, and the forecasts are not intended for use as inputs to public health decision making.
 
