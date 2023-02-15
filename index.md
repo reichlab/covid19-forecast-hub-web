@@ -6,7 +6,7 @@ sections:
     title: The COVID-19 Forecast Hub
     image: images/5.jpg
     content: >-
-      This site maintains the authoritative, up-to-date record for forecasts of COVID-19 cases, deaths and hospitalizations in the US, created by dozens of leading infectious disease modeling teams from around the globe, in coordination with the US CDC. 
+      This site maintains the authoritative, up-to-date record for forecasts of COVID-19 deaths and hospitalizations in the US, created by dozens of leading infectious disease modeling teams from around the globe, in coordination with the US CDC. 
     actions:
       - label: Forecast Summaries
         url: https://covid19forecasthub.org/reports/single_page.html
@@ -50,10 +50,6 @@ sections:
             new_window: true
           - label: Hospitalization forecasts @ CDC
             url: https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/hospitalizations-forecasts.html
-            type: link
-            new_window: true
-          - label: Case forecasts @ CDC
-            url: https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/forecasts-cases.html
             type: link
             new_window: true
       - title: Collaborative science
