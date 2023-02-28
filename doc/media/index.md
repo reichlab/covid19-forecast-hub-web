@@ -3,6 +3,11 @@ title: In the news
 layout: docs
 ---
 
+[What the end of the COVID-19 emergency means for free vaccines, health data and more](https://www.cbsnews.com/news/covid-19-emergency-ends-what-happens-to-vaccines-treatments-data/){:target="_blank"}  
+_CBS News_ | 9 February 2023
+
+***
+
 [Computer Forecasts, Expert Judgment, And ‘Chimeric Forecasting’ Of Infectious Diseases](https://www.forbes.com/sites/johndrake/2022/11/21/computer-forecasts-expert-judgment-and-chimeric-forecasting-of-infectious-diseases/){:target="_blank"}  
 _Forbes_ | 21 November 2022
 
