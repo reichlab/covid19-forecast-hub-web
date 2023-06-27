@@ -165,7 +165,7 @@ pre code {
 
 <h1 class="title toc-ignore">Hospitalization Model Forecaster Filtering</h1>
 <h4 class="author"><a href="https://covid19forecasthub.org/doc/">The COVID-19 Forecast Hub Team</a><br><br><a href="https://covid19forecasthub.org/">https://covid19forecasthub.org/</a></h4>
-<h4 class="date">report generated 2023-06-20</h4>
+<h4 class="date">report generated 2023-06-27</h4>
 
 </div>
 
@@ -185,10 +185,11 @@ pre code {
 if (dim(miss) &gt; 0) {
    print(miss) 
   }</code></pre>
-<pre><code>## # A tibble: 1 × 2
-##   model           max_target_end_date
-##   &lt;chr&gt;           &lt;date&gt;             
-## 1 JHU_IDD-CovidSP 2023-07-15</code></pre>
+<pre><code>## # A tibble: 2 × 2
+##   model               max_target_end_date
+##   &lt;chr&gt;               &lt;date&gt;             
+## 1 JHU_IDD-CovidSP     2023-07-22         
+## 2 SGroup-RandomForest 2023-07-20</code></pre>
 <pre class="r"><code># print message if empty
 if (dim(miss) == 0) {
    print(&quot;All hosptialization forecast models submitted this week are included in the COVIDhub_4wk_ensemble&quot;) 
