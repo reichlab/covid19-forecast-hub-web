@@ -8,6 +8,7 @@
     type: url
     url: https://zoltardata.com/model/688
   dates:
+  - 2023-08-21
   - 2023-08-14
   - 2023-08-07
   - 2023-07-31
@@ -91,9 +92,9 @@
   - 2022-01-10
   description: Equally weighted ensemble of simple time-series baseline models.
   earliest_forecast: Monday, 10 January 2022
-  forecasts: 81
+  forecasts: 82
   home_url: https://github.com/reichlab/covid-hosp-models
-  latest_forecast: Monday, 14 August 2023
+  latest_forecast: Monday, 21 August 2023
   name: Ensemble of baseline models with trends
   team_name: UMass-Amherst
   url: https://zoltardata.com/model/688
@@ -107,6 +108,7 @@
     type: url
     url: https://zoltardata.com/model/158
   dates:
+  - 2023-08-21
   - 2023-08-14
   - 2023-08-07
   - 2023-07-31
@@ -289,12 +291,140 @@
     the assumption  that current interventions continue. Metapopulation, age structured
     SLIR model.    '
   earliest_forecast: Monday, 13 April 2020
-  forecasts: 178
+  forecasts: 179
   home_url: https://covid19.gleamproject.org/
-  latest_forecast: Monday, 14 August 2023
+  latest_forecast: Monday, 21 August 2023
   name: GLEAM COVID-19
   team_name: MOBS Lab at Northeastern
   url: https://zoltardata.com/model/158
+- abbreviation: MUNI-ARIMA
+  actions:
+  - label: Website
+    new_window: true
+    url: https://krausstat.shinyapps.io/covid19global/
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/601
+  dates:
+  - 2023-08-21
+  - 2023-08-21
+  - 2023-07-31
+  - 2023-07-17
+  - 2023-06-05
+  - 2023-05-29
+  - 2023-05-22
+  - 2023-05-15
+  - 2023-05-08
+  - 2023-05-01
+  - 2023-04-24
+  - 2023-04-17
+  - 2023-04-10
+  - 2023-04-03
+  - 2023-03-27
+  - 2023-03-20
+  - 2023-03-13
+  - 2023-03-06
+  - 2023-02-27
+  - 2023-02-20
+  - 2023-02-13
+  - 2023-02-06
+  - 2023-01-30
+  - 2023-01-23
+  - 2023-01-16
+  - 2023-01-02
+  - 2022-12-12
+  - 2022-12-05
+  - 2022-11-28
+  - 2022-11-21
+  - 2022-11-14
+  - 2022-11-07
+  - 2022-10-31
+  - 2022-10-24
+  - 2022-10-17
+  - 2022-10-10
+  - 2022-10-03
+  - 2022-09-26
+  - 2022-09-19
+  - 2022-09-12
+  - 2022-09-05
+  - 2022-08-29
+  - 2022-08-22
+  - 2022-08-15
+  - 2022-08-08
+  - 2022-08-01
+  - 2022-07-25
+  - 2022-07-18
+  - 2022-07-11
+  - 2022-07-04
+  - 2022-06-27
+  - 2022-06-20
+  - 2022-06-13
+  - 2022-06-06
+  - 2022-05-30
+  - 2022-05-23
+  - 2022-05-16
+  - 2022-05-09
+  - 2022-05-02
+  - 2022-04-25
+  - 2022-04-18
+  - 2022-04-11
+  - 2022-04-04
+  - 2022-03-21
+  - 2022-03-14
+  - 2022-02-21
+  - 2022-02-14
+  - 2022-02-07
+  - 2022-01-31
+  - 2022-01-24
+  - 2022-01-17
+  - 2022-01-10
+  - 2022-01-03
+  - 2021-12-27
+  - 2021-12-20
+  - 2021-12-13
+  - 2021-12-06
+  - 2021-11-29
+  - 2021-11-22
+  - 2021-11-15
+  - 2021-08-30
+  - 2021-11-08
+  - 2021-09-06
+  - 2021-11-01
+  - 2021-10-25
+  - 2021-10-18
+  - 2021-10-11
+  - 2021-10-04
+  - 2021-09-27
+  - 2021-09-20
+  - 2021-09-13
+  - 2021-09-06
+  - 2021-08-30
+  - 2021-08-23
+  - 2021-08-16
+  - 2021-08-09
+  - 2021-08-02
+  - 2021-07-26
+  - 2021-07-19
+  - 2021-07-12
+  - 2021-07-05
+  - 2021-06-28
+  - 2021-06-21
+  - 2021-06-14
+  - 2021-06-07
+  - 2021-05-31
+  - 2021-05-17
+  - 2021-05-10
+  - 2021-05-24
+  description: ARIMA model with outlier detection fitted to transformed weekly aggregated
+    series.
+  earliest_forecast: Monday, 10 May 2021
+  forecasts: 109
+  home_url: https://krausstat.shinyapps.io/covid19global/
+  latest_forecast: Monday, 21 August 2023
+  name: ARIMA
+  team_name: Masaryk University
+  url: https://zoltardata.com/model/601
 - abbreviation: COVIDhub-baseline
   actions:
   - label: Website
@@ -305,6 +435,7 @@
     type: url
     url: https://zoltardata.com/model/302
   dates:
+  - 2023-08-21
   - 2023-08-14
   - 2023-08-07
   - 2023-07-31
@@ -528,9 +659,9 @@
   - 2020-11-30
   description: This model is a baseline predictive model.
   earliest_forecast: Monday, 06 April 2020
-  forecasts: 221
+  forecasts: 222
   home_url: https://covid19forecasthub.org/
-  latest_forecast: Monday, 14 August 2023
+  latest_forecast: Monday, 21 August 2023
   name: baseline
   team_name: COVID-19 Forecast Hub
   url: https://zoltardata.com/model/302
@@ -544,6 +675,7 @@
     type: url
     url: https://zoltardata.com/model/837
   dates:
+  - 2023-08-21
   - 2023-08-14
   - 2023-08-07
   - 2023-07-31
@@ -582,9 +714,9 @@
   - 2022-12-12
   description: Renewal equation based on Rt estimation from hospitalization data.
   earliest_forecast: Monday, 12 December 2022
-  forecasts: 36
+  forecasts: 37
   home_url: https://publichealth.indiana.edu/research/faculty-directory/profile.html?user=majelli
-  latest_forecast: Monday, 14 August 2023
+  latest_forecast: Monday, 21 August 2023
   name: Rtrend_covid
   team_name: CEPH Lab at Indiana University
   url: https://zoltardata.com/model/837
@@ -598,6 +730,7 @@
     type: url
     url: https://zoltardata.com/model/886
   dates:
+  - 2023-08-21
   - 2023-08-14
   - 2023-08-07
   - 2023-07-31
@@ -623,12 +756,360 @@
   description: Random Forest ensemble of the predictors generated from the USC-SIkJalpha
     submission as well as HHS data.
   earliest_forecast: Sunday, 12 March 2023
-  forecasts: 22
+  forecasts: 23
   home_url: https://github.com/scc-usc/ReCOVER-COVID-19
-  latest_forecast: Monday, 14 August 2023
+  latest_forecast: Monday, 21 August 2023
   name: RandomForest
   team_name: Srivastava Group
   url: https://zoltardata.com/model/886
+- abbreviation: CMU-TimeSeries
+  actions:
+  - label: Website
+    new_window: true
+    url: https://delphi.cmu.edu
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/307
+  dates:
+  - 2023-08-21
+  - 2023-08-14
+  - 2023-08-07
+  - 2023-07-31
+  - 2023-07-24
+  - 2023-07-17
+  - 2023-07-10
+  - 2023-07-03
+  - 2023-06-26
+  - 2023-06-19
+  - 2023-06-12
+  - 2023-06-05
+  - 2023-05-29
+  - 2023-05-22
+  - 2023-05-15
+  - 2023-05-08
+  - 2023-05-01
+  - 2023-04-24
+  - 2023-04-17
+  - 2023-04-10
+  - 2023-04-03
+  - 2023-03-27
+  - 2023-03-20
+  - 2023-03-13
+  - 2023-03-06
+  - 2023-02-27
+  - 2023-02-20
+  - 2023-02-13
+  - 2023-02-06
+  - 2023-01-30
+  - 2023-01-23
+  - 2023-01-16
+  - 2023-01-09
+  - 2023-01-02
+  - 2022-12-26
+  - 2022-12-19
+  - 2022-12-12
+  - 2022-12-05
+  - 2022-11-28
+  - 2022-11-21
+  - 2022-11-14
+  - 2022-11-07
+  - 2022-10-31
+  - 2022-10-24
+  - 2022-10-17
+  - 2022-10-10
+  - 2022-10-03
+  - 2022-09-26
+  - 2022-09-19
+  - 2022-09-12
+  - 2022-09-05
+  - 2022-08-29
+  - 2022-08-22
+  - 2022-08-15
+  - 2022-08-08
+  - 2022-08-01
+  - 2022-07-25
+  - 2022-07-18
+  - 2022-07-11
+  - 2022-07-04
+  - 2022-06-27
+  - 2022-06-20
+  - 2022-06-13
+  - 2022-06-06
+  - 2022-05-30
+  - 2022-05-23
+  - 2022-05-16
+  - 2022-05-09
+  - 2022-05-02
+  - 2022-04-25
+  - 2022-04-18
+  - 2022-04-11
+  - 2022-04-04
+  - 2022-03-28
+  - 2022-03-21
+  - 2022-03-14
+  - 2022-03-07
+  - 2022-02-28
+  - 2022-02-21
+  - 2022-02-14
+  - 2022-02-07
+  - 2022-01-31
+  - 2022-01-24
+  - 2022-01-17
+  - 2021-07-19
+  - 2021-07-12
+  - 2021-07-05
+  - 2021-06-28
+  - 2021-06-21
+  - 2021-06-14
+  - 2021-06-07
+  - 2021-05-31
+  - 2020-11-02
+  - 2020-11-16
+  - 2020-10-26
+  - 2020-11-09
+  - 2020-10-19
+  - 2020-10-12
+  - 2020-10-05
+  - 2020-09-07
+  - 2020-08-24
+  - 2020-07-20
+  - 2020-09-21
+  - 2020-08-02
+  - 2020-08-31
+  - 2020-07-27
+  - 2020-08-17
+  - 2020-09-28
+  - 2020-09-14
+  - 2020-08-10
+  - 2021-01-04
+  - 2021-04-26
+  - 2020-11-23
+  - 2020-11-30
+  - 2021-05-17
+  - 2020-12-28
+  - 2021-02-15
+  - 2021-01-18
+  - 2021-05-10
+  - 2021-03-22
+  - 2021-03-08
+  - 2020-12-21
+  - 2021-02-22
+  - 2021-05-24
+  - 2021-05-03
+  - 2021-04-19
+  - 2021-04-12
+  - 2021-04-05
+  - 2021-03-29
+  - 2021-03-15
+  - 2021-03-01
+  - 2021-02-08
+  - 2021-02-01
+  - 2021-01-25
+  - 2021-01-10
+  - 2020-12-14
+  - 2020-12-07
+  description: '(State Hosp) An ensemble of (a) 28-day-window AR + residual resampling,
+    (b) direction-stratified quantile AR (QAR), and (c) windowed QARX with cases.
+    (State Deaths) (County Cases) Other QARX models.
+
+    '
+  earliest_forecast: Monday, 20 July 2020
+  forecasts: 137
+  home_url: https://delphi.cmu.edu
+  latest_forecast: Monday, 21 August 2023
+  name: TimeSeries
+  team_name: Carnegie Mellon Delphi Group
+  url: https://zoltardata.com/model/307
+- abbreviation: PSI-DICE
+  actions:
+  - label: Website
+    new_window: true
+    url: https://github.com/predsci/DICE4
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/692
+  dates:
+  - 2023-08-21
+  - 2023-08-14
+  - 2023-08-07
+  - 2023-07-31
+  - 2023-07-24
+  - 2023-07-17
+  - 2023-07-10
+  - 2023-07-03
+  - 2023-06-12
+  - 2023-06-05
+  - 2023-05-29
+  - 2023-05-22
+  - 2023-05-15
+  - 2023-05-08
+  - 2023-05-01
+  - 2023-04-24
+  - 2023-04-17
+  - 2023-04-10
+  - 2023-04-03
+  - 2023-03-27
+  - 2023-03-20
+  - 2023-03-13
+  - 2023-03-06
+  - 2023-02-27
+  - 2023-02-20
+  - 2023-02-13
+  - 2023-02-06
+  - 2023-01-30
+  - 2023-01-23
+  - 2023-01-16
+  - 2023-01-09
+  - 2023-01-03
+  - 2022-12-26
+  - 2022-12-19
+  - 2022-12-12
+  - 2022-12-05
+  - 2022-11-28
+  - 2022-11-21
+  - 2022-11-14
+  - 2022-11-07
+  - 2022-10-31
+  - 2022-10-23
+  - 2022-10-17
+  - 2022-10-10
+  - 2022-10-03
+  - 2022-09-26
+  - 2022-09-19
+  - 2022-09-12
+  - 2022-09-05
+  - 2022-08-29
+  - 2022-08-22
+  - 2022-08-15
+  - 2022-08-08
+  - 2022-08-01
+  - 2022-07-25
+  - 2022-07-18
+  - 2022-07-11
+  - 2022-07-04
+  - 2022-06-27
+  - 2022-06-20
+  - 2022-06-13
+  - 2022-06-06
+  - 2022-05-30
+  - 2022-05-23
+  - 2022-05-16
+  - 2022-05-09
+  - 2022-05-02
+  - 2022-04-25
+  - 2022-04-18
+  - 2022-04-11
+  - 2022-04-04
+  - 2022-03-28
+  - 2022-03-21
+  - 2022-03-14
+  - 2022-03-07
+  - 2022-02-28
+  - 2022-02-21
+  - 2022-02-14
+  description: A stochastic/deterministic, SEIR model that stratifies by disease severity
+    and includes compartments for hospitalizations. Parameter posteriors are inferred
+    using an MCMC procedure.
+  earliest_forecast: Monday, 14 February 2022
+  forecasts: 78
+  home_url: https://github.com/predsci/DICE4
+  latest_forecast: Monday, 21 August 2023
+  name: Dynamics of Interacting Community Epidemics
+  team_name: Predictive Science
+  url: https://zoltardata.com/model/692
+- abbreviation: UT-Osiris
+  actions:
+  - label: Website
+    new_window: true
+    url: https://covid-19.tacc.utexas.edu
+  - label: Forecast data
+    new_window: true
+    type: url
+    url: https://zoltardata.com/model/693
+  dates:
+  - 2023-08-21
+  - 2023-08-14
+  - 2023-08-07
+  - 2023-07-31
+  - 2023-07-17
+  - 2023-07-03
+  - 2023-06-26
+  - 2023-06-12
+  - 2023-06-05
+  - 2023-05-22
+  - 2023-05-15
+  - 2023-05-08
+  - 2023-05-01
+  - 2023-04-24
+  - 2023-04-17
+  - 2023-04-10
+  - 2023-04-03
+  - 2023-03-27
+  - 2023-03-20
+  - 2023-03-13
+  - 2023-03-06
+  - 2023-02-27
+  - 2023-02-20
+  - 2023-02-13
+  - 2023-02-06
+  - 2023-01-30
+  - 2023-01-23
+  - 2023-01-16
+  - 2023-01-09
+  - 2023-01-02
+  - 2022-12-25
+  - 2022-12-18
+  - 2022-12-11
+  - 2022-12-05
+  - 2022-11-27
+  - 2022-11-20
+  - 2022-11-14
+  - 2022-11-07
+  - 2022-10-31
+  - 2022-10-24
+  - 2022-10-17
+  - 2022-10-10
+  - 2022-10-03
+  - 2022-09-26
+  - 2022-09-19
+  - 2022-09-12
+  - 2022-09-05
+  - 2022-08-29
+  - 2022-08-22
+  - 2022-08-15
+  - 2022-08-08
+  - 2022-08-01
+  - 2022-07-25
+  - 2022-07-18
+  - 2022-07-11
+  - 2022-06-27
+  - 2022-06-20
+  - 2022-06-13
+  - 2022-06-06
+  - 2022-05-23
+  - 2022-05-16
+  - 2022-05-09
+  - 2022-05-02
+  - 2022-04-25
+  - 2022-04-18
+  - 2022-04-11
+  - 2022-04-04
+  - 2022-03-21
+  - 2022-03-28
+  - 2022-03-21
+  - 2022-03-14
+  - 2022-03-07
+  - 2022-02-28
+  description: TBD
+  earliest_forecast: Monday, 28 February 2022
+  forecasts: 73
+  home_url: https://covid-19.tacc.utexas.edu
+  latest_forecast: Monday, 21 August 2023
+  name: Osiris
+  team_name: UT
+  url: https://zoltardata.com/model/693
 - abbreviation: COVIDhub_CDC-ensemble
   actions:
   - label: Website
@@ -823,351 +1304,6 @@
   name: ensemble
   team_name: COVIDhub_CDC
   url: https://zoltardata.com/model/673
-- abbreviation: CMU-TimeSeries
-  actions:
-  - label: Website
-    new_window: true
-    url: https://delphi.cmu.edu
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/307
-  dates:
-  - 2023-08-14
-  - 2023-08-07
-  - 2023-07-31
-  - 2023-07-24
-  - 2023-07-17
-  - 2023-07-10
-  - 2023-07-03
-  - 2023-06-26
-  - 2023-06-19
-  - 2023-06-12
-  - 2023-06-05
-  - 2023-05-29
-  - 2023-05-22
-  - 2023-05-15
-  - 2023-05-08
-  - 2023-05-01
-  - 2023-04-24
-  - 2023-04-17
-  - 2023-04-10
-  - 2023-04-03
-  - 2023-03-27
-  - 2023-03-20
-  - 2023-03-13
-  - 2023-03-06
-  - 2023-02-27
-  - 2023-02-20
-  - 2023-02-13
-  - 2023-02-06
-  - 2023-01-30
-  - 2023-01-23
-  - 2023-01-16
-  - 2023-01-09
-  - 2023-01-02
-  - 2022-12-26
-  - 2022-12-19
-  - 2022-12-12
-  - 2022-12-05
-  - 2022-11-28
-  - 2022-11-21
-  - 2022-11-14
-  - 2022-11-07
-  - 2022-10-31
-  - 2022-10-24
-  - 2022-10-17
-  - 2022-10-10
-  - 2022-10-03
-  - 2022-09-26
-  - 2022-09-19
-  - 2022-09-12
-  - 2022-09-05
-  - 2022-08-29
-  - 2022-08-22
-  - 2022-08-15
-  - 2022-08-08
-  - 2022-08-01
-  - 2022-07-25
-  - 2022-07-18
-  - 2022-07-11
-  - 2022-07-04
-  - 2022-06-27
-  - 2022-06-20
-  - 2022-06-13
-  - 2022-06-06
-  - 2022-05-30
-  - 2022-05-23
-  - 2022-05-16
-  - 2022-05-09
-  - 2022-05-02
-  - 2022-04-25
-  - 2022-04-18
-  - 2022-04-11
-  - 2022-04-04
-  - 2022-03-28
-  - 2022-03-21
-  - 2022-03-14
-  - 2022-03-07
-  - 2022-02-28
-  - 2022-02-21
-  - 2022-02-14
-  - 2022-02-07
-  - 2022-01-31
-  - 2022-01-24
-  - 2022-01-17
-  - 2021-07-19
-  - 2021-07-12
-  - 2021-07-05
-  - 2021-06-28
-  - 2021-06-21
-  - 2021-06-14
-  - 2021-06-07
-  - 2021-05-31
-  - 2020-11-02
-  - 2020-11-16
-  - 2020-10-26
-  - 2020-11-09
-  - 2020-10-19
-  - 2020-10-12
-  - 2020-10-05
-  - 2020-09-07
-  - 2020-08-24
-  - 2020-07-20
-  - 2020-09-21
-  - 2020-08-02
-  - 2020-08-31
-  - 2020-07-27
-  - 2020-08-17
-  - 2020-09-28
-  - 2020-09-14
-  - 2020-08-10
-  - 2021-01-04
-  - 2021-04-26
-  - 2020-11-23
-  - 2020-11-30
-  - 2021-05-17
-  - 2020-12-28
-  - 2021-02-15
-  - 2021-01-18
-  - 2021-05-10
-  - 2021-03-22
-  - 2021-03-08
-  - 2020-12-21
-  - 2021-02-22
-  - 2021-05-24
-  - 2021-05-03
-  - 2021-04-19
-  - 2021-04-12
-  - 2021-04-05
-  - 2021-03-29
-  - 2021-03-15
-  - 2021-03-01
-  - 2021-02-08
-  - 2021-02-01
-  - 2021-01-25
-  - 2021-01-10
-  - 2020-12-14
-  - 2020-12-07
-  description: '(State Hosp) An ensemble of (a) 28-day-window AR + residual resampling,
-    (b) direction-stratified quantile AR (QAR), and (c) windowed QARX with cases.
-    (State Deaths) (County Cases) Other QARX models.
-
-    '
-  earliest_forecast: Monday, 20 July 2020
-  forecasts: 136
-  home_url: https://delphi.cmu.edu
-  latest_forecast: Monday, 14 August 2023
-  name: TimeSeries
-  team_name: Carnegie Mellon Delphi Group
-  url: https://zoltardata.com/model/307
-- abbreviation: PSI-DICE
-  actions:
-  - label: Website
-    new_window: true
-    url: https://github.com/predsci/DICE4
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/692
-  dates:
-  - 2023-08-14
-  - 2023-08-07
-  - 2023-07-31
-  - 2023-07-24
-  - 2023-07-17
-  - 2023-07-10
-  - 2023-07-03
-  - 2023-06-12
-  - 2023-06-05
-  - 2023-05-29
-  - 2023-05-22
-  - 2023-05-15
-  - 2023-05-08
-  - 2023-05-01
-  - 2023-04-24
-  - 2023-04-17
-  - 2023-04-10
-  - 2023-04-03
-  - 2023-03-27
-  - 2023-03-20
-  - 2023-03-13
-  - 2023-03-06
-  - 2023-02-27
-  - 2023-02-20
-  - 2023-02-13
-  - 2023-02-06
-  - 2023-01-30
-  - 2023-01-23
-  - 2023-01-16
-  - 2023-01-09
-  - 2023-01-03
-  - 2022-12-26
-  - 2022-12-19
-  - 2022-12-12
-  - 2022-12-05
-  - 2022-11-28
-  - 2022-11-21
-  - 2022-11-14
-  - 2022-11-07
-  - 2022-10-31
-  - 2022-10-23
-  - 2022-10-17
-  - 2022-10-10
-  - 2022-10-03
-  - 2022-09-26
-  - 2022-09-19
-  - 2022-09-12
-  - 2022-09-05
-  - 2022-08-29
-  - 2022-08-22
-  - 2022-08-15
-  - 2022-08-08
-  - 2022-08-01
-  - 2022-07-25
-  - 2022-07-18
-  - 2022-07-11
-  - 2022-07-04
-  - 2022-06-27
-  - 2022-06-20
-  - 2022-06-13
-  - 2022-06-06
-  - 2022-05-30
-  - 2022-05-23
-  - 2022-05-16
-  - 2022-05-09
-  - 2022-05-02
-  - 2022-04-25
-  - 2022-04-18
-  - 2022-04-11
-  - 2022-04-04
-  - 2022-03-28
-  - 2022-03-21
-  - 2022-03-14
-  - 2022-03-07
-  - 2022-02-28
-  - 2022-02-21
-  - 2022-02-14
-  description: A stochastic/deterministic, SEIR model that stratifies by disease severity
-    and includes compartments for hospitalizations. Parameter posteriors are inferred
-    using an MCMC procedure.
-  earliest_forecast: Monday, 14 February 2022
-  forecasts: 77
-  home_url: https://github.com/predsci/DICE4
-  latest_forecast: Monday, 14 August 2023
-  name: Dynamics of Interacting Community Epidemics
-  team_name: Predictive Science
-  url: https://zoltardata.com/model/692
-- abbreviation: UT-Osiris
-  actions:
-  - label: Website
-    new_window: true
-    url: https://covid-19.tacc.utexas.edu
-  - label: Forecast data
-    new_window: true
-    type: url
-    url: https://zoltardata.com/model/693
-  dates:
-  - 2023-08-14
-  - 2023-08-07
-  - 2023-07-31
-  - 2023-07-17
-  - 2023-07-03
-  - 2023-06-26
-  - 2023-06-12
-  - 2023-06-05
-  - 2023-05-22
-  - 2023-05-15
-  - 2023-05-08
-  - 2023-05-01
-  - 2023-04-24
-  - 2023-04-17
-  - 2023-04-10
-  - 2023-04-03
-  - 2023-03-27
-  - 2023-03-20
-  - 2023-03-13
-  - 2023-03-06
-  - 2023-02-27
-  - 2023-02-20
-  - 2023-02-13
-  - 2023-02-06
-  - 2023-01-30
-  - 2023-01-23
-  - 2023-01-16
-  - 2023-01-09
-  - 2023-01-02
-  - 2022-12-25
-  - 2022-12-18
-  - 2022-12-11
-  - 2022-12-05
-  - 2022-11-27
-  - 2022-11-20
-  - 2022-11-14
-  - 2022-11-07
-  - 2022-10-31
-  - 2022-10-24
-  - 2022-10-17
-  - 2022-10-10
-  - 2022-10-03
-  - 2022-09-26
-  - 2022-09-19
-  - 2022-09-12
-  - 2022-09-05
-  - 2022-08-29
-  - 2022-08-22
-  - 2022-08-15
-  - 2022-08-08
-  - 2022-08-01
-  - 2022-07-25
-  - 2022-07-18
-  - 2022-07-11
-  - 2022-06-27
-  - 2022-06-20
-  - 2022-06-13
-  - 2022-06-06
-  - 2022-05-23
-  - 2022-05-16
-  - 2022-05-09
-  - 2022-05-02
-  - 2022-04-25
-  - 2022-04-18
-  - 2022-04-11
-  - 2022-04-04
-  - 2022-03-21
-  - 2022-03-28
-  - 2022-03-21
-  - 2022-03-14
-  - 2022-03-07
-  - 2022-02-28
-  description: TBD
-  earliest_forecast: Monday, 28 February 2022
-  forecasts: 72
-  home_url: https://covid-19.tacc.utexas.edu
-  latest_forecast: Monday, 14 August 2023
-  name: Osiris
-  team_name: UT
-  url: https://zoltardata.com/model/693
 - abbreviation: JHU_IDD-CovidSP
   actions:
   - label: Website
