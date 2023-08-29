@@ -93,7 +93,7 @@
   - 2022-01-10
   description: Equally weighted ensemble of simple time-series baseline models.
   earliest_forecast: Monday, 10 January 2022
-  forecasts: 83
+  forecasts: 84
   home_url: https://github.com/reichlab/covid-hosp-models
   latest_forecast: Monday, 28 August 2023
   name: Ensemble of baseline models with trends
