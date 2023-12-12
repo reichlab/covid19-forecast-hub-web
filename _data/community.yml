@@ -8,6 +8,7 @@
     type: url
     url: https://zoltardata.com/model/688
   dates:
+  - 2023-12-11
   - 2023-12-04
   - 2023-11-27
   - 2023-11-20
@@ -107,9 +108,9 @@
   - 2022-01-10
   description: Equally weighted ensemble of simple time-series baseline models.
   earliest_forecast: Monday, 10 January 2022
-  forecasts: 97
+  forecasts: 98
   home_url: https://github.com/reichlab/covid-hosp-models
-  latest_forecast: Monday, 04 December 2023
+  latest_forecast: Monday, 11 December 2023
   name: Ensemble of baseline models with trends
   team_name: UMass-Amherst
   url: https://zoltardata.com/model/688
@@ -123,6 +124,7 @@
     type: url
     url: https://zoltardata.com/model/158
   dates:
+  - 2023-12-11
   - 2023-12-04
   - 2023-11-27
   - 2023-11-20
@@ -320,9 +322,9 @@
     the assumption  that current interventions continue. Metapopulation, age structured
     SLIR model.    '
   earliest_forecast: Monday, 13 April 2020
-  forecasts: 193
+  forecasts: 194
   home_url: https://covid19.gleamproject.org/
-  latest_forecast: Monday, 04 December 2023
+  latest_forecast: Monday, 11 December 2023
   name: GLEAM COVID-19
   team_name: MOBS Lab at Northeastern
   url: https://zoltardata.com/model/158
@@ -336,6 +338,7 @@
     type: url
     url: https://zoltardata.com/model/601
   dates:
+  - 2023-12-11
   - 2023-12-04
   - 2023-11-27
   - 2023-11-20
@@ -461,9 +464,9 @@
   description: ARIMA model with outlier detection fitted to transformed weekly aggregated
     series.
   earliest_forecast: Monday, 10 May 2021
-  forecasts: 122
+  forecasts: 123
   home_url: https://krausstat.shinyapps.io/covid19global/
-  latest_forecast: Monday, 04 December 2023
+  latest_forecast: Monday, 11 December 2023
   name: ARIMA
   team_name: Masaryk University
   url: https://zoltardata.com/model/601
@@ -477,6 +480,7 @@
     type: url
     url: https://zoltardata.com/model/302
   dates:
+  - 2023-12-11
   - 2023-12-04
   - 2023-11-27
   - 2023-11-20
@@ -716,9 +720,9 @@
   - 2020-11-30
   description: This model is a baseline predictive model.
   earliest_forecast: Monday, 06 April 2020
-  forecasts: 237
+  forecasts: 238
   home_url: https://covid19forecasthub.org/
-  latest_forecast: Monday, 04 December 2023
+  latest_forecast: Monday, 11 December 2023
   name: baseline
   team_name: COVID-19 Forecast Hub
   url: https://zoltardata.com/model/302
@@ -732,6 +736,7 @@
     type: url
     url: https://zoltardata.com/model/837
   dates:
+  - 2023-12-11
   - 2023-12-04
   - 2023-11-27
   - 2023-11-20
@@ -786,9 +791,9 @@
   - 2022-12-12
   description: Renewal equation based on Rt estimation from hospitalization data.
   earliest_forecast: Monday, 12 December 2022
-  forecasts: 52
+  forecasts: 53
   home_url: https://publichealth.indiana.edu/research/faculty-directory/profile.html?user=majelli
-  latest_forecast: Monday, 04 December 2023
+  latest_forecast: Monday, 11 December 2023
   name: Rtrend_covid
   team_name: CEPH Lab at Indiana University
   url: https://zoltardata.com/model/837
@@ -802,6 +807,7 @@
     type: url
     url: https://zoltardata.com/model/886
   dates:
+  - 2023-12-11
   - 2023-12-04
   - 2023-11-27
   - 2023-11-20
@@ -843,9 +849,9 @@
   description: Random Forest ensemble of the predictors generated from the USC-SIkJalpha
     submission as well as HHS data.
   earliest_forecast: Sunday, 12 March 2023
-  forecasts: 38
+  forecasts: 39
   home_url: https://github.com/scc-usc/ReCOVER-COVID-19
-  latest_forecast: Monday, 04 December 2023
+  latest_forecast: Monday, 11 December 2023
   name: RandomForest
   team_name: Srivastava Group
   url: https://zoltardata.com/model/886
@@ -859,6 +865,7 @@
     type: url
     url: https://zoltardata.com/model/307
   dates:
+  - 2023-12-11
   - 2023-12-04
   - 2023-11-27
   - 2023-11-20
@@ -1017,9 +1024,9 @@
 
     '
   earliest_forecast: Monday, 20 July 2020
-  forecasts: 152
+  forecasts: 153
   home_url: https://delphi.cmu.edu
-  latest_forecast: Monday, 04 December 2023
+  latest_forecast: Monday, 11 December 2023
   name: TimeSeries
   team_name: Carnegie Mellon Delphi Group
   url: https://zoltardata.com/model/307
@@ -1033,6 +1040,7 @@
     type: url
     url: https://zoltardata.com/model/692
   dates:
+  - 2023-12-11
   - 2023-12-04
   - 2023-11-26
   - 2023-11-19
@@ -1130,9 +1138,9 @@
     and includes compartments for hospitalizations. Parameter posteriors are inferred
     using an MCMC procedure.
   earliest_forecast: Monday, 14 February 2022
-  forecasts: 93
+  forecasts: 94
   home_url: https://github.com/predsci/DICE4
-  latest_forecast: Monday, 04 December 2023
+  latest_forecast: Monday, 11 December 2023
   name: Dynamics of Interacting Community Epidemics
   team_name: Predictive Science
   url: https://zoltardata.com/model/692
@@ -1146,6 +1154,7 @@
     type: url
     url: https://zoltardata.com/model/693
   dates:
+  - 2023-12-11
   - 2023-12-04
   - 2023-11-27
   - 2023-11-13
@@ -1235,9 +1244,9 @@
   - 2022-02-28
   description: TBD
   earliest_forecast: Monday, 28 February 2022
-  forecasts: 87
+  forecasts: 88
   home_url: https://covid-19.tacc.utexas.edu
-  latest_forecast: Monday, 04 December 2023
+  latest_forecast: Monday, 11 December 2023
   name: Osiris
   team_name: UT
   url: https://zoltardata.com/model/693
@@ -1251,6 +1260,7 @@
     type: url
     url: https://zoltardata.com/model/255
   dates:
+  - 2023-12-10
   - 2023-12-03
   - 2023-11-12
   - 2023-11-05
@@ -1411,9 +1421,9 @@
     SEIR disease dynamics with social-distancing and vaccination with parameter adjustments
     for multiple strains.
   earliest_forecast: Friday, 24 April 2020
-  forecasts: 156
+  forecasts: 157
   home_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
-  latest_forecast: Sunday, 03 December 2023
+  latest_forecast: Sunday, 10 December 2023
   name: CovidScenarioPipeline
   team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
   url: https://zoltardata.com/model/255
@@ -1427,6 +1437,7 @@
     type: url
     url: https://zoltardata.com/model/673
   dates:
+  - 2023-12-04
   - 2023-11-27
   - 2023-11-20
   - 2023-11-13
@@ -1619,9 +1630,9 @@
   description: An ensemble, or model combination, of submitted forecasts to the COVID-19
     Forecast Hub.
   earliest_forecast: Monday, 13 April 2020
-  forecasts: 189
+  forecasts: 190
   home_url: https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/mathematical-modeling.html
-  latest_forecast: Monday, 27 November 2023
+  latest_forecast: Monday, 04 December 2023
   name: ensemble
   team_name: COVIDhub_CDC
   url: https://zoltardata.com/model/673
