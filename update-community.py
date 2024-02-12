@@ -8,7 +8,7 @@ FILE_NAME = '_data/community.yml'
 PROJECT_NAME = 'COVID-19 Forecasts'
 DATE_FORMAT = "%A, %d %B %Y"
 ZOLTAR_HOST_URL = 'https://zoltardata.com'
-DAYS_OLD = 14
+DAYS_OLD = 16
 
 
 def get_public_url(url):
