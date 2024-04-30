@@ -26,6 +26,19 @@ sections:
         new_window: true
   - section_id: features
     type: section_grid
+    col_number: one
+    grid_items:
+      - title: Notice
+        content: >-
+          As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions. Current plans are to accept submissions starting in the fall, possibly in a different format. Information provided on forecast submissions are kept for historical record.
+        actions:
+          - label: Changes to submissions to the Forecast Hub
+            url: https://covid19forecasthub.org/doc/ensemble/
+            type: link
+            new_window: false
+            
+  - section_id: features
+    type: section_grid
     col_number: three
     grid_items:
       - title: Up-to-date forecasts
