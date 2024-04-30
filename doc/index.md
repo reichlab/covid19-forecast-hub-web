@@ -3,8 +3,8 @@ title: About the Hub
 layout: docs
 ---
 
+***
 <strong>Note:</strong> As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions. Current plans are to accept submissions starting in the fall, possibly in a different format. Information provided on forecast submissions are kept for historical record.  
-
 ***
 
 The COVID-19 Forecast Hub served as a central repository of forecasts and predictions from over 50 international research groups. Over 100m rows of forecast data are stored in a standard format in our <a href="https://zoltardata.com/project/44" target="_blank">data repository</a>. This structured data and our accompanying <a href="https://viz.covid19forecasthub.org/" target="_blank">interactive visualization</a> make it easy to compare the models side-by-side. Having all the model output in one place helped decision-makers and the general public understand the range of possible future outcomes more clearly.  
