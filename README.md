@@ -5,6 +5,7 @@
 # Website of COVID-19 Forecast Hub
 
 This repository stores source code used to generate the website of the COVID-19 Forecast Hub.  
+***
 <strong>Note:</strong> As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions. Current plans are to accept submissions starting in the fall, possibly in a different format. Information provided on forecast submissions are kept for historical record.  
 
 # Contributing / editing
