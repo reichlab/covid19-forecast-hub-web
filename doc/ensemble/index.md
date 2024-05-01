@@ -31,7 +31,7 @@ The following is a timeline of major changes to the ensemble methods:
 
 ### Ensemble models
 
-The forecast hub currently collaborated with CDC on the production of four ensemble forecasts each week:
+The forecast hub collaborated with CDC on the production of four ensemble forecasts each week:
 
 #### 1. COVIDhub-4_week_ensemble
 
