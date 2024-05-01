@@ -6,7 +6,7 @@ sections:
     title: The COVID-19 Forecast Hub
     image: images/5.jpg
     content: >-
-      This site maintains the authoritative record for real-time forecasts of COVID-19 hospitalizations in the US, as well as archival forecasts for COVID-19 cases and deaths, created by dozens of leading infectious disease modeling teams from around the globe, in coordination with the US CDC. 
+      As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub stopped accepting forecast submissions. From 2020 to 2024, this site collected real-time forecasts of COVID-19 hospitalizations, cases and deaths for the US, created by dozens of leading infectious disease modeling teams from around the globe, in coordination with the US CDC. 
     actions:
       - label: Forecast Summaries
         url: https://covid19forecasthub.org/reports/single_page.html
@@ -26,26 +26,13 @@ sections:
         new_window: true
   - section_id: features
     type: section_grid
-    col_number: one
-    grid_items:
-      - title: Note
-        content: >-
-          As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions. Current plans are to accept submissions starting in the fall, possibly in a different format. Information provided on forecast submissions are kept for historical record.
-        actions:
-          - label: Changes to submissions to the Forecast Hub
-            url: https://covid19forecasthub.org/doc/ensemble/
-            type: link
-            new_window: false
-            
-  - section_id: features
-    type: section_grid
     col_number: three
     grid_items:
       - title: Up-to-date forecasts
         content: >-
-          Every week dozens of modeling teams from across the globe submit forecasts of the trajectory of the COVID-19 pandemic in the US to our [forecast data repository](https://github.com/reichlab/covid19-forecast-hub). In collaboration with the US CDC, we take these data and build a single ensemble forecast which is later analyzed by, and communicated to the general public by CDC.
+          Every week dozens of modeling teams from across the globe submitted forecasts of the trajectory of the COVID-19 pandemic in the US to our [forecast data repository](https://github.com/reichlab/covid19-forecast-hub). In collaboration with the US CDC, we took these data and built a single ensemble forecast which was later analyzed by, and communicated to the general public by CDC.
         actions:
-          - label: Browse recent forecast data
+          - label: Browse past forecast data
             url: https://zoltardata.com/project/44
             type: link
             new_window: true
@@ -55,7 +42,7 @@ sections:
             new_window: true
       - title: Public health impact
         content: >-
-           COVID-19 Forecast Hub data are used by the <a href="https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/mathematical-modeling.html" target="_blank">US Centers for Disease Control and Prevention</a> and the data journalism site <a href="https://projects.fivethirtyeight.com/covid-forecasts/" target="_blank">FiveThirtyEight</a>. Through these channels, and our [public data repository](https://github.com/reichlab/covid19-forecast-hub), our work serves as a vital source of public information about where the outbreak is headed.
+           COVID-19 Forecast Hub data were used by the <a href="https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/mathematical-modeling.html" target="_blank">US Centers for Disease Control and Prevention</a> and the data journalism site <a href="https://projects.fivethirtyeight.com/covid-forecasts/" target="_blank">FiveThirtyEight</a>. Through these channels, and our [public data repository](https://github.com/reichlab/covid19-forecast-hub), our work served as a vital source of public information about where the outbreak was headed.
         actions:
           - label: Hospitalization forecasts @ CDC
             url: https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/hospitalizations-forecasts.html
@@ -63,7 +50,7 @@ sections:
             new_window: true
       - title: Collaborative science
         content: >-
-           We work collaboratively in an open-science framework, welcoming participation from modeling teams around the globe to submit predictions from their best COVID-19 models. 
+           We work collaboratively in an open-science framework, welcoming participation from modeling teams around the globe, who submitted predictions from their best COVID-19 models. 
         actions:
           - label: How to join
             url: doc/participate/
