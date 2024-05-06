@@ -27,7 +27,7 @@ The following is a timeline of major changes to the ensemble methods:
  * Starting the week of January 29, 2023 we stopped generating forecasts of incident cases in the trained ensemble.
  * Starting the week of February 20, 2023 we stopped accepting forecasts of incident cases and no longer built an ensemble for case forecasts.
  * Starting the week of March 6, 2023 we stopped generating ensemble forecasts of incident or cumulative deaths.
- * As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions. Current plans are to accept submissions starting in the fall, possibly in a different format.  
+ * As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions.  
 
 ### Ensemble models
 
