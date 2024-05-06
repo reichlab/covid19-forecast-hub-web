@@ -4,7 +4,9 @@
 
 # Website of COVID-19 Forecast Hub
 
-This repository stores source code used to generate the website of the COVID-19 Forecast Hub.
+This repository stores source code used to generate the website of the COVID-19 Forecast Hub.  
+***
+<strong>Note:</strong> As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions. Information provided on forecast submissions are kept for historical record.  
 
 # Contributing / editing
 
@@ -14,13 +16,13 @@ For example, to edit the “Reports” landing page, accessible via the “Repor
 
 ## Weekly reports
 
-Weekly reports are generated and deployed automatically by the virtual machine on Tuesdays at 8:30 am using the `run-weekly-reports.sh` script.
+Weekly reports were generated and deployed automatically by the virtual machine on Tuesdays at 8:30 am using the `run-weekly-reports.sh` script.
 
 ## Evaluation reports
 
-Evaluation reports are produced on a monthly basis. First, [this script](https://github.com/reichlab/covid19-forecast-evals/blob/main/reports/Query-scores-weekly-report_52.R) is run locally. It takes approximately one day to run and requires manual saves and restarts. Afterwards, [this script](https://github.com/reichlab/covid19-forecast-evals/blob/main/reports/Weekly-Model-Evaluation_v9.Rmd) is run to generate the evaluation report. This does not take long to run. Finally, the report is reviewed manually by team members. If the report looks good, it is uploaded to [this repository](https://github.com/reichlab/covid19-forecast-hub-web/tree/master/eval-reports). The monthly evaluation report should not be uploaded on a Tuesday, as it may cause conflict with other actions scheduled for Tuesdays.
+Evaluation reports were produced on a monthly basis. First, [this script](https://github.com/reichlab/covid19-forecast-evals/blob/main/reports/Query-scores-weekly-report_52.R) was run locally. It took approximately one day to run and required manual saves and restarts. Afterwards, [this script](https://github.com/reichlab/covid19-forecast-evals/blob/main/reports/Weekly-Model-Evaluation_v9.Rmd) was run to generate the evaluation report. This did not take long to run. Finally, the report was reviewed manually by team members. If the report looked good, it was uploaded to [this repository](https://github.com/reichlab/covid19-forecast-hub-web/tree/master/eval-reports). The monthly evaluation report should not be uploaded on a Tuesday, as it may cause conflict with other actions scheduled for Tuesdays.
 
-Reports and edits are deployed to the site using the `deploy-covidhub-site.sh` script, as explained below.
+Reports and edits were deployed to the site using the `deploy-covidhub-site.sh` script, as explained below.
 
 ## Talks
 
