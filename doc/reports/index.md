@@ -4,7 +4,7 @@ layout: docs
 ---
 
 ***
-<strong>Note:</strong> As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions. Current plans are to accept submissions starting in the fall, possibly in a different format. Information provided on forecast submissions are kept for historical record.
+<strong>Note:</strong> As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions. Information provided on forecast submissions are kept for historical record.  
 ***
 
 We followed a weekly update cycle at the COVID-19 Forecast Hub. Every Tuesday morning, our team assembled the most recent forecasts from all teams that had submitted in the last week. We used these data to generate an <a href="https://covid19forecasthub.org/doc/ensemble/">ensemble forecast</a> that synthesized predictions of COVID-19 cases, deaths, and hospitalizations from all eligible models. These forecasts were then reviewed, analyzed, and verified by our collaborators at the US CDC. On Thursday mornings, the CDC updated their <a href="https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/forecasting-math-modeling.html" target="_blank">COVID-19 Forecasting webpage</a> with the latest data from the COVID-19 Forecast Hub.  
