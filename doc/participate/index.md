@@ -4,7 +4,7 @@ layout: docs
 ---
 
 ***
-<strong>Note:</strong> As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions. Current plans are to accept submissions starting in the fall, possibly in a different format. Information provided on forecast submissions are kept for historical record.
+<strong>Note:</strong> As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions. Information provided on forecast submissions are kept for historical record.
 ***
 
 All teams building COVID-19 forecasting models are welcome to join the COVID-19 Forecast Hub. To participate, teams must submit a pull request to the <a href="https://github.com/reichlab/covid19-forecast-hub/" target="_blank">COVID-19 Forecast Hub GitHub repository</a> with at least one forecast data file and a metadata file about their model. 
