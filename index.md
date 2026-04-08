@@ -6,7 +6,7 @@ sections:
     title: The COVID-19 Forecast Hub
     image: images/5.jpg
     content: >-
-      This site maintains the authoritative, up-to-date record for forecasts of COVID-19 cases, deaths and hospitalizations in the US, created by dozens of leading infectious disease modeling teams from around the globe, in coordination with the US CDC. 
+      As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub stopped accepting forecast submissions. From 2020 to 2024, this site collected real-time forecasts of COVID-19 hospitalizations, cases and deaths for the US, created by dozens of leading infectious disease modeling teams from around the globe, in coordination with the US CDC. 
     actions:
       - label: Forecast Summaries
         url: https://covid19forecasthub.org/reports/single_page.html
@@ -30,9 +30,9 @@ sections:
     grid_items:
       - title: Up-to-date forecasts
         content: >-
-          Every week dozens of modeling teams from across the globe submit forecasts of the trajectory of the COVID-19 pandemic in the US to our [forecast data repository](https://github.com/reichlab/covid19-forecast-hub). In collaboration with the US CDC, we take these data and build a single ensemble forecast which is later analyzed by, and communicated to the general public by CDC.
+          Every week dozens of modeling teams from across the globe submitted forecasts of the trajectory of the COVID-19 pandemic in the US to our [forecast data repository](https://github.com/reichlab/covid19-forecast-hub). In collaboration with the US CDC, we took these data and built a single ensemble forecast which was later analyzed by, and communicated to the general public by CDC.
         actions:
-          - label: Browse recent forecast data
+          - label: Browse past forecast data
             url: https://zoltardata.com/project/44
             type: link
             new_window: true
@@ -42,23 +42,15 @@ sections:
             new_window: true
       - title: Public health impact
         content: >-
-           COVID-19 Forecast Hub data are used by the <a href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html" target="_blank">US Centers for Disease Control and Prevention</a> and the data journalism site <a href="https://projects.fivethirtyeight.com/covid-forecasts/" target="_blank">FiveThirtyEight</a>. Through these channels, and our [public data repository](https://github.com/reichlab/covid19-forecast-hub), our work serves as a vital source of public information about where the outbreak is headed.
+           COVID-19 Forecast Hub data were used by the <a href="https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/mathematical-modeling.html" target="_blank">US Centers for Disease Control and Prevention</a> and the data journalism site <a href="https://projects.fivethirtyeight.com/covid-forecasts/" target="_blank">FiveThirtyEight</a>. Through these channels, and our [public data repository](https://github.com/reichlab/covid19-forecast-hub), our work served as a vital source of public information about where the outbreak was headed.
         actions:
-          - label: Mortality forecasts @ CDC
-            url: https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html
-            type: link
-            new_window: true
           - label: Hospitalization forecasts @ CDC
-            url: https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/hospitalizations-forecasts.html
-            type: link
-            new_window: true
-          - label: Case forecasts @ CDC
-            url: https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/forecasts-cases.html
+            url: https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/hospitalizations-forecasts.html
             type: link
             new_window: true
       - title: Collaborative science
         content: >-
-           We work collaboratively in an open-science framework, welcoming participation from modeling teams around the globe to submit predictions from their best COVID-19 models. 
+           We work collaboratively in an open-science framework, welcoming participation from modeling teams around the globe, who submitted predictions from their best COVID-19 models. 
         actions:
           - label: How to join
             url: doc/participate/
@@ -73,35 +65,35 @@ sections:
 
     content1: >-  
       
+      [Computer Forecasts, Expert Judgment, And ‘Chimeric Forecasting’ Of Infectious Diseases](https://www.forbes.com/sites/johndrake/2022/11/21/computer-forecasts-expert-judgment-and-chimeric-forecasting-of-infectious-diseases/){:target="_blank"}  
+      
+      _Forbes_ | 21 November 2022  
+      
       [For now, wary US treads water with transformed COVID-19](https://apnews.com/article/covid-science-health-infectious-diseases-fb25f987bab09a11be31a32e832dd9de){:target="_blank"}  
       
       _AP_ | 3 July 2022  
+      
+      
+    content2: >-  
       
       [CDC Says COVID Hospitalizations to Rise in Most States](https://www.webmd.com/lung/news/20220519/cdc-says-covid-hospitalizations-to-rise-in-most-states){:target="_blank"}  
       
       _WebMD_ | 19 May 2022  
       
-      
-    content2: >-  
-      
       [New White House Covid projection puzzles experts and catches some Biden officials off guard](https://www.cnn.com/2022/05/12/politics/biden-administration-covid-warnings/index.html){:target="_blank"}  
       
       _CNN_ | 12 May 2022  
       
-      [A devastating milestone looms: 1 million US deaths from COVID-19](https://www.bostonglobe.com/2022/04/28/nation/devastating-milestone-looms-1-million-us-deaths-covid-19/){:target="_blank"}  
-      
-      _Boston Globe_ | 28 April 2022  
-      
       
     content3: >-  
       
-      [UMass lab cited for precision forecasting COVID-19 deaths](https://www.gazettenet.com/UMass-researchers-credited-with-most-accurate-COVID-19-death-projections-45989776){:target="_blank"}  
+      [Gov. Tim Walz, Janet Malcolm urge second COVID-19 booster shots for summer](https://www.startribune.com/walz-malcolm-receive-second-covid-19-boosters/600170465/){:target="_blank"}  
       
-      _Daily Hampshire Gazette_ | 18 April 2022  
+      _Star Tribune_ | 4 May 2022  
       
-      [Collaborative modeling attempts could improve response to the COVID-19 pandemic](https://www.news-medical.net/news/20220408/Collaborative-modeling-attempts-could-improve-response-to-the-COVID-19-pandemic.aspx){:target="_blank"}  
+      [A devastating milestone looms: 1 million US deaths from COVID-19](https://www.bostonglobe.com/2022/04/28/nation/devastating-milestone-looms-1-million-us-deaths-covid-19/){:target="_blank"}  
       
-      _News Medical_ | 8 April 2022  
+      _Boston Globe_ | 28 April 2022  
       
 
     actions:

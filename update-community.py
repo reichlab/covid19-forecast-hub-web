@@ -1,5 +1,3 @@
-from datetime import date
-
 import yaml
 from zoltpy import util
 
@@ -8,7 +6,6 @@ FILE_NAME = '_data/community.yml'
 PROJECT_NAME = 'COVID-19 Forecasts'
 DATE_FORMAT = "%A, %d %B %Y"
 ZOLTAR_HOST_URL = 'https://zoltardata.com'
-DAYS_OLD = 14
 
 
 def get_public_url(url):
@@ -53,13 +50,14 @@ def parse_model(model):
 
 
 def parse_teams(teams):
-    res = []
-    for team in teams:
-        max_model = list(filter(lambda _: (date.today() - max(_['dates'])).days < DAYS_OLD, teams[team]))
-        if max_model:
-            max_model = max(max_model, key=lambda _: _['forecasts'])
-            res.append(max_model)
-    return res
+    latest_models = []
+    for team, team_models in teams.items():
+        try:
+            latest_model = max(teams[team], key=lambda model: model['dates'])
+            latest_models.append(latest_model)
+        except ValueError:
+            pass
+    return latest_models
 
 
 def gen_community():
@@ -81,9 +79,9 @@ def gen_community():
             team_d[model['team_name']].append(model)
 
     # write the data to /_data/community.yml
-    res_models = sorted(parse_teams(team_d), key=lambda x: max(x['dates']), reverse=True)
+    latest_models = sorted(parse_teams(team_d), key=lambda x: max(x['dates']), reverse=True)
     with open(FILE_NAME, 'w') as file:
-        yaml.dump(res_models, file)
+        yaml.dump(latest_models, file)
 
 
 if __name__ == '__main__':
