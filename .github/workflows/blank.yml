@@ -22,45 +22,45 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    
+
     - name: Free disk space
       run: |
           df --human-readable
           sudo apt clean
-          docker rmi $(docker image ls --all --quiet)
+          docker rmi $(docker image ls --all --quiet) || true
           rm --recursive --force "$AGENT_TOOLSDIRECTORY"
 
-    # runs a custom step to create more space for the build 
+    # runs a custom step to create more space for the build
     # more info: https://github.com/easimon/maximize-build-space
     - name: Maximize build space
-      uses: easimon/maximize-build-space@v4
+      uses: easimon/maximize-build-space@v10
       with:
         root-reserve-mb: 4096
         swap-size-mb: 4096
         remove-dotnet: 'true'
         remove-android: 'true'
         remove-haskell: 'true'
-      
+
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Check-out repo
-      uses: actions/checkout@v2
-    
+      uses: actions/checkout@v4
+
     - name: Print space available
       run: df --human-readable
-      
+
     - name: Setup Python
-      uses: actions/setup-python@v2
-      
-    - name: Setup Ruby, JRuby and TruffleRuby
-      uses: ruby/setup-ruby@v1.51.1
-      
+      uses: actions/setup-python@v5
+
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.6.3
-      
+        ruby-version: '3.3'
+        bundler-cache: true
+
     - name: setup setuptools
-      run: sudo apt-get install -y python-setuptools
+      run: sudo apt-get install -y python3-setuptools
+
     # Runs a single command using the runners shell
-      
     - name: Run deploy script
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -68,7 +68,7 @@ jobs:
         Z_PASSWORD: ${{ secrets.Z_PASSWORD }}
         ENV: CI
       run: bash deploy.sh ${{github.event.inputs.params}}
-      
+
 #     - name: force GitHub Pages rebuild
 #       run: |
 #           curl --fail --request POST \

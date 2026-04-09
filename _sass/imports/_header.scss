@@ -1,3 +1,5 @@
+@use 'functions' as *;
+
 /**
  * Site Header
  */
@@ -29,7 +31,7 @@
 }
 
 .site-title {
-  color: _palette(secondary);
+  color: palette(secondary);
   font-size: 1.75rem;
   font-weight: bold;
   line-height: 1.2;
@@ -59,7 +61,7 @@
   position: relative;
 
   &.current-menu-item {
-    color: _palette(accent);
+    color: palette(accent);
   }
 
   a {
@@ -71,7 +73,7 @@
       line-height: 1.5;
 
       &:hover {
-        color: _palette(accent);
+        color: palette(accent);
       }
     }
   }
@@ -138,7 +140,7 @@
 
   .submenu {
     background: #fff;
-    border: 1px solid _palette(border);
+    border: 1px solid palette(border);
     border-radius: 3px;
     left: 0;
     min-width: 180px;
@@ -198,7 +200,7 @@
 
   .site-header {
     &:after {
-      background: rgba(_palette(primary),.6);
+      background: rgba(palette(primary),.6);
       content: "";
       height: 100vh;
       left: 0;
@@ -282,7 +284,7 @@
   }
 
   .submenu {
-    border-top: 1px solid _palette(border);
+    border-top: 1px solid palette(border);
     display: none;
     padding-left: 15px;
   
@@ -292,12 +294,12 @@
   }
 
   .menu-item {
-    border-top: 1px solid _palette(border);
+    border-top: 1px solid palette(border);
     display: block;
     margin: 0;
 
     &:not(.menu-button):last-child {
-      border-bottom: 1px solid _palette(border);
+      border-bottom: 1px solid palette(border);
     }
 
     a {
@@ -329,7 +331,7 @@
       background: 0;
       border: 0;
       border-radius: 0;
-      color: _palette(meta);
+      color: palette(meta);
       display: block;
       height: 48px;
       padding: 0;

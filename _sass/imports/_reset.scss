@@ -1,3 +1,5 @@
+@use 'functions' as *;
+
 /**
  * Reset
  * normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css
@@ -36,7 +38,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: _font(monospace);
+  font-family: font(monospace);
   font-size: 1em;
 }
 

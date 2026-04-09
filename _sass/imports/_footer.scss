@@ -1,3 +1,5 @@
+@use 'functions' as *;
+
 /**
  * Site Footer
  */
@@ -11,7 +13,7 @@
 
     &:hover,
     &:focus {
-      color: _palette(accent);
+      color: palette(accent);
     }
   }
 }

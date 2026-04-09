@@ -1,3 +1,5 @@
+@use 'functions' as *;
+
 /**
  * Docs
  */
@@ -32,7 +34,7 @@
 
   .hash-link {
     border: 0;
-    color: _palette(meta);
+    color: palette(meta);
     display: inline-block;
     margin-left: -21px;
     opacity: 0;
@@ -60,7 +62,7 @@
 
   .post-inside {
     background: #fff;
-    border: 1px solid _palette(border);
+    border: 1px solid palette(border);
     border-radius: 5px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
     box-sizing: border-box;
@@ -98,17 +100,17 @@
   }
 
   .docs-item-link {
-    border: 1px solid _palette(border);
+    border: 1px solid palette(border);
     border-radius: 3px;
-    color: _palette(secondary);
+    color: palette(secondary);
     display: block;
     font-weight: bold;
     padding: 0.9375em;
     position: relative;
 
     &:hover {
-      border-color: _palette(accent);
-      color: _palette(accent);
+      border-color: palette(accent);
+      color: palette(accent);
     }
   }
 }
@@ -117,7 +119,7 @@
   margin-bottom: 1.875em;
 
   .docs-nav-toggle {
-    color: _palette(secondary);
+    color: palette(secondary);
     font-size: 1.125rem;
     height: 30px;
     margin: 0;
@@ -128,7 +130,7 @@
   }
 
   .submenu-toggle {
-    color: _palette(meta);
+    color: palette(meta);
     height: 30px;
     position: absolute;
     right: 0;
@@ -138,7 +140,7 @@
 }
 
 .docs-toc {
-  color: _palette(secondary);
+  color: palette(secondary);
   font-weight: bold;
   line-height: 1.5;
   list-style: none;
@@ -156,14 +158,14 @@
 
     &:hover,
     &:focus {
-      color: _palette(accent);
+      color: palette(accent);
     }
   }
 }
 
 .toc-submenu {
-  border-left: 1px solid _palette(border);
-  color: _palette(primary);
+  border-left: 1px solid palette(border);
+  color: palette(primary);
   display: none;
   font-size: 0.875rem;
   font-weight: normal;
@@ -178,7 +180,7 @@
 
   &.current,
   &.current-parent {
-    color: _palette(accent);
+    color: palette(accent);
   }
 
   &.has-children {
@@ -219,7 +221,7 @@
     padding: 0;
 
     ul {
-      border-left: 1px solid _palette(border);
+      border-left: 1px solid palette(border);
       margin-top: 0.625rem;
       padding-left: 1.25rem;
     }
@@ -229,18 +231,18 @@
     margin-bottom: 0.625rem;
 
     &.active > a {
-      color: _palette(accent);
+      color: palette(accent);
     }
   }
 
   a {
-    color: _palette(primary);
+    color: palette(primary);
     border: 0;
     display: block;
 
     &:hover,
     &:focus {
-      color: _palette(accent);
+      color: palette(accent);
     }
   }
 }
@@ -298,7 +300,7 @@
 @media only screen and (max-width: 800px) {
   .docs-nav {
     background: #fff;
-    border: 1px solid _palette(border);
+    border: 1px solid palette(border);
     border-radius: 5px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
     box-sizing: border-box;
@@ -324,7 +326,7 @@
   }
 
   .docs-toc {
-    border-top: 1px solid _palette(border);
+    border-top: 1px solid palette(border);
     margin-top: 1.25rem;
     padding-top: 1.25rem;
   }

@@ -1,14 +1,17 @@
+@use 'functions' as *;
+@use 'sass:color';
+
 /**
  * General
  */
 html {
-  font-family: _font(primary);
+  font-family: font(primary);
   font-size: 100%;
 }
 
 body {
-  background: _palette(bg);
-  color: _palette(primary);
+  background: palette(bg);
+  color: palette(primary);
   line-height: 1.75;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -17,14 +20,14 @@ body {
 
 a {
   border-bottom: 1px solid currentColor;
-  color: _palette(accent);
+  color: palette(accent);
   text-decoration: none;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 
   &:hover,
   &:focus {
-    color: _palette(primary);
+    color: palette(primary);
   }
 }
 
@@ -34,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: _palette(secondary);
+  color: palette(secondary);
   font-weight: bold;
   line-height: 1.2;
   margin: 2.25rem 0 1.125rem;
@@ -80,17 +83,17 @@ address {
 
 mark,
 ins {
-  background: lighten(_palette(note),40%);
-  color: _palette(secondary);
+  background: color.adjust(palette(note), $lightness: 40%);
+  color: palette(secondary);
   padding: 0 3px;
   text-decoration: none;
 }
 
 pre {
-  background: _palette(bg);
+  background: palette(bg);
   border-radius: 3px;
-  color: _palette(secondary);
-  font-family: _font(monospace);
+  color: palette(secondary);
+  font-family: font(monospace);
   font-size: 0.875rem;
   line-height: 1.5;
   margin: 0 0 1.875rem;
@@ -104,7 +107,7 @@ pre {
 }
 
 :not(pre) > code {
-  background: _palette(bg);
+  background: palette(bg);
   border-radius: 3px;
   font-size: 0.875rem;
   padding: 0.1em;
@@ -112,7 +115,7 @@ pre {
 }
 
 blockquote {
-  border-left: 5px solid _palette(accent);
+  border-left: 5px solid palette(accent);
   font-size: 1.5em;
   line-height: 1.33333;
   margin: 1.5em 0;
@@ -132,7 +135,7 @@ blockquote {
 
   small,
   cite {
-    color: _palette(meta);
+    color: palette(meta);
     display: block;
     font-size: 0.75em;
     font-style: normal;
@@ -171,7 +174,7 @@ li > ol {
 
 hr {
   border: 0;
-  border-bottom: 1px solid _palette(border);
+  border-bottom: 1px solid palette(border);
   margin: 1.875em 0;
 }
 
@@ -184,7 +187,7 @@ table {
 }
 
 caption {
-  color: _palette(meta);
+  color: palette(meta);
   font-size: 0.875rem;
   font-style: normal;
   margin-bottom: 0.75rem;
@@ -193,12 +196,12 @@ caption {
 
 th,
 td {
-  border-bottom: 1px solid _palette(border);
+  border-bottom: 1px solid palette(border);
   padding: 0.5em 5px;
 }
 
 th {
-  color: _palette(secondary);
+  color: palette(secondary);
   font-weight: bold;
 }
 
@@ -231,7 +234,7 @@ th {
 
 /* Form fields */
 label {
-  color: _palette(secondary);
+  color: palette(secondary);
   font-weight: bold;
   line-height: 1.5;
   margin-bottom: 0.25em;
@@ -254,11 +257,11 @@ input[type="url"],
 select,
 textarea {
   background: #fff;
-  border: 1px solid _palette(border);
+  border: 1px solid palette(border);
   border-radius: 3px;
   box-shadow: none;
   box-sizing: border-box;
-  color: _palette(primary);
+  color: palette(primary);
   display: block;
   font-size: 16px;
   font-weight: normal;
@@ -286,8 +289,8 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"],
 .button {
-  background-color: _palette(accent);
-  border: 2px solid _palette(accent);
+  background-color: palette(accent);
+  border: 2px solid palette(accent);
   border-radius: 1.75em;
   box-sizing: border-box;
   color: #fff;
@@ -307,19 +310,19 @@ input[type="reset"],
   &:focus,
   &:active {
     background-color: white;
-    color: _palette(accent);
+    color: palette(accent);
     outline: 0;
   }
 }
 
 .button-secondary {
   background-color: transparent;
-  color: _palette(accent);
+  color: palette(accent);
 
   &:hover,
   &:focus,
   &:active {
-    background-color: _palette(accent);
+    background-color: palette(accent);
     color: #fff;
   }
 }
@@ -351,7 +354,7 @@ input[type="reset"],
   &:hover,
   &:focus,
   &:active {
-    color: _palette(accent);
+    color: palette(accent);
   }
 }
 
@@ -359,7 +362,7 @@ input[type="reset"],
   .button {
     background-color: #fff;
     border-color: #fff;
-    color: _palette(accent);
+    color: palette(accent);
 
     &:hover,
     &:focus,
@@ -377,7 +380,7 @@ input[type="reset"],
     &:focus,
     &:active {
       background-color: #fff;
-      color: _palette(accent);
+      color: palette(accent);
     }
   }
 }
@@ -399,24 +402,24 @@ input[type="reset"],
 
 /* Placeholder text color */
 ::-webkit-input-placeholder {
-  color: _palette(meta);
+  color: palette(meta);
 }
 
 ::-moz-placeholder {
-  color: _palette(meta);
+  color: palette(meta);
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: _palette(meta);
+  color: palette(meta);
 }
 
 ::-ms-input-placeholder {
-  color: _palette(meta);
+  color: palette(meta);
 }
 
 ::placeholder {
-  color: _palette(meta);
+  color: palette(meta);
 }
 
 /* Videos, audios and embeds */
@@ -439,28 +442,28 @@ img {
 
 /* Notifications */
 .note {
-  background: lighten(_palette(note),40%);
-  border-left: 5px solid _palette(note);
+  background: color.adjust(palette(note), $lightness: 40%);
+  border-left: 5px solid palette(note);
   border-radius: 5px;
-  color: _palette(secondary);
+  color: palette(secondary);
   margin-bottom: 1.875em;
   padding: 1em 1.125em;
 }
 
 .important {
-  background: lighten(_palette(important),40%);
-  border-left: 5px solid _palette(important);
+  background: color.adjust(palette(important), $lightness: 40%);
+  border-left: 5px solid palette(important);
   border-radius: 5px;
-  color: _palette(secondary);
+  color: palette(secondary);
   margin-bottom: 1.875em;
   padding: 1em 1.125em;
 }
 
 /* Background gradient */
 .has-gradient {
-  background: _palette(accent);
-  background: -webkit-linear-gradient(left,_palette(accent-alt), _palette(accent));
-  background: linear-gradient(to right, _palette(accent-alt), _palette(accent));
+  background: palette(accent);
+  background: -webkit-linear-gradient(left,palette(accent-alt), palette(accent));
+  background: linear-gradient(to right, palette(accent-alt), palette(accent));
   color: #fff;
   position: relative;
 }
@@ -484,7 +487,7 @@ img {
   position: relative;
 
   &:before {
-    background: _palette(accent);
+    background: palette(accent);
     content: "";
     height: 100%;
     left: -1px;

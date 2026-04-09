@@ -1,3 +1,5 @@
+@use 'functions' as *;
+
 /**
  * Posts and Pages
  */
@@ -46,13 +48,13 @@
     color: inherit;
 
     &:hover {
-      color: _palette(meta);
+      color: palette(meta);
     }
   }
 }
 
 .post-meta {
-  color: _palette(meta);
+  color: palette(meta);
   font-size: 0.875em;
   margin: 0 0 0.5em;
 }
@@ -78,7 +80,7 @@
 .post-full .post-content,
 .post-feed .post {
   background: #fff;
-  border: 1px solid _palette(border);
+  border: 1px solid palette(border);
   border-radius: 5px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
 }
@@ -131,7 +133,7 @@
 
   .read-more-link {
     border: 0;
-    color: _palette(accent);
+    color: palette(accent);
 
     &:after {
       font-size: 1.125em;

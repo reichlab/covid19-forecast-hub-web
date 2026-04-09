@@ -1,3 +1,5 @@
+@use 'functions' as *;
+
 /* PrismJS 1.16.0
 https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript&plugins=toolbar+copy-to-clipboard */
 /**
@@ -8,9 +10,9 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: _palette(secondary);
+  color: palette(secondary);
   background: none;
-  font-family: _font(monospace);
+  font-family: font(monospace);
   font-size: 0.875rem;
   text-align: left;
   white-space: pre;
@@ -36,7 +38,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: _palette(bg);
+  background: palette(bg);
 }
 
 /* Inline code */
@@ -156,8 +158,8 @@ div.code-toolbar > .toolbar button {
 div.code-toolbar > .toolbar a,
 div.code-toolbar > .toolbar button,
 div.code-toolbar > .toolbar span {
-  background: _palette(border);
-  color: _palette(primary);
+  background: palette(border);
+  color: palette(primary);
   display: block;
   font-size: .75em;
   line-height: 1.5;

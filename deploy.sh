@@ -7,10 +7,6 @@ SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 HEAD_HASH=`git rev-parse --verify HEAD` # latest commit hash
 HEAD_HASH=${HEAD_HASH: -7} # get the last 7 characters of hash
 
-# system requirements
-sudo apt-get update
-sudo apt-get install -y ruby ruby-dev gem
-
 # python requirements
 pip install pipenv
 pipenv install

@@ -1,3 +1,9 @@
+@use 'sass:list';
+@use 'sass:map';
+
+$font: () !default;
+$palette: () !default;
+
 /// Removes a specific item from a list.
 /// @author Hugo Giraudel
 /// @param {list} $list List.
@@ -13,18 +19,21 @@
   @else if $index == 0 {
     @warn "List index 0 must be a non-zero integer for `remove-nth`.";
   }
-  @else if abs($index) > length($list) {
-    @warn "List index is #{$index} but list is only #{length($list)} item long for `remove-nth`.";
+  @else if abs($index) > list.length($list) {
+    @warn "List index is #{$index} but list is only #{list.length($list)} item long for `remove-nth`.";
   }
   @else {
 
     $result: ();
-    $index: if($index < 0, length($list) + $index + 1, $index);
 
-    @for $i from 1 through length($list) {
+    @if $index < 0 {
+      $index: list.length($list) + $index + 1;
+    }
+
+    @for $i from 1 through list.length($list) {
 
       @if $i != $index {
-        $result: append($result, nth($list, $i));
+        $result: list.append($result, list.nth($list, $i));
       }
 
     }
@@ -42,12 +51,12 @@
 /// @return {string} Value.
 @function val($map, $keys...) {
 
-  @if nth($keys, 1) == null {
+  @if list.nth($keys, 1) == null {
     $keys: remove-nth($keys, 1);
   }
 
   @each $key in $keys {
-    $map: map-get($map, $key);
+    $map: map.get($map, $key);
   }
 
   @return $map;
@@ -57,13 +66,13 @@
 /// Gets a font value.
 /// @param {string} $keys Key(s).
 /// @return {string} Value.
-@function _font($keys...) {
+@function font($keys...) {
   @return val($font, $keys...);
 }
 
 /// Gets a palette value.
 /// @param {string} $keys Key(s).
 /// @return {string} Value.
-@function _palette($keys...) {
+@function palette($keys...) {
   @return val($palette, $keys...);
 }

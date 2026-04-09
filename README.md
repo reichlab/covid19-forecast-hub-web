@@ -44,12 +44,7 @@ Once this is all pushed, Netlify's GitHub "Continuous deployment" integration ha
 
 # Building the site locally
 
-1. Install a full [Ruby development environment](https://jekyllrb.com/docs/installation/)
-
-1. Install Jekyll and Bundler
-
-        gem install jekyll
-        gem install bundler -v 1.16.6
+1. Install a full [Ruby development environment](https://jekyllrb.com/docs/installation/) (Ruby 3.x recommended)
 
 1. Install dependencies from Gemfile:
 
