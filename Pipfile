@@ -16,4 +16,4 @@ zoltpy = {git = "https://github.com/reichlab/zoltpy"}
 [dev-packages]
 
 [requires]
-python_version = "3.8"
+python_version = "3.12"
