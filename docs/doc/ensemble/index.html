@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+    <head>    
+        
+        <title>Ensemble model - COVID 19 forecast hub</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Your source for up-to-date forecasts of COVID-19."/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i%26display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
+        <link rel="stylesheet" href="/assets/css/brands.min.css">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="shortcut icon" type="image/png" href="/images/forecast-hub-favicon.png">
+        
+    </head>
+    <body>
+        
+        <div id="page" class="site">
+  <header id="masthead" class="site-header outer">
+  <div class="inner">
+    <div class="site-header-inside">
+      <div class="site-branding">
+        
+        
+        <p class="site-logo"><a href="/"><img src="/images/forecast-hub-logo_DARKBLUE.png" alt="COVID 19 forecast hub" /></a></p>
+        
+      </div><!-- .site-branding -->
+      
+      
+      <nav id="main-navigation" class="site-navigation" aria-label="Main Navigation">
+        <div class="site-nav-inside">
+          <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-close" aria-hidden="true"></span></button>
+          <ul class="menu">
+            
+            <li class="menu-item">
+              
+              
+<a class="" href="/">
+  
+  Home
+  
+</a>
+
+              
+            </li>
+            
+            <li class="menu-item">
+              
+              
+<a class="" href="https://viz.covid19forecasthub.org/" target="_blank" rel="noopener">
+  
+  Visualization
+  
+</a>
+
+              
+            </li>
+            
+            <li class="menu-item">
+              
+              
+<a class="" href="/doc/reports/">
+  
+  Reports
+  
+</a>
+
+              
+            </li>
+            
+            <li class="menu-item">
+              
+              
+<a class="" href="/data/">
+  
+  Data
+  
+</a>
+
+              
+            </li>
+            
+            <li class="menu-item">
+              
+              
+<a class="" href="/community/">
+  
+  Community
+  
+</a>
+
+              
+            </li>
+            
+            <li class="menu-item">
+              
+              
+<a class="" href="/doc/">
+  
+  About
+  
+</a>
+
+              
+            </li>
+            
+            <li class="menu-item menu-button">
+              
+              
+<a class="button" href="https://github.com/reichlab/covid19-forecast-hub" target="_blank" rel="noopener">
+  
+  GitHub
+  
+</a>
+
+              
+            </li>
+            
+          </ul>
+        </div><!-- .site-nav-inside -->
+      </nav><!-- .site-navigation -->
+      <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
+      
+    </div><!-- .site-header-inside -->
+  </div><!-- .inner -->
+</header><!-- .site-header -->
+
+  <main id="content" class="site-content">
+      <div class="inner outer">
+      <div class="docs-content">
+        
+        <nav id="docs-nav" class="docs-nav">
+  <div id="docs-nav-inside" class="docs-nav-inside sticky">
+    <button id="docs-nav-toggle" class="docs-nav-toggle">Navigate Page<span class="icon-angle-right" aria-hidden="true"></span></button>
+    <div class="docs-toc-wrap">
+      <ul id="docs-toc" class="docs-toc">
+        
+        
+
+        
+        
+        <li class="toc-item">
+          <a href="/doc/">About the Hub</a>
+        </li>
+
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="toc-item">
+            <a href=""></a>
+            
+            
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="toc-item current active">
+            <a href="/doc/ensemble/">Ensemble model</a>
+            
+            
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="toc-item">
+            <a href="/doc/research/">Research</a>
+            
+            
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="toc-item">
+            <a href="/doc/participate/">How to join</a>
+            
+            
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="toc-item">
+            <a href="/doc/team/">Team</a>
+            
+            
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="toc-item">
+            <a href="/doc/media/">In the news</a>
+            
+            
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="toc-item">
+            <a href="/doc/reports/">Weekly reports</a>
+            
+            
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="toc-item">
+            <a href="/doc/talks/">Talks</a>
+            
+            
+          </li>
+        
+
+      </ul><!-- .docs-toc -->
+    </div><!-- .docs-toc-wrap -->
+  </div><!-- .docs-nav-inside -->
+</nav><!-- .docs-nav -->
+
+        <article class="post type-docs">
+          <div class="post-inside">
+            <header class="post-header">
+              <h1 class="post-title line-left">Ensemble model</h1>
+            </header><!-- .post-header -->
+            <div class="post-content">
+              <h2 id="note">Note</h2>
+<p>As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions. Information provided on forecast submissions are kept for historical record.</p>
+
+<h2 id="overview">Overview</h2>
+<p>Each week, we would generate ensemble forecasts of incident COVID-19 cases, deaths, and hospitalizations over the next four weeks that combined the forecasts from different teams.  This was helpful because it gave a sense of the general consensus forecast across all teams.  Previous work in infectious disease forecasting and other fields has also shown that <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007486" target="_blank">ensemble forecasts are often more accurate than any individual model that went into the ensemble</a>.  Readers who are more familiar with the forecasting methods may also find it helpful to <a href="https://viz.covid19forecasthub.org/" target="_blank">explore forecasts</a> from individual models to obtain a more detailed understanding of the underlying uncertainty and the range of projections generated by models built on different assumptions.</p>
+
+<p>We have <a href="https://doi.org/10.1101/2020.08.19.20177493" target="_blank">one pre-print manuscript</a> that describes the performance of the ensemble forecasts through July 2020, as well as a <a href="https://doi.org/10.1073/pnas.2113561119" target="_blank">publication</a> that evaluates the predictive performance of the ensemble and dozens of other models from April 2020 through October of 2021.  Additionally, we have compared the performance of trained and untrained probabilistic ensemble forecasts of COVID-19 cases and deaths in <a href="https://www.sciencedirect.com/science/article/pii/S0169207022000966" target="_blank">another publication</a>.</p>
+
+<h2 id="summary-of-how-the-ensembles-are-built">Summary of how the ensembles are built</h2>
+
+<h3 id="ensemble-build-timing">Ensemble build timing</h3>
+<p>Previously, on Monday afternoon, we would update the COVID-19 Forecast Hub ensembles using the most recent submission from each team.</p>
+
+<h3 id="overview-of-major-updates-to-methodology">Overview of major updates to methodology</h3>
+<p>The following is a timeline of major changes to the ensemble methods:</p>
+
+<ul>
+  <li>From April 13 to July 21 2020, the ensemble was created by taking the arithmetic average of each prediction quantile for all eligible models for a given location.</li>
+  <li>Starting on the week of July 28 2020, we instead used the median prediction across all eligible models at each quantile level.</li>
+  <li>We created ensemble forecasts for hospitalizations due to COVID-19 for the first time on the week of December 7, 2020.</li>
+  <li>Starting the week of September 27, 2021, the official COVIDhub-ensemble only generates forecasts of incident cases for forecast horizons up to 1 week ahead and forecasts of incident hospitalizations for forecast horizons up to 14 days ahead.</li>
+  <li>Starting the week of November 15, 2021 we used a weighted ensemble method for forecasts of incident and cumulative deaths. In this ensemble, the ten component models with the best performance as measured by their Weighted Interval Score (WIS) in the 12 weeks prior to the forecast date are included. These component models are assigned weights that are a function of their relative WIS during those 12 weeks, with models that have a stronger record of accuracy receiving higher weight.</li>
+  <li>Starting the week of January 29, 2023 we stopped generating forecasts of incident cases in the trained ensemble.</li>
+  <li>Starting the week of February 20, 2023 we stopped accepting forecasts of incident cases and no longer built an ensemble for case forecasts.</li>
+  <li>Starting the week of March 6, 2023 we stopped generating ensemble forecasts of incident or cumulative deaths.</li>
+  <li>As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions.</li>
+</ul>
+
+<h3 id="ensemble-models">Ensemble models</h3>
+
+<p>The forecast hub collaborated with CDC on the production of four ensemble forecasts each week:</p>
+
+<h4 id="1-covidhub-4_week_ensemble">1. COVIDhub-4_week_ensemble</h4>
+
+<p>This ensemble produces forecasts of incident cases (discontinued as of February 2023), incident deaths, and cumulative deaths (discontinued as of March 2023) at horizons of 1 through 4 weeks ahead, and forecasts of incident hospitalizations at horizons of 1 through 28 days ahead (discontinued as of May 2024). For all of these targets, the ensemble forecasts were computed as the equally-weighted median of all component forecasts at each location, forecast horizon, and quantile level.</p>
+
+<p>In the past, forecasts of cases and hospitalizations produced by this ensemble had shown unreliable performance at longer horizons. This ensemble was produced for research purposes only, and the forecasts were not intended for use as inputs to public health decision making.</p>
+
+<h4 id="2-covidhub-trained_ensemble">2. COVIDhub-trained_ensemble</h4>
+
+<p>This ensemble produced forecasts of incident cases (discontinued as of January 2023), incident deaths and cumulative deaths (both discontinued as of March 2023) at horizons of 1 through 4 weeks ahead, and forecasts of incident hospitalizations at horizons of 1 through 28 days ahead (discontinued as of May 2024). For all of these targets, the ensemble forecasts were computed as a weighted median of the ten component forecasts with the best performance as measured by their WIS in the 12 weeks prior to the forecast date.</p>
+
+<p>In the past, forecasts of cases and hospitalizations produced by this ensemble had shown unreliable performance at longer horizons. This ensemble was produced for research purposes only, and the forecasts were not intended for use as inputs to public health decision making.</p>
+
+<h4 id="3-covidhub-ensemble">3. COVIDhub-ensemble</h4>
+
+<p>This ensemble produced forecasts of incident cases at a horizon of 1 week ahead (discontinued as of February 2023), forecasts of incident hospitalizations at horizons up to 14 days ahead (discontinued as of May 2024), and forecasts of incident and cumulative deaths at horizons of up to 4 weeks ahead (discontinued as of March 2023). As documented in <a href="https://forecasters.org/blog/2021/09/28/on-the-predictability-of-covid-19/">this analysis</a>, these are the horizons at which these forecasts have shown fairly reliable performance in past forecasts. The forecasts of hospitalizations and those of cases were calculated as an equally-weighted median of eligible forecasts, while the forecasts of deaths were calculated as a weighted median of eligible forecasts using the methodology described for the trained ensemble above. The forecasts of incident and cumulative deaths from the COVIDhub-ensemble were therefore identical to the corresponding forecasts from the COVIDhub-trained_ensemble.</p>
+
+<h4 id="4-covidhub_cdc-ensemble">4. COVIDhub_CDC-ensemble</h4>
+
+<p>This ensemble pulled forecasts of hospitalizations from the COVIDhub-4_week_ensemble. The set of horizons that were included were updated regularly using rules developed by CDC based on recent forecast performance. To be included in the COVIDhub_CDC-ensemble, models also had to meet the eligibility criteria for the COVIDhub-4_week_ensemble (see “Detailed Eligibility Criteria” below for an example).</p>
+
+<h3 id="detailed-eligibility-criteria">Detailed eligibility criteria</h3>
+
+<p>Forecasts submitted by 3pm ET on Monday night were guaranteed consideration for inclusion in the ensemble for that week, as long as the forecast was associated with a date since the previous Tuesday.</p>
+
+<p>To be included in the ensemble, a team’s designated model had to meet certain specified inclusion criteria. We required that forecasts include a full set of predictive quantiles (i.e., 23 for hospitalizations; see <a href="https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md#quantile">Technical README</a> for details). Additionally, forecasts had to include all forecast horizons that would be produced by a given ensemble to be included in that ensemble. For example, the COVIDhub-4_week_ensemble required that a model provide hospitalization forecasts at all of the 1 through 28 days ahead to be included, but the COVIDhub-ensemble forecast of hospitalizations only required forecasts of hospitalizations at a horizon of 1 to 14 days ahead for inclusion.</p>
+
+<p>To be included in the COVIDhub_CDC-ensemble, models also had to meet the eligibility criteria for the COVIDhub-4_week_ensemble. For example, the COVIDhub_CDC-ensemble may have used hospitalization forecasts at horizons up to 25 days, but models were selected from the COVIDhub-4_week_ensemble that required forecasts of incident hospitalizations at horizons of 1 through 28 days ahead. If a team submitted a forecast of incident hospitalizations for 1 to 25 days ahead, it would not be included in the COVIDhub_CDC-ensemble (or the COVIDhub-4_week_ensemble), although it would be included in the COVIDhub-ensemble (which only requires horizons up to 14 days ahead).</p>
+
+<p>There are also some eligibility criteria that have been used specifically for the cumulative deaths and incident hospitalizations targets:</p>
+
+<h4 id="eligibility-criteria-for-cumulative-deaths">Eligibility criteria for cumulative deaths</h4>
+<p><strong>Note:</strong> Starting the week of March 6, 2023 we stopped accepting death forecasts and no longer build an ensemble for death forecasts.<br />
+For forecasts of cumulative deaths, we also performed two additional checks for internal consistency. By definition, cumulative deaths cannot decrease over time (other than possibly because of revisions to reporting).  We therefore required that (1) a team assigns at most a 10% chance that cumulative deaths would decrease in their one-week ahead forecasts, and (2) at each quantile level of the predictive distribution, that quantile is constant or increasing over time. Additionally, models that projected death values that are larger than the population size of the geographic location were not included. Before the week of July 28, we performed manual visual inspection checks to ensure that forecasts were in alignment with the ground truth data; this step was later discontinued. Details on which models were included each week in the ensemble are available <a href="https://github.com/reichlab/covid19-forecast-hub/tree/master/ensemble-metadata" target="_blank">on GitHub</a>.</p>
+
+<h4 id="eligibility-criteria-for-incident-hospitalizations">Eligibility criteria for incident hospitalizations</h4>
+<p><strong>Note:</strong> Starting on May 1, 2024 we stopped accepting hospitalization forecasts and no longer build an ensemble for hospitalization forecasts.<br />
+To be eligible for inclusion in the hospitalizations ensemble between December 7, 2020 and July 12, 2021, individual model forecasts had to meet a check for consistency with recent observed data.  We have periodically made minor updates to the criteria since the introduction of the ensemble forecasts for hospitalizations, and stopped using these criteria with hospitalization forecasts generated the week of July 19, 2021:</p>
+
+<ul>
+  <li>On the weeks of December 7, 2020 through December 21, 2020, we required that the mean daily point prediction for a given location during the first seven days (e.g., covering Tuesday, December 8 through Monday, December 14 for forecasts submitted December 7) must be at least as large as the mean reported daily confirmed hospital admissions over the previous seven days minus four times the standard deviation of the reported daily confirmed hospital admissions data for that location over the most recent 14 days. This check was performed separately for each location, but a given model was included in the ensemble for all locations if it passed this check in at least 75% of jurisdictions, and excluded for all locations otherwise.</li>
+  <li>On the weeks of December 28, 2020 and January 4, 2021 we used the check described above, but inclusion was determined separately for each location.</li>
+  <li>Starting on the week of January 11, 2021 the check is based on the mean of the predictive median during the first seven days rather than the mean point prediction.  Model inclusions are still determined separately for each location.</li>
+  <li>Starting on the week of February 8, 2021 we updated this check to include an upper bound. The new check requires that the mean of the predictive median during the first seven days after the forecast date is within the mean reported daily confirmed hospital admissions over the previous seven days plus or minus four times the standard deviation of the reported daily confirmed hospital admissions data for that location over the most recent 14 days.  This check is performed separately for each location.</li>
+  <li>Starting on the week of February 15, 2021 we updated this check to so that the minimum width of the acceptance band is 2 (i.e., we compare to the mean of the observed values over the last 7 days plus or minus 1 if the standard deviation is less than 0.25).  This is necessary to produce a forecast for locations with all reported zeros in the last two weeks.</li>
+  <li>Starting on the week of July 19, 2021, these exclusion criteria were not used for the hospitalizations ensemble.</li>
+  <li>As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting hospitalization submissions.</li>
+</ul>
+
+<p>For all checks described above, daily reported hospital admissions were taken from <a href="https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh/about_data" target="_blank">HealthData.gov</a>.</p>
+
+              
+              
+              
+                
+                
+                
+                
+                
+                
+              
+            </div><!-- .post-content -->
+          </div><!-- .post-inside -->
+        </article><!-- .post -->
+      </div><!-- .docs-content -->
+    </div><!-- .inner-->
+
+  </main><!-- .site-content -->
+  <footer id="colophon" class="site-footer outer">
+  <div class="inner">
+    <div class="site-footer-inside">
+      <p class="site-info">
+        
+        
+        <span class="copyright">Forecast data are available by default under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0 license</a>. Some models have specific licenses. See <a href="https://github.com/reichlab/covid19-forecast-hub/blob/master/README.md#the-covid-forecast-hub-team" target="_blank">repository</a> for details. <br>The COVID-19 Forecast Hub has been supported by the US Centers for Disease Control and Prevention (U01IP001122-01-05) and the US National Institutes of Health (R35GM119582). Contributing teams may have received additional funding to support their contributions. The content of the COVID-19 Forecast Hub is solely the responsibility of the participating teams and the Hub maintainers and does not necessarily represent the official views of NIH, CDC, or other funders. <br>This site is powered by <a href="https://www.netlify.com/">Netlify</a>.
+</span>
+        
+        
+      </p><!-- .site-info -->
+      
+      
+      <div class="social-links">
+        
+          
+          
+<a class="button button-icon" href="https://twitter.com/reichlab" target="_blank" rel="noopener">
+  
+  <span class="icon fab fa-twitter" aria-hidden="true"></span><span class="screen-reader-text">Twitter</span>
+  
+</a>
+
+        
+          
+          
+<a class="button button-icon" href="https://github.com/reichlab/covid19-forecast-hub" target="_blank" rel="noopener">
+  
+  <span class="icon fab fa-github" aria-hidden="true"></span><span class="screen-reader-text">GitHub</span>
+  
+</a>
+
+        
+      </div><!-- .social-links -->
+      
+    </div><!-- .site-footer-inside -->
+  </div><!-- .inner -->
+</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+        <!-- Scripts -->
+        <script src="/assets/js/plugins.js"></script>
+        <script src="/assets/js/prism.js" data-manual></script>
+        <script src="/assets/js/main.js"></script>
+        <!-- Default Statcounter code for Covid19-forecast-hub
+        https://reichlab.io/covid19-forecast-hub/ -->
+        <script type="text/javascript">
+            var sc_project=12239903; 
+            var sc_invisible=1; 
+            var sc_security="3c7ad044"; 
+            </script>
+            <script type="text/javascript"
+            src="https://www.statcounter.com/counter/counter.js"
+            async></script>
+            <noscript><div class="statcounter"><a title="Web Analytics"
+            href="https://statcounter.com/" target="_blank"><img
+            class="statcounter"
+            src="https://c.statcounter.com/12239903/0/3c7ad044/1/"
+            alt="Web Analytics"></a></div></noscript>
+            <!-- End of Statcounter Code -->
+            
+    </body> 
+</html>
