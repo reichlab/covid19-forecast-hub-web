@@ -11,5 +11,8 @@ _site/
 .vscode
 *.code-workspace
 
+# Claude Code local settings (machine-specific)
+.claude/settings.local.json
+
 # static site output folder
 docs/**

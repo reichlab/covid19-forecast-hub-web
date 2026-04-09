@@ -50,6 +50,10 @@ then
 	# switch to netlify branch, bringing along untracked "docs" directory
 	git switch netlify
 
+	# Remove large report directories that are not served by Netlify and
+	# would exceed Netlify's disk quota during git checkout.
+	git rm -r --ignore-unmatch reports/ eval-reports/ 2>/dev/null || true
+
 	# Commit changes.
 	msg="Auto deploy commit ${HEAD_HASH} to Netlify at ${date}"
 	(cd docs; git add .)
