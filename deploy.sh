@@ -44,6 +44,9 @@ if [ "$1" != "no_push" ]  && [ "$2" != "no_push" ]
 then
 	printf "Pushing to GitHub"
 	
+	# Stash data changes (already baked into docs/) to allow branch switch
+	git stash
+
 	# switch to netlify branch, bringing along untracked "docs" directory
 	git switch netlify
 
