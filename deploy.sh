@@ -54,6 +54,11 @@ then
 	# would exceed Netlify's disk quota during git checkout.
 	git rm -r --ignore-unmatch reports/ eval-reports/ 2>/dev/null || true
 
+	# Place netlify.toml at the branch root so Netlify reads it.
+	# (Netlify looks for it at the repo root, not inside the publish directory.)
+	cp docs/netlify.toml netlify.toml
+	git add netlify.toml
+
 	# Commit changes.
 	msg="Auto deploy commit ${HEAD_HASH} to Netlify at ${date}"
 	(cd docs; git add .)
