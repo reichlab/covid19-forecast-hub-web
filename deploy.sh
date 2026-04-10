@@ -55,8 +55,9 @@ then
 	git rm -r --ignore-unmatch reports/ eval-reports/ 2>/dev/null || true
 
 	# Place netlify.toml at the branch root so Netlify reads it.
-	# (Netlify looks for it at the repo root, not inside the publish directory.)
-	cp docs/netlify.toml netlify.toml
+	# (Netlify looks for it at the repo root, not inside the publish directory.
+	# The file isn't tracked on the netlify branch, so retrieve it from master.)
+	git show master:netlify.toml > netlify.toml
 	git add netlify.toml
 
 	# Commit changes.
