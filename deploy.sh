@@ -23,6 +23,8 @@ else
 fi
 
 # weekly reports/evaluation reports
+# Ensure output directories exist (not tracked in git since they're generated)
+mkdir -p reports eval-reports
 pipenv run python3 update-reports.py
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
