@@ -16,3 +16,7 @@ _site/
 
 # static site output folder
 docs/**
+
+# Generated report files (too large to store in git)
+reports/
+eval-reports/

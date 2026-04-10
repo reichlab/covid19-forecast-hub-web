@@ -95,6 +95,8 @@ exclude:
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
+  - reports/
+  - eval-reports/
   - vendor/ruby/
   - ssg-build.sh
   - LICENSE.md
